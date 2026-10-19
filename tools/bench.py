@@ -96,7 +96,8 @@ def grade_one(case, out):
     paths = sorted((out / case['id']).glob('*/*/response.md'))
     if not paths:
         raise RuntimeError('No responses for '+case['id'])
-    if all(p.with_name('grading.json').exists() for p in paths):
+    rubric_hash = hashlib.sha256(json.dumps(case, sort_keys=True).encode()).hexdigest()
+    if all(p.with_name('grading.json').exists() and json.loads(p.with_name('grading.json').read_text()).get('rubric_sha256') == rubric_hash for p in paths):
         return 'cached grades '+case['id']
     random.Random('declaude-v1-'+case['id']).shuffle(paths)
     labels = [f'R{i+1:02}' for i in range(len(paths))]
@@ -116,6 +117,7 @@ TASK:
         assert all(type(a['passed']) is bool and isinstance(a['evidence'],str) for a in grade['assertions'])
         grade['assertions'] = [dict(a, **b) for a,b in zip(case['assertions'],grade['assertions'])]
         grade['grader'] = {'model':meta['model'], 'effort':meta['effort'], 'blind_label':label}
+        grade['rubric_sha256'] = rubric_hash
         path.with_name('grading.json').write_text(json.dumps(grade,indent=2)+'\n')
     return 'graded '+case['id']
 

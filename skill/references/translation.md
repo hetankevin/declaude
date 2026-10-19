@@ -2,6 +2,8 @@
 
 This is the user-supplied translation specification. Its output-only instruction applies to rewriting, not to a request to review or build a skill.
 
+Apply it to the content the user wants retained. An explicit instruction to remove a discussion or caveat overrides this specification's default preservation of that content. Preserve the meaning and logical force of the remaining passage without reintroducing the removed discussion.
+
 Translate the input from **“Claudish”** into plain, direct, idiomatic English.
 
 “Claudish” is the characteristic prose style of Claude and Claude Code: contrast-heavy, structurally metaphorical, process-oriented, rhetorically polished, and prone to expressing a simple point through abstractions, restatements, technical compounds, and emphatic framing.
