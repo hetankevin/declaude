@@ -1,0 +1,31 @@
+{
+  "candidate": "v5a",
+  "subsets": [
+    "validation"
+  ],
+  "cases": 20,
+  "configs": [
+    "haiku",
+    "sonnet-high",
+    "astra-medium",
+    "luna-medium"
+  ],
+  "judgments": 160,
+  "preference": 0.5125,
+  "win_tie_loss": {
+    "tie": 72,
+    "win": 46,
+    "loss": 42
+  },
+  "fidelity": {
+    "v4": 0.9848484848484849,
+    "v5a": 0.9848484848484849
+  },
+  "material_error": {
+    "candidate": 0.09375,
+    "reference": 0.14375
+  },
+  "qualifies": true,
+  "dataset_sha256": "7682ea507253ad2ac03523497dac6f2eab6931b9910ee0e593d3d4f2f80cd5ea",
+  "rule": "preference > .5; fidelity >= incumbent; material errors <= incumbent; ties retain incumbent"
+}

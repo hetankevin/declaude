@@ -1,0 +1,1747 @@
+{
+  "cases": [
+    {
+      "id": "large-test-a-01",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Request:\nRevise this notice for households on a small water network. Make the sequence and the reason for each instruction easy to follow, while keeping a calm, practical tone. Use only the information supplied. Return the revised notice, not editing advice.\n\nSource:\nThe storage tank will be isolated on Tuesday between 09:00 and 13:00 so that its inlet valve can be replaced. The two wells will continue feeding the network during the work. That is why we expect water to remain available, although the upper streets may experience lower pressure. The work is being done to stop a leak inside the valve assembly, which has made it harder to control the tank level. This has not affected the water-quality tests taken last week.\n\nPlease fill a jug before 09:00 if you need drinking water during that period. We are making this suggestion because a brief interruption is possible when the connections are switched, rather than because we expect the entire four-hour window to be without supply. Please also avoid running sprinklers until the tank is back in service. This is a request to keep demand manageable while the wells are supplying the network directly. It would help if washing machines could wait, too, but essential household use can continue.\n\nAfter the valve is opened, some taps may briefly run cloudy. Air introduced during the work can cause cloudiness that clears in a glass from the bottom upward. If it does not clear, or if the water is discoloured, stop using that tap for drinking and call the service desk. Last week's tests do not tell us what is coming from an individual tap after the repair, so we still need those reports. We cannot promise that every report will have the same explanation.\n\nA completion notice will be posted on the community board when the tank is in service again. The announced end time is an estimate. Until that notice appears, the request about sprinklers still applies. Residents do not need to keep a tap running while they wait for the work to finish.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves Tuesday, the 09:00\u201313:00 estimated work window, continued well supply, and the possibility of lower pressure or a brief switching interruption."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps last week\u2019s water-quality results distinct from the condition of water at a tap after the repair, without promising present safety or inventing a general boil-water instruction."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the distinction between cloudiness that clears from the bottom upward and persistent cloudiness or discolouration, with stopping drinking use of that tap and contacting the service desk required for the latter, without adding an unprovided clearing procedure."
+        },
+        {
+          "group": "style",
+          "text": "Makes the relationship between preparation, the work period, and restoration easy for a resident to follow without flattening the notice into disconnected commands."
+        },
+        {
+          "group": "style",
+          "text": "Consolidates repeated explanations while retaining the different reasons for storing a jug and reducing discretionary demand."
+        },
+        {
+          "group": "argument",
+          "text": "Connects the end of the sprinkler request to the completion notice rather than treating 13:00 as a guaranteed restoration time."
+        },
+        {
+          "group": "style",
+          "text": "Uses a calm service voice and preserves the distinction between optional postponement of washing and permitted essential use."
+        }
+      ],
+      "quality_dimensions": [
+        "instructional_clarity",
+        "factual_fidelity",
+        "passage_cohesion",
+        "proportionate_caution"
+      ],
+      "source_words": 302,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-02",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Request:\nRewrite the field-camp update for the volunteer newsletter, using the short sample as a guide to the writer's voice. Preserve the actual observations and the limits of what the team knows. The sample is stylistic context, not additional field evidence. Return only the revised update.\n\nSource:\nVoice sample:\nWe carried the spare stakes all morning and used two. I was glad of the other six anyway. The ridge looks close from camp; by the time you reach it, you have usually revised your opinion of the map.\n\nDraft update:\nOn the first morning, the team found that the stream crossing marked on the route sheet was under water. The replacement route took forty minutes longer, and that mattered because the moth sheets had to be checked before the sun reached the clearing. We got there after it had reached the eastern sheet, although the other two were still in shade. The notes for that sheet now say late check. This is something we have recorded so that the count does not look directly comparable with the others, which were checked on time.\n\nWe counted fewer moths on the eastern sheet. That may have something to do with the late visit, but the sheet is also nearer the exposed edge of the clearing. We cannot decide between those explanations from one morning, or rule out another explanation. It would not be accurate to say the route change reduced the count, even though it certainly made us late. This was a frustrating start, but everyone kept the labels with the samples, which sounds like a small victory until a damp paper bag has lost its pencil mark.\n\nThe next two mornings we used the longer route and left earlier. All three sheets were checked in shade. Those mornings do not repair the first count; they give us two mornings with matching timing. We are leaving the first observation in the notebook with its warning attached. The spare bootlaces were used to secure a loose sheet corner, and the repair lasted. For the next visit we need another route sheet with the longer walk marked on it. We also need dry bags, which would have been a useful thing to remember before the rain rather than during it.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the late eastern-sheet check on the first morning and the on-time shaded checks of all three sheets on the next two mornings."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not convert the possible effects of timing or exposure on moth counts into an established cause, and does not invent later counts."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the first observation with its warning rather than implying it was deleted, repaired, or made comparable by later visits."
+        },
+        {
+          "group": "style",
+          "text": "Carries over the sample\u2019s concrete, mildly dry first-person field voice without copying its map anecdote into the update."
+        },
+        {
+          "group": "style",
+          "text": "Reduces repetitive uncertainty language while retaining the substantive uncertainty about the lower count."
+        },
+        {
+          "group": "argument",
+          "text": "Makes clear why route duration mattered for checking conditions and why earlier departures changed the later procedure."
+        },
+        {
+          "group": "style",
+          "text": "Integrates the practical requests and modest humor naturally, without turning the newsletter into a formal incident report."
+        }
+      ],
+      "quality_dimensions": [
+        "voice_fidelity",
+        "evidential_precision",
+        "narrative_cohesion",
+        "editorial_judgment"
+      ],
+      "source_words": 329,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-03",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Request:\nEdit this handover note for the next users of a community telescope. Improve readability and organization without making it sound like a product manual. Keep the writer's useful practical detail and avoid adding equipment specifications or troubleshooting steps.\n\nSource:\nThe telescope is back in the shed after the open evening. I left the small eyepiece case on the lower shelf because the top shelf is directly below the roof seam. There was no water in the shed last night, but that seam has dripped before. The two eyepieces used at the session are in their labelled slots. The third slot is empty because its eyepiece is away for cleaning, not because anyone has lost it.\n\nThe finder bracket was tightened before we packed up. Its alignment still needs checking against the main telescope at the start of the next session. Tightening the bracket stopped the movement we could feel; it did not establish that the finder was pointing at the same object. We used the bright star near the western roofline for the final check, but that sightline will not necessarily be useful at the time of your session.\n\nThe battery display showed two bars when we closed the shed. I do not know how much observing time that represents. The extension lead is hanging by the door, and the charger is beside the case. Please return the charger there when you finish so that the next group does not have to search for it in the dark.\n\nOne of the visitors suggested leaving the dust cap loose to make it easier to remove. We put it back properly before leaving, as usual. It can feel stiff at first. The note about that is here only because somebody may remember the suggestion and wonder whether we followed it. Finally, the sign-in book is dry, but the loose attendance sheet is still on the indoor drying rack. Please leave it there until the paper is dry enough to handle.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Retains the absent eyepiece\u2019s known cleaning status, the prior roof leak as the reason for shelf placement, and the absence of water last night."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps bracket stability distinct from finder alignment and requires a fresh alignment check without prescribing a new method."
+        },
+        {
+          "group": "fidelity",
+          "text": "Reports two battery bars without inventing a runtime estimate and preserves the charger\u2019s return location."
+        },
+        {
+          "group": "style",
+          "text": "Organizes the note so equipment readiness and items that need attention can be found easily while preserving an informal handover voice."
+        },
+        {
+          "group": "style",
+          "text": "Trims explanations only where their function is retained, including the reason for mentioning the dust-cap suggestion."
+        },
+        {
+          "group": "style",
+          "text": "Keeps the attendance sheet\u2019s drying instruction distinct from the already dry sign-in book."
+        }
+      ],
+      "quality_dimensions": [
+        "practical_readability",
+        "factual_fidelity",
+        "voice_preservation"
+      ],
+      "source_words": 289,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-04",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Request:\nRevise this reply from a repair cooperative to a household deciding whether to book a second dishwasher visit. Make the explanation and available choice clear, retaining a candid, non-sales tone. Do not add a diagnosis, price, or promise.\n\nSource:\nAt the first visit we replaced the split inlet hose and ran a short cycle. No water appeared beneath the machine during that cycle. You have since reported a puddle after a full wash. Those two observations do not conflict, although I can see why the first result made you expect the problem to be finished. A short test without a leak is a result about that test, and we should have explained that more clearly before leaving.\n\nThe photograph you sent shows water near the front left foot. It does not show where the water started. It might have travelled along the base before becoming visible. I have put the photograph with the job notes so that the next technician can use it, but it would be premature to name another part for replacement on that basis. The old hose was visibly split and needed replacing. That remains true even though it may not have been the only source of water.\n\nWe can offer a second visit to observe a full cycle. There will be no additional call-out charge; any further parts or work would be quoted before you decide. This does not mean that any repair found necessary is included in the first bill. It means the cost of coming out again is waived. If you prefer to pause, the original invoice and the notes from the first visit are available for another repairer.\n\nFor now, please leave the machine switched off and do not run another cycle to make a video for us. Your description and photograph are enough to arrange the visit. We have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine. The next visit is intended to narrow that down. It is your choice whether we carry it out, and we can send the available appointments if you want to proceed.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the split-hose replacement and leak-free short test without claiming that the full-wash problem was fixed or that the first repair was unnecessary."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the photograph\u2019s visible puddle location separate from an unconfirmed leak origin and leaves the possible relationships among faults unresolved."
+        },
+        {
+          "group": "fidelity",
+          "text": "States that the second call-out is free but additional parts or work require a quote and a decision, without implying free repairs."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the instruction to leave the machine off and not run a cycle to obtain video, plus the option to take records to another repairer."
+        },
+        {
+          "group": "style",
+          "text": "Combines repeated cautions where possible while keeping the different limits of the short test, photograph, and future visit."
+        },
+        {
+          "group": "argument",
+          "text": "Explains why observing a full cycle is a reasonable next diagnostic step without guaranteeing that it will resolve the fault."
+        },
+        {
+          "group": "style",
+          "text": "Maintains responsibility for the earlier unclear explanation and a non-pressuring choice for the household."
+        }
+      ],
+      "quality_dimensions": [
+        "causal_precision",
+        "commercial_fidelity",
+        "tone",
+        "whole_passage_coherence"
+      ],
+      "source_words": 317,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-05",
+      "split": "holdout",
+      "category": "research",
+      "task": "Request:\nRevise this findings passage for a hypothetical repair-service methods report. Give the discussion a clear progression while preserving the distinction between elapsed waiting and completed turnaround. All numerical summaries and definitions are supplied below. Do not fit a survival model, invent follow-up outcomes, or present the arithmetic bounds as confidence intervals. Return the revised passage.\n\nSource:\nWe began recording turnaround because customers wanted to know how long a repair would take. The first summary gave a mean of seven calendar days. That number was calculated correctly for the jobs that had finished, but it answered a narrower question than the one customers were asking. At the audit date, several jobs were still waiting for parts. Leaving them out because their final duration was unknown also left out waiting that had already happened.\n\nForty jobs entered the workshop during the six-week observation window. We audited every job at the same closing date, so later arrivals had shorter follow-up. Turnaround runs from intake to completion, including days spent waiting for parts. Twenty-four jobs had finished, with completed turnaround times totaling 168 days. The other sixteen were unfinished. Their ages at the audit date totaled 208 days. No job had been withdrawn, and the records contained intake dates for all forty. We did not treat the unfinished jobs as completed at their current ages.\n\nFor a summary of waiting already accumulated, the two totals can be added. The forty jobs had accumulated 376 days, or 9.4 days per job. If all eventually finish, their mean final turnaround cannot be below 9.4 days, since finishing the pending jobs cannot undo elapsed time. This is a lower bound, not an estimate that their eventual mean will equal 9.4. The available information gives no finite upper bound on how long those jobs might still take. If some never finish, a finite mean completion time for all forty is not established at all.\n\nThe service also reports completion within ten calendar days of intake. Eighteen of the completed jobs met that deadline and six did not. Of the sixteen pending jobs, twelve were already older than ten days; the other four were younger than ten days. Thus eighteen jobs were known to have met the deadline and eighteen were known to have missed it. Only four deadline outcomes remained unresolved. The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%, regardless of how much longer the already-late jobs take.\n\nThe report should retain the seven-day completed-job mean with its denominator, but it should not headline that mean as the experience of all arrivals. The accumulated-wait bound and deadline interval answer different questions and should retain their definitions. We have not compared repair types or estimated a parts-supply effect. Continuing the record until the remaining deadline outcomes are known would narrow the deadline interval; it would not necessarily finish every job or settle the mean turnaround.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves forty arrivals, a common audit date with unequal follow-up, twenty-four completed jobs totaling 168 days, and sixteen pending jobs with total age 208 days."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the seven-day mean conditional on completed jobs and the 9.4-day accumulated-wait mean as a lower bound on eventual all-job mean turnaround if all finish, not an imputed completion time."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains eighteen timely completions, six late completions, twelve pending jobs already older than ten days, and four pending jobs younger than ten days."
+        },
+        {
+          "group": "argument",
+          "text": "Explains why the final deadline fraction is bounded by 45% and 55% without presenting this deterministic interval as a confidence interval or a modeled estimate."
+        },
+        {
+          "group": "argument",
+          "text": "Distinguishes the absence of a finite upper bound on completion time from the bounded deadline outcome, including the possibility that some jobs never finish."
+        },
+        {
+          "group": "style",
+          "text": "Connects the customer question, incomplete follow-up, and complementary summaries in readable research prose without repeating a general warning in place of specific qualifications."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps follow-up as proposed and does not infer a parts-supply effect, repair-type comparison, or unobserved completion outcomes."
+        }
+      ],
+      "quality_dimensions": [
+        "censoring_semantics",
+        "denominator_fidelity",
+        "deterministic_bounds",
+        "scientific_exposition"
+      ],
+      "source_words": 429,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-06",
+      "split": "holdout",
+      "category": "research",
+      "task": "Request:\nEdit the following manuscript passage about a hypothetical seedling-protection study. Improve the exposition of the result and what can reasonably follow from it. Treat all numerical information as fixed. Do not supply literature references or claim to have reanalysed unavailable plot-level data.\n\nSource:\nWe tested whether small exclosures would improve seedling survival on a grazed slope. Twelve pairs of nearby plots were established, with one plot in each pair randomly assigned an exclosure and the other left open. Ten seedlings were planted in every plot. This gives a reason to compare treatments, but it does not make each seedling an independently assigned experimental unit. The assignment happened to plots within pairs. This distinction becomes important when considering how much certainty the totals can support.\n\nAt the final visit, flood damage made one enclosed plot and two open plots inaccessible. We could not determine whether the seedlings in those plots were alive. Among the plots we could inspect, 55 of 110 enclosed seedlings and 42 of 100 open seedlings survived. Thus observed survival was 50% and 42%, respectively. The eight-percentage-point difference refers to the accessible plots. We have not reported a survival estimate that includes the inaccessible plots, and an inaccessible plot has not been treated as a plot with no surviving seedlings.\n\nThe enclosed plots may therefore have benefited from protection, but the available totals do not establish how consistent the difference was across the original pairs. Some pairs no longer had both members observed. The final plot-by-plot counts are not available for this passage, so a paired uncertainty estimate cannot be reconstructed from the totals alone. Random assignment is a property of the original study and does not, by itself, settle the possible consequences of the missing final observations.\n\nWe also recorded browsing damage among survivors. Eight of the 55 surviving enclosed seedlings and 16 of the 42 surviving open seedlings had damaged shoots. These observations are compatible with reduced browsing under enclosure, but damage was assessed only in plants that remained alive. They cannot tell us how much of the survival difference was mediated by browsing, because damage to plants that died was not measured. It would be easy to merge the two results into one explanation, but the second measurement does not supply that causal link.\n\nFor a repeat visit we propose a protocol for recording flood exposure and locating displaced plot markers. This is a proposed improvement in follow-up, not evidence that flooding explains the missing seedlings or the treatment contrast. The present result should remain useful without being asked to answer those additional questions.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves twelve randomized plot pairs, ten seedlings per plot, and missing final outcomes for one enclosed and two open plots without coding them as deaths."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps 55/110 versus 42/100 and the eight-percentage-point contrast tied to accessible plots, with plots rather than seedlings as assignment units."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains browsing counts of 8/55 and 16/42 as measurements among survivors and does not turn them into a mediation estimate or observations on dead seedlings."
+        },
+        {
+          "group": "argument",
+          "text": "Explains the inferential roles of the original randomization, incomplete paired follow-up, and unavailable plot-level counts without portraying them as equivalent limitations."
+        },
+        {
+          "group": "argument",
+          "text": "Keeps the suggested flood/marker protocol separate from claims about seedling mortality or the treatment contrast, while retaining documented flood-related loss of access as the reason those final outcomes were unavailable."
+        },
+        {
+          "group": "style",
+          "text": "Reduces repeated warnings while retaining the specific qualification attached to each result."
+        },
+        {
+          "group": "style",
+          "text": "Makes the experimental design, accessible-sample result, and interpretation follow coherently without replacing the passage with an audit list."
+        }
+      ],
+      "quality_dimensions": [
+        "experimental_unit_fidelity",
+        "missing_data_scope",
+        "causal_precision",
+        "expository_flow"
+      ],
+      "source_words": 386,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-07",
+      "split": "holdout",
+      "category": "research",
+      "task": "Request:\nRevise this equipment-study excerpt for readers who understand astronomical imaging but have not seen the test. Keep necessary technical terminology and the distinction between measured performance and proposed practical benefit. This is an invented bench study with exactly the evidence given here; no outside citations are needed.\n\nSource:\nThe practical concern was whether cooling the camera would improve long exposures enough to justify carrying the cooling battery to the field. We began with a bench comparison of dark frames, which can address the detector background without addressing everything that determines an astronomical image. In particular, the test did not contain stars, a telescope, or a moving sky. The battery question motivated the test, but it was not measured by the test.\n\nWe used one camera and collected ten thirty-second dark frames at a measured detector temperature of 15 degrees Celsius, followed by ten at 5 degrees Celsius. Exposure time, gain setting, and the covered optical input were unchanged. The order was fixed, warm then cold. At each temperature we formed a median stack of the ten frames. Across pixels, the median value in that stack was 118 ADU in the warm condition and 104 ADU in the cold condition. A separately measured bias level was 100 ADU in both conditions. Subtracting that common level leaves medians of 18 and 4 ADU. These are background signal summaries, not measurements of read noise.\n\nUsing a threshold of 250 ADU on each median stack, 120 pixels exceeded the threshold when warm and 40 when cold. The threshold was applied to the raw stack values, before bias subtraction. We refer to these as threshold-exceeding pixels here; the test does not establish that each one is a permanent detector defect. Separate pairs of zero-exposure frames gave the same read-noise estimate, 3.1 electrons, at both temperatures. No conversion from ADU to electrons for the background summaries is supplied in this passage.\n\nThe cooler condition therefore had a lower measured dark-frame background and fewer threshold exceedances in this run. The fixed order means that temperature and time in the run were not independently varied. Repeating the sequence in both orders would help evaluate whether that matters. The present result is still a real contrast between the two recorded conditions, even though assigning all of it to temperature requires more than the design provides.\n\nIt would also be premature to report better stellar detection or better field endurance. Those outcomes were not tested. A field comparison could examine detection at matched exposure settings while logging battery use. That proposed comparison follows from the original practical concern, which the bench result narrows without settling.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the single-camera, fixed warm-then-cold order, ten thirty-second frames per temperature, and the 15-degree and 5-degree detector temperatures."
+        },
+        {
+          "group": "fidelity",
+          "text": "Maintains the distinction between median dark-background summaries in ADU and the separate 3.1-electron read-noise estimates, without inventing a gain conversion."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the 250-ADU threshold attached to raw median stacks and the 120-versus-40 counts distinct from proven permanent defects."
+        },
+        {
+          "group": "argument",
+          "text": "Relates the bench evidence to the field-use motivation without claiming improved stellar detection, battery endurance, or a fully isolated temperature effect."
+        },
+        {
+          "group": "style",
+          "text": "Retains legitimate imaging terminology and explains its role without replacing precise terms with misleading everyday synonyms."
+        },
+        {
+          "group": "style",
+          "text": "Integrates limitations near the claims they restrict instead of repeatedly restarting the discussion."
+        },
+        {
+          "group": "argument",
+          "text": "Presents reordered runs and the field comparison as proposed tests whose different purposes remain clear."
+        }
+      ],
+      "quality_dimensions": [
+        "measurement_semantics",
+        "technical_register",
+        "evidential_scope",
+        "argument_progression"
+      ],
+      "source_words": 387,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-08",
+      "split": "holdout",
+      "category": "research",
+      "task": "Request:\nRevise the draft discussion for a hypothetical document-service evaluation. Build a coherent argument that explains how the reported comparisons can all be correct while answering different questions. Use the synthetic voice sample only as a guide to tone. All evidence and the illustrative weighting calculation are supplied; do not invent tests, user feedback, randomization, or a preferred workload. Return the revised discussion.\n\nSource:\nVoice sample:\nA fast reply is useful when it reaches the question that was asked. We first counted replies because the system could count them for us. Reading the replies would have answered another question, and we had not yet done that work.\n\nDraft discussion:\nWe compared two routing methods for requests to a technical document service. Method A sends each request directly to a topic desk. Method B uses a shared intake team before assigning it. The practical question was whether shared intake could help the service respond promptly without using more staff time per request. Both methods operated during the same month, and each request went through only one method. This was a description of the service as operated, not a randomized comparison.\n\nAt intake, requests were classified as routine or complex using the same written rule, before their routing method was selected. Supervisors chose the route according to staff availability and the desks involved. Method A received 100 routine requests and 60 complex ones. Method B received 20 routine requests and 80 complex ones. The categories do not measure every difficulty a request can present. We have no finer difficulty scores, and requests within a category should not be assumed interchangeable merely because they share its name.\n\nThe recorded outcome was a substantive reply within two working days of intake. An automatic acknowledgement did not count. Method A met the deadline for 80 of its 100 routine requests and 18 of its 60 complex requests. Method B met it for 18 of its 20 routine requests and 32 of its 80 complex requests. All 260 requests had reached the deadline before the records were closed, and none had a missing deadline outcome. The totals are therefore 98 timely replies from 160 requests for A and 50 from 100 for B, giving 61.25% and 50%.\n\nThe pooled result favors A on this descriptive measure, but B has the higher fraction within each recorded category. The routine fractions are 80% for A and 90% for B. The complex fractions are 30% and 40%. This is not an arithmetic contradiction. The pooled fractions use different weights: routine work accounts for 100/160 of A's requests and 20/100 of B's. Combining the two category fractions using those different mixtures can reverse their overall ordering. Neither the totals nor the category results should be silently discarded to make the account tell only one story.\n\nAs an illustration, applying equal weights to the routine and complex fractions gives 55% for A and 65% for B. Those figures are calculated summaries for a hypothetical half-routine, half-complex mixture. They are not outcomes observed in two additional groups, and equal weighting was not selected because it matched a forecast of next month's workload. The illustration shows the consequence of holding the mixture fixed. It does not establish what would happen if requests were reassigned, since routing was chosen and unrecorded difficulty may still differ within the categories.\n\nStaff logged 48 hours of handling time for A and 35 for B. Dividing by their respective request counts gives 18 and 21 minutes per request. Handling time includes intake and desk work but excludes time waiting for a reply from the requester. It was not broken down by complexity. We therefore cannot combine category-specific deadline rates with category-specific costs, or claim that B requires three extra minutes for an otherwise identical request. The recorded averages describe the two actual workloads.\n\nNo one independently assessed whether the substantive replies were correct or sufficient for the requester. Meeting the deadline is a service outcome, but it is not a quality audit. The records also do not identify repeat requesters, so requests cannot be renamed as distinct people served. For the next evaluation we propose recording handling time by complexity and examining reply quality separately. The current comparison should present pooled performance, category performance, and the different workload mixtures together. It does not select a universally preferable routing method.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the mutually exclusive routing groups, category counts and timely-reply counts, complete deadline follow-up, and the two-working-day substantive-reply definition."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps pooled rates of 61.25% for A and 50% for B consistent with routine rates of 80% and 90% and complex rates of 30% and 40%, respectively."
+        },
+        {
+          "group": "argument",
+          "text": "Explains the reversal between pooled and category-specific rankings through the different workload weights without declaring either valid descriptive comparison erroneous."
+        },
+        {
+          "group": "fidelity",
+          "text": "Presents equal-weight rates of 55% and 65% as an illustrative hypothetical mixture, not new observations, a forecast, or an identified causal effect of reassignment."
+        },
+        {
+          "group": "argument",
+          "text": "Retains supervisor-selected routing and unmeasured within-category difficulty as limits on causal interpretation; classification occurred before routing."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps 48 and 35 handling hours and the corresponding 18 and 21 minutes per request tied to the actual workloads, with no complexity-specific costs or waiting time included."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps requests distinct from people, deadline success distinct from independently assessed reply quality, and the proposed additional evaluation separate from completed work."
+        },
+        {
+          "group": "style",
+          "text": "Uses a direct, reflective voice and a coherent passage-level argument without importing the voice sample as study evidence or forcing its wording into the discussion."
+        }
+      ],
+      "quality_dimensions": [
+        "aggregation_reasoning",
+        "workload_standardization",
+        "unit_of_analysis",
+        "long_passage_structure"
+      ],
+      "source_words": 657,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-09",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Request:\nRevise this recommendation to an archive's collections committee. Preserve the writer's proposed decision while making the reasons and treatment of the strongest objection convincing. Work with the stated estimates and uncertainties; do not invent demand data or new funding. Return a complete revised recommendation.\n\nSource:\nI recommend using the current allocation to rehouse the loose harbour records and to scan a small sample for evaluation, rather than committing this quarter to scanning the whole group. That recommendation can sound like a preference for work visitors cannot see. Rehousing is largely invisible, and the committee has good reason to want an improvement that people can actually use. It is also true that an image service could reduce the need to handle originals for some requests. Neither point makes the sequence of work unimportant.\n\nThe group contains folded sheets whose edges are catching on the existing wrappers. Staff have recorded this condition in the survey. The digitisation estimate assumes the sheets are flattened and stable enough to place safely on the imaging support. It does not include the time needed to bring them to that condition. The rehousing estimate includes sorting out the wrappers and referring the most fragile sheets to the conservator; it does not include treatment of every fragile sheet. We should not let either estimate imply that the difficult preparation is free.\n\nThe access argument deserves a better answer than saying the group receives few requests. The catalogue describes it in one broad entry. Low recorded use may partly reflect difficulty finding material, and a useful online sample might reveal interest we have not recorded. We cannot tell from the request count alone whether a full scanning programme would be little used. Equally, potential hidden demand is not yet a measured queue of users waiting for every sheet.\n\nA sample made from sheets cleared for imaging would let us test descriptions and image presentation while rehousing proceeds. It would not estimate the preparation time for the most fragile sheets, because those would be excluded. I propose that the committee ask for a revised full-project estimate after the sample and the condition review. This leaves the eventual digitisation decision open. The immediate choice is to fund work needed for safe access and obtain better information about the larger project. Calling that a delay is fair in calendar terms, but it should not obscure what the intervening work would accomplish.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the immediate recommendation for rehousing plus a limited cleared-sheet scan sample, with the full digitisation decision deferred rather than rejected."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the different omissions in the digitisation and rehousing estimates, without representing either as covering all conservation preparation or treatment."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the sample\u2019s exclusion of fragile sheets and the resulting inability to estimate their preparation time from that sample."
+        },
+        {
+          "group": "argument",
+          "text": "Answers the strongest access objection substantively, recognizing that low requests under a broad catalogue entry need not show low underlying demand."
+        },
+        {
+          "group": "argument",
+          "text": "Explains why preparation and the sample support the recommended sequence without treating unmeasured demand as demonstrated or invisible work as automatically superior."
+        },
+        {
+          "group": "style",
+          "text": "Creates a continuous recommendation with reasons and an intelligible decision point, rather than a series of rebuttal fragments."
+        },
+        {
+          "group": "style",
+          "text": "Keeps the writer\u2019s candid acknowledgement of calendar delay and the committee\u2019s legitimate interest in visible access improvements."
+        }
+      ],
+      "quality_dimensions": [
+        "argument_structure",
+        "fair_objection_handling",
+        "estimate_scope",
+        "decision_clarity"
+      ],
+      "source_words": 354,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-10",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Request:\nEdit this short position statement for discussion at a repair cooperative. Keep its advocacy and informal seriousness, but strengthen the reasoning where the draft jumps between practical and fairness concerns. Do not add evidence that the proposed scheme already works.\n\nSource:\nWe should try a loan pool for households waiting for a washing-machine repair. At present, the workshop can diagnose a machine quickly and still leave its owner waiting for a part. The gap between those two events is the problem the pool would address. It would not shorten the supplier's delivery time, and it should not be advertised as doing so. I want us to test whether we can make the wait more manageable without making promises the workshop cannot keep.\n\nSix refurbished machines are available for a twelve-week trial. Transport insurance for the trial has already been approved. We have not yet costed the staff time for delivery, collection, and cleaning between loans. That is a reason to keep the trial small and record that time. It is not a reason to pretend the machines are free simply because we already own them. A loan would also be a poor answer for a household where the available machine cannot fit the space or connect safely. Eligibility cannot guarantee suitability.\n\nI favour making the pool open to all customers with a repair booked, while offering delivery-fee assistance according to need. A universal opening rule would avoid asking people to establish hardship before they can even ask about a loan. Fee assistance would still require a separate conversation. These are two different decisions, and combining them into a single test would make the first harder than it needs to be. If demand exceeds six machines, we would need an allocation rule agreed before launch; this statement does not settle that rule.\n\nThe older loan machines may cost more to run than some of the machines being repaired. That objection is real, especially for people already struggling with bills. A short loan is a possible bridge, not proof that running costs do not matter. We should explain the known running information for each available machine and let the household decide. At the end of twelve weeks, the cooperative should review actual use, staff time, and reported difficulties before deciding whether to continue. We do not have those results yet.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps the six-machine, twelve-week proposal and approved transport insurance separate from uncosted staff work and unknown trial outcomes."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves open eligibility for customers with booked repairs, need-based delivery assistance, and an allocation rule still to be agreed if demand exceeds supply."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not promise shorter parts delays, universal physical suitability, lower running costs, or successful performance of the scheme."
+        },
+        {
+          "group": "argument",
+          "text": "Connects the repair-wait problem to the loan proposal and explains why a bounded trial is justified despite unresolved costs."
+        },
+        {
+          "group": "argument",
+          "text": "Makes the fairness rationale for separating access eligibility from fee assistance understandable while retaining the genuine administrative and capacity limits."
+        },
+        {
+          "group": "style",
+          "text": "Preserves clear advocacy and the conversational cooperative voice without inflating the proposal into a general solution to appliance access."
+        },
+        {
+          "group": "argument",
+          "text": "Treats higher running costs as a substantive objection requiring information and choice, not an objection dismissed merely because the loan is temporary."
+        }
+      ],
+      "quality_dimensions": [
+        "practical_argument",
+        "fairness_reasoning",
+        "proposal_evidence_boundary",
+        "voice"
+      ],
+      "source_words": 347,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-11",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Request:\nRevise this opinion piece for a water cooperative's member bulletin. Preserve the recommendation and the competing fairness principle, making the numerical example and the argument easier to follow. All figures are hypothetical annual figures. Do not introduce a legal requirement, predicted demand response, or information about members' incomes.\n\nSource:\nThe cooperative has a one-off surplus of \u00a31,200 to return across 100 household accounts. I favour a \u00a312 credit on each account. The alternative under discussion is to reduce the volumetric charge on this year's total of 20,000 cubic metres, which would give a reduction of \u00a30.06 per cubic metre. Both approaches return the same \u00a31,200 on the stated figures. The fact that they add to the same total does not mean they answer the same question about fairness.\n\nA household using 40 cubic metres would receive \u00a32.40 under the volumetric reduction. One using 300 would receive \u00a318. Under the equal-credit approach both would receive \u00a312. That difference is why I prefer the credit. It gives each account an equal share of a surplus earned by a member-owned service, and it leaves the price of an additional cubic metre unchanged. It does not mean every household would see the same percentage reduction in its bill. Their bills and water use differ.\n\nThe strongest case for the volumetric option is that people who bought more water paid more in volume charges, so returning money in proportion to purchases looks like a refund. That is a reasonable principle. My preference rests on treating this particular surplus as a common benefit rather than as the correction of an identified overcharge. The surplus has not been traced to an error on any account. We should say which principle we choose instead of making the other one sound arithmetically confused.\n\nEqual credits are not the same as targeted help. We do not have income or household-size information in this proposal. A low-use account is not necessarily a low-income household, and a high-use account may serve more people. I am not claiming that a \u00a312 credit reaches those in greatest need. Nor have we estimated whether a temporary volume-price reduction would change use. Keeping the marginal price unchanged preserves the current price schedule; it does not demonstrate a conservation effect. The case for the credit is modest but sufficient: equal treatment of accounts for a one-off common surplus, without revising the usage rate to accomplish it.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the \u00a31,200 surplus, 100 accounts, 20,000 cubic metres, \u00a312 equal credit, and \u00a30.06 volume reduction, with correct \u00a32.40 and \u00a318 example refunds."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the equal-credit recommendation as a one-off decision and does not turn it into an ongoing tariff change or an identified-overcharge correction."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps account equality distinct from percentage bill equality, household need, and household size, without inventing demographic information."
+        },
+        {
+          "group": "argument",
+          "text": "Explains both common-benefit and purchase-proportional refund principles fairly and locates the preference in a normative choice rather than an arithmetic advantage."
+        },
+        {
+          "group": "argument",
+          "text": "Keeps unchanged marginal price distinct from an empirically demonstrated reduction in consumption."
+        },
+        {
+          "group": "style",
+          "text": "Integrates the examples into the reasoning so the arithmetic advances the comparison instead of interrupting it."
+        },
+        {
+          "group": "style",
+          "text": "Reduces repeated defensive phrasing without dropping the material limits on distributional or conservation claims."
+        }
+      ],
+      "quality_dimensions": [
+        "normative_clarity",
+        "numerical_fidelity",
+        "counterargument_fairness",
+        "qualification_placement"
+      ],
+      "source_words": 350,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-12",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Request:\nRevise this fieldwork planning note into a clear argument for the stated scheduling proposal. Keep the disagreement respectful and preserve the practical constraints. Do not resolve the debate by inventing extra volunteers, funding, or evidence about animal behaviour.\n\nSource:\nI propose that we alternate which six of the eight shoreline sectors we survey on each visit, using the same observation protocol in every sector we reach. Our present daylight window allows six sectors at the required pace. Trying to fit eight into it has led to rushed notes at the last stops. That is recorded in the visit logs. We should stop writing a schedule which only works if the final sectors receive a different kind of visit from the first ones.\n\nThere is a serious objection. The coordinator wants every sector covered on every visit because a missed sector can contain a short-lived nesting event. Alternating coverage would create planned gaps, and the logs cannot tell us how many events those gaps would miss. The rushed visits are still visits, and it would be wrong to pretend they provide no information. The choice is between different losses, not between a complete record and an empty one.\n\nOne suggestion is to split the team into pairs and run two routes. We already work in pairs under the group's shoreline safety protocol, and only two trained observers are available on these visits. Splitting those two would change that protocol. Adding a second pair could change the scheduling calculation, but there is no second trained pair available for the coming month. It is a useful future option rather than an answer to the next four visits.\n\nFor those four visits, I suggest publishing the rotation in advance and marking unvisited sectors explicitly in the record. The rotation should give each sector three visits across the month. This is feasible because four visits with six sectors each provide twenty-four sector visits in total. A planned absence would then be distinguishable from a visit on which no nest was recorded. It would still be an absence. At the end of the month we could review whether the notes were more complete and whether additional staffing had become possible. That review would not recover events missed during gaps, but it would let us reconsider the schedule with a clearer account of what we had done.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves eight sectors, capacity for six per visit, four upcoming visits, and the proposal for three visits per sector across that month."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the two-observer paired safety constraint and the absence of a second trained pair, without inventing staffing or authorizing solo routes."
+        },
+        {
+          "group": "fidelity",
+          "text": "Maintains the distinction between unvisited sectors and visited sectors with no recorded nest, and does not claim that later review recovers missed events."
+        },
+        {
+          "group": "argument",
+          "text": "Acknowledges the genuine risk of missing short-lived events and the information retained by rushed visits instead of portraying the alternative as worthless."
+        },
+        {
+          "group": "argument",
+          "text": "Uses the feasible scheduling totals to support a rotation while preserving that the proposal trades forms of information loss rather than eliminating loss."
+        },
+        {
+          "group": "style",
+          "text": "Makes the operational constraint, objection, and bounded proposal progress clearly without manufacturing a consensus."
+        },
+        {
+          "group": "style",
+          "text": "Keeps the tone respectful and practical, with the documented rushed notes distinguished from unmeasured effects on event detection."
+        }
+      ],
+      "quality_dimensions": [
+        "constraint_reasoning",
+        "tradeoff_fidelity",
+        "argument_cohesion",
+        "professional_tone"
+      ],
+      "source_words": 351,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-13",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Request:\nRewrite this mathematical passage for an equipment scheduling appendix. Preserve the exact return period, reachable-slot description, and edge cases, while making the compressed divisibility argument readable. The schedule is an idealized model, not a measured hardware property. You may use the elementary fact that coprime integers u,v admit integers a,b with au+bv=1.\n\nSource:\nA recorder has n labeled memory slots, numbered 0 through n\u22121, where n is a positive integer. Starting at slot a, with 0 \u2264 a < n, it advances by a fixed integer s \u2265 0 after every write. Write x_k for the residue of a+ks modulo n, with k \u2265 0. A return means x_k=a for a positive k, not merely that two numerical representatives look similar. Let g=gcd(n,s), taking gcd(n,0)=n. We claim that the least positive return time is n/g, and that the visited slots are exactly those congruent to a modulo g. There are g disjoint cycles across all starting slots.\n\nPut n=gn' and s=gs', so gcd(n',s')=1. A return after k steps occurs exactly when n divides ks, or equivalently when n' divides ks'. Coprimality implies that n' then divides k. To justify that implication, choose integers u,v with un'+vs'=1 and multiply by k. Both terms on the left are divisible by n' when n' divides ks'. Conversely k=n' does give a return. Thus no smaller positive step count works.\n\nThe first n' visited residues are distinct: equality at two indices would make their positive difference, less than n', a return step count. Every visited residue is congruent to a modulo g because both s and n are multiples of g. Exactly n/g slots have that congruence, so the distinct visited residues exhaust them. The g congruence classes partition the slots and give the claimed cycles.\n\nWhen s=0, the return time is one and every cycle is a single slot. When n=1, there is only slot zero regardless of s. No step in the argument divides by s, assumes that s<n, or treats rotations of the labeled slots as a new schedule.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves n as a positive integer, s as a nonnegative integer, labeled residues, and a starting slot in the stated range."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains least positive return time n/gcd(n,s), the exact reachable congruence class, and the number of disjoint cycles."
+        },
+        {
+          "group": "proof",
+          "text": "Explains the equivalence of returning and divisibility and justifies cancellation of the coprime factor using the supplied integer identity or equivalent elementary reasoning."
+        },
+        {
+          "group": "proof",
+          "text": "Establishes both that n/g is a return time and that no smaller positive return time is possible."
+        },
+        {
+          "group": "proof",
+          "text": "Justifies distinctness before the first return and exhaustion of the congruence class, rather than only showing that visits remain inside it."
+        },
+        {
+          "group": "proof",
+          "text": "Handles s=0, n=1, and step sizes at least n without division by zero or an added restriction."
+        },
+        {
+          "group": "style",
+          "text": "Presents a connected proof with intermediate relations made explicit and keeps the mathematical scheduling model separate from claims about physical equipment."
+        }
+      ],
+      "quality_dimensions": [
+        "divisibility_reasoning",
+        "minimal_period",
+        "edge_cases",
+        "proof_readability"
+      ],
+      "source_words": 285,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-14",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Request:\nRevise this finite-probability proof for a methods appendix about paired synthetic labels. Explain the construction and its optimality without adding independence to the coupling being optimized. Preserve zero-probability labels and both boundary cases. Use the supplied finite sums rather than citing a coupling theorem in place of the argument.\n\nSource:\nLet p_1,...,p_m and q_1,...,q_m be probability vectors on the same m labeled outcomes, where m \u2265 1. Entries may be zero. A coupling is an array J_ij \u2265 0 whose row sums are p_i and column sums are q_j. It describes two labels U,V on a common probability space, and their agreement probability is \u03a3_i J_ii. We claim that the largest possible agreement is\n\n\u03a3_i min(p_i,q_i) = 1 \u2212 (1/2)\u03a3_i |p_i\u2212q_i|.\n\nFor any coupling, J_ii cannot exceed either its row sum or its column sum. Adding these bounds gives the upper bound. To attain it, put c_i=min(p_i,q_i), \u03b1_i=p_i\u2212c_i, \u03b2_i=q_i\u2212c_i, and r=1\u2212\u03a3_i c_i. Both residual vectors have sum r, and \u03b1_i\u03b2_i=0 for every label i. These residuals refer to unused probability mass, not negative observations.\n\nIf r>0, define\n\nJ_ij = c_i 1{i=j} + \u03b1_i\u03b2_j/r.\n\nSumming over j gives c_i+\u03b1_i=p_i, and summing over i gives c_j+\u03b2_j=q_j. All entries are nonnegative. Its diagonal is exactly c_i because the residual product at the same label is zero. Thus the construction attains the upper bound. The residual product is a device for constructing one joint distribution; it does not say every coupling, or even this entire mixture, has independent coordinates.\n\nIf r=0, use only J_ii=p_i=q_i and set the other entries to zero. There is no residual division. Finally |p_i\u2212q_i|=p_i+q_i\u22122c_i, and summing proves the alternative formula. When the distributions have disjoint supports, every c_i is zero and the largest agreement is zero. Zero entries and a one-label space require no change to the statement. The comparison optimizes how the two labels are paired while keeping each marginal distribution fixed; it does not change either probability vector.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves finite labeled probability vectors with possible zero entries, fixed marginals, and optimization over all nonnegative coupling arrays."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains both equivalent formulas for maximum agreement without assuming independent coordinates."
+        },
+        {
+          "group": "proof",
+          "text": "Justifies the diagonal upper bound from row and column sums and shows why attaining it establishes optimality."
+        },
+        {
+          "group": "proof",
+          "text": "Verifies nonnegativity, both marginals, and the diagonal of the proposed construction using the equal residual totals and \u03b1_i\u03b2_i=0."
+        },
+        {
+          "group": "proof",
+          "text": "Handles r=0 without division, disjoint supports, and a one-label space consistently."
+        },
+        {
+          "group": "proof",
+          "text": "Derives the absolute-difference formula by summing the pointwise minimum identity or equivalent explicit algebra."
+        },
+        {
+          "group": "style",
+          "text": "Connects the upper bound, construction, and boundary cases as a self-contained proof without confusing the residual product with a required independence assumption."
+        }
+      ],
+      "quality_dimensions": [
+        "coupling_construction",
+        "optimality",
+        "marginal_fidelity",
+        "boundary_cases"
+      ],
+      "source_words": 270,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-15",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Request:\nEdit this counting proof for a synthetic data-checking appendix. Explain why the completion procedure is consistent and why it counts each array exactly once. Preserve arbitrary prescribed row and column parities, all positive dimensions, and the zero-count case. Return a self-contained statement and proof rather than a general coding-theory discussion.\n\nSource:\nLet r,c be positive integers. Consider r-by-c arrays whose entries are either zero or one. Prescribe row parities a_1,...,a_r and column parities b_1,...,b_c, each also zero or one. A row has parity a_i when its entry sum is congruent to a_i modulo two; columns are defined in the same way. We count labeled arrays, so permuting rows or columns generally changes the array. We claim that the number is zero if\n\n\u03a3_i a_i \u2262 \u03a3_j b_j (mod 2),\n\nand otherwise is 2^((r\u22121)(c\u22121)).\n\nNecessity follows because adding all row sums and adding all column sums count the same entries. Suppose the parity totals agree. Choose the upper-left (r\u22121)-by-(c\u22121) block freely. There are 2^((r\u22121)(c\u22121)) choices. For each of the first r\u22121 rows, its last entry is uniquely determined by the required row parity. For each of the first c\u22121 columns, its last entry is uniquely determined by the required column parity. These two steps fill disjoint parts of the border.\n\nOnly the bottom-right entry remains. Choose it to make the last row have parity a_r. We must still check the last column; it is not an independent free choice. Once every row has its prescribed parity, the parity of the total array sum is \u03a3_i a_i. The first c\u22121 columns already have total parity \u03a3_(j<c) b_j. Subtracting their contribution modulo two and using equality of the prescribed totals shows that the last column has parity b_c.\n\nEvery freely chosen block therefore has exactly one valid completion. Conversely, restricting any valid array to that block recovers its free choice, and the same parity requirements force its border. This is a bijection, so the number of block choices is the number of arrays. If r=1 or c=1, the free block has no entries and one choice. The border argument still works with empty sums interpreted as zero, including r=c=1.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves labeled binary arrays, positive integer dimensions, arbitrary binary prescribed parities, and the stated modulo-two compatibility condition."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains zero arrays for incompatible totals and exactly 2^((r\u22121)(c\u22121)) arrays when compatible."
+        },
+        {
+          "group": "proof",
+          "text": "Establishes necessity by counting the same total entry sum by rows and by columns."
+        },
+        {
+          "group": "proof",
+          "text": "Shows that each chosen interior block uniquely forces the two disjoint border portions and then the final entry."
+        },
+        {
+          "group": "proof",
+          "text": "Checks the remaining column constraint from total parity rather than assuming that the two requirements for the corner automatically agree."
+        },
+        {
+          "group": "proof",
+          "text": "Establishes the bijection in both directions and covers one-row, one-column, and one-entry arrays without counting empty blocks as having zero choices."
+        },
+        {
+          "group": "style",
+          "text": "Explains the purpose of each completion step in connected prose, with sufficient equations or explicit parity relations to make the consistency argument checkable."
+        }
+      ],
+      "quality_dimensions": [
+        "finite_counting",
+        "compatibility",
+        "bijective_completion",
+        "degenerate_dimensions"
+      ],
+      "source_words": 305,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-16",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Request:\nRepair and rewrite this matrix-perturbation proof for an instrument reconstruction appendix. The source expressly flags an invalid invertibility inference. Replace it using the given norm hypothesis and elementary finite-dimensional linear algebra, preserving both quantitative bounds. Do not assume symmetry, commuting matrices, or a smaller perturbation than stated. Return a self-contained statement and proof.\n\nSource:\nLet A be an invertible real d-by-d matrix, with d \u2265 1, and let H be any real d-by-d matrix. All vector norms are Euclidean, and matrix norms are their induced operator norms. Put E=A^(\u22121)H and \u03b4=||E||, and assume \u03b4<1. We claim that B=A+H is invertible and\n\n||B^(\u22121)\u2212A^(\u22121)|| \u2264 [\u03b4/(1\u2212\u03b4)] ||A^(\u22121)||.\n\nFor any vector b, let x=A^(\u22121)b. Once invertibility of B is established, write x_tilde=B^(\u22121)b. We also claim\n\n||x_tilde\u2212x|| \u2264 [\u03b4/(1\u2212\u03b4)] ||x||.\n\nThe statements concern a change in the matrix with the same right-hand side. They do not assume a measured true signal or an empirical error distribution.\n\nWe have B=A(I+E). The draft says that I+E must be invertible because I is invertible. That inference is invalid without using the perturbation hypothesis. The missing step must establish invertibility and justify the quantitative estimate ||(I+E)^(\u22121)|| \u2264 1/(1\u2212\u03b4). You may use the fact that an injective linear map from R^d to itself is surjective. No inverse of I+E may be used before its existence is proved.\n\nAfter that step, the order of the factors matters. Write\n\nB^(\u22121)=(I+E)^(\u22121)A^(\u22121),\nB^(\u22121)\u2212A^(\u22121)=\u2212(I+E)^(\u22121)EA^(\u22121).\n\nThe second identity follows from (I+E)^(\u22121)\u2212I=\u2212(I+E)^(\u22121)E. Applying submultiplicativity gives the first bound. Also x_tilde=(I+E)^(\u22121)x, so\n\nx_tilde\u2212x=\u2212(I+E)^(\u22121)Ex,\n\nwhich gives the solution bound. If \u03b4=0, then H=0 and both differences vanish. If b=0, both solutions are zero; this case does not require dividing by ||x||. The coefficient \u03b4/(1\u2212\u03b4) in the solution bound is attained when H=\u2212\u03b4A with 0<\u03b4<1 and b is nonzero.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves invertible A, arbitrary H, the induced Euclidean operator norm, and \u03b4=||A^(\u22121)H||<1 without adding symmetry or commutativity."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the inverse-difference and same-right-hand-side solution bounds with coefficient \u03b4/(1\u2212\u03b4)."
+        },
+        {
+          "group": "proof",
+          "text": "Repairs the invalid inference by proving invertibility of I+E using the norm hypothesis, and establishes its inverse norm bound without circular use of an unproved inverse."
+        },
+        {
+          "group": "proof",
+          "text": "Keeps the order in B=A(I+E) and B^(\u22121)=(I+E)^(\u22121)A^(\u22121) correct and justifies the inverse-difference identity."
+        },
+        {
+          "group": "proof",
+          "text": "Derives both quantitative estimates from valid norm inequalities and relates the solution perturbation to x rather than assuming x_tilde=x."
+        },
+        {
+          "group": "proof",
+          "text": "Handles \u03b4=0 and b=0 without division by zero and verifies the stated attainment example for positive \u03b4 and nonzero b."
+        },
+        {
+          "group": "style",
+          "text": "Integrates the repaired step into a connected mathematical proof rather than preserving the invalid inference as a valid step."
+        },
+        {
+          "group": "style",
+          "text": "Explains the role of the perturbation condition and factorization without expanding the result into unsupported empirical calibration claims."
+        }
+      ],
+      "quality_dimensions": [
+        "bounded_gap_repair",
+        "matrix_factor_order",
+        "operator_norm_bounds",
+        "sharpness"
+      ],
+      "source_words": 236,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-17",
+      "split": "holdout",
+      "category": "control",
+      "task": "Request:\nGive this already reviewed archive-guide passage a light copyedit. Preserve its professional voice and technical distinctions. Change wording only where there is a concrete readability or correctness gain; returning sound passages unchanged is welcome. Return the full passage.\n\nSource:\nThe photographs are arranged in the order in which the albums reached the archive. Within each album, the original sequence has been retained. This arrangement preserves evidence about how the collection was assembled, even where the date of an individual photograph is uncertain. A chronological search view is available through the catalogue, but it does not change the physical order of the albums.\n\nDescriptions distinguish information written on a photograph from information supplied later. A date transcribed from the reverse appears in the inscription field. A date proposed by the cataloguer appears in the estimated-date field, together with the basis for the estimate. These fields can disagree without either field having been recorded incorrectly. Readers should use the source of each statement when deciding what weight to give it.\n\nThe online images are access copies. Some show the full album page, including mounts and handwritten annotations; others show an individual photograph where the page could not be imaged safely. The image description identifies which kind of view is displayed. Absence of an annotation from an individual-image view does not establish that the album page carries no annotation.\n\nRequests to consult the originals are assessed by condition. Digitisation has made more of the collection visible, but it has not made every album safe to open. If a requested page cannot be served, staff can explain the restriction and identify any available access copy. They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves original physical arrangement separately from the chronological catalogue search view."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps transcribed inscriptions distinct from later estimated dates and does not resolve a possible disagreement by treating one field as necessarily erroneous."
+        },
+        {
+          "group": "fidelity",
+          "text": "Maintains the difference between full-page and individual-image views and the limit on inferring absent annotations from the latter."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains condition-based access and the possibility that an access copy cannot answer questions about physical features."
+        },
+        {
+          "group": "style",
+          "text": "Exercises copyediting restraint on an already coherent passage, accepting unchanged wording where no concrete improvement is needed."
+        },
+        {
+          "group": "style",
+          "text": "Preserves useful archival terminology and substantive contrasts instead of treating their form as an automatic style defect."
+        }
+      ],
+      "quality_dimensions": [
+        "editorial_restraint",
+        "technical_distinctions",
+        "factual_fidelity"
+      ],
+      "source_words": 253,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-18",
+      "split": "holdout",
+      "category": "control",
+      "task": "Request:\nLightly edit this equipment-club column for clarity while preserving the writer's personal voice. The editor has explicitly approved the deliberate humor and the conversational asides. There is no requirement to change a passage that already reads well. Return the column, not a critique.\n\nSource:\nI bought the smaller mount because I wanted to observe on evenings when carrying the larger one felt like a separate hobby. The new mount is easier to lift, but its counterweight still has to come along. Apparently gravity declined my request for a luggage allowance. I now carry the weight in a separate bag and make two trips from the door.\n\nThat arrangement has been useful for short sessions. I can set the tripod down before bringing out the telescope, and I am less tempted to balance everything against the doorframe. It has not made the equipment suitable for every surface. On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad. Portability and stability are related decisions, but they are not interchangeable measurements.\n\nI also kept the old hand controller. Its buttons are easy to find with gloves on, and I already know which menu contains the alignment check. A phone interface might suit someone else. For me, replacing a familiar controller would add another thing to learn during the part of the evening when I would rather look through the eyepiece.\n\nThese are observations from my own setup, not a comparison test between mounts. I have used the smaller one on five evenings, all in light wind. The useful result so far is that I have gone outside more often. Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session, with the appropriate equipment and conditions.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the smaller mount\u2019s easier lifting, the continuing need for its counterweight, and the two-trip arrangement."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the account limited to five light-wind evenings with the writer\u2019s own setup, without inventing tracking comparisons or performance under heavier loads."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the old controller as a personal usability preference and leaves other users\u2019 interface preferences open."
+        },
+        {
+          "group": "style",
+          "text": "Retains the explicitly approved gravity/luggage joke and the writer\u2019s understated conversational asides, without converting them into formal equipment guidance."
+        },
+        {
+          "group": "style",
+          "text": "Preserves the legitimate distinction between portability and stability and the practical soft-ground observation."
+        },
+        {
+          "group": "style",
+          "text": "Uses restraint where the source is already clear and does not manufacture changes to demonstrate editing effort."
+        },
+        {
+          "group": "argument",
+          "text": "Keeps more frequent personal use distinct from a controlled demonstration of superior mount performance."
+        }
+      ],
+      "quality_dimensions": [
+        "voice_preservation",
+        "approved_humor",
+        "evidence_scope",
+        "editorial_restraint"
+      ],
+      "source_words": 258,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-19",
+      "split": "holdout",
+      "category": "control",
+      "task": "Request:\nCheck this field-report passage for readability and make only edits you can justify from the text. Its cautions have been reviewed by the field team and should retain their substance. Do not add management recommendations or evidence. Return the full passage; unchanged prose is acceptable where it is already clear.\n\nSource:\nWe found three active burrows along the accessible section of the dune after the storm. Each had fresh tracks at its entrance on both survey mornings. We use active here to describe that observed sign. We did not enter the burrows or confirm the presence of young, so the count should not be read as a count of breeding pairs.\n\nThe northern section was closed because the access path had collapsed. It was not surveyed from another route. The map therefore marks that section as unobserved, rather than showing it with zero burrows. This distinction matters when comparing the map with the survey made before the storm, which covered the full dune. The two maps have different observation footprints.\n\nWithin the area covered on both occasions, one previously recorded entrance was no longer visible. Sand covered its mapped location. We cannot determine from the surface record whether the burrow was destroyed, remained occupied beneath the deposit, or had been abandoned before the storm. The timing of the surveys places the change between visits; it does not identify when an animal left or what caused it to leave.\n\nPhotographs were taken from the same marked viewpoints where those viewpoints remained accessible. Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland. Its caption records that change. The photographs support the descriptions of visible surface conditions. They do not extend the burrow count into the closed section or resolve the status of the covered entrance.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps three active burrows defined by fresh tracks on both mornings and does not equate them with confirmed breeding pairs or young."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the closed northern section as unobserved and the differing footprints of the pre-storm and post-storm surveys."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the unresolved status of the covered entrance and does not infer destruction, abandonment timing, or storm causation from the surface observations."
+        },
+        {
+          "group": "fidelity",
+          "text": "Maintains two matched photographic viewpoints and one farther-inland viewpoint, with photographs limited to visible conditions."
+        },
+        {
+          "group": "style",
+          "text": "Preserves distinct cautions tied to activity, spatial coverage, chronology, and photographic comparability instead of compressing them into a vague general disclaimer."
+        },
+        {
+          "group": "style",
+          "text": "Recognizes the source\u2019s existing coherent progression and accepts unchanged prose when editing would bring no concrete gain."
+        }
+      ],
+      "quality_dimensions": [
+        "caveat_fidelity",
+        "observation_scope",
+        "causal_restraint",
+        "minimal_editing"
+      ],
+      "source_words": 250,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-a-20",
+      "split": "holdout",
+      "category": "control",
+      "task": "Request:\nOnly revise the second paragraph of this appliance-service note to clarify which component each pronoun refers to. Return the full note, keeping the first, third, and fourth paragraphs verbatim. Preserve the sequence and all findings. Do not broaden the task into a general style rewrite or diagnose an additional fault.\n\nSource:\nThe refrigerator was inspected after a report that its cabinet light stayed off when the door opened. The cooling compartment was at the requested setting during the visit. That observation was recorded separately from the lighting fault. The customer asked us to restore the light and to explain whether the stored shelves would need to be removed for the work.\n\nThe technician removed the lamp cover and placed it beside the replacement lamp. It was cracked along one edge, but it was intact. The cracked item was the old cover; the intact item was the replacement lamp. Before fitting it, the technician checked the socket and cleaned its contacts. Here the item being fitted was the replacement lamp, and the contacts belonged to the socket. It then lit when the door switch was released. The cracked cover was kept off the appliance, and a new cover was ordered.\n\nThe shelves remained in place throughout the visit. The customer was shown the light working and was told that the ordered cover would require another short appointment. No date was promised because the supplier had not confirmed dispatch. The order reference was added to the service record, and the customer received a copy of that record.\n\nThe follow-up visit is for fitting the cover and checking the light again. If the light stops working before then, the customer should contact the workshop rather than remove the lamp or socket. The present note records what was observed and done during this visit; it does not establish how long the replacement lamp will last.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps the first, third, and fourth paragraphs verbatim, as explicitly requested."
+        },
+        {
+          "group": "fidelity",
+          "text": "Identifies the old lamp cover as cracked, the replacement lamp as intact and fitted, and the cleaned contacts as belonging to the socket."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves removal of the cover, inspection and cleaning before fitting the replacement lamp, successful lighting on release of the door switch, and the cover order."
+        },
+        {
+          "group": "style",
+          "text": "Repairs the second paragraph\u2019s ambiguous pronouns using clear component references rather than retaining contradictory unsupported referents."
+        },
+        {
+          "group": "style",
+          "text": "Integrates the clarifying information into the service account without unnecessary repetition of editorial explanations about what each pronoun means."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not invent a cooling fault, additional repair, dispatch confirmation, visit date, or lamp-lifetime guarantee."
+        },
+        {
+          "group": "style",
+          "text": "Respects the limited edit scope rather than smoothing or rephrasing already sound surrounding paragraphs."
+        }
+      ],
+      "quality_dimensions": [
+        "scope_control",
+        "referent_clarity",
+        "sequence_fidelity",
+        "editorial_restraint"
+      ],
+      "source_words": 260,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-01",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Revise this internal transport notice so dispatchers can follow the decision and its exceptions on a first reading. Preserve the practical, matter-of-fact tone and all operational commitments. Return the revised notice, not an editing plan.\n\nSource to revise:\nStarting on the first Monday of the autumn timetable, the westbound museum shuttle will leave the library at 18:10 instead of 18:00 on weekdays. The change is being made because the evening class now finishes at 18:00, although it is not a promise to hold the shuttle until every class has finished. The library stop is where the change begins. The earlier stops on the same vehicle's inbound trip keep their present times.\n\nThe dispatch trial covered six evenings. On four of them, moving the departure allowed the class passengers to board without delaying arrival at the station beyond 18:32. On the other two, roadworks delayed both the old departure and the trial departure, according to the paired journey estimates. Those estimates came from vehicle logs rather than two shuttles running alongside one another. This does not establish that the later departure has no effect on arrival, which is why it is a trial and why the time will be checked.\n\nA driver who reaches the library early should wait for 18:10. If the class is still inside at 18:10, the driver should leave. This also applies when a member of staff says the class is nearly finished. Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance; that existing rule is unchanged. It should not be understood to include waiting for someone still in the building.\n\nThe station connection leaves at 18:40. We will record missed connections for the first two weeks, including whether the shuttle or the connecting service was late. They will be reviewed on Friday after the second week. The weekend timetable is unchanged. Please replace the weekday library notice before the first affected departure; the station notice can stay because its advertised arrival is still 18:32.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the weekday library departure change from 18:00 to 18:10, its first-Monday start, and the unchanged inbound and weekend times."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the distinction between leaving when the class is still inside and an authorized hold for someone already at the stop needing boarding assistance."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the 18:40 connection, the advertised 18:32 arrival, the two-week recording period, its Friday review, and the different notice-replacement instructions."
+        },
+        {
+          "group": "argument",
+          "text": "Explains that four favorable trial evenings and two log-based paired estimates do not establish that the later departure never affects arrival."
+        },
+        {
+          "group": "style",
+          "text": "Makes the departure rule and its exception easy to follow without scattering them across repetitive warnings."
+        },
+        {
+          "group": "style",
+          "text": "Resolves the review sentence's ambiguous antecedent and preserves an operational notice rather than turning it into promotional prose."
+        }
+      ],
+      "quality_dimensions": [
+        "operational_fidelity",
+        "evidence_calibration",
+        "passage_coherence",
+        "plain_prose"
+      ],
+      "source_words": 299,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-02",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Edit this explanation for families for clarity and flow. Keep its reassuring but candid voice, and retain the distinctions that affect how the score should be read. Return a complete revised explanation.\n\nSource to revise:\nThe reading check that came home this week is one piece of information about how your child reads short passages independently. It is not a grade for this term. We use the same scoring rule in every class, but the passages are not the same for every year group. A score of 14 in one year group therefore should not be compared directly with a score of 14 in another.\n\nThe sheet shows a raw score and a band. The raw score is the number of questions answered correctly out of 20. The band groups nearby scores so that we can discuss support without making too much of a one-question difference. It is possible for a child's raw score to improve while the band stays the same. A change of band is also possible after a small change near a boundary. Neither situation tells the whole story by itself.\n\nSome children completed the check in two sittings because the fire alarm interrupted the morning session. Their sheets carry a small circle beside the date. The circle records the interruption, not a concern about the child. We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful.\n\nTeachers will discuss these results during the scheduled meetings next month. You do not need to arrange another meeting simply because a band has stayed the same. If the sheet does not match what you see when your child reads at home, please send the class teacher a short note. Examples of what feels easier or harder are more useful than extra practice-test scores. Children can continue their usual reading at home; we are not asking families to rehearse the questions.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Retains the distinction between a raw score out of 20, a reporting band, and a term grade, including the warning against direct comparisons across year groups."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the interruption marker's meaning, the lack of score adjustment, and the use of classroom evidence in considering a further check."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the next-month meeting arrangement and the invitation to send concrete home-reading observations without asking families to rehearse test questions."
+        },
+        {
+          "group": "argument",
+          "text": "Explains both an improved raw score within a band and a small score change across a band boundary without treating either as a definitive change in reading ability."
+        },
+        {
+          "group": "style",
+          "text": "Uses language accessible to families without replacing the scoring distinctions with an oversimplified assurance."
+        },
+        {
+          "group": "style",
+          "text": "Preserves the measured reassurance and permits retaining already clear sentences rather than rewarding edits for their own sake."
+        }
+      ],
+      "quality_dimensions": [
+        "semantic_fidelity",
+        "audience_fit",
+        "explanatory_clarity",
+        "editing_restraint"
+      ],
+      "source_words": 289,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-03",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Revise this studio handover note into clear connected prose for the next editor. Keep the technical terms that help an experienced audio editor, and preserve the sequence-dependent cautions. Do not add troubleshooting steps or settings.\n\nSource to revise:\nThe interview edit is ready for the dialogue pass, apart from the short answer after the door closes, which is still the original take. I left it that way because the alternate take is cleaner but changes the speaker's answer from a tentative agreement to an unqualified one. The noise is therefore a reason to treat that section carefully, rather than a reason to swap it. Both takes are marked in the session.\n\nThere are two room-tone beds. The one labelled corridor belongs under the first exchange only. The quieter one belongs under the later seated interview. It sounds more even when used everywhere, but that makes the move between rooms disappear. This is the one thing I do not want evened out. The transition itself can be softened; the fact that there is a transition should remain audible.\n\nI have bypassed the broadband denoiser on the music bus, where it was only present because the track template included it. The dialogue denoiser is active. Its printed preview is useful for judging pauses but should not be treated as the final dialogue render, since three edits were made after it was printed. They are marked with blue flags. The flags mark edits made after the print, not necessarily faults in those edits.\n\nPlease audition the low-level answer on headphones before adjusting the gate. On the monitors, the first consonant can sound like chair noise, and the current gate already clips part of it. The repair is still outstanding. After that, check the room transition in context and make a fresh dialogue print. The existing preview has been left available for comparison. The delivery mix is not ready yet, even though the rough mix has the requested duration. There is no need to change the music balance on the basis of this note.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps the original tentative answer and does not authorize substitution of the semantically stronger alternate take."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves which room-tone bed belongs to each location and the requirement that the move between rooms remain audible even if the transition is softened."
+        },
+        {
+          "group": "fidelity",
+          "text": "Distinguishes the bypassed music-bus denoiser, the active dialogue denoiser, and the outdated printed dialogue preview with three later edits marked in blue."
+        },
+        {
+          "group": "style",
+          "text": "Clarifies the referents of the room-tone and preview passages while retaining useful studio terminology."
+        },
+        {
+          "group": "argument",
+          "text": "Connects the outstanding consonant repair, headphone audition, contextual transition check, and fresh print in the requested order without inventing processing settings."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the incomplete delivery status and does not infer mix readiness from duration or recommend a music-balance change."
+        }
+      ],
+      "quality_dimensions": [
+        "technical_fidelity",
+        "referent_clarity",
+        "workflow_coherence",
+        "voice_preservation"
+      ],
+      "source_words": 302,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-04",
+      "split": "holdout",
+      "category": "ordinary",
+      "task": "Rewrite the volunteer coordinator's draft in the voice of the short sample. Make the arrangements and their reasons easy to understand without making the message more formal. The sample is a voice reference only; revise the draft and do not import facts from the sample.\n\nSynthetic voice sample (reference only):\nThanks for staying through the rain. The umbrellas survived; the sign-in sheet did not. Next time we will keep it inside the gate, where it can do its one small job without becoming soup. If you borrowed a pen, keep it until Saturday. We will need both you and the pen.\n\nSource to revise:\nFor the next repair morning, people who have already done an induction should arrive at 09:15, while new volunteers should arrive at 09:00. I realize that this makes being new look like a punishment consisting of an earlier alarm, which is not the intention. We need fifteen quiet minutes to show new people the shutoff switches before the room fills up. Returning volunteers can help by not arriving early to be helpful, because the space in front of the switches is the space we need.\n\nThe booking form asks for a repair preference. This is a preference and does not guarantee assignment to that table. Last month we called it a choice, and several people reasonably thought that meant the table had been reserved. We have changed the wording. If your preference is tied to an access need, reply to this message rather than relying on the form alone. We will confirm arrangements with you before the morning.\n\nWe have six aprons and expect eight people. You may bring an apron if you have one, but please do not buy one for this. We can rotate the two jobs that do not need aprons. The jobs needing aprons should still have them, which is the point of rotating the jobs rather than just deciding that two people can go without.\n\nThe kettle is now on the small table beside the window. The old table is needed for drying repaired items, so tea should be made at the new table even if the old one feels like where tea belongs. We finish at noon. Staying afterwards is optional, and packing up will be part of the scheduled morning rather than something that only the people who can stay get to do.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Retains the 09:00 induction arrival, 09:15 returning-volunteer arrival, safety reason for the quiet interval, and request that returning volunteers avoid arriving early."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the difference between a repair preference and a reservation, including separate contact and prior confirmation for access needs."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the six-apron/eight-person arrangement safe through job rotation, without asking anyone to buy an apron or perform apron-requiring work without one."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the kettle relocation, drying-table purpose, noon finish, optional staying afterwards, and scheduled packing-up time."
+        },
+        {
+          "group": "style",
+          "text": "Adopts the sample's direct, warm, lightly amused voice without copying its rain, sign-in-sheet, pen, or Saturday facts."
+        },
+        {
+          "group": "style",
+          "text": "Makes the explanation less circular while preserving the practical reasons for arrangements and allowing restrained humor."
+        }
+      ],
+      "quality_dimensions": [
+        "operational_fidelity",
+        "sample_voice_match",
+        "passage_coherence",
+        "humor_judgment"
+      ],
+      "source_words": 290,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-05",
+      "split": "holdout",
+      "category": "research",
+      "task": "Revise this synthetic results-and-interpretation passage for a transport operations report. Improve the argument across paragraphs while preserving the design, exact observations, and limits of inference. Use only the evidence supplied here and do not add citations.\n\nSource to revise:\nWe tested whether reserving the first loading bay for short-stay deliveries could make the morning schedule less unpredictable. The practical difficulty was not only that vehicles sometimes waited, but that a dispatcher could not tell which late departure would consume the recovery time built into the next round. The intervention was therefore aimed at reliability, although the measure we recorded was waiting time before loading rather than lateness on the next round. These are related operational concerns, but the second was not measured.\n\nThe study comprised 24 depot-days at one depot, with 12 under the ordinary allocation and 12 under the reserved-bay rule. Ordinary allocation was used in the first two weeks and the reserved-bay rule in the next two. Each depot-day contributed its median waiting time, and the reported condition summary is the median of those 12 daily medians. It was 9 minutes under ordinary allocation and 6 minutes under the reserved-bay rule. These figures are not medians pooled across all deliveries. The number of deliveries per day ranged from 18 to 43, so a pooled summary would give busy days more weight.\n\nThe fraction of deliveries waiting more than 20 minutes, pooled within each condition, was 31 of 360 under ordinary allocation and 19 of 348 under the reserved-bay rule. Two days in the first condition included a road closure. No days in the second condition did. We did not remove the closure days, since disruptions are part of the service being scheduled, but retaining them does not make the conditions comparable. The lower waiting times are compatible with a benefit from reservation and with differences between the periods.\n\nA dispatcher recorded that the rule was easier to explain to drivers. This comment was volunteered in the final debrief and was not a scored usability measure. We include it because a rule that can be explained is useful in practice, not because the comment independently verifies the waiting-time result. The next test should alternate the rule across comparable days and record departure lateness on subsequent rounds. At present, the data support trying that test. They do not establish the reliability improvement that motivated the trial, even though the measured waiting times moved in the intended direction.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the one-depot sequential-period design, 24 depot-days split evenly, and daily delivery range of 18 to 43."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the 9- versus 6-minute median-of-daily-medians summaries distinct from pooled delivery summaries and retains the exact 31/360 and 19/348 tail counts."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the road-closure imbalance, the decision to retain those days, and the fact that subsequent-round lateness was not measured."
+        },
+        {
+          "group": "argument",
+          "text": "Organizes the passage around the relationship between the reliability goal, the waiting-time measurements, and the narrower conclusion actually supported."
+        },
+        {
+          "group": "argument",
+          "text": "Does not convert sequential observational differences or the single volunteered dispatcher comment into causal or independently measured usability evidence."
+        },
+        {
+          "group": "style",
+          "text": "Consolidates repeated cautions where possible while keeping distinct limitations attached to the claims they qualify."
+        },
+        {
+          "group": "fidelity",
+          "text": "Presents alternating comparable days and recording subsequent-round lateness as proposed future work rather than completed evaluation."
+        }
+      ],
+      "quality_dimensions": [
+        "design_fidelity",
+        "evidence_calibration",
+        "argument_structure",
+        "qualifier_placement"
+      ],
+      "source_words": 368,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-06",
+      "split": "holdout",
+      "category": "research",
+      "task": "Edit this synthetic educational-measurement discussion into a coherent manuscript passage. Preserve its actual contribution and uncertainty, including the difference between agreement and validity. The supplied study is the complete evidence base; do not supply references or additional results.\n\nSource to revise:\nA scoring guide can make teachers agree while leaving them jointly mistaken about what a response demonstrates. We revised the guide because disagreements in an initial review often concerned whether an explanation counted as reasoning or merely repeated the question. The revision supplied paired examples at that boundary. It did not add questions, change the maximum score of 20, or alter the construct the guide was intended to assess. Whether it succeeded in preserving that construct is a question about the revision, not something settled by our intention.\n\nEight teachers scored 48 short responses in two rounds. Every response received ratings from the same two teachers in both rounds, and each teacher scored 12 responses per round. In the first round they used the original guide. After a workshop they used the revised guide. They saw the same responses again, with response order changed, and they could not view their first-round scores. The interval was one week. Changing the order and hiding the earlier scores reduced direct copying opportunities, but neither procedure rules out memory of a response.\n\nThe number of responses whose two ratings differed by more than two points fell from 16 of 48 to 7 of 48. The mean of all 96 ratings was 12.4 in the first round and 12.8 in the second, reported to one decimal place. That increase is sometimes tempting to describe as better performance, although the pupils did not produce new responses between rounds. It is a change in scoring. We have no external criterion against which to decide whether either round's mean is closer to an appropriate value.\n\nThe narrower disagreement count suggests that the guide and workshop package may help teachers apply a shared boundary. Because the workshop and guide changed together, their contributions cannot be separated. The repeated responses further limit an interpretation in terms of what would happen with unfamiliar work. These concerns do not cancel the observed decrease in disagreement; they constrain its use. A further study would need fresh responses and an independent account of response quality. Until then, agreement is the observed result, consistency on new work is an open question, and validity has not been established by making the ratings more alike.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the eight-teacher, 48-response, two-rater design with the same pairs in both rounds, 12 responses per teacher per round, and a one-week interval."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the exact disagreement counts, the 96-rating means reported to one decimal place, and the unchanged maximum score of 20."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the guide revision and workshop bundled and acknowledges repeated responses despite reordered presentation and hidden earlier scores."
+        },
+        {
+          "group": "argument",
+          "text": "Distinguishes an observed reduction in large scoring disagreements from pupil improvement, accuracy against an external criterion, and construct validity."
+        },
+        {
+          "group": "argument",
+          "text": "Explains why the boundary examples motivate the revision without treating the intended preservation of the construct as demonstrated."
+        },
+        {
+          "group": "style",
+          "text": "Integrates the limitations into a connected interpretation rather than repeating generalized uncertainty or presenting a detached checklist."
+        }
+      ],
+      "quality_dimensions": [
+        "measurement_fidelity",
+        "inference_scope",
+        "argument_progression",
+        "connected_prose"
+      ],
+      "source_words": 368,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-07",
+      "split": "holdout",
+      "category": "research",
+      "task": "Revise this synthetic audio-processing report passage for clear technical exposition. Keep the preference study, transcript audit, and timing measurement distinct, with their precise results and limitations. Do not invent statistical tests, citations, or an overall performance claim.\n\nSource to revise:\nWe evaluated a denoising setting intended for spoken archive clips. A cleaner background was useful only if the setting preserved the words, so the evaluation considered listener preference and transcript changes separately. Preference alone was not our definition of success. We also timed the processing step because the archive team wants to audition settings interactively, although the present timing run does not represent a full editing session.\n\nTwelve listeners each heard both versions of 30 clips and chose the denoised version, the original, or no preference for each clip. Version order was counterbalanced within the listening protocol. This produced 360 choices, not 360 independent listeners or clips. Across all choices, 214 favored the denoised version, 118 favored the original, and 28 expressed no preference. The 18 clips classified as noisy contributed 152, 50, and 14 choices in those categories. The 12 quieter clips contributed 62, 68, and 14. Thus the overall preference count conceals a different balance for the quieter subset.\n\nA separate audit compared transcripts prepared from each version. Three of the 30 clips had at least one word transcribed differently, and all three were in the noisy subset. The audit counted clips with a difference, not the total number of changed words. A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording. We therefore cannot label every difference an error introduced by denoising, nor can we treat a preference for the denoised clips as proof that their words were preserved.\n\nOn the same workstation, a separate run over 200 fixed audio frames gave a median processing time of 42 milliseconds per frame for the existing setting and 71 milliseconds for the new setting. These are processing times for the tested frames, with input loading excluded. We did not measure the interface delay experienced by editors. The evidence favors offering the new setting for audition on noisy material while retaining access to the original. It does not justify automatically replacing every clip, and it leaves the transcript differences to be resolved before the setting is used for a final archive render.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the 12-listener, 30-clip design and all overall and subset preference counts, including the no-preference category."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the three affected clips, their membership in the noisy subset, and the audit's inability to determine which transcription is correct."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the 42- and 71-millisecond processing medians, the 200 fixed frames, the same-workstation condition, and excluded input-loading time."
+        },
+        {
+          "group": "argument",
+          "text": "Does not treat 360 repeated choices as 360 independent participants or imply universal preference from the aggregate when quieter clips differ."
+        },
+        {
+          "group": "argument",
+          "text": "Distinguishes perceived preference, fidelity of words, and processing time from each other and from measured interface responsiveness."
+        },
+        {
+          "group": "style",
+          "text": "Makes the bounded recommendation and unresolved transcript audit legible without replacing the already appropriate technical register with slogans."
+        }
+      ],
+      "quality_dimensions": [
+        "quantitative_fidelity",
+        "outcome_separation",
+        "technical_clarity",
+        "editing_restraint"
+      ],
+      "source_words": 351,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-08",
+      "split": "holdout",
+      "category": "research",
+      "task": "Rewrite this synthetic archaeological-recording discussion so its motivation, observations, and recommendation form a clear argument. Preserve the uncertainty about what the recording methods capture. Treat the supplied observations as exhaustive and add no citations or field results.\n\nSource to revise:\nThe recording trial began with a backlog, so speed was the reason for trying the new form. What we wanted to avoid, however, was a faster route to a record that could not be interpreted later. The photo-led form requires a scaled overview and four mandatory fields. The drawing-led form uses the same four fields and a hand-drawn plan. Both allow free-text notes about relationships with adjacent deposits. Those optional notes are not part of the completeness check, which matters for what the check can tell us.\n\nWe used the drawing-led form for the first 18 contexts recorded in a trench and the photo-led form for the next 18. The later contexts were generally shallower. The same two recorders worked throughout, and either could ask the other for help. We did not record which person supplied that help. It is therefore a shared-work trial of consecutive context groups, not a balanced comparison of independent individual performance.\n\nTwo of the 18 photo-led records and six of the 18 drawing-led records omitted at least one mandatory field on first submission. Median recording times were 11 and 16 minutes, respectively. These times include the initial record and exclude later corrections. Seven photo-led records and 13 drawing-led records included an optional relationship note. A lower count of such notes could mean that fewer relationships were visible, that the form elicited less description, or both. There was no independent inventory of all relationships against which the notes could be checked.\n\nThe photo-led records were therefore more complete by the mandatory-field measure, while also containing fewer of the optional notes that might matter to later interpretation. Calling them simply more complete would make the measure stand in for the record. Calling them poorer records because there were fewer notes would make the opposite mistake. The backlog made this distinction easy to lose because saving five minutes was immediately useful and missing interpretive information, if any was missing, would become costly only later.\n\nWe propose continuing the photo-led form on a limited set of contexts while adding an explicit relationship prompt and tracking correction time. That proposal is not an evaluated improvement. The trial shows an association with faster initial recording and fewer mandatory omissions in these consecutive groups. It does not isolate a form effect or show that the resulting archive retains every relationship needed for interpretation.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the consecutive groups of 18, their order and depth difference, the same two recorders, and unlogged assistance."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the exact mandatory-omission counts, optional-note counts, and 11- versus 16-minute medians with later correction time excluded."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps both methods' shared mandatory fields, their different primary visual records, and the optional status of relationship notes."
+        },
+        {
+          "group": "argument",
+          "text": "Distinguishes mandatory-field completeness from interpretive completeness and avoids equating fewer optional notes with demonstrated information loss."
+        },
+        {
+          "group": "argument",
+          "text": "Connects the backlog motivation to the tradeoff in later interpretability without claiming the sequential trial isolates a causal form effect."
+        },
+        {
+          "group": "fidelity",
+          "text": "Labels the limited continuation, new relationship prompt, and correction-time tracking as proposals rather than tested outcomes."
+        },
+        {
+          "group": "style",
+          "text": "Keeps the distinct design, measurement, and archival-interpretation limitations clear and connected to the relevant claims, allowing purposeful repetition where it aids understanding."
+        }
+      ],
+      "quality_dimensions": [
+        "evidence_fidelity",
+        "measurement_scope",
+        "motivation_structure",
+        "qualifier_integration"
+      ],
+      "source_words": 391,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-09",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Revise this committee statement into a persuasive, connected argument in the speaker's practical first-person voice. Retain the policy being proposed, the strongest objection, and the limits of the evidence. You may reorder material, but do not turn the statement into a neutral options paper or invent reasons for participants' behavior.\n\nSource to revise:\nI want us to keep one place on each Saturday repair team available for someone who cannot book a month ahead. I also want us to stop calling this a remedy for every kind of unfairness in the rota, because it is a small change to one part of it. The proposal is to reserve one place until two days before the session, then release it to the general waiting list if nobody has requested it. People using that place would still need the induction required for their role. We would not be asking an untrained person to take over a safety task because a booking rule had made a space.\n\nThe current system opens all places four weeks ahead. In the last eight Saturdays, the rota was full within a day on six occasions. Five volunteers have told us that variable work shifts make that difficult. We did not ask everyone why they failed to book, and we do not know how many people tried and gave up. The five messages are enough to show that the problem exists for those people. They are not a count of everyone excluded by the current arrangement. I would rather say exactly that than make the number sound either overwhelming or too small to matter.\n\nThere is a sensible objection from the table leads. They need to know whether the team has the right mix of skills, and a name added late is not automatically useful just because the place is filled. We already distinguish general helpers from people cleared to supervise electrical repairs. The reserved place should normally be a general-helper place. If a particular Saturday requires that place for a supervisor and no other supervisor is booked, the table lead should be able to release it early for that role, recording the reason. This exception is about keeping the session workable. It should not become an unrecorded way to return to the old system.\n\nSome people have said that this will punish the volunteers who reliably book early. They would have one fewer place to choose from during most of the booking window, and pretending otherwise would make the case weaker. Their early commitments help us plan. The question is whether every place needs that protection or whether we can accept a little less certainty in one place to let a different group participate. I think we can, provided the role exception is real and the late booking is confirmed rather than merely hoped for.\n\nConfirmation needs an owner. Under this proposal, the coordinator would contact the selected volunteer two days before the session. If the person had not confirmed by noon the following day, the place would go to the waiting list. A reserved place without this step could become an empty chair that everyone assumed someone else was filling. This is not a prediction that people with variable shifts are less reliable. The same confirmation deadline would apply to anyone taking a newly offered place at that stage.\n\nI suggest trying the arrangement for six Saturdays and recording whether the reserved place was used, released, or reassigned through the role exception, along with any unfilled places at opening time. We should also ask the table leads whether the mix of skills was adequate. Those records will not tell us whether every volunteer feels included, and I am not proposing a six-week verdict on fairness in general. They should tell us whether this limited change can operate without leaving the teams short. If it cannot, we should revise it. If it can, we will have a practical reason to keep an opening for people whose calendars do not settle four weeks ahead.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves one reserved Saturday place, release two days before the session, role-specific induction, the coordinator's confirmation step, and the following-day noon deadline."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the supervisor-coverage exception, its requirement to record a reason, and the normal use of the reserved place for a general helper."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the six-of-eight rapid-fill observation and five reports about variable shifts without treating them as a population estimate or evidence of lower reliability."
+        },
+        {
+          "group": "argument",
+          "text": "Sustains an affirmative case for the limited proposal while acknowledging that early bookers lose access to one place and leads need a workable skills mix."
+        },
+        {
+          "group": "argument",
+          "text": "Shows how the role exception and confirmation ownership answer operational objections without implying that all scheduling uncertainty can be removed."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the six-Saturday pilot and its proposed operational records, distinguishing them from a general test of fairness or universal inclusion."
+        },
+        {
+          "group": "style",
+          "text": "Presents a coherent case in a practical first-person voice without erasing the speaker's judgments or multiplying defensive disclaimers; reordering is optional."
+        }
+      ],
+      "quality_dimensions": [
+        "policy_fidelity",
+        "whole_passage_structure",
+        "objection_handling",
+        "evidence_calibration",
+        "voice_preservation"
+      ],
+      "source_words": 613,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-10",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Revise this synthetic proposal to an archaeological collections committee into a persuasive, connected argument. Preserve the exact allocation, the strongest scientific objection, and the limited purpose of the pilot. Treat the supplied laboratory procedure and collection details as complete premises; do not add analytical findings, conservation rules, or assurances about future tests.\n\nSource to revise:\nI recommend sending twelve ceramic fragments for the powder analysis, one from each of the twelve storage boxes selected for this project, rather than the twenty-four requested by the analysis team. Each box contains three fragments, so the proposed pilot would leave twenty-four intact. The larger submission would take two from each box and leave twelve. All thirty-six meet the laboratory's minimum mass requirement. The smaller batch is therefore a choice about how much material to use now, not a way of excluding fragments the laboratory cannot process.\n\nThe laboratory has confirmed that twelve is an acceptable batch and that its setup charge would be the same for either submission. We should not sell the smaller batch as a saving on that charge. Under the proposed procedure, each submitted fragment would be photographed, assigned its existing catalogue identifier, and then ground completely. The photographs would document its visible surface before grinding. They would not preserve a surface that a later investigator could examine with a different instrument.\n\nThe analysis team's objection is substantial. Two fragments from each box would let them look for differences within a box, whereas one cannot. A box is a storage unit, not a guarantee that its contents came from a single vessel or shared a composition. My proposal deliberately leaves that question unresolved. The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier. A successful return would support planning a larger comparison; it would not show that one fragment represents its box.\n\nSelection also needs to be visible. For this pilot, the curator would choose the fragment with the least visible decoration in each box, recording the choice before dispatch. That protects the more visibly decorated surfaces for now, but it could select a different kind of material. Neither these boxes nor the fragments within them were sampled randomly. The report should describe the submitted material without estimating the composition of the whole collection.\n\nThe remaining fragments should stay intact until the committee reviews the returned measurements and the identifier check. This is a temporary hold, not a promise that later surface analysis will be more informative. No such analysis has been commissioned. After review, the team could request a second batch with a question that justifies consuming more material. I favour this sequence because the first submission can test a necessary part of the workflow while leaving us something real to decide about afterward.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves twelve boxes with three eligible fragments each, the proposed one-per-box submission leaving twenty-four intact, and the alternative two-per-box submission leaving twelve."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the equal laboratory setup charge, the acceptable twelve-fragment batch, the catalogue identifiers and photographs, and complete grinding of submitted fragments; photographs do not preserve their physical surfaces."
+        },
+        {
+          "group": "argument",
+          "text": "Acknowledges that the larger submission permits a within-box comparison that the pilot cannot provide, and distinguishes a usable, correctly linked measurement from evidence that one fragment represents its box."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains curator selection by least visible decoration, recording before dispatch, nonrandom selection at both levels, and the resulting restriction against estimating collection-wide composition."
+        },
+        {
+          "group": "argument",
+          "text": "Sustains the recommendation for a temporary hold pending measurement and identifier review, without turning uncommissioned surface analysis into a promised benefit or a second batch into an approved commitment."
+        },
+        {
+          "group": "style",
+          "text": "Makes the reasons for the smaller first submission and its costs understandable in connected, candid prose, while preserving the affirmative recommendation and allowing different effective paragraph arrangements."
+        }
+      ],
+      "quality_dimensions": [
+        "allocation_fidelity",
+        "objection_handling",
+        "inference_scope",
+        "argument_progression"
+      ],
+      "source_words": 410,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-11",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Revise this short position statement for a teacher working group. Strengthen the connections between its reasons and recommendation while preserving its deliberately limited claim. Do not add research findings or change the proposed assessment policy.\n\nSource to revise:\nI support keeping the common end-of-unit quiz, but I do not support using it as the sole basis for the unit judgment. A common quiz gives us a shared set of questions to discuss. When classes use entirely different tasks, it is harder to know whether a difference in scores reflects the work pupils were asked to do. That is a reason to retain a common task, not a reason to assume that it captures everything taught in the unit.\n\nThe present quiz has ten short questions. Eight ask pupils to select an answer, and two ask for a brief explanation. The unit also asks pupils to compare two methods and defend a choice. Neither of the explanation questions requires that comparison. This is an observation about the current questions and our stated unit goals. It does not show that short questions are incapable of assessing reasoning, or that every longer assignment would assess it well.\n\nMy proposal is to keep the quiz and add one classroom comparison task to the evidence considered at the unit meeting. The comparison task would be completed during the ordinary lesson. Teachers would bring two anonymized examples and explain how they applied the shared criteria. I am not proposing a numerical formula for combining the task and quiz, because we have not agreed what the weights would mean.\n\nThe objection about workload deserves an answer. Discussing examples takes time, and a task embedded in a lesson still takes time to review. We can make room by replacing the current meeting segment in which every teacher reads out class averages. That change will not eliminate the work, but it redirects some existing time toward evidence the quiz does not currently provide. After one unit, we should check whether the examples helped us make judgments and whether the meeting remained manageable. Keeping a common reference point and broadening the evidence can be compatible if we are specific about the work each is meant to do.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the ten-question quiz composition and the specific absence of a required two-method comparison in its current explanation questions."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the common quiz, one ordinary-lesson comparison task, two anonymized examples per teacher, shared criteria, and absence of a proposed numerical combination rule."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the proposed replacement of the class-average readout and the review after one unit."
+        },
+        {
+          "group": "argument",
+          "text": "Distinguishes criticism of the present quiz's coverage from a general claim that short questions cannot assess reasoning or longer tasks necessarily can."
+        },
+        {
+          "group": "argument",
+          "text": "Answers the workload objection honestly by identifying a partial reallocation of time rather than promising cost-free additional assessment."
+        },
+        {
+          "group": "style",
+          "text": "Preserves the speaker's clear stance and readable professional voice, allowing already effective contrasts and sentences to remain."
+        }
+      ],
+      "quality_dimensions": [
+        "policy_fidelity",
+        "scope_control",
+        "objection_handling",
+        "editing_restraint"
+      ],
+      "source_words": 329,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-12",
+      "split": "holdout",
+      "category": "argument",
+      "task": "Revise this transport board submission so the recommendation follows clearly from the competing service priorities. Keep its candid voice and exact proposal. Do not resolve the tradeoff by inventing passenger counts, budget capacity, or certainty about future demand.\n\nSource to revise:\nThe last bus should leave the riverside stop at 22:20 on performance nights, and the printed timetable should say so. At present it leaves at 22:05 every night. Staff sometimes ask the driver to wait when a performance runs late, but the driver cannot promise a hold and passengers waiting farther along the route do not know whether the bus is late or has already gone. The proposal is a scheduled change on the six performance nights next month, not a standing instruction to wait for the audience.\n\nThe operator says a 22:20 departure can use the same vehicle and driver if the final layover is reduced by fifteen minutes. That is an operational possibility, not evidence that the change costs nothing in resilience. The layover is currently the only recovery time before the vehicle returns to the depot. On a delayed evening the return may therefore be later. We have not estimated how often that would happen. The operator has agreed to test the arrangement for those six nights, subject to publishing the changed times in advance.\n\nThe main objection is from passengers who board after the riverside stop and do not attend performances. Their last journey would also be fifteen minutes later. They are being asked to accept a worse time for them so that others have a more usable time, and this should be acknowledged instead of calling the change better for everyone. We do not have boarding counts that separate audience members from other passengers. The argument cannot rest on a claim that the audience is the larger group.\n\nWhat we do know is that the venue's scheduled finish on these nights is 22:10, making the present last departure unusable for someone who stays to the advertised end. The later departure supplies ten scheduled minutes to reach the stop, although it does not cover every overrun or every person's walking time. The venue should display the departure prominently and say that the bus will leave at the published time.\n\nI favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement. We should record departures, depot return times, and complaints from passengers along the route, then review them before adding more nights. Complaints will identify concerns, not measure the views of every passenger. If we proceed, we should defend the choice as a limited tradeoff and be willing to reverse it, rather than describing the timetable as though no one loses anything.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the six-night next-month trial, the change from 22:05 to 22:20, advance publication, and the rule that the bus leaves at the published time."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the same-vehicle-and-driver condition, fifteen-minute reduction of final layover, possible later depot return, and absence of an estimate of its frequency."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the 22:10 scheduled performance finish and the limited ten-minute interval without promising that all overruns or walking needs are covered."
+        },
+        {
+          "group": "argument",
+          "text": "Acknowledges the adverse timing change for downstream passengers and does not justify it using an invented audience majority or a cost-free-service claim."
+        },
+        {
+          "group": "argument",
+          "text": "Connects the recommendation to advance planning and a public timetable while preserving the speaker's affirmative judgment about an acknowledged tradeoff."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the proposed departure, depot-return, and complaint records, their review before expansion, and the nonrepresentative nature of complaints."
+        },
+        {
+          "group": "style",
+          "text": "Gives the full submission a clear line of reasoning without turning every qualification into a separate disclaimer or deleting consequential uncertainty."
+        }
+      ],
+      "quality_dimensions": [
+        "operational_fidelity",
+        "tradeoff_reasoning",
+        "whole_passage_coherence",
+        "voice_preservation"
+      ],
+      "source_words": 417,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-13",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Revise this proof for readers who know finite sums and completeness of Euclidean space. Explain the compressed steps and the purpose of the estimates in connected mathematical prose. Preserve the hypotheses and the quantitative conclusion; do not strengthen the convergence rate.\n\nSource to revise:\nAn iterative audio reconstruction produces vectors x_0, x_1, ... in R^m, where m is a positive integer. Put d_k = ||x_{k+1} - x_k||_2. Suppose 0 <= rho < 1 and numbers eta_k >= 0 satisfy sum_{k=0}^infinity eta_k < infinity and\nd_{k+1} <= rho d_k + eta_k\nfor every k >= 0. We claim that x_k converges to some x_* and that, for each n >= 0,\n||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho).\n\nFix N >= n and write S_{n,N} = sum_{k=n}^N d_k. Summing the recurrence for k = n, ..., N-1 gives\nS_{n,N} - d_n <= rho(S_{n,N} - d_N) + sum_{k=n}^{N-1} eta_k.\nConsequently,\n(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k\n<= d_n + sum_{k=n}^{N-1} eta_k.\nFor N = n, the sums over k = n, ..., N-1 are empty and the displayed relation still holds.\n\nAt n = 0 these bounds show that the nonnegative partial sums of the d_k are bounded. Thus sum d_k is finite and d_n tends to zero. For p > n, telescoping the vectors and using the triangle inequality gives\n||x_p - x_n||_2 <= S_{n,p-1}\n<= (d_n + sum_{k=n}^infinity eta_k)/(1-rho).\nThe right side tends to zero, uniformly in p > n. Completeness supplies x_*, and taking p to infinity gives the claimed estimate. This also covers rho = 0. No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the Euclidean setting, nonnegative summable perturbations, recurrence for increments, and full range 0 <= rho < 1."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the stated tail bound with d_n and the perturbation tail divided by 1-rho, without claiming a geometric rate from summability alone."
+        },
+        {
+          "group": "proof",
+          "text": "Explains the finite-sum rearrangement, including why the negative rho d_N term can be discarded."
+        },
+        {
+          "group": "proof",
+          "text": "Justifies bounded monotone partial sums, the implication d_n tends to zero, and vanishing perturbation tails before asserting the Cauchy property."
+        },
+        {
+          "group": "proof",
+          "text": "Uses telescoping, the triangle inequality, completeness, and passage to the limit in the correct order."
+        },
+        {
+          "group": "proof",
+          "text": "Handles empty sums at N = n and rho = 0 without dividing by rho or silently restricting the hypotheses."
+        },
+        {
+          "group": "style",
+          "text": "Makes the purpose of the increment-sum estimate clear through connected prose and displayed derivations rather than replacing the proof with a result summary."
+        }
+      ],
+      "quality_dimensions": [
+        "mathematical_fidelity",
+        "derivation_completeness",
+        "edge_case_handling",
+        "proof_exposition"
+      ],
+      "source_words": 240,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-14",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Complete the single marked justification gap and revise the surrounding proof for clarity. Keep the adaptive setting and the exact identity and bound. Use only the stated assumptions; do not assume independent rounds or replace the proof with a citation.\n\nSource to revise:\nConsider n rounds of volunteer task assignment on a finite probability space. Let F_0 subset F_1 subset ... subset F_n be the information available through each round, and let X_t be an F_t-measurable indicator of completion, for 1 <= t <= n. Assignments may depend on previous outcomes. Define p_t = E[X_t | F_{t-1}]. Let w_t be F_{t-1}-measurable with |w_t| <= 1. Define\nD_t = w_t(X_t - p_t),     M_n = sum_{t=1}^n D_t.\nThe claim is\nE[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4.\n\nBecause X_t is an indicator,\nE[(X_t-p_t)^2 | F_{t-1}]\n= E[X_t^2 | F_{t-1}] - 2p_t E[X_t | F_{t-1}] + p_t^2\n= p_t - 2p_t^2 + p_t^2\n= p_t(1-p_t).\nTaking expectations after multiplying by w_t^2 gives\nE[D_t^2] = E[w_t^2 p_t(1-p_t)].\nExpansion of the finite square yields\nE[M_n^2] = sum_t E[D_t^2] + 2 sum_{s<t} E[D_s D_t].\n\n[Justification gap: the cross terms are asserted to vanish, but this has not yet been shown for adaptive assignments.]\n\nOnce this gap is filled, the identity follows. Since 0 <= p_t <= 1 and |w_t| <= 1, every summand in the identity is at most 1/4. This gives the bound. When n = 0, define M_0 = 0 and both sums are empty. Probabilities p_t equal to zero or one need no separate division or limiting argument. The weights are chosen using earlier information; their measurability is part of the claim, not an optional convenience.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves adaptive assignments, the filtration, indicator outcomes, predictable weights bounded in absolute value by one, and the finite probability space."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains both the exact second-moment identity with w_t squared and the n/4 bound, including n = 0."
+        },
+        {
+          "group": "proof",
+          "text": "Fills the marked cross-term gap by showing conditional centering and using earlier-term measurability with conditional expectation, rather than invoking independence."
+        },
+        {
+          "group": "proof",
+          "text": "Explains how the indicator identity and predictable weights justify the displayed conditional second-moment calculation."
+        },
+        {
+          "group": "proof",
+          "text": "Justifies the upper bound using p_t in [0,1] and the weight bound while covering probabilities zero and one without invalid division."
+        },
+        {
+          "group": "style",
+          "text": "Develops the reason for expanding the square and removing cross terms in readable mathematical prose, keeping substantive derivation steps visible."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not extend the identity to weights chosen after observing X_t or turn the second-moment estimate into an unstated concentration result."
+        }
+      ],
+      "quality_dimensions": [
+        "assumption_fidelity",
+        "gap_repair",
+        "conditional_reasoning",
+        "proof_readability"
+      ],
+      "source_words": 230,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-15",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Rewrite this finite-counting proof to make the objects counted and the two counting arguments easy to follow. Preserve both exact formulas and the treatment of small sets. The archaeological setting is only an interpretation of the finite sets; add no empirical claims.\n\nSource to revise:\nLet U contain n distinct recorded fragments. A tentative sorting assigns each fragment to a labelled tray A, to a labelled tray B, or to neither. Thus A and B are disjoint subsets of U, either of which may be empty. All 3^n assignments are included. Write\nC_n = sum_{A intersect B = empty} |A||B|,\nQ_n = sum_{A intersect B = empty} (|A|-|B|)^2.\nFor n >= 2 we claim\nC_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}.\n\nTo obtain C_n, count records (A,B,a,b) with a in A and b in B. Fixing A,B gives |A||B| records. Fixing the ordered pair of distinct elements a,b gives 3^{n-2} assignments of the other elements. There are n(n-1) such ordered pairs, proving the first formula. The tray labels matter here.\n\nFor the second formula, first fix one element to be in A, and then fix two distinct ordered elements to be in A. These counts give\nsum |A| = n3^{n-1},\nsum |A|(|A|-1) = n(n-1)3^{n-2}.\nThe sums run over the same assignments as before. Therefore\nsum |A|^2 = n3^{n-1} + n(n-1)3^{n-2}.\nThe same expression holds for B. Expanding the square and using the first formula yields\nQ_n = 2[n3^{n-1} + n(n-1)3^{n-2}] - 2C_n\n= 2n3^{n-1}.\n\nFor n = 0 the only assignment has two empty trays, so C_0 = Q_0 = 0. For n = 1 the three assignments have squared differences 1, 1, and 0, giving C_1 = 0 and Q_1 = 2. These cases are handled directly rather than by applying the argument that fixes two distinct elements.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps labelled disjoint trays, the unassigned option, distinct fragments, empty trays, and the full set of 3^n assignments."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains both claimed formulas for n >= 2 and the explicit values at n = 0 and n = 1."
+        },
+        {
+          "group": "proof",
+          "text": "Explains the double count for C_n with ordered distinct elements and the three independent placement choices for every remaining element."
+        },
+        {
+          "group": "proof",
+          "text": "Shows why the first and second factorial-moment counts combine to give the sum of |A| squared and why symmetry supplies the B term."
+        },
+        {
+          "group": "proof",
+          "text": "Makes the cancellation in the expansion of Q_n explicit without identifying labelled tray assignments or using an unjustified independence claim."
+        },
+        {
+          "group": "style",
+          "text": "Introduces each auxiliary count through its role in the calculation while preserving the proof's concise, concrete finite-set interpretation."
+        }
+      ],
+      "quality_dimensions": [
+        "combinatorial_fidelity",
+        "counting_explanation",
+        "edge_case_handling",
+        "expository_economy"
+      ],
+      "source_words": 253,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-16",
+      "split": "holdout",
+      "category": "proof",
+      "task": "Revise this proof into a clear explanation of convergence of fitted scores under regularization. Supply the compressed algebra and epsilon reasoning where needed, but keep the theorem about fitted values for a fixed matrix and response. Do not add assumptions of full rank or claim convergence of a coefficient inverse.\n\nSource to revise:\nLet A be a real m by d matrix, with positive integers m,d, and let y in R^m be a fixed vector of educational scores. For lambda > 0 set\nx_lambda = (A^T A + lambda I_d)^{-1} A^T y.\nLet P be the orthogonal projection onto the column space of A. We claim A x_lambda tends to Py as lambda decreases to zero.\n\nSuppose first that A has rank r > 0. Choose a reduced singular value decomposition\nA = U Sigma V^T,\nwhere the columns u_i of U and the columns v_i of V are orthonormal, and Sigma has positive diagonal entries sigma_i. Applying the inverse to these v_i gives\n(A^T A + lambda I_d)^{-1}v_i = v_i/(sigma_i^2+lambda).\nAlso A^T y = sum_{i=1}^r sigma_i(u_i^T y)v_i. Hence\nA x_lambda = sum_{i=1}^r [sigma_i^2/(sigma_i^2+lambda)](u_i^T y)u_i,\nPy = sum_{i=1}^r (u_i^T y)u_i.\nWriting sigma_min = min_i sigma_i, orthonormality gives\n||A x_lambda-Py||_2^2\n= sum_{i=1}^r [lambda/(sigma_i^2+lambda)]^2 (u_i^T y)^2\n<= [lambda/(sigma_min^2+lambda)]^2 ||Py||_2^2.\n\nThis estimate implies the limit. If Py is nonzero, for epsilon > 0 one can choose delta = epsilon sigma_min^2/||Py||_2 and take 0 < lambda < delta. If Py is zero, the displayed expansion makes the error identically zero. If A has rank zero, then A = 0, x_lambda = 0, and P = 0, so the conclusion holds without defining sigma_min. The inverse defining x_lambda exists for every lambda > 0, since for nonzero z,\nz^T(A^T A + lambda I_d)z = ||Az||_2^2 + lambda||z||_2^2 > 0.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the fixed real matrix and response, positive regularization parameter, ridge definition, projection target, and absence of a full-rank assumption."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the exact singular-value error bound and scopes the conclusion to fitted values for the given A and y."
+        },
+        {
+          "group": "proof",
+          "text": "Justifies the inverse's existence and its action on the right singular vectors, making the fitted-value expansion mathematically supported without requiring a particular order of exposition."
+        },
+        {
+          "group": "proof",
+          "text": "Uses orthonormality correctly to obtain the squared-norm identity and the sigma_min bound."
+        },
+        {
+          "group": "proof",
+          "text": "Makes the epsilon argument explicit with the supplied delta or another valid choice, without dividing by zero in the other cases."
+        },
+        {
+          "group": "proof",
+          "text": "Handles rank zero and nonzero-rank Py = 0 separately and does not define a smallest positive singular value for the zero matrix."
+        },
+        {
+          "group": "style",
+          "text": "Explains how regularization changes the fitted components and why the quantitative estimate proves the limit without burying the derivation in compressed instructions."
+        }
+      ],
+      "quality_dimensions": [
+        "linear_algebra_fidelity",
+        "epsilon_reasoning",
+        "edge_case_handling",
+        "proof_structure"
+      ],
+      "source_words": 241,
+      "difficulty": "hard",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-17",
+      "split": "holdout",
+      "category": "control",
+      "task": "Read this archaeological field-note introduction as a careful copy editor. It has already been approved for tone and substance. Correct only genuine grammatical errors or ambiguities that obstruct understanding; if none are present, return it unchanged. Preserve the writer's voice, including the approved joke.\n\nSource to revise:\nA field notebook is allowed to be untidy. It is not allowed to be mysterious in ways that we could have prevented. Before leaving a context, check that the number on the page matches the number on the bag and that your sketch has an orientation mark. Your future self may remember the trench perfectly. The rest of us have not been issued that future self.\n\nKeep observations separate from interpretations when you can. \u201cDark band against the north edge\u201d records something another person may be able to recognize. \u201cBurning event\u201d proposes an explanation. Both belong in the notebook when relevant, but they do different jobs. If you change your interpretation, add a dated note rather than making the earlier one disappear. A change of mind can be part of the record.\n\nThis does not mean every sentence needs a warning label. Write what you saw, say where you are uncertain, and give enough context for someone else to understand the uncertainty. A question mark without a clear subject is rarely much help. If rain or poor light limited what you could see, record that condition alongside the observation it affected.\n\nAt the end of the day, photograph each completed page before the notebook leaves the site. The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts. We are trying to preserve a record of the trench, not a small private exhibition of your thumb.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the checks linking page and bag numbers, sketch orientation, and dated additions when interpretations change."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps observation distinct from interpretation without suggesting interpretations are forbidden or require proof before recording."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains end-of-day readable page photographs before the notebook leaves, their backup status, and checking before deleting blurred attempts."
+        },
+        {
+          "group": "style",
+          "text": "Preserves the approved dry jokes and direct voice instead of formalizing them or treating humor as an error."
+        },
+        {
+          "group": "style",
+          "text": "Respects the copy-edit-only scope and permits an unchanged return because the supplied passage has no intended grammatical defect or blocking ambiguity."
+        },
+        {
+          "group": "argument",
+          "text": "Keeps the distinction between documenting actual uncertainty and adding a warning to every sentence, including the specific role of viewing conditions."
+        }
+      ],
+      "quality_dimensions": [
+        "editing_restraint",
+        "voice_preservation",
+        "semantic_fidelity",
+        "scope_compliance"
+      ],
+      "source_words": 246,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-18",
+      "split": "holdout",
+      "category": "control",
+      "task": "Check this approved audio-engineering explanation for wording that would actually mislead its intended readers, who are experienced editors. Make only changes necessary to correct such wording. Preserve legitimate terminology and the explanatory contrasts. Return the passage unchanged if it is already accurate and clear within its stated setting.\n\nSource to revise:\nIn this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output. We feed that side chain from the dialogue bus so the music can duck when speech is present. The routing is deliberate. Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to.\n\nThe attack and release settings shape how quickly gain reduction begins and recovers. They do not move the spoken words earlier or later on the timeline. A slow attack may let the beginning of a sound pass before substantial reduction occurs. Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone.\n\nThe detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed. If the music now ducks more than the quieter dialogue seems to require, that behavior is consistent with the routing. It does not by itself show that the compressor has stopped responding correctly.\n\nFor the current review, leave the routing as it is and compare the two saved release settings at the same listening level. We are choosing which recovery sounds less distracting between phrases. This comparison does not test whether a different side-chain source would work better, and it should not be reported as such.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the configured separation between side-chain detection and the audible mix, including the dialogue-bus source and music ducking."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the stated pre-fader detector feed and its consequence that changing the dialogue fader does not change that feed in this setup."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the review limited to the two saved release settings at the same listening level, with the routing unchanged."
+        },
+        {
+          "group": "style",
+          "text": "Preserves useful terms such as side chain, attack, release, detector, and pre-fader rather than replacing them with less precise generic wording."
+        },
+        {
+          "group": "argument",
+          "text": "Keeps the legitimate distinctions between gain-envelope behavior and timeline placement, and between a release-setting comparison and a routing comparison."
+        },
+        {
+          "group": "style",
+          "text": "Respects the already-approved passage and returns it unchanged or with only a defensible correction, without manufacturing a need for extensive revision."
+        }
+      ],
+      "quality_dimensions": [
+        "technical_fidelity",
+        "editing_restraint",
+        "audience_fit",
+        "contrast_preservation"
+      ],
+      "source_words": 243,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-19",
+      "split": "holdout",
+      "category": "control",
+      "task": "Make one limited update to this volunteer notice: public opening has moved from 09:30 to 10:00. Update both references to public opening and keep every other arrangement, wording choice, and joke as written. Return the full updated notice.\n\nSource to revise:\nThe repair room opens to the public at 09:30 this Saturday. Set-up volunteers should still arrive at 09:00, and table leads should collect the tool checklist from the desk when they arrive. Please use the side entrance before public opening so the queue at the front stays out of the trolley route.\n\nVisitors can bring one item each for an initial assessment. That is not a promise that every item will be repaired on the day. Some repairs need parts we do not have, and some items will need a specialist. The welcome team can explain this without apologizing for the entire history of broken household objects. The short explanation on the desk is enough.\n\nWe have moved the tea tray to the shelf beside the window. Keep it there, even if a clear corner of a repair table looks inviting. Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately. The water jug and clean cups will be ready before the room opens.\n\nAt 09:30, the welcome team should open the front doors and begin taking names. We stop accepting new items at 11:30 and finish repairs at noon. Packing away is part of the shift, which ends at 12:20. If you need to leave earlier, tell the coordinator before Friday evening so we can assign the final checks to someone else.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Updates both the stated public opening and the front-door opening instruction to 10:00."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the 09:00 set-up arrival, 11:30 intake cutoff, noon repair finish, 12:20 shift end, and Friday-evening notification deadline."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps the side-entrance rule, one-item assessment policy, repair limitations, tea location, and pre-opening readiness of cups and water."
+        },
+        {
+          "group": "style",
+          "text": "Honors the explicitly limited update by leaving other wording unchanged instead of performing a general copy edit."
+        },
+        {
+          "group": "style",
+          "text": "Preserves the deliberate jokes about broken objects and drinks near equipment without polishing them away."
+        },
+        {
+          "group": "argument",
+          "text": "Does not infer that a later public opening shifts every other scheduled activity or creates a promise to finish all repairs."
+        }
+      ],
+      "quality_dimensions": [
+        "scope_compliance",
+        "operational_fidelity",
+        "editing_restraint",
+        "humor_preservation"
+      ],
+      "source_words": 230,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    },
+    {
+      "id": "large-test-b-20",
+      "split": "holdout",
+      "category": "control",
+      "task": "Review this approved explanation of a small educational-measurement pilot for accidental repetition or unclear wording. Edit only if a change would improve meaning or readability. Preserve real caveats and the conversational professional voice; an unchanged passage is acceptable.\n\nSource to revise:\nWe asked whether pupils would interpret the new instructions as intended before using the task to compare their answers. In this pilot, eight pupils read the instructions aloud and explained what they thought they were being asked to do. Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again.\n\nThat finding gives us a reason to revise the placement of the second step. It does not tell us how often the problem would occur in a full class. Reading aloud and discussing the instructions with an adult are also different from encountering them during an ordinary lesson. Both limits matter: the group is small, and the situation changes how pupils attend to the text.\n\nWe have moved the second step into its own sentence beside the response box. This is a revision prompted by the pilot, not a tested improvement. We will check the new version with another small group before using it in the planned comparison. The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores.\n\nFor now, the pilot has done a useful, modest job. It exposed a plausible misunderstanding while there was still time to change the task. We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the eight-pupil read-aloud design, the six who identified both steps, and the two who noticed the second step after a rereading prompt."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the completed text relocation, the untested status of that revision, and the planned further small-group check before the comparison."
+        },
+        {
+          "group": "argument",
+          "text": "Keeps the separate limitations from sample size and the interactive read-aloud setting rather than collapsing them into a vague disclaimer."
+        },
+        {
+          "group": "argument",
+          "text": "Distinguishes comprehension of instructions from answer quality and a plausible misunderstanding from a population prevalence estimate."
+        },
+        {
+          "group": "style",
+          "text": "Allows purposeful reinforcement of the limited conclusion to remain where it aids understanding rather than automatically treating recurring caveats as redundancy."
+        },
+        {
+          "group": "style",
+          "text": "Maintains the conversational, modestly positive voice and permits leaving the already-good passage unchanged."
+        }
+      ],
+      "quality_dimensions": [
+        "evidence_fidelity",
+        "caveat_preservation",
+        "editing_restraint",
+        "voice_preservation"
+      ],
+      "source_words": 239,
+      "difficulty": "ordinary",
+      "subset": "fresh"
+    }
+  ]
+}

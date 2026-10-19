@@ -1,0 +1,79 @@
+{
+  "configs": {
+    "haiku": {
+      "provider": "claude",
+      "model": "claude-haiku-5-5",
+      "effort": null
+    },
+    "sonnet-low": {
+      "provider": "claude",
+      "model": "claude-sonnet-5-5",
+      "effort": "low"
+    },
+    "sonnet-high": {
+      "provider": "claude",
+      "model": "claude-sonnet-5-5",
+      "effort": "high"
+    },
+    "opus-low": {
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low"
+    },
+    "opus-xhigh": {
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh"
+    },
+    "fable": {
+      "provider": "claude",
+      "model": "claude-fable-5-1",
+      "effort": null
+    },
+    "astra-medium": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "astra-high": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    "sol-low": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low"
+    },
+    "luna-medium": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium"
+    }
+  },
+  "cases_per_split": 40,
+  "conditions": [
+    "none",
+    "v4",
+    "v5a"
+  ],
+  "total_outputs": 2400,
+  "existing_outputs_reused": 960,
+  "new_outputs": 1440,
+  "grading": "Frozen v2 absolute assertions, plus blinded pairwise judgments by Opus high and Astra high; stable random order and threshold-20-percent reversed audits.",
+  "holdout_status": "Hash preregistered while sealed; selection fixed before opening; no holdout tuning.",
+  "selected": "v5a",
+  "grader": "v2",
+  "skill_sha256_by_arm": {
+    "none": null,
+    "v4": "2f56547251c3f77dc2e718cd35ceca893f78352c45eb98397a0a78ba6e5b33d4",
+    "v5a": "24d41e32ef5a5ef57af79515184d4e8881657936f88935d224d24e4943edae5c"
+  },
+  "dataset_sha256": {
+    "development": "a1ea1453f70e5c051b8be2a1b3bd336654cf18e7d709404358fc95cce35b940c",
+    "holdout": "7309db9e9e0efd80751d985caa3c28d71af8574a2ba0b4dba98ba3f0fcf69d89"
+  },
+  "grader_sha256": "48f37689d8877b22e6e9233f8acae85a9adb31e5fc49e4d9b9b8491666950277",
+  "pairwise_grader_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+  "pairwise_seed": "declaude-pairwise-v1"
+}
