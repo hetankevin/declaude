@@ -1,62 +1,59 @@
 # Handoff
 
-## Current outcome
+## Current task
 
-Public repo: https://github.com/hetankevin/declaude. Packaged skill: v4. It combines plain-English editing, author-informed research exposition, and displayed proof derivations. The original supplied translation specification remains in references/translation.md. V4 adds a meaning-first reconstruction procedure rather than sentence-by-sentence paraphrasing.
+Public repo: https://github.com/hetankevin/declaude. Installed and packaged skill remains v4. User requested a much larger, harder evaluation, blinded pairwise grading, the full model/effort matrix, a fresh holdout, and development-only skill improvement. Work is running; do not report the final benchmark as complete.
 
-User asked for neurotypical's full model/effort matrix and authorized improving both skill and grader. Both follow-ups are complete. After the user renewed gateway sign-in, the remote personal installations were updated and verified.
+## Frozen experiment
 
-## Results and interpretation
+- Protocol: `evals/large/protocol.md`.
+- 80 synthetic tasks: 40 development, 40 fresh holdout. Each split has eight ordinary prose, research, argument, proof, and control cases. Full tasks span about 240–720 words.
+- Independent authors and reviewers checked correctness, task/rubric agreement, and overlap before candidate runs. Only generic synthetic content belongs in this public repo.
+- Development: `evals/large/development.json`; balanced 20-case tuning and 20-case validation subsets. Both are development/selection data.
+- **Holdout remains sealed from the coordinator/tuner.** File: `.local/large-authoring/sealed-holdout.json`; hash: `evals/large/dataset-manifest.json`. Do not read its contents or run it until selection is fixed. Author/reviewer notes remain private.
+- Ten configs: Haiku default; Sonnet low/high; Opus low/xhigh; Fable default; Astra medium/high; Sol low; Luna medium. These are requested CLI identities, not an independent backend audit.
+- Selection configs: Haiku, Sonnet high, Astra medium, Luna medium.
+- Candidate snapshots and hashes: `evals/versions/v4`, `v5a`, `v5b`; `evals/large/candidate-plan.json`. Two-candidate limit is reached. Do not tune on validation or holdout outcomes.
 
-Final calibrated comparison: 480 outputs, 8 development + 8 fresh heldout2 cases, 10 configurations, none/v3/v4. Configurations: Haiku 5.5 default; Sonnet 5.5 low/high; Opus 5.5 low/xhigh; Fable 5.1 default; GPT-6 Astra medium/high; GPT-6.1 Sol low; GPT-6 Luna medium. See evals/revision-matrix.json.
+## Completed tuning
 
-Final IS passes: none 90.8%, v3 97.8%, v4 98.6%. Holistic: 4.3625, 4.6375, 4.75.
-Fresh OOS passes: none 95.9%, v3 98.8%, v4 98.5%. Holistic: 4.55, 4.7375, 4.725.
-V4 beats no skill on assertions, but is effectively tied with v3 out of sample. Do not claim the latest revision establishes a further generalization gain. The fresh baseline is high and the set is small.
+Twenty cases, four configs. First batch: none/v4/v5a, 240 responses. Second: 80 new v5b responses, reusing exact v4 artifacts. Candidate responses had no execution failures and were never regenerated for quality.
 
-V4 was selected before fresh testing under a development-only rule: holistic mean improves without a decrease in fidelity passes. Selection scores (two-condition pools) are preserved separately from final three-condition regrading. Exact selection: holistic 4.6375 → 4.725, fidelity 98.33% → 98.89%. Hashes and decision are in evals/improvement-plan.json, revision-selection.json, and release.json. evals/freeze.json records the earlier v3 release, not the current bundle.
+| Candidate versus v4 | Pairwise preference | Wins / ties / losses | Fidelity: v4 → candidate | Material-error flags: v4 → candidate |
+|---|---:|---:|---:|---:|
+| v5a | 55.625% | 50 / 78 / 32 | 99.25% → 99.63% | 10/160 → 13/160 |
+| v5b | 53.75% | 49 / 74 / 37 | 99.25% → 99.25% | 12/160 → 14/160 |
 
-Grader v2 separates factual meaning from rhetorical packaging and proof correctness from exposition. Ten fixed calibration cases, six development/four validation: both graders match 22/22 assertion targets; v1 matches 19/20 holistic bands, v2 20/20. Targets are assistant-authored, not human validation. It still makes debatable judgments; failure-review.md identifies them without changing ratings.
+Two judges assess each pair. Intervals include 50% for both candidates. Neither clears every provisional tuning check. V5a has the higher preference and factual pass rate and is undergoing the one reserved validation comparison. This choice was committed before validation in `evals/large/validation-plan.json`. V5b came from qualitative inspection of 25 matched triples across seven tuning cases, not validation or holdout.
 
-Historical expanded reference: frozen v3, original grader, original heldout. 320 outputs; OOS passes 87.7% → 91.2%, holistic 3.89 → 4.26, proof detail regresses. Keep this separate from the final calibrated/fresh comparison. The initial three-configuration report is archived too.
+Reports: `evals/results/large-tuning/`. Selection summaries: `evals/large/tuning-v5a.json` and `tuning-v5b.json`. The v4 absolute grades differ across candidate comparisons because pools were graded separately; the reference response texts are identical.
 
-## Artifacts
+## Running jobs and next steps
 
-- evals/results/final-v4/: primary no-skill comparison, all 480 responses/grades, counts, intervals, light/dark heatmaps, failure inspection.
-- evals/results/v4-vs-v3/: same-run direct revision comparison.
-- evals/results/v3-calibrated/: incumbent baseline comparison under the same grader/cases.
-- evals/results/expanded-v3/: original-grader ten-configuration reference.
-- evals/results/revision-selection/ and grader-calibration/: selection evidence, not fresh-test evidence.
-- README: all ten configurations, IS/OOS metrics, family aggregates, median lengths, methods, caveats, reproduction commands.
+1. Full ten-config development baselines, none/v4, are still filling `.local/large-final` (800 expected artifacts). Log: `.local/large-development-baselines.log`. They run inside `.local/large_tune_pipeline.py`. Its eventual nonzero exit can reflect the earlier grading failure already repaired; check the baseline stage and artifact completeness separately.
+2. `.local/large_validation_pipeline.py` generates v5a on 20 validation cases and four configs, copies exact v4 responses from the running baseline, and streams both grading types. Outputs: `.local/large-validation-runs`; pairs: `.local/large-validation-pairs/v5a-vs-v4`; log: `.local/large-validation-pipeline.log`. Expected: 160 responses, 160 absolute grades, 188 pairwise judgments including order audits. It waits for baseline files rather than drawing another incumbent response.
+3. When validation is complete, apply `tools/large_select.py` with `.local/large-validation.json`, the validation run/pair roots, candidate v5a. Promote only if preference > 0.5, fidelity does not decrease, and material-error frequency does not increase. Otherwise retain v4. Record the decision and exact hashes before opening the holdout.
+4. Wait for all baseline writers to finish. Copy the selected candidate's already completed response/meta artifacts into `.local/large-final` if selecting v5a; do not copy selection grades. If retaining v4, no candidate copy is needed.
+5. Release the sealed holdout unchanged as `evals/large/holdout.json` and verify its preregistered hash. Freeze a final matrix manifest. Run `tools/large_run.py` with both dataset files, selected version/path, `.local/large-final`, and a separate pairwise root. It overlaps generation and grading with separate pools. It supports either three arms for v5a/v5b or two arms when retaining v4. Resume the same command after inspecting failures; never run concurrent writers in its roots.
+6. Publish exact outputs/grades, paired-case intervals, IS/OOS model/effort/category/dimension heatmaps, judge agreement and order checks, and actual failures. Inspect rendered charts. Update README and release metadata honestly, install the selected skill if changed, verify local/remote hashes, and push.
 
-## Validation and installation
+`.local/large_progress.py` prints current counts. No fresh-test performance exists yet.
 
-All 480 candidate outputs have matching frozen task/skill/model/effort metadata and valid v2 scorecards. Two grading batches failed schema validation; only failed/uncompleted batches were retried. Valid completed batches and all candidate outputs were preserved. No candidate response was regenerated for quality. Scorecards retain pool identifiers and hashes. Logs and unfiltered CLI artifacts are private under .local/.
+## Grading and reliability
 
-Local personal Claude and Codex installations are updated to v4, including the untracked paper reading list, with file hashes verified. Existing copies are backed up. No hooks or global instructions were changed.
+- Absolute semantic assertions and 1–5 holistic grades use frozen `evals/graders/v2.txt`.
+- Pairwise prompt: `evals/graders/pairwise-v1.txt`; two judges: Opus high and Astra high. Anonymous A/B assignment is hash-stable across subsets. Both judge families assess every primary pair. A hash-threshold 20% sample receives reversed-order audits; actual sample counts are reported. Audit repetitions do not inflate independent task counts.
+- Calibration: 12 assistant-authored fixtures, eight tuning/four validation, both judges/both orders. One tuning-only clarification improved target agreement from 26/32 to 28/32. Reserved validation matched 13/16. Some target ties are themselves debatable. No validation outcome changed the prompt. Details: `evals/results/large-calibration/`, `evals/large/grader-freeze.json`.
+- Tuning judges agreed exactly on 38/80 pairs for v5a and 48/80 for v5b; each comparison had four direct win/loss disagreements. Order audits had one direct reversal for v5a and none for v5b. Report model judgments as such, not human validation.
+- Two initial absolute-grade jobs failed schema checks and were repaired without regenerating candidate outputs. Their first invalid raw answers were not retained by the old runner. A subsequent stored answer was recovered by removing one trailing JSON comma outside strings; judgments and evidence were unchanged. The runner now saves raw answers before parsing and records syntax-only repairs. Preserve this limitation in reporting.
+- `tools/pairwise_report.py` requires a complete expected matrix and checks record hashes. `tools/report.py` validates frozen matrix/task/skill/rubric hashes when given a manifest. Case bootstrap, not assertion/judge/model count, determines intervals. Length is descriptive only.
 
-Remote personal Claude and Codex are now updated to v4. After the user renewed gateway sign-in, install.py --personal completed and all seven installed files in each app matched the local source by SHA-256, including the private reading list. Existing copies were backed up. No hooks or global instructions were changed.
+## Installation and earlier results
 
-## Reproduction and future work
+V4 is verified in the user's personal Claude and Codex installations on this Mac and the remote machine, including the private paper list. Existing copies were backed up. No global hooks or instructions were changed by this release.
 
-Run commands in README. tools/bench.py supports --skills for multiple versions and refuses relabeling one bundle as several arms. Use --grader-version v1 for historical original-grader runs; v2 is now the default. The final report verifies the preregistered matrix, hashes, and paired completeness. Bootstrap resamples cases. Length is descriptive, not a success threshold.
+Earlier final comparison: 480 outputs on eight development and eight fresh cases, ten configs, none/v3/v4. Fresh assertions: 95.9% / 98.8% / 98.5%; holistic: 4.55 / 4.7375 / 4.725. V4 tied v3; those small tests had severe ceilings. Keep historical reports under `evals/results/final-v4`, `v4-vs-v3`, `v3-calibrated`, and `expanded-v3` separate from this experiment. Neither old holdout is fresh for future tuning.
 
-No heldout2 result changed v4 or the grader. Both test sets have now been inspected; future tuning needs a new holdout. Actual full-paper author-voice fidelity and general proof correctness remain unestablished.
+## Privacy and conventions
 
-## Source and privacy boundaries
-
-The skill draws on the supplied translation prompt, 14 local writing-note paths, direct proof corrections, a remote Claudish discussion, and prior humanizer guidance. The exact meme transcript was not confirmed verbatim in that old chat. Only generic directions and synthetic examples belong in the public repository.
-
-The private source inventory and CLI outputs stay in ignored .local/. skill/references/papers.local.md stays untracked. Never publish source-project identifiers, personal paths, transcript excerpts, exclusion patterns, credentials, or authentication links. Research assumptions and source-project notation do not become global style requirements.
-
-## Evaluation resolution
-
-The user questioned the many zero-improvement cells. Across the ten individual configurations and five assertion metrics (excluding family aggregates), development has 31 zero differences out of 50 cells, 29 with both conditions at 100%. Fresh heldout2 has 33 zero differences out of 50, 30 with both at 100%. The comparison has only eight distinct fresh cases, including two proofs. The 480 outputs are not 480 independent tasks. The current test is too small and easy to support detailed model-by-category conclusions. A follow-up should expand independent, longer and harder cases, preserve ordinary controls, use graded or blinded pairwise prose judgments alongside factual assertions, and reserve a fresh test set before further tuning. Do not manufacture difficulty by selecting only baseline failures.
-
-## Active expansion: 80-case benchmark
-
-User authorized a much larger/harder set, pairwise grading, the full model matrix, and development-only skill improvement. Protocol: evals/large/protocol.md. Independent authors are preparing 40 development and 40 holdout cases, five categories with eight per split. Holdout contents stay sealed in .local/large-authoring until skill selection; independent QA sees them, tuner does not. Two pairwise judge families and reversed-order audits supplement fixed semantic grading. At most two skill revisions, selected on a balanced development validation subset with fidelity and material-error guards. Existing small tests are historical only. No new results yet.
-
-All80cases now pass independent QA. Development is public in evals/large/development.json; freshholdout remains .local/large-authoring/sealed-holdout.json, hash preregistered in dataset-manifest.json. Do not read holdout before skill selection. Bothcalibration phases complete; finalpairwisegrader frozen. Firsttuning pipeline: .local/large_tune_pipeline.py, runs .local/large-tune-runs, logs .local/large-tune-*.log. Firstcandidatev5a; v5b is only an unused untracked placeholder. Next: inspectdevelopmentonly, optionally createv5b, selectonvalidation, then openholdout.
-
-Execution checkpoint: first 240 tuning responses completed with no failures (20cases x4configs xnone/v4/v5a). Binary grading and pairwise v5a-v4 grading are running, alongside all10config development none/v4 baselines in .local/large-final. Second candidatev5b is now committed and running on the same20tuningcases and4configs, using copied exactv4responses. Its changes came from qualitative analysis of25triples across7tunecases, notvalidationorholdout. Candidate hashes/basis are in evals/large/candidate-plan.json. Two candidates maximum now reached; do notinventanother without explicitly revising the experiment design. Use tools/large_select.py after completegrading to compare tuning candidates; then evaluate the best once on the20developmentvalidationcases. Qualifying rule: pairwise preference>.5, fidelity no worse, materialerrorrate no worse. Onlyafterselection open the sealed40caseholdout andcomplete final10configcomparison. Logs: .local/large-tune-pipeline.log, large-tune-absolute.log, large-tune-pairwise.log, large-development-baselines.log; .local/large-v5b-pipeline.log and correspondinggeneration/absolute/pairwise logs. .local/large_progress.py prints artifactcounts without exposingholdout. Pairwise primaryassignment is hashstable acrosssubsets; orderaudits are20% bycase/config, bothjudgefamilies. Frozenbinarygraderv2 andpairwiseprompt havepassed schema/livecalibration; calibrationlimitations recorded in evals/results/large-calibration. No largebenchmarkresultclaimed yet.
+Keep source transcripts, personal paths, project identifiers, private reading lists, raw CLI envelopes, auth links, and credentials out of this public repo. Do not publish private exclusion patterns. `.local/` and `skill/references/papers.local.md` remain ignored. Install with `python3 install.py --personal` when the selected bundle changes; preserve the private overlay. Use terse lowercase commits without AI attribution. The parent neurotypical repo is separate and private; do not commit declaude work there.
