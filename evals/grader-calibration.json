@@ -1,0 +1,361 @@
+{
+  "note": "Constructed calibration fixtures with assistant-authored target verdicts, not independent human ratings. Freeze before comparison. Validation fixtures are not used to revise this grader candidate.",
+  "cases": [
+    {
+      "id": "cal-permission",
+      "subset": "tune",
+      "task": "Make this direct without changing its force: You may inspect the archive when a supervisor requests it. This is permission, not a duty.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Inspection remains permitted, not required."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "You may inspect the archive if a supervisor requests it. You are not required to do so.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "You must inspect the archive whenever a supervisor requests it.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-rhetoric",
+      "subset": "tune",
+      "task": "Remove theatrical rhetoric while preserving facts: The parser is the load-bearing backbone, the whole game, the beating heart of this step. It reads a record and returns its timestamp. It does not validate the signature.",
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes rhetorical packaging without adding metaphor or a slogan."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the parser input/output and lack of signature validation."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "The parser reads a record and returns its timestamp. It does not validate the signature.",
+          "expected_pass": [
+            true,
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "The parser is the beating heart of the process, validating every record before returning its timestamp.",
+          "expected_pass": [
+            false,
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-additive-reason",
+      "subset": "tune",
+      "task": "Rewrite as clear research prose using only these facts: We want to estimate a signal covariance. The observed covariance equals the signal covariance plus known measurement covariance D. Subtract D to remove the additive bias. No finite-sample accuracy result is available.",
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Explains why subtracting D removes the additive covariance bias without inventing a new result."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "We want to estimate the signal covariance, but the observed covariance also includes the known measurement covariance D. Subtracting D removes this additive bias. This does not establish finite-sample accuracy.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "Subtract D. This proves the estimator is accurate for every sample size.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-proof-invalid",
+      "subset": "tune",
+      "task": "Expand this proof without adding assumptions: U and V are integrable random variables and UV is integrable. A draft claims E[UV]=E[U]E[V]. If the assumptions do not establish the claim, identify the gap instead of inventing a proof.",
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Does not infer independence or factor the expectation without a sufficient premise."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "The stated assumptions do not imply the claim. For example, let U=V be a nonconstant Bernoulli random variable with success probability p in (0,1). Then E[UV]=p, whereas E[U]E[V]=p\u00b2. A condition such as independence would be needed for the proposed factorization.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "By linearity of expectation, E[UV]=E[U]E[V]. This proves the claim.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-control",
+      "subset": "tune",
+      "task": "Edit only if needed for clarity: The queue is empty. The next job starts at noon.",
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Keeps already clear text substantially unchanged and adds no rhetorical framing."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "The queue is empty. The next job starts at noon.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "Here is the honest shape of things: emptiness is the defining state of the queue, and noon is the load-bearing hinge on which the next job turns.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-delete",
+      "subset": "tune",
+      "task": "Remove the review-process discussion and its warning. Keep the current behavior: After a long review we agreed to keep a warning that the feature is not universal. The endpoint accepts JSON and rejects XML.",
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes the requested discussion and warning rather than preserving them under another label."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "The endpoint accepts JSON and rejects XML.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "The endpoint accepts JSON and rejects XML, but the feature is not universal, as agreed during review.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-quantifier",
+      "subset": "validation",
+      "task": "Rewrite plainly while preserving quantifiers: Every valid request has a token. A token alone does not make a request valid.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps a token necessary but not sufficient for validity."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "Valid requests must have a token, but having a token is not enough to make a request valid.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "Every request with a token is valid.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-scope",
+      "subset": "validation",
+      "task": "Rewrite plainly: For positive x less than 1, f(x) is at most 3x. This is an upper bound, not a lower bound.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the domain and direction of the inequality."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "For 0<x<1, f(x)\u22643x. This gives an upper bound only.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "For every positive x, f(x)\u22653x.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-causal",
+      "subset": "validation",
+      "task": "Remove filler without changing certainty: Worth saying plainly, the recent decline might reflect seasonal demand, but we have not tested that explanation.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The seasonal explanation remains a possibility that has not been tested."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "The decline might reflect seasonal demand, but we have not tested that explanation.",
+          "expected_pass": [
+            true
+          ],
+          "score_range": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "text": "Seasonal demand caused the decline.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal-format-vs-validity",
+      "subset": "validation",
+      "task": "Display each equality on its own line with brief prose. Prove that a positive real z satisfies z/z=1. Return only the proof.",
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Displays each equality on its own line."
+        }
+      ],
+      "responses": [
+        {
+          "id": "a",
+          "text": "Since z>0, division by z is defined.\n\\[\nz/z=z\\cdot z^{-1}=1.\n\\]",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            4,
+            4
+          ]
+        },
+        {
+          "id": "b",
+          "text": "Since z>0, z/z=0. Thus the desired value is 1.",
+          "expected_pass": [
+            false
+          ],
+          "score_range": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  ]
+}

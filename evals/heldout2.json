@@ -1,0 +1,224 @@
+{
+  "cases": [
+    {
+      "id": "fresh-schedule-conditional",
+      "split": "heldout2",
+      "task": "Rewrite the draft message below as the actual message I will send to a friend. Keep it short and natural, like a text between friends. Do not add details that are not in the facts.\n\nFacts (all of these are true and should be kept):\n- We planned lunch on Thursday at 12:30 at our usual cafe.\n- I have a dentist appointment Thursday at 11:00 that could run until about 12:30, which would make me too late.\n- The dentist's office said they will try to move me to 9:00 that morning. They will call me by 5 pm on Wednesday to say whether that worked.\n- If the appointment moves to 9:00, Thursday 12:30 is on. If it does not, I would like to move lunch to Friday at 12:30.\n- Optional suggestion: a new noodle place is a five-minute walk from the dentist. I would be glad to go there instead of the cafe, but I do not mind either way, and it has no bearing on whether Thursday works.\n\nDraft:\n'Hi!! So thrilled to circle back on our lunch plans! Thursday at 12:30 is potentially a go, but in the spirit of full transparency there's a tiny wrinkle: my dentist appt is at 11 and could run till 12:30, unless the office calls to bump me to 9, which they said they'd try to do and let me know by Wednesday 5pm. Should that happen, Thursday is absolutely on at the usual cafe! If not, could we pivot to Friday at 12:30? Also, totally optional, but the new noodle place is 5 min from the dentist, so we could maybe try it instead of the cafe if you're feeling adventurous. No pressure at all!!!'",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The message makes Thursday at 12:30 conditional on the dentist moving the appointment to 9:00. It does not state Thursday as settled, and it does not drop the condition."
+        },
+        {
+          "group": "fidelity",
+          "text": "The message keeps the office's commitment to call the author by 5 pm Wednesday and the Friday 12:30 fallback if the appointment cannot move. It does not invent a separate promise that the author will relay the answer immediately."
+        },
+        {
+          "group": "argument",
+          "text": "The noodle-place idea is clearly presented as an optional preference that does not affect whether Thursday or Friday works. It is not folded into the dependency or presented as a requirement."
+        },
+        {
+          "group": "argument",
+          "text": "The reader can follow the logic in order: what is proposed, what it depends on, when it will be known, what happens in each case. The friend can tell exactly what to expect without re-reading."
+        },
+        {
+          "group": "style",
+          "text": "The tone is plain and friendly, like a real text message. Theatrical or corporate phrasing from the draft (for example 'circle back', 'full transparency', 'pivot', 'tiny wrinkle', stacked exclamation marks) is not carried over."
+        },
+        {
+          "group": "fidelity",
+          "text": "No new facts are invented, such as a different time, other plans, a promise to confirm by some other deadline, or reasons beyond those given."
+        }
+      ]
+    },
+    {
+      "id": "fresh-intro-reorder",
+      "split": "heldout2",
+      "task": "Rewrite the draft introduction below as three paragraphs. The paragraphs should run in this order: (1) why the problem matters, (2) the specific obstacle that blocks the obvious approach, (3) the construction we propose and what we found. The draft has these pieces in the wrong order and is padded with grand language.\n\nFACTS (these are the only technical content; do not add mechanisms, guarantees, or results beyond them):\n- Problem: track the running median of a numeric stream, such as service response times, using a fixed small amount of memory.\n- Motivation: monitoring dashboards follow many metrics at once, so storing every value is not possible. The budget is 2 KB per metric.\n- Obstacle: a fixed-width histogram has its bucket boundaries chosen early. If the distribution later shifts, the median can land in a bucket that is wide compared with the new spread of the data, so the estimate becomes coarse.\n- Construction: a two-level sketch. It keeps fine-grained counts in a narrow window around the current median estimate and coarse counts outside the window. When the median estimate leaves the window, the window moves to follow it.\n- Results: on three synthetic traces that contain level shifts, the worst final relative error of the median estimate was 2.1%. On the other two traces it was below 1%. We do not prove a worst-case error bound.\n\nSTYLE SAMPLE (use ONLY as an example of the author's voice and register; none of its content belongs in the introduction):\n'I repotted the fern on Saturday. The roots had circled the pot twice, so I cut them back. It looked worse for a week. Then it started growing again.'\n\nDRAFT (out of order):\n'We introduce a groundbreaking two-level sketch that elegantly weaves together fine-grained counts in a narrow window around the current median estimate and coarse counts everywhere else, re-centering the window whenever the estimate wanders off. Across three synthetic traces with level shifts it delivers a worst final relative error of 2.1%, with the other two below 1%, though we offer no worst-case bound. \\n\\nIn the ever-evolving landscape of observability, dashboards juggle a vast tapestry of metrics, and keeping every value is simply out of the question; each metric gets only 2 KB. \\n\\nBut alas, a fixed-width histogram, its buckets chosen at the dawn of the stream, falters when the data drifts, leaving the median stranded in a bucket far too wide for the new spread.'",
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "The output has three paragraphs in the requested order: the importance of the problem (many metrics, a 2 KB budget, no storing of every value), then the obstacle (a fixed-width histogram becomes coarse after a distribution shift), then the construction with its results."
+        },
+        {
+          "group": "argument",
+          "text": "The construction paragraph presents the window-following design as a response to the obstacle. The reader can see that moving the window addresses the coarse-bucket problem, and the design is not presented as unrelated to it."
+        },
+        {
+          "group": "fidelity",
+          "text": "All supplied facts are preserved correctly: 2 KB per metric, three synthetic traces with level shifts, worst relative error 2.1%, the other two below 1%, and no worst-case error bound proved. Nothing is changed or exaggerated."
+        },
+        {
+          "group": "fidelity",
+          "text": "No technical claims are added beyond the facts, such as complexity bounds, comparisons with named methods, real-world deployment, or guarantees."
+        },
+        {
+          "group": "style",
+          "text": "The style sample is used only for register. The prose is plain, concrete and direct without ornament, and it neither borrows the sample's subject matter (plants, roots, repotting) nor copies its sentences."
+        },
+        {
+          "group": "style",
+          "text": "The padded wording from the draft (for example 'ever-evolving landscape', 'tapestry', 'alas', 'dawn of the stream', 'groundbreaking', 'elegantly weaves') is gone and replaced by plain statements, and the paragraphs read as natural academic prose."
+        }
+      ]
+    },
+    {
+      "id": "fresh-abstract-diagnostic",
+      "split": "heldout2",
+      "task": "Rewrite the draft abstract below into a single clean abstract paragraph. Keep every uncertainty and scope limit, and keep the small diagnostic that was run clearly separate from the broader experiment that was not run.\n\nFacts (all true; add nothing else):\n- Model: one sentiment classifier fine-tuned on product reviews, trained with a single random seed.\n- Diagnostic that WAS run: on 200 held-out product reviews, we shuffled the word order within each review and compared accuracy. Original order: 177 of 200 correct (88.5%). Shuffled order: 170 of 200 correct (85.0%). A paired bootstrap over reviews gives a 95% interval of 0.5 to 6.5 percentage points for the accuracy drop (original minus shuffled).\n- Our reading: this suggests, but does not establish, that this model's predictions depend mostly on which words appear and less on their order.\n- Experiment that was NOT run: evaluation on news headlines and forum posts (five additional domains were planned). There are no results from it, and we make no claim about what it would show.\n\nDraft:\n'In this work we unveil a groundbreaking investigation into how deeply a sentiment model understands language. Our decisive word-shuffling test proves that the model barely relies on word order, a finding that will undoubtedly carry over to every domain, as confirmed by our analysis across domains. Accuracy dips just slightly, from 88.5% to 85.0%, showcasing the remarkable robustness of modern classifiers.'",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The abstract reports the diagnostic numbers correctly: 177/200 (88.5%) with original order against 170/200 (85.0%) with shuffled order, a drop of 3.5 points, and a 95% interval of 0.5 to 6.5 points from a paired bootstrap over reviews. Equivalent presentations are fine as long as no number is wrong or omitted."
+        },
+        {
+          "group": "fidelity",
+          "text": "Scope limits are kept: one model, a single training seed, 200 held-out reviews, and one domain (product reviews)."
+        },
+        {
+          "group": "argument",
+          "text": "The shuffling check is described as a small diagnostic on one sample. The conclusion is kept tentative, along the lines of 'suggests, does not establish, that predictions depend mostly on which words appear'. It does not say 'proves', does not claim the model 'understands' language, and does not claim the result carries over to other domains."
+        },
+        {
+          "group": "argument",
+          "text": "The abstract states that the broader evaluation (news headlines and forum posts, additional domains) was not run and that no results from it are reported. It is not described as completed or confirming, and the abstract does not predict its outcome. The draft's 'analysis across domains' is not retained as if it had happened."
+        },
+        {
+          "group": "style",
+          "text": "The abstract is a single plain paragraph in measured scientific prose. Hype and theatrical wording ('unveil', 'groundbreaking', 'decisive', 'showcasing the remarkable robustness', 'undoubtedly') is removed, and the abstract does not simply replace it with equally inflated phrases."
+        }
+      ]
+    },
+    {
+      "id": "fresh-algorithm-obstacle",
+      "split": "heldout2",
+      "task": "Write the final explanation of the algorithm below, in one to three paragraphs of plain prose. The reader should understand why each step exists. Open from the concrete obstacle given below, so that it motivates the steps instead of the steps being listed first and justified later or not at all. Work through the example and give its result. Do not add a correctness proof, memory bounds, claims about other input orders or streaming use, or any guarantee beyond those listed.\n\nFacts:\n- Task: merge overlapping intervals. Intervals that share only an endpoint count as overlapping and are merged (for example [1,3] and [3,5] become [1,5]).\n- Obstacle: after sorting by start, it is tempting to compare each interval only with the one just before it in the sorted list. That fails on [1,10], [2,3], [4,5], [9,12]. The interval [9,12] does not overlap its predecessor [4,5], yet it overlaps [1,10]. A long interval that began early can hide an overlap behind shorter intervals that lie inside it.\n- Steps: sort by start. Keep one current merged interval (s, e), initially the first interval. For each next interval (a, b): if a \u2264 e, set e to the larger of e and b; otherwise output (s, e) and start a new current interval (a, b). After the last interval, output the current interval.\n- Cost statements allowed: the sort costs O(n log n) comparisons and the sweep afterwards is a single pass.\n- Example to walk through: input [1,10], [2,3], [4,5], [9,12], [14,15], which is already sorted by start. The output is [1,12], [14,15].\n\nDraft:\n'Prepare to unleash the mighty sweep! First we sort every interval by its start. Then we march through them holding a current interval. If the next interval starts at or before the current end, we absorb it, setting the end to the bigger of the two ends. Otherwise we release the current interval into the wild and begin anew. At the finish we emit whatever remains. Why the max? The max simply works. Sorting is O(n log n) and the march is one pass, making this the ultimate, unbeatable merging strategy.'",
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "The explanation is organized around the obstacle: it shows that comparing only to the previous interval misses the overlap of [9,12] with [1,10], and then presents keeping a running end (the larger of the ends) as what resolves that. The max step is justified by the obstacle rather than left unexplained."
+        },
+        {
+          "group": "fidelity",
+          "text": "The steps are stated correctly: sort by start, keep one current interval, extend the end to the larger value when the next start is at or before the current end (so touching intervals merge), otherwise output the current interval and start a new one, and output the last one at the end."
+        },
+        {
+          "group": "fidelity",
+          "text": "The worked example is correct: with input [1,10], [2,3], [4,5], [9,12], [14,15], the intervals through [9,12] merge into [1,12], and [14,15] stays separate, giving [1,12], [14,15]. Any intermediate states shown are correct, for example that the end stays 10 after [2,3] and [4,5] and becomes 12 after [9,12]."
+        },
+        {
+          "group": "fidelity",
+          "text": "No invented guarantees or analysis are added. The only cost statements are the O(n log n) sort and the single-pass sweep. There is no claim of optimality, no memory bound, no streaming claim, and no formal correctness proof. The draft's 'ultimate, unbeatable' claim is removed."
+        },
+        {
+          "group": "style",
+          "text": "The prose is plain and natural. The theatrical wording of the draft ('unleash the mighty sweep', 'march', 'release into the wild', 'The max simply works') is gone. The text reads as an explanation, not a bare list or a pile of slogans."
+        }
+      ]
+    },
+    {
+      "id": "fresh-weighted-cs",
+      "split": "heldout2",
+      "task": "Produce the final displayed theorem and a complete proof based on the draft below. The theorem is a weighted Cauchy-Schwarz inequality for nonnegative finite weights, and weights equal to zero are allowed. The draft states the result but skips the main derivation. The proof must supply it in full from elementary facts, namely that squares of real numbers are nonnegative and ordinary algebra. A self-contained argument is wanted. A reduction to the standard unweighted Cauchy-Schwarz inequality is also acceptable if the reduction is shown explicitly. Use plain text or LaTeX as you like.\n\nSetting: n is a positive integer; a_1,...,a_n and b_1,...,b_n are real numbers; w_1,...,w_n are real numbers with each w_i \u2265 0 (some or all may equal 0).\nClaim: (sum_{i=1}^n w_i a_i b_i)^2 \u2264 (sum_{i=1}^n w_i a_i^2)(sum_{i=1}^n w_i b_i^2).\n\nRemark to retain: keep this remark after the proof, in your own wording if you like: taking every w_i = 1 recovers the usual Cauchy-Schwarz inequality. There are no other remarks to keep.\n\nDraft:\n'Let us embark on a journey through the elegant world of weighted inequalities! Take weights w_i \u2265 0 and real a_i, b_i. Then (sum w_i a_i b_i)^2 \u2264 (sum w_i a_i^2)(sum w_i b_i^2). Proof. This is just Cauchy-Schwarz in disguise, so it obviously holds. QED. Remark: with all w_i = 1 we get the usual Cauchy-Schwarz.'",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The theorem states the setting and inequality exactly as given: n \u2265 1, real a_i and b_i, weights w_i \u2265 0 allowed to be zero, and the stated inequality. It does not strengthen the hypotheses (for example to positive weights) and does not change the conclusion."
+        },
+        {
+          "group": "proof",
+          "text": "The proof contains a genuine derivation that is correct under the stated premises. Any valid route is acceptable, for example: a nonnegative quadratic in t such as sum w_i (a_i t - b_i)^2 \u2265 0 followed by a discriminant or choice-of-t argument; the weighted Lagrange-type identity (sum w a^2)(sum w b^2) - (sum w a b)^2 = (1/2) sum_{i,j} w_i w_j (a_i b_j - a_j b_i)^2; or a shown reduction via sqrt(w_i) to the unweighted inequality. It does not merely assert 'this is just Cauchy-Schwarz', 'follows immediately' or cite the weighted statement itself."
+        },
+        {
+          "group": "proof",
+          "text": "The zero-weight boundary is handled correctly. If the route divides by or normalizes with a quantity such as A = sum w_i a_i^2, the case A = 0 is treated, with the correct deduction that w_i a_i = 0 for every i (so sum w_i a_i b_i = 0 and the inequality reads 0 \u2264 0). It must not wrongly conclude that every a_i is zero. Routes that avoid division (such as the double-sum identity or a reduction via sqrt(w_i)) satisfy this automatically provided they do not rely on positive weights."
+        },
+        {
+          "group": "proof",
+          "text": "The key computation is displayed explicitly (for example the expansion of the quadratic into coefficients A, B, C, or the expansion of the double-sum identity), and each step follows from the one before. The proof reaches exactly the stated inequality. Correctness is judged on the mathematics, not on notation or markup choices."
+        },
+        {
+          "group": "fidelity",
+          "text": "The supplied remark is retained after the proof and is correct: setting all weights to 1 gives the unweighted Cauchy-Schwarz inequality. No incorrect extra remark is added (for example an equality condition that ignores zero weights)."
+        },
+        {
+          "group": "style",
+          "text": "The result reads as a clean theorem followed by a proof with ordinary mathematical prose. The draft's theatrical opening ('embark on a journey', 'elegant world') and the bare 'obviously ... QED' are gone."
+        }
+      ]
+    },
+    {
+      "id": "fresh-union-bound",
+      "split": "heldout2",
+      "task": "Produce the final displayed theorem and a complete proof of the finite union bound, based on the draft below. The events are arbitrary: do NOT assume independence or disjointness, and the theorem and proof must say plainly that no such assumption is used. The draft skips the argument and only gestures at indicator functions. Any correct elementary proof route is acceptable (the indicator-function route, disjointification, or induction on n), but whichever route you pick must be carried out with each step justified. Use plain text or LaTeX as you like.\n\nSetting: (\u03a9, F, P) is a probability space and A_1,...,A_n are events in F, with n a positive integer.\nClaim: P(A_1 \u222a ... \u222a A_n) \u2264 P(A_1) + ... + P(A_n).\n\nRemarks to retain (keep both after the proof, in your own wording if you like):\n(1) No independence of the events is needed.\n(2) The bound can be loose when events overlap heavily. If A_1 = ... = A_n = A with P(A) = 1/2, the left side equals 1/2 and the right side equals n/2.\n\nDraft:\n'Behold the mighty union bound, the workhorse of the probabilist's toolkit! Let A_1,...,A_n be events. Then P(union A_i) \u2264 sum P(A_i). Proof. Just think of indicators and the claim is clear. QED. Remarks: no independence needed. Also the bound can be silly, e.g. n copies of an event of probability 1/2.'",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The theorem is stated for finitely many arbitrary events in a probability space, with the correct inequality. It adds no hypotheses such as independence or disjointness, and it says or clearly implies that none is used."
+        },
+        {
+          "group": "proof",
+          "text": "The proof is a complete valid derivation by some correct route, with each step justified. If it uses indicators, it shows the pointwise inequality 1_{union} \u2264 sum 1_{A_i} by checking both cases (a point in the union has at least one indicator equal to 1, so the sum is at least 1; a point outside the union has all indicators 0), and then passes to probabilities through monotonicity and linearity of expectation. If it uses disjointification (B_i = A_i minus the earlier A_j, with P(B_i) \u2264 P(A_i)) or induction using P(A \u222a B) = P(A) + P(B) - P(A \u2229 B) \u2264 P(A) + P(B), those steps must be correctly justified."
+        },
+        {
+          "group": "proof",
+          "text": "The proof does not use or assume independence or disjointness of the A_i anywhere. If disjoint sets appear, they are constructed in the proof (as in disjointification) and not assumed. The final conclusion is exactly the stated inequality."
+        },
+        {
+          "group": "fidelity",
+          "text": "Both remarks are retained and are correct. In the example with n copies of an event of probability 1/2, the left side is 1/2 and the right side is n/2, so the bound is loose for n \u2265 2. The text does not claim it is loose for every n or every set of events."
+        },
+        {
+          "group": "style",
+          "text": "The text reads as a theorem followed by a proof in plain mathematical prose. Theatrical wording from the draft ('Behold the mighty union bound', 'workhorse of the probabilist's toolkit') and the bare 'just think of indicators ... QED' are gone. Notation and markup choices do not matter."
+        }
+      ]
+    },
+    {
+      "id": "fresh-control-technical",
+      "split": "heldout2",
+      "task": "The paragraph below compares two specific hypothetical storage designs for readers who know basic filesystem terminology. Its descriptions are facts about these designs, not universal claims about all journaling or copy-on-write implementations. Return the final paragraph. Edit only where an edit really improves it; unchanged text is acceptable. Return only the paragraph, without commentary.\n\nParagraph:\n\"Both designs make metadata updates recoverable after a crash, but they record committed state differently. The journaling design records each update in a log before overwriting metadata in place. Recovery replays committed log entries and discards incomplete ones. The copy-on-write design never overwrites live metadata blocks. It writes new versions elsewhere and atomically switches the root pointer; recovery finds the last committed root. Journaling requires extra writes for whatever it logs, while copy-on-write tends to cause fragmentation as blocks relocate.\"",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the concrete technical terms: journaling, copy-on-write, metadata, committed log entries, root pointer, committed root, and fragmentation."
+        },
+        {
+          "group": "argument",
+          "text": "Preserves the contrast between the two stated designs: logging before in-place metadata updates and replaying committed entries versus writing elsewhere, atomically switching the root, and recovering the last committed root. It preserves the stated extra-write and fragmentation costs."
+        },
+        {
+          "group": "fidelity",
+          "text": "Adds no mechanisms, performance ranking, or universal claim about all storage implementations. Preserves the metadata scope and the hedges \"tends to\" and \"whatever it logs\", or their equivalents."
+        },
+        {
+          "group": "style",
+          "text": "The edit is minimal. Returning the paragraph unchanged or with a few small edits is acceptable. Any change must keep or improve clarity and must not add decoration, a heading, an introduction or conclusion, or inflated wording."
+        }
+      ]
+    },
+    {
+      "id": "fresh-control-narrative",
+      "split": "heldout2",
+      "task": "Below is a short personal anecdote written in my own dry, self-deprecating voice. Return the final version. Edit only if something truly needs fixing, such as an actual mistake. Do not polish away the humor or the voice, and do not add anything. Return only the anecdote, with no commentary before or after.\n\nAnecdote:\n'I volunteered to bring dessert to the office potluck, which in my household means opening a box. The box said it served twelve. It did not say twelve what. Thirty-one people showed up, and by the time I reached the table a coworker had cut every brownie into pieces roughly the size of a postage stamp and was handing them out like a pharmacist. I took mine, recieved a nod of respect for the portion control I had not planned, and went home with an empty pan and a reputation.'",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The events and details are preserved: the dessert came from a box that said it served twelve, thirty-one people showed up, a coworker cut the brownies into postage-stamp-sized pieces and handed them out, and the narrator went home with an empty pan and a reputation. No details are added, dropped or changed."
+        },
+        {
+          "group": "fidelity",
+          "text": "The one real error, the misspelling 'recieved', is corrected to 'received'. Apart from that fix, the text is essentially unchanged."
+        },
+        {
+          "group": "style",
+          "text": "The humor survives in whatever wording: opening a box counts as 'bringing dessert', the box doesn't say twelve what, the pharmacist comparison, and the unplanned portion control leading to a reputation. None of these jokes is explained, flattened or replaced with generic wording."
+        },
+        {
+          "group": "style",
+          "text": "The first-person, dry, self-deprecating voice is intact. The text is not made more formal, more enthusiastic or more polished, and no moral, summary sentence, or additional punchline is added."
+        }
+      ]
+    }
+  ]
+}

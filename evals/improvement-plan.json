@@ -1,0 +1,17 @@
+{
+  "scope": "v4 development comparison and fresh heldout2 with calibrated grader v2",
+  "skill_candidates": {
+    "v3": "efb0552432b4072d790f9273f90f6f9962b9a717f7a85ca941e83f6b58dd39fb",
+    "v4": "2f56547251c3f77dc2e718cd35ceca893f78352c45eb98397a0a78ba6e5b33d4"
+  },
+  "datasets": {
+    "development": "a5cb1f245cd0ca53c0de445a2c95adbfd6efd7d53a2e1284406db10d2cc28e43",
+    "heldout2": "727fa9e1952b23cf710d442dd36d04ac19cf2a098ce12d6526902da9261f6ca8"
+  },
+  "grader_sha256": "48f37689d8877b22e6e9233f8acae85a9adb31e5fc49e4d9b9b8491666950277",
+  "qa_before_execution": [
+    "Scheduling rubric corrected to preserve the office's notification deadline without inventing a separate author-to-friend commitment.",
+    "Technical control scoped to two hypothetical metadata storage designs to avoid universal claims about real filesystem implementations."
+  ],
+  "selection_rule": "Choose v4 only if development holistic mean improves and aggregate fidelity assertion rate does not decrease relative to v3 under the same v2 grader. Otherwise keep v3. No selection from heldout2."
+}

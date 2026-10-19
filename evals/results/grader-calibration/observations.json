@@ -1,0 +1,1550 @@
+[
+  {
+    "grader_version": "v1",
+    "case": "cal-permission",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "You may inspect the archive if a supervisor requests it. You are not required to do so.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Inspection remains permitted, not required.",
+          "passed": true,
+          "evidence": "\"You may inspect... You are not required to do so\" keeps the permission and states plainly that there is no duty."
+        }
+      ],
+      "score": 5,
+      "note": "Direct and faithful. \"If\" for \"when\" keeps the force, and the second sentence states the non-obligation plainly instead of using the meta-label.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "b4bf1f5fed9066fd426f400f7abbd93431c78b10860df1ad0efa37cf70cb83d3",
+      "pool_sha256": "854849505b9198e56bbb0c22087b4300fff4220764e4548bb25e0f13f1866392"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-permission",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "You must inspect the archive whenever a supervisor requests it.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Inspection remains permitted, not required.",
+          "passed": false,
+          "evidence": "\"You must inspect\" turns the permission into an obligation, which reverses the source's \"permission, not a duty.\""
+        }
+      ],
+      "score": 1,
+      "note": "The edit changes the meaning. It imposes a duty that the original explicitly disclaims.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "b4bf1f5fed9066fd426f400f7abbd93431c78b10860df1ad0efa37cf70cb83d3",
+      "pool_sha256": "854849505b9198e56bbb0c22087b4300fff4220764e4548bb25e0f13f1866392"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-rhetoric",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The parser reads a record and returns its timestamp. It does not validate the signature.",
+      "expected_pass": [
+        true,
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes rhetorical packaging without adding metaphor or a slogan.",
+          "passed": true,
+          "evidence": "Drops 'load-bearing backbone, the whole game, the beating heart' entirely; adds no metaphor or slogan."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the parser input/output and lack of signature validation.",
+          "passed": true,
+          "evidence": "Keeps 'reads a record and returns its timestamp' and 'does not validate the signature' verbatim."
+        }
+      ],
+      "score": 5,
+      "note": "Clean removal of theatrical framing with all facts intact.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "4d963d8963d4e4bd768b0e4f44946662bdfb9ddbffb25eddeba6b214e8044da2",
+      "pool_sha256": "b3d4f1895d864fcfd831aeebfa980f840c5f4d7b14b9fbfcbd3eccdf86b58871"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-rhetoric",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "The parser is the beating heart of the process, validating every record before returning its timestamp.",
+      "expected_pass": [
+        false,
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes rhetorical packaging without adding metaphor or a slogan.",
+          "passed": false,
+          "evidence": "Retains the metaphor 'beating heart of the process'."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the parser input/output and lack of signature validation.",
+          "passed": false,
+          "evidence": "Claims the parser is 'validating every record', which contradicts 'does not validate the signature'. It also drops the explicit statement about the signature."
+        }
+      ],
+      "score": 1,
+      "note": "Keeps the rhetoric and reverses a key fact by adding validation, so it fails both style and fidelity.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "4d963d8963d4e4bd768b0e4f44946662bdfb9ddbffb25eddeba6b214e8044da2",
+      "pool_sha256": "b3d4f1895d864fcfd831aeebfa980f840c5f4d7b14b9fbfcbd3eccdf86b58871"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-additive-reason",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "We want to estimate the signal covariance, but the observed covariance also includes the known measurement covariance D. Subtracting D removes this additive bias. This does not establish finite-sample accuracy.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Explains why subtracting D removes the additive covariance bias without inventing a new result.",
+          "passed": true,
+          "evidence": "States the observed covariance 'also includes the known measurement covariance D' and that 'Subtracting D removes this additive bias'; explicitly says 'This does not establish finite-sample accuracy', inventing no result."
+        }
+      ],
+      "score": 4,
+      "note": "Faithful to all four facts and preserves the limitation. Minor: 'also includes' is less explicit than stating observed = signal + D, so the additive structure that justifies the subtraction is only implied.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "6ff07aea287bbcbc16e1d1e88b8e315ba22ff39edcb5715ffa32ab44e4abfd06",
+      "pool_sha256": "90ec3b0745e5b740871d0b70ae88c94e82a30c1b39146b998541812e7e91b2df"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-additive-reason",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "Subtract D. This proves the estimator is accurate for every sample size.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Explains why subtracting D removes the additive covariance bias without inventing a new result.",
+          "passed": false,
+          "evidence": "Gives no explanation of why subtracting D removes the bias (never states observed = signal + D), and invents a new result: 'proves the estimator is accurate for every sample size', contradicting 'No finite-sample accuracy result is available.'"
+        }
+      ],
+      "score": 1,
+      "note": "Fabricates a finite-sample accuracy claim that directly contradicts the given facts; also omits the goal and the additive decomposition. Not clear research prose.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "6ff07aea287bbcbc16e1d1e88b8e315ba22ff39edcb5715ffa32ab44e4abfd06",
+      "pool_sha256": "90ec3b0745e5b740871d0b70ae88c94e82a30c1b39146b998541812e7e91b2df"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-proof-invalid",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The stated assumptions do not imply the claim. For example, let U=V be a nonconstant Bernoulli random variable with success probability p in (0,1). Then E[UV]=p, whereas E[U]E[V]=p\u00b2. A condition such as independence would be needed for the proposed factorization.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Does not infer independence or factor the expectation without a sufficient premise.",
+          "passed": true,
+          "evidence": "States the assumptions do not imply the claim, gives counterexample U=V~Bernoulli(p) with E[UV]=p\u2260p\u00b2=E[U]E[V], and notes independence would be needed."
+        }
+      ],
+      "score": 5,
+      "note": "Correctly identifies the gap with a valid, explicit counterexample satisfying all stated integrability assumptions; adds no assumptions.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "e15154063df1d6a7238e82a4ce62860dcdf7ce5505a39c08564dc608b21719da",
+      "pool_sha256": "a2fc6c379de9e9d28faefeab86b57cbad6a63b58456d35e024503cbdda1570ad"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-proof-invalid",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "By linearity of expectation, E[UV]=E[U]E[V]. This proves the claim.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Does not infer independence or factor the expectation without a sufficient premise.",
+          "passed": false,
+          "evidence": "Factors E[UV] into E[U]E[V] by misattributing it to linearity; linearity does not justify product factorization, and no independence or uncorrelatedness premise is given."
+        }
+      ],
+      "score": 1,
+      "note": "Invents an invalid proof of a false claim instead of identifying the gap; material mathematical error.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "e15154063df1d6a7238e82a4ce62860dcdf7ce5505a39c08564dc608b21719da",
+      "pool_sha256": "a2fc6c379de9e9d28faefeab86b57cbad6a63b58456d35e024503cbdda1570ad"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-control",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The queue is empty. The next job starts at noon.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Keeps already clear text substantially unchanged and adds no rhetorical framing.",
+          "passed": true,
+          "evidence": "Returns the text verbatim, which is correct since the original was already clear; no framing added."
+        }
+      ],
+      "score": 5,
+      "note": "Faithful unchanged control. The task said to edit only if needed, and no edit was needed.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "798fe7e923b56f42575fa605351036b0aa8bdf822ab01b527f13bb39168bf5e1",
+      "pool_sha256": "80374ac33ef6d72e0514fd03cda57c5c67ca832dfd1601494ec9bc0dc31b473f"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-control",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "Here is the honest shape of things: emptiness is the defining state of the queue, and noon is the load-bearing hinge on which the next job turns.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        3
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Keeps already clear text substantially unchanged and adds no rhetorical framing.",
+          "passed": false,
+          "evidence": "Rewrites clear two-sentence text into ornate framing ('Here is the honest shape of things', 'load-bearing hinge'), adding rhetorical framing and obscuring the plain facts."
+        }
+      ],
+      "score": 2,
+      "note": "Facts are nominally preserved (queue empty, next job at noon), but 'noon is the load-bearing hinge on which the next job turns' blurs the plain statement that the job starts at noon. The rhetorical framing is unrequested and makes clear text less clear.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "798fe7e923b56f42575fa605351036b0aa8bdf822ab01b527f13bb39168bf5e1",
+      "pool_sha256": "80374ac33ef6d72e0514fd03cda57c5c67ca832dfd1601494ec9bc0dc31b473f"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-delete",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The endpoint accepts JSON and rejects XML.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes the requested discussion and warning rather than preserving them under another label.",
+          "passed": true,
+          "evidence": "Output is only 'The endpoint accepts JSON and rejects XML.' Both the review discussion and the 'not universal' warning are gone."
+        }
+      ],
+      "score": 5,
+      "note": "Removes exactly what was requested and keeps the current behavior statement unchanged. Fully faithful and usable.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "756819139c8cdadbc38a34ed28b0472a614b3d778da392392642b684c584a797",
+      "pool_sha256": "fb6f07b153924ec6771bd2d0fbdc025cf7e8ea34589a854c8266a375840ea130"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-delete",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "The endpoint accepts JSON and rejects XML, but the feature is not universal, as agreed during review.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        3
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes the requested discussion and warning rather than preserving them under another label.",
+          "passed": false,
+          "evidence": "Keeps both the warning ('the feature is not universal') and the review-process reference ('as agreed during review'), only reworded into one sentence instead of removed."
+        }
+      ],
+      "score": 2,
+      "note": "Ignores the core edit instruction: the discussion and warning the user asked to remove are still present, so the response does not deliver the requested change. The JSON/XML behavior is kept correctly.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "756819139c8cdadbc38a34ed28b0472a614b3d778da392392642b684c584a797",
+      "pool_sha256": "fb6f07b153924ec6771bd2d0fbdc025cf7e8ea34589a854c8266a375840ea130"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-quantifier",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "Valid requests must have a token, but having a token is not enough to make a request valid.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps a token necessary but not sufficient for validity.",
+          "passed": true,
+          "evidence": "'Valid requests must have a token' keeps the token necessary for validity; 'having a token is not enough to make a request valid' keeps it not sufficient. Both quantifiers survive in plain wording."
+        }
+      ],
+      "score": 5,
+      "note": "Faithful plain rewrite; it keeps the universal claim about valid requests and the denial of sufficiency.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "abf0ff352927eba2e5e52544358de7323e03b8a33368237a41ba60f3eeb492a6",
+      "pool_sha256": "ee376931d90ba1c596847036aba8e750737ad0b2bb78d171f1564a0c8628051a"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-quantifier",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "Every request with a token is valid.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps a token necessary but not sufficient for validity.",
+          "passed": false,
+          "evidence": "'Every request with a token is valid' states the converse and makes a token sufficient for validity, which the original denies. It also drops the necessity claim."
+        }
+      ],
+      "score": 1,
+      "note": "Reverses the logical direction and contradicts the second sentence of the source, a material meaning error.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "abf0ff352927eba2e5e52544358de7323e03b8a33368237a41ba60f3eeb492a6",
+      "pool_sha256": "ee376931d90ba1c596847036aba8e750737ad0b2bb78d171f1564a0c8628051a"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-scope",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "For 0<x<1, f(x)\u22643x. This gives an upper bound only.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the domain and direction of the inequality.",
+          "passed": true,
+          "evidence": "States 0<x<1, which matches 'positive x less than 1', and f(x)\u22643x, which matches 'at most 3x'. 'Upper bound only' keeps the 'not a lower bound' clarification."
+        }
+      ],
+      "score": 5,
+      "note": "Faithful and plain. Meaning and emphasis are preserved.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "584dd87ef3a87fdf4acc150030450b80f4ccdc8d65257d7d47cb995e2de703c0",
+      "pool_sha256": "9dca165e9286e529e124d453f1859a7f7782ab21c1b7909e8903f03c7c9262ff"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-scope",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "For every positive x, f(x)\u22653x.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the domain and direction of the inequality.",
+          "passed": false,
+          "evidence": "Drops the x<1 restriction (says 'every positive x') and reverses the inequality to f(x)\u22653x, turning the upper bound into a lower bound."
+        }
+      ],
+      "score": 1,
+      "note": "Two material fidelity errors, domain and direction, so it states the opposite of the source claim.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "584dd87ef3a87fdf4acc150030450b80f4ccdc8d65257d7d47cb995e2de703c0",
+      "pool_sha256": "9dca165e9286e529e124d453f1859a7f7782ab21c1b7909e8903f03c7c9262ff"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-causal",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "The decline might reflect seasonal demand, but we have not tested that explanation.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The seasonal explanation remains a possibility that has not been tested.",
+          "passed": true,
+          "evidence": "Keeps 'might reflect seasonal demand' and 'we have not tested that explanation', so the explanation stays a possibility that has not been tested."
+        }
+      ],
+      "score": 4,
+      "note": "Removes the filler 'Worth saying plainly' and keeps the hedge. It also drops 'recent', which is content rather than filler, so a small detail is lost.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "d87e1684a5ae10ecdc44d3a9f4c0016ae529d0e41a34189eb49cb073972882df",
+      "pool_sha256": "676bd34649e4f5e0be33efe347f5115bab07e769f77c160fe691e7db4c61fd06"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-causal",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "Seasonal demand caused the decline.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The seasonal explanation remains a possibility that has not been tested.",
+          "passed": false,
+          "evidence": "'Seasonal demand caused the decline' states the explanation as fact and deletes the note that it was never tested."
+        }
+      ],
+      "score": 1,
+      "note": "Turns an untested hypothesis into a definite causal claim, which breaks the 'without changing certainty' requirement. The meaning is materially changed.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "d87e1684a5ae10ecdc44d3a9f4c0016ae529d0e41a34189eb49cb073972882df",
+      "pool_sha256": "676bd34649e4f5e0be33efe347f5115bab07e769f77c160fe691e7db4c61fd06"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-format-vs-validity",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "Since z>0, division by z is defined.\n\\[\nz/z=z\\cdot z^{-1}=1.\n\\]",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        4,
+        4
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Displays each equality on its own line.",
+          "passed": false,
+          "evidence": "Both equalities, z/z=z\u00b7z^{-1} and z\u00b7z^{-1}=1, are chained in one \\[...\\] display rather than each on its own line."
+        }
+      ],
+      "score": 3,
+      "note": "The math is valid. The prose correctly justifies that division is defined because z>0, and z\u00b7z^{-1}=1 follows from the definition of the inverse. It misses the requested layout of one equality per line, and it gives no prose for the step z\u00b7z^{-1}=1.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "6fbf3985d9daa9d7a5fa345140b4b6560bb31f2baed0cb073d12861fe0041e64",
+      "pool_sha256": "0e100ca6637e7720a43fead9eb669fe1ed15a1a8fc98f82ca014cefd4267a9c4"
+    }
+  },
+  {
+    "grader_version": "v1",
+    "case": "cal-format-vs-validity",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "Since z>0, z/z=0. Thus the desired value is 1.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Displays each equality on its own line.",
+          "passed": false,
+          "evidence": "No displayed equations; 'z/z=0' is written inline in prose."
+        }
+      ],
+      "score": 1,
+      "note": "Mathematically wrong. It asserts z/z=0 and then concludes the value is 1, which contradicts itself. Nothing is displayed, so it is unusable.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v1"
+      },
+      "rubric_sha256": "6fbf3985d9daa9d7a5fa345140b4b6560bb31f2baed0cb073d12861fe0041e64",
+      "pool_sha256": "0e100ca6637e7720a43fead9eb669fe1ed15a1a8fc98f82ca014cefd4267a9c4"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-permission",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "You may inspect the archive if a supervisor requests it. You are not required to do so.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Inspection remains permitted, not required.",
+          "passed": true,
+          "evidence": "\"You may inspect the archive if a supervisor requests it. You are not required to do so.\" keeps the permission and states plainly that no obligation exists."
+        }
+      ],
+      "score": 5,
+      "note": "Direct and faithful. It keeps the permission modality and the triggering condition. The abstract \"permission, not a duty\" contrast becomes a plain statement with the same force. The change from \"when\" to \"if\" does not alter the conditional scope here.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "b4bf1f5fed9066fd426f400f7abbd93431c78b10860df1ad0efa37cf70cb83d3",
+      "pool_sha256": "3ddac0fe5c874db873d73015a1ab01193348e8ad4f8dee1f226ec4235241930f"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-permission",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "You must inspect the archive whenever a supervisor requests it.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Inspection remains permitted, not required.",
+          "passed": false,
+          "evidence": "\"You must inspect the archive whenever a supervisor requests it.\" turns the permission into an obligation and drops the source's \"This is permission, not a duty.\""
+        }
+      ],
+      "score": 2,
+      "note": "Material fidelity error. The source grants permission and says outright that it is not a duty. The rewrite imposes a mandatory duty, so a reader would think they are required to inspect on every request. The change from \"when\" to \"whenever\" makes the obligation stronger still.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "b4bf1f5fed9066fd426f400f7abbd93431c78b10860df1ad0efa37cf70cb83d3",
+      "pool_sha256": "3ddac0fe5c874db873d73015a1ab01193348e8ad4f8dee1f226ec4235241930f"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-rhetoric",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The parser reads a record and returns its timestamp. It does not validate the signature.",
+      "expected_pass": [
+        true,
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes rhetorical packaging without adding metaphor or a slogan.",
+          "passed": true,
+          "evidence": "The response is \"The parser reads a record and returns its timestamp. It does not validate the signature.\" It drops \"load-bearing backbone,\" \"the whole game,\" and \"the beating heart of this step,\" and adds no new metaphor or slogan."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the parser input/output and lack of signature validation.",
+          "passed": true,
+          "evidence": "\"reads a record and returns its timestamp\" keeps the input and output. \"It does not validate the signature\" keeps the negation exactly."
+        }
+      ],
+      "score": 5,
+      "note": "The response removes all the theatrical packaging and keeps both factual sentences unchanged. It also drops the phrase \"of this step,\" which appeared only inside the metaphor; this does not change any factual claim about what the parser does. It is usable as requested.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "4d963d8963d4e4bd768b0e4f44946662bdfb9ddbffb25eddeba6b214e8044da2",
+      "pool_sha256": "9b208b556b2f5cbb382f1353811741425ac4d4e77a535dcc841e64433de43934"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-rhetoric",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "The parser is the beating heart of the process, validating every record before returning its timestamp.",
+      "expected_pass": [
+        false,
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes rhetorical packaging without adding metaphor or a slogan.",
+          "passed": false,
+          "evidence": "The response keeps the metaphor \"the beating heart of the process.\""
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the parser input/output and lack of signature validation.",
+          "passed": false,
+          "evidence": "The response says the parser is \"validating every record before returning its timestamp.\" This contradicts the source's \"It does not validate the signature.\" The \"reads a record\" input is also replaced by an implied validation step."
+        }
+      ],
+      "score": 1,
+      "note": "The response reverses the key fact. A reader would conclude that the parser performs validation, when the source states that it does not validate the signature. Someone could therefore rely on a validation guarantee that does not exist. The response also keeps one of the metaphors the task asked to remove. Neither the style nor the fidelity requirement is met, so the sentence would need a full rewrite.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "4d963d8963d4e4bd768b0e4f44946662bdfb9ddbffb25eddeba6b214e8044da2",
+      "pool_sha256": "9b208b556b2f5cbb382f1353811741425ac4d4e77a535dcc841e64433de43934"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-additive-reason",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "We want to estimate the signal covariance, but the observed covariance also includes the known measurement covariance D. Subtracting D removes this additive bias. This does not establish finite-sample accuracy.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Explains why subtracting D removes the additive covariance bias without inventing a new result.",
+          "passed": true,
+          "evidence": "\"the observed covariance also includes the known measurement covariance D. Subtracting D removes this additive bias.\" This gives the additive structure as the reason subtraction works. \"This does not establish finite-sample accuracy\" keeps the source's limitation and adds no new result."
+        }
+      ],
+      "score": 5,
+      "note": "Uses only the given facts: the estimation goal, the observed = signal + known D structure, subtraction removing the additive bias, and no finite-sample result. It keeps the correct modality and reads as clear, concise research prose.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "6ff07aea287bbcbc16e1d1e88b8e315ba22ff39edcb5715ffa32ab44e4abfd06",
+      "pool_sha256": "0dba1b6fb9d23aecef4096449f07977f9f77ef82969c3355f5519cc598f24d77"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-additive-reason",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "Subtract D. This proves the estimator is accurate for every sample size.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Explains why subtracting D removes the additive covariance bias without inventing a new result.",
+          "passed": false,
+          "evidence": "\"Subtract D. This proves the estimator is accurate for every sample size.\" It does not explain why subtracting D works: it never says that observed covariance = signal covariance + D. It also invents a result that the source explicitly rules out."
+        }
+      ],
+      "score": 1,
+      "note": "Material fidelity error. The source says no finite-sample accuracy result is available, but the response claims the estimator is proven accurate at every sample size. A reader would rely on a guarantee that does not exist. The response also drops the estimation goal and the additive decomposition, so it is unusable as requested.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "6ff07aea287bbcbc16e1d1e88b8e315ba22ff39edcb5715ffa32ab44e4abfd06",
+      "pool_sha256": "0dba1b6fb9d23aecef4096449f07977f9f77ef82969c3355f5519cc598f24d77"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-proof-invalid",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The stated assumptions do not imply the claim. For example, let U=V be a nonconstant Bernoulli random variable with success probability p in (0,1). Then E[UV]=p, whereas E[U]E[V]=p\u00b2. A condition such as independence would be needed for the proposed factorization.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Does not infer independence or factor the expectation without a sufficient premise.",
+          "passed": true,
+          "evidence": "States \"The stated assumptions do not imply the claim\" and gives the counterexample U=V~Bernoulli(p), p in (0,1): E[UV]=E[U\u00b2]=p versus E[U]E[V]=p\u00b2. It notes \"A condition such as independence would be needed,\" which identifies the missing premise without assuming it."
+        }
+      ],
+      "score": 5,
+      "note": "The counterexample is mathematically correct and satisfies all stated hypotheses: bounded variables, so U, V, and UV are integrable. p \u2260 p\u00b2 for p in (0,1). It identifies the gap as the task directs instead of inventing a proof. Saying \"a condition such as independence\" correctly presents independence as one sufficient condition (uncorrelatedness would also suffice) and does not overclaim necessity. It is concise and fully usable.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "e15154063df1d6a7238e82a4ce62860dcdf7ce5505a39c08564dc608b21719da",
+      "pool_sha256": "d6fac4b62edd0c0cee3b84f881e6f8cc9a4ac1988b18147ecd41d13844a0e0ee"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-proof-invalid",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "By linearity of expectation, E[UV]=E[U]E[V]. This proves the claim.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Does not infer independence or factor the expectation without a sufficient premise.",
+          "passed": false,
+          "evidence": "States \"By linearity of expectation, E[UV]=E[U]E[V]. This proves the claim.\" This factors the expectation with no sufficient premise. Linearity concerns sums and scalar multiples, not products."
+        }
+      ],
+      "score": 1,
+      "note": "The algebra is invalid: linearity does not give multiplicativity. The response asserts that the unproven claim is proved, so a reader would wrongly believe E[UV]=E[U]E[V] holds for any integrable U, V with UV integrable. It does not identify the gap, which the task explicitly requested.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "e15154063df1d6a7238e82a4ce62860dcdf7ce5505a39c08564dc608b21719da",
+      "pool_sha256": "d6fac4b62edd0c0cee3b84f881e6f8cc9a4ac1988b18147ecd41d13844a0e0ee"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-control",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The queue is empty. The next job starts at noon.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Keeps already clear text substantially unchanged and adds no rhetorical framing.",
+          "passed": true,
+          "evidence": "Returns the source verbatim: \"The queue is empty. The next job starts at noon.\" There is no added framing."
+        }
+      ],
+      "score": 5,
+      "note": "The source was already clear, so leaving it unchanged is the correct response to \"edit only if needed.\" All facts and their scope are preserved exactly.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "798fe7e923b56f42575fa605351036b0aa8bdf822ab01b527f13bb39168bf5e1",
+      "pool_sha256": "980786192ee79b56605786dcd268fa309112783e69b7323a31b9fd1268b9b6bb"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-control",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "Here is the honest shape of things: emptiness is the defining state of the queue, and noon is the load-bearing hinge on which the next job turns.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        3
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Keeps already clear text substantially unchanged and adds no rhetorical framing.",
+          "passed": false,
+          "evidence": "Rewrites the clear source entirely and adds rhetorical framing: \"Here is the honest shape of things\", \"emptiness is the defining state of the queue\", \"noon is the load-bearing hinge on which the next job turns.\""
+        }
+      ],
+      "score": 1,
+      "note": "The source was already clear, and the task said to edit only if needed. R01 swaps the two plain statements for metaphor and staged framing. The bare facts (empty queue, next job at noon) can still be pulled out, but they are buried in ornament. \"Defining state\" also suggests the queue is characteristically or permanently empty, not just empty now, which changes what a reader would infer. The result is the opposite of what was requested and cannot be used without a full revert.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "798fe7e923b56f42575fa605351036b0aa8bdf822ab01b527f13bb39168bf5e1",
+      "pool_sha256": "980786192ee79b56605786dcd268fa309112783e69b7323a31b9fd1268b9b6bb"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-delete",
+    "subset": "tune",
+    "response": {
+      "id": "a",
+      "text": "The endpoint accepts JSON and rejects XML.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes the requested discussion and warning rather than preserving them under another label.",
+          "passed": true,
+          "evidence": "Output is exactly \"The endpoint accepts JSON and rejects XML.\" It contains no review-process wording and no \"not universal\" warning under any label."
+        }
+      ],
+      "score": 5,
+      "note": "Removes the review discussion and its warning as requested. It keeps the current-behavior sentence word for word, with no change to modality or scope. Usable as is.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "756819139c8cdadbc38a34ed28b0472a614b3d778da392392642b684c584a797",
+      "pool_sha256": "64c696322fb648f21b3553af48aedfd4a3af6bcabbd6147dca01375fe48abfa4"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-delete",
+    "subset": "tune",
+    "response": {
+      "id": "b",
+      "text": "The endpoint accepts JSON and rejects XML, but the feature is not universal, as agreed during review.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        3
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Removes the requested discussion and warning rather than preserving them under another label.",
+          "passed": false,
+          "evidence": "Keeps both items the task said to remove: \"but the feature is not universal, as agreed during review.\" The warning (\"not universal\") and the review-process reference (\"as agreed during review\") are rephrased into a trailing clause rather than removed."
+        }
+      ],
+      "score": 2,
+      "note": "The behavior statement \"The endpoint accepts JSON and rejects XML\" is preserved correctly, but the requested edit was not made. A reader would still believe the feature has a non-universal limitation endorsed by a review decision, which the author explicitly asked to drop. The \"but\" also frames the retained warning as a qualification of the JSON/XML behavior, which the source did not do. Removing that clause is needed before the text is usable.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "756819139c8cdadbc38a34ed28b0472a614b3d778da392392642b684c584a797",
+      "pool_sha256": "64c696322fb648f21b3553af48aedfd4a3af6bcabbd6147dca01375fe48abfa4"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-quantifier",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "Valid requests must have a token, but having a token is not enough to make a request valid.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps a token necessary but not sufficient for validity.",
+          "passed": true,
+          "evidence": "\"Valid requests must have a token\" keeps the token necessary for validity. \"having a token is not enough to make a request valid\" keeps it not sufficient."
+        }
+      ],
+      "score": 5,
+      "note": "Both claims are preserved in plain wording. The bare plural \"Valid requests\" with \"must\" still reads as universal, so the quantifier from \"Every valid request\" is kept. Modality and direction of implication are unchanged.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "abf0ff352927eba2e5e52544358de7323e03b8a33368237a41ba60f3eeb492a6",
+      "pool_sha256": "414ff3c35f8bf45074f8504391be8f05c17fa6b695099319ad7f77564591c4e3"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-quantifier",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "Every request with a token is valid.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps a token necessary but not sufficient for validity.",
+          "passed": false,
+          "evidence": "\"Every request with a token is valid\" makes a token sufficient for validity, which directly contradicts \"A token alone does not make a request valid.\" It also drops the necessity claim, that every valid request has a token."
+        }
+      ],
+      "score": 1,
+      "note": "Material fidelity error. The source says a token is necessary but not sufficient. R02 reverses the implication and says a token is sufficient. A reader would wrongly conclude that any tokened request is valid, which the source explicitly denies. The necessity claim is also lost. The output asserts the opposite of the source's key point, so it is unusable.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "abf0ff352927eba2e5e52544358de7323e03b8a33368237a41ba60f3eeb492a6",
+      "pool_sha256": "414ff3c35f8bf45074f8504391be8f05c17fa6b695099319ad7f77564591c4e3"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-scope",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "For 0<x<1, f(x)\u22643x. This gives an upper bound only.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the domain and direction of the inequality.",
+          "passed": true,
+          "evidence": "\"For 0<x<1, f(x)\u22643x.\" This keeps the domain (positive x less than 1) and the direction (at most). \"This gives an upper bound only\" keeps the clarification that it is not a lower bound."
+        }
+      ],
+      "score": 5,
+      "note": "The rewrite is plain and faithful. The domain, inequality direction, and upper-bound-only qualification are all intact, and it can be used as requested.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "584dd87ef3a87fdf4acc150030450b80f4ccdc8d65257d7d47cb995e2de703c0",
+      "pool_sha256": "01a3800012784768038e53f54e9c3e4256eb05abb382cc90daa2270db6656ed9"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-scope",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "For every positive x, f(x)\u22653x.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the domain and direction of the inequality.",
+          "passed": false,
+          "evidence": "Response states \"For every positive x, f(x)\u22653x.\" The source domain \"positive x less than 1\" (0<x<1) is widened to all positive x, and \"at most 3x\" (\u2264) becomes \u2265. The response also drops the clarification that this is an upper bound, not a lower bound."
+        }
+      ],
+      "score": 1,
+      "note": "This is a material fidelity error that reverses the claim. A reader would conclude that 3x is a lower bound on f(x), and that it holds for every x>0. The source gives an upper bound valid only on (0,1). Relying on this rewrite would lead to the opposite conclusion on a domain the source never covers, so it is unusable.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "584dd87ef3a87fdf4acc150030450b80f4ccdc8d65257d7d47cb995e2de703c0",
+      "pool_sha256": "01a3800012784768038e53f54e9c3e4256eb05abb382cc90daa2270db6656ed9"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-causal",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "The decline might reflect seasonal demand, but we have not tested that explanation.",
+      "expected_pass": [
+        true
+      ],
+      "score_range": [
+        4,
+        5
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The seasonal explanation remains a possibility that has not been tested.",
+          "passed": true,
+          "evidence": "\"The decline might reflect seasonal demand, but we have not tested that explanation.\" keeps the modal \"might\" and the untested caveat."
+        }
+      ],
+      "score": 4,
+      "note": "The filler \"Worth saying plainly\" is removed correctly, and the level of certainty is unchanged. The response also drops \"recent\", which gives the decline's timing; it is content, not filler. The referent is probably still clear in context, so this is a minor wording repair rather than a material error.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "d87e1684a5ae10ecdc44d3a9f4c0016ae529d0e41a34189eb49cb073972882df",
+      "pool_sha256": "58845952a561769d270e6b7e990b7c21e275a8a891af449708323d8ff5b6eec2"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-causal",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "Seasonal demand caused the decline.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The seasonal explanation remains a possibility that has not been tested.",
+          "passed": false,
+          "evidence": "\"Seasonal demand caused the decline.\" states causation as fact and drops both \"might\" and \"we have not tested that explanation.\""
+        }
+      ],
+      "score": 2,
+      "note": "This is a material fidelity error. A reader would now believe that seasonal demand has been established as the cause, when the source presents it as an untested possibility. The response also drops \"recent\". It directly violates the task's instruction not to change certainty.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "d87e1684a5ae10ecdc44d3a9f4c0016ae529d0e41a34189eb49cb073972882df",
+      "pool_sha256": "58845952a561769d270e6b7e990b7c21e275a8a891af449708323d8ff5b6eec2"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-format-vs-validity",
+    "subset": "validation",
+    "response": {
+      "id": "a",
+      "text": "Since z>0, division by z is defined.\n\\[\nz/z=z\\cdot z^{-1}=1.\n\\]",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        4,
+        4
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Displays each equality on its own line.",
+          "passed": false,
+          "evidence": "There is a display, but it chains two equalities on one line: \"z/z=z\\cdot z^{-1}=1.\" The task asks for each equality on its own line, which would need separate lines for z/z = z\u00b7z^{-1} and z\u00b7z^{-1} = 1."
+        }
+      ],
+      "score": 4,
+      "note": "The proof is mathematically correct. It uses z>0 to justify that division is defined and rewrites z/z as z\u00b7z^{-1}=1. The prose is brief, as requested. The only remaining edit is formatting: split the chained display so each equality sits on its own line, optionally with a brief justification such as \"by definition of the inverse\". That is a minor requested-detail fix, not a fidelity error.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R02",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "6fbf3985d9daa9d7a5fa345140b4b6560bb31f2baed0cb073d12861fe0041e64",
+      "pool_sha256": "53c1798071c866af5feedc6ac6a1bc06ee16efe2f7e756c5ac7092a45464421b"
+    }
+  },
+  {
+    "grader_version": "v2",
+    "case": "cal-format-vs-validity",
+    "subset": "validation",
+    "response": {
+      "id": "b",
+      "text": "Since z>0, z/z=0. Thus the desired value is 1.",
+      "expected_pass": [
+        false
+      ],
+      "score_range": [
+        1,
+        2
+      ]
+    },
+    "grade": {
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Displays each equality on its own line.",
+          "passed": false,
+          "evidence": "No equality is displayed. Everything is inline prose: \"Since z>0, z/z=0. Thus the desired value is 1.\""
+        }
+      ],
+      "score": 1,
+      "note": "The proof states a false equality, \"z/z=0\", and then concludes \"the desired value is 1\" with no valid step connecting the two. A reader would be told that z/z equals 0, which is false, and the conclusion does not follow from what is written. It is mathematically wrong and unusable as a proof. It also fails the display requirement.",
+      "grader": {
+        "model": "claude-opus-5-5",
+        "effort": "high",
+        "blind_label": "R01",
+        "pool_id": 1,
+        "pool_size": 2,
+        "version": "v2"
+      },
+      "rubric_sha256": "6fbf3985d9daa9d7a5fa345140b4b6560bb31f2baed0cb073d12861fe0041e64",
+      "pool_sha256": "53c1798071c866af5feedc6ac6a1bc06ee16efe2f7e756c5ac7092a45464421b"
+    }
+  }
+]
