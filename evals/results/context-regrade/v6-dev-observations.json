@@ -1,0 +1,2099 @@
+[
+  {
+    "version": "context-regrade-v1",
+    "batch": "58787ec45eab936f6350e7e9",
+    "case": "large-dev-a-01",
+    "config": "sol-low",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a practical prose notice rather than a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all operational details and qualifications. Its reference to pavement outside the entrance does not materially broaden the described work.",
+          "quotes": {
+            "source": [
+              "The path has no steps, although one section has a temporary firm mat over uneven ground.",
+              "unless the updated notice announces a further extension."
+            ],
+            "A": [
+              "It has no steps, but one section has a temporary firm mat over uneven ground.",
+              "unless the updated notice announces a further extension."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the closure, alternative routes, route conditions, limited assistance, Friday exception, other-branch eligibility, and weather extension procedure.",
+          "quotes": {
+            "source": [
+              "a staff member may not be available immediately",
+              "including books borrowed from another branch"
+            ],
+            "A": [],
+            "B": [
+              "a staff member may not be available immediately.",
+              "including books borrowed from another branch."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the arrangements and their limits, including the distinction between accompaniment and transport and the restricted Friday returns exception.",
+          "quotes": {
+            "source": [
+              "We cannot provide transport around the building.",
+              "This extension applies to books due Monday through Thursday"
+            ],
+            "A": [
+              "The library cannot provide transport around the building.",
+              "Books due Monday through Thursday may be returned on Friday without a late charge"
+            ],
+            "B": [
+              "We cannot provide transport around the building.",
+              "Books due Monday through Thursday may be returned on Friday without a late charge"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic notice language and clear assistance requests. Their small differences in address and phrasing do not create a substantive readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you would like this help, call the library desk before setting out."
+            ],
+            "B": [
+              "Call the library desk before setting out to request this assistance."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the closure, explain the routes, and then cover help, returns, and rain. A keeps shelter availability with route information; B uses it to lead into assistance. Both arrangements remain easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The bus shelter will remain available, but the direct path to the east entrance will be behind a temporary barrier.",
+              "During library opening hours, staff can meet visitors at the bus shelter"
+            ],
+            "B": [
+              "The bus shelter will remain available, but the direct path from it to the east entrance will be behind a temporary barrier. If you need help reaching the west entrance"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the requested connected prose and brief heading, make the assistance referent explicit, and retain useful qualifications. Neither offers a decisive improvement in the author's preferred argument development for this simple notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "staff can meet visitors at the bus shelter and accompany them to the west entrance."
+            ],
+            "B": [
+              "If you need help reaching the west entrance, staff can meet you at the shelter and accompany you during library opening hours."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both deliver the requested usable notice, with clear routes, identified assistance, and preserved contingencies. Their paragraph-placement differences do not establish a substantive preference for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you are coming from the bus shelter, follow the signed path along the south side of the building to the west entrance."
+            ],
+            "B": [
+              "From the bus shelter, follow the signed path along the south side of the building to the west entrance."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "4381eaca6d0cdf549a857afc2104f8babeed1e73d75186587fe7f306c5b6ec1c",
+      "v6-dev": "8481f05aca1ce1bf1c4faa7ec329943f1c36cf6c9c9257e441ab1b50ee62d635"
+    },
+    "prompt_sha256": "946534ba1243e60262b6c3b16949d543712bfe1568713b5235394a508fe6c702",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "raw_sha256": "a5ac26662e28c37ef6d704c77a431cfe3fd7fc308b6883dfa255e2c0fb3121cd",
+    "attempt": 1,
+    "pair_id": "P05",
+    "evidence_format_repairs": [],
+    "record_sha256": "48b3942d745bf0066eacd0552fcc78c0225fd87ae52de5aca1ad9ab193c0099a"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "939e0ea3eecbf7f8a58ff072",
+    "case": "large-dev-a-13",
+    "config": "sol-low",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested revision must explain the proof's finite identities, limits, and epsilon bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves every hypothesis and conclusion, with valid fixed-index limits, a strict epsilon bound, and explicit equal-term and zero cases.",
+          "quotes": {
+            "source": [
+              "its tail after N terms equals a_(N+1)."
+            ],
+            "A": [
+              "\\sum_{n=N+1}^{\\infty}d_n=a_{N+1}."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the exact theorem and valid limiting argument. Its description of the difference reasonably means distance in context, not signed subtraction.",
+          "quotes": {
+            "source": [
+              "sum_(n=N+1)^M d_n = (a_(N+1)-a_(N+2)) + ... + (a_M-a_(M+1)) = a_(N+1)-a_(M+1)."
+            ],
+            "A": [],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact sum, exact tail, assumptions, and allowance for equal or identically zero terms.",
+          "quotes": {
+            "source": [
+              "If a_1 = 0, all a_n are zero and the same identities apply."
+            ],
+            "A": [
+              "If \\(a_1=0\\), nonnegativity and monotonicity force every \\(a_n\\) to be zero, and the same identities apply."
+            ],
+            "B": [
+              "All cancellations remain valid when some or all terms are equal; no strict decrease is needed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use natural explanations appropriate to a mathematics handout, with clear reasons for introducing partial sums.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To find the sum of the series, consider its first \\(N\\) terms."
+            ],
+            "B": [
+              "To understand the infinite series, first consider its partial sum of \\(N\\) terms."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both develop cancellation, full-series convergence, the fixed tail, and the epsilon choice in a coherent order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Finally, let \\(\\varepsilon>0\\)."
+            ],
+            "B": [
+              "Finally, given \\(\\varepsilon>0\\), the assumption \\(a_n\\to0\\) provides an integer \\(K\\ge1\\)"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better implements the author's explicit display preference through aligned finite calculations and a displayed tail-error identity with its limiting variable specified.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\left|\\sum_{n=N+1}^{M}d_n-a_{N+1}\\right|\n=a_{M+1}\\longrightarrow 0"
+            ],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are correct and avoid external convergence theorems. A gives the tail-error calculation as an explicit displayed step, making the finite-sum-to-limit transition easier to inspect.",
+          "quotes": {
+            "source": [
+              "For fixed N the second identity tends to a_(N+1) as M tends to infinity."
+            ],
+            "A": [
+              "\\left|\\sum_{n=N+1}^{M}d_n-a_{N+1}\\right|\n=a_{M+1}\\longrightarrow 0\n\\qquad\\text{as }M\\longrightarrow\\infty."
+            ],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A has the stronger fit to this user's handout requirements because it lays out the cancellations and tail-error limit visibly, rather than compressing that intermediate calculation into prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\left|\\sum_{n=N+1}^{M}d_n-a_{N+1}\\right|\n=a_{M+1}\\longrightarrow 0"
+            ],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "fd0a01d1fbf9d0b8de3b9fa87b7bab98b096d46272af5ef1fb5140c924f09a01",
+      "v6-dev": "9fe808c3a2eff35c2a71817f5ee3f11a7ca38e0d69cba69e4dd80edd97c76e71"
+    },
+    "prompt_sha256": "6f2e2525988b6ee2d0ec4e3a3f33f647d0ee80f7f4478136e7a6acc7ff153dde",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "raw_sha256": "deb280a009f2af04825ce4aa74f65d2e7a34d43f6ff136485570ba0d9697341f",
+    "attempt": 2,
+    "pair_id": "P04",
+    "evidence_format_repairs": [],
+    "record_sha256": "2bdc7df4db719d1347195649864cb838ff5eb97c0db2a053edd7054c8afe093e"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "855e029bc8adc2c98bf0bdf4",
+    "case": "large-dev-b-03",
+    "config": "sol-low",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is a technician handover revision without a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves counts, timings, temperature limitations, provisional explanation, all logging requirements, inspection, housing prohibition, escalation, and restart authority. Reordering does not change their scope.",
+          "quotes": {
+            "source": [
+              "Please continue recording mornings on which no warning appears as well"
+            ],
+            "A": [
+              "Also record mornings when no warning appears, using the “no warning” box beside the time fields."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all substantive observations, qualifications, and instructions. Requiring both kinds of entries to establish frequency restates the source's reason for no-warning logging.",
+          "quotes": {
+            "source": [
+              "a list containing only warnings will not tell us how often the pattern occurs."
+            ],
+            "A": [],
+            "B": [
+              "Recording both warnings and mornings without warnings is necessary to establish how often the pattern occurs."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the possible moisture explanation without claiming wiping worked, and neither changes the inspection's evidential status or restart authority.",
+          "quotes": {
+            "source": [
+              "Those observations are consistent with moisture around the housing, but they do not tell us that wiping cleared the warning"
+            ],
+            "A": [
+              "Moisture around the housing is a possible explanation, but these observations do not establish that wiping cleared the warning."
+            ],
+            "B": [
+              "These observations are consistent with moisture around the housing, but they do not establish that wiping cleared the warning."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and accessible. A's plainer phrasing and B's slightly more formal phrasing remain suitable for technicians.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does not tell us whether the room is too humid or the probe’s reading is unreliable."
+            ],
+            "B": [
+              "it does not establish whether the room is too humid or the probe is giving an unreliable reading."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A groups inspection with the explanation it investigates and puts warning and no-warning logging together. B returns to logging after the escalation instructions and inspection, separating related requirements.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For now, record when the indicator appears, when it clears, and whether washdown has finished. Also record mornings when no warning appears"
+            ],
+            "B": [
+              "Maintenance has been asked to inspect the seal at the next planned stop, but this request does not establish that the seal has failed. Continue recording mornings when no warning appears"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better realizes the preference to organize the explanation before polishing sentences: it gives recording its own connected paragraph with its purpose, then closes with the operational boundaries.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Recording only warnings will not show how often the pattern occurs.",
+              "Do not open the housing."
+            ],
+            "B": [
+              "Continue recording mornings when no warning appears, using the log’s “no warning” box beside the time fields."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A's concrete organizational advantage is decisive: technicians receive the complete logging instruction together with its reason, followed by a distinct paragraph on escalation and restart authority.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Also record mornings when no warning appears, using the “no warning” box beside the time fields. Recording only warnings will not show how often the pattern occurs."
+            ],
+            "B": [
+              "For now, record when the indicator appears, when it clears, and whether washdown has finished. Do not open the housing."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "7dd480c54ca8a7d83125f1df9415365f62b303bb7d1c40eb925ba2c967d066eb",
+      "v6-dev": "177d3d91fa4e82b1bf1036f8a2a461e0f8485ef40044c11d1842c097d12a2b30"
+    },
+    "prompt_sha256": "ccd0337bf73b22975b5232c5cd8087ca317eadbc8613ad04448e74053d036031",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "raw_sha256": "c191b0cdec571048fb166e01a86193e017a03f40462d75a64d2826ad202207cc",
+    "attempt": 2,
+    "pair_id": "P06",
+    "evidence_format_repairs": [],
+    "record_sha256": "aa4350cc4f0ced91b8c5e21daf5fd7b61be08520868edd2de1c79aa7e4259b49"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "1c5b67dd72e01f099d87c798",
+    "case": "large-dev-a-07",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an editing task for an empirical research summary, not a proof.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the study evidence but imports a shortcut and an unsupported necessary condition for saving a search. The source studies a spoken cue; the shortcut discussion belongs only to the tone sample.",
+          "quotes": {
+            "source": [
+              "Synthetic voice sample (tone only):",
+              "The study asked whether a spoken location cue helps users return to a table after opening a note."
+            ],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the design, median-of-means distinction, counts, interval, interview overlap, and qualifications. In context, the existing version's description as returning focus without speaking refers to the absent added cue, not a demonstrated absence of all screen-reader speech.",
+          "quotes": {
+            "source": [
+              "The existing version returns keyboard focus to the same cell without the added cue."
+            ],
+            "A": [],
+            "B": [
+              "The existing version returned keyboard focus to the same cell without speaking."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical findings and major limitations. B stays within the studied cue and its tentative implications; A adds an unsupported claim about a shortcut and when it can save a search.",
+          "quotes": {
+            "source": [
+              "The study asked whether a spoken location cue helps users return to a table after opening a note."
+            ],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": [
+              "We asked whether a spoken location cue helps screen-reader users return to a table after opening a note."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose with an occasional direct question. Neither has a substantial idiomatic advantage, and both have mildly compressed descriptions of table assignment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Did the cue help users feel oriented?"
+            ],
+            "B": [
+              "What do these results tell us about the cue?"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B explicitly connects uncertainty about speed to the independent interruption concern. A moves from the findings to a design question but leaves that useful relationship less developed and begins with an unexplained shortcut.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They also point to a design question: how should the cue behave when someone is still listening to speech?"
+            ],
+            "B": [
+              "The timings alone do not establish whether the difference is reliable. Even if it is, the interruption remains a design concern."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B uses a question to organize interpretation and explains the transition. A imitates the sample's shortcut premise instead of developing the actual study problem in the author's voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": [
+              "What do these results tell us about the cue? They make an orientation benefit plausible for some users in these tasks"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A's unsupported shortcut premise is a minor material error; B has none. B also better meets the user's central goal by explaining why interruption remains a design concern even if the timing difference proves reliable, rather than borrowing the sample's factual setup.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": [
+              "Even if it is, the interruption remains a design concern."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "response_sha256": {
+      "none": "7a7a514103fe41068edfd4d4841a1cdc1a8e6fd784cf2ecf35374acf1d923017",
+      "v6-dev": "1df4152873a350d5004cdb0707e402dfa8dca0d7080aad90f8092e18e868a4c7"
+    },
+    "prompt_sha256": "74948009ff44fa379621a621b388d79a1172818a39e4afde2fc44c80aab70ce5",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "raw_sha256": "f5d8d7761a754be5e462105b508cd9f76c4bdec6e60339639704d3d1f298d2e0",
+    "attempt": 1,
+    "pair_id": "P03",
+    "evidence_format_repairs": [],
+    "record_sha256": "6e1f5ef284addd41d88a82879db127d30aaabe37edd794fcfbf81d11e00c12fb"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "0ca396dcc69cba5a12549f05",
+    "case": "large-dev-a-17",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is a practical notice copyedit with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A leaves the source intact. The full measurement protocol, unsettled-display reporting, month-long observations, inspection requirement, bay instructions, and readiness caveat are preserved.",
+          "quotes": {
+            "source": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "A": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B leaves the source intact, including the qualified evidential claim and all operational instructions. It adds no mechanism, guarantee, or permission.",
+          "quotes": {
+            "source": [
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ],
+            "A": [],
+            "B": [
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both are identical to the source and retain the substantive caveat that one pair of readings cannot establish whole-heap readiness.",
+          "quotes": {
+            "source": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical text combines ordinary practical language with readable, understated humor. Neither response introduces awkwardness.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "B": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both give the comparison's purpose before telling volunteers what to measure, then explain interpretation, collection decisions, and comments in the same coherent order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This month we are comparing the middle of the active heap with its outer edge."
+            ],
+            "B": [
+              "This month we are comparing the middle of the active heap with its outer edge."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the established voice and use humor to reinforce practical instructions rather than replacing it with institutional phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ],
+            "B": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested artifact.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. These identical artifacts equally honor the task's central priority: retain the polished note's useful explanation, pacing, and approved humor without gratuitous edits.",
+          "quotes": {
+            "source": [
+              "If a sentence is already doing its job, it may remain unchanged."
+            ],
+            "A": [
+              "The compost thermometer has returned from its brief career as a dibber."
+            ],
+            "B": [
+              "The compost thermometer has returned from its brief career as a dibber."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97",
+      "v6-dev": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97"
+    },
+    "prompt_sha256": "39c073d8d8990fc033ba308f4aa431e754962f5affc8c7d9fbdeb58345061307",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "424aff0e188f7259a2fda8b2fea62e81c8078e2d959349e72684141d959a95ea",
+    "raw_sha256": "cc20ec579cc6dadb9226ccaef7d7fe04ebc9b240b6609dfa6acc4eb692de70b5",
+    "attempt": 1,
+    "pair_id": "P03",
+    "evidence_format_repairs": [],
+    "record_sha256": "df067b7185bfa53d9e689cc55506e3f7440928664aab8429cf7f60f2f995354d"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "f747ee066d0fc9650c45d5a7",
+    "case": "large-dev-a-17",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a copyedit of a practical newsletter notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source verbatim, including both measurement positions, probe depth, settling and failure handling, wiping and return, observation period, inspection, bay instructions, and caveat.",
+          "quotes": {
+            "source": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "A": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source verbatim, retaining all practical requirements and making no stronger claim about compost readiness.",
+          "quotes": {
+            "source": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "A": [],
+            "B": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain every source instruction and qualification, including recording an unsettled display as a problem.",
+          "quotes": {
+            "source": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "B": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use the same readable, conversational wording suited to a garden newsletter.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The compost thermometer has returned from its brief career as a dibber."
+            ],
+            "B": [
+              "The compost thermometer has returned from its brief career as a dibber."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from equipment use to measurement, interpretation, and useful recording comments.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain deliberate humor attached to practical guidance and respect the instruction to leave effective passages alone.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ],
+            "B": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "The artifacts are identical and error-free. Both meet the user's narrow editing goal by preserving the notice's established voice, instructions, and evidential restraint.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On your rota day, take one reading at each marked position and record both on the sheet."
+            ],
+            "B": [
+              "On your rota day, take one reading at each marked position and record both on the sheet."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97",
+      "v6-dev": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97"
+    },
+    "prompt_sha256": "d4f8cda53a2f2a824f3f7a4bf27f63b38558e05926925cfca434373c86de503b",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "424aff0e188f7259a2fda8b2fea62e81c8078e2d959349e72684141d959a95ea",
+    "raw_sha256": "a617a53daef72e17fc6518590e2a89956ee3dea3c4c7dba00330504733b19937",
+    "attempt": 1,
+    "pair_id": "P02",
+    "evidence_format_repairs": [],
+    "record_sha256": "3ff6135bc30c37151a1666b5ae4210ab36a3ea4939195ddec5a1433cea4ade86"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "a1d55bb421bed9aac4051e43",
+    "case": "large-dev-a-17",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting a practical newsletter note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source, preserving both measurement positions, probe depth, settling, wiping, return, problem recording, observation period, inspection, bay instructions, and caveat.",
+          "quotes": {
+            "source": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source, preserving the complete procedure and all qualifications without additions or omissions.",
+          "quotes": {
+            "source": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "A": [],
+            "B": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical and preserve the source's instructions and evidential limits exactly.",
+          "quotes": {
+            "source": [
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both provide the same readable, conversational instructions and concrete examples.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ],
+            "B": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the comparison before giving the procedure, then explain why observations and inspection precede collection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This month we are comparing the middle of the active heap with its outer edge. On your rota day, take one reading at each marked position and record both on the sheet."
+            ],
+            "B": [
+              "This month we are comparing the middle of the active heap with its outer edge. On your rota day, take one reading at each marked position and record both on the sheet."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the narrow editing scope by preserving the established pacing and dry humor attached to practical guidance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ],
+            "B": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both meet the central request to preserve already-effective writing and deliberate humor without unnecessary edits or commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ],
+            "B": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97",
+      "v6-dev": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97"
+    },
+    "prompt_sha256": "aede8bd36227d18830fda6d745ee0efc18a815495a20d30d156c1c1237709eea",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "424aff0e188f7259a2fda8b2fea62e81c8078e2d959349e72684141d959a95ea",
+    "raw_sha256": "470582ecfbd65173c17d4d0c9d100684960909f1149df049d5cb68343d850bde",
+    "attempt": 1,
+    "pair_id": "P02",
+    "evidence_format_repairs": [],
+    "record_sha256": "da2f4b88c7b84e120239dbc7d6272d9357a5a057073759c8fc84b01dbee44e4c"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "bc53c523a15f90aa0a66871a",
+    "case": "large-dev-a-07",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an empirical research summary, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The study details and qualifications are preserved, but the opening introduces an unspecified shortcut and makes knowing where focus landed a necessary condition for saving a search. The source establishes neither that shortcut nor that prerequisite.",
+          "quotes": {
+            "source": [
+              "The study asked whether a spoken location cue helps users return to a table after opening a note."
+            ],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the study design, participant-level timing summary and breakdown, interview overlap, default uncertainty, learning and sample limitations, and untested interruptibility. It keeps the conclusions appropriately exploratory.",
+          "quotes": {
+            "source": [
+              "These observations make an orientation benefit plausible for some users under these tasks"
+            ],
+            "A": [],
+            "B": [
+              "They make an orientation benefit plausible for some users in these tasks"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive evidence, but B introduces the actual research question without A's unsupported necessary condition about a shortcut.",
+          "quotes": {
+            "source": [
+              "The study asked whether a spoken location cue helps users return to a table after opening a note."
+            ],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": [
+              "We asked whether a spoken location cue helps screen-reader users return to a table after opening a note."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose and explain the statistical distinction plainly. Neither gains a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That is a three-second difference between two medians, not the median of participants’ within-person differences."
+            ],
+            "B": [
+              "This compares two group medians, not the median of participants’ within-person differences."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A usefully attaches carryover to the ordering controls; B gathers limitations after interpreting the findings. Both make the evidence and next design question easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This reduced the alignment between version and practice, but could not rule out learning that carried from the first set of tasks into the second."
+            ],
+            "B": [
+              "The study reduced the complete alignment of version and practice by varying task order, but it could not rule out learning effects"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B grounds its questioning voice in this study and connects reliability to the interruption problem. A borrows the sample's shortcut/search premise instead of developing the motivation from the supplied study.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": [
+              "The timings alone do not establish whether the difference is reliable. Even if it is, the interruption remains a design concern."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A adds a minor unsupported prerequisite. B also better serves the author's priority of a grounded argument: its interpretation connects the descriptive timings to the independent interruption concern without importing the tone sample's factual premise.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The shortcut saves a search only if the user knows where focus landed."
+            ],
+            "B": [
+              "Even if it is, the interruption remains a design concern."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "response_sha256": {
+      "none": "7a7a514103fe41068edfd4d4841a1cdc1a8e6fd784cf2ecf35374acf1d923017",
+      "v6-dev": "1df4152873a350d5004cdb0707e402dfa8dca0d7080aad90f8092e18e868a4c7"
+    },
+    "prompt_sha256": "fd8dafc83b278619dfa2546330bc1cf92c6a3281e7360aff67925a9a9fa3e1b5",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "raw_sha256": "01b237f7db9203c03e5b93952b397dcb131c543d09d79456e951f0a687f926ab",
+    "attempt": 1,
+    "pair_id": "P01",
+    "evidence_format_repairs": [],
+    "record_sha256": "af044c632d8fb1b3deb557e45261d387c54fa65ab9445b2b1c595b214cdb81f5"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "7d5e71782ed4c85607abd11b",
+    "case": "large-dev-b-01",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an editing task for a practical notice and includes no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the duration, unchanged hours, timing, arrival distinction, shelfmark and identification rules, conservation exceptions, and review conditions.",
+          "quotes": {
+            "source": [
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves."
+            ],
+            "A": [
+              "If you arrive later without a request, you can still use the catalogues and open shelves"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the operational conditions. Its unqualified sentence about arriving without a request is less precise about the intended late-arrival situation, but does not say morning arrivals must wait until the next day; the opening explicitly gives the same-day request conditions.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day."
+            ],
+            "A": [],
+            "B": [
+              "If you arrive without having requested a map, you can still use the catalogues and open shelves, and submit a request for the next opening day."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive rules and exceptions. A more explicitly ties the next-day option to late arrivals; B still supplies the before-noon route and does not prohibit same-day requests by morning arrivals. Neither changes a material operational inference.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic, calm, and readable. Their explanations of identification delays use accessible sentences without losing the qualification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Once identified, they will join the next retrieval; this may be on a later day."
+            ],
+            "B": [
+              "Once it has been identified, the request will join the next retrieval. This may be a later day."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B gives the deadline and shelfmark requirement together before explaining arrival and exceptions. A first presents the timing rule, then returns to qualify it with the shelfmark requirement. B's ordering lets readers understand eligibility for ordinary retrieval on the first pass.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests received before noon will be collected for retrieval at 2 p.m."
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B removes repeated reassurance while keeping the explanation of delays and appointments. A states unchanged opening times at the beginning and repeats the point at the end; B uses that closing space solely for the trial's purpose and review.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The trial is intended to reduce interruptions in the store; it does not reduce opening hours."
+            ],
+            "B": [
+              "The trial is intended to reduce interruptions in the store."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a modest practical advantage: readers receive the complete ordinary retrieval condition immediately, followed by identification and conservation exceptions. That directly serves the user's priority of making the procedure understandable in order, despite A's more explicit late-arrival wording.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "b2e68ec7f7ce1f1bf692d9b92274c284273dc1ec7ecde98dca764618313f49c7",
+      "v6-dev": "1cba0bffdf14cccb5fb603e298e634cb07894e780afa7108261a0e5984ce42dd"
+    },
+    "prompt_sha256": "15dd81272de9e6d03fef65aae8f87de88cd3fb9b3b7fc9e556ed2f9e59c5b0fc",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "raw_sha256": "48528297663a75f238094a801c67c63977e68f7a0c3ab9f7e23e3a89772ad2b7",
+    "attempt": 2,
+    "pair_id": "P03",
+    "evidence_format_repairs": [],
+    "record_sha256": "8f64f42a918ed5bad9bad6efbf8097e1cbe53a6ecf28acd3de1a5d0b1a00cfb4"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "60a7b5c7959546b0f7715f9e",
+    "case": "large-dev-b-03",
+    "config": "sol-low",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is a technician-facing prose edit without a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all numerical observations, causal qualifications, required actions, inspection timing, no-warning logging, and restart authority.",
+          "quotes": {
+            "source": [
+              "On each of the three mornings, the amber light cleared within twelve minutes.",
+              "Do not open the housing."
+            ],
+            "A": [
+              "On all three mornings, the indicator cleared within twelve minutes.",
+              "Do not open the housing."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Reorganizes the material without changing its scope. The possible moisture explanation remains tentative, and a handheld reading still requires the lead's restart decision.",
+          "quotes": {
+            "source": [
+              "Those observations are consistent with moisture around the housing",
+              "A handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "A": [],
+            "B": [
+              "Moisture around the housing is a possible explanation",
+              "A handheld reading does not by itself authorize a restart. The shift lead must make that decision."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's observations, uncertainty, instructions, and authority. Moving the seal inspection beside the working explanation adds no diagnosis.",
+          "quotes": {
+            "source": [
+              "We have asked maintenance to inspect the seal at the next planned stop.",
+              "That request does not establish that the seal has failed."
+            ],
+            "A": [
+              "Maintenance has been asked to inspect the seal at the next planned stop, but this request does not establish that the seal has failed."
+            ],
+            "B": [
+              "Maintenance has been asked to inspect the seal at the next planned stop. That request does not mean the seal has failed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readable. Their different sentence lengths do not create a meaningful difference in linguistic ease.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Operators wiped moisture from the outside of the probe housing on two mornings; on the third, nobody touched it."
+            ],
+            "B": [
+              "Operators wiped moisture from the outside of the probe housing on two mornings, but nobody touched it on the third."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B groups the planned inspection with the tentative explanation and gathers warning and no-warning logging together, then gives a separate safety and escalation paragraph. A separates related logging instructions with the maintenance discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For now, record when the indicator appears, when it clears, and whether washdown has finished.",
+              "Continue recording mornings when no warning appears, using the log’s “no warning” box beside the time fields."
+            ],
+            "B": [
+              "Also record mornings when no warning appears, using the “no warning” box beside the time fields.",
+              "Do not open the housing. If the indicator is still amber after fifteen minutes, call the shift lead before starting the next batch."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better serves the requested practical artifact by keeping related actions and their reasons together while retaining connected prose and nearby qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Recording both warnings and mornings without warnings is necessary to establish how often the pattern occurs."
+            ],
+            "B": [
+              "Also record mornings when no warning appears, using the “no warning” box beside the time fields. Recording only warnings will not show how often the pattern occurs."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a modest practical advantage: technicians receive the complete logging instruction in one paragraph, followed by the housing and escalation rules, while the inspection stays beside the tentative explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Maintenance has been asked to inspect the seal at the next planned stop, but this request does not establish that the seal has failed. Continue recording mornings when no warning appears"
+            ],
+            "B": [
+              "Also record mornings when no warning appears, using the “no warning” box beside the time fields. Recording only warnings will not show how often the pattern occurs."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "7dd480c54ca8a7d83125f1df9415365f62b303bb7d1c40eb925ba2c967d066eb",
+      "v6-dev": "177d3d91fa4e82b1bf1036f8a2a461e0f8485ef40044c11d1842c097d12a2b30"
+    },
+    "prompt_sha256": "c52c1492c08198343eab137dec9f0ad7ba0d4cc9e0c9beb1c0d8678d29e97c6c",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "raw_sha256": "920f6fbddca1cf8d95eb1a81edc3723bf3473604a847a4278dede765acbb5b4e",
+    "attempt": 1,
+    "pair_id": "P03",
+    "evidence_format_repairs": [],
+    "record_sha256": "09ca620303251e87a814bef5c2a16bd1e7bd0f9fe682ad46f38e9846e72f407d"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "4376eedc19a1f9f9a919659f",
+    "case": "large-dev-a-13",
+    "config": "sol-low",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested handout contains a derivation of the series sum and tail bound from finite telescoping sums.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all assumptions, indices, exact identities, and edge cases. The displayed errors establish convergence directly, and the epsilon choice gives a strict bound.",
+          "quotes": {
+            "source": [
+              "For fixed N the second identity tends to a_(N+1) as M tends to infinity."
+            ],
+            "A": [
+              "Now fix \\(N\\geq 1\\).",
+              "=a_{M+1}\\longrightarrow 0\n\\qquad\\text{as }M\\longrightarrow\\infty."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the theorem and correctly derives both limits and the strict tail bound. Its allowance for all terms being equal covers the identically zero case, and 'difference' reasonably denotes distance.",
+          "quotes": {
+            "source": [
+              "If a_1 = 0, all a_n are zero and the same identities apply. If consecutive terms are equal, the corresponding d_n is zero, so no strict decrease was used."
+            ],
+            "A": [],
+            "B": [
+              "All cancellations remain valid when some or all terms are equal; no strict decrease is needed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact mathematical content and scope. A explicitly spells out the zero case; B includes it in its statement about all terms being equal, so there is no substantive omission.",
+          "quotes": {
+            "source": [
+              "If a_1 = 0, all a_n are zero and the same identities apply."
+            ],
+            "A": [
+              "If \\(a_1=0\\), nonnegativity and monotonicity force every \\(a_n\\) to be zero, and the same identities apply."
+            ],
+            "B": [
+              "All cancellations remain valid when some or all terms are equal; no strict decrease is needed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use direct, idiomatic explanations and purposeful introductions to partial sums. Their differing balance of prose and displays does not make either noticeably less natural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To find the sum of the series, consider its first \\(N\\) terms."
+            ],
+            "B": [
+              "To understand the infinite series, first consider its partial sum of \\(N\\) terms."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both compute the whole-series partial sum before its limit, then fix N for the tail calculation and finally choose N for epsilon. The reasoning is coherently ordered in each.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Now fix \\(N\\geq 1\\). For every integer \\(M>N\\), the same cancellation gives"
+            ],
+            "B": [
+              "Now fix \\(N\\ge1\\). For every integer \\(M>N\\), the same cancellation gives"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's specific preference for displayed intermediate calculations and cleanly separated algebraic steps. B explains the same reasoning correctly but places the tail error calculation entirely in prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\left|\\sum_{n=N+1}^{M}d_n-a_{N+1}\\right|\n=a_{M+1}\\longrightarrow 0"
+            ],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are valid and sufficiently identify convergence through finite sums. A offers a modest explanatory advantage by displaying the tail error with its limiting variable and aligning the cancellation steps, making the central convergence calculation easier to inspect.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "\\left|\\sum_{n=N+1}^{M}d_n-a_{N+1}\\right|\n=a_{M+1}\\longrightarrow 0\n\\qquad\\text{as }M\\longrightarrow\\infty."
+            ],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both explain the elementary strategy. A has a modest advantage for this user's stated goal because its displayed tail-distance limit exposes the intermediate calculation that B compresses into prose, while preserving a connected argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\left|\\sum_{n=N+1}^{M}d_n-a_{N+1}\\right|\n=a_{M+1}\\longrightarrow 0"
+            ],
+            "B": [
+              "The difference between this finite tail sum and \\(a_{N+1}\\) is \\(a_{M+1}\\), which tends to zero as \\(M\\to\\infty\\)."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "fd0a01d1fbf9d0b8de3b9fa87b7bab98b096d46272af5ef1fb5140c924f09a01",
+      "v6-dev": "9fe808c3a2eff35c2a71817f5ee3f11a7ca38e0d69cba69e4dd80edd97c76e71"
+    },
+    "prompt_sha256": "3745ba2dd4a53a74a22df33276e507354a5851b57183e21d6f8d8c24890aad01",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "raw_sha256": "dd0019af373f5e6bc36f7ef36a61e1e68f4123383f7ab1758aaa08b71f686108",
+    "attempt": 1,
+    "pair_id": "P06",
+    "evidence_format_repairs": [],
+    "record_sha256": "3730670d467a97b66260deb0f5a3bd98f09aeb6fee497eece5e62bc70d4c28c1"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "9df42898ef6027203ce8028b",
+    "case": "large-dev-b-01",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a publishable staff notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all operational conditions, exceptions, and review inputs. Its arrival paragraph omits 'later' before the unrequested-arrival case, but does not remove same-day eligibility, which the opening explicitly establishes.",
+          "quotes": {
+            "source": [
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves."
+            ],
+            "A": [
+              "If you arrive without having requested a map, you can still use the catalogues and open shelves, and submit a request for the next opening day."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the six-week trial, unchanged hours, deadline and shelfmark condition, retrieval schedule, arrival options, conservation exceptions, and review process. The later shelfmark sentence qualifies the earlier deadline statement.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [],
+            "B": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive rules and exceptions. A makes the complete same-day condition explicit immediately; B states it later. A's broader arrival wording does not imply that an early arrival must wait until the next day.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two.",
+              "provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m."
+            ],
+            "B": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and suitable for a public notice. Their direct arrival instructions and straightforward explanations maintain the source's practical tone.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrive before noon. If you request a map in advance, you may arrive later."
+            ],
+            "B": [
+              "You do not need to arrive before noon: if you have requested a map in advance, you can arrive later."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A gives the deadline and shelfmark requirement together before explaining arrivals and identification delays. B introduces the deadline, discusses arrivals, then returns to add the shelfmark prerequisite and repeat the deadline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m."
+            ],
+            "B": [
+              "Requests received before noon will be collected for retrieval at 2 p.m.",
+              "Your request must arrive before noon and include a shelfmark"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A removes repeated reassurance while retaining useful explanation and a calm voice. B repeats the unchanged-hours assurance and revisits the deadline, making the reader retrace rules already introduced.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the reading room will keep its usual opening hours, but map retrieval will follow a different schedule."
+            ],
+            "B": [
+              "the reading room will keep its usual opening times.",
+              "it does not reduce opening hours."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better meets the practical reading goal because its first paragraph supplies the complete eligibility rule, and the following paragraphs explain arrivals and exceptions without returning to supply a missing prerequisite.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m."
+            ],
+            "B": [
+              "Requests received before noon will be collected for retrieval at 2 p.m.",
+              "Your request must arrive before noon and include a shelfmark"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "b2e68ec7f7ce1f1bf692d9b92274c284273dc1ec7ecde98dca764618313f49c7",
+      "v6-dev": "1cba0bffdf14cccb5fb603e298e634cb07894e780afa7108261a0e5984ce42dd"
+    },
+    "prompt_sha256": "8de23633f4df655a18ae71ac57116ef4348f373e65f712d76ceaa36656d51828",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "raw_sha256": "ea8eaf11f7081be830adaa1e7aa49c6977b44e2c92c3e33edf2cc9ab47aa5b2f",
+    "attempt": 1,
+    "pair_id": "P02",
+    "evidence_format_repairs": [],
+    "record_sha256": "ccb3b98f97d8b2b8411d38771ca101ada3a2f85df480dba0c7b485a94e9cabf5"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "912c70e03e5b912b70b02cf8",
+    "case": "large-dev-a-17",
+    "config": "luna-medium",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting a garden newsletter notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source. Both positions, probe depth, settling, wiping, returning, problem recording, monthly observations, inspection, bay directions, and the single-pair caveat are retained.",
+          "quotes": {
+            "source": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "A": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source. Both positions, probe depth, settling, wiping, returning, problem recording, monthly observations, inspection, bay directions, and the single-pair caveat are retained.",
+          "quotes": {
+            "source": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "A": [],
+            "B": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The identical responses preserve every substantive instruction and qualification, including continued use of the active bay and leaving the resting bay alone.",
+          "quotes": {
+            "source": [
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ],
+            "A": [
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ],
+            "B": [
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use the same idiomatic prose, with practical directions and conversational humor. Neither introduces awkward wording.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "B": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both give the measurement purpose before the procedure and explain why comments help before offering examples. Their identical sequence supplies the explanation this notice needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The recording sheet has room for comments because weather, recently added material, and an uncooperative display may help explain a reading."
+            ],
+            "B": [
+              "The recording sheet has room for comments because weather, recently added material, and an uncooperative display may help explain a reading."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain the distinctive opening joke and the author's paragraph rhythm, consistent with the instruction to leave effective passages intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The compost thermometer has returned from its brief career as a dibber."
+            ],
+            "B": [
+              "The compost thermometer has returned from its brief career as a dibber."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and their completed notes are identical. Both meet the user's central priority of preserving the polished notice's pacing, humor, and useful qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ],
+            "B": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97",
+      "v6-dev": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97"
+    },
+    "prompt_sha256": "60914aecdbfcb6efdfa12bb1bc44b4ab8af4cad2e91668164eb37cf9aedf9c97",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "424aff0e188f7259a2fda8b2fea62e81c8078e2d959349e72684141d959a95ea",
+    "raw_sha256": "9913aeeab0fd59b4d6c1870fb201bab677b747564d99e5cb19c9d4e8b9915c96",
+    "attempt": 1,
+    "pair_id": "P04",
+    "evidence_format_repairs": [],
+    "record_sha256": "4b44ed2f8dc627fff4a0ffd65d9a99de648604f49d3a6ae0a72c88157ef385e4"
+  },
+  {
+    "version": "context-regrade-v1",
+    "batch": "65050d4ec2753608bc137f8f",
+    "case": "large-dev-a-01",
+    "config": "sol-low",
+    "candidate": "v6-dev",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an organizational edit of a practical notice, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the dates, usual opening, shelter availability, route and terrain, conditional assistance, transport exclusion, return exception, and rain-extension procedure.",
+          "quotes": {
+            "source": [
+              "It adds approximately 120 metres to the journey."
+            ],
+            "A": [
+              "This route adds approximately 120 metres to the journey."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the same arrangements. Its assistance offer explicitly names the destination and retains both opening-hours and staff-availability qualifications.",
+          "quotes": {
+            "source": [
+              "Staff can meet visitors at the bus shelter and accompany them to the open entrance."
+            ],
+            "A": [],
+            "B": [
+              "If you need help reaching the west entrance, staff can meet you at the shelter and accompany you during library opening hours."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive arrangements, including the Monday–Thursday restriction on eligible books and the rule governing any further extension.",
+          "quotes": {
+            "source": [
+              "The Friday return arrangement will remain in place unless the updated notice announces a further extension."
+            ],
+            "A": [
+              "The Friday return arrangement will remain in place unless the updated notice announces a further extension."
+            ],
+            "B": [
+              "The Friday return arrangement will remain in place unless the updated notice announces a further extension."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readable. B's direct address and A's visitor-focused wording are both suitable for a public notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the west entrance."
+            ],
+            "B": [
+              "If you need help reaching the west entrance, staff can meet you at the shelter and accompany you during library opening hours."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B gives the route paragraph a clear starting instruction and links shelter access directly to help from that location. A places the west-entrance instruction in the opening and appends shelter information to an already long route paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The bus shelter will remain available, but the direct path to the east entrance will be behind a temporary barrier."
+            ],
+            "B": [
+              "Please use the west entrance, facing the playground. Access from the playground will be available as normal.",
+              "If you need help reaching the west entrance"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more directly connects the assistance provision to the reader's practical need, matching the preference for introducing information through its purpose. Both retain some unnecessary repetition about the mat.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the west entrance. If you would like this help"
+            ],
+            "B": [
+              "If you need help reaching the west entrance, staff can meet you at the shelter and accompany you during library opening hours."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither changes the arrangements. B has a modest practical advantage: its paragraph openings directly answer which entrance to use and what to do if reaching it requires help, the two questions central to the request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you are coming from the playground, use the west entrance as normal.",
+              "During library opening hours, staff can meet visitors"
+            ],
+            "B": [
+              "Please use the west entrance, facing the playground.",
+              "If you need help reaching the west entrance"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "4381eaca6d0cdf549a857afc2104f8babeed1e73d75186587fe7f306c5b6ec1c",
+      "v6-dev": "8481f05aca1ce1bf1c4faa7ec329943f1c36cf6c9c9257e441ab1b50ee62d635"
+    },
+    "prompt_sha256": "0a20842b25522cfb49d1cc454c527398b4d2e76bddc36cc2ff6519567195cb83",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "raw_sha256": "4c31360caed351751cedac8d9885f999ec8a8585841124b7665372339023fe20",
+    "attempt": 1,
+    "pair_id": "P03",
+    "evidence_format_repairs": [],
+    "record_sha256": "8f6768e266df50118121d2fab9e537e97897ac88e9fcf937b25db8eccd5e0823"
+  }
+]

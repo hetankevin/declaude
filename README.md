@@ -4,11 +4,78 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## Evaluation status
+## Does it improve writing?
 
-The current writing scores are **not validated against the author's preferences**. The original judge focused on task-local readability and voice. The [judge audit](evals/results/judge-audit/report.md) identifies the missing personal/contextual criteria and explains the corrected [draft rubric](evals/graders/pairwise-v2-draft.txt). It follows the earlier behavioral evaluation's user-specific holistic objective and uses the author's explicit writing directions. A Codex-only regrade is now running against the [frozen contextual rubric and plan](evals/results/context-regrade/plan.json). It covers the saved v4 and v5a outputs against no skill, with Astra high and Sol high as judges, plus separate small dev pilots. It generates no new writing. Existing results retain their original grader until the new report is published alongside them. The original holdout is retrospective for this revised judge, not a fresh human-alignment test.
+The [author-specific regrade](evals/results/context-regrade/report.md) finds clear gains on saved Claude outputs and on Codex proof exposition. **It does not establish a general improvement in Codex prose.** V4 and v5a have similar results, and the installed release remains v4.
 
-A [second six-pair Codex-only pilot](evals/results/dev-repair-2/report.md) completed 12 calls with no Claude calls before the audit: **1 win / 4 ties / 1 loss, 0 pp** against saved no-skill outputs. Proof guidance was unchanged. These scores are provisional and the revision was not promoted. Further tuning should use the corrected grading target rather than optimize these old scores.
+Two blind Codex judges, Astra high and Sol high, graded the saved writing against the author's stated preferences: motivation before constructions, connected explanation, precise scope, preserved voice, and explicit displayed proof steps. There were **no new writing generations and no Claude calls**.
+
+The table shows **win rate minus loss rate in percentage points**, with ties contributing zero. A larger number means a more favorable balance of judgments, not a percentage increase in writing quality. Development uses 40 cases; the original holdout supplies 27 cases with complete outputs across all ten generation configurations.
+
+| Saved writing | v4 development | v4 held-out | v5a development | v5a held-out |
+|---|---:|---:|---:|---:|
+| All saved outputs | +38.8 | +33.1 | +38.0 | +32.6 |
+| Saved Claude outputs | +57.7 | +46.0 | +57.5 | +44.1 |
+| Saved Codex outputs | +10.3 | +13.9 | +8.7 | +15.3 |
+| Codex, excluding proofs | -3.9 | +2.2 | -3.5 | +3.8 |
+
+Across all configurations, held-out v4 scores **+33.1 pp [95% case-bootstrap CI +23.1, +43.0]**; v5a scores **+32.6 [+21.5, +43.9]**. The family and task breakdown changes the practical conclusion:
+
+- **Codex proof tasks improve strongly:** both versions score +81.2 pp on four held-out proof cases. The gains reflect motivating the algebra and retaining explicit derivations, rather than just adding displays. This supports retaining the proof guidance, although four cases are a small sample.
+- **Codex outside proofs is roughly neutral:** v4 scores +2.2 pp [−12.5, +16.3], and v5a +3.8 [−11.4, +17.9], on 23 held-out cases. Argument tasks remain negative (−21.9 and −25.0 pp), and ordinary prose is close to neutral. The broader Codex prose problem remains.
+- **V5a does not show a clear advance over v4.** The small v6/v7 pilots are reported separately; their six outputs each do not justify promotion.
+
+[Examples of improvements, losses, and a questionable judge interpretation](evals/results/context-regrade/case-review.md) accompany the scores. The earlier three-case holdout result and this 27-case result have different coverage. On the exact 30 held-out pairs judged by Astra in both runs, the old score changes from −10.0 to 0.0 pp, with wide intervals. The larger headline change cannot be attributed entirely to the new rubric.
+
+The 2,706 primary judgments and 286 reversed-order checks are all complete. Judges agree on 81.1% of primary pairs; reversed order preserves 79.0% of audited verdicts, with 14 direct win/loss reversals. These are fallible model judgments against explicit preferences, not independent human labels. The holdout regrade is **retrospective**, and its incomplete, uneven category coverage limits generalization claims. Original grades remain available below.
+
+### Installed v4 versus no skill
+
+Rows show development (IS) and the retrospective held-out subset (OOS). Parentheses give distinct case counts. Columns name the models that generated the saved text; both new judges are Codex models. All panels use a zero-centered signed scale.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/context-regrade/v4-vs-none/plots/pairwise-categories-dark.svg">
+  <img src="evals/results/context-regrade/v4-vs-none/plots/pairwise-categories-light.svg" alt="Author-specific v4 versus no-skill results by writing category and generation model/effort, with 40 development and 27 retrospective held-out cases.">
+</picture>
+
+### V5a versus no skill
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/context-regrade/v5a-vs-none/plots/pairwise-categories-dark.svg">
+  <img src="evals/results/context-regrade/v5a-vs-none/plots/pairwise-categories-light.svg" alt="Author-specific v5a versus no-skill results by writing category and generation model/effort.">
+</picture>
+
+<details>
+<summary>Meaning, naturalness, progression, voice, and proof dimensions</summary>
+
+### V4 dimensions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/context-regrade/v4-vs-none/plots/pairwise-dimensions-dark.svg">
+  <img src="evals/results/context-regrade/v4-vs-none/plots/pairwise-dimensions-light.svg" alt="V4 author-specific comparison by writing dimension.">
+</picture>
+
+### V5a dimensions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/context-regrade/v5a-vs-none/plots/pairwise-dimensions-dark.svg">
+  <img src="evals/results/context-regrade/v5a-vs-none/plots/pairwise-dimensions-light.svg" alt="V5a author-specific comparison by writing dimension.">
+</picture>
+
+</details>
+
+[Full report and confidence intervals](evals/results/context-regrade/report.md) · [Frozen rubric](evals/results/context-regrade/rubric.txt) · [Coverage](evals/results/context-regrade/coverage.json) · [Judge checks](evals/results/context-regrade/judge-checks.json) · [Execution and recovery](evals/results/context-regrade/execution-notes.md) · [Usage](evals/results/context-regrade/usage.json).
+
+Rebuild this report and its charts from the published evidence without model calls:
+
+```sh
+MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/report_context_regrade.py --published --plot
+```
+
+<details>
+<summary>Historical results from the original grader and earlier benchmarks</summary>
+
+These sections retain the earlier evaluation history. Their grading target and coverage differ from the author-specific regrade above.
 
 ## Small development repair
 
@@ -187,6 +254,9 @@ A concrete remaining skill failure is Luna's interval-merging explanation: it om
 The original three-configuration report is [archived](evals/results/initial-three-configs/report.md). Expanding frozen v3 to all ten configurations under the original grader produced **87.7% → 91.2%** passes and **3.89 → 4.26** holistic scores on the original held-out set, with a proof-detail regression. [Expanded v3 reference](evals/results/expanded-v3/report.md) · [Failures](evals/results/expanded-v3/failure-review.md).
 
 That reference uses different held-out cases and the old grader. Its numbers must not be compared directly with the fresh set to claim that the skill or grader improved. The final v3/v4 comparison above holds cases and grader fixed.
+
+
+</details>
 
 
 </details>

@@ -114,6 +114,7 @@ def load():
  assert plan['judges']=={k:list(v) for k,v in JUDGES.items()}
  for f,h in plan['source_sha256'].items():assert sha(ROOT/f)==h,(f,'changed')
  assert pairwise.digest(CONTEXT)==plan['context_sha256']
+ assert json.loads((PUBLIC/'author-context.json').read_text())==CONTEXT
  rubric=(PUBLIC/'rubric.txt').read_text();assert pairwise.text_hash(rubric)==plan['rubric_sha256']
  cases,texts=inputs();assert make_jobs(cases,texts)==plan['jobs']
  return plan,rubric,cases,texts

@@ -1,0 +1,99 @@
+{
+  "development": {
+    "old": {
+      "net_pp": 25.499999999999986,
+      "net_ci95_pp": [
+        16.250000000000014,
+        34.5
+      ],
+      "preference": 0.6275,
+      "ci95": [
+        0.58125,
+        0.6725
+      ],
+      "cases": 40,
+      "judgments": 400,
+      "wins": 153,
+      "ties": 196,
+      "losses": 51
+    },
+    "new": {
+      "net_pp": 37.75,
+      "net_ci95_pp": [
+        27.750000000000014,
+        47.5
+      ],
+      "preference": 0.68875,
+      "ci95": [
+        0.63875,
+        0.7375
+      ],
+      "cases": 40,
+      "judgments": 400,
+      "wins": 203,
+      "ties": 145,
+      "losses": 52
+    },
+    "changed": 115,
+    "pairs": 400,
+    "transitions": {
+      "win -> win": 138,
+      "tie -> win": 55,
+      "tie -> loss": 21,
+      "tie -> tie": 120,
+      "loss -> tie": 14,
+      "loss -> loss": 27,
+      "loss -> win": 10,
+      "win -> tie": 11,
+      "win -> loss": 4
+    }
+  },
+  "holdout": {
+    "old": {
+      "net_pp": -10.0,
+      "net_ci95_pp": [
+        -30.0,
+        0.0
+      ],
+      "preference": 0.45,
+      "ci95": [
+        0.35,
+        0.5
+      ],
+      "cases": 3,
+      "judgments": 30,
+      "wins": 8,
+      "ties": 11,
+      "losses": 11
+    },
+    "new": {
+      "net_pp": 0.0,
+      "net_ci95_pp": [
+        -40.0,
+        30.0
+      ],
+      "preference": 0.5,
+      "ci95": [
+        0.3,
+        0.65
+      ],
+      "cases": 3,
+      "judgments": 30,
+      "wins": 10,
+      "ties": 10,
+      "losses": 10
+    },
+    "changed": 10,
+    "pairs": 30,
+    "transitions": {
+      "tie -> tie": 6,
+      "loss -> tie": 2,
+      "loss -> loss": 8,
+      "win -> win": 6,
+      "win -> tie": 2,
+      "loss -> win": 1,
+      "tie -> win": 3,
+      "tie -> loss": 2
+    }
+  }
+}

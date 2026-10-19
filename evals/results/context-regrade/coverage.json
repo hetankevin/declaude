@@ -1,0 +1,111 @@
+{
+  "status": "complete",
+  "batches_done": 652,
+  "batches_expected": 652,
+  "missing_batches": [],
+  "primary_judgments": 2706,
+  "audit_judgments": 286,
+  "balanced_cases": {
+    "development": [
+      "large-dev-a-01",
+      "large-dev-a-02",
+      "large-dev-a-03",
+      "large-dev-a-04",
+      "large-dev-a-05",
+      "large-dev-a-06",
+      "large-dev-a-07",
+      "large-dev-a-08",
+      "large-dev-a-09",
+      "large-dev-a-10",
+      "large-dev-a-11",
+      "large-dev-a-12",
+      "large-dev-a-13",
+      "large-dev-a-14",
+      "large-dev-a-15",
+      "large-dev-a-16",
+      "large-dev-a-17",
+      "large-dev-a-18",
+      "large-dev-a-19",
+      "large-dev-a-20",
+      "large-dev-b-01",
+      "large-dev-b-02",
+      "large-dev-b-03",
+      "large-dev-b-04",
+      "large-dev-b-05",
+      "large-dev-b-06",
+      "large-dev-b-07",
+      "large-dev-b-08",
+      "large-dev-b-09",
+      "large-dev-b-10",
+      "large-dev-b-11",
+      "large-dev-b-12",
+      "large-dev-b-13",
+      "large-dev-b-14",
+      "large-dev-b-15",
+      "large-dev-b-16",
+      "large-dev-b-17",
+      "large-dev-b-18",
+      "large-dev-b-19",
+      "large-dev-b-20"
+    ],
+    "holdout": [
+      "large-test-a-01",
+      "large-test-a-02",
+      "large-test-a-03",
+      "large-test-a-04",
+      "large-test-a-05",
+      "large-test-a-06",
+      "large-test-a-07",
+      "large-test-a-08",
+      "large-test-a-09",
+      "large-test-a-10",
+      "large-test-a-11",
+      "large-test-a-12",
+      "large-test-a-13",
+      "large-test-a-14",
+      "large-test-a-15",
+      "large-test-a-16",
+      "large-test-a-17",
+      "large-test-a-18",
+      "large-test-a-19",
+      "large-test-a-20",
+      "large-test-b-01",
+      "large-test-b-02",
+      "large-test-b-03",
+      "large-test-b-04",
+      "large-test-b-05",
+      "large-test-b-06",
+      "large-test-b-07"
+    ]
+  },
+  "excluded_primary": [
+    {
+      "case": "large-test-b-08",
+      "config": "haiku",
+      "candidate": "v4",
+      "judge": "sol-high"
+    },
+    {
+      "case": "large-test-b-08",
+      "config": "haiku",
+      "candidate": "v4",
+      "judge": "astra-high"
+    }
+  ],
+  "category_counts": {
+    "development": {
+      "ordinary": 8,
+      "research": 8,
+      "argument": 8,
+      "proof": 8,
+      "control": 8
+    },
+    "holdout": {
+      "ordinary": 8,
+      "research": 7,
+      "argument": 4,
+      "proof": 4,
+      "control": 4
+    }
+  }
+}
