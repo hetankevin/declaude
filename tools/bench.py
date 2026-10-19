@@ -39,7 +39,27 @@ def json_result(text):
     text = text.strip()
     if text.startswith('```'):
         text = re.sub(r'^```(?:json)?\s*|\s*```$', '', text)
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # A syntax-only repair: remove trailing commas outside JSON strings.
+        # Never alter evidence strings, verdicts, fields, or missing content.
+        chars = []
+        quoted = escaped = False
+        for i, char in enumerate(text):
+            if quoted:
+                chars.append(char)
+                if escaped: escaped = False
+                elif char == '\\': escaped = True
+                elif char == '"': quoted = False
+            else:
+                if char == '"': quoted = True
+                if char == ',':
+                    j = i + 1
+                    while j < len(text) and text[j].isspace(): j += 1
+                    if j < len(text) and text[j] in '}]': continue
+                chars.append(char)
+        return json.loads(''.join(chars))
 
 
 def call(prompt, config, timeout=1500):
@@ -129,19 +149,44 @@ def grade_pool(case, paths, pool_id, fingerprint, rubric_hash, grader_version="v
     labels = [f'R{i+1:02}' for i in range(len(paths))]
     responses = '\n\n'.join(f'<response id="{label}">\n{p.read_text()}\n</response>' for label,p in zip(labels,paths))
     prompt = (ROOT/'evals/graders'/f'{grader_version}.txt').read_text() + case['task'] + '\nASSERTIONS:\n' + json.dumps(case['assertions']) + '\nRESPONSES:\n' + responses
-    text, meta = call(prompt, 'grader-opus')
-    data = json_result(text)
-    if set(data) != set(labels):
-        raise ValueError('Missing or additional grade labels')
-    # Validate the entire pool before saving any grade.
-    for grade in data.values():
-        assert type(grade['score']) is int and 1 <= grade['score'] <= 5
-        assert len(grade['assertions']) == len(case['assertions'])
-        assert all(type(a['passed']) is bool and isinstance(a['evidence'],str) for a in grade['assertions'])
+    def validate(data):
+        if set(data) != set(labels):
+            raise ValueError('Missing or additional grade labels')
+        for grade in data.values():
+            assert set(grade) == {'score','assertions','note'}
+            assert type(grade['score']) is int and 1 <= grade['score'] <= 5
+            assert isinstance(grade['note'],str)
+            assert len(grade['assertions']) == len(case['assertions'])
+            assert all(set(a)=={'passed','evidence'} and type(a['passed']) is bool and isinstance(a['evidence'],str) for a in grade['assertions'])
+        return data
+    raw_dir = paths[0].parents[3] / '.grading-raw' / fingerprint
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    data = None
+    # Recover stored syntax-only failures without asking for a different judgment.
+    for raw_path in sorted(raw_dir.glob('*.txt')):
+        try:
+            text = raw_path.read_text()
+            data = validate(json_result(text))
+            meta = json.loads(raw_path.with_suffix('.json').read_text())
+            break
+        except (ValueError,AssertionError,KeyError,TypeError):
+            data = None
+    if data is None:
+        text, meta = call(prompt, 'grader-opus')
+        attempt = str(time.time_ns())
+        (raw_dir / (attempt + '.txt')).write_text(text)
+        (raw_dir / (attempt + '.json')).write_text(json.dumps(meta, indent=2)+'\n')
+        data = validate(json_result(text))
+    unfenced = re.sub(r'^```(?:json)?\s*|\s*```$', '', text.strip())
+    try:
+        json.loads(unfenced)
+        repaired = False
+    except json.JSONDecodeError:
+        repaired = True
     for label,path in zip(labels,paths):
         grade = data[label]
         grade['assertions'] = [dict(a, **b) for a,b in zip(case['assertions'],grade['assertions'])]
-        grade['grader'] = {'model':meta['model'], 'effort':meta['effort'], 'blind_label':label, 'pool_id':pool_id, 'pool_size':len(paths), 'version':grader_version}
+        grade['grader'] = {'model':meta['model'], 'effort':meta['effort'], 'blind_label':label, 'pool_id':pool_id, 'pool_size':len(paths), 'version':grader_version, 'syntax_only_repair':repaired, 'raw_sha256':hashlib.sha256(text.encode()).hexdigest()}
         grade['rubric_sha256'] = rubric_hash
         grade['pool_sha256'] = fingerprint
         path.with_name('grading.json').write_text(json.dumps(grade,indent=2)+'\n')
