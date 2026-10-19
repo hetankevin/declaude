@@ -99,7 +99,7 @@ def _category_label(rows, metric, label):
     return f'{label} ({counts[0]})' if len(set(counts)) == 1 else label
 
 
-def plot_pairwise(summary, out):
+def plot_pairwise(summary, out, show_counts=False):
     """Write both themes/formats for category and dimension heatmaps; return paths."""
     if isinstance(summary, (str, Path)):
         summary = json.loads(Path(summary).read_text(encoding='utf-8'))
@@ -151,10 +151,14 @@ def plot_pairwise(summary, out):
                     for mi, (metric, label) in enumerate(metrics):
                         if section == 'categories':
                             label = _category_label(rows, metric, label)
-                        for si, (split, _) in enumerate(rows):
+                        for si, (split, groups) in enumerate(rows):
                             y = mi * 2.6 + si
                             yticks.append(y + .5)
-                            ylabels.append(split)
+                            counts = [cell.get('cases', 0) for config in ORDER
+                                      if (cell := _cell(groups, config, section, metric))]
+                            count = str(min(counts)) if counts and min(counts) == max(counts) else (
+                                f'{min(counts)}–{max(counts)}' if counts else '0')
+                            ylabels.append(f'{split} ({count})' if show_counts else split)
                             for ci, config in enumerate(ORDER):
                                 value = matrices[section][mi][si][ci]
                                 color = missing if value is None else cmap(norm(value))
@@ -166,7 +170,8 @@ def plot_pairwise(summary, out):
                                 ax.text(xs[ci] + .5, y + .5, 'NA' if value is None else f'{value:.1f}',
                                         ha='center', va='center', fontsize=9.2, color=ink,
                                         fontweight='bold' if config.endswith('-all') or config == 'all' else 'normal')
-                        ax.text(-.65, mi * 2.6 + 1, label, ha='right', va='center', color=fg)
+                        ax.text(-1.12 if show_counts else -.65, mi * 2.6 + 1, label,
+                                ha='right', va='center', color=fg)
                     ax.set_xlim(-.04, x + .04)
                     ax.set_ylim((len(metrics) - 1) * 2.6 + 2.1, -.2)
                     ax.set_xticks([v + .5 for v in xs], LABELS)

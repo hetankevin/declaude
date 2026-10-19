@@ -6,7 +6,7 @@ LABELS=['Haiku 5.5\ndefault','Sonnet 5.5\nlow','Sonnet 5.5\nhigh','Opus 5.5\nlow
 METRICS=[('all','All assertions'),('fidelity','Meaning preserved'),('style','Natural prose'),('argument','Argument and purpose'),('proof','Proof exposition'),('holistic','Holistic score'),('words','Median reply words')]
 
 
-def plot_matrix(groups, selected, out, reference='none'):
+def plot_matrix(groups, selected, out, reference='none', show_counts=False):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -16,8 +16,8 @@ def plot_matrix(groups, selected, out, reference='none'):
     out=Path(out)
     splits=list(groups)
     if len(splits)!=2:raise ValueError('Heatmap requires exactly two splits')
-    assertion_limit=max(10,10*__import__('math').ceil(max(abs(v[selected]-v[reference])*100 for d in groups.values() for c in d.values() for m,v in c.items() if m not in ['holistic','words'])/10))
-    holistic_limit=max(.5,.5*__import__('math').ceil(max(abs(c['holistic'][selected]-c['holistic'][reference]) for d in groups.values() for c in d.values())/.5))
+    assertion_limit=max(10,10*__import__('math').ceil(max((abs(v[selected]-v[reference])*100 for d in groups.values() for c in d.values() for m,v in c.items() if m not in ['holistic','words'] and v[selected] is not None and v[reference] is not None),default=0)/10))
+    holistic_limit=max(.5,.5*__import__('math').ceil(max((abs(c['holistic'][selected]-c['holistic'][reference]) for d in groups.values() for c in d.values() if c['holistic'][selected] is not None and c['holistic'][reference] is not None),default=0)/.5))
     for mode in ['light','dark']:
         bg,fg,grid=('#ffffff','#20252b','#dddddd') if mode=='light' else ('#1a1a19','#f0efec','#555550')
         neutral='#ececea' if mode=='light' else '#44443f'
@@ -35,11 +35,17 @@ def plot_matrix(groups, selected, out, reference='none'):
                 ys=[];yticks=[];ylabels=[]
                 for i,(metric,label) in enumerate(METRICS):
                     for si,split in enumerate(splits):
-                        y=i*2.6+si;ys.append(y);yticks.append(y+.5);ylabels.append(('IS' if si==0 else 'OOS'))
+                        y=i*2.6+si;ys.append(y);yticks.append(y+.5)
+                        split_label='IS' if si==0 else 'OOS'
+                        n=groups[split]['all'][metric]['case_count']
+                        ylabels.append(f'{split_label} ({n})' if show_counts else split_label)
                         for ci,config in enumerate(ORDER):
                             cell=groups[split][config][metric];base=cell[reference];skill=cell[selected]
-                            v=skill-base if kind=='difference' else cell[kind]
-                            if metric=='words':
+                            missing=(base is None or skill is None) if kind=='difference' else cell[kind] is None
+                            v=None if missing else skill-base if kind=='difference' else cell[kind]
+                            if missing:
+                                color=neutral;labeltext='NA'
+                            elif metric=='words':
                                 color=neutral;labeltext=f'{v:+.0f}' if kind=='difference' else f'{v:.0f}'
                             elif metric=='holistic':
                                 color=div(Normalize(-holistic_limit,holistic_limit)(v)) if kind=='difference' else seq(Normalize(1,5)(v))
@@ -52,7 +58,7 @@ def plot_matrix(groups, selected, out, reference='none'):
                             rgba=matplotlib.colors.to_rgba(color);lum=.2126*rgba[0]+.7152*rgba[1]+.0722*rgba[2]
                             ink='#ffffff' if lum<.5 else '#17212b'
                             ax.text(xs[ci]+.5,y+.5,labeltext,ha='center',va='center',fontsize=9.2,color=ink,fontweight='bold' if config.endswith('-all') or config=='all' else 'normal')
-                    ax.text(-.65,i*2.6+1,label,ha='right',va='center',fontsize=10,color=fg)
+                    ax.text(-1.12 if show_counts else -.65,i*2.6+1,label,ha='right',va='center',fontsize=10,color=fg)
                 ax.set_xlim(-.04,x+.04);ax.set_ylim(ys[-1]+1.1,-.2)
                 ax.set_xticks([v+.5 for v in xs],LABELS);ax.xaxis.tick_top();ax.tick_params(length=0,pad=9)
                 ax.set_yticks(yticks,ylabels);ax.tick_params(axis='y',pad=5)

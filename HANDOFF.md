@@ -2,13 +2,15 @@
 
 ## Usage pause — do not resume
 
+Interim charts now live in `evals/results/large-interim/plots/`, with both themes and comparisons. README shows the current pairwise/absolute plots first and collapses historical plots. `tools/plot_interim.py` reproduces them using published snapshot files only, without model calls. Chart aggregates were checked against the saved tables; rendered category, dimension, and absolute heatmaps were visually inspected. Row labels report case counts and unavailable cells display NA. Pairwise coverage is 39 development / three holdout cases; absolute coverage is 34 / eight.
+
 The user then requested publication of intermediate results. Snapshot and exact available outputs/grades are in `evals/results/large-interim/`, linked prominently in README. It captures 2,012 responses, 1,458 absolute scorecards, and 2,078 pairwise judgments. Tables use cases complete across all configurations; paired comparisons share 39 development and only three holdout cases. This is explicitly incomplete and was built without model calls. `tools/interim_report.py` can export another snapshot without invoking a model.
 
 The user reported unexpected Claude account depletion after the handoff. The coordinator stopped its queued benchmark calls with SIGINT; active calls may still drain. Do not automatically resume or launch more model calls. Explain cost/usage and agree on a cap before continuing. Completed artifacts remain intact. The local audit is `.local/claude-usage-audit.json`; process/pause details are in `.local/opus-handoff-runtime.json` and `.local/benchmark-paused-for-usage.txt`. This supersedes the resume instructions below.
 
 ## Current task
 
-Public repo: https://github.com/hetankevin/declaude. Installed and packaged skill remains v4. User requested a much larger, harder evaluation, blinded pairwise grading, the full model/effort matrix, a fresh holdout, and development-only skill improvement. Work is running; do not report the final benchmark as complete.
+Public repo: https://github.com/hetankevin/declaude. Installed and packaged skill remains v4. User requested a much larger, harder evaluation, blinded pairwise grading, the full model/effort matrix, a fresh holdout, and development-only skill improvement. Work is paused; the final benchmark is incomplete.
 
 ## Opus handoff — resume here
 

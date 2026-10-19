@@ -19,6 +19,77 @@ Percentages count wins plus half of ties, with both judge families and all ten c
 
 V5a narrowly qualified on reserved development validation. The packaged and installed skill remains v4 pending completion and release. The following results describe the earlier, smaller experiment.
 
+### Interim plots: v5a versus no skill
+
+Rows show development (IS) and the completed portion of the fresh holdout (OOS). Parentheses give the number of distinct cases for that row, not model outputs or judge votes. NA means missing or not applicable. These are the same frozen intermediate results as the tables above.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-none/pairwise-categories-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-none/pairwise-categories-light.svg" alt="Interim pairwise preferences by writing category and model effort, with 39 development cases and only three holdout cases overall.">
+</picture>
+
+The pairwise scale is centered at 50%, meaning no average preference. Higher values favor v5a. All three completed holdout cases are ordinary prose, so the other holdout categories remain NA.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-none/assertions-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-none/assertions-light.svg" alt="Interim absolute-grade differences by model effort, with 34 complete development cases and eight complete holdout cases; missing proof results are NA.">
+</picture>
+
+Absolute grading is further ahead on some cases: these plots use 34 development and eight holdout cases with all three arms graded. The case subsets differ from the pairwise plots. Assertion changes are percentage points, holistic changes are score points, and reply length is descriptive.
+
+<details>
+<summary>Pairwise dimensions and v5a versus v4</summary>
+
+### V5a versus no skill: writing dimensions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-none/pairwise-dimensions-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-none/pairwise-dimensions-light.svg" alt="Interim pairwise preferences for meaning, naturalness, progression, voice and proof exposition, v5a versus no skill.">
+</picture>
+
+### V5a versus v4
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-v4/pairwise-categories-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-v4/pairwise-categories-light.svg" alt="Interim v5a versus v4 preferences by writing category.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-v4/pairwise-dimensions-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-v4/pairwise-dimensions-light.svg" alt="Interim v5a versus v4 preferences by writing dimension.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-v4/assertions-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-v4/assertions-light.svg" alt="Interim v5a minus v4 absolute assertion, holistic and length differences.">
+</picture>
+
+</details>
+
+<details>
+<summary>Absolute levels: no skill and selected revision</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-none/levels-none-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-none/levels-none-light.svg" alt="Interim absolute no-skill assertion rates, holistic scores and word counts.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-none/levels-skill-dark.svg">
+  <img src="evals/results/large-interim/plots/v5a-vs-none/levels-skill-light.svg" alt="Interim absolute v5a assertion rates, holistic scores and word counts.">
+</picture>
+
+</details>
+
+Regenerate these plots from the published snapshot without model calls:
+
+```sh
+MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/plot_interim.py
+```
+
+<details>
+<summary>Earlier 16-case benchmark and historical plots</summary>
+
 ## Earlier 16-case results
 
 The final comparison covers **10 configurations and 480 outputs**: eight development cases and eight fresh held-out cases, each run with no skill, v3, and v4. V4 improves assertion passes over no skill on the fresh cases, but **does not establish an improvement over v3**. Its development advantage did not generalize clearly.
@@ -104,6 +175,9 @@ A concrete remaining skill failure is Luna's interval-merging explanation: it om
 The original three-configuration report is [archived](evals/results/initial-three-configs/report.md). Expanding frozen v3 to all ten configurations under the original grader produced **87.7% → 91.2%** passes and **3.89 → 4.26** holistic scores on the original held-out set, with a proof-detail regression. [Expanded v3 reference](evals/results/expanded-v3/report.md) · [Failures](evals/results/expanded-v3/failure-review.md).
 
 That reference uses different held-out cases and the old grader. Its numbers must not be compared directly with the fresh set to claim that the skill or grader improved. The final v3/v4 comparison above holds cases and grader fixed.
+
+
+</details>
 
 ## Install
 
