@@ -8,12 +8,12 @@ It removes rhetorical repetition and unnecessary abstractions while preserving f
 
 The new 80-task, ten-configuration experiment is **paused and incomplete**. The [interim report](evals/results/large-interim/report.md) contains 2,012 of 2,400 writing outputs, 1,458 absolute scorecards, and 2,078 of 3,820 pairwise judgments, including order audits. No additional model calls were made to publish this snapshot.
 
-| Split | Cases with complete pairwise coverage | V5a vs no skill | V5a vs v4 |
+| Split | Cases with complete pairwise coverage | V5a vs no skill (pp) | V5a vs v4 (pp) |
 |---|---:|---:|---:|
-| Development | 39/40 | 58.46% | 51.73% |
-| Fresh holdout | 3/40 | 37.50% | 51.67% |
+| Development | 39/40 | +16.92 | +3.46 |
+| Fresh holdout | 3/40 | -25.00 | +3.33 |
 
-Percentages count wins plus half of ties, with both judge families and all ten configurations represented for every included case. **Three completed holdout cases cannot establish generalization.** They are an execution-order subset. Missing results are not counted as ties or zeros, and neither these results nor subsequent test results may be used to tune the selected revision.
+Net advantage is win rate minus loss rate in percentage points, with ties contributing zero. Both judge families and all ten configurations are represented for every included case. Win/tie/loss counts are in the linked report. **Three completed holdout cases cannot establish generalization.** They are an execution-order subset. Missing results are not counted as ties or zeros, and neither these results nor subsequent test results may be used to tune the selected revision.
 
 [Exact outputs and grading evidence](evals/results/large-interim/report.md#files) · [Coverage](evals/results/large-interim/coverage.json) · [Development selection](evals/large/selection.json) · [Frozen protocol](evals/large/protocol.md).
 
@@ -28,7 +28,7 @@ Rows show development (IS) and the completed portion of the fresh holdout (OOS).
   <img src="evals/results/large-interim/plots/v5a-vs-none/pairwise-categories-light.svg" alt="Interim pairwise preferences by writing category and model effort, with 39 development cases and only three holdout cases overall.">
 </picture>
 
-The pairwise scale is centered at 50%, meaning no average preference. Higher values favor v5a. All three completed holdout cases are ordinary prose, so the other holdout categories remain NA.
+The pairwise scale is centered at zero: positive percentage points favor v5a and negative values favor the reference. Ties contribute zero. This is a recentering of the same judgments, not a change in their ranking. All three completed holdout cases are ordinary prose, so the other holdout categories remain NA.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="evals/results/large-interim/plots/v5a-vs-none/assertions-dark.svg">

@@ -12,14 +12,14 @@ Completed cases are an execution-order subset, not a random new sample. Holdout 
 
 ## Pairwise comparison
 
-Preference = wins + half of ties, divided by primary judgments. Each complete case has the same ten configurations and two judges. Audits are excluded from performance.
+Net advantage = win rate minus loss rate in percentage points. Ties contribute zero and remain in the denominator. Each complete case has the same ten configurations and two judges. Audits are excluded from performance.
 
-| Split | Complete cases / planned | Comparison | Win / tie / loss | Preference |
+| Split | Complete cases / planned | Comparison | Win / tie / loss | Net advantage (pp) |
 |---|---:|---|---:|---:|
-| development | 39/40 | v5a vs none | 323 / 266 / 191 | 58.46% |
-| development | 39/40 | v5a vs v4 | 213 / 381 / 186 | 51.73% |
-| holdout | 3/40 | v5a vs none | 15 / 15 / 30 | 37.50% |
-| holdout | 3/40 | v5a vs v4 | 18 / 26 / 16 | 51.67% |
+| development | 39/40 | v5a vs none | 323 / 266 / 191 | +16.92 |
+| development | 39/40 | v5a vs v4 | 213 / 381 / 186 | +3.46 |
+| holdout | 3/40 | v5a vs none | 15 / 15 / 30 | -25.00 |
+| holdout | 3/40 | v5a vs v4 | 18 / 26 / 16 | +3.33 |
 
 ## Absolute grades
 

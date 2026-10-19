@@ -1,6 +1,12 @@
 # Handoff
 
-## Usage pause — do not resume
+## Bounded dev repair in progress
+
+User authorized a small development-only repair using Codex and **no Claude calls**. Hard cap: 12 calls including failures (six candidate outputs, six blind judgments against saved v5a). `tools/dev_repair.py` enforces the persistent cap and forbids retries and Claude. Plan frozen in `evals/results/dev-repair-1/plan.json`, candidate `evals/versions/v6-dev`. No new holdout reads or calls. Previously examined holdout is no longer fresh evidence for this new revision. Do not resume the large benchmark.
+
+User requested signed percentage-point reporting: win rate minus loss rate, centered at zero, ties neutral. Historical raw judgments and frozen selection decisions must remain unchanged.
+
+## Large benchmark usage pause — do not resume
 
 Interim charts now live in `evals/results/large-interim/plots/`, with both themes and comparisons. README shows the current pairwise/absolute plots first and collapses historical plots. `tools/plot_interim.py` reproduces them using published snapshot files only, without model calls. Chart aggregates were checked against the saved tables; rendered category, dimension, and absolute heatmaps were visually inspected. Row labels report case counts and unavailable cells display NA. Pairwise coverage is 39 development / three holdout cases; absolute coverage is 34 / eight.
 

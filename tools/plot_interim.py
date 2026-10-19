@@ -14,7 +14,7 @@ def aggregate(rows,dimension=None):
  for r in rows:
   result=r['outcome'] if dimension is None else r['dimensions'].get(dimension,'NA')
   if result in SCORE:by[r['case']].append(SCORE[result]);counts[result]+=1
- return dict(preference=statistics.mean(statistics.mean(v) for v in by.values()) if by else None,cases=len(by),judgments=sum(counts.values()),wins=counts['win'],ties=counts['tie'],losses=counts['loss'])
+ return dict(net_pp=200*statistics.mean(statistics.mean(v) for v in by.values())-100 if by else None,preference=statistics.mean(statistics.mean(v) for v in by.values()) if by else None,cases=len(by),judgments=sum(counts.values()),wins=counts['win'],ties=counts['tie'],losses=counts['loss'])
 
 def configs_for(config):
  return ORDER[:6] if config=='claude-all' else ['astra-medium','astra-high','sol-low','luna-medium'] if config=='codex-all' else [c for c in ORDER if c not in ['claude-all','codex-all','all']] if config=='all' else [config]

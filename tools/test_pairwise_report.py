@@ -114,6 +114,16 @@ class StrictReportTests(unittest.TestCase):
         self.assertEqual(a['ci95'],b['ci95'])
         self.assertEqual(b['cases'],2)
 
+    def test_signed_net_advantage_and_neutral_ties(self):
+        from plot_pairwise import _percentage
+        for outcomes,expected in [(['tie']*4,0),(['win'],100),(['loss'],-100),(['win','win','tie','loss'],25)]:
+            rows=[dict(case=str(i),outcome=o) for i,o in enumerate(outcomes)]
+            result=report.aggregate(rows,samples=1000)
+            self.assertEqual(result['net_pp'],expected)
+            self.assertEqual(_percentage(result),expected)
+            self.assertEqual(result['net_ci95_pp'],[200*x-100 for x in result['ci95']])
+            self.assertEqual(result['judgments'],sum(result[k] for k in ['wins','ties','losses']))
+
     def test_reversed_audits_do_not_affect_performance(self):
         class Sink:
             def mkdir(self,**kwargs):pass

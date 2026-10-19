@@ -76,7 +76,7 @@ def _percentage(cell):
         raise ValueError(f'Preference must be a finite fraction in [0, 1], got {preference!r}')
     if cell.get('cases') == 0:
         return None
-    return 100 * preference
+    return 200 * preference - 100
 
 
 def _category_label(rows, metric, label):
@@ -124,7 +124,7 @@ def plot_pairwise(summary, out, show_counts=False):
 
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    norm = TwoSlopeNorm(vmin=0, vcenter=50, vmax=100)
+    norm = TwoSlopeNorm(vmin=-100, vcenter=0, vmax=100)
     cmap = LinearSegmentedColormap.from_list('pairwise', ['#b84a48', '#f2f2f2', '#1c5cab'], N=257)
     xs, x = [], 0
     for config in ORDER:
@@ -167,7 +167,7 @@ def plot_pairwise(summary, out, show_counts=False):
                                 rgba = to_rgba(color)
                                 lum = .2126 * rgba[0] + .7152 * rgba[1] + .0722 * rgba[2]
                                 ink = '#ffffff' if lum < .5 else '#17212b'
-                                ax.text(xs[ci] + .5, y + .5, 'NA' if value is None else f'{value:.1f}',
+                                ax.text(xs[ci] + .5, y + .5, 'NA' if value is None else f'{value:+.1f}',
                                         ha='center', va='center', fontsize=9.2, color=ink,
                                         fontweight='bold' if config.endswith('-all') or config == 'all' else 'normal')
                         ax.text(-1.12 if show_counts else -.65, mi * 2.6 + 1, label,
@@ -185,8 +185,8 @@ def plot_pairwise(summary, out, show_counts=False):
                         spine.set_visible(False)
                     cax = fig.add_axes([.31, .075, .42, .018])
                     cb = fig.colorbar(ScalarMappable(norm=norm, cmap=cmap), cax=cax,
-                                      orientation='horizontal', ticks=[0, 25, 50, 75, 100])
-                    cb.set_label('Tie-adjusted candidate preference (%)')
+                                      orientation='horizontal', ticks=[-100, -50, 0, 50, 100])
+                    cb.set_label('Win rate − loss rate (percentage points)')
                     cb.outline.set_edgecolor(fg)
                     if any(v is None for matrix in matrices[section] for row in matrix for v in row):
                         fig.legend(handles=[Patch(facecolor=missing, label='NA: missing / not applicable')],

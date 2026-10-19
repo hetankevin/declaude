@@ -93,7 +93,7 @@ def aggregate(rows,dimension=None,samples=3000):
  ids=sorted(by);rng=random.Random(47132026)
  bs=sorted(statistics.mean(case_means[c] for c in rng.choices(ids,k=len(ids))) for _ in range(samples))
  counts=collections.Counter(outcome(r) for r in rs)
- return {'preference':statistics.mean(case_means.values()),'ci95':[bs[int(.025*samples)],bs[int(.975*samples)-1]],'cases':len(ids),'judgments':len(rs),'wins':counts['win'],'ties':counts['tie'],'losses':counts['loss']}
+ return {'net_pp':200*statistics.mean(case_means.values())-100,'net_ci95_pp':[200*bs[int(.025*samples)]-100,200*bs[int(.975*samples)-1]-100],'preference':statistics.mean(case_means.values()),'ci95':[bs[int(.025*samples)],bs[int(.975*samples)-1]],'cases':len(ids),'judgments':len(rs),'wins':counts['win'],'ties':counts['tie'],'losses':counts['loss']}
 
 def order_diagnostics(records,cases):
  """Counts are descriptive: each pair is one case/config/judge in both orders."""
@@ -140,10 +140,10 @@ def report(records,cases,out):
  (out/'observations.json').write_text(json.dumps(records,indent=2)+'\n')
  (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
  (out/'judge-checks.json').write_text(json.dumps({'order_audit':auditsummary,'cross_family':disagreements},indent=2)+'\n')
- lines=['# Blinded pairwise writing comparison','', 'Preference = wins + half of ties, divided by judgments, aggregated at case level. 50% means no average preference. Intervals resample cases; two judges and reversed-order audits do not add independent tasks.','', '| Split | Candidate preference [95% CI] | Win / tie / loss judgments | Cases |','|---|---:|---:|---:|']
+ lines=['# Blinded pairwise writing comparison','', 'Net advantage = win rate minus loss rate in percentage points, aggregated at case level. Ties contribute zero; zero means balanced wins and losses. Intervals resample cases; two judges and reversed-order audits do not add independent tasks.','', '| Split | Net advantage, pp [95% CI] | Win / tie / loss judgments | Cases |','|---|---:|---:|---:|']
  for split,groups in summary.items():
   m=groups['all']['overall']
-  if m:lines.append(f"| {split} | {100*m['preference']:.1f}% [{100*m['ci95'][0]:.1f}, {100*m['ci95'][1]:.1f}] | {m['wins']} / {m['ties']} / {m['losses']} | {m['cases']} |")
+  if m:lines.append(f"| {split} | {m['net_pp']:+.1f} [{m['net_ci95_pp'][0]:+.1f}, {m['net_ci95_pp'][1]:+.1f}] | {m['wins']} / {m['ties']} / {m['losses']} | {m['cases']} |")
  lines+=['','Primary judgments only determine performance. Reversed-order repeats are diagnostic.','',f"Order audit: {auditsummary['same_verdict']}/{auditsummary['pairs']} identical verdicts; {auditsummary['opposite_non_tie']} win/loss reversals.",f"Cross-family judges: {disagreements['same_verdict']}/{disagreements['pairs']} identical verdicts; {disagreements['opposite_non_tie']} direct win/loss disagreements."]
  lines+=['',f"Order audits cover {auditsummary['cases']} unique cases and {auditsummary['case_config_pairs']} case/configuration pairs. Audit pair counts include judges and are not independent task counts.",'', '| Split | Judge | Unique cases | Case/config pairs | Order pairs | Same verdict | Win/loss reversals |','|---|---|---:|---:|---:|---:|---:|']
  for split,checks in auditsummary['by_split'].items():
