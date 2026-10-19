@@ -8,6 +8,7 @@ Raw answers, prompts, and failures are private (0700 directory, 0600 files,
 Git ignore rule); verdicts include unblinding metadata and are not public exports.
 """
 import argparse
+import copy
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 import fcntl
@@ -133,6 +134,36 @@ def validate_verdict(verdict, supplied):
     return verdict
 
 
+def repair_math_delimiter_quotes(verdict, supplied):
+    """Restore one missing dollar delimiter only when the source verifies it.
+
+    This never changes judgments or reasons. Original raw answers remain intact;
+    every exact old/new evidence string is recorded in the normalized artifact.
+    """
+    fixed = copy.deepcopy(verdict)
+    repairs = []
+    sources = {'source': supplied['task'], **supplied['responses']}
+    if not isinstance(fixed, dict): return fixed, repairs
+    for section in ('material_errors','dimensions'):
+        items = fixed.get(section,{})
+        if not isinstance(items,dict): continue
+        for name,item in items.items():
+            if not isinstance(item,dict) or not isinstance(item.get('quotes'),dict): continue
+            for label,quotes in item['quotes'].items():
+                if label not in sources or not isinstance(quotes,list): continue
+                for index,quote in enumerate(quotes):
+                    if not isinstance(quote,str) or quote in sources[label] or '$' not in quote: continue
+                    candidates={quote[:i]+'$'+quote[i:] for i in range(len(quote)+1)
+                                if quote[:i]+'$'+quote[i:] in sources[label]}
+                    if len(candidates)==1:
+                        replacement=candidates.pop()
+                        quotes[index]=replacement
+                        repairs.append(dict(path=[section,name,'quotes',label,index],
+                                            old=quote,new=replacement,
+                                            operation='restore one source-verified math delimiter'))
+    return fixed, repairs
+
+
 def supplied_case(case):
     """Allowlist task/assertion contents; never serialize the case wholesale."""
     if not isinstance(case, dict) or not isinstance(case.get('task'), str) or not case['task'].strip():
@@ -253,7 +284,7 @@ def grade_pair(case, lefttext, righttext, judge, *, out, config='local',
     dest = out / component(case_id) / component(config) / component(judge) / (order + '.json')
     candidate_label = 'A' if a_side == candidate_side else 'B'
 
-    def record_for(verdict, raw, attempt):
+    def record_for(verdict, raw, attempt, repairs):
         identities = {'left': left_id, 'right': right_id}
         reference_side = 'left' if candidate_side == 'right' else 'right'
         payload = dict(version=VERSION, fingerprint=fingerprint, metadata=metadata,
@@ -264,6 +295,8 @@ def grade_pair(case, lefttext, righttext, judge, *, out, config='local',
                        response_sha256={k: text_hash(v) for k, v in texts.items()},
                        raw_sha256=text_hash(raw), raw_path=f'.private/{fingerprint}/attempt-{attempt}.txt',
                        attempt=attempt, raw_judgment=verdict, **normalized(verdict, candidate_label))
+        if repairs:
+            payload['evidence_format_repairs'] = repairs
         return dict(payload, record_sha256=digest(payload))
 
     with locked(private):
@@ -295,11 +328,12 @@ def grade_pair(case, lefttext, righttext, judge, *, out, config='local',
                 atomic_write(raw_path, raw)
                 save_json(status_path, {'state': 'answered', 'raw_sha256': text_hash(raw), 'call': call_meta})
             try:
-                verdict = validate_verdict(parse_answer(raw), supplied)
+                verdict, repairs = repair_math_delimiter_quotes(parse_answer(raw), supplied)
+                verdict = validate_verdict(verdict, supplied)
             except SchemaError as exc:
                 save_json(private / f'attempt-{attempt}.schema-error.json', {'error': str(exc), 'raw_sha256': text_hash(raw)})
                 continue
-            record = record_for(verdict, raw, attempt)
+            record = record_for(verdict, raw, attempt, repairs)
             if dest.exists():
                 try:
                     cached = strict_json(dest.read_text(encoding='utf-8'))
