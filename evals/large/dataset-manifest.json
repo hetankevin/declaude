@@ -1,0 +1,42 @@
+{
+  "development_sha256": "a1ea1453f70e5c051b8be2a1b3bd336654cf18e7d709404358fc95cce35b940c",
+  "holdout_sha256": "7309db9e9e0efd80751d985caa3c28d71af8574a2ba0b4dba98ba3f0fcf69d89",
+  "total_cases": 80,
+  "split_counts": {
+    "development": {
+      "cases": 40,
+      "categories": {
+        "ordinary": 8,
+        "research": 8,
+        "argument": 8,
+        "proof": 8,
+        "control": 8
+      },
+      "task_words_min": 242,
+      "task_words_max": 690,
+      "task_words_median": 348.0,
+      "assertions": 261
+    },
+    "holdout": {
+      "cases": 40,
+      "categories": {
+        "ordinary": 8,
+        "research": 8,
+        "argument": 8,
+        "proof": 8,
+        "control": 8
+      },
+      "task_words_min": 271,
+      "task_words_max": 721,
+      "task_words_median": 350.5,
+      "assertions": 266
+    }
+  },
+  "author_file_sha256": {
+    "test-b.json": "0f5d6ba5c697cfbeea603691a4504995d2fd9ea3d09971f4306538b0667acc0f",
+    "dev-a.json": "5074975847bb17d564480e7cbcceed67ac07264c141d2ff8baf0215f173158eb",
+    "dev-b.json": "96b2ed695679e40418c08e8d2c1fbbd2270b04f29e117aebd0e3e810fd09f268",
+    "test-a.json": "7e0a0744eb74c06aa579a92b31ab4f53855d317041fe0fcd622099af91e8c785"
+  },
+  "holdout_opened_for_selection": false
+}
