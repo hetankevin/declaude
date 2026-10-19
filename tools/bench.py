@@ -15,6 +15,13 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIGS = {
+    'haiku': ('claude', 'claude-haiku-5-5', None),
+    'opus-low': ('claude', 'claude-opus-5-5', 'low'),
+    'opus-xhigh': ('claude', 'claude-opus-5-5', 'xhigh'),
+    'fable': ('claude', 'claude-fable-5-1', None),
+    'astra-high': ('codex', 'gpt-6-astra', 'high'),
+    'sol-low': ('codex', 'gpt-6.1-sol', 'low'),
+    'luna-medium': ('codex', 'gpt-6-luna', 'medium'),
     'grader-opus': ('claude', 'claude-opus-5-5', 'high'),
     'sonnet-low': ('claude', 'claude-sonnet-5-5', 'low'),
     'sonnet-high': ('claude', 'claude-sonnet-5-5', 'high'),
@@ -35,13 +42,15 @@ def json_result(text):
     return json.loads(text)
 
 
-def call(prompt, config, timeout=600):
+def call(prompt, config, timeout=1500):
     provider, model, effort = CONFIGS[config]
     started = time.time()
     with tempfile.TemporaryDirectory(prefix='declaude-eval-') as wd:
         if provider == 'claude':
             cmd = ['claude', '-p', '--safe-mode', '--tools', '', '--model', model,
-                   '--effort', effort, '--no-session-persistence', '--output-format', 'json']
+                   '--no-session-persistence', '--output-format', 'json']
+            if effort is not None:
+                cmd += ['--effort', effort]
             p = subprocess.run(cmd, input=prompt, text=True, capture_output=True, cwd=wd, timeout=timeout)
             data = json.loads(p.stdout) if p.stdout.strip().startswith('{') else {}
             text = data.get('result', '')
@@ -128,7 +137,7 @@ def main():
     ap.add_argument('--cases', type=Path, required=True)
     ap.add_argument('--out', type=Path, required=True)
     ap.add_argument('--skill', type=Path, default=ROOT/'skill')
-    ap.add_argument('--configs', default='sonnet-low,sonnet-high,astra-medium')
+    ap.add_argument('--configs', default='haiku,sonnet-low,sonnet-high,opus-low,opus-xhigh,fable,astra-medium,astra-high,sol-low,luna-medium')
     ap.add_argument('--arms', default='none,v3')
     ap.add_argument('--subset', default='all')
     ap.add_argument('--workers', type=int, default=6)

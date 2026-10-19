@@ -31,3 +31,7 @@ Skill metadata validation, Python compilation, and an isolated installer smoke t
 README has report-only and model-rerun commands. tools/bench.py isolates candidates from personal instructions and inlines the public guidance. tools/report.py requires a complete paired matrix, publishes exact outputs/grades, bootstraps cases, and draws light/dark annotated heatmaps. Dependencies are in requirements.txt.
 
 Future improvements require a fresh holdout. Conservative editing and literal proof-detail requests remain weaknesses. The benchmark does not establish voice fidelity across full papers. Do not silently tune on inspected held-out cases or overwrite existing observations with preferred repeats.
+
+## Active follow-up: broader model coverage
+
+User requested the full neurotypical matrix. Frozen v3 and existing tasks are unchanged. evals/expanded-matrix.json preregisters ten configurations and 320 outputs. Existing 96 responses are reused in .local/expanded; initial reports are preserved in evals/results/initial-three-configs. Generate the remaining 224 outputs, blind-grade all 320 in matched-condition pools, publish stratified IS/OOS heatmaps and provider aggregates. Do not claim this expansion complete until model runs and grading finish.
