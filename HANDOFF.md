@@ -1,8 +1,12 @@
 # Handoff
 
-## Bounded dev repair in progress
+## Bounded dev repair complete — no more calls authorized
 
-User authorized a small development-only repair using Codex and **no Claude calls**. Hard cap: 12 calls including failures (six candidate outputs, six blind judgments against saved v5a). `tools/dev_repair.py` enforces the persistent cap and forbids retries and Claude. Plan frozen in `evals/results/dev-repair-1/plan.json`, candidate `evals/versions/v6-dev`. No new holdout reads or calls. Previously examined holdout is no longer fresh evidence for this new revision. Do not resume the large benchmark.
+Completed exactly 12 Codex calls, zero Claude calls. Six development/tune outputs and six blind Astra-high judgments against saved v5a: 1 win / 3 ties / 2 losses, −16.7 pp overall and progression. Meaning tied all six; no material flags; proof and polished control tied. `evals/results/dev-repair-1/` contains frozen plan, outputs, exact judgments, summary, and report. `tools/dev_repair.py` enforces the persistent cap; it is exhausted. Do not run further model calls or resume the large benchmark.
+
+Tested `v6-dev` is not promoted. A narrower `v6b-dev` draft restores all v5a guidance and references and adds one practical-organization paragraph. It is untested, uninstalled, and must not be represented as an improvement. Packaged/installed release remains v4. Old holdout has been inspected and motivated the revision; it cannot serve as fresh evaluation for this line of development. No new holdout calls or case inspection occurred in the pilot. Historical snapshot plots were regenerated from saved aggregates.
+
+Verification: 10 pairwise-report tests pass (including signed win/loss and neutral-tie checks). The report validates task/skill hashes, exact responses, prompt/record hashes, source-grounded quotations and normalized verdicts. Reported token total from 12 CLI calls: 93,434, not an account quota percentage. Plot changes and frozen plan pushed in `13fd70f`; subsequent commit records completed outcomes.
 
 User requested signed percentage-point reporting: win rate minus loss rate, centered at zero, ties neutral. Historical raw judgments and frozen selection decisions must remain unchanged.
 

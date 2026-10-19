@@ -1,0 +1,1015 @@
+[
+  {
+    "version": "pairwise-v1.1",
+    "fingerprint": "9df41ff439cea48c52fa8ac8d2f9fe0d3d502099b345def080a418b682537936",
+    "metadata": {
+      "case": "large-dev-a-01",
+      "config": "sol-low",
+      "judge": "astra-high",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "left_id": "v5a",
+      "right_id": "v6-dev",
+      "candidate_side": "right",
+      "seed": "declaude-dev-repair-1",
+      "reverse": false,
+      "base_a_side": "right",
+      "order": {
+        "A": "right",
+        "B": "left"
+      }
+    },
+    "case": "large-dev-a-01",
+    "config": "sol-low",
+    "reference": "v5a",
+    "candidate": "v6-dev",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+    "prompt_sha256": "92b04a015a16ae740add5664bfe2e05e4d078b16fa4c67a166418a33e9e12b48",
+    "response_sha256": {
+      "left": "5f755d2d7c1b352aee4ae386ab2d25fa6c499789437015091f6c4182fd9584c1",
+      "right": "8481f05aca1ce1bf1c4faa7ec329943f1c36cf6c9c9257e441ab1b50ee62d635"
+    },
+    "raw_sha256": "6f5dd95f29fd4242c6e744a2711fc6aaadd96ebc17ed052d63bba4c7228a8360",
+    "raw_path": ".private/9df41ff439cea48c52fa8ac8d2f9fe0d3d502099b345def080a418b682537936/attempt-1.txt",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to reorganize a public notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the closure dates, usual hours, shelter availability, south-side route, approximate distance, mat, assistance limits, return eligibility, and rain contingency. Naming the west entrance clarifies the assistance destination without adding a promise.",
+          "quotes": {
+            "source": [
+              "Staff can meet visitors at the bus shelter and accompany them to the open entrance.",
+              "but a staff member may not be available immediately."
+            ],
+            "A": [
+              "staff can meet you at the shelter and accompany you during library opening hours.",
+              "though a staff member may not be available immediately."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all route and closure arrangements, assistance during opening hours with the immediate-availability caveat, the transport exclusion, eligible Friday returns, and notification of any extension. The availability assertion does not require a stronger condition than the source supplies.",
+          "quotes": {
+            "source": [
+              "This is available during library opening hours.",
+              "but a staff member may not be available immediately."
+            ],
+            "A": [],
+            "B": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the west entrance.",
+              "although a staff member may not be available immediately."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both explicitly identify the west entrance, preserve the route qualifications and assistance limits, and retain the Monday–Thursday eligibility restriction, other-branch inclusion, and extension mechanism.",
+          "quotes": {
+            "source": [
+              "This extension applies to books due Monday through Thursday, including books borrowed from another branch."
+            ],
+            "A": [
+              "Books due Monday through Thursday may be returned on Friday without a late charge, including books borrowed from another branch."
+            ],
+            "B": [
+              "Books due Monday through Thursday may be returned on Friday without a late charge, including books borrowed from another branch."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic notice prose. Their small differences in phrasing do not establish a meaningful fluency advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Call the library desk before setting out to request this assistance."
+            ],
+            "B": [
+              "If you would like this help, call the library desk before setting out."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B keeps shelter availability and the blocked direct path with the route information, then gives assistance its own paragraph. A places those access details at the start of its assistance paragraph, slightly weakening the requested grouping.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The bus shelter will remain available, but the direct path from it to the east entrance will be behind a temporary barrier. If you need help reaching the west entrance, staff can meet you at the shelter and accompany you during library opening hours."
+            ],
+            "B": [
+              "You can still wait at the bus shelter, but the direct path from the shelter to the east entrance will be behind a temporary barrier.\n\nDuring library opening hours, staff can meet visitors at the bus shelter and accompany them to the west entrance."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both maintain the source's practical, accessible public-notice register and follow the requested connected-prose format with a brief heading.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the west entrance, facing the playground."
+            ],
+            "B": [
+              "Please use the west entrance, which faces the playground."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is part of the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B has a modest usability advantage because its paragraph organization more cleanly groups access information and separates the assistance procedure, directly serving the requested revision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The bus shelter will remain available, but the direct path from it to the east entrance will be behind a temporary barrier. If you need help reaching the west entrance,"
+            ],
+            "B": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the west entrance. If you would like this help, call the library desk before setting out."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "record_sha256": "97b8dc155c0dd7cd07e13fd586fdcac38a40935e37571ec50a0fe0ad99ac9300"
+  },
+  {
+    "version": "pairwise-v1.1",
+    "fingerprint": "4b2aefefe315d03c3a6274875411939c0884de7ace18b1a16704b687f2b7e4db",
+    "metadata": {
+      "case": "large-dev-b-01",
+      "config": "luna-medium",
+      "judge": "astra-high",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "left_id": "v5a",
+      "right_id": "v6-dev",
+      "candidate_side": "right",
+      "seed": "declaude-dev-repair-1",
+      "reverse": false,
+      "base_a_side": "left",
+      "order": {
+        "A": "left",
+        "B": "right"
+      }
+    },
+    "case": "large-dev-b-01",
+    "config": "luna-medium",
+    "reference": "v5a",
+    "candidate": "v6-dev",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+    "prompt_sha256": "ef9beea5a0e25b6fd94201b78c3609d102c9354331e8e465e60c464852cad40e",
+    "response_sha256": {
+      "left": "80c091cc2f9adba9b577bf2bb644008980aed37db6f1a3b4b875ab627e869a2d",
+      "right": "1cba0bffdf14cccb5fb603e298e634cb07894e780afa7108261a0e5984ce42dd"
+    },
+    "raw_sha256": "e27c69b6a88d3f2d8cb159fd4aa1d766b607545d0c1894c3a04f56ac534dbcc4",
+    "raw_path": ".private/4b2aefefe315d03c3a6274875411939c0884de7ace18b1a16704b687f2b7e4db/attempt-1.txt",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an operational staff notice and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the six-week trial, usual hours, retrieval schedule, shelfmark prerequisite, arrival flexibility, alternative access, conservation exceptions, and review process. No operational condition materially changes.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "The request will be held until then and added to the next retrieval after identification, which may be on a later day."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions, including identification delays and support needs discovered during retrieval. Continuation remains undecided and subject to the stated review inputs.",
+          "quotes": {
+            "source": [
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [],
+            "B": [
+              "a map may also be found to need support during retrieval. If so, staff will contact you."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the timing, eligibility, access, appointment, and evaluation rules. Both distinguish request time from arrival time. Their removal of explanatory reassurance does not omit an operational condition.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Requests received before noon with a shelfmark will be collected for retrieval at 2 p.m.",
+              "You do not need to arrive before noon."
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected for retrieval at 2 p.m.",
+              "You do not need to arrive before noon."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use straightforward, idiomatic prose. A integrates the possible identification delay into one sentence; B separates it into shorter sentences. Neither approach creates a meaningful readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If your request does not include a shelfmark, staff will help identify the item."
+            ],
+            "B": [
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from ordinary retrieval to arrival flexibility, identification delays, conservation appointments, and trial review. B adds a useful heading, but the operational organization is effectively identical.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Maps already identified as fragile need a support prepared by the conservation team."
+            ],
+            "B": [
+              "Maps already identified as fragile need a support prepared by the conservation team."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the calm, practical staff voice through direct instructions and offers of assistance. A repeats the reassurance about opening hours once; B omits that repetition. Neither becomes punitive or departs from the requested register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "you can still use the catalogues and open shelves, and you may submit a request for the next opening day."
+            ],
+            "B": [
+              "you can still use the catalogues and open shelves, and submit a request for the next opening day."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither contains a material error, and both provide publishable notices with the required operational distinctions. B's heading and reduced repetition offer small presentation benefits, insufficient for a substantive preference over A's equally usable wording.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "B": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "record_sha256": "1bd749d2b9ceaf67ed77e0b2770cf08880a381855afdb76f1698d60adc8a8f5a"
+  },
+  {
+    "version": "pairwise-v1.1",
+    "fingerprint": "c7d26b683704bc36bd1d0369e47bea6230a15d2bff6bb50712256ff0c5153327",
+    "metadata": {
+      "case": "large-dev-b-03",
+      "config": "sol-low",
+      "judge": "astra-high",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "left_id": "v5a",
+      "right_id": "v6-dev",
+      "candidate_side": "right",
+      "seed": "declaude-dev-repair-1",
+      "reverse": false,
+      "base_a_side": "right",
+      "order": {
+        "A": "right",
+        "B": "left"
+      }
+    },
+    "case": "large-dev-b-03",
+    "config": "sol-low",
+    "reference": "v5a",
+    "candidate": "v6-dev",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+    "prompt_sha256": "f0f8f0eb8e46683b9618658bb0ec459a5012df4c7d2b50ec5af6b5aaf40c0fff",
+    "response_sha256": {
+      "left": "afd4585e037d7c75d9c2e652fa6d01953f186bb78906e346f073b1b227cc8462",
+      "right": "177d3d91fa4e82b1bf1036f8a2a461e0f8485ef40044c11d1842c097d12a2b30"
+    },
+    "raw_sha256": "8f401ac3afdc08589b817e6ae5ecbb674312edafe183cce4c0837acd903a14bf",
+    "raw_path": ".private/c7d26b683704bc36bd1d0369e47bea6230a15d2bff6bb50712256ff0c5153327/attempt-1.txt",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an operational handover rewrite, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the observation counts, timing, humidity-versus-temperature distinction, causal uncertainty, logging duties, housing prohibition, escalation threshold, inspection plan, and shift-lead authority.",
+          "quotes": {
+            "source": [
+              "A handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "A": [
+              "A handheld reading does not by itself authorize a restart. The shift lead must make that decision."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all reported observations, qualifications, required actions, and authority limits. Neither wiping nor seal failure becomes established, and no maintenance or restart procedure is added.",
+          "quotes": {
+            "source": [
+              "That request does not establish that the seal has failed."
+            ],
+            "A": [],
+            "B": [
+              "the request does not establish that the seal has failed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain three warnings in five shifts, clearance within twelve minutes, wiping on two mornings only, and every operational requirement. A's possible explanation and B's consistency statement both preserve uncertainty about moisture and wiping.",
+          "quotes": {
+            "source": [
+              "Those observations are consistent with moisture around the housing, but they do not tell us that wiping cleared the warning"
+            ],
+            "A": [
+              "Moisture around the housing is a possible explanation, but these observations do not establish that wiping cleared the warning."
+            ],
+            "B": [
+              "These observations are consistent with moisture around the housing, but they do not establish that wiping cleared the warning."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use clear, idiomatic sentences suitable for technicians. Differences in sentence splitting do not create a meaningful readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The other display, often called the backup, measures temperature only, so a normal reading there cannot resolve a humidity question."
+            ],
+            "B": [
+              "The other display, often called the backup, measures temperature only. A normal reading there cannot resolve a question about humidity."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A modestly improves organization by keeping the seal inspection with the working explanation and consolidating all logging instructions before escalation. B remains coherent but returns to logging after the escalation instructions and inspection plan.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Also record mornings when no warning appears, using the “no warning” box beside the time fields."
+            ],
+            "B": [
+              "Continue recording mornings when no warning appears, using the “no warning” box beside the time fields in the log."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both maintain the source's practical, measured handover register and clearly distinguish observations from required actions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Do not open the housing. If the indicator is still amber after fifteen minutes, call the shift lead before starting the next batch."
+            ],
+            "B": [
+              "Do not open the housing. If the indicator remains amber after fifteen minutes, call the shift lead before starting the next batch."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error, and both are usable. A has a modest organizational advantage: it groups related explanations and logging duties, then ends with the escalation and restart authority technicians must follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A handheld reading does not by itself authorize a restart. The shift lead must make that decision."
+            ],
+            "B": [
+              "We need those records as well as warning records to determine how often the pattern occurs."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "record_sha256": "0cc6be9e9e438a932af862756ab5ca1a2258527e62ffbf61bc643c7b5be2deb8"
+  },
+  {
+    "version": "pairwise-v1.1",
+    "fingerprint": "11db02406a12d8d40cc0991b3b0bb8784a06235bfd257312f0ce4439a061d7d9",
+    "metadata": {
+      "case": "large-dev-a-07",
+      "config": "luna-medium",
+      "judge": "astra-high",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "left_id": "v5a",
+      "right_id": "v6-dev",
+      "candidate_side": "right",
+      "seed": "declaude-dev-repair-1",
+      "reverse": false,
+      "base_a_side": "right",
+      "order": {
+        "A": "right",
+        "B": "left"
+      }
+    },
+    "case": "large-dev-a-07",
+    "config": "luna-medium",
+    "reference": "v5a",
+    "candidate": "v6-dev",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+    "prompt_sha256": "a01615d88da7335e6679bda12a3ae1179e176a3bcafaad90f9d5eb43a1297f0c",
+    "response_sha256": {
+      "left": "242cfa11f543e794aed2830489208bcc36840a0aaebc97c3fd6da2069b957cf4",
+      "right": "1df4152873a350d5004cdb0707e402dfa8dca0d7080aad90f8092e18e868a4c7"
+    },
+    "raw_sha256": "bfecc8cb4f02eaf74e064cee56180c039b6db4baccab56797cb2aed5d376d751",
+    "raw_path": ".private/11db02406a12d8d40cc0991b3b0bb8784a06235bfd257312f0ce4439a061d7d9/attempt-1.txt",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an empirical research summary, with no mathematical proof or derivation to assess.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the participant design, ordering and table reversal, timing definitions and results, overlapping interview reports, default-preference caveat, and study limitations. It correctly treats interruptibility as untested. The later shorthand about varying task order is clear in light of the precise opening description.",
+          "quotes": {
+            "source": [
+              "We did not implement or test that behavior in this study",
+              "the assignment of tables to versions was reversed for half of each order group."
+            ],
+            "A": [
+              "we did not implement or test that behavior",
+              "half of each order group used the tables in the reverse version assignment."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the design, numerical results and their statistical meaning, timed interval, interview overlap, absence of default-preference questioning, and learning and table-size limitations. Restricting the sample to experienced users communicates the generalizability qualification. The proposed interruptible cue remains explicitly untested.",
+          "quotes": {
+            "source": [
+              "We also do not know how less experienced users would respond, since they were not recruited.",
+              "A next version could make the cue interruptible."
+            ],
+            "A": [],
+            "B": [
+              "The study included experienced screen-reader users only.",
+              "An interruptible cue is one possible next version, but we did not implement or test it here."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain twelve users completing four tasks per version, the ordering controls, 38/41 medians of participant means, the seven/three/two breakdown, and the absence of inferential analysis. Both distinguish reported orientation from measured timing and default preference. A states some qualifications more explicitly, but B communicates them adequately in context.",
+          "quotes": {
+            "source": [
+              "This is a difference between two medians, not the median of twelve within-person differences.",
+              "Participants were not asked to choose a default."
+            ],
+            "A": [
+              "This compares two group medians, not the median of participants’ within-person differences.",
+              "participants were not asked whether they wanted it enabled by default."
+            ],
+            "B": [
+              "These are two group medians, not the median of participants’ within-person differences.",
+              "We did not ask whether they wanted it enabled by default."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable research prose. B uses smoother, more concrete phrasing for the ordering controls and their limitation; A's nominal phrasing is somewhat cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The study reduced the complete alignment of version and practice by varying task order"
+            ],
+            "B": [
+              "The order and table assignments reduced the alignment between version and practice"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from methods and findings through limitations to a bounded interpretation and next design question. That ending gives the product team a clearer destination. A's interpretation followed by limitations is coherent, but separates the proposed next step from the final takeaway.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "An interruptible cue could address that concern",
+              "The study reduced the complete alignment of version and practice"
+            ],
+            "B": [
+              "participants may still have carried a search strategy from the first set of tasks into the second.",
+              "An interruptible cue is one possible next version, but we did not implement or test it here."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the sample's direct, concrete questioning by asking about the actual user benefit and the unresolved speech interaction. A's broad interpretive question fits the requested register but is less specific. Neither imports the sample's factual content or makes every transition a question.",
+          "quotes": {
+            "source": [
+              "Does it save a search?"
+            ],
+            "A": [
+              "What do these results tell us about the cue?"
+            ],
+            "B": [
+              "Does speaking the current row label help users return to a table after closing a note?",
+              "can the cue help users locate their place without interrupting speech they are listening to?"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested; the statistical descriptions are assessed for source fidelity under meaning.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response contains a material error, and both preserve the exploratory evidence and its limits. B has a modest usability advantage through smoother phrasing, more concrete questions, and an ending that connects the findings to an explicitly untested next version.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "What do these results tell us about the cue?",
+              "the study does not establish performance on larger tables."
+            ],
+            "B": [
+              "They also raise a design question: can the cue help users locate their place without interrupting speech they are listening to?",
+              "The timing results provide no evidence about that behavior."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "record_sha256": "32a28932d9c80c2a6a5de447c7ea66ae4afd603abf8071b7f26e159613cab694"
+  },
+  {
+    "version": "pairwise-v1.1",
+    "fingerprint": "83460fd00e98cd4dfc9d20f46db3a04cd0c8febeb914c184cb6509110ce75199",
+    "metadata": {
+      "case": "large-dev-a-13",
+      "config": "sol-low",
+      "judge": "astra-high",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "left_id": "v5a",
+      "right_id": "v6-dev",
+      "candidate_side": "right",
+      "seed": "declaude-dev-repair-1",
+      "reverse": false,
+      "base_a_side": "right",
+      "order": {
+        "A": "right",
+        "B": "left"
+      }
+    },
+    "case": "large-dev-a-13",
+    "config": "sol-low",
+    "reference": "v5a",
+    "candidate": "v6-dev",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+    "prompt_sha256": "252de7e09b24af11eb8c906ea828a76c9bfdf8bdc12bf54b477ca7337a65e0c3",
+    "response_sha256": {
+      "left": "b92fd27d6afdfe129e274e2ba617853ccccbf9340a7210493bb1613995d883ce",
+      "right": "9fe808c3a2eff35c2a71817f5ee3f11a7ca38e0d69cba69e4dd80edd97c76e71"
+    },
+    "raw_sha256": "972f221cf5b477b940a5fbe31a0f109752f9c3a7face6dcb69465527065639cb",
+    "raw_path": ".private/83460fd00e98cd4dfc9d20f46db3a04cd0c8febeb914c184cb6509110ce75199/attempt-1.txt",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded elementary telescoping proof explaining convergence and the tail bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the hypotheses, indices, exact sum and tail, and degenerate cases. Its finite-sum limits and epsilon choice are valid.",
+          "quotes": {
+            "source": [
+              "Given epsilon > 0, choose K such that a_k < epsilon whenever k >= K, and take N = max(1,K)."
+            ],
+            "A": [
+              "Choose \\(N=\\max\\{1,K\\}\\). Then \\(N+1\\geq K\\), so"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the hypotheses, indices, exact identities, and degenerate cases. Its sufficiently-large-N formulation follows directly from the source's limit assumption and valid epsilon bound.",
+          "quotes": {
+            "source": [
+              "Given epsilon > 0, choose K such that a_k < epsilon whenever k >= K, and take N = max(1,K)."
+            ],
+            "A": [],
+            "B": [
+              "With \\(K\\) chosen above, every \\(N\\geq K\\) satisfies"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain nonnegativity, nonincrease, limit zero, the definition of d_n, and all starting indices and conclusions. Both explicitly allow equal terms and the zero sequence. B's eventual tail bound is a supported consequence, not an unsupported strengthening.",
+          "quotes": {
+            "source": [
+              "for every integer N >= 1 its tail after N terms equals a_(N+1)."
+            ],
+            "A": [
+              "For every integer \\(N\\geq 1\\), the tail after \\(N\\) terms is"
+            ],
+            "B": [
+              "For every integer \\(N\\geq 1\\), the tail after \\(N\\) terms is"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic mathematical prose. A's direct wording and B's slightly more conversational explanation are equally suitable for a classroom handout.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To find the sum of the series, consider its first \\(N\\) terms."
+            ],
+            "B": [
+              "To understand the infinite series, we first add its first \\(N\\) terms."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both proceed coherently from nonnegative differences to finite cancellation, series convergence, the fixed-N tail limit, and the tail bound. A places its epsilon choice at the end; B introduces it earlier and reuses it clearly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Now fix \\(N\\geq 1\\).",
+              "Finally, let \\(\\varepsilon>0\\)."
+            ],
+            "B": [
+              "Now fix \\(N\\geq 1\\).",
+              "With \\(K\\) chosen above, every \\(N\\geq K\\) satisfies"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both maintain the source's elementary mathematical register while adding the explanatory connections requested for a handout. Neither introduces unrelated advice or an invented author voice.",
+          "quotes": {
+            "source": [
+              "Rewrite the proof below for a classroom mathematics handout."
+            ],
+            "A": [
+              "The partial sums therefore approach \\(a_1\\)."
+            ],
+            "B": [
+              "Thus the distance from \\(S_N\\) to \\(a_1\\) is"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain cancellation before each limit, interpret the series and tail through finite sums, and hold N fixed while M tends to infinity. Both give strict epsilon bounds without strict monotonicity or external convergence theorems. B expands the partial-sum epsilon argument; A supplies an explicit displayed tail-distance limit. Both meet the requested explanatory scope.",
+          "quotes": {
+            "source": [
+              "Make the convergence and tail bound understandable without citing an external convergence theorem.",
+              "For fixed N the second identity tends to a_(N+1) as M tends to infinity."
+            ],
+            "A": [
+              "By the definition of the sum of an infinite series, this proves",
+              "Now fix \\(N\\geq 1\\)."
+            ],
+            "B": [
+              "For every \\(N\\geq K\\), we therefore have \\(|S_N-a_1|<\\varepsilon\\).",
+              "Now fix \\(N\\geq 1\\)."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither response contains a material error. Both deliver a faithful, mathematically correct, usable handout proof; their different placements and levels of explicit limit notation do not establish a substantive overall advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The argument allows equal consecutive terms, in which case the corresponding \\(d_n\\) is zero."
+            ],
+            "B": [
+              "These calculations also cover equal consecutive terms, for which \\(d_n=0\\)."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "tie",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "record_sha256": "07a4cff7121aa9925f04d3a4cf3b26873ff3c74f5882faf2723d9efcae0f5f5a"
+  },
+  {
+    "version": "pairwise-v1.1",
+    "fingerprint": "beb69ad3d3523fc81e1353eb6e488807e1ae002034c262b1cd36750e58366041",
+    "metadata": {
+      "case": "large-dev-a-17",
+      "config": "luna-medium",
+      "judge": "astra-high",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "left_id": "v5a",
+      "right_id": "v6-dev",
+      "candidate_side": "right",
+      "seed": "declaude-dev-repair-1",
+      "reverse": false,
+      "base_a_side": "right",
+      "order": {
+        "A": "right",
+        "B": "left"
+      }
+    },
+    "case": "large-dev-a-17",
+    "config": "luna-medium",
+    "reference": "v5a",
+    "candidate": "v6-dev",
+    "judge": "astra-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+    "prompt_sha256": "a04aadee17f5e26be01db901599344d3e68bd6f5de2446458468d30fef33cfc8",
+    "response_sha256": {
+      "left": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97",
+      "right": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97"
+    },
+    "raw_sha256": "f89e8097545d9411dacb71e31e2a0b1960fb5a2f3d316ee1ec9a5788cfff1cf3",
+    "raw_path": ".private/beb69ad3d3523fc81e1353eb6e488807e1ae002034c262b1cd36750e58366041/attempt-1.txt",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting a newsletter note, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving both measurement positions, probe depth, settling, wiping, return, unsettled-display reporting, month-long observation, steward inspection, bay instructions, and evidential caveat.",
+          "quotes": {
+            "source": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B also reproduces the source unchanged, retaining all practical instructions, qualifications, observation timing, inspection requirements, and the limitation of a single pair of readings.",
+          "quotes": {
+            "source": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "A": [],
+            "B": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the entire source and satisfy the fidelity assertions, including the explicit limit on what two readings establish.",
+          "quotes": {
+            "source": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical prose is idiomatic and readable; leaving already clear sentences unchanged is appropriate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On your rota day, take one reading at each marked position and record both on the sheet."
+            ],
+            "B": [
+              "On your rota day, take one reading at each marked position and record both on the sheet."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the coherent sequence from thermometer use to measurement procedure, interpretation and collection decisions, then helpful comments.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We are collecting observations over the month."
+            ],
+            "B": [
+              "We are collecting observations over the month."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved dry humor, its practical context, and the author's paragraph and sentence pacing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ],
+            "B": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The newsletter contains an evidential caveat but no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The responses are identical and equally usable: both return only the polished note, preserving its content and humor without unnecessary edits.",
+          "quotes": {
+            "source": [
+              "If a sentence is already doing its job, it may remain unchanged."
+            ],
+            "A": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ],
+            "B": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "record_sha256": "208423f9000251260087783c7ed891b6b85ff940fa9d17803d48dccc2d104990"
+  }
+]

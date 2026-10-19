@@ -4,6 +4,12 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
+## Small development repair
+
+A [six-pair Codex-only pilot](evals/results/dev-repair-1/report.md) tested a revision aimed at document organization against saved v5a outputs. It used **12 calls and no Claude calls**: six outputs from Sol low/Luna medium and six blind judgments from Astra high. Result: **1 win / 3 ties / 2 losses, −16.7 percentage points**. Meaning tied in all six comparisons, and neither side had a material-error flag.
+
+The tested repair is not promoted. A narrower [v6b-dev draft](evals/versions/v6b-dev/SKILL.md) is saved but **untested and not installed**. The packaged release remains v4. This is development work motivated by earlier test feedback, so the old holdout is no longer fresh evidence for these revisions. No new holdout runs were made.
+
 ## Larger benchmark: interim snapshot
 
 The new 80-task, ten-configuration experiment is **paused and incomplete**. The [interim report](evals/results/large-interim/report.md) contains 2,012 of 2,400 writing outputs, 1,458 absolute scorecards, and 2,078 of 3,820 pairwise judgments, including order audits. No additional model calls were made to publish this snapshot.
@@ -17,7 +23,7 @@ Net advantage is win rate minus loss rate in percentage points, with ties contri
 
 [Exact outputs and grading evidence](evals/results/large-interim/report.md#files) · [Coverage](evals/results/large-interim/coverage.json) · [Development selection](evals/large/selection.json) · [Frozen protocol](evals/large/protocol.md).
 
-V5a narrowly qualified on reserved development validation. The packaged and installed skill remains v4 pending completion and release. The following results describe the earlier, smaller experiment.
+V5a narrowly qualified under the original reserved-development selection rule, which remains recorded unchanged. The packaged and installed skill remains v4. Current repairs are separate development candidates; none has passed a release decision.
 
 ### Interim plots: v5a versus no skill
 
