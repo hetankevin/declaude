@@ -1,0 +1,11 @@
+{
+  "candidate": "v5a",
+  "reference": "v4",
+  "basis": "Higher tuning pairwise preference (0.55625 vs0.5375) and fidelity pass rate; neither candidate passed the provisional material-error guard. The preregistered one-time validation gate will decide promotion.",
+  "tuning_results": [
+    "evals/large/tuning-v5a.json",
+    "evals/large/tuning-v5b.json"
+  ],
+  "rule": "validation pairwise preference > .5, no decrease in fidelity passes, no increase in material-error flags; otherwise retain v4",
+  "holdout_inspected": false
+}
