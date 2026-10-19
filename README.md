@@ -4,6 +4,12 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
+## Evaluation status
+
+The current writing scores are **not validated against the author's preferences**. The original judge focused on task-local readability and voice. The [judge audit](evals/results/judge-audit/report.md) identifies the missing personal/contextual criteria and explains the corrected [draft rubric](evals/graders/pairwise-v2-draft.txt). It follows the earlier behavioral evaluation's user-specific holistic objective and uses the author's explicit writing directions. It has not been run, and existing results retain their original grader.
+
+A [second six-pair Codex-only pilot](evals/results/dev-repair-2/report.md) completed 12 calls with no Claude calls before the audit: **1 win / 4 ties / 1 loss, 0 pp** against saved no-skill outputs. Proof guidance was unchanged. These scores are provisional and the revision was not promoted. Further tuning should use the corrected grading target rather than optimize these old scores.
+
 ## Small development repair
 
 A [six-pair Codex-only pilot](evals/results/dev-repair-1/report.md) tested a revision aimed at document organization against saved v5a outputs. It used **12 calls and no Claude calls**: six outputs from Sol low/Luna medium and six blind judgments from Astra high. Result: **1 win / 3 ties / 2 losses, −16.7 percentage points**. Meaning tied in all six comparisons, and neither side had a material-error flag.

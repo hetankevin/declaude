@@ -1,10 +1,14 @@
 # Handoff
 
-## Second bounded repair authorized
+## Current priority: evaluate the author's writing preferences
 
-The user authorized another small Codex-only dev attempt, explicitly keeping proof guidance. `dev-repair-2` is separately capped at 12 calls: six v7-dev outputs versus saved no-skill outputs, six blind Astra-high judgments. Three generator configs, two tasks each. Run only `python3 tools/dev_repair.py --pilot dev-repair-2`. The first pilot budget remains exhausted. No Claude calls, retries, or holdout evaluation. Do not resume the large benchmark.
+User questioned judge correctness/alignment, invoked neurotypical, then asked to inspect how neurotypical judges were defined. Read its `tools/grade.py` and case assertions. Crucial difference: full situation context and specific assertions, with an independent holistic judgment of how glad this user would be. Declaude's old judge had generic task-local voice/readability criteria; the writing directions were not equally explicit in grading. Do not claim old scores measure personal preference alignment.
 
-v7-dev simplifies prose guidance and limits it to correcting actual defects rather than imposing a rewrite. Both proofs.md and paper-voice.md are byte-identical to v5a, with hashes in the frozen plan. The packaged and installed release is still v4 pending results. This pilot is development evidence, not generalization or a model ranking.
+Prepared `evals/graders/pairwise-v2-draft.txt`: user-specific overall target, explicit narrative/exposition/voice/proof priorities, and requirement to cite a decisive user priority rather than generic polish. `tools/pairwise.py` now preserves an optional anonymized `user_context` field in the hashed blinded input, with exact quotation validation. It still strips model/skill/expected-label metadata. Old inputs and frozen grader remain unchanged. This draft has not been model-tested and must not silently replace the historical judge. `evals/results/judge-audit/report.md` records evidence, differences, and limits. No new human labels are claimed or needed to recover already-explicit instructions.
+
+Second pilot completed 12 Codex calls, zero Claude calls, against saved no-skill outputs. v7-dev: 1 win / 4 ties / 1 loss, 0 pp overall; progression all ties. The two non-ties are minor fidelity findings. Proof and polished control tied. Both proof and paper-voice references are byte-identical to v5a. Not promoted; packaged/installed remains v4. Original grader results in `evals/results/dev-repair-2/` are provisional. All twelve calls had started when the judge concern arrived; coordinator was briefly suspended then resumed only to save the two already-started judgments. No additional calls were made. Both pilot budgets are exhausted. Do not resume the large benchmark or make new model calls.
+
+Next work should align grading context and case-specific criteria with explicit user corrections before further skill tuning. Keep human instructions, agent-authored examples, and inferred preferences distinct. No copying private source histories, project names, or exclusion rules into this public repo. Keep proof guidance intact.
 
 ## Bounded dev repair complete — no more calls authorized
 

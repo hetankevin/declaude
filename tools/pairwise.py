@@ -95,7 +95,7 @@ def validate_verdict(verdict, supplied):
     nonempty(verdict['proof_reason'], 'proof_reason')
     if 'is_proof' in supplied:
         require(verdict['is_proof'] == supplied['is_proof'], 'Proof applicability disagrees with task metadata')
-    sources = {'source': supplied['task'], **supplied['responses']}
+    sources = {'source': supplied['task'] + ('\n\nUser context:\n' + supplied['user_context'] if supplied.get('user_context') else ''), **supplied['responses']}
 
     def evidence(item, required, where):
         nonempty(item['reason'], where + '.reason')
@@ -143,7 +143,7 @@ def repair_math_delimiter_quotes(verdict, supplied):
     """
     fixed = copy.deepcopy(verdict)
     repairs = []
-    sources = {'source': supplied['task'], **supplied['responses']}
+    sources = {'source': supplied['task'] + ('\n\nUser context:\n' + supplied['user_context'] if supplied.get('user_context') else ''), **supplied['responses']}
     if not isinstance(fixed, dict): return fixed, repairs
     for section in ('material_errors','dimensions'):
         items = fixed.get(section,{})
@@ -184,6 +184,10 @@ def supplied_case(case):
         else:
             raise ValueError('Assertions must be strings or objects with text')
     result = {'task': case['task'], 'assertions': cleaned}
+    if 'user_context' in case:
+        if not isinstance(case['user_context'], str) or not case['user_context'].strip():
+            raise ValueError('case.user_context must be nonempty text when supplied')
+        result['user_context'] = case['user_context']
     if 'is_proof' in case:
         if type(case['is_proof']) is not bool:
             raise ValueError('case.is_proof must be boolean when supplied')

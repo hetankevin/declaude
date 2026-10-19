@@ -114,6 +114,19 @@ class StrictReportTests(unittest.TestCase):
         self.assertEqual(a['ci95'],b['ci95'])
         self.assertEqual(b['cases'],2)
 
+    def test_author_context_is_preserved_but_labels_stay_blind(self):
+        case=dict(task='Rewrite the supplied passage.', assertions=[],
+                  user_context='The author asks for displayed proof steps.',
+                  model='secret-model', expected_winner='B', skill='secret-skill')
+        supplied=pairwise.supplied_case(case)
+        self.assertEqual(set(supplied), {'task','assertions','user_context'})
+        self.assertEqual(supplied['user_context'],case['user_context'])
+        self.assertNotIn('secret',pairwise.canonical(supplied))
+        with self.assertRaises(ValueError):
+            pairwise.supplied_case(dict(case,user_context=[]))
+        del case['user_context']
+        self.assertEqual(pairwise.supplied_case(case),dict(task=case['task'],assertions=[]))
+
     def test_signed_net_advantage_and_neutral_ties(self):
         from plot_pairwise import _percentage
         for outcomes,expected in [(['tie']*4,0),(['win'],100),(['loss'],-100),(['win','win','tie','loss'],25)]:
