@@ -1,0 +1,216 @@
+{
+  "cases": [
+    {
+      "id": "dev-status",
+      "split": "development",
+      "subset": "tune",
+      "task": "Rewrite this status note into plain English. Preserve its meaning and return only the rewrite.\n\nGenuinely, here is the honest verdict: the migration is not merely a scaffold, it is the wiring that the report depends on. The report cannot run until the migration finishes. The migration has not started. Worth stating plainly: one missing migration leaves the whole reporting path dead on arrival. That is the whole game, full stop.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves that report execution requires migration completion."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves that the migration has not started, without implying it is underway."
+        },
+        {
+          "group": "style",
+          "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence."
+        },
+        {
+          "group": "style",
+          "text": "Removes staged candor, metaphor, and closing slogan without adding new advice."
+        }
+      ]
+    },
+    {
+      "id": "dev-permission",
+      "split": "development",
+      "subset": "tune",
+      "task": "Make this plain and direct without changing its force. Return only the rewrite.\n\nThe reviewer approval is the load-bearing gate here. When a reviewer requests a revision, you may edit the draft. Approval is required before publication, but does not by itself authorize publication: the embargo must also have ended. We prefer a second review for large changes. That preference is not a requirement.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps editing after a revision request as permission rather than obligation."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not make a revision request the only circumstance permitting edits."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps approval necessary but insufficient and the embargo condition."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps a second review preferred, not required."
+        },
+        {
+          "group": "style",
+          "text": "Expresses these conditions directly without ornamental gate metaphors."
+        }
+      ]
+    },
+    {
+      "id": "dev-research-flow",
+      "split": "development",
+      "subset": "tune",
+      "task": "Rewrite the passage as connected research exposition. Use conversational technical prose, motivate notation and the construction, and do not invent claims. Return only the revised passage. All facts you may use are below.\n\nWe introduce a robust, principled correction matrix C. We stack observation vectors into a matrix Z. Here is the key distinction: this is not a bookkeeping exercise, it is the core of the estimator. The goal is to estimate a shared subspace from noisy observations. The empirical second moment is biased because the noise covariance is nonzero. C is that known covariance. Subtracting C from the empirical second moment removes this additive bias. This correction does not establish finite-sample accuracy.",
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Introduces the estimation goal and noise-bias obstacle before the correction."
+        },
+        {
+          "group": "argument",
+          "text": "Explains why subtraction is used instead of merely listing objects."
+        },
+        {
+          "group": "fidelity",
+          "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not invent a theorem, rate, citation, or dataset."
+        },
+        {
+          "group": "style",
+          "text": "Uses connected technical prose without promotional adjectives or decorative contrasts."
+        }
+      ]
+    },
+    {
+      "id": "dev-recursion-proof",
+      "split": "development",
+      "subset": "tune",
+      "task": "Rewrite the following proof with displayed derivations and every substantive step, using brief connective prose. Preserve the exact assumptions and result. Return only the proof. For integers t>=0, suppose a_{t+1} <= q a_t + c with 0<q<1 and c>=0. The claim is a_t <= q^t a_0 + c(1-q^t)/(1-q). Draft: By the usual unrolling argument the desired statement follows. The contraction is the load-bearing spine of the proof.",
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Shows repeated substitution or a complete induction rather than only naming unrolling."
+        },
+        {
+          "group": "proof",
+          "text": "Shows the finite geometric sum and its evaluated expression in displayed mathematics."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the q range, c condition, index range, and the exact upper bound."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not claim convergence to zero for positive c."
+        },
+        {
+          "group": "style",
+          "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics."
+        }
+      ]
+    },
+    {
+      "id": "dev-technical-control",
+      "split": "development",
+      "subset": "validation",
+      "task": "Edit only if necessary for plain English; return only the text.\n\nThe logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the AND-gate rule and the unique stationary distribution."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the upper-versus-matching-lower-bound distinction."
+        },
+        {
+          "group": "style",
+          "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words."
+        },
+        {
+          "group": "style",
+          "text": "Leaves already clear prose substantially unchanged without added commentary."
+        }
+      ]
+    },
+    {
+      "id": "dev-qualified-result",
+      "split": "development",
+      "subset": "validation",
+      "task": "Rewrite this abstract fragment plainly while keeping all scientific qualifications. Return only the rewrite.\n\nThe honest shape of the guarantee is this: for a fixed horizon H, under Assumptions 1 and 2, the expected squared error is at most C_H/n for n>=2. The constant may grow with H. This is an upper bound, not an error floor. The current experiment uses one simulated dataset. It has not tested whether the rate predicts performance on real data. That is the boundary worth sitting with.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the single simulated dataset and untested real-data applicability."
+        },
+        {
+          "group": "style",
+          "text": "Removes staged framing without substituting a new warning or recommendation."
+        },
+        {
+          "group": "argument",
+          "text": "Attaches qualifications to the result or evidence they qualify."
+        }
+      ]
+    },
+    {
+      "id": "dev-cross-term",
+      "split": "development",
+      "subset": "validation",
+      "task": "Rewrite the proof fully in displayed mathematics with brief explanations. Do not add assumptions. Return only the proof. X and Y are square-integrable real random variables, F is a sigma-algebra, Y is F-measurable, and m=E[X|F]. We claim E[(X-Y)^2]=E[(X-m)^2]+E[(m-Y)^2]. Draft: Decompose around m. The cross term vanishes by conditioning. The usual orthogonality machinery closes the argument.",
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Displays the decomposition of X-Y and the square expansion including the mixed term."
+        },
+        {
+          "group": "proof",
+          "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves square integrability and measurability and does not claim independence."
+        },
+        {
+          "group": "proof",
+          "text": "Connects the vanishing cross term explicitly to the final identity."
+        },
+        {
+          "group": "style",
+          "text": "Avoids replacing derivation with paragraphs of inline math or metaphor."
+        }
+      ]
+    },
+    {
+      "id": "dev-remove-discussion",
+      "split": "development",
+      "subset": "validation",
+      "task": "Edit this release note. Remove the discussion of yesterday's review process and its repeated caveat, keeping the current behavior and its restriction. Do not add a different disclaimer. Return only the release note.\n\nAfter yesterday's review, we now moved the old retry discussion into an appendix. The client retries a failed request at most twice, and never retries a payment request automatically. The key takeaway is that this is bounded retry, not an unlimited recovery promise. As the reviewer rightly noted, this is not a guarantee of eventual success. We resolved that discussion in the review.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps the limit of at most two retries and the exception for payment requests."
+        },
+        {
+          "group": "style",
+          "text": "Removes the requested review history and repeated caveat."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not add a guarantee of eventual success or alter failure behavior."
+        },
+        {
+          "group": "style",
+          "text": "Does not reintroduce the removed caveat in different words or add an editing report."
+        }
+      ]
+    }
+  ]
+}

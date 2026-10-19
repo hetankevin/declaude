@@ -1,0 +1,232 @@
+{
+  "cases": [
+    {
+      "id": "oos-schedule-conditional-move",
+      "split": "heldout",
+      "task": "Edit the message below so it reads like a plain, courteous note from a colleague. Return the revised message itself, not a plan or commentary.\n\nSOURCE:\nHi all,\n\nI hope this message finds you well as we navigate the ever-shifting tapestry of our shared calendars. I'm writing to gently let you know that our weekly sync, currently set for Thursday at 2:00 pm, may need to move to Friday at 10:30 am. Please note that this is not yet certain, because the Friday room booking has not been confirmed; I expect to hear back by Wednesday noon. If the room is not available, we will keep Thursday at 2:00 pm. Please also note that the Friday time is tentative until then. Anyone who is attending only for the budget item is welcome to join for just the last twenty minutes, which is when it will be discussed, and may skip the rest. Please do not reply-all with your availability; reply to me directly by end of day Tuesday, and only if Friday at 10:30 am does not work for you.\n\nThank you so much for your flexibility as we weave this all together.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The revision keeps the current time (Thursday 2:00 pm) and the proposed time (Friday 10:30 am), and keeps the move conditional on the room being confirmed, with confirmation expected by Wednesday noon. It does not present the move as decided."
+        },
+        {
+          "group": "fidelity",
+          "text": "The fallback is preserved: if the Friday room is unavailable, the meeting stays at Thursday 2:00 pm."
+        },
+        {
+          "group": "fidelity",
+          "text": "The permission for budget-only attendees is kept as a permission, not turned into a requirement. They may join only the last twenty minutes, when the budget item is discussed, and may skip the rest."
+        },
+        {
+          "group": "fidelity",
+          "text": "The reply instructions keep all three parts: reply directly rather than reply-all, by end of day Tuesday, and only if Friday at 10:30 am does not work."
+        },
+        {
+          "group": "style",
+          "text": "The theatrical opening and closing (shifting tapestry, weaving together, hoping the message finds them well) are removed and not replaced with a different flourish. The tone stays warm and natural for a work email."
+        },
+        {
+          "group": "style",
+          "text": "The tentativeness of the Friday slot is stated clearly once. The two repeated 'please note' caveats are not carried over as repeated hedges."
+        }
+      ]
+    },
+    {
+      "id": "oos-editor-response-letter",
+      "split": "heldout",
+      "task": "Edit this cover letter to an editor so it is direct and professional while keeping the authors' first-person plural voice. Return the revised letter itself, not a plan.\n\nSOURCE:\nDear Editor,\n\nIt is with immense gratitude and a deep sense of scholarly humility that we embark on the final leg of this revision journey. Like a ship returning to harbor after a storm of constructive criticism, our manuscript now returns to you, strengthened by the reviewers' invaluable insights.\n\nWe agree with Reviewer 1 that the sampling description was unclear, and we have rewritten Section 2.3 to state that participants were recruited from two clinics, not three as the earlier draft said. We disagree with Reviewer 1 that the primary analysis should be replaced with a mixed-effects model: there are only two clinic-level clusters, so we kept the original analysis and added the mixed-effects result as a sensitivity analysis in the supplement. We did not run the additional follow-up experiment requested by Reviewer 2, because it would require data collection that we cannot complete within the revision window. We would be glad to add it in a later paper, and we would add it here if you judged it essential. We suspect, but have not verified, that the smaller effect in the older subgroup reflects the smaller number of participants in that group, and we say so in the Discussion.\n\nThank you again for your patience and for the opportunity to improve our work. We remain, as ever, at your service.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The agree/disagree split on Reviewer 1 is preserved. The authors agree about the unclear sampling description (Section 2.3 now says two clinics, not three). They disagree about replacing the primary analysis, because there are only two clinic-level clusters, and they kept the original analysis with the mixed-effects model as a supplementary sensitivity analysis."
+        },
+        {
+          "group": "fidelity",
+          "text": "The Reviewer 2 response is preserved. The follow-up experiment was not run because the data collection cannot be completed within the revision window. The offer is kept in both forms: possibly in a later paper, and in this paper if the editor judges it essential. Neither form is turned into a firm promise or a refusal."
+        },
+        {
+          "group": "fidelity",
+          "text": "The older-subgroup explanation stays a suspicion, not a finding, and is still said to be noted in the Discussion. The revision does not assert it as established."
+        },
+        {
+          "group": "style",
+          "text": "The ship-and-storm metaphor, the humility and gratitude framing, and the 'at your service' sign-off are removed. The letter remains courteous, with a brief thanks, and stays in the authors' 'we' voice."
+        },
+        {
+          "group": "argument",
+          "text": "Each reviewer point is paired clearly with the action taken or not taken and the reason, so a reader can see for every point whether it was accepted, declined, or deferred. The revision does not add actions, reasons, or concessions that the source lacks."
+        }
+      ]
+    },
+    {
+      "id": "oos-lease-docs",
+      "split": "heldout",
+      "task": "Edit this section of systems documentation for clarity and plainness. Keep it as Markdown with the same heading, and keep literal identifiers exactly. Return the revised section itself, not a plan.\n\nSOURCE:\n## Lease Management\n\nThe lease mechanism is the beating heart of the job processing subsystem, acting as a vigilant gatekeeper that ensures no job is ever left behind. When a worker claims a job, the job lease acquisition process begins, and the worker lease renewal heartbeat interval timer starts at 10 seconds. It is important to note that if the lease is not renewed within the lease expiry timeout of 30 seconds, the job returns to the queue and becomes visible to other workers. Note that this means a job may run more than once: delivery is at-least-once, not exactly-once. It is therefore important to note that job handlers must be idempotent.\n\nOperators may raise the lease expiry timeout up to 300 seconds through the `lease_timeout_seconds` setting. It should be noted that the value must not be set below three times the renewal interval; values below this are rejected at startup. We have not tested behavior when clock skew between workers and the queue exceeds the lease expiry timeout, so behavior in that case is unspecified.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "All numeric values and bounds are preserved with correct roles: a renewal interval of 10 seconds, a lease expiry of 30 seconds, an operator-adjustable maximum of 300 seconds, and a floor of three times the renewal interval, below which values are rejected at startup."
+        },
+        {
+          "group": "fidelity",
+          "text": "The delivery semantics are kept as a genuine contrast: at-least-once, not exactly-once. The requirement that job handlers be idempotent is kept as a requirement."
+        },
+        {
+          "group": "fidelity",
+          "text": "The permission and the untested case are both preserved. Operators may raise the timeout through the literal identifier `lease_timeout_seconds`. Behavior under clock skew exceeding the lease expiry timeout is untested and therefore unspecified, and the revision does not claim it is safe or unsafe."
+        },
+        {
+          "group": "argument",
+          "text": "The causal chain keeps its direction: a worker claims a job and starts renewing; a missed renewal past the expiry returns the job to the queue; another worker may then run it, so it can run twice; therefore handlers must be idempotent."
+        },
+        {
+          "group": "style",
+          "text": "The heartbeat and gatekeeper metaphors are removed. Stacked noun phrases such as the lease acquisition process and the renewal heartbeat interval timer are unpacked into plain phrasing. Technical terms such as lease, idempotent, and at-least-once remain."
+        },
+        {
+          "group": "style",
+          "text": "The repeated 'it is important to note' and 'note that' caveat openers are removed, and statements are made directly. The two-paragraph Markdown structure under the same heading is kept."
+        }
+      ]
+    },
+    {
+      "id": "oos-soil-abstract",
+      "split": "heldout",
+      "task": "Edit this abstract for a journal submission: plain, precise, and without rhetoric. Keep it as a single paragraph. Return the revised abstract itself, not a plan.\n\nSOURCE:\nIn the intricate dance between soil and sky, drought looms as a shadow over the hidden universe beneath our feet. Here we embark on a journey to illuminate how bacterial richness responds when water becomes scarce. We grew plants in 48 pots, with two soil types (sandy and clay) crossed with three watering regimes (well-watered, moderate, and dry), and profiled bacterial communities by 16S rRNA amplicon sequencing. Because sequencing depth varied from 12,000 to 95,000 reads per sample, raw counts would conflate depth with richness, so we used a depth-normalized richness estimate. In sandy soil, richness under the dry regime was 14% lower than under the well-watered regime (95% CI 6 to 22%); in clay soil, the corresponding difference was 2% (95% CI -5 to 9%), so we did not detect a difference there. These findings are consistent with, though they do not demonstrate, a buffering role for water retention in clay. The experiment covered a single greenhouse growing season, so we cannot say whether the pattern holds in the field. Our work paves the way for a new understanding of soil resilience.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The design and numbers are preserved exactly: 48 pots, two soil types (sandy, clay) crossed with three watering regimes (well-watered, moderate, dry), 16S rRNA amplicon sequencing, and a read depth range of 12,000 to 95,000 per sample."
+        },
+        {
+          "group": "fidelity",
+          "text": "Both results are preserved with their intervals: sandy soil is 14% lower under dry versus well-watered (95% CI 6 to 22%), and clay soil shows 2% (95% CI -5 to 9%). The clay result is phrased as no difference detected, not as proof of no effect."
+        },
+        {
+          "group": "fidelity",
+          "text": "The hedges are kept at their original strength. The buffering interpretation is 'consistent with but not demonstrating' a role for water retention in clay, and the single greenhouse growing season limits any claim about the field."
+        },
+        {
+          "group": "argument",
+          "text": "The reason for the depth-normalized richness estimate is retained and stated before or with its use: sequencing depth varied widely, so raw counts would conflate depth with richness. The method is motivated, not merely named."
+        },
+        {
+          "group": "argument",
+          "text": "The sandy versus clay contrast stays a real contrast in the text, and the interpretive sentence follows the results it interprets."
+        },
+        {
+          "group": "style",
+          "text": "The opening dance and shadow imagery, the 'embark on a journey' framing, and the closing 'paves the way for a new understanding' sentence are removed and not replaced with other rhetoric. No new claims or implications are added."
+        }
+      ]
+    },
+    {
+      "id": "oos-variance-unbiased-proof",
+      "split": "heldout",
+      "task": "Rewrite this proof as clean mathematical text. Use displayed equations for every computation, keep connective prose brief, and do not leave any step to 'a short calculation'. Do not change the theorem or add hypotheses. Return the revised theorem and proof, not a plan.\n\nSOURCE:\nTheorem. Let X_1, ..., X_n (n >= 2) be independent and identically distributed with mean \u03bc and finite variance \u03c3\u00b2. Let X\u0304 = (1/n) \u03a3 X_i and S\u00b2 = (1/(n-1)) \u03a3 (X_i - X\u0304)\u00b2, where sums run over i = 1, ..., n. Then E[S\u00b2] = \u03c3\u00b2.\n\nProof. Let us peer into the heart of the matter. The deviation sum of squares can be unveiled by the elegant identity \u03a3 (X_i - X\u0304)\u00b2 = \u03a3 (X_i - \u03bc)\u00b2 - n (X\u0304 - \u03bc)\u00b2, which follows from a short calculation. Taking expectations, the first term collapses to n\u03c3\u00b2, while the second, by the classical variance of the mean, is n \u00b7 \u03c3\u00b2/n = \u03c3\u00b2. Hence E[\u03a3 (X_i - X\u0304)\u00b2] = n\u03c3\u00b2 - \u03c3\u00b2 = (n-1)\u03c3\u00b2, and dividing by n-1 completes the proof.\n\nRemark. The estimator S itself is not unbiased for \u03c3: by Jensen's inequality E[S] < \u03c3 unless S is almost surely constant. Note that no normality is assumed anywhere, and independence is used only to obtain Var(X\u0304) = \u03c3\u00b2/n.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The theorem statement is unchanged: i.i.d. X_1, ..., X_n with n >= 2, mean \u03bc, finite variance \u03c3\u00b2, and the stated definitions of X\u0304 and S\u00b2. No normality or other hypothesis is added."
+        },
+        {
+          "group": "fidelity",
+          "text": "The remark is kept with its correct direction and exception: S is not unbiased for \u03c3, with E[S] < \u03c3 by Jensen's inequality unless S is almost surely constant. The remark that no normality is assumed and that independence is used only for Var(X\u0304) = \u03c3\u00b2/n is also kept."
+        },
+        {
+          "group": "proof",
+          "text": "The identity \u03a3 (X_i - X\u0304)\u00b2 = \u03a3 (X_i - \u03bc)\u00b2 - n (X\u0304 - \u03bc)\u00b2 is derived in displayed lines. For example, X_i - X\u0304 = (X_i - \u03bc) - (X\u0304 - \u03bc) is squared and summed, and \u03a3 (X_i - \u03bc) = n (X\u0304 - \u03bc) is used so that the cross term combines with the last term to give -n (X\u0304 - \u03bc)\u00b2."
+        },
+        {
+          "group": "proof",
+          "text": "The expectation step is displayed with its justification: E[(X_i - \u03bc)\u00b2] = \u03c3\u00b2 for each i gives n\u03c3\u00b2, and E[(X\u0304 - \u03bc)\u00b2] = Var(X\u0304) = \u03c3\u00b2/n because E[X\u0304] = \u03bc and the variance of a sum of independent variables is the sum of their variances."
+        },
+        {
+          "group": "proof",
+          "text": "The closing arithmetic is displayed: n\u03c3\u00b2 - \u03c3\u00b2 = (n-1)\u03c3\u00b2, then division by n-1 gives E[S\u00b2] = \u03c3\u00b2. Linearity of expectation is applied visibly, not left implicit."
+        },
+        {
+          "group": "style",
+          "text": "The 'heart of the matter', 'unveiled', 'elegant', and 'collapses' framing is removed. The connective sentences are short and only say what each display does."
+        }
+      ]
+    },
+    {
+      "id": "oos-weighted-sum-induction",
+      "split": "heldout",
+      "task": "Rewrite this proof as clean mathematical text. Use displayed equations for all algebra, keep connective prose brief, and do not skip any algebraic step. Do not change the claim. Return the revised claim and proof, not a plan.\n\nSOURCE:\nClaim. For every integer n >= 1, \u03a3_{k=1}^{n} k \u00b7 2^(k-1) = (n-1) \u00b7 2^n + 1.\n\nProof. Like dominoes toppling in graceful sequence, the claim rises by induction on n. At the foundation, n = 1, the left side is 1 \u00b7 2^0 = 1 and the right side is 0 \u00b7 2 + 1 = 1, so the foundation is firm. Now suppose the formula holds for some n >= 1. Adding the next term (n+1) \u00b7 2^n to both sides and doing a little algebra, the right side becomes n \u00b7 2^(n+1) + 1, which is exactly the formula for n+1.\n\nRemark. The formula also holds for n = 0, where the empty sum is 0 and the right side is (0-1) \u00b7 2^0 + 1 = 0; we begin at n = 1 only to avoid leaning on the empty-sum convention.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "The claim is unchanged, including the range n >= 1 and the closed form (n-1) \u00b7 2^n + 1. The proof is still a proof by induction on n."
+        },
+        {
+          "group": "fidelity",
+          "text": "The n = 0 remark is kept with its correct computation (empty sum 0, right side (0-1) \u00b7 2^0 + 1 = 0) and its stated reason for starting at n = 1."
+        },
+        {
+          "group": "proof",
+          "text": "The base case is displayed with both sides computed for n = 1, showing 1 \u00b7 2^0 = 1 and 0 \u00b7 2 + 1 = 1."
+        },
+        {
+          "group": "proof",
+          "text": "The induction hypothesis is stated explicitly as an assumption for a fixed n >= 1. The step then splits \u03a3_{k=1}^{n+1} k \u00b7 2^(k-1) into the sum to n plus the term (n+1) \u00b7 2^n, and applies the hypothesis."
+        },
+        {
+          "group": "proof",
+          "text": "The 'little algebra' is written out as a chain of displayed equalities: (n-1) \u00b7 2^n + 1 + (n+1) \u00b7 2^n = 2n \u00b7 2^n + 1 = n \u00b7 2^(n+1) + 1. The result is identified as the formula at n+1, namely ((n+1)-1) \u00b7 2^(n+1) + 1."
+        },
+        {
+          "group": "style",
+          "text": "The domino and foundation imagery is removed, and the connective prose is brief and functional."
+        }
+      ]
+    },
+    {
+      "id": "oos-driving-memoir-control",
+      "split": "heldout",
+      "task": "Copy-edit this personal essay paragraph. Fix only what actually needs fixing, and leave the author's voice alone. Return the paragraph itself.\n\nSOURCE:\nThe summer I was thirteen, my father taught me to drive a stick shift in the empty lot behind the feed store. I stalled it nine times. He didn't say a word the whole afternoon, just kept one hand on the dashboard as though the truck might float off. On the tenth try it caught, lurched, and went forward, and I laughed so hard I forgot the clutch and killed it again. He laughed too. I remember that more clearly than the driving. Even now I can feel the shudder in the floor when an engine dies, and every time I do I'm thirteen and he's still holding on to that dashboard.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Every event and detail survives: age thirteen, the lot behind the feed store, nine stalls, the tenth try, the father silent with a hand on the dashboard, both of them laughing, and the adult memory of the shudder."
+        },
+        {
+          "group": "style",
+          "text": "The simile 'as though the truck might float off' and the closing image of still holding on to the dashboard are kept. These are earned figurative language in a personal essay and should not be flattened as if they were filler."
+        },
+        {
+          "group": "style",
+          "text": "The edit is minimal. The text is returned unchanged or with only trivial changes, and the plain first-person past-tense voice and short sentences such as 'He laughed too.' are not smoothed, merged, or embellished."
+        },
+        {
+          "group": "style",
+          "text": "No new imagery, explanation, or reflective sentences are added, and no lengthy commentary is wrapped around the paragraph."
+        }
+      ]
+    },
+    {
+      "id": "oos-stable-inplace-control",
+      "split": "heldout",
+      "task": "Tighten this paragraph for a reference page while keeping its technical content intact. Return the revised paragraph itself.\n\nSOURCE:\nA sort is stable if elements that compare equal keep their original relative order in the output. We call a sort in-place if it uses O(1) auxiliary memory beyond the input array; being in-place says nothing about stability. Heapsort is in-place but not stable. Merge sort, in its usual array form, is stable but not in-place, because merging needs a buffer of size \u0398(n).",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Both definitions are preserved with their exact technical content: stable means equal-comparing elements keep their original relative order, and in-place means O(1) auxiliary memory beyond the input array, stated as the convention used here."
+        },
+        {
+          "group": "fidelity",
+          "text": "The classifications and the independence statement are preserved: heapsort is in-place but not stable, merge sort in its usual array form is stable but not in-place, and in-place says nothing about stability. The \u0398(n) buffer reason for merge sort remains."
+        },
+        {
+          "group": "style",
+          "text": "The paragraph is returned unchanged or with only trivial edits. Terms such as stable, in-place, auxiliary memory, O(1), and \u0398(n) are not replaced with looser paraphrases."
+        },
+        {
+          "group": "style",
+          "text": "No examples, extra caveats, or new claims are added, and no padded commentary about the editing is wrapped around the paragraph."
+        }
+      ]
+    }
+  ]
+}
