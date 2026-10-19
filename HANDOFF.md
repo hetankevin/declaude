@@ -1,5 +1,9 @@
 # Handoff
 
+## Active: Codex prose repair
+
+The user now authorizes fixing prose regressions on development data, especially arguments, preserving proof guidance and the new author-specific judge, Codex only, with a fresh holdout reserved. Protocol: `evals/large/prose-repair-protocol.md`. Draft v8-dev separates argument development from compression; proofs.md and paper-voice.md remain byte-identical to packaged v4. No new model calls have run yet. A separate agent is building a sealed 30-case fresh holdout without seeing candidates or development data. Another is implementing the Codex-only runner. Do not resume historical large benchmarks or call Claude. Installed release remains v4 pending evidence.
+
 ## Author-specific regrade complete
 
 The user's latest request is fulfilled: regrade saved outputs with the contextual judge, Codex only, without the earlier small-budget restriction. **No further model calls are needed or queued. No skill changes or installation changes were made. Packaged/installed remains v4.**
