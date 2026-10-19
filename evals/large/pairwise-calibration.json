@@ -1,0 +1,289 @@
+{
+  "note": "Original synthetic pairwise calibration fixtures with assistant-authored target judgments, not human ratings. Authored without inspecting the candidate skill, new datasets, or grader prompt; only the prior calibration schema was consulted. Use tune cases for calibration and keep validation cases held out. A tie can include equally flawed responses. Material-error flags concern factual, mathematical, or semantic fidelity; a scope or organization failure can decide a pair without a material error.",
+  "cases": [
+    {
+      "id": "pair-tune-completion-denominator",
+      "subset": "tune",
+      "task": "Source:\nWe tried the new intake form during one afternoon. Forty visitors started the form, and twenty-four reached the last page. Eighteen of those twenty-four said the instructions were clear. We did not collect clarity ratings from visitors who stopped early. The previous form was used on a different afternoon, when thirty visitors started and twenty-one finished. We have not compared the visitor groups or recorded why people stopped. The new form has fewer pages, but we do not know whether that difference affected completion. The team wants to describe what happened before deciding whether to run a controlled comparison.\n\nEditing request:\nEdit this into a readable project update. Preserve the counts, the population behind each clarity rating, and the limits of the comparison. You may combine sentences, but do not supply an explanation for the results.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Keeps completion at 24 of 40 for the new form and 21 of 30 for the previous form."
+        },
+        {
+          "group": "fidelity",
+          "text": "Restricts the 18 positive clarity ratings to the 24 new-form finishers and retains the missing ratings from nonfinishers."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not infer improvement or a cause from separate, unadjusted afternoons."
+        }
+      ],
+      "A": "During one afternoon, 40 visitors started the new intake form and 24 finished it. Of those finishers, 18 said the instructions were clear. We did not obtain clarity ratings from visitors who stopped early. On a different afternoon, 30 visitors started the previous form and 21 finished. We have neither compared the visitor groups nor recorded why people stopped. Although the new form has fewer pages, we do not know whether this affected completion. These observations give the team a starting point for deciding whether to run a controlled comparison.",
+      "B": "The new intake form delivered a clearer, more efficient experience during its afternoon trial. Forty visitors started and 24 finished, with 18 positive ratings showing that three quarters of all visitors found the instructions clear. On a separate afternoon, 30 visitors started the previous form and 21 finished. The shorter form improved completion by reducing the number of pages visitors had to work through. Although the team has not yet compared the visitor groups or recorded individual reasons for stopping, the results support moving forward with the new design while planning a controlled comparison.",
+      "expected_winner": "A",
+      "expected_material_error_A": false,
+      "expected_material_error_B": true,
+      "rationale": "B is fluent but changes the clarity denominator from finishers to all starters, invents a causal explanation, and claims improved completion despite observed rates of 60% and 70%, respectively. A preserves the evidence and uncertainty. The verdict concerns factual fidelity, not a preference for plainer wording."
+    },
+    {
+      "id": "pair-tune-valid-paraphrases",
+      "subset": "tune",
+      "task": "Source:\nThe neighborhood workshop lends tools on Saturdays. Borrowers reserve an item by Thursday evening and collect it between nine and eleven on Saturday morning. Each loan lasts one week. Someone who cannot make the collection window can ask a friend to collect the item, provided the borrower names that friend in the reservation. Staff inspect returned tools before placing them back on the shelf. If an inspection reveals damage, the item is held for repair and the next borrower is contacted. The reservation system does not charge a deposit. These arrangements apply to ordinary hand tools; powered equipment is covered by a separate agreement.\n\nEditing request:\nMake this information easier to read for first-time borrowers. Keep all practical conditions. Either a single paragraph or two short paragraphs is acceptable. Return the edited notice without commentary.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the Thursday deadline, Saturday 9–11 collection, and one-week loan."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps named-friend collection, inspection and repair procedures, no deposit, and the powered-equipment exclusion."
+        },
+        {
+          "group": "style",
+          "text": "Uses accessible language without requiring one particular paragraph structure or synonym."
+        }
+      ],
+      "A": "To borrow a hand tool from the neighborhood workshop, reserve it by Thursday evening and collect it on Saturday between nine and eleven in the morning. Loans last one week, and reservations require no deposit. If you cannot collect your tool, a friend can do so if you name them in your reservation.\n\nStaff inspect each returned tool before putting it back on the shelf. Damaged tools are held for repair, and staff contact the next borrower. Powered equipment has a separate agreement; these arrangements cover ordinary hand tools.",
+      "B": "The neighborhood workshop lends ordinary hand tools for one week at a time. Reserve your tool by Thursday evening, then pick it up between nine and eleven on Saturday morning. No deposit is charged. You can have a friend collect it for you, as long as you name that person in the reservation. Before returning tools to the shelf, staff inspect them. If a tool is damaged, they hold it for repair and contact the next borrower. Powered equipment is subject to a separate agreement.",
+      "expected_winner": "tie",
+      "expected_material_error_A": false,
+      "expected_material_error_B": false,
+      "rationale": "Both versions preserve every operational condition and are readable. Paragraph breaks and the choice between collect and pick up do not establish a meaningful quality difference. Neither response has a material error."
+    },
+    {
+      "id": "pair-tune-personal-voice",
+      "subset": "tune",
+      "task": "Source:\nI nearly stayed home. Rain was tapping the window, and the sofa had a persuasive argument. But I went, and by the second song I was glad. Nothing dramatic happened. I just remembered that I like being in a room where people are making something together.\n\nEditing request:\nGive this personal note a very light clarity edit only if needed. Keep my conversational voice and the small joke about the sofa. Do not make the evening sound life-changing.",
+      "assertions": [
+        {
+          "group": "style",
+          "text": "Preserves the conversational voice and sofa joke."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not inflate the evening into a major transformation."
+        },
+        {
+          "group": "scope",
+          "text": "Accepts leaving already clear language unchanged or making a small equivalent edit."
+        }
+      ],
+      "A": "I nearly stayed home. Rain was tapping the window, and the sofa had a persuasive argument. But I went, and by the second song I was glad. Nothing dramatic happened. I just remembered that I like being in a room where people are making something together.",
+      "B": "I nearly stayed home. Rain was tapping the window, and the sofa had a persuasive argument. But I went, and by the second song I was glad I had. Nothing dramatic happened. I just remembered that I like being in a room where people are making something together.",
+      "expected_winner": "tie",
+      "expected_material_error_A": false,
+      "expected_material_error_B": false,
+      "rationale": "The original already works. A preserves it exactly, while B makes one harmless clarification. Neither should be penalized for failing to perform a conspicuous rewrite, and there is no reliable basis for preferring one."
+    },
+    {
+      "id": "pair-tune-proof-over-verbosity",
+      "subset": "tune",
+      "task": "Source:\nLet e_0,e_1,... be nonnegative real numbers. Suppose that e_(k+1) <= q e_k + d for every integer k >= 0, where 0 < q < 1 and d >= 0. We want to show that e_n <= q^n e_0 + d(1-q^n)/(1-q) for every integer n >= 0. The draft says only: substitute the recurrence repeatedly, collect the powers, and use the geometric sum. The additive term is a new contribution at every step, rather than an initial error that is subsequently contracted. No assumption says d is zero or that the recurrence holds with equality.\n\nEditing request:\nReplace the draft with a self-contained proof suitable for a reader who knows induction and finite geometric sums. A compact proof is welcome if its steps are valid. Do not strengthen the conclusion or add assumptions.",
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "Accumulates d at every step and derives the finite geometric-sum bound."
+        },
+        {
+          "group": "proof",
+          "text": "Covers n=0 and preserves the inequality rather than assuming equality."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not claim convergence to zero when d may be positive."
+        }
+      ],
+      "A": "For n=0 the claimed bound is e_0 <= e_0. Suppose it holds at n. Since q is positive, applying the recurrence and then the induction hypothesis preserves the inequality and gives\n\\[\ne_{n+1} \\le q e_n+d \\le q^{n+1}e_0+d\\left(q\\frac{1-q^n}{1-q}+1\\right).\n\\]\nThe expression in parentheses equals (1-q^{n+1})/(1-q), which proves the next case. Induction establishes the bound for every n >= 0. Equivalently, the additive contribution is d times the finite sum 1+q+...+q^{n-1}. The bound allows a nonzero limiting error: its right-hand side tends to d/(1-q), not necessarily to zero.",
+      "B": "We begin with n=0, where the inequality is immediate. At each later step, the previous error is multiplied by q, so its contribution becomes smaller. The additive contribution d can be included with the initial error and contracted along with it. Repeating this observation n times gives e_n <= q^n(e_0+d). Since d >= 0 and the finite geometric sum is at least q^n for n >= 1, this implies the requested bound. The case n=0 was already handled separately, so the proof covers every nonnegative integer. This also explains the long-run behavior: both the initial error and the additive contribution disappear as q^n tends to zero. Thus e_n converges to zero even when the recurrence includes a fixed positive d. The geometric-sum expression is a convenient, slightly looser way to state the same conclusion.",
+      "expected_winner": "A",
+      "expected_material_error_A": false,
+      "expected_material_error_B": true,
+      "rationale": "A gives a valid induction, including n=0. B wrongly treats recurring additions as a single initial contribution. With q=1/2, d=1, e_0=0 and equality in the recurrence, e_1=1 contradicts B's bound 1/2, and e_n tends to 2. More explanatory prose cannot compensate for an invalid proof and a false strengthened conclusion."
+    },
+    {
+      "id": "pair-tune-legitimate-jargon",
+      "subset": "tune",
+      "task": "Source:\nThe data structure uses structural sharing between successive versions of a map. Updating one key allocates nodes along the search path while reusing unaffected subtrees. Earlier versions remain available and are not changed by the update. We call this a persistent map. Persistence here describes version availability, not storage on disk. Readers of this section already know tree-based search, but they may not have encountered persistent data structures. The implementation does not promise constant-time updates, and we have not measured its memory use against a mutable map. We want to explain the mechanism before discussing any performance tradeoffs in a later section.\n\nEditing request:\nEdit this for a technical introduction. Retain useful established terms and explain them where necessary. Do not replace technical accuracy with a storage metaphor or introduce unmeasured performance claims. Either ordering of the definition and mechanism is acceptable.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Defines persistence as retaining versions, not disk durability."
+        },
+        {
+          "group": "argument",
+          "text": "Explains structural sharing and copying the updated search path."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains the absence of constant-time and comparative-memory claims."
+        },
+        {
+          "group": "style",
+          "text": "Treats established technical terms as legitimate when explained."
+        }
+      ],
+      "A": "A persistent map keeps earlier versions available after an update. Here, persistence refers to retaining versions, not writing data to disk. The map uses structural sharing: updating a key allocates nodes along its search path and reuses the unaffected subtrees. Those shared subtrees let earlier versions remain available without being changed by the update. The implementation does not promise constant-time updates, and we have not compared its memory use with that of a mutable map. We first describe this mechanism, then discuss performance tradeoffs in a later section.",
+      "B": "Updating a key in this map allocates nodes along the search path and reuses subtrees that the update does not affect. This technique is called structural sharing. It leaves earlier versions unchanged and available for use, making the map persistent. Persistence in this sense concerns access to earlier versions, rather than storage on disk. We do not promise constant-time updates, and we have not measured memory use against a mutable map. The present section explains how the structure works; a later section discusses the performance tradeoffs.",
+      "expected_winner": "tie",
+      "expected_material_error_A": false,
+      "expected_material_error_B": false,
+      "rationale": "Both responses accurately explain established terminology and retain the limits on performance claims. Definition-first and mechanism-first introductions are both expressly allowed. A grader should not penalize either for using persistent or structural sharing, or infer superiority from their ordering alone."
+    },
+    {
+      "id": "pair-tune-bounded-edit",
+      "subset": "tune",
+      "task": "Source:\nI keep a small notebook beside the kettle. It is where I put the things I notice before the rest of the house wakes up. Some mornings there is only a shopping list. Other mornings I get a whole page about a conversation I thought I had forgotten. The pages is uneven, and I like them that way. I do not sort the entries by topic or go back to make them sound wiser. When the notebook fills up, I put it in a drawer and start another. It is an ordinary habit, which is probably why I have managed to keep it.\n\nEditing request:\nCorrect only the subject–verb agreement error in the sentence beginning “The pages.” Leave every other word and all punctuation unchanged. Return the full passage, with no explanation.",
+      "assertions": [
+        {
+          "group": "scope",
+          "text": "Changes only “The pages is” to “The pages are” and returns the complete passage."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves the described habit without adding events or motivations."
+        }
+      ],
+      "A": "Beside the kettle, I keep a small notebook for the things I notice before everyone else wakes. Sometimes I write a shopping list; sometimes a conversation I had forgotten fills a page. The pages are uneven, and I like that. I leave the entries unsorted and resist revising them into something wiser. Once a notebook is full, it goes into a drawer and I begin another. The habit is ordinary, and that ordinariness is probably what has helped me keep it going over time.",
+      "B": "I keep a small notebook beside the kettle. It is where I put the things I notice before the rest of the house wakes up. Some mornings there is only a shopping list. Other mornings I get a whole page about a conversation I thought I had forgotten. The pages are uneven, and I like them that way. I do not sort the entries by topic or go back to make them sound wiser. When the notebook fills up, I put it in a drawer and start another. It is an ordinary habit, which is probably why I have managed to keep it.",
+      "expected_winner": "B",
+      "expected_material_error_A": false,
+      "expected_material_error_B": false,
+      "rationale": "B performs exactly the requested correction. A broadly preserves the facts but gratuitously rewrites the passage, violating the explicit edit boundary. This is a substantial instruction-following failure, not a material factual or mathematical error. The winner follows the user's precise constraint rather than a general dislike of A's prose."
+    },
+    {
+      "id": "pair-tune-requested-explanation-order",
+      "subset": "tune",
+      "task": "Source:\nWe place a table of contents at the start of each packet. Each entry names a section and gives its page number. Sections vary in length, so a reader cannot reliably find a section by counting a fixed number of pages from the beginning. Readers often arrive with one specific question and need to jump to the relevant section. The table solves this navigation problem by pairing section names with page numbers. It does not summarize the arguments within a section. The packet is also available as plain text, where the same section names serve as searchable headings rather than page references.\n\nEditing request:\nRewrite this as a connected explanation. Begin with the reader's goal, explain the obstacle next, and only then introduce the table as the solution. Keep the distinction between navigation and summary, and retain the plain-text alternative.",
+      "assertions": [
+        {
+          "group": "argument",
+          "text": "Begins with the reader goal, then varying section lengths, then the table that solves the problem."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves section-name/page-number navigation, the lack of argument summaries, and searchable plain-text headings."
+        }
+      ],
+      "A": "A table of contents opens each packet, pairing section names with page numbers. It helps readers jump to the section they need when they arrive with a specific question. Because sections vary in length, counting a fixed number of pages from the beginning cannot reliably locate a section. The table provides navigation rather than a summary of the arguments within each section. For the plain-text version of the packet, the same section names appear as searchable headings, allowing readers to find the relevant material without using page references.",
+      "B": "Readers often open a packet with a specific question and want to find the relevant section. Because sections vary in length, they cannot reliably locate it by counting a fixed number of pages from the beginning. We therefore put a table of contents at the start of the packet, pairing each section name with its page number. The table helps readers navigate; it does not summarize the arguments inside each section. In the plain-text version, those same section names serve as searchable headings instead of page references.",
+      "expected_winner": "B",
+      "expected_material_error_A": false,
+      "expected_material_error_B": false,
+      "rationale": "Both responses preserve the facts. B additionally follows the explicitly requested goal–obstacle–solution order. Without that request, a tie would be reasonable. A's different organization is not labeled a material error."
+    },
+    {
+      "id": "pair-tune-modal-force",
+      "subset": "tune",
+      "task": "Source:\nFacilitators should offer a break after the first hour. They may offer one earlier if the group asks. They must stop the session if the room alarm sounds.\n\nEditing request:\nMake this easier to scan in three short sentences. Preserve the distinction between a recommendation, permission, and an obligation.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Retains a recommended break after one hour, permission for an earlier requested break, and mandatory stopping upon an alarm."
+        }
+      ],
+      "A": "Facilitators must offer a break after the first hour. They should offer an earlier break if the group asks. They may stop the session if the room alarm sounds.",
+      "B": "Facilitators should offer a break after one hour. They may offer an earlier break if the group asks. They must stop if the room alarm sounds.",
+      "expected_winner": "B",
+      "expected_material_error_A": true,
+      "expected_material_error_B": false,
+      "rationale": "A changes all three modal forces: recommendation to obligation, permission to recommendation, and obligation to permission. B preserves them. Short sentences and similar vocabulary cannot make these changes merely stylistic."
+    },
+    {
+      "id": "pair-validation-warranted-uncertainty",
+      "subset": "validation",
+      "task": "Source:\nIn a small usability session, six participants attempted the same diagram-labeling task. Four placed the legend correctly on their first try. Two moved it after a facilitator asked them to look again. We did not record how long the task took, and the facilitator did not use a fixed script. The results suggest that some participants could use the current instructions without assistance, but they do not tell us how often that would happen in the broader audience. We plan to revise the instructions and repeat the session with a consistent prompt. There is no comparison with the revised instructions yet.\n\nEditing request:\nRemove needless hedging and repetition while keeping uncertainty that follows from the study design. Write a clear results paragraph. Do not turn a plan into a completed evaluation or treat the six participants as a representative sample.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Retains six participants, four correct first attempts, and two corrections after prompting."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves missing timing, inconsistent prompts, and limits on broader-audience inference."
+        },
+        {
+          "group": "fidelity",
+          "text": "Keeps revision and a consistently prompted repeat session as future work."
+        }
+      ],
+      "A": "Four of six participants placed the legend correctly on their first attempt. The other two moved it after a facilitator asked them to look again. We did not measure completion time, and the facilitator used no fixed script. These observations show that some participants could follow the current instructions without assistance, but they do not establish how often the broader audience would succeed. We plan to revise the instructions and repeat the session with a consistent prompt. We have not yet evaluated the revised instructions.",
+      "B": "Four of six participants placed the legend correctly on their first attempt, showing that two thirds of the broader audience can follow the current instructions without assistance. The other two moved it after a facilitator asked them to look again, confirming that prompting resolves the remaining difficulty. We did not measure completion time or use a fixed facilitator script, but these details do not limit the conclusion that the instructions work for most readers. We plan to revise the instructions and repeat the session with a consistent prompt; the revised version has not yet been evaluated.",
+      "expected_winner": "A",
+      "expected_material_error_A": false,
+      "expected_material_error_B": true,
+      "rationale": "A removes verbal clutter while retaining design-based uncertainty. B extrapolates a six-person observation to the audience and presents prompting as a confirmed general remedy. Its acknowledgement of missing measurements does not repair those unsupported claims. Both preserve the future status of the revision, so that is not the deciding difference."
+    },
+    {
+      "id": "pair-validation-length-neutral",
+      "subset": "validation",
+      "task": "Source:\nThe reading group meets every other Wednesday in a room supplied by the community center. Members choose one short piece in advance. Everyone reads the same piece, but nobody is expected to prepare notes or lead the discussion. At the meeting, each person can mention a passage they want to discuss. Listening without speaking is also welcome. The group takes a short break halfway through the evening. A volunteer sends the next selection afterward to people who have asked to receive it. New members can attend without registering, although they should contact the center if they need step-free access to the room.\n\nEditing request:\nEdit this welcome note for clarity and a friendly, unforced tone. Preserve the practical details and the permission to participate quietly. There is no word limit. A compact notice or a slightly fuller explanation is equally suitable, provided it does not add new arrangements.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Preserves the schedule, shared advance reading, optional speaking, no notes or discussion-lead requirement, and halfway break."
+        },
+        {
+          "group": "fidelity",
+          "text": "Preserves opt-in delivery of the next selection, no registration, and the step-free-access contact instruction."
+        },
+        {
+          "group": "style",
+          "text": "Does not rank the responses by length alone when both are clear and complete."
+        }
+      ],
+      "A": "Our reading group meets every other Wednesday at the community center. Members choose a short piece beforehand for everyone to read. You do not need to prepare notes or lead the discussion. Bring up a passage if you like, or simply listen. We take a short break halfway through. Afterward, a volunteer sends the next selection to anyone who has asked to receive it. New members can come without registering. If you need step-free access to the room, please contact the center.",
+      "B": "We meet every other Wednesday in a room at the community center. Before each meeting, members choose a short piece for everyone to read. You are welcome to mention a passage you would like to discuss, and you are equally welcome to spend the meeting listening. There is no expectation that you will prepare notes or take a turn leading the discussion.\n\nWe pause for a short break halfway through the evening. After the meeting, a volunteer sends out the next selection to people who have asked to receive it. If you would like to join us, you can attend without registering. Please contact the center if you need step-free access to the room. Beyond reading the shared piece, no preparation is expected.",
+      "expected_winner": "tie",
+      "expected_material_error_A": false,
+      "expected_material_error_B": false,
+      "rationale": "Both are complete, clear welcome notes with the same arrangements. B makes participation expectations more explicit and repeats one point mildly, while A is more compact. The task expressly permits both treatments. That small difference is not enough to impose a stable winner or reward brevity as an end in itself."
+    },
+    {
+      "id": "pair-validation-zero-weight-edge",
+      "subset": "validation",
+      "task": "Source:\nFor a real number c and a nonnegative real number a, consider minimizing f(x)=a(x-c)^2 over the closed interval [0,1]. The draft says that the answer is the point in the interval nearest to c. It explains that c itself is best when c lies in the interval, zero is best when c is negative, and one is best when c is greater than one. However, the statement is meant to describe every minimizer, not merely exhibit one possible minimizer. The coefficient a is allowed to be zero. The text will introduce the result before any application-specific assumptions are imposed.\n\nEditing request:\nTurn the draft into a correct, readable proposition and short proof. Account for every allowed value of a and c, including endpoints. Keep the distinction between giving a minimizer and describing the entire set of minimizers.",
+      "assertions": [
+        {
+          "group": "proof",
+          "text": "For a>0, identifies the unique minimizer as c for 0<=c<=1, zero for c<0, and one for c>1."
+        },
+        {
+          "group": "proof",
+          "text": "For a=0, identifies all of [0,1] as the minimizer set."
+        },
+        {
+          "group": "fidelity",
+          "text": "Does not silently replace a>=0 with a>0 or claim uniqueness for the whole domain."
+        }
+      ],
+      "A": "For every a >= 0, the function f(x)=a(x-c)^2 has a unique minimizer on [0,1]: it is c when 0 <= c <= 1, zero when c < 0, and one when c > 1. To see this, minimize the distance from x to c. If c belongs to the interval, the distance vanishes only at c. If c lies outside it, the nearest endpoint is uniquely closest. Squaring the distance and multiplying it by a preserve this ordering. This proves the stated formula, including c=0 and c=1.",
+      "B": "If a=0, every x in [0,1] minimizes f, since f is identically zero. If a>0, there is a unique minimizer: c for 0 <= c <= 1, zero for c < 0, and one for c > 1. Indeed, positive scaling preserves the ordering of squared distances to c. When c lies in the interval, only x=c gives distance zero. Otherwise, the nearer endpoint is uniquely closest. This also covers c=0 and c=1. Thus the formula describes a single minimizer only in the positive-coefficient case; the zero-coefficient case has the entire interval as its minimizer set.",
+      "expected_winner": "B",
+      "expected_material_error_A": true,
+      "expected_material_error_B": false,
+      "rationale": "A's distance argument is valid only for positive scaling. At a=0 the objective is constant, so all points minimize it; for example, a=0 and c=1/2 make both endpoints minimizers too. B handles this edge case and the endpoints correctly. A does exhibit a minimizer, but its universal uniqueness claim fails the requested full-set characterization."
+    },
+    {
+      "id": "pair-validation-shared-material-defect",
+      "subset": "validation",
+      "task": "Source:\nAmong the eight finished tasks, the median completion time was twelve minutes. Unfinished tasks were excluded. We did not calculate an arithmetic mean.\n\nEditing request:\nCopyedit this results note. Preserve the statistic reported, the population it describes, and what was not calculated. Return only the note.",
+      "assertions": [
+        {
+          "group": "fidelity",
+          "text": "Reports a median of twelve minutes for eight finished tasks, without substituting an arithmetic mean."
+        },
+        {
+          "group": "fidelity",
+          "text": "Retains exclusion of unfinished tasks and the absence of a calculated arithmetic mean."
+        }
+      ],
+      "A": "For the eight finished tasks, the arithmetic mean completion time was twelve minutes. Unfinished tasks were excluded.",
+      "B": "The eight completed tasks had an arithmetic mean completion time of twelve minutes. Tasks left unfinished were not included.",
+      "expected_winner": "tie",
+      "expected_material_error_A": true,
+      "expected_material_error_B": true,
+      "rationale": "Both make the same material substitution of arithmetic mean for median and drop the statement that no mean was calculated. Their wording differs but neither is substantively better. A tie here records equal quality, not correctness or satisfaction of the assertions."
+    }
+  ]
+}

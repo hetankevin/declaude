@@ -1,0 +1,18 @@
+{
+  "incumbent": "v4",
+  "first_candidate": "v5a",
+  "selection_configs": [
+    "haiku",
+    "sonnet-high",
+    "astra-medium",
+    "luna-medium"
+  ],
+  "maximum_candidates": 2,
+  "skill_sha256": {
+    "v4": "2f56547251c3f77dc2e718cd35ceca893f78352c45eb98397a0a78ba6e5b33d4",
+    "v5a": "24d41e32ef5a5ef57af79515184d4e8881657936f88935d224d24e4943edae5c"
+  },
+  "first_candidate_basis": "general reader-dependency, artifact-form, and completion guidance; no new model results inspected",
+  "selection_rule": "best tuning candidate gets one validation evaluation; prefer over v4 only if mean pairwise preference > 0.5, no decrease in fidelity pass rate, no increase in material-error frequency; tie retains v4",
+  "fresh_holdout_used_for_selection": false
+}
