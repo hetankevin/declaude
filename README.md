@@ -4,6 +4,29 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
+## Codex prose repair: development results
+
+A new revision, **v8-dev**, separates argument development from compression. It preserves useful explanatory steps and keeps the proof and research-voice reference files byte-for-byte unchanged. This comparison uses the **same frozen author-specific judge** throughout: Astra high and Sol high. No Claude calls were made.
+
+The first 20 development cases are complete across Astra medium/high, Sol low, and Luna medium. The revision is selected for an unchanged check on the other 20 development cases, now running. **Packaged and installed release remains v4 while that check runs.**
+
+| Tuning scope | v8 vs no skill, pp [95% case CI] | v8 vs v4, pp [95% case CI] |
+|---|---:|---:|
+| Nonproof writing (16 cases) | +12.5 [+0.8, +24.2] | +24.2 [+10.2, +39.1] |
+| Argument writing (4 cases) | +18.8 [+6.2, +25.0] | +40.6 [+18.8, +62.5] |
+| Proofs (4 cases) | +53.1 [+31.2, +78.1] | +6.2 [−15.6, +21.9] |
+
+These are selection results on previously used development data, not fresh-test evidence. Gains differ by model: Astra high still trails no skill on nonproof tasks, and some already-good controls are overedited. The judges flagged no material errors in the new outputs; that is a judgment result, not a guarantee. Judge agreement is 129/160 and reversed-order agreement is 45/64, with one direct win/loss disagreement in each check.
+
+The [fresh 30-case holdout](evals/large/fresh-holdout-20261019-manifest.json) remains private, unopened by the optimizer, and unrun. An independent review checked all cases, two were corrected privately, and the second review passed. It is backed up privately outside the temporary session files.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/plots/v8-dev-categories-dark.svg">
+  <img src="evals/results/prose-repair/plots/v8-dev-categories-light.svg" alt="Codex-only development tuning results for v8 versus no skill and v4, by writing category and model effort; signed win-minus-loss percentage points.">
+</picture>
+
+[Full tuning report](evals/results/prose-repair/v8-dev-tune/report.md) · [Frozen protocol](evals/large/prose-repair-protocol.md) · [Selection](evals/results/prose-repair/selection.json) · [Exact outputs](evals/results/prose-repair/v8-dev-tune/responses.json).
+
 ## Does it improve writing?
 
 The [author-specific regrade](evals/results/context-regrade/report.md) finds clear gains on saved Claude outputs and on Codex proof exposition. **It does not establish a general improvement in Codex prose.** V4 and v5a have similar results, and the installed release remains v4.

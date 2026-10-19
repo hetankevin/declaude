@@ -1,0 +1,2503 @@
+{
+  "candidate": "v8-dev",
+  "subset": "tune",
+  "status": "complete",
+  "plan_sha256": "88c07f1e48a54bcb5fbac64b9276b4ff55938f4132da4c9a03e53c7b6759a608",
+  "metric": "case-averaged win percentage minus loss percentage; ties zero, retained in denominator",
+  "bootstrap": {
+    "unit": "case",
+    "samples": 3000,
+    "seed": 47132026
+  },
+  "cases": 20,
+  "primary_judgments": 320,
+  "audit_judgments": 64,
+  "comparisons": {
+    "none": {
+      "overall": {
+        "net_pp": 20.625,
+        "net_ci95_pp": [
+          8.75,
+          33.75
+        ],
+        "cases": 20,
+        "judgments": 160,
+        "wins": 52,
+        "ties": 89,
+        "losses": 19
+      },
+      "nonproof": {
+        "net_pp": 12.5,
+        "net_ci95_pp": [
+          0.78125,
+          24.21875
+        ],
+        "cases": 16,
+        "judgments": 128,
+        "wins": 32,
+        "ties": 80,
+        "losses": 16
+      },
+      "categories": {
+        "ordinary": {
+          "net_pp": 6.25,
+          "net_ci95_pp": [
+            -6.25,
+            18.75
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 5,
+          "ties": 24,
+          "losses": 3
+        },
+        "research": {
+          "net_pp": 40.625,
+          "net_ci95_pp": [
+            28.125,
+            56.25
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 16,
+          "ties": 13,
+          "losses": 3
+        },
+        "argument": {
+          "net_pp": 18.75,
+          "net_ci95_pp": [
+            6.25,
+            25.0
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 11,
+          "ties": 16,
+          "losses": 5
+        },
+        "proof": {
+          "net_pp": 53.125,
+          "net_ci95_pp": [
+            31.25,
+            78.125
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 20,
+          "ties": 9,
+          "losses": 3
+        },
+        "control": {
+          "net_pp": -15.625,
+          "net_ci95_pp": [
+            -31.25,
+            0
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 0,
+          "ties": 27,
+          "losses": 5
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "net_pp": -1.25,
+          "net_ci95_pp": [
+            -6.875000000000001,
+            5.0
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 6,
+          "ties": 146,
+          "losses": 8
+        },
+        "naturalness": {
+          "net_pp": 5.0,
+          "net_ci95_pp": [
+            0.0,
+            11.25
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 12,
+          "ties": 144,
+          "losses": 4
+        },
+        "progression": {
+          "net_pp": 16.25,
+          "net_ci95_pp": [
+            6.875000000000001,
+            25.624999999999996
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 37,
+          "ties": 112,
+          "losses": 11
+        },
+        "voice": {
+          "net_pp": 23.75,
+          "net_ci95_pp": [
+            11.875,
+            35.625
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 52,
+          "ties": 94,
+          "losses": 14
+        },
+        "proof": {
+          "net_pp": 59.375,
+          "net_ci95_pp": [
+            37.5,
+            81.25
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 20,
+          "ties": 11,
+          "losses": 1
+        }
+      },
+      "material_flags": {
+        "candidate": {
+          "flags": 0,
+          "judgments": 160,
+          "cases": 20,
+          "severity": {
+            "none": 160
+          }
+        },
+        "reference": {
+          "flags": 2,
+          "judgments": 160,
+          "cases": 20,
+          "severity": {
+            "none": 158,
+            "minor": 2
+          }
+        }
+      },
+      "models": {
+        "astra-medium": {
+          "overall": {
+            "net_pp": 37.5,
+            "net_ci95_pp": [
+              15.0,
+              60.0
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 16,
+            "ties": 23,
+            "losses": 1
+          },
+          "nonproof": {
+            "net_pp": 28.125,
+            "net_ci95_pp": [
+              6.25,
+              53.125
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 10,
+            "ties": 21,
+            "losses": 1
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 6,
+              "losses": 0
+            },
+            "research": {
+              "net_pp": 75.0,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 6,
+              "ties": 2,
+              "losses": 0
+            },
+            "argument": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 6,
+              "losses": 0
+            },
+            "proof": {
+              "net_pp": 75.0,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 6,
+              "ties": 2,
+              "losses": 0
+            },
+            "control": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -37.5,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 7,
+              "losses": 1
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 0,
+              "ties": 40,
+              "losses": 0
+            },
+            "naturalness": {
+              "net_pp": 5.0,
+              "net_ci95_pp": [
+                -5.0,
+                15.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 3,
+              "ties": 36,
+              "losses": 1
+            },
+            "progression": {
+              "net_pp": 27.500000000000004,
+              "net_ci95_pp": [
+                10.0,
+                47.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 11,
+              "ties": 29,
+              "losses": 0
+            },
+            "voice": {
+              "net_pp": 37.5,
+              "net_ci95_pp": [
+                15.0,
+                60.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 16,
+              "ties": 23,
+              "losses": 1
+            },
+            "proof": {
+              "net_pp": 75.0,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 6,
+              "ties": 2,
+              "losses": 0
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            }
+          }
+        },
+        "astra-high": {
+          "overall": {
+            "net_pp": 7.5,
+            "net_ci95_pp": [
+              -15.0,
+              32.5
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 9,
+            "ties": 25,
+            "losses": 6
+          },
+          "nonproof": {
+            "net_pp": -6.25,
+            "net_ci95_pp": [
+              -28.125,
+              15.625
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 4,
+            "ties": 22,
+            "losses": 6
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -37.5,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 7,
+              "losses": 1
+            },
+            "research": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -50.0,
+                50.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 4,
+              "losses": 2
+            },
+            "argument": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -75.0,
+                62.5
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 3,
+              "losses": 3
+            },
+            "proof": {
+              "net_pp": 62.5,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 5,
+              "ties": 3,
+              "losses": 0
+            },
+            "control": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": -7.5,
+              "net_ci95_pp": [
+                -15.0,
+                0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 0,
+              "ties": 37,
+              "losses": 3
+            },
+            "naturalness": {
+              "net_pp": 10.0,
+              "net_ci95_pp": [
+                2.5,
+                20.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 4,
+              "ties": 36,
+              "losses": 0
+            },
+            "progression": {
+              "net_pp": 7.5,
+              "net_ci95_pp": [
+                -10.0,
+                27.500000000000004
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 7,
+              "ties": 29,
+              "losses": 4
+            },
+            "voice": {
+              "net_pp": 15.0,
+              "net_ci95_pp": [
+                -5.0,
+                37.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 9,
+              "ties": 28,
+              "losses": 3
+            },
+            "proof": {
+              "net_pp": 62.5,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 5,
+              "ties": 3,
+              "losses": 0
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            }
+          }
+        },
+        "sol-low": {
+          "overall": {
+            "net_pp": 40.0,
+            "net_ci95_pp": [
+              22.5,
+              60.0
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 16,
+            "ties": 24,
+            "losses": 0
+          },
+          "nonproof": {
+            "net_pp": 28.125,
+            "net_ci95_pp": [
+              9.375,
+              50.0
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 9,
+            "ties": 23,
+            "losses": 0
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 12.5,
+              "net_ci95_pp": [
+                0,
+                37.5
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 1,
+              "ties": 7,
+              "losses": 0
+            },
+            "research": {
+              "net_pp": 37.5,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 3,
+              "ties": 5,
+              "losses": 0
+            },
+            "argument": {
+              "net_pp": 62.5,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 5,
+              "ties": 3,
+              "losses": 0
+            },
+            "proof": {
+              "net_pp": 87.5,
+              "net_ci95_pp": [
+                62.5,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 7,
+              "ties": 1,
+              "losses": 0
+            },
+            "control": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 10.0,
+              "net_ci95_pp": [
+                0,
+                25.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 4,
+              "ties": 36,
+              "losses": 0
+            },
+            "naturalness": {
+              "net_pp": 5.0,
+              "net_ci95_pp": [
+                0,
+                12.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 2,
+              "ties": 38,
+              "losses": 0
+            },
+            "progression": {
+              "net_pp": 27.500000000000004,
+              "net_ci95_pp": [
+                12.5,
+                47.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 11,
+              "ties": 29,
+              "losses": 0
+            },
+            "voice": {
+              "net_pp": 40.0,
+              "net_ci95_pp": [
+                22.5,
+                60.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 16,
+              "ties": 24,
+              "losses": 0
+            },
+            "proof": {
+              "net_pp": 87.5,
+              "net_ci95_pp": [
+                62.5,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 7,
+              "ties": 1,
+              "losses": 0
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            }
+          }
+        },
+        "luna-medium": {
+          "overall": {
+            "net_pp": -2.5,
+            "net_ci95_pp": [
+              -32.5,
+              27.500000000000004
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 11,
+            "ties": 17,
+            "losses": 12
+          },
+          "nonproof": {
+            "net_pp": 0.0,
+            "net_ci95_pp": [
+              -34.375,
+              34.375
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 9,
+            "ties": 14,
+            "losses": 9
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -50.0,
+                62.5
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 4,
+              "losses": 2
+            },
+            "research": {
+              "net_pp": 50.0,
+              "net_ci95_pp": [
+                -12.5,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 5,
+              "ties": 2,
+              "losses": 1
+            },
+            "argument": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                -75.0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 4,
+              "losses": 2
+            },
+            "proof": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -75.0,
+                50.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 3,
+              "losses": 3
+            },
+            "control": {
+              "net_pp": -50.0,
+              "net_ci95_pp": [
+                -100,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 4,
+              "losses": 4
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": -7.5,
+              "net_ci95_pp": [
+                -25.0,
+                10.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 2,
+              "ties": 33,
+              "losses": 5
+            },
+            "naturalness": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -15.0,
+                15.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 3,
+              "ties": 34,
+              "losses": 3
+            },
+            "progression": {
+              "net_pp": 2.5,
+              "net_ci95_pp": [
+                -22.5,
+                27.500000000000004
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 8,
+              "ties": 25,
+              "losses": 7
+            },
+            "voice": {
+              "net_pp": 2.5,
+              "net_ci95_pp": [
+                -27.500000000000004,
+                32.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 11,
+              "ties": 19,
+              "losses": 10
+            },
+            "proof": {
+              "net_pp": 12.5,
+              "net_ci95_pp": [
+                -25.0,
+                50.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 5,
+              "losses": 1
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 2,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 38,
+                "minor": 2
+              }
+            }
+          }
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "overall": {
+            "net_pp": 22.5,
+            "net_ci95_pp": [
+              11.25,
+              35.0
+            ],
+            "cases": 20,
+            "judgments": 80,
+            "wins": 25,
+            "ties": 48,
+            "losses": 7
+          },
+          "nonproof": {
+            "net_pp": 15.625,
+            "net_ci95_pp": [
+              4.6875,
+              28.125
+            ],
+            "cases": 16,
+            "judgments": 64,
+            "wins": 16,
+            "ties": 42,
+            "losses": 6
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 6.25,
+              "net_ci95_pp": [
+                0,
+                18.75
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 2,
+              "ties": 13,
+              "losses": 1
+            },
+            "research": {
+              "net_pp": 43.75,
+              "net_ci95_pp": [
+                25.0,
+                62.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 8,
+              "ties": 7,
+              "losses": 1
+            },
+            "argument": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                25.0,
+                25.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 6,
+              "ties": 8,
+              "losses": 2
+            },
+            "proof": {
+              "net_pp": 50.0,
+              "net_ci95_pp": [
+                31.25,
+                68.75
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 9,
+              "ties": 6,
+              "losses": 1
+            },
+            "control": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -25.0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 0,
+              "ties": 14,
+              "losses": 2
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -6.25,
+                6.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 3,
+              "ties": 74,
+              "losses": 3
+            },
+            "naturalness": {
+              "net_pp": 5.0,
+              "net_ci95_pp": [
+                -2.5,
+                15.0
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 6,
+              "ties": 72,
+              "losses": 2
+            },
+            "progression": {
+              "net_pp": 17.5,
+              "net_ci95_pp": [
+                8.75,
+                26.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 17,
+              "ties": 60,
+              "losses": 3
+            },
+            "voice": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                13.750000000000002,
+                37.5
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 25,
+              "ties": 50,
+              "losses": 5
+            },
+            "proof": {
+              "net_pp": 56.25,
+              "net_ci95_pp": [
+                37.5,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 9,
+              "ties": 7,
+              "losses": 0
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 80
+              }
+            },
+            "reference": {
+              "flags": 1,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 79,
+                "minor": 1
+              }
+            }
+          }
+        },
+        "sol-high": {
+          "overall": {
+            "net_pp": 18.75,
+            "net_ci95_pp": [
+              5.0,
+              33.75
+            ],
+            "cases": 20,
+            "judgments": 80,
+            "wins": 27,
+            "ties": 41,
+            "losses": 12
+          },
+          "nonproof": {
+            "net_pp": 9.375,
+            "net_ci95_pp": [
+              -4.6875,
+              21.875
+            ],
+            "cases": 16,
+            "judgments": 64,
+            "wins": 16,
+            "ties": 38,
+            "losses": 10
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 6.25,
+              "net_ci95_pp": [
+                -12.5,
+                25.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 3,
+              "ties": 11,
+              "losses": 2
+            },
+            "research": {
+              "net_pp": 37.5,
+              "net_ci95_pp": [
+                25.0,
+                50.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 8,
+              "ties": 6,
+              "losses": 2
+            },
+            "argument": {
+              "net_pp": 12.5,
+              "net_ci95_pp": [
+                -12.5,
+                25.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 5,
+              "ties": 8,
+              "losses": 3
+            },
+            "proof": {
+              "net_pp": 56.25,
+              "net_ci95_pp": [
+                31.25,
+                87.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 11,
+              "ties": 3,
+              "losses": 2
+            },
+            "control": {
+              "net_pp": -18.75,
+              "net_ci95_pp": [
+                -37.5,
+                0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 0,
+              "ties": 13,
+              "losses": 3
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": -2.5,
+              "net_ci95_pp": [
+                -8.75,
+                3.75
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 3,
+              "ties": 72,
+              "losses": 5
+            },
+            "naturalness": {
+              "net_pp": 5.0,
+              "net_ci95_pp": [
+                0.0,
+                11.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 6,
+              "ties": 72,
+              "losses": 2
+            },
+            "progression": {
+              "net_pp": 15.0,
+              "net_ci95_pp": [
+                3.75,
+                26.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 20,
+              "ties": 52,
+              "losses": 8
+            },
+            "voice": {
+              "net_pp": 22.5,
+              "net_ci95_pp": [
+                8.75,
+                36.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 27,
+              "ties": 44,
+              "losses": 9
+            },
+            "proof": {
+              "net_pp": 62.5,
+              "net_ci95_pp": [
+                37.5,
+                87.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 11,
+              "ties": 4,
+              "losses": 1
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 80
+              }
+            },
+            "reference": {
+              "flags": 1,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 79,
+                "minor": 1
+              }
+            }
+          }
+        }
+      },
+      "agreement": {
+        "cross_judge": {
+          "pairs": 80,
+          "cases": 20,
+          "same": 61,
+          "opposite": 0
+        },
+        "order": {
+          "pairs": 26,
+          "cases": 12,
+          "same": 17,
+          "opposite": 1
+        },
+        "order_by_judge": {
+          "astra-high": {
+            "pairs": 13,
+            "cases": 12,
+            "same": 8,
+            "opposite": 1
+          },
+          "sol-high": {
+            "pairs": 13,
+            "cases": 12,
+            "same": 9,
+            "opposite": 0
+          }
+        }
+      }
+    },
+    "v4": {
+      "overall": {
+        "net_pp": 20.625,
+        "net_ci95_pp": [
+          8.125,
+          33.75
+        ],
+        "cases": 20,
+        "judgments": 160,
+        "wins": 46,
+        "ties": 101,
+        "losses": 13
+      },
+      "nonproof": {
+        "net_pp": 24.21875,
+        "net_ci95_pp": [
+          10.15625,
+          39.0625
+        ],
+        "cases": 16,
+        "judgments": 128,
+        "wins": 41,
+        "ties": 77,
+        "losses": 10
+      },
+      "categories": {
+        "ordinary": {
+          "net_pp": 25.0,
+          "net_ci95_pp": [
+            0.0,
+            50.0
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 10,
+          "ties": 20,
+          "losses": 2
+        },
+        "research": {
+          "net_pp": 31.25,
+          "net_ci95_pp": [
+            0,
+            62.5
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 13,
+          "ties": 16,
+          "losses": 3
+        },
+        "argument": {
+          "net_pp": 40.625,
+          "net_ci95_pp": [
+            18.75,
+            62.5
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 16,
+          "ties": 13,
+          "losses": 3
+        },
+        "proof": {
+          "net_pp": 6.25,
+          "net_ci95_pp": [
+            -15.625,
+            21.875
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 5,
+          "ties": 24,
+          "losses": 3
+        },
+        "control": {
+          "net_pp": 0.0,
+          "net_ci95_pp": [
+            -18.75,
+            18.75
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 2,
+          "ties": 28,
+          "losses": 2
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "net_pp": 1.25,
+          "net_ci95_pp": [
+            -3.75,
+            6.25
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 6,
+          "ties": 150,
+          "losses": 4
+        },
+        "naturalness": {
+          "net_pp": 4.375,
+          "net_ci95_pp": [
+            0.0,
+            8.75
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 9,
+          "ties": 149,
+          "losses": 2
+        },
+        "progression": {
+          "net_pp": 21.875,
+          "net_ci95_pp": [
+            10.625,
+            35.0
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 44,
+          "ties": 107,
+          "losses": 9
+        },
+        "voice": {
+          "net_pp": 16.25,
+          "net_ci95_pp": [
+            4.375,
+            28.749999999999996
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 39,
+          "ties": 108,
+          "losses": 13
+        },
+        "proof": {
+          "net_pp": 9.375,
+          "net_ci95_pp": [
+            -15.625,
+            37.5
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 6,
+          "ties": 23,
+          "losses": 3
+        }
+      },
+      "material_flags": {
+        "candidate": {
+          "flags": 0,
+          "judgments": 160,
+          "cases": 20,
+          "severity": {
+            "none": 160
+          }
+        },
+        "reference": {
+          "flags": 3,
+          "judgments": 160,
+          "cases": 20,
+          "severity": {
+            "none": 157,
+            "minor": 3
+          }
+        }
+      },
+      "models": {
+        "astra-medium": {
+          "overall": {
+            "net_pp": 30.0,
+            "net_ci95_pp": [
+              12.5,
+              50.0
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 12,
+            "ties": 28,
+            "losses": 0
+          },
+          "nonproof": {
+            "net_pp": 31.25,
+            "net_ci95_pp": [
+              12.5,
+              53.125
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 10,
+            "ties": 22,
+            "losses": 0
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 50.0,
+              "net_ci95_pp": [
+                12.5,
+                87.5
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 4,
+              "ties": 4,
+              "losses": 0
+            },
+            "research": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            },
+            "argument": {
+              "net_pp": 75.0,
+              "net_ci95_pp": [
+                25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 6,
+              "ties": 2,
+              "losses": 0
+            },
+            "proof": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 6,
+              "losses": 0
+            },
+            "control": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 0,
+              "ties": 40,
+              "losses": 0
+            },
+            "naturalness": {
+              "net_pp": 7.5,
+              "net_ci95_pp": [
+                -5.0,
+                22.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 4,
+              "ties": 35,
+              "losses": 1
+            },
+            "progression": {
+              "net_pp": 30.0,
+              "net_ci95_pp": [
+                12.5,
+                47.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 12,
+              "ties": 28,
+              "losses": 0
+            },
+            "voice": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                10.0,
+                42.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 10,
+              "ties": 30,
+              "losses": 0
+            },
+            "proof": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 6,
+              "losses": 0
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            }
+          }
+        },
+        "astra-high": {
+          "overall": {
+            "net_pp": 10.0,
+            "net_ci95_pp": [
+              -12.5,
+              32.5
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 8,
+            "ties": 28,
+            "losses": 4
+          },
+          "nonproof": {
+            "net_pp": 15.625,
+            "net_ci95_pp": [
+              -9.375,
+              40.625
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 8,
+            "ties": 21,
+            "losses": 3
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 6,
+              "losses": 0
+            },
+            "research": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -75.0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 3,
+              "ties": 2,
+              "losses": 3
+            },
+            "argument": {
+              "net_pp": 37.5,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 3,
+              "ties": 5,
+              "losses": 0
+            },
+            "proof": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -37.5,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 7,
+              "losses": 1
+            },
+            "control": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": -2.5,
+              "net_ci95_pp": [
+                -7.5,
+                0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 0,
+              "ties": 39,
+              "losses": 1
+            },
+            "naturalness": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 0,
+              "ties": 40,
+              "losses": 0
+            },
+            "progression": {
+              "net_pp": 12.5,
+              "net_ci95_pp": [
+                -10.0,
+                35.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 9,
+              "ties": 27,
+              "losses": 4
+            },
+            "voice": {
+              "net_pp": 5.0,
+              "net_ci95_pp": [
+                -17.5,
+                27.500000000000004
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 7,
+              "ties": 28,
+              "losses": 5
+            },
+            "proof": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -37.5,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 7,
+              "losses": 1
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            }
+          }
+        },
+        "sol-low": {
+          "overall": {
+            "net_pp": 22.5,
+            "net_ci95_pp": [
+              2.5,
+              45.0
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 11,
+            "ties": 27,
+            "losses": 2
+          },
+          "nonproof": {
+            "net_pp": 28.125,
+            "net_ci95_pp": [
+              3.125,
+              53.125
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 11,
+            "ties": 19,
+            "losses": 2
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": -12.5,
+              "net_ci95_pp": [
+                -37.5,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 7,
+              "losses": 1
+            },
+            "research": {
+              "net_pp": 50.0,
+              "net_ci95_pp": [
+                0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 4,
+              "ties": 4,
+              "losses": 0
+            },
+            "argument": {
+              "net_pp": 50.0,
+              "net_ci95_pp": [
+                0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 5,
+              "ties": 2,
+              "losses": 1
+            },
+            "proof": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            },
+            "control": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 6,
+              "losses": 0
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 7.5,
+              "net_ci95_pp": [
+                0,
+                20.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 3,
+              "ties": 37,
+              "losses": 0
+            },
+            "naturalness": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 0,
+              "ties": 40,
+              "losses": 0
+            },
+            "progression": {
+              "net_pp": 22.5,
+              "net_ci95_pp": [
+                5.0,
+                42.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 10,
+              "ties": 29,
+              "losses": 1
+            },
+            "voice": {
+              "net_pp": 17.5,
+              "net_ci95_pp": [
+                2.5,
+                35.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 9,
+              "ties": 29,
+              "losses": 2
+            },
+            "proof": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 8,
+              "losses": 0
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 1,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 39,
+                "minor": 1
+              }
+            }
+          }
+        },
+        "luna-medium": {
+          "overall": {
+            "net_pp": 20.0,
+            "net_ci95_pp": [
+              -10.0,
+              50.0
+            ],
+            "cases": 20,
+            "judgments": 40,
+            "wins": 15,
+            "ties": 18,
+            "losses": 7
+          },
+          "nonproof": {
+            "net_pp": 21.875,
+            "net_ci95_pp": [
+              -9.375,
+              53.125
+            ],
+            "cases": 16,
+            "judgments": 32,
+            "wins": 12,
+            "ties": 15,
+            "losses": 5
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 37.5,
+              "net_ci95_pp": [
+                -25.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 4,
+              "ties": 3,
+              "losses": 1
+            },
+            "research": {
+              "net_pp": 75.0,
+              "net_ci95_pp": [
+                50.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 6,
+              "ties": 2,
+              "losses": 0
+            },
+            "argument": {
+              "net_pp": 0,
+              "net_ci95_pp": [
+                -75.0,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 2,
+              "ties": 4,
+              "losses": 2
+            },
+            "proof": {
+              "net_pp": 12.5,
+              "net_ci95_pp": [
+                -62.5,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 3,
+              "ties": 3,
+              "losses": 2
+            },
+            "control": {
+              "net_pp": -25.0,
+              "net_ci95_pp": [
+                -75.0,
+                0
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 0,
+              "ties": 6,
+              "losses": 2
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -15.0,
+                15.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 3,
+              "ties": 34,
+              "losses": 3
+            },
+            "naturalness": {
+              "net_pp": 10.0,
+              "net_ci95_pp": [
+                -2.5,
+                22.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 5,
+              "ties": 34,
+              "losses": 1
+            },
+            "progression": {
+              "net_pp": 22.5,
+              "net_ci95_pp": [
+                -5.0,
+                47.5
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 13,
+              "ties": 23,
+              "losses": 4
+            },
+            "voice": {
+              "net_pp": 17.5,
+              "net_ci95_pp": [
+                -12.5,
+                45.0
+              ],
+              "cases": 20,
+              "judgments": 40,
+              "wins": 13,
+              "ties": 21,
+              "losses": 6
+            },
+            "proof": {
+              "net_pp": 25.0,
+              "net_ci95_pp": [
+                -50.0,
+                100
+              ],
+              "cases": 4,
+              "judgments": 8,
+              "wins": 4,
+              "ties": 2,
+              "losses": 2
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "none": 40
+              }
+            },
+            "reference": {
+              "flags": 2,
+              "judgments": 40,
+              "cases": 20,
+              "severity": {
+                "minor": 2,
+                "none": 38
+              }
+            }
+          }
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "overall": {
+            "net_pp": 22.5,
+            "net_ci95_pp": [
+              10.0,
+              36.25
+            ],
+            "cases": 20,
+            "judgments": 80,
+            "wins": 22,
+            "ties": 54,
+            "losses": 4
+          },
+          "nonproof": {
+            "net_pp": 26.5625,
+            "net_ci95_pp": [
+              10.9375,
+              40.625
+            ],
+            "cases": 16,
+            "judgments": 64,
+            "wins": 20,
+            "ties": 41,
+            "losses": 3
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 31.25,
+              "net_ci95_pp": [
+                12.5,
+                50.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 5,
+              "ties": 11,
+              "losses": 0
+            },
+            "research": {
+              "net_pp": 31.25,
+              "net_ci95_pp": [
+                0,
+                62.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 6,
+              "ties": 9,
+              "losses": 1
+            },
+            "argument": {
+              "net_pp": 43.75,
+              "net_ci95_pp": [
+                12.5,
+                75.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 8,
+              "ties": 7,
+              "losses": 1
+            },
+            "proof": {
+              "net_pp": 6.25,
+              "net_ci95_pp": [
+                -12.5,
+                25.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 2,
+              "ties": 13,
+              "losses": 1
+            },
+            "control": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -18.75,
+                18.75
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 1,
+              "ties": 14,
+              "losses": 1
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 1.25,
+              "net_ci95_pp": [
+                -3.75,
+                6.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 3,
+              "ties": 75,
+              "losses": 2
+            },
+            "naturalness": {
+              "net_pp": 6.25,
+              "net_ci95_pp": [
+                0.0,
+                12.5
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 6,
+              "ties": 73,
+              "losses": 1
+            },
+            "progression": {
+              "net_pp": 22.5,
+              "net_ci95_pp": [
+                10.0,
+                36.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 22,
+              "ties": 54,
+              "losses": 4
+            },
+            "voice": {
+              "net_pp": 17.5,
+              "net_ci95_pp": [
+                5.0,
+                32.5
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 19,
+              "ties": 56,
+              "losses": 5
+            },
+            "proof": {
+              "net_pp": 12.5,
+              "net_ci95_pp": [
+                -12.5,
+                37.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 3,
+              "ties": 12,
+              "losses": 1
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 80
+              }
+            },
+            "reference": {
+              "flags": 2,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 78,
+                "minor": 2
+              }
+            }
+          }
+        },
+        "sol-high": {
+          "overall": {
+            "net_pp": 18.75,
+            "net_ci95_pp": [
+              6.25,
+              32.5
+            ],
+            "cases": 20,
+            "judgments": 80,
+            "wins": 24,
+            "ties": 47,
+            "losses": 9
+          },
+          "nonproof": {
+            "net_pp": 21.875,
+            "net_ci95_pp": [
+              6.25,
+              37.5
+            ],
+            "cases": 16,
+            "judgments": 64,
+            "wins": 21,
+            "ties": 36,
+            "losses": 7
+          },
+          "categories": {
+            "ordinary": {
+              "net_pp": 18.75,
+              "net_ci95_pp": [
+                -12.5,
+                56.25
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 5,
+              "ties": 9,
+              "losses": 2
+            },
+            "research": {
+              "net_pp": 31.25,
+              "net_ci95_pp": [
+                0,
+                62.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 7,
+              "ties": 7,
+              "losses": 2
+            },
+            "argument": {
+              "net_pp": 37.5,
+              "net_ci95_pp": [
+                25.0,
+                62.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 8,
+              "ties": 6,
+              "losses": 2
+            },
+            "proof": {
+              "net_pp": 6.25,
+              "net_ci95_pp": [
+                -12.5,
+                25.0
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 3,
+              "ties": 11,
+              "losses": 2
+            },
+            "control": {
+              "net_pp": 0.0,
+              "net_ci95_pp": [
+                -18.75,
+                18.75
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 1,
+              "ties": 14,
+              "losses": 1
+            }
+          },
+          "dimensions": {
+            "meaning": {
+              "net_pp": 1.25,
+              "net_ci95_pp": [
+                -3.75,
+                6.25
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 3,
+              "ties": 75,
+              "losses": 2
+            },
+            "naturalness": {
+              "net_pp": 2.5,
+              "net_ci95_pp": [
+                -2.5,
+                7.5
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 3,
+              "ties": 76,
+              "losses": 1
+            },
+            "progression": {
+              "net_pp": 21.25,
+              "net_ci95_pp": [
+                10.0,
+                33.75
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 22,
+              "ties": 53,
+              "losses": 5
+            },
+            "voice": {
+              "net_pp": 15.0,
+              "net_ci95_pp": [
+                3.75,
+                28.749999999999996
+              ],
+              "cases": 20,
+              "judgments": 80,
+              "wins": 20,
+              "ties": 52,
+              "losses": 8
+            },
+            "proof": {
+              "net_pp": 6.25,
+              "net_ci95_pp": [
+                -18.75,
+                37.5
+              ],
+              "cases": 4,
+              "judgments": 16,
+              "wins": 3,
+              "ties": 11,
+              "losses": 2
+            }
+          },
+          "material_flags": {
+            "candidate": {
+              "flags": 0,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 80
+              }
+            },
+            "reference": {
+              "flags": 1,
+              "judgments": 80,
+              "cases": 20,
+              "severity": {
+                "none": 79,
+                "minor": 1
+              }
+            }
+          }
+        }
+      },
+      "agreement": {
+        "cross_judge": {
+          "pairs": 80,
+          "cases": 20,
+          "same": 68,
+          "opposite": 1
+        },
+        "order": {
+          "pairs": 38,
+          "cases": 15,
+          "same": 28,
+          "opposite": 0
+        },
+        "order_by_judge": {
+          "astra-high": {
+            "pairs": 19,
+            "cases": 15,
+            "same": 14,
+            "opposite": 0
+          },
+          "sol-high": {
+            "pairs": 19,
+            "cases": 15,
+            "same": 14,
+            "opposite": 0
+          }
+        }
+      }
+    }
+  },
+  "agreement": {
+    "cross_judge": {
+      "pairs": 160,
+      "cases": 20,
+      "same": 129,
+      "opposite": 1
+    },
+    "order": {
+      "pairs": 64,
+      "cases": 20,
+      "same": 45,
+      "opposite": 1
+    },
+    "order_by_judge": {
+      "astra-high": {
+        "pairs": 32,
+        "cases": 20,
+        "same": 22,
+        "opposite": 1
+      },
+      "sol-high": {
+        "pairs": 32,
+        "cases": 20,
+        "same": 23,
+        "opposite": 0
+      }
+    }
+  },
+  "usage": {
+    "attempts": 202,
+    "answered": 202,
+    "transport_errors": 0,
+    "interrupted": 0,
+    "invalid_schema": 2,
+    "calls_with_reported_tokens": 202,
+    "reported_tokens": 2341342,
+    "by_stage": {
+      "generation": {
+        "attempts": 80,
+        "answered": 80,
+        "transport_errors": 0,
+        "interrupted": 0,
+        "invalid_schema": 0,
+        "calls_with_reported_tokens": 80,
+        "reported_tokens": 812695
+      },
+      "judge": {
+        "attempts": 122,
+        "answered": 122,
+        "transport_errors": 0,
+        "interrupted": 0,
+        "invalid_schema": 2,
+        "calls_with_reported_tokens": 122,
+        "reported_tokens": 1528647
+      }
+    },
+    "claude_calls": 0,
+    "saved_baselines_reused": 160,
+    "generation_outputs": 80
+  },
+  "limitations": "Development data, not untouched evaluation. Two fallible Codex judges use frozen author-specific context. Audits do not enter performance. CLI token usage omits unavailable reports and is not account usage or a billing estimate."
+}

@@ -1,0 +1,13 @@
+{
+  "candidate": "v8-dev",
+  "selected_on": "development/tune only",
+  "summary_sha256": "d07d3e206adde5b21a36799abea8b39573afde5c5fe314d66323582eea2a8499",
+  "reason": "Argument and nonproof point estimates favor v8 against both references; no candidate material-error flags; proof guidance unchanged and proof performance not worse in aggregate. Actual revisions and judge reasons inspected. Select for one unchanged remaining-development check, not release.",
+  "limitations": [
+    "Only four argument tasks in tuning",
+    "Astra-high nonproof and some already-good controls still trail no skill",
+    "Same two fallible Codex judges; development selection is not external validation"
+  ],
+  "second_candidate_tested": false,
+  "fresh_holdout": "reserved sealed and unrun"
+}

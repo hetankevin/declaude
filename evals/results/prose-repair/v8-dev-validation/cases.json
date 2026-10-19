@@ -1,0 +1,860 @@
+[
+  {
+    "id": "large-dev-a-02",
+    "category": "ordinary",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains three school days, the same partner, and the two specified daily observation times."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves marking the visible outline and time, using dotted lines for fuzzy portions, and comparing observations before correcting disagreements."
+      },
+      {
+        "group": "fidelity",
+        "text": "Treats no visible patch as a recorded observation but not a position measurement, without importing yesterday's outline."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the final supported-pattern sentence and remaining question, including permission to report insufficient observations."
+      },
+      {
+        "group": "style",
+        "text": "Uses the sample's concrete, reflective classroom voice without importing its map-making activity or copying its sentences."
+      },
+      {
+        "group": "argument",
+        "text": "Connects repeated observations to what can be inferred while preserving the limits created by unmeasured cloud conditions."
+      },
+      {
+        "group": "style",
+        "text": "Makes the activity feel coherent for pupils rather than preserving a chain of defensive explanations."
+      }
+    ],
+    "quality_dimensions": [
+      "voice fidelity",
+      "instructional clarity",
+      "epistemic precision"
+    ],
+    "split": "development",
+    "source_words": 321,
+    "task": "Rewrite the draft introduction for a classroom observation booklet in the voice of the short sample. The sample establishes tone only. The revised introduction should help pupils understand the activity and handle inconclusive observations. Preserve the activity's requirements and uncertainty.\n\nSynthetic voice sample (tone only):\nA map is a choice about what to notice. Our first map marked every door and forgot the stairs. It was a useful map for counting doors. It was a poor map for getting upstairs. Today we will decide what our map needs to help someone do.\n\nSource to revise:\nIn this booklet we will be watching where a patch of sunlight falls on the classroom floor. The activity takes place over three school days. You will work with the same partner each day and make observations at the beginning of the morning lesson and immediately after lunch. The point of doing this more than once is that one drawing does not show whether a position changes. What the drawings show is the position of the light that can be seen, which should not be confused with an answer to every question about why it is there.\n\nMark the outline of the light on the printed floor plan and write the time beside it. If the outline is fuzzy, use a dotted line for that part instead of deciding that it must have a sharp edge. A pencil and ruler are provided, but the ruler does not make a fuzzy edge less fuzzy. You may notice that two groups have marked the edge differently. They should compare what they noticed before deciding whether either drawing needs to change.\n\nSome days the light may not be visible. Write “no patch visible” in the space for that observation. Leave the map itself unmarked for that observation, rather than drawing where the patch was yesterday. This counts as an observation. It does not count as a measurement of the patch's position. Curtains will stay in their usual position, but the class will not control the clouds or record their thickness.\n\nAt the end, compare all six observation spaces with your partner. Write one sentence about a pattern you can support and one question that remains. If too few patches were visible to establish a pattern, say so and explain which observations are missing. You are not required to discover a particular pattern. A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-04",
+    "category": "ordinary",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the option's exact name, Reading settings location, desktop-only availability, and unchanged default behavior."
+      },
+      {
+        "group": "fidelity",
+        "text": "Explains that moving keyboard focus pauses app speech, returning focus does not resume it, and Read Description restarts from the beginning."
+      },
+      {
+        "group": "fidelity",
+        "text": "Distinguishes the application's descriptions from screen-reader speech and video audio without promising that all speech stops."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains existing disabled automatic-description settings and applicability to manually requested descriptions."
+      },
+      {
+        "group": "style",
+        "text": "Explains the potentially misleading pause terminology in the flow of the announcement without renaming the interface option."
+      },
+      {
+        "group": "argument",
+        "text": "Connects the settings distinction to the use case so the manually requested-description case does not appear contradictory."
+      },
+      {
+        "group": "style",
+        "text": "Keeps reporting guidance usable when users cannot identify the speech source and does not request image contents."
+      }
+    ],
+    "quality_dimensions": [
+      "interface fidelity",
+      "whole-passage coherence",
+      "accessible explanation"
+    ],
+    "split": "development",
+    "source_words": 334,
+    "task": "Revise this release announcement for users of an accessibility application. Make the relationship between the new option, existing settings, and current limitations easy to follow. Keep it suitable for a general user newsletter, and preserve the exact scope of the update.\n\nSource to revise:\nThis release adds an option called Pause on Focus. It concerns spoken descriptions of images when you navigate with a keyboard, and the option appears in the Reading settings. Previously a description that had begun speaking would continue when keyboard focus moved to another control. That behavior remains the default. The update supplies a choice for people who want the description to stop when they move on.\n\nWith Pause on Focus enabled, moving keyboard focus to a different control pauses the current image description. Returning focus to the image does not resume it automatically. Use the existing Read Description command to hear it again from the beginning. The name of the option uses “pause” because speech stops without deleting the saved description. It does not mean playback can resume at the word where it stopped. The descriptions themselves are not changed by this setting.\n\nThe option applies to descriptions spoken by the application. Speech produced by a separate screen reader is controlled by that reader, even when it is speaking about the same image. Turning on this option will therefore not necessarily stop all speech when focus moves. It also has no effect on audio inside a video, which remains controlled by the video player. These distinctions may be important when two sources of speech are active.\n\nPeople who already turned off automatic image descriptions will still have them turned off after updating. Pause on Focus does not turn automatic descriptions on. A manually requested description can be paused by the new option as well, so the option can be useful with automatic descriptions disabled. It is available on the desktop application only. The mobile version keeps its existing behavior.\n\nIf a description continues after focus has visibly moved, please report whether it came from the application or a separate screen reader if you can tell. You do not need to identify the source before reporting the issue. Including the action that moved focus is more useful than sending the contents of the image.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-06",
+    "category": "research",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the six-drain, two-street, eight-storm design, nonrandom lower-street cover allocation, and all 48 available observations."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the lower-street means of 18 and 10 minutes and upper-street means of 9 and 7 minutes with the correct periods and units."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the painted-line duration definition distinct from runoff absence, drainage capacity, peak depth, and property damage."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains both lower district-gauge rainfall in the later period and simultaneous leaf clearing, including the missing local intensity and initial debris measurements."
+      },
+      {
+        "group": "argument",
+        "text": "Does not present the greater lower-street reduction as an identified causal cover effect or assume common cleaning eliminates confounding."
+      },
+      {
+        "group": "argument",
+        "text": "Presents cover rotation and additional measurements as unrun follow-up that addresses particular ambiguities without solving all storm comparability issues."
+      },
+      {
+        "group": "style",
+        "text": "Orders observed results, competing explanations, and next-study implications so the report has a clear thread rather than successive reversals."
+      },
+      {
+        "group": "argument",
+        "text": "Keeps feasibility of scoring the available recordings separate from untested agreement between scorers."
+      }
+    ],
+    "quality_dimensions": [
+      "causal restraint",
+      "measurement distinctions",
+      "narrative organization"
+    ],
+    "split": "development",
+    "source_words": 426,
+    "task": "Rewrite this draft findings section for a public infrastructure pilot report. The report needs a coherent account of what was observed and what remains unresolved, using only the hypothetical facts below. Retain distinctions between measurement, explanation, and proposed follow-up. Do not supply a recommendation to expand the pilot.\n\nSource to revise (hypothetical evidence):\nThe pilot was set up to examine whether a different grate cover might reduce the length of time water remained above the pavement after rain. We observed six drains on two streets during four storms before a cover change and four storms afterward. Covers were changed at the three drains on the lower street. The three drains on the upper street retained their covers. The lower street was chosen because crews had received more complaints there, so cover allocation was not random.\n\nFor each drain during each storm, a fixed camera recorded minutes with water above a painted reference line. A duration of zero means no visible water above that line, not that the drain received no runoff. All 48 drain-storm observations were available. The mean recorded duration across the twelve observations on the lower street fell from 18 minutes before the change to 10 minutes afterward. On the upper street it fell from 9 minutes to 7 minutes. The reduction on the changed street was therefore greater, which may be useful when deciding what to study next, although the comparison does not by itself identify a cover effect.\n\nThe four later storms delivered less rain on average at the district gauge than the earlier storms. No gauge was installed on either street, and the report has no within-storm intensity measurements. In addition, crews cleared accumulated leaves from all six drains on the day the covers were changed. The simultaneous cleaning does not automatically explain why the lower street improved more, because the initial quantity of leaves was not recorded. It also cannot be dismissed as irrelevant merely because both streets were cleaned.\n\nThe camera records show shorter durations above the line at both sets of drains in the later period. This should be distinguished from increased drainage capacity, which was not directly measured, and from fewer flooded properties, which was not measured at all. There were no property-damage observations in the pilot. It would be possible for a change in peak water depth to matter even if recorded duration did not change, but peak depth was not extracted from the images.\n\nA later study could rotate covers among comparable drains and record local rainfall intensity and debris before cleaning. That would address some of the present ambiguities, although rotation alone would not make storms identical. The existing recordings remain useful for describing these eight storms and for testing whether the camera-based duration measure is practical. Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-08",
+    "category": "research",
+    "difficulty": "ordinary",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the layout-only intended difference, four classes, teacher-selected assignment, and unrecorded teacher assistance."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps returned and absent pupil counts distinct and reports scoring only for returned worksheets."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains all score counts, the two scoring criteria, and the fact that the outcome is one explanation question."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves blinded layout assessment and the ten-answer second-scoring check, including resolution before final totals."
+      },
+      {
+        "group": "argument",
+        "text": "Describes the observed association without attributing the score difference causally to layout or asserting baseline comparability."
+      },
+      {
+        "group": "style",
+        "text": "Explains the comparison in teacher-readable prose without removing the distinctions needed to interpret it."
+      },
+      {
+        "group": "argument",
+        "text": "Does not infer pupil preference or broad understanding from the scored responses."
+      }
+    ],
+    "quality_dimensions": [
+      "audience fit",
+      "numerical fidelity",
+      "inference scope"
+    ],
+    "split": "development",
+    "source_words": 367,
+    "task": "Edit this classroom materials evaluation for a school research bulletin. Make its central comparison and limitations readable to teachers while retaining the hypothetical evidence exactly. Keep it a report of the completed evaluation, not a proposal or an advocacy piece.\n\nSource to revise (hypothetical evidence):\nTwo versions of a worksheet asked pupils to explain why the same amount of water looks different in a tall vessel and a wide vessel. Version A included a diagram beside each question. Version B placed the same diagrams together on a reference page. The wording, diagrams, and order of questions were otherwise identical. Four classes used the materials during one lesson. Two classes received A and two received B. Teachers chose the version for their classes before seeing the pupil responses.\n\nThere were 52 returned worksheets for A and 49 for B. Six additional pupils assigned A and five assigned B were absent. The analysis included only returned worksheets. Teachers used the same written instructions, but they were free to answer questions during the lesson. We did not record those exchanges. Neither pupil assignment nor teacher assistance can therefore be treated as controlled by the worksheet comparison.\n\nA scorer who could not see the worksheet layout assessed transcribed answers to the final explanation question. The scoring rule awarded one point for stating that the amount was unchanged and one for explaining that vessel shape changed the water level. Both points were awarded on 31 of 52 A worksheets and 27 of 49 B worksheets. One point was awarded on 15 A worksheets and 16 B worksheets. The remaining six worksheets in each group received zero. These are response scores from a single question, rather than a measure of pupils' general understanding of volume.\n\nTen transcribed answers were scored again by a second scorer. The scorers agreed on nine, and discussion resolved the tenth before the final totals above were compiled. That small check supports describing the procedure, but it is not a complete reliability study. We did not score an earlier baseline task, so the two groups' starting knowledge is unknown.\n\nThe side-by-side layout was associated with a somewhat larger share of fully credited answers in these classes. The evaluation cannot separate layout from class differences or classroom assistance. It also does not show which layout pupils preferred, because no preference question was asked. The completed work provides a concrete comparison of these returned answers and identifies what a more controlled evaluation would need to record.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-10",
+    "category": "argument",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves conditional support for signs, including a named responsible team, monthly sensor checks, and a manual closure procedure."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the installation estimates of 18,000 and 140,000 separate from annual maintenance and from unmeasured harm reduction."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains sensor and power failure, the permanent notice, and the fact that a dark electronic sign does not establish a clear road."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves unallocated staff time and the requirement for explicit reporting on the separate pipe project."
+      },
+      {
+        "group": "argument",
+        "text": "Supports a warning intervention without treating it as drainage repair or as a cheaper intervention with demonstrated equal outcomes."
+      },
+      {
+        "group": "argument",
+        "text": "Takes both residual unsafe entry and possible loss of pressure for drainage work seriously without claiming the proposed conditions eliminate either risk."
+      },
+      {
+        "group": "style",
+        "text": "Places the recommendation and its conditions where readers can assess them, integrating repeated distinctions into the argument."
+      }
+    ],
+    "quality_dimensions": [
+      "conditional recommendation",
+      "means-end reasoning",
+      "public-facing clarity"
+    ],
+    "split": "development",
+    "source_words": 377,
+    "task": "Edit this public infrastructure briefing into a clear recommendation with an intelligible rationale. Preserve the recommendation's conditions and the distinction between public warning and physical protection. Do not invent cost-benefit estimates, risk frequencies, or funding commitments.\n\nSource to revise:\nThe underpass sometimes fills with water before a maintenance crew can close the road. We should install the proposed automatic warning signs, provided the installation includes the maintenance and manual-closure arrangements described below. This is not an argument that a sign will keep water out. That point may seem obvious, but the proposal has sometimes been discussed as if installing signs completes the flood work. It would complete a warning project. The drainage project would still be unresolved.\n\nThe estimate for installing two signs is 18,000 units of local currency. The estimate for replacing the drainage pipe is 140,000. Neither estimate includes annual maintenance. The difference makes signs a smaller initial purchase, not a measured substitute for pipe replacement. We have no agreed estimate of how much either option would reduce injuries or vehicle damage. The sign proposal should therefore be assessed as a response to delayed warnings rather than as the cheaper way of achieving an identical outcome.\n\nThe signs would activate when a water-level sensor crosses a set threshold. The sensor can fail, and the signs need power. A dark sign cannot safely mean that the road is clear, because it may mean the system is unavailable. The proposal includes a permanent notice telling drivers that water may be present even when the electronic sign is off. This notice does not solve the problem of drivers overlooking or disregarding warnings.\n\nI support purchasing the signs only if the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure when the system is unavailable. Staff time for those checks has not yet been allocated. It would be misleading to call the purchase ready for approval while leaving that condition implicit. It is also misleading to reject warning equipment merely because it cannot prevent every unsafe entry.\n\nPipe replacement remains a separate option requiring design work. Buying signs should not be described as approval or rejection of that option. There is a reasonable concern that a visible new device will reduce pressure to address the drainage itself. We can answer part of that concern by requiring the next infrastructure report to state the pipe project's status explicitly. A reporting requirement cannot guarantee construction, and I am not claiming that it can.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-12",
+    "category": "argument",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the existing exclusion rule: controller failures are excluded and unusual completed results are retained absent a separately recorded equipment or handling fault."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the proposed table's fields and raw readings in the underlying record under the existing review process."
+      },
+      {
+        "group": "fidelity",
+        "text": "Includes runs without usable readings and reports attempted and retained counts beside the mean."
+      },
+      {
+        "group": "fidelity",
+        "text": "Allows a shared reason for a group while requiring each affected run to appear."
+      },
+      {
+        "group": "argument",
+        "text": "Explains how the proposal exposes application of the rule without changing which observations enter the mean."
+      },
+      {
+        "group": "argument",
+        "text": "Acknowledges possible reader misuse and reporting burden without claiming transparency guarantees honest or correct exclusion decisions."
+      },
+      {
+        "group": "style",
+        "text": "Resolves references among runs, readings, and decisions so the proposal's accounting logic remains clear throughout."
+      }
+    ],
+    "quality_dimensions": [
+      "policy precision",
+      "argument structure",
+      "technical distinctions"
+    ],
+    "split": "development",
+    "source_words": 395,
+    "task": "Revise this laboratory policy argument for a methods meeting. Clarify its reasoning and make the proposed policy distinguishable from its supporting examples. Keep the unresolved tradeoff visible. The policy is proposed, not already adopted.\n\nSource to revise:\nThe report template should show excluded runs in a separate table with the reason each was excluded. At present the final summary lists only the runs used to calculate the reported mean. That is convenient for reading the mean, but it leaves a reader unable to tell whether a batch had no exclusions or whether the exclusions simply disappeared from the summary. I am not proposing that every excluded reading should enter the mean.\n\nA run stopped because the temperature controller failed is different from a completed run with a result that looks unusual. In the first case, the stated measurement conditions were not met. In the second, an unusual result alone does not show that the conditions failed. Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion. The proposed table would expose how that rule was applied. It would not change the rule.\n\nThere is a concern that showing failed runs will invite readers to calculate a new mean from everything in sight. It might. We should therefore label the table as a record of exclusions and omit no reason just because it sounds repetitive. However, adding every raw reading to that table is unnecessary for this purpose and could make it harder to see the decisions. I propose listing run identifier, completion status, reason, and whether a usable reading exists. Raw readings would remain in the underlying record, available through the existing review process.\n\nThis also matters when a run has no usable reading at all. A table containing only excluded numeric values would miss those failures, which could make a difficult batch look cleaner than it was. On the other hand, counting all stopped runs as if they were measured outcomes would create a different distortion. The summary should report the number attempted and the number retained beside the mean, with the exclusions table accounting for the difference.\n\nReviewers will still have to judge whether the documented reasons are convincing. A fuller table cannot guarantee honest recording or repair an ambiguous rule. It can make the decisions available for inspection. The additional reporting takes time, especially when the same fault affects several runs. We could permit a shared explanation for that group, but each affected run should still appear. That compromise reduces repeated prose while keeping the batch's history countable.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-14",
+    "category": "proof",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the finite probability space, partition, cell means, arbitrary real constant c, and target squared-error identity."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the convention mu_j=0 for zero-probability cells and the almost-sure rather than pointwise equality condition."
+      },
+      {
+        "group": "proof",
+        "text": "Replaces the independence shortcut with a valid cellwise calculation of the cross term."
+      },
+      {
+        "group": "proof",
+        "text": "Uses constancy of M-c on each positive-probability cell together with the weighted residual sum there being zero."
+      },
+      {
+        "group": "proof",
+        "text": "Accounts for zero-probability cells without dividing by their probabilities or requiring their outcomes to satisfy M=c."
+      },
+      {
+        "group": "proof",
+        "text": "Shows how the pointwise expansion and vanishing cross term imply the identity and how nonnegativity gives the inequality and its exact equality case."
+      },
+      {
+        "group": "style",
+        "text": "Integrates the repair into a readable proof rather than leaving a warning about the invalid step in place of the missing reasoning."
+      }
+    ],
+    "quality_dimensions": [
+      "bounded proof repair",
+      "conditional expectation reasoning",
+      "equality-case precision"
+    ],
+    "split": "development",
+    "source_words": 207,
+    "task": "Repair and rewrite this proof for a laboratory statistics teaching note. The target identity is correct. The source explicitly identifies one invalid independence shortcut; replace that step using only the given finite-space hypotheses. Keep the conditional-mean method and account for zero-probability cells. Do not add an independence assumption.\n\nSource to revise:\nClaim. On a finite probability space, let X be a real-valued reading and let G_1,...,G_m be a partition into batch cells. For p_j = P(G_j) > 0 define mu_j = sum_(omega in G_j) P({omega})X(omega)/p_j. Set mu_j = 0 when p_j = 0. Let M equal mu_j on G_j. Then for every real constant c,\nE[(X-c)^2] = E[(X-M)^2] + E[(M-c)^2].\nConsequently E[(X-c)^2] >= E[(X-M)^2], with equality exactly when M=c with probability one.\n\nDraft proof. All expectations are finite sums. On a positive-probability cell, the definition gives E[X | G_j] = mu_j, and hence the residual has conditional mean zero. The draft now says that X-M is independent of M because its conditional mean is zero. This independence assertion is a gap: conditional mean zero does not imply independence. The resulting conclusion that E[(X-M)(M-c)] is zero is nevertheless correct and needs a different justification.\n\nWith that cross term justified, expand pointwise:\nX-c = (X-M)+(M-c),\n(X-c)^2 = (X-M)^2 + 2(X-M)(M-c) + (M-c)^2.\nTake expectations to obtain the identity. The last term is nonnegative. It equals zero exactly when M=c outside a set of probability zero, so this gives the equality condition. Cells of probability zero contribute nothing to expectations, but the repaired proof should show where that observation is used.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-16",
+    "category": "proof",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves symmetry, idempotence, the Euclidean squared norm, the definition of S, and minimization over S for arbitrary x."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the exact decomposition and unique minimizer Px without adding invertibility, full rank, or extra layout constraints."
+      },
+      {
+        "group": "proof",
+        "text": "Shows why P fixes each vector in its range and annihilates x-Px."
+      },
+      {
+        "group": "proof",
+        "text": "Explains exactly where symmetry is used to move P between the two factors of the cross term."
+      },
+      {
+        "group": "proof",
+        "text": "Derives the norm identity from the vector decomposition and vanishing cross term rather than treating it as an assumption."
+      },
+      {
+        "group": "proof",
+        "text": "Uses the squared norm's nonnegativity and zero condition to prove both attainment and uniqueness, including P=0 and P=I."
+      },
+      {
+        "group": "style",
+        "text": "Connects the algebraic steps to the minimization goal without replacing the proof with unsupported geometric intuition."
+      }
+    ],
+    "quality_dimensions": [
+      "linear algebra exposition",
+      "hypothesis tracking",
+      "optimization reasoning"
+    ],
+    "split": "development",
+    "source_words": 188,
+    "task": "Rewrite this linear algebra proof for documentation of an accessibility layout tool. Make the role of each hypothesis and each equality clear to a reader familiar with matrix multiplication and Euclidean norms. Keep the theorem's full scope, including a zero-dimensional permitted subspace. Do not introduce an inverse or a rank assumption.\n\nSource to revise:\nClaim. Let P be a real d by d matrix with P^2=P and P^T=P, where d>=1. Let S={Pz:z in R^d}, the set of permitted layout displacements. For every x in R^d, the unique y in S minimizing ||x-y||^2 is Px. More precisely, for all y in S,\n||x-y||^2 = ||x-Px||^2 + ||Px-y||^2.\nHere ||v||^2=v^T v.\n\nProof. We have P(Px)=Px, and if y=Pz then Py=P^2z=Pz=y. Thus Px and y belong to S and P(Px-y)=Px-y. Also P(x-Px)=Px-P^2x=0. Consequently\n(x-Px)^T(Px-y)\n= (x-Px)^T P(Px-y)\n= (P(x-Px))^T(Px-y)\n= 0,\nwhere the middle equality uses symmetry. Now x-y=(x-Px)+(Px-y), so expansion of its squared norm gives the displayed identity after the cross term vanishes.\n\nThe first term on the right does not depend on y and the second is nonnegative, so y=Px attains the minimum. If any y in S attains that same value, then ||Px-y||^2=0, giving y=Px and uniqueness. When P=0, S consists only of zero and the identity still holds. When P is the identity matrix, the residual is zero. No invertibility of P has been used, and the conclusion concerns the squared distance to this fixed S, not every possible layout constraint.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-18",
+    "category": "control",
+    "difficulty": "ordinary",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Updates every reference to the software feature to focus lock, including the shortened reference to the latch preventing deliberate focus movement."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the ordinary physical uses of latch in the hardware example."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves every behavioral claim about pointer movement, closure, sentinels, programmatic movement, return focus, and fallback targets."
+      },
+      {
+        "group": "style",
+        "text": "Restricts edits to the requested terminology and any case preservation necessary for that substitution."
+      },
+      {
+        "group": "style",
+        "text": "Retains legitimate terms such as sentinel and security boundary and does not simplify the documentation's technical register."
+      },
+      {
+        "group": "argument",
+        "text": "Preserves the distinction between predictable keyboard sequence and independently required label, reading-order, and announcement checks."
+      }
+    ],
+    "quality_dimensions": [
+      "scope control",
+      "referent-sensitive substitution",
+      "technical fidelity"
+    ],
+    "split": "development",
+    "source_words": 243,
+    "task": "Make one terminology update in the following accessibility documentation: the feature formerly named 'focus latch' is now named 'focus lock'. Update references to that feature consistently, preserving sentence case. The ordinary verb 'latch' in the physical-switch example is not a feature name. Otherwise return the text unchanged.\n\nSource to revise:\nFocus latch keeps keyboard focus inside the current dialog until the dialog closes. It is useful when controls behind the dialog remain visible but should not receive keyboard input. Focus latch does not freeze the pointer, and it does not prevent the user from closing the dialog with the documented close command.\n\nThe implementation uses a sentinel at each end of the dialog's tab sequence. When focus reaches a sentinel, the handler moves it to the appropriate control at the opposite end. This is a focus-management mechanism, not a security boundary. Code running in the page can still move focus deliberately, so the application must handle those changes rather than assume the latch prevents them.\n\nTo test focus latch, open the dialog, traverse its controls in both directions, and close it while focus is on the last control. Focus should return to the control that opened the dialog. If that control has been removed, the application uses its documented fallback target. The fallback is part of the application's behavior and is not chosen by focus latch itself.\n\nA separate hardware example describes a switch whose spring contacts latch when pressed. That use of latch refers to the physical mechanism. The example does not demonstrate the software feature and should not be used as a test of it.\n\nFocus latch can help maintain a predictable keyboard sequence. It does not establish that labels, reading order, or announcements are correct; those require their own checks.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-a-20",
+    "category": "control",
+    "difficulty": "ordinary",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the bridge on the wooden blocks and the tray underneath as the catcher, without changing the support structure."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves sketches before and after one counter, one-at-a-time loading at the marked spot, and waiting for movement to stop."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the prohibition on rebuilding during the first test and the instruction to preserve the initial sketches."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves counting the load immediately before collapse and the exact meaning of held twelve with collapse unobserved."
+      },
+      {
+        "group": "style",
+        "text": "Clarifies ambiguous material references so readers know which object catches counters and which object might collapse."
+      },
+      {
+        "group": "style",
+        "text": "Keeps edits local, preserving the informal voice and sequence instead of adding a new lesson structure."
+      },
+      {
+        "group": "argument",
+        "text": "Preserves the legitimate contrast between surviving a twelve-counter test and having a known exact capacity of twelve."
+      }
+    ],
+    "quality_dimensions": [
+      "local reference repair",
+      "scope restraint",
+      "instruction fidelity"
+    ],
+    "split": "development",
+    "source_words": 267,
+    "task": "The teacher wants this handout's references to materials clarified, especially where 'it' or 'they' could name more than one object. Make local clarity edits only. Keep the activity, sequence, intended contrast, and informal voice. Do not redesign the lesson or add an assessment rubric.\n\nSource to revise:\nYou will need the paper bridge, the tray, and the bag of counters from your group's box. Put the tray in the middle of the table and place the bridge across it. The bridge should rest on the two wooden blocks, not on the tray's rim. It is there to catch counters if they fall, so check that it sits under the middle of the bridge.\n\nBefore adding any counters, sketch the bridge from the side. Mark where it touches the blocks. Then put one counter in the centre and sketch it again. Your second sketch should show the bridge, including any bend you can see, rather than just the new counter. If you cannot see a bend, say so beside the sketch.\n\nAdd counters one at a time, placing each on the same marked spot. After each addition, wait until the bridge stops moving before deciding whether to add another. They should stay in the tray if it collapses. Do not rebuild the bridge during this first test, even if you have a promising idea about making it stronger.\n\nWhen the test ends, count the counters that were on the bridge immediately before it collapsed. If you stop because you have used all twelve counters and the bridge is still standing, record “held twelve; collapse not observed.” That is different from saying it can hold exactly twelve.\n\nNow discuss one change you would like to test next time. Keep your first sketches. They record what this bridge did before the change, which will be useful when your next bridge behaves differently from the one you imagined.",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-02",
+    "split": "development",
+    "category": "ordinary",
+    "task": "Edit this invitation to a neighborhood travel survey for clarity and trust. Keep it in the survey team's voice and make it suitable for a printed invitation. Preserve the invitation's promises and limits; do not add assurances the source does not make.\n\nSOURCE:\nWe are asking households in the selected blocks to tell us about one ordinary day's travel, including days on which nobody went anywhere. The survey is about trips, but a day with no trips is useful to us as well. We have heard from some households that they assumed they were not the people we meant because they mostly stayed home. They are among the households we mean.\n\nThe enclosed card gives your household a date. Please describe that date even if it was unusual for you, because ordinary here means a day from everyday life rather than a day you choose to represent it. If you cannot remember a trip's departure time, an estimate is welcome. There is a box for marking estimates. If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.\n\nOne adult may complete the form for the household, after checking with other members where possible. We ask for the number of household members and their age bands, but not their names. The invitation has a code so that we can stop reminders when a form arrives. The team receiving completed forms can see that code. The address list linking codes to homes will be deleted after reminders finish, which is scheduled for the end of the following month. Until then, the responses are not anonymous.\n\nReturning a form is voluntary. Skipping a question is also allowed, and returning an incomplete form will stop reminders just as a complete form will. We cannot remove a response after the address list has been deleted because we will no longer be able to link a household's request to its form. Results will be published for groups of blocks, not individual households. We hope you will help, including if the day's whole travel story is that you stayed put.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the assigned date, inclusion of zero-trip days and unusual days, and distinction between estimating a departure time and inventing an uncertain trip."
+      },
+      {
+        "group": "fidelity",
+        "text": "Accurately explains the code/address linkage, scheduled deletion, lack of anonymity before deletion, and inability to identify a response for removal afterward."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves voluntary participation, permission to skip questions, and cessation of reminders after either complete or incomplete returns."
+      },
+      {
+        "group": "style",
+        "text": "Resolves the confusing use of 'ordinary day' without implying respondents should select a representative day."
+      },
+      {
+        "group": "argument",
+        "text": "Presents privacy information coherently enough that a reader can understand both the protection and its limit."
+      },
+      {
+        "group": "style",
+        "text": "Retains a welcoming invitation, including its attention to people who stay home, without pressuring participation or becoming a legalistic policy."
+      }
+    ],
+    "quality_dimensions": [
+      "privacy fidelity",
+      "audience clarity",
+      "voice",
+      "logical sequencing"
+    ],
+    "source_words": 309,
+    "difficulty": "hard",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-04",
+    "split": "development",
+    "category": "ordinary",
+    "task": "Polish this museum access note for publication beside the exhibit booking information. Improve the flow while preserving its considerate tone and all visitor choices. A modest edit is appropriate if the prose already works.\n\nSOURCE:\nThe listening gallery offers two ways to hear the recorded accounts. You can use the fixed headphones beside each case, or borrow a receiver at the welcome desk and listen through the room's induction loop. The receiver is free, and no booking is needed. We have six receivers, so one may not be available immediately.\n\nEvery recording also has a printed transcript in the drawer beneath its case. The transcripts include descriptions of sounds that matter to the account, such as a bell or a pause interrupted by machinery. They do not describe every background sound. Large-print copies are available at the welcome desk and may be taken into the gallery, but please return them before leaving.\n\nAt half past each hour, the room plays a three-minute sound sequence through its speakers. A light above the entrance comes on one minute before it begins. Visitors who would rather avoid the sequence can leave through either doorway and return afterward. The recordings at the cases pause during the sequence, then resume from the point at which they stopped.\n\nOn Wednesday mornings, from opening until noon, the speaker sequence is switched off. The case recordings and induction loop remain available. These mornings are quieter, but we cannot promise silence: people still talk, doors open, and school groups sometimes visit.\n\nYou are welcome to ask a gallery host for help with the equipment or for a seat. Hosts can explain the available options, though they cannot reserve a receiver or keep the room quiet for an individual visit. If you prefer to read before coming, the same transcripts can be requested from the visitor team.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the two listening options, free unbooked receivers, six-device limit, and possible wait."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains transcript locations and formats, the selective description of relevant sounds, return of large-print copies, and advance availability through the visitor team."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the three-minute sequence at half past each hour, one-minute light warning, both exit options, and pause-and-resume behavior of case recordings."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves Wednesday morning's precise exception and the distinction between a quieter room and guaranteed silence."
+      },
+      {
+        "group": "style",
+        "text": "Keeps a considerate, direct invitation to choose among access options rather than treating visitor preferences as problems."
+      },
+      {
+        "group": "style",
+        "text": "Improves only where useful and does not replace clear existing explanations merely to make the revision appear substantial."
+      }
+    ],
+    "quality_dimensions": [
+      "access-information fidelity",
+      "tone preservation",
+      "flow",
+      "editorial restraint"
+    ],
+    "source_words": 272,
+    "difficulty": "ordinary",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-06",
+    "split": "development",
+    "category": "research",
+    "task": "Rewrite this survey-methods passage into a coherent account of what the follow-up changes and what remains unknown. Use only the hypothetical study details provided. The intended readers understand percentages but do not specialize in missing-data methods. Do not supply a new statistical model or external references.\n\nSOURCE:\nAn early return rate can look like an answer to a question that it has not answered. In our survey of library use, 600 households were invited and 360 returned the initial questionnaire. Among those 360, 252 reported using a library in the previous month. That is 70 percent of initial respondents, and it was the figure circulated in the preliminary note. The note described respondents, although in subsequent discussion the figure was sometimes treated as a description of invited households.\n\nWe then approached the 240 initial nonrespondents by telephone. The follow-up budget covered 90 completed interviews. Interviewers worked through contact attempts and stopped once 90 interviews were complete. The resulting group was not a simple random sample of the 240: reaching a household and obtaining agreement both determined who entered it. Forty-two of these 90 households reported library use in the previous month, approximately 46.7 percent. We used the same question and reference month in the two modes, but did not experimentally assign mode.\n\nCombining the completed questionnaires and interviews gives 294 reports of library use among 450 responding households, or approximately 65.3 percent. The change from 70 to 65.3 percent is a change in the observed respondent pool. It is evidence that the initial respondents and the reached follow-up respondents differed in their reports. It cannot by itself tell us the prevalence among all 600 invitees, since 150 households still supplied no response. Nor does it isolate a telephone-mode effect from a difference in the people reached.\n\nWe considered calling the follow-up an adjustment for nonresponse, since it reaches people absent from the first calculation. In the descriptive sense it broadens the observed group. In the statistical sense, however, a claim that the remaining nonresponse has been corrected would require assumptions not evaluated here. No weights or imputed responses were used.\n\nThe report should therefore retain both stages rather than replacing the first percentage with a supposedly final population estimate. The follow-up is useful precisely because it shows how much the descriptive result moved when another group answered. We do not know whether the remaining households resemble either responding group. An account of that uncertainty should accompany the combined figure without obscuring the concrete information the follow-up added.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains the 600 invited, 360 initial responses with 252 users, 90 follow-up responses with 42 users, and 150 remaining nonrespondents."
+      },
+      {
+        "group": "fidelity",
+        "text": "Associates 70 percent, approximately 46.7 percent, and approximately 65.3 percent with their correct respondent groups and denominators."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the stopping rule, nonrandom realized follow-up group, same question/reference month, and absence of weights or imputation."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why the expanded respondent pool adds useful information without establishing prevalence among all invitees."
+      },
+      {
+        "group": "argument",
+        "text": "Does not attribute the difference solely to mode or respondent composition, since mode was not randomized."
+      },
+      {
+        "group": "style",
+        "text": "Connects the study stages and the meaning of adjustment in readable prose rather than surrounding each number with repetitive warnings."
+      }
+    ],
+    "quality_dimensions": [
+      "denominator fidelity",
+      "missing-data reasoning",
+      "interpretive calibration",
+      "cohesion"
+    ],
+    "source_words": 370,
+    "difficulty": "hard",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-08",
+    "split": "development",
+    "category": "research",
+    "task": "Revise the SOURCE passage for an archive methods report, matching the plain, reflective voice of the short synthetic STYLE SAMPLE. Treat the sample only as a voice reference, not as evidence. Use only the supplied hypothetical findings and do not add citations.\n\nSTYLE SAMPLE:\nWe started with the labels because that was where the reader started. A tidy label could still lead to the wrong box. Before making the catalogue more detailed, we needed to know which mistakes the extra detail might help someone catch.\n\nSOURCE:\nOur transcription trial began with a question about completeness that turned out to be a question about what we meant by completeness. The index has a field for a date, and filling that field is easy to count. A date in the field is not necessarily a date supported by the item. Because an empty field can result from an illegible date, an absent date, or an oversight, field completion alone mixes several kinds of work.\n\nWe selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index. Two staff members transcribed each card independently. They could enter a year, mark the date as absent, or mark it as unreadable. The trial instructions did not allow an inferred year. A later joint inspection of the cards was used to record a reference decision for the trial. This was an internal reconciliation, not an independent external validation of the dates.\n\nThe reconciled record contains fifty cards with a readable year, eighteen with no date, and twelve with an unreadable date. The first transcriber entered the reference year on forty-seven of the fifty readable cards and marked three as unreadable. The second entered the reference year on forty-nine and marked one as unreadable. Neither entered a year for any of the thirty cards classified as absent or unreadable in the reconciled record. On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six. We have not tabulated their individual agreement with the reconciled decision for that distinction.\n\nIf the index were judged only by the fraction of cards containing a year, both transcribers would appear to have left a substantial amount incomplete. That description would ignore the cards for which the procedure expressly required something other than a year. It would also hide the four disagreements about why no year was entered. The distinctions matter for later work: a reader looking for a document's date faces a different problem from a conservator deciding whether another imaging method could help.\n\nThe drawer was chosen for convenience. These counts describe the trial and do not estimate error across the collection. They suggest that our reporting should separate readable-year transcription from classification of missing or unreadable dates. Whether that change improves later retrieval is a further question; we have not tested it.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the eighty-card single-drawer convenience sample, independent transcription, allowed response types, and prohibition on inferred years."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains reconciled counts 50/18/12, correct-year counts 47 and 49, their remaining unreadable responses, and no entered years on the other thirty cards."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps 26-of-30 transcriber agreement distinct from individual agreement with the reconciled decision, which was not tabulated."
+      },
+      {
+        "group": "argument",
+        "text": "Distinguishes field occupancy from supported transcription and retains why absent versus unreadable matters for subsequent work."
+      },
+      {
+        "group": "fidelity",
+        "text": "Describes joint reconciliation as an internal reference and avoids population-wide accuracy or demonstrated retrieval-benefit claims."
+      },
+      {
+        "group": "style",
+        "text": "Adopts the sample's plain, reflective progression from practical problem to method without copying its facts or forcing its sentences into the revision."
+      }
+    ],
+    "quality_dimensions": [
+      "reference-standard fidelity",
+      "measurement reasoning",
+      "voice matching",
+      "narrative clarity"
+    ],
+    "source_words": 386,
+    "difficulty": "hard",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-10",
+    "split": "development",
+    "category": "argument",
+    "task": "Edit this ecological monitoring position statement for a local advisory meeting. Make its reasoning easier to follow while preserving the difference between a monitoring decision and a claim about the cause of an observed change. Do not introduce evidence or promise that the proposed survey will settle every question.\n\nSOURCE:\nWe should repeat the pond survey before describing the lower count as a decline in the population, and we should do it this season. These recommendations have sometimes been heard as opposites, since asking for another survey can sound like asking everyone to wait. A repeat survey is an action we can take while the existing count remains difficult to interpret.\n\nLast year's team visited each of eight ponds twice at dusk. This year's team visited those same ponds once at midday. The total number of animals recorded was lower this year. No adjustment has been made for visit frequency or time of day. The records do not include enough information to reconstruct the missed dusk visits. A lower count is therefore an observation, but the size of a population change cannot be read straight from the difference between the totals.\n\nThere is a reason to take the observation seriously despite that problem. A drainage proposal concerns three of the surveyed ponds, and the advisory meeting is next month. The proposal does not prove why the count was lower, especially since the drainage has not begun. It does make the condition of the ponds relevant to a decision that will be made soon. The timing creates a need for information; it does not repair the comparability of the two surveys.\n\nWe recommend two dusk visits to each pond using the earlier recording sheet. Matching those features would make the new observations more comparable with last year's, though weather and detectability would still vary. It would not isolate the effect of drainage, and it would not create a population census. The immediate purpose is to reduce one avoidable ambiguity in the evidence available to the meeting.\n\nIf the repeat cannot be completed in time, the advisory note should report the lower observed total alongside the difference in survey effort and timing. We can also describe the planned work as pending. Neither a confident decline estimate nor a confident assurance of stability follows from the current record. The monitoring request should be judged by whether it improves the pending decision, not by whether it supplies either conclusion in advance.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves eight ponds, two dusk visits last year versus one midday visit this year, and a lower observed total without inventing counts."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the drainage proposal limited to three surveyed ponds, not yet begun, and the meeting scheduled for next month."
+      },
+      {
+        "group": "argument",
+        "text": "Separates the reason for urgency from evidence about the cause or magnitude of population change."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the proposed two dusk visits with the earlier sheet and acknowledges that weather and detectability would still vary."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why the repeat can improve comparability without becoming a census or an estimate of drainage effects."
+      },
+      {
+        "group": "style",
+        "text": "Makes the recommendation decisive about obtaining evidence while remaining measured about ecological conclusions, including the fallback if work is unfinished."
+      }
+    ],
+    "quality_dimensions": [
+      "observational fidelity",
+      "decision reasoning",
+      "causal distinctions",
+      "passage coherence"
+    ],
+    "source_words": 357,
+    "difficulty": "hard",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-12",
+    "split": "development",
+    "category": "argument",
+    "task": "Lightly revise this survey team's recommendation to its steering group. Keep the collegial, practical tone and the recommendation's scope. Improve any awkward connections, but do not intensify the criticism of the proposed performance measure.\n\nSOURCE:\nWe recommend keeping completed interviews in the weekly dashboard while ending the practice of ranking interviewers by that number alone. The count tells us whether fieldwork is moving. It does not tell us enough to compare people whose assigned routes differ.\n\nSome routes contain apartment buildings with a staffed entrance. Others contain scattered homes that require long walks between attempts. Assignments rotate each month, but the dashboard ranks interviewers each week. Rotation may spread difficult routes over a longer period without making any particular week's assignments comparable. We have not estimated how large that difference is.\n\nThe ranking also leaves out work that does not produce a completed interview. A careful refusal record or a return visit at the requested time may be necessary fieldwork even when no questionnaire results. Including those activities in the discussion would not mean treating every attempt as equally useful. Supervisors would still need to look at what happened and whether the agreed contact procedure was followed.\n\nWe do not propose replacing the ranking with a single weighted score. We have no tested weights, and a score could conceal the same judgment inside a formula. For the next four weeks, the dashboard should show completed interviews, attempts, and route assignments together, with supervisors adding a brief explanation when discussing unusual totals.\n\nThis arrangement will take more attention than reading a league table. That cost is part of the recommendation. It may also reveal problems that the old ranking missed, but we cannot claim that it will improve response rates before trying it. At the end of four weeks, the steering group should ask whether the added context changed useful supervisory decisions and whether the burden was manageable. The aim is to make the weekly discussion more informative while preserving a clear view of fieldwork progress.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains completed interviews on the dashboard while ending rankings based solely on that count."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves monthly route rotation versus weekly rankings and the absence of an estimated route effect."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why route context and noncompletion work matter without declaring all attempts equally useful or excusing departures from procedure."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the four-week proposal, its three displayed elements, brief supervisory explanations, and rejection of an untested weighted score."
+      },
+      {
+        "group": "argument",
+        "text": "Acknowledges the extra attention required and frames response-rate improvement as unestablished."
+      },
+      {
+        "group": "style",
+        "text": "Maintains a collegial, practical recommendation and avoids turning modest editorial improvement into a more adversarial or elaborate policy."
+      }
+    ],
+    "quality_dimensions": [
+      "recommendation fidelity",
+      "scope control",
+      "argument clarity",
+      "tone"
+    ],
+    "source_words": 300,
+    "difficulty": "ordinary",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-14",
+    "split": "development",
+    "category": "proof",
+    "task": "Revise the following finite-population proof for a survey methods appendix. Preserve the estimator and exact variance formula, and make the conditional-expectation reasoning understandable without adding an independence assumption. The source argument is valid but compresses several distinct steps.\n\nSOURCE:\nLet N ≥ 2 and let y_1,...,y_N be fixed real responses. Write μ = N^{-1}Σ_i y_i and σ² = N^{-1}Σ_i(y_i-μ)². Choose an unordered pair P uniformly from the C(N,2) pairs, and then choose J uniformly from the two indices in P. Set Y = y_J and Z = (1/2)Σ_{i∈P} y_i. We claim that E[Z] = μ and\nVar(Z) = ((N-2)/(2(N-1)))σ².\nThis concerns repeated sampling from the fixed population, not uncertainty in the responses themselves.\n\nConditional on P = {i,j}, Y takes y_i and y_j with equal probabilities. Thus\nE[Y|P] = Z,\nE[(Y-Z)²|P={i,j}] = (y_i-y_j)²/4.\nEvery index belongs to N-1 pairs, so J is uniform on all N indices. Consequently E[Y] = μ and Var(Y) = σ², and averaging the first conditional identity gives E[Z] = μ.\n\nExpand around Z. Since Z is determined by P,\nE[(Y-Z)(Z-μ)]\n= E[(Z-μ)E[Y-Z|P]]\n= 0.\nIt follows that σ² = E[(Y-Z)²] + Var(Z). This is orthogonality, although Y and Z need not be independent.\n\nFor the remaining term, the finite identity is\nΣ_{i<j}(y_i-y_j)²\n= NΣ_i y_i²-(Σ_i y_i)²\n= NΣ_i(y_i-μ)²\n= N²σ².\nTherefore\nE[(Y-Z)²] = N²σ²/(4C(N,2))\n= Nσ²/(2(N-1)).\nSubtracting gives the formula. At N = 2 the pair is the full population and Z is constant. If all responses coincide, both variances vanish for every N. No division by σ² is needed.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves uniform unordered-pair sampling followed by a uniform member choice, fixed population responses, and population variance normalized by N."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains unbiasedness of Z and the exact variance factor (N-2)/(2(N-1))."
+      },
+      {
+        "group": "proof",
+        "text": "Justifies the marginal uniformity of J and E[Y|P] = Z from the stated two-stage sampling scheme."
+      },
+      {
+        "group": "proof",
+        "text": "Explains the vanishing cross term through conditional expectation rather than claiming independence of Y and Z."
+      },
+      {
+        "group": "proof",
+        "text": "Correctly expands the pairwise squared-difference sum and uses C(N,2) to average the conditional residual variance."
+      },
+      {
+        "group": "proof",
+        "text": "Handles N = 2 and constant responses without an invalid division or an assumption of positive variance."
+      },
+      {
+        "group": "style",
+        "text": "Connects the conditional identities, variance decomposition, and combinatorial calculation as one argument rather than a sequence of unexplained formulas."
+      }
+    ],
+    "quality_dimensions": [
+      "sampling fidelity",
+      "conditional-expectation reasoning",
+      "algebraic accuracy",
+      "proof structure"
+    ],
+    "source_words": 216,
+    "difficulty": "hard",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-16",
+    "split": "development",
+    "category": "proof",
+    "task": "Revise and complete this short proof for an ecological observation appendix. The target claim is true under the stated hypotheses. The source explicitly marks one unjustified step; replace that step with a bounded repair using the supplied assumptions, without adding invertibility of A or changing the claimed bound. Keep a substantive proof rather than only announcing the correction.\n\nSOURCE:\nLet A be a real r-by-d observation matrix, let x and e be vectors in R^d and R^r respectively, and suppose y = Ax+e with ||e||_2 ≤ ε, where ε ≥ 0. Let K = {v in R^d: Av=0}. Assume γ > 0 and\n||Av||_2 ≥ γ||v||_2 for every v in K^⊥.\nThe matrix need not determine components in K. Write P for orthogonal projection onto K^⊥. Let x̂ be any least-squares minimizer of ||Az-y||_2 over z in R^d. Such a minimizer exists in finite dimensions. We claim\n||P(x̂-x)||_2 ≤ ε/γ.\nThis only bounds the observable component of the estimation error.\n\nThe normal equations give Aᵀ(Ax̂-y)=0. Put h = x̂-x. Since y=Ax+e,\nAᵀ(Ah-e)=0.\nMultiplying on the left by hᵀ gives\n||Ah||_2² = ⟨Ah,e⟩ ≤ ||Ah||_2 ε.\nIf Ah is nonzero, division gives ||Ah||_2 ≤ ε. If Ah is zero, that conclusion already holds.\n\nAt this point the draft says, 'Apply the lower bound to h to obtain ||h||_2 ≤ ε/γ.' This step is unjustified: h has not been shown to belong to K^⊥, and its component in K can be arbitrary. Repair this step to finish the stated projected-error claim.\n\nThe case ε=0 should be included: it implies that the observable component is recovered exactly, without implying uniqueness of x̂. The case K^⊥={0} is also allowed. The statement does not ask for an error bound on the component in K, and adding such a conclusion would require information absent here.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the rectangular observation model, norm bound, γ > 0 assumption restricted to K^⊥, and arbitrary least-squares minimizer."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the projected-error bound ε/γ without asserting full-vector recovery, uniqueness, or invertibility of A."
+      },
+      {
+        "group": "proof",
+        "text": "Uses the normal equations to derive ||Ah||² = ⟨Ah,e⟩ and obtains ||Ah|| ≤ ε by reasoning valid also when Ah = 0."
+      },
+      {
+        "group": "proof",
+        "text": "Repairs the invalid application to h by relating APh to Ah and applying the lower bound only to Ph in K^⊥."
+      },
+      {
+        "group": "proof",
+        "text": "Explains the needed orthogonal decomposition using the stated kernel, without assuming either x or x̂ already lies in K^⊥."
+      },
+      {
+        "group": "proof",
+        "text": "Includes ε = 0 and K^⊥ = {0} consistently and does not mistake observable recovery for uniqueness."
+      },
+      {
+        "group": "style",
+        "text": "Integrates the repaired step into a connected proof rather than leaving the draft's erroneous conclusion or an editorial repair instruction in the finished exposition."
+      }
+    ],
+    "quality_dimensions": [
+      "theorem fidelity",
+      "linear-algebra reasoning",
+      "bounded gap repair",
+      "degenerate cases"
+    ],
+    "source_words": 240,
+    "difficulty": "hard",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-18",
+    "split": "development",
+    "category": "control",
+    "task": "Make one publication update to this museum display note: the trial described in the final paragraph has now finished, and its timing should be expressed in the past. No trial results are available. Leave the first three paragraphs unchanged, and preserve the note's technical language and substantive contrasts.\n\nSOURCE:\nThe case contains a facsimile of the workshop ledger. The original is kept in controlled storage because repeated exposure to light would make its faded entries harder to read. A facsimile reproduces a particular object; a reconstruction attempts to supply something missing. This display uses the first approach. Gaps in the original remain gaps in the copy.\n\nThe pages are reproduced at their original size. The paper is modern and has not been artificially aged. We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop. A small label on every opening identifies the copy, so visitors who enter halfway along the case receive the same information as those who start at the beginning.\n\nThe transcription beside the facsimile expands common abbreviations in square brackets. An uncertain reading is followed by a question mark. These conventions separate a proposed reading from a clear one, but they cannot convey every hesitation made during transcription. Readers who want to compare the handwriting can use the facing image.\n\nA two-week trial of the display is under way. During the trial, hosts are recording which labels visitors ask about and whether visitors notice that the ledger is a copy. The observations will be discussed after the trial ends. They will inform a later decision about the labels; the trial itself does not commit the museum to changing them.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Updates only the final paragraph to make the trial completed while preserving its two-week duration and the observations collected."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent trial findings or imply that the discussion, later label decision, or label changes have already occurred."
+      },
+      {
+        "group": "style",
+        "text": "Leaves the first three paragraphs unchanged as explicitly requested rather than doing a general prose polish."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the distinction between facsimile and reconstruction and the conventions for expansions and uncertain readings."
+      },
+      {
+        "group": "style",
+        "text": "Retains the purposeful contrast about modern paper and the legitimate technical terms instead of treating them as stylistic defects."
+      },
+      {
+        "group": "argument",
+        "text": "Keeps the trial's role as input to a later decision and its lack of commitment to change the labels."
+      }
+    ],
+    "quality_dimensions": [
+      "edit-boundary compliance",
+      "temporal fidelity",
+      "technical-language preservation",
+      "restraint"
+    ],
+    "source_words": 234,
+    "difficulty": "ordinary",
+    "subset": "validation"
+  },
+  {
+    "id": "large-dev-b-20",
+    "split": "development",
+    "category": "control",
+    "task": "Update only the second paragraph of this sensor-maintenance note using the UPDATE below. The other paragraphs are approved and must remain unchanged. Return the complete note. Preserve the distinction between the first reading used for trend comparison and any repeat reading used to decide an escalation.\n\nUPDATE: During the six-week trial, a first reference-block reading outside the acceptance band must be repeated once after the probe has rested in the fixture for ten minutes. If the repeat is also outside the band, the operator calls the shift lead. If the repeat is within the band, no call is required by this rule. Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged.\n\nSOURCE:\nAt the start of each shift, place the probe in the reference fixture and record its reading. The acceptance band is 48 to 52 units, including both endpoints. This check compares the probe with a stable reference block. It does not measure the temperature of material currently on the line, and a reading inside the band does not by itself authorize a production restart.\n\nDuring the six-week trial, call the shift lead whenever the first reference-block reading is outside the acceptance band. Record that reading in the shift log before making the call. The lead will decide whether a further check is needed. Do not change the probe's offset in response to this check. The trial concerns the escalation process, not permission for operators to recalibrate the instrument.\n\nFor the weekly trend chart, use the first reading from each shift, including first readings outside the acceptance band. Keep any repeat readings in the log, but do not substitute them into the chart. This keeps the plotted sequence tied to the same point in the checking process, even when the escalation procedure calls for more than one observation.\n\nThe maintenance team will review the log and the chart at the end of the trial. A charted outlier is a reason to examine the record, not a diagnosis of a failed probe. Please include notes about a loose fixture or an interrupted check where relevant. Those notes help explain what happened, but they do not replace the numerical readings.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Revises only paragraph two and returns all other source paragraphs unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Requires one repeat under the updated escalation rule after a ten-minute fixture rest when the first reading is outside the band, and does not delay the routine first check or remove the shift lead's authority to request further checks."
+      },
+      {
+        "group": "fidelity",
+        "text": "Calls the shift lead when the repeat is also outside the band, permits no call under this rule when the repeat is within it, and logs both readings."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the prohibition on operator offset changes and does not grant recalibration or production-restart authority."
+      },
+      {
+        "group": "argument",
+        "text": "Keeps first readings as the trend-chart input and repeat readings as escalation evidence, without treating a successful repeat as a replacement for the first observation."
+      },
+      {
+        "group": "style",
+        "text": "Integrates the update into a readable replacement paragraph without leaving the superseded immediate-call instruction in force or broadening the edit into a rewrite."
+      }
+    ],
+    "quality_dimensions": [
+      "limited-edit fidelity",
+      "conditional instruction logic",
+      "measurement-role preservation",
+      "restraint"
+    ],
+    "source_words": 247,
+    "difficulty": "hard",
+    "subset": "validation"
+  }
+]

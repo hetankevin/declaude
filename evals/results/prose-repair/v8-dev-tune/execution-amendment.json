@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "88c07f1e48a54bcb5fbac64b9276b4ff55938f4132da4c9a03e53c7b6759a608",
+  "frozen_runner_sha256": "337c22cf2815374b6921ef7e45d82f58d75ae7ebfa4afc9759e3be4803657a25",
+  "report_runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+  "attempt_runner_sha256": [
+    "90085adf2c649b2233311fc85e21f3970119c0252efa191fe500046484092f1e",
+    "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "eabd310ea33ed76fa787f856a907b75a2c0a3830747f7eda6d6832b81c5ea094"
+  ],
+  "changes": "After freezing, added bounded process scheduling, report/test support, and retention of temporary final-message bytes from failed CLI invocations. Frozen cases, generation prompts, candidate/proof bytes, references, rubric, author context, judges, ordering, batch matrix and retry policy are unchanged.",
+  "source_hash_policy": "Freeze-time tool hash is descriptive provenance, not a prohibition on adding reporting. Attempt status hashes identify runner bytes on disk when the status was saved; source-only report additions may occur during generation. Raw inputs and accepted outputs are separately bound and strictly revalidated.",
+  "generation_workers_default": 8
+}

@@ -7,13 +7,22 @@
     "mathematical_proofs": 4,
     "already_good_controls": 4
   },
-  "sha256": "789ad0c31967bb8426e35875fd798d1823b547836e4a99679e904b3c2ca8df66",
+  "sha256": "4af1d135109531a68c9810cc90a6e6047539ce8467f98efbbbf47fa5a548541a",
   "creation_policy": {
-    "origin": "New synthetic tasks authored solely from the user specification; generic fictional situations with no personal or project identifiers.",
-    "isolation": "No skill versions, development tasks, outputs, grades, or existing holdouts read. Case text and content-specific review notes remain private and excluded from optimizer and public context.",
-    "validation": "Author-side second-pass mathematical and internal-consistency review, schema and source-length checks, and exact-arithmetic sanity checks; no external reviewer or candidate model invoked.",
-    "reservation": "Reserved sealed holdout. No candidate generations, evaluation runs, Claude calls, or grading performed; not released for current development grading."
+    "origin": "New synthetic tasks authored from the user specification and corrected in response to private independent review; generic fictional situations with no personal or project identifiers.",
+    "isolation": "No skill versions, development tasks, candidate outputs or grades, or other holdouts read. Corrections used only this holdout and its private independent review. Case text, original archive, and content-specific review notes remain private and excluded from optimizer and public context.",
+    "validation": "Original independent content/specification review: FAIL, 28/30 pass and 2 requiring correction. Both corrected; revised author-side schema, source/assertion consistency, mathematical, and exact-arithmetic checks PASS for 30/30 cases and 150/150 assertions. Second independent review of the revised bytes is pending; no independent PASS is claimed. No candidate model or performance evaluation run.",
+    "reservation": "Reserved sealed holdout, unrun for candidate performance. Private author and independent content reviews are validation only. No candidate generations, performance-grading runs, or Claude calls performed by this author; not released for current development grading."
   },
   "sealed": true,
-  "unrun": true
+  "unrun": true,
+  "independent_review": {
+    "status": "passed",
+    "reviewed": 30,
+    "initial_pass": 28,
+    "corrections_resolved": 2,
+    "unchanged_others": 28,
+    "optimizer_saw_contents": false
+  },
+  "private_durable_backup": true
 }
