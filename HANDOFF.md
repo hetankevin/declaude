@@ -4,6 +4,33 @@
 
 Public repo: https://github.com/hetankevin/declaude. Installed and packaged skill remains v4. User requested a much larger, harder evaluation, blinded pairwise grading, the full model/effort matrix, a fresh holdout, and development-only skill improvement. Work is running; do not report the final benchmark as complete.
 
+## Opus handoff — resume here
+
+The user explicitly requested handoff to Opus while the larger benchmark was running. Do not start a second matrix or change frozen skill/rubrics. Continue the existing run and finish reporting/release.
+
+- Live process details and remote host are in ignored `.local/opus-handoff-runtime.json`. Current run log: `.local/large-final-resumed.log`. The wrapper `.local/resume_large_final.py` owns the run. It was started through exec session 43481, but use the saved PIDs if this runtime cannot access that session.
+- At handoff, approximately 1,240/2,400 responses existed. The scheduler had completed 373/3,820 pairwise jobs and 9/80 absolute case jobs. Counts are a snapshot; read `.local/large-final/.private/failures.json` for current state.
+- Two absolute grading jobs had schema assertion failures: `large-dev-a-05` and `large-dev-a-14`. Raw answers are retained under `.local/large-final/.grading-raw/`. Candidate outputs succeeded and must not be redrawn. Inspect failures, archive the failure manifest, and rerun the same runner after the current writer exits. Valid cache entries are preserved; the first schema-valid stored grade is reused. Pairwise now allows up to four schema attempts, retaining all of them and accepting the first valid one, not a preferred score.
+- The first runner was gracefully interrupted to raise concurrency. It cancelled queued calls and waited for every active writer to finish. The resumed run reuses 1,132 completed generation artifacts. The original 960 reused outputs were development baselines and selected-candidate runs; the additional 172 completed in that first final-run segment. No candidate output was discarded or quality-selected.
+- The report auditor finished and pushed `53c8a50` and `3af89ec`. Strict pairwise publication now requires complete matrices, exact hashes, identities, ordering, and source responses. Absolute reports verify pool fingerprints and reject imported split mismatches. Existing assertion-weighted rates are explicitly labeled, rather than changing the estimand after selection. Validation is no longer an OOS alias. Order diagnostics now include unique-case and split/judge breakdowns. Run `python3 -m unittest discover -s tools -p 'test_*report.py' -q`.
+- Public package and all installations are still v4. V5a is the frozen development-selected revision. The remote connection was reverified immediately before handoff; the host is in the ignored runtime file. Preserve the personal reading-list overlay when installing.
+
+### Finish commands
+
+After the running writer ends, inspect its failures. Resume the exact command below as needed, preserving earlier manifests and raw failures. Require complete status and all artifacts before reporting.
+
+```sh
+python3 tools/large_run.py --cases evals/large/development.json evals/large/holdout.json --selected v5a --skill evals/versions/v5a --out .local/large-final --pairs-out .local/large-final-pairs --generation-workers 24 --pairwise-workers 64 --grading-workers 8
+
+MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/report.py --runs .local/large-final --cases evals/large/development.json evals/large/holdout.json --matrix evals/large/final-matrix.json --reference none --selected v5a --out evals/results/large-final --plot
+
+python3 tools/pairwise_report.py --inputs .local/large-final-pairs/v5a-vs-none --cases evals/large/development.json evals/large/holdout.json --out evals/results/large-pairwise-none --strict --matrix evals/large/final-matrix.json --runs .local/large-final --candidate v5a --reference none
+```
+
+Also report v5a versus v4 and v4 versus none from the same absolute observations. Run strict pairwise reporting separately for `v5a-vs-v4`, with `--reference v4`. Render pairwise heatmaps using `tools/plot_pairwise.py --summary <report>/summary.json --out <report>` under the venv and inspect the PNGs. Show IS/OOS, model/effort, categories, dimensions, judge-specific results, actual denominators, bootstrap intervals, material errors, and length descriptively. Inspect representative losses and judge disagreements, not just charts.
+
+Rewrite README around the new results while keeping earlier reports linked as history. Do not imply that the narrow validation qualification proves a revision benefit. Publish exact synthetic outputs and normalized grades, never raw CLI envelopes. If releasing the selected bundle, copy `evals/versions/v5a/` to `skill/` while preserving `references/papers.local.md`, update `evals/release.json`, install personally on both local and remote Claude/Codex, and verify hashes. The fresh test is now consumed and cannot be reused as untouched selection data.
+
 ## Frozen experiment
 
 - Protocol: `evals/large/protocol.md`.
@@ -35,10 +62,10 @@ V5a qualified narrowly under the fixed validation rule: 46 wins, 72 ties, 42 los
 All 800 development no-skill/v4 outputs completed with no generation failures. Reused those and 160 selected-candidate outputs. The final streamed matrix is now running:
 
 ```
-python3 tools/large_run.py --cases evals/large/development.json evals/large/holdout.json --selected v5a --skill evals/versions/v5a --out .local/large-final --pairs-out .local/large-final-pairs --generation-workers 16 --pairwise-workers 28 --grading-workers 8
+python3 tools/large_run.py --cases evals/large/development.json evals/large/holdout.json --selected v5a --skill evals/versions/v5a --out .local/large-final --pairs-out .local/large-final-pairs --generation-workers 24 --pairwise-workers 64 --grading-workers 8
 ```
 
-Expected: 2,400 responses and absolute scorecards; 3,820 pairwise judgments including 620 order audits, split over v5a-versus-none and v5a-versus-v4. Log: `.local/large-final-pipeline.log`. Status/failures: `.local/large-final/.private/failures.json`. No concurrent writers to these roots. Inspect schema/transport failures and preserve raw attempts before resuming; never regenerate a poor candidate answer.
+Expected: 2,400 responses and absolute scorecards; 3,820 pairwise judgments including 620 order audits, split over v5a-versus-none and v5a-versus-v4. Current log: `.local/large-final-resumed.log`; the first scheduler was gracefully drained to increase concurrency, preserving all active artifacts. Its log remains `.local/large-final-pipeline.log`. Status/failures: `.local/large-final/.private/failures.json`. No concurrent writers to these roots. Inspect schema/transport failures and preserve raw attempts before resuming; never regenerate a poor candidate answer.
 
 Remaining: finish run and recover invalid grading jobs, publish reports with complete-matrix validation, inspect failures and actual plots, update README/release, install selected bundle locally and remotely, verify hashes, push. The report auditor is checking aggregation and completeness handling. Do not change the selected skill or grading criteria based on test results. Packaged/installed skill remains v4 until release.
 
