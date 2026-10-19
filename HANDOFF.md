@@ -1,5 +1,11 @@
 # Handoff
 
+## Active: authorized Codex-only regrade
+
+User authorized regrading all saved outputs with the new contextual judge, Codex only, without the earlier small-budget restriction. No new writing generations, Claude calls, skill tuning, or changes to frozen past grades. `tools/context_regrade.py` freezes and runs the saved corpus against no skill. Two judges: Astra high and Sol high. Plan in `evals/results/context-regrade/plan.json`: 1,353 pairs, 2,706 primary judgments, 286 reversed-order audits, 652 batches (up to six same-task pairs per batch). Maximum two attempts per batch, retaining invalid raw answers. Main coverage: 40 dev and 27 original-holdout cases complete across all ten configurations. Include installed v4, selected v5a, plus the six-output v6/v7 dev pilots separately. One partial v4 case remains explicitly incomplete.
+
+The rubric and author context are frozen in the report directory. Regrading is retrospective and not independent human preference validation. Follow user-relative holistic goal and applicable case context; no changing the judge or skill to favor winners. First verify end-to-end batches, then continue the full queue. CLI artifacts stay under ignored `.local/context-regrade`; public output must be anonymized and source-hash verified. Publish signed win-minus-loss pp, separate IS/holdout/category/model/effort, judge disagreement and order sensitivity, with case-level uncertainty. Previous small call caps remain historical only and do not limit this explicitly authorized regrade.
+
 ## Current priority: evaluate the author's writing preferences
 
 User questioned judge correctness/alignment, invoked neurotypical, then asked to inspect how neurotypical judges were defined. Read its `tools/grade.py` and case assertions. Crucial difference: full situation context and specific assertions, with an independent holistic judgment of how glad this user would be. Declaude's old judge had generic task-local voice/readability criteria; the writing directions were not equally explicit in grading. Do not claim old scores measure personal preference alignment.
