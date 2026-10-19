@@ -13,7 +13,7 @@ The final comparison covers **10 configurations and 480 outputs**: eight develop
 | In sample: 8 development cases | 90.8% / 4.36 | 97.8% / 4.64 | 98.6% / 4.75 |
 | Out of sample: 8 fresh cases | 95.9% / 4.55 | 98.8% / 4.74 | 98.5% / 4.72 |
 
-Holistic scores are out of 5. On the fresh set, v4 versus no skill is **+2.68 percentage points** in assertions (95% paired case-bootstrap interval **+0.48 to +4.77**) and **+0.175 holistic points** (**−0.075 to +0.425**). Against v3, v4 is **−0.24 pp** (**−1.58 to +0.89**) and **−0.0125 holistic points** (**−0.1375 to +0.0875**). These are small synthetic tests with substantial ceiling effects, not evidence of universal improvement.
+Holistic scores are out of 5. On the fresh set, v4 versus no skill is **+2.68 percentage points** in assertions (95% paired case-bootstrap interval **+0.48 to +4.77**) and **+0.175 holistic points** (**−0.075 to +0.425**). Against v3, v4 is **−0.24 pp** (**−1.58 to +0.89**) and **−0.0125 holistic points** (**−0.1375 to +0.0875**). These are small synthetic tests with substantial ceiling effects, not evidence of universal improvement. Of the 50 fresh-test assertion cells across individual configurations and five metrics, 33 show zero difference; 30 of those have both conditions at 100%. The 480 outputs cover only 16 distinct tasks, eight of them fresh. This test is too small and easy for detailed model-by-category conclusions.
 
 | Model | Effort settings tested |
 |---|---|

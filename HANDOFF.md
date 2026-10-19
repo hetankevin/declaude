@@ -4,7 +4,7 @@
 
 Public repo: https://github.com/hetankevin/declaude. Packaged skill: v4. It combines plain-English editing, author-informed research exposition, and displayed proof derivations. The original supplied translation specification remains in references/translation.md. V4 adds a meaning-first reconstruction procedure rather than sentence-by-sentence paraphrasing.
 
-User asked for neurotypical's full model/effort matrix and authorized improving both skill and grader. Both follow-ups are complete. The remote installation update is the sole pending operational item, awaiting the user's gateway sign-in.
+User asked for neurotypical's full model/effort matrix and authorized improving both skill and grader. Both follow-ups are complete. After the user renewed gateway sign-in, the remote personal installations were updated and verified.
 
 ## Results and interpretation
 
@@ -29,13 +29,13 @@ Historical expanded reference: frozen v3, original grader, original heldout. 320
 - evals/results/revision-selection/ and grader-calibration/: selection evidence, not fresh-test evidence.
 - README: all ten configurations, IS/OOS metrics, family aggregates, median lengths, methods, caveats, reproduction commands.
 
-## Validation and remaining installation item
+## Validation and installation
 
 All 480 candidate outputs have matching frozen task/skill/model/effort metadata and valid v2 scorecards. Two grading batches failed schema validation; only failed/uncompleted batches were retried. Valid completed batches and all candidate outputs were preserved. No candidate response was regenerated for quality. Scorecards retain pool identifiers and hashes. Logs and unfiltered CLI artifacts are private under .local/.
 
 Local personal Claude and Codex installations are updated to v4, including the untracked paper reading list, with file hashes verified. Existing copies are backed up. No hooks or global instructions were changed.
 
-Remote personal Claude and Codex still contain the previously installed and activation-tested v3. The attempt to update them to v4 failed at the SSH gateway before installation because login expired. An asynchronous user-input request asks the user to complete that browser sign-in. Once they confirm, transfer install.py plus skill/ (including the private paper reading list) into a temporary remote directory, run install.py --personal, and verify both installed file hashes. Do not claim remote v4 is installed until verified. The remote CLI needs a supported model for activation tests; its earlier v3 probe succeeded with its catalog-supported model after Astra was rejected by the old CLI.
+Remote personal Claude and Codex are now updated to v4. After the user renewed gateway sign-in, install.py --personal completed and all seven installed files in each app matched the local source by SHA-256, including the private reading list. Existing copies were backed up. No hooks or global instructions were changed.
 
 ## Reproduction and future work
 
@@ -48,3 +48,7 @@ No heldout2 result changed v4 or the grader. Both test sets have now been inspec
 The skill draws on the supplied translation prompt, 14 local writing-note paths, direct proof corrections, a remote Claudish discussion, and prior humanizer guidance. The exact meme transcript was not confirmed verbatim in that old chat. Only generic directions and synthetic examples belong in the public repository.
 
 The private source inventory and CLI outputs stay in ignored .local/. skill/references/papers.local.md stays untracked. Never publish source-project identifiers, personal paths, transcript excerpts, exclusion patterns, credentials, or authentication links. Research assumptions and source-project notation do not become global style requirements.
+
+## Evaluation resolution
+
+The user questioned the many zero-improvement cells. Across the ten individual configurations and five assertion metrics (excluding family aggregates), development has 31 zero differences out of 50 cells, 29 with both conditions at 100%. Fresh heldout2 has 33 zero differences out of 50, 30 with both at 100%. The comparison has only eight distinct fresh cases, including two proofs. The 480 outputs are not 480 independent tasks. The current test is too small and easy to support detailed model-by-category conclusions. A follow-up should expand independent, longer and harder cases, preserve ordinary controls, use graded or blinded pairwise prose judgments alongside factual assertions, and reserve a fresh test set before further tuning. Do not manufacture difficulty by selecting only baseline failures.
