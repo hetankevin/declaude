@@ -21,6 +21,49 @@ CONTEXT={
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def dump(p,v):pairwise.save_json(p,v)
 
+def parse_batch(raw):
+ # Recover only illegal trailing commas outside strings. Keep duplicate-key,
+ # missing-field and evidence checks strict; never change a JSON value.
+ try:return pairwise.parse_answer(raw),[]
+ except pairwise.SchemaError as original:
+  quoted=escaped=False;remove=[]
+  for i,char in enumerate(raw):
+   if quoted:
+    if escaped:escaped=False
+    elif char=='\\':escaped=True
+    elif char=='"':quoted=False
+   elif char=='"':quoted=True
+   elif char==',':
+    j=i+1
+    while j<len(raw) and raw[j].isspace():j+=1
+    if j<len(raw) and raw[j] in '}]':remove.append(i)
+  if not remove:raise original
+  fixed=''.join(c for i,c in enumerate(raw) if i not in set(remove))
+  parsed=pairwise.parse_answer(fixed)
+  return parsed,[dict(kind='trailing_comma',offset=i) for i in remove]
+
+def repair_evidence(verdict,supplied):
+ fixed,repairs=pairwise.repair_math_delimiter_quotes(verdict,supplied)
+ sources={'source':supplied['task']+('\n\nUser context:\n'+supplied['user_context'] if supplied.get('user_context') else ''),**supplied['responses']}
+ # Models sometimes capitalize a mid-sentence excerpt. Permit only a named
+ # English opener, never arbitrary identifiers or mathematical variable case.
+ openers=('The ','This ','We ','A ','An ','If ','When ','For ','Since ','Both ','Each ','In ','It ','After ','Before ')
+ if not isinstance(fixed,dict):return fixed,repairs
+ for section in ('material_errors','dimensions'):
+  items=fixed.get(section,{})
+  if not isinstance(items,dict):continue
+  for name,item in items.items():
+   if not isinstance(item,dict) or not isinstance(item.get('quotes'),dict):continue
+   for label,quotes in item['quotes'].items():
+    if label not in sources or not isinstance(quotes,list):continue
+    for index,q in enumerate(quotes):
+     if not isinstance(q,str) or q in sources[label] or not q.startswith(openers):continue
+     replacement=q[0].lower()+q[1:]
+     if replacement in sources[label]:
+      quotes[index]=replacement
+      repairs.append(dict(path=[section,name,'quotes',label,index],old=q,new=replacement,operation='restore source case of English excerpt opener'))
+ return fixed,repairs
+
 def inputs():
  cases={c['id']:c for split in ['development','holdout'] for c in json.loads((ROOT/f'evals/large/{split}.json').read_text())['cases']}
  rows=json.loads((ROOT/'evals/results/large-interim/responses.json').read_text())
@@ -75,6 +118,15 @@ def load():
  cases,texts=inputs();assert make_jobs(cases,texts)==plan['jobs']
  return plan,rubric,cases,texts
 
+def attempt_limit(plan):
+ p=PUBLIC/'retry-amendment.json'
+ if not p.exists():return plan['max_attempts_per_batch']
+ amendment=json.loads(p.read_text())
+ assert amendment['plan_sha256']==sha(PUBLIC/'plan.json')
+ assert amendment['max_attempts_per_batch']==4
+ assert amendment['applies_to']=='unusable answers only; never replace accepted records'
+ return amendment['max_attempts_per_batch']
+
 def request(job,rubric,cases,texts):
  supplied=pairwise.supplied_case(cases[job['case']]);pairs={}
  for e in job['pairs']:
@@ -107,15 +159,16 @@ def run_job(job,rubric,cases,texts,attempts):
      dump(statuspath,dict(state='transport_error',error=repr(exc)))
      continue
    try:
-    parsed=pairwise.parse_answer(raw)
+    parsed,syntax_repairs=parse_batch(raw)
     if set(parsed)!=set(pairs):raise pairwise.SchemaError('Missing or extra pair labels')
     records=[]
     for e in job['pairs']:
      per=dict(supplied,responses=pairs[e['label']])
-     verdict,repairs=pairwise.repair_math_delimiter_quotes(parsed[e['label']],per)
+     verdict,repairs=repair_evidence(parsed[e['label']],per)
      verdict=pairwise.validate_verdict(verdict,per)
      candidate_label='A' if e['a_side']=='right' else 'B'
      record=dict(version='context-regrade-v1',batch=job['id'],case=e['case'],config=e['config'],candidate=e['candidate'],reference='none',judge=job['judge'],order=job['order'],candidate_position=candidate_label,raw_judgment=verdict,**pairwise.normalized(verdict,candidate_label),response_sha256={arm:pairwise.text_hash(texts[e['case'],e['config'],arm]) for arm in ['none',e['candidate']]},prompt_sha256=pairwise.text_hash(prompt),rubric_sha256=pairwise.text_hash(rubric),context_sha256=pairwise.text_hash(supplied['user_context']),raw_sha256=pairwise.text_hash(raw),attempt=attempt,pair_id=e['label'],evidence_format_repairs=repairs)
+     if syntax_repairs:record['json_syntax_repairs']=syntax_repairs
      record['record_sha256']=pairwise.digest(record);records.append(record)
     dump(directory/'records.json',records)
     return job['id'],'done'
@@ -145,7 +198,31 @@ def run(workers,limit=None):
  if completed['failed']:raise SystemExit('Some batches failed; preserve available records and inspect errors before retrying')
 
 def main():
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=['freeze','run']);p.add_argument('--workers',type=int,default=16);p.add_argument('--limit',type=int);a=p.parse_args()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=['freeze','run','recover','retry']);p.add_argument('--workers',type=int,default=16);p.add_argument('--limit',type=int);a=p.parse_args()
  if a.action=='freeze':freeze()
- else:run(a.workers,a.limit)
+ elif a.action=='run':run(a.workers,a.limit)
+ elif a.action=='recover':
+  plan,rubric,cases,texts=load()
+  def forbidden(*a,**k):raise RuntimeError('Recovery must not make model calls')
+  bench.call=forbidden
+  for job in plan['jobs']:
+   d=WORK/job['id']
+   if not (d/'records.json').exists() and all((d/f'attempt-{i}.invalid.json').exists() for i in range(1,plan['max_attempts_per_batch']+1)):
+    print(run_job(job,rubric,cases,texts,plan['max_attempts_per_batch']),flush=True)
+ else:
+  plan,rubric,cases,texts=load();bench.CONFIGS.update(JUDGES)
+  attempts=attempt_limit(plan);assert attempts>plan['max_attempts_per_batch']
+  original=bench.call
+  def codex_only(prompt,config,**kwargs):
+   if config not in JUDGES or bench.CONFIGS[config][0]!='codex':raise RuntimeError('Only frozen Codex judges are allowed')
+   return original(prompt,config,**kwargs)
+  bench.call=codex_only;jobs=[]
+  for job in plan['jobs']:
+   d=WORK/job['id']
+   if (d/'records.json').exists():continue
+   # Only queue a batch whose original attempts have actually ended.
+   ss=[d/f'attempt-{i}.json' for i in range(1,plan['max_attempts_per_batch']+1)]
+   if all(p.exists() and json.loads(p.read_text())['state']!='calling' for p in ss):jobs.append(job)
+  with concurrent.futures.ThreadPoolExecutor(max_workers=a.workers) as pool:
+   for result in pool.map(lambda j:run_job(j,rubric,cases,texts,attempts),jobs):print(result,flush=True)
 if __name__=='__main__':main()

@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "plan_sha256": "32273bafabba2319fbdf928c5d3d17c1495369b2b9fb2f14218d393212ad1373",
+  "max_attempts_per_batch": 4,
+  "applies_to": "unusable answers only; never replace accepted records",
+  "reason": "Some batches exhausted the original two attempts on invalid JSON or nonverbatim evidence. Extend uniformly to four attempts, using the identical prompt, judge, anonymous order and schema. Preserve all attempts and accept the first valid batch. No outcome-based retries, new writing, changed rubric or Claude calls."
+}

@@ -26,6 +26,19 @@ class ContextRegradeTests(unittest.TestCase):
     def test_valid_and_no_model_calls(self):
         with patch.object(run.bench,'call',side_effect=AssertionError('Model call forbidden')):self.validate()
 
+    def test_syntax_repair_changes_no_values_and_keeps_duplicate_checks(self):
+        obj,repairs=run.parse_batch('{"value": "literal ,}", "array": [1,],}')
+        self.assertEqual(obj,{'value':'literal ,}', 'array':[1]})
+        self.assertEqual(len(repairs),2)
+        with self.assertRaises(pairwise.SchemaError):run.parse_batch('{"value": 1, "value": 2,}')
+        with self.assertRaises(pairwise.SchemaError):run.parse_batch('{"value": ')
+
+    def test_opener_case_repair_never_changes_variables_or_words(self):
+        v={'dimensions':{'voice':{'quotes':{'A':['The input stays fixed.','X is fixed.','The output stays fixed.']}}}}
+        fixed,repairs=run.repair_evidence(v,dict(task='source',responses={'A':'Start here; the input stays fixed. x is fixed.','B':''}))
+        self.assertEqual(fixed['dimensions']['voice']['quotes']['A'],['the input stays fixed.','X is fixed.','The output stays fixed.'])
+        self.assertEqual(len(repairs),1)
+
     def test_resigned_verdict_metadata_and_response_tampering_rejected(self):
         for change in [dict(outcome='win'),dict(judge='astra-high'),dict(candidate_position='B'),dict(prompt_sha256='wrong'),dict(attempt=2)]:
             rs=copy.deepcopy(self.records);rs[0].update(change);self.sign(rs[0])

@@ -17,16 +17,17 @@ def validate_batch(job, records, raw, attempt, rubric, cases, texts):
     require(len(records)==len(job['pairs']), 'Batch cardinality mismatch')
     require(len({r['pair_id'] for r in records})==len(records), 'Duplicate pair ID')
     by={r['pair_id']:r for r in records}
-    parsed=pairwise.parse_answer(raw)
+    parsed,syntax_repairs=run.parse_batch(raw)
     require(set(parsed)==set(pairs)==set(by), 'Batch labels mismatch')
     for e in job['pairs']:
         r=by[e['label']]
         require(r['record_sha256']==pairwise.digest({k:v for k,v in r.items() if k!='record_sha256'}), 'Record hash mismatch')
+        require(r.get('json_syntax_repairs',[])==syntax_repairs,'JSON syntax repair mismatch')
         label='A' if e['a_side']=='right' else 'B'
         expected=dict(version='context-regrade-v1',batch=job['id'],case=e['case'],config=e['config'],candidate=e['candidate'],reference='none',judge=job['judge'],order=job['order'],candidate_position=label,attempt=attempt,pair_id=e['label'],response_sha256={arm:pairwise.text_hash(texts[e['case'],e['config'],arm]) for arm in ['none',e['candidate']]},prompt_sha256=pairwise.text_hash(prompt),rubric_sha256=pairwise.text_hash(rubric),context_sha256=pairwise.text_hash(supplied['user_context']),raw_sha256=pairwise.text_hash(raw))
         require(all(r.get(k)==v for k,v in expected.items()), 'Record identity or input hash mismatch')
         per=dict(supplied,responses=pairs[e['label']])
-        verdict,repairs=pairwise.repair_math_delimiter_quotes(parsed[e['label']],per)
+        verdict,repairs=run.repair_evidence(parsed[e['label']],per)
         verdict=pairwise.validate_verdict(verdict,per)
         require(verdict==r['raw_judgment'] and repairs==r['evidence_format_repairs'], 'Raw verdict mismatch')
         require(all(r.get(k)==v for k,v in pairwise.normalized(verdict,label).items()), 'Normalized verdict mismatch')
@@ -36,7 +37,7 @@ def read_records(allow_partial=False):
     records=[]; raw_answers=[]; missing=[]; attempts=[]
     for job in plan['jobs']:
         d=run.WORK/job['id']; p=d/'records.json'
-        for a in range(1,plan['max_attempts_per_batch']+1):
+        for a in range(1,run.attempt_limit(plan)+1):
             s=d/f'attempt-{a}.json'
             if s.exists():
                 status=json.loads(s.read_text())
@@ -45,7 +46,7 @@ def read_records(allow_partial=False):
                 attempts.append(dict(batch=job['id'],judge=job['judge'],attempt=a,state=status['state'],invalid=(d/f'attempt-{a}.invalid.json').exists(),call=call,raw_sha256=status.get('raw_sha256')))
         if not p.exists():missing.append(job['id']);continue
         rs=json.loads(p.read_text()); at={r['attempt'] for r in rs}
-        require(len(at)==1 and at<=set(range(1,plan['max_attempts_per_batch']+1)), 'Invalid attempt number')
+        require(len(at)==1 and at<=set(range(1,run.attempt_limit(plan)+1)), 'Invalid attempt number')
         attempt=next(iter(at));raw=(d/f'attempt-{attempt}.txt').read_text()
         status=json.loads((d/f'attempt-{attempt}.json').read_text())
         require(status['state']=='answered' and status['raw_sha256']==pairwise.text_hash(raw),'Raw status mismatch')
@@ -68,7 +69,7 @@ def read_published(folder):
     require(len(byraw)==len(raw) and set(byraw)==set(byrecords)==ids,'Published batch matrix mismatch')
     for j in plan['jobs']:
         r=byraw[j['id']]
-        require(1<=r['attempt']<=plan['max_attempts_per_batch'],'Published attempt out of range')
+        require(1<=r['attempt']<=run.attempt_limit(plan),'Published attempt out of range')
         validate_batch(j,byrecords[j['id']],r['text'],r['attempt'],rubric,cases,texts)
     attempts=json.loads((folder/'attempts.json').read_text())
     return plan,cases,texts,records,raw,attempts,[]
@@ -129,7 +130,7 @@ def render(plan,cases,records,attempts,missing,out,plot=False):
             from plot_pairwise import plot_pairwise
             plot_pairwise(summary,dest/'plots',show_counts=True)
     checks=reliability(records); matched=old_new(records,cases)
-    usage=dict(calls_started=len(attempts),calls_answered=sum(a['state']=='answered' for a in attempts),transport_errors=sum(a['state']=='transport_error' for a in attempts),invalid_attempts=sum(a['invalid'] for a in attempts),calls_with_reported_tokens=sum('reported_tokens' in a['call'].get('usage',{}) for a in attempts),reported_tokens=sum(a['call'].get('usage',{}).get('reported_tokens',0) for a in attempts),by_judge={j:dict(calls=sum(a['judge']==j for a in attempts),reported_tokens=sum(a['call'].get('usage',{}).get('reported_tokens',0) for a in attempts if a['judge']==j)) for j in run.JUDGES},claude_calls=0,writing_generations=0)
+    usage=dict(calls_started=len(attempts),calls_answered=sum(a['state']=='answered' for a in attempts),transport_errors=sum(a['state']=='transport_error' for a in attempts),invalid_attempts=sum(a['invalid'] for a in attempts),syntax_repaired_batches=len({r['batch'] for r in records if r.get('json_syntax_repairs')}),math_quote_repaired_judgments=sum(bool(r.get('evidence_format_repairs')) for r in records),calls_with_reported_tokens=sum('reported_tokens' in a['call'].get('usage',{}) for a in attempts),reported_tokens=sum(a['call'].get('usage',{}).get('reported_tokens',0) for a in attempts),by_judge={j:dict(calls=sum(a['judge']==j for a in attempts),reported_tokens=sum(a['call'].get('usage',{}).get('reported_tokens',0) for a in attempts if a['judge']==j)) for j in run.JUDGES},claude_calls=0,writing_generations=0)
     pilots={arm:dict(overall=aggregate([r for r in primary if r['candidate']==arm]),by_config={cfg:aggregate([r for r in primary if r['candidate']==arm and r['config']==cfg]) for cfg in CONFIGS},dimensions={dim:aggregate([r for r in primary if r['candidate']==arm],dim) for dim in DIMENSIONS}) for arm in ['v6-dev','v7-dev']}
     for name,obj in [('coverage',coverage),('judge-checks',checks),('matched-old-new',matched),('usage',usage),('attempts',attempts),('pilots',pilots)]:run.dump(out/(name+'.json'),obj)
     # Full source-grounded verdicts; no CLI envelopes, private paths or identities.
@@ -140,7 +141,7 @@ def render(plan,cases,records,attempts,missing,out,plot=False):
         for split,g in s.items():
             m=g['all']['overall']
             if m:lines.append(f"| {arm} | {split} | {cell(m)} | {m['wins']} / {m['ties']} / {m['losses']} | {m['cases']} |")
-    lines+=['','Main tables use the same complete cases for both versions, all ten generation configurations, and both judges. Incomplete cases are listed in coverage.json rather than scored as ties. The six-output development pilots are separate.','', '## Writing categories','', '| Skill | Split | Ordinary | Research | Argument | Proof | Control |','|---|---|---:|---:|---:|---:|---:|']
+    lines+=['','Main tables use the same complete cases for both versions, all ten generation configurations, and both judges. Incomplete cases are listed in coverage.json rather than scored as ties. The six-output development pilots are separate.','', 'For concrete strengths and questionable verdicts, read [the case review](case-review.md). These inspections did not change any score.', '', '## Writing categories','', '| Skill | Split | Ordinary | Research | Argument | Proof | Control |','|---|---|---:|---:|---:|---:|---:|']
     for arm,s in arms.items():
         for split,g in s.items():lines.append('| '+ ' | '.join([arm,split]+[cell(g['all']['categories'][cat]) for cat in CATEGORIES])+' |')
     lines+=['','Category counts per split: '+json.dumps(coverage['category_counts'])+'.','','## Dimensions','','| Skill | Split | Meaning | Naturalness | Progression | Voice | Proof |','|---|---|---:|---:|---:|---:|---:|']
@@ -156,7 +157,7 @@ def render(plan,cases,records,attempts,missing,out,plot=False):
     for arm,p in pilots.items():
         m=p['overall']
         if m:lines.append(f"| {arm} | {cell(m)} | {m['wins']} / {m['ties']} / {m['losses']} | {m['cases']} |")
-    lines+=['','These pilots have only six saved case/configuration outputs each and do not share the full matrix. They were developed after inspecting earlier results and cannot establish generalization. Packaged/installed v4 is unchanged.','','## Evidence and execution','',f"{usage['calls_started']} Codex judge attempts; {usage['calls_answered']} returned answers; {usage['invalid_attempts']} schema/evidence-invalid attempts; {usage['transport_errors']} transport errors. CLI-reported token total: {usage['reported_tokens']:,} from {usage['calls_with_reported_tokens']} attempts. Failed calls without token reports are not estimated as zero. No account-percentage or billing-total claim is made.",'','plan.json binds the source datasets, exact saved writing, rubric, context, judge identities, ordering and retry limit. Observation files retain full verdicts, exact evidence quotes, source/prompt/response/raw hashes and any uniquely source-verified math-delimiter repair. Validation reconstructs each blinded prompt and rechecks every verdict against the actual source. judge-responses.jsonl.gz contains the accepted raw text for independent revalidation; attempts.json accounts for unsuccessful attempts, whose raw answers remain local. Original grades and response files are retained unchanged.','','Reproduce without model calls: `MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/report_context_regrade.py --published --plot`. This verifies the portable public evidence and requires every frozen batch. Omit `--published` to read original local CLI artifacts. `--partial --out <folder>` writes an explicitly provisional local snapshot and never treats missing votes as ties.']
+    lines+=['','These pilots have only six saved case/configuration outputs each and do not share the full matrix. They were developed after inspecting earlier results and cannot establish generalization. Packaged/installed v4 is unchanged.','','## Evidence and execution','',f"{usage['calls_started']} Codex judge attempts; {usage['calls_answered']} returned answers; {usage['invalid_attempts']} schema/evidence-invalid attempts; {usage['transport_errors']} transport errors. CLI-reported token total: {usage['reported_tokens']:,} from {usage['calls_with_reported_tokens']} attempts. Failed calls without token reports are not estimated as zero. No account-percentage or billing-total claim is made.",'','plan.json binds the source datasets, exact saved writing, rubric, context, judge identities, ordering and retry limit. Observation files retain full verdicts, exact evidence quotes, source/prompt/response/raw hashes and any uniquely source-verified math-delimiter repair. Validation reconstructs each blinded prompt and rechecks every verdict against the actual source. judge-responses.jsonl.gz contains the accepted raw text for independent revalidation; attempts.json accounts for unsuccessful attempts, whose raw answers remain local. Syntax-only recoveries disclose deleted trailing-comma offsets without changing any JSON value; see execution-notes.md. Original grades and response files are retained unchanged.','','Reproduce without model calls: `MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/report_context_regrade.py --published --plot`. This verifies the portable public evidence and requires every frozen batch. Omit `--published` to read original local CLI artifacts. `--partial --out <folder>` writes an explicitly provisional local snapshot and never treats missing votes as ties.']
     (out/'report.md').write_text('\n'.join(lines)+'\n')
     return coverage,arms
 
