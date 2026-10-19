@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Publish anonymized observations, paired summaries, and optional heatmaps."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import random
@@ -90,6 +91,22 @@ def main():
         matrix=json.loads(a.matrix.read_text())
         assert set(configs)==set(matrix['configs']),'Configurations do not match the preregistered matrix'
         assert len(rows)==matrix['total_outputs'],'Output count does not match the matrix'
+        for path in a.cases:
+            digest=matrix.get('dataset_sha256',{}).get(path.stem)
+            if digest:assert hashlib.sha256(path.read_bytes()).hexdigest()==digest,'Dataset hash mismatch'
+        if matrix.get('grader_sha256'):
+            grader_path=Path(__file__).resolve().parents[1]/'evals/graders'/f"{matrix['grader']}.txt"
+            assert hashlib.sha256(grader_path.read_bytes()).hexdigest()==matrix['grader_sha256'],'Grader prompt hash mismatch'
+        for row in rows:
+            expected=matrix['configs'][row['config']]
+            assert (row['model'],row['effort'])==(expected['model'],expected['effort']),'Model/effort metadata mismatch'
+            assert row['task_sha256']==hashlib.sha256(cases[row['case']]['task'].encode()).hexdigest(),'Task hash mismatch'
+            hashes=matrix.get('skill_sha256_by_arm',{'none':None,'v3':matrix.get('skill_sha256')})
+            assert row['skill_sha256']==hashes[row['arm']],'Skill hash mismatch'
+            assert row['rubric_sha256']==hashlib.sha256(json.dumps(cases[row['case']],sort_keys=True).encode()).hexdigest(),'Rubric hash mismatch'
+            expected_assertions=cases[row['case']]['assertions']
+            assert [(v['group'],v['text']) for v in row['assertions']]==[(v['group'],v['text']) for v in expected_assertions],'Grader changed assertion definitions'
+            if matrix.get('grader'):assert row['grader'].get('version')==matrix['grader'],'Grader version mismatch'
     assert set(r['case'] for r in final)==set(cases),'Cases are missing'
     assert set((r['case'],r['config'],r['arm']) for r in final)=={(c,cfg,arm) for c in cases for cfg in configs for arm in [reference,a.selected]},'Incomplete paired matrix'
     parts=['# Evaluation results','',f'Selected skill: {a.selected}. One run per case, configuration, and condition. Intervals resample paired cases, not individual assertions.','']
@@ -110,12 +127,13 @@ def main():
             br=[r for r in rs if r['config']==cfg and r['arm']==reference];sr=[r for r in rs if r['config']==cfg and r['arm']==a.selected]
             parts.append(f'| {cfg} | {fmt("all",value(br,"all"))} / {value(br,"holistic"):.2f} | {fmt("all",value(sr,"all"))} / {value(sr,"holistic"):.2f} |')
         parts.append('')
-    parts += ['## Development A/B selection','', 'The initial and revised skill versions were compared on Sonnet low and Astra medium only. These cases were available for selection and are not held out.','', '| Subset | Version | Assertions | Holistic |','|---|---|---:|---:|']
-    for subset in ['tune','validation']:
-        for arm in ['none','v1','v2','v3']:
-            rs=[r for r in selection_rows if r['subset']==subset and r['arm']==arm and r['config'] in ['sonnet-low','astra-medium']]
-            if rs:parts.append(f'| {subset} | {arm} | {fmt("all",value(rs,"all"))} | {value(rs,"holistic"):.2f} |')
-    (a.out/'report.md').write_text('\n'.join(parts)+'\n')
+    if selection_rows:
+        parts += ['## Initial development A/B selection','', 'The initial and revised skill versions were compared on Sonnet low and Astra medium only. These cases were available for selection and are not held out.','', '| Subset | Version | Assertions | Holistic |','|---|---|---:|---:|']
+        for subset in ['tune','validation']:
+            for arm in ['none','v1','v2','v3']:
+                rs=[r for r in selection_rows if r['subset']==subset and r['arm']==arm and r['config'] in ['sonnet-low','astra-medium']]
+                if rs:parts.append(f'| {subset} | {arm} | {fmt("all",value(rs,"all"))} | {value(rs,"holistic"):.2f} |')
+    (a.out/'report.md').write_text('\n'.join(parts).rstrip()+'\n')
     (a.out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     if len(configs)==10:
         groups=grouped(final,a.selected,reference)

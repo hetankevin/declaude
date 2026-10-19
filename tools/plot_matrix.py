@@ -47,7 +47,7 @@ def plot_matrix(groups, selected, out, reference='none'):
                             else:
                                 v*=100
                                 color=div(Normalize(-assertion_limit,assertion_limit)(v)) if kind=='difference' else seq(Normalize(0,100)(v))
-                                labeltext=f'{v:+.0f}' if kind=='difference' else f'{v:.0f}'
+                                labeltext=f'{v:+.1f}' if kind=='difference' else f'{v:.0f}'
                             ax.add_patch(plt.Rectangle((xs[ci]+.025,y+.025),.95,.95,facecolor=color,edgecolor='none'))
                             rgba=matplotlib.colors.to_rgba(color);lum=.2126*rgba[0]+.7152*rgba[1]+.0722*rgba[2]
                             ink='#ffffff' if lum<.5 else '#17212b'
@@ -65,6 +65,8 @@ def plot_matrix(groups, selected, out, reference='none'):
                 else:
                     cb=fig.colorbar(ScalarMappable(norm=Normalize(0,100),cmap=seq),cax=cax,orientation='horizontal');cb.set_label('Assertion pass rate (%)')
                     hb=fig.colorbar(ScalarMappable(norm=Normalize(1,5),cmap=seq),cax=hax,orientation='horizontal');hb.set_label('Holistic score (1–5)')
-                fig.savefig(out/f'{filename}-{mode}.svg',facecolor=bg)
+                svg = out/f'{filename}-{mode}.svg'
+                fig.savefig(svg,facecolor=bg)
+                svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
                 if mode=='light':fig.savefig(out/f'{filename}.png',dpi=140,facecolor=bg)
                 plt.close(fig)

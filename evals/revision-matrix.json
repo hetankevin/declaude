@@ -1,6 +1,4 @@
 {
-  "skill_version": "v3",
-  "skill_sha256": "efb0552432b4072d790f9273f90f6f9962b9a717f7a85ca941e83f6b58dd39fb",
   "configs": {
     "haiku": {
       "provider": "claude",
@@ -65,5 +63,15 @@
   "grading": "Seed-shuffled matched-condition pools of up to ten outputs; three configurations (nine outputs) per full pool, one configuration (three outputs) in final pool.",
   "holdout_status": "Fresh heldout2 authored separately and preregistered before execution. Selection uses development only.",
   "selected": "v4",
-  "grader": "v2"
+  "grader": "v2",
+  "skill_sha256_by_arm": {
+    "none": null,
+    "v3": "efb0552432b4072d790f9273f90f6f9962b9a717f7a85ca941e83f6b58dd39fb",
+    "v4": "2f56547251c3f77dc2e718cd35ceca893f78352c45eb98397a0a78ba6e5b33d4"
+  },
+  "dataset_sha256": {
+    "development": "a5cb1f245cd0ca53c0de445a2c95adbfd6efd7d53a2e1284406db10d2cc28e43",
+    "heldout2": "727fa9e1952b23cf710d442dd36d04ac19cf2a098ce12d6526902da9261f6ca8"
+  },
+  "grader_sha256": "48f37689d8877b22e6e9233f8acae85a9adb31e5fc49e4d9b9b8491666950277"
 }

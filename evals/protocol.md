@@ -6,7 +6,7 @@ Paired conditions: the same task with no added editing guidance and with the com
 
 Configurations: Claude Sonnet 5.5 low effort, Claude Sonnet 5.5 high effort, GPT-6 Astra medium effort. One response per condition per case. Cases, not assertions or model outputs, are the unit resampled for paired 95% bootstrap intervals. Report development and held-out separately. Length is descriptive, not a success metric.
 
-Claude runs use safe mode and no tools. Codex runs use an empty temporary home and CODEX_HOME with only an authentication link, no hooks, and an empty working directory. Candidate prompts request no tools. The same shared writing-task wrapper is used in both conditions.
+Claude runs use safe mode and no tools. Codex runs use an empty temporary home and CODEX_HOME with only an authentication link, no hooks, and an empty working directory. Candidate prompts request no tools. Claude disables tools; Codex uses a read-only sandbox rather than a transport-level tool-disable setting. The same shared writing-task wrapper is used in both conditions.
 
 Blind grading: an isolated Claude Opus 5.5 high-effort call sees all responses for a case in a seeded random order with anonymous labels and no skill text, model identities, or condition identities. It grades preregistered assertions and overall usefulness (1–5). Material meaning or mathematical errors cap the overall grade at 2. The grader is fallible; independently inspect apparent fidelity/proof regressions and report disagreements without silently overwriting its ratings.
 

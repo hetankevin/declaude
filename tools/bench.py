@@ -86,7 +86,7 @@ def run_one(case, config, arm, skill, out):
     skill_hash = hashlib.sha256(skill.encode()).hexdigest() if arm != 'none' else None
     if (dest / 'response.md').exists():
         meta = json.loads((dest / 'meta.json').read_text())
-        if meta.get('task_sha256') != task_hash or meta.get('skill_sha256') != skill_hash:
+        if meta.get('task_sha256') != task_hash or meta.get('skill_sha256') != skill_hash or (meta.get('model'),meta.get('effort')) != CONFIGS[config][1:]:
             raise RuntimeError('Cached artifact has different task or skill; use a fresh output directory')
         return f'cached {case["id"]}/{config}/{arm}'
     prompt = 'Complete the following writing task. Return the requested artifact, not a plan. All needed source text is supplied; do not use tools.\n\n'
@@ -101,7 +101,7 @@ def run_one(case, config, arm, skill, out):
     return f'done {case["id"]}/{config}/{arm}'
 
 
-def grade_one(case, out, grader_version="v1"):
+def grade_one(case, out, grader_version="v2"):
     grader_hash = hashlib.sha256((ROOT/"evals/graders"/f"{grader_version}.txt").read_bytes()).hexdigest()
     paths = sorted((out / case['id']).glob('*/*/response.md'))
     if not paths:
@@ -125,7 +125,7 @@ def grade_one(case, out, grader_version="v1"):
     return 'graded '+case['id']
 
 
-def grade_pool(case, paths, pool_id, fingerprint, rubric_hash, grader_version="v1"):
+def grade_pool(case, paths, pool_id, fingerprint, rubric_hash, grader_version="v2"):
     labels = [f'R{i+1:02}' for i in range(len(paths))]
     responses = '\n\n'.join(f'<response id="{label}">\n{p.read_text()}\n</response>' for label,p in zip(labels,paths))
     prompt = (ROOT/'evals/graders'/f'{grader_version}.txt').read_text() + case['task'] + '\nASSERTIONS:\n' + json.dumps(case['assertions']) + '\nRESPONSES:\n' + responses
@@ -153,19 +153,28 @@ def main():
     ap.add_argument('--cases', type=Path, required=True)
     ap.add_argument('--out', type=Path, required=True)
     ap.add_argument('--skill', type=Path, default=ROOT/'skill')
+    ap.add_argument('--skills', help='Version-specific bundles, for example v3=evals/versions/v3,v4=skill')
     ap.add_argument('--configs', default='haiku,sonnet-low,sonnet-high,opus-low,opus-xhigh,fable,astra-medium,astra-high,sol-low,luna-medium')
-    ap.add_argument('--arms', default='none,v3')
+    ap.add_argument('--arms', default='none,v4')
     ap.add_argument('--subset', default='all')
     ap.add_argument('--workers', type=int, default=6)
-    ap.add_argument('--grader-version', choices=['v1','v2'], default='v1')
+    ap.add_argument('--grader-version', choices=['v1','v2'], default='v2')
     args=ap.parse_args()
     cases=json.loads(args.cases.read_text())['cases']
     if args.subset != 'all':
         cases=[c for c in cases if c.get('subset',c.get('split'))==args.subset]
     assert cases
     if args.action=='run':
-        skill=bundle(args.skill)
-        jobs=[(c,cfg,arm,skill,args.out) for c in cases for cfg in args.configs.split(',') for arm in args.arms.split(',')]
+        arms=args.arms.split(',')
+        if args.skills:
+            paths=dict(item.split('=',1) for item in args.skills.split(','))
+            if set(arms)-{'none'} != set(paths):raise ValueError('--skills must name exactly the non-baseline arms')
+            bundles={arm:bundle(Path(path)) for arm,path in paths.items()}
+        else:
+            if len(set(arms)-{'none'})>1:raise ValueError('Multiple skill versions require --skills; do not relabel the same bundle')
+            bundles={arm:bundle(args.skill) for arm in arms if arm!='none'}
+        bundles['none']=''
+        jobs=[(c,cfg,arm,bundles[arm],args.out) for c in cases for cfg in args.configs.split(',') for arm in arms]
         fn=run_one
     else:
         jobs=[(c,args.out,args.grader_version) for c in cases];fn=grade_one
