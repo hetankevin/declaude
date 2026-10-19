@@ -1,0 +1,1312 @@
+{
+  "development": {
+    "haiku": {
+      "overall": {
+        "preference": 0.4125,
+        "ci95": [
+          0.3,
+          0.5125
+        ],
+        "cases": 20,
+        "judgments": 40,
+        "wins": 9,
+        "ties": 15,
+        "losses": 16
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.4375,
+          "ci95": [
+            0.125,
+            0.75
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 3,
+          "losses": 3
+        },
+        "research": {
+          "preference": 0.4375,
+          "ci95": [
+            0.25,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 3,
+          "losses": 3
+        },
+        "argument": {
+          "preference": 0.375,
+          "ci95": [
+            0.25,
+            0.5
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 2,
+          "losses": 4
+        },
+        "proof": {
+          "preference": 0.4375,
+          "ci95": [
+            0.125,
+            0.6875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 5,
+          "losses": 2
+        },
+        "control": {
+          "preference": 0.375,
+          "ci95": [
+            0.125,
+            0.5
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 2,
+          "losses": 4
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.5125,
+          "ci95": [
+            0.4125,
+            0.625
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 8,
+          "ties": 25,
+          "losses": 7
+        },
+        "naturalness": {
+          "preference": 0.4375,
+          "ci95": [
+            0.3375,
+            0.525
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 3,
+          "ties": 29,
+          "losses": 8
+        },
+        "progression": {
+          "preference": 0.4,
+          "ci95": [
+            0.2875,
+            0.5125
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 4,
+          "ties": 24,
+          "losses": 12
+        },
+        "voice": {
+          "preference": 0.5,
+          "ci95": [
+            0.425,
+            0.5625
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 3,
+          "ties": 34,
+          "losses": 3
+        },
+        "proof": {
+          "preference": 0.4375,
+          "ci95": [
+            0.125,
+            0.6875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 5,
+          "losses": 2
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.35,
+          "ci95": [
+            0.2,
+            0.5
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 3,
+          "ties": 8,
+          "losses": 9
+        },
+        "grader-opus": {
+          "preference": 0.475,
+          "ci95": [
+            0.3,
+            0.65
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 6,
+          "ties": 7,
+          "losses": 7
+        }
+      },
+      "material_errors": {
+        "candidate": 0.075,
+        "reference": 0.125
+      }
+    },
+    "sonnet-low": {
+      "overall": null,
+      "categories": {
+        "ordinary": null,
+        "research": null,
+        "argument": null,
+        "proof": null,
+        "control": null
+      },
+      "dimensions": {
+        "meaning": null,
+        "naturalness": null,
+        "progression": null,
+        "voice": null,
+        "proof": null
+      },
+      "judges": {},
+      "material_errors": {
+        "candidate": null,
+        "reference": null
+      }
+    },
+    "sonnet-high": {
+      "overall": {
+        "preference": 0.6125,
+        "ci95": [
+          0.475,
+          0.75
+        ],
+        "cases": 20,
+        "judgments": 40,
+        "wins": 15,
+        "ties": 19,
+        "losses": 6
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.5,
+          "ci95": [
+            0.125,
+            0.875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 4,
+          "losses": 2
+        },
+        "research": {
+          "preference": 0.5625,
+          "ci95": [
+            0.375,
+            0.75
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 5,
+          "losses": 1
+        },
+        "argument": {
+          "preference": 0.5,
+          "ci95": [
+            0.125,
+            0.875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 3,
+          "ties": 2,
+          "losses": 3
+        },
+        "proof": {
+          "preference": 0.8125,
+          "ci95": [
+            0.625,
+            1.0
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 5,
+          "ties": 3,
+          "losses": 0
+        },
+        "control": {
+          "preference": 0.6875,
+          "ci95": [
+            0.5,
+            0.875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 3,
+          "ties": 5,
+          "losses": 0
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.5875,
+          "ci95": [
+            0.45,
+            0.7125
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 12,
+          "ties": 23,
+          "losses": 5
+        },
+        "naturalness": {
+          "preference": 0.4375,
+          "ci95": [
+            0.325,
+            0.55
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 4,
+          "ties": 27,
+          "losses": 9
+        },
+        "progression": {
+          "preference": 0.4875,
+          "ci95": [
+            0.4125,
+            0.55
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 3,
+          "ties": 33,
+          "losses": 4
+        },
+        "voice": {
+          "preference": 0.5625,
+          "ci95": [
+            0.525,
+            0.6125
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 5,
+          "ties": 35,
+          "losses": 0
+        },
+        "proof": {
+          "preference": 0.6875,
+          "ci95": [
+            0.375,
+            0.9375
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 4,
+          "ties": 3,
+          "losses": 1
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.625,
+          "ci95": [
+            0.475,
+            0.75
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 7,
+          "ties": 11,
+          "losses": 2
+        },
+        "grader-opus": {
+          "preference": 0.6,
+          "ci95": [
+            0.425,
+            0.775
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 8,
+          "ties": 8,
+          "losses": 4
+        }
+      },
+      "material_errors": {
+        "candidate": 0.075,
+        "reference": 0.225
+      }
+    },
+    "opus-low": {
+      "overall": null,
+      "categories": {
+        "ordinary": null,
+        "research": null,
+        "argument": null,
+        "proof": null,
+        "control": null
+      },
+      "dimensions": {
+        "meaning": null,
+        "naturalness": null,
+        "progression": null,
+        "voice": null,
+        "proof": null
+      },
+      "judges": {},
+      "material_errors": {
+        "candidate": null,
+        "reference": null
+      }
+    },
+    "opus-xhigh": {
+      "overall": null,
+      "categories": {
+        "ordinary": null,
+        "research": null,
+        "argument": null,
+        "proof": null,
+        "control": null
+      },
+      "dimensions": {
+        "meaning": null,
+        "naturalness": null,
+        "progression": null,
+        "voice": null,
+        "proof": null
+      },
+      "judges": {},
+      "material_errors": {
+        "candidate": null,
+        "reference": null
+      }
+    },
+    "fable": {
+      "overall": null,
+      "categories": {
+        "ordinary": null,
+        "research": null,
+        "argument": null,
+        "proof": null,
+        "control": null
+      },
+      "dimensions": {
+        "meaning": null,
+        "naturalness": null,
+        "progression": null,
+        "voice": null,
+        "proof": null
+      },
+      "judges": {},
+      "material_errors": {
+        "candidate": null,
+        "reference": null
+      }
+    },
+    "astra-medium": {
+      "overall": {
+        "preference": 0.4875,
+        "ci95": [
+          0.3875,
+          0.6
+        ],
+        "cases": 20,
+        "judgments": 40,
+        "wins": 7,
+        "ties": 25,
+        "losses": 8
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.625,
+          "ci95": [
+            0.5,
+            0.75
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 6,
+          "losses": 0
+        },
+        "research": {
+          "preference": 0.4375,
+          "ci95": [
+            0.25,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 5,
+          "losses": 2
+        },
+        "argument": {
+          "preference": 0.5625,
+          "ci95": [
+            0.25,
+            0.875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 3,
+          "ties": 3,
+          "losses": 2
+        },
+        "proof": {
+          "preference": 0.3125,
+          "ci95": [
+            0.0625,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 3,
+          "losses": 4
+        },
+        "control": {
+          "preference": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 0,
+          "ties": 8,
+          "losses": 0
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.5,
+          "ci95": [
+            0.425,
+            0.575
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 4,
+          "ties": 32,
+          "losses": 4
+        },
+        "naturalness": {
+          "preference": 0.45,
+          "ci95": [
+            0.4,
+            0.5
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 1,
+          "ties": 34,
+          "losses": 5
+        },
+        "progression": {
+          "preference": 0.55,
+          "ci95": [
+            0.4625,
+            0.6375
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 8,
+          "ties": 28,
+          "losses": 4
+        },
+        "voice": {
+          "preference": 0.5125,
+          "ci95": [
+            0.5,
+            0.5375
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 1,
+          "ties": 39,
+          "losses": 0
+        },
+        "proof": {
+          "preference": 0.375,
+          "ci95": [
+            0.125,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 4,
+          "losses": 3
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.5,
+          "ci95": [
+            0.425,
+            0.575
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 1,
+          "ties": 18,
+          "losses": 1
+        },
+        "grader-opus": {
+          "preference": 0.475,
+          "ci95": [
+            0.3,
+            0.65
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 6,
+          "ties": 7,
+          "losses": 7
+        }
+      },
+      "material_errors": {
+        "candidate": 0.05,
+        "reference": 0.0
+      }
+    },
+    "astra-high": {
+      "overall": null,
+      "categories": {
+        "ordinary": null,
+        "research": null,
+        "argument": null,
+        "proof": null,
+        "control": null
+      },
+      "dimensions": {
+        "meaning": null,
+        "naturalness": null,
+        "progression": null,
+        "voice": null,
+        "proof": null
+      },
+      "judges": {},
+      "material_errors": {
+        "candidate": null,
+        "reference": null
+      }
+    },
+    "sol-low": {
+      "overall": null,
+      "categories": {
+        "ordinary": null,
+        "research": null,
+        "argument": null,
+        "proof": null,
+        "control": null
+      },
+      "dimensions": {
+        "meaning": null,
+        "naturalness": null,
+        "progression": null,
+        "voice": null,
+        "proof": null
+      },
+      "judges": {},
+      "material_errors": {
+        "candidate": null,
+        "reference": null
+      }
+    },
+    "luna-medium": {
+      "overall": {
+        "preference": 0.5375,
+        "ci95": [
+          0.4,
+          0.675
+        ],
+        "cases": 20,
+        "judgments": 40,
+        "wins": 15,
+        "ties": 13,
+        "losses": 12
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 5,
+          "ties": 2,
+          "losses": 1
+        },
+        "research": {
+          "preference": 0.4375,
+          "ci95": [
+            0.125,
+            0.75
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 2,
+          "ties": 3,
+          "losses": 3
+        },
+        "argument": {
+          "preference": 0.4375,
+          "ci95": [
+            0.125,
+            0.8125
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 3,
+          "ties": 1,
+          "losses": 4
+        },
+        "proof": {
+          "preference": 0.375,
+          "ci95": [
+            0.25,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 4,
+          "losses": 3
+        },
+        "control": {
+          "preference": 0.6875,
+          "ci95": [
+            0.5,
+            0.875
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 4,
+          "ties": 3,
+          "losses": 1
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.5,
+          "ci95": [
+            0.375,
+            0.625
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 10,
+          "ties": 20,
+          "losses": 10
+        },
+        "naturalness": {
+          "preference": 0.525,
+          "ci95": [
+            0.4375,
+            0.6125
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 6,
+          "ties": 30,
+          "losses": 4
+        },
+        "progression": {
+          "preference": 0.5,
+          "ci95": [
+            0.4,
+            0.6
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 6,
+          "ties": 28,
+          "losses": 6
+        },
+        "voice": {
+          "preference": 0.5875,
+          "ci95": [
+            0.525,
+            0.6625
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 7,
+          "ties": 33,
+          "losses": 0
+        },
+        "proof": {
+          "preference": 0.375,
+          "ci95": [
+            0.25,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 8,
+          "wins": 1,
+          "ties": 4,
+          "losses": 3
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.575,
+          "ci95": [
+            0.45,
+            0.725
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 6,
+          "ties": 11,
+          "losses": 3
+        },
+        "grader-opus": {
+          "preference": 0.5,
+          "ci95": [
+            0.3,
+            0.7
+          ],
+          "cases": 20,
+          "judgments": 20,
+          "wins": 9,
+          "ties": 2,
+          "losses": 9
+        }
+      },
+      "material_errors": {
+        "candidate": 0.175,
+        "reference": 0.225
+      }
+    },
+    "claude-all": {
+      "overall": {
+        "preference": 0.5125,
+        "ci95": [
+          0.4375,
+          0.5875
+        ],
+        "cases": 20,
+        "judgments": 80,
+        "wins": 24,
+        "ties": 34,
+        "losses": 22
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.46875,
+          "ci95": [
+            0.375,
+            0.5625
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 4,
+          "ties": 7,
+          "losses": 5
+        },
+        "research": {
+          "preference": 0.5,
+          "ci95": [
+            0.34375,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 4,
+          "ties": 8,
+          "losses": 4
+        },
+        "argument": {
+          "preference": 0.4375,
+          "ci95": [
+            0.25,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 5,
+          "ties": 4,
+          "losses": 7
+        },
+        "proof": {
+          "preference": 0.625,
+          "ci95": [
+            0.5,
+            0.78125
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 6,
+          "ties": 8,
+          "losses": 2
+        },
+        "control": {
+          "preference": 0.53125,
+          "ci95": [
+            0.40625,
+            0.6875
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 5,
+          "ties": 7,
+          "losses": 4
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.55,
+          "ci95": [
+            0.48125,
+            0.61875
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 20,
+          "ties": 48,
+          "losses": 12
+        },
+        "naturalness": {
+          "preference": 0.4375,
+          "ci95": [
+            0.35,
+            0.51875
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 7,
+          "ties": 56,
+          "losses": 17
+        },
+        "progression": {
+          "preference": 0.44375,
+          "ci95": [
+            0.38125,
+            0.5125
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 7,
+          "ties": 57,
+          "losses": 16
+        },
+        "voice": {
+          "preference": 0.53125,
+          "ci95": [
+            0.4875,
+            0.575
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 8,
+          "ties": 69,
+          "losses": 3
+        },
+        "proof": {
+          "preference": 0.5625,
+          "ci95": [
+            0.375,
+            0.75
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 5,
+          "ties": 8,
+          "losses": 3
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.4875,
+          "ci95": [
+            0.4125,
+            0.55
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 10,
+          "ties": 19,
+          "losses": 11
+        },
+        "grader-opus": {
+          "preference": 0.5375,
+          "ci95": [
+            0.425,
+            0.65
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 14,
+          "ties": 15,
+          "losses": 11
+        }
+      },
+      "material_errors": {
+        "candidate": 0.075,
+        "reference": 0.175
+      }
+    },
+    "codex-all": {
+      "overall": {
+        "preference": 0.5125,
+        "ci95": [
+          0.41875,
+          0.60625
+        ],
+        "cases": 20,
+        "judgments": 80,
+        "wins": 22,
+        "ties": 38,
+        "losses": 20
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.6875,
+          "ci95": [
+            0.5,
+            0.875
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 7,
+          "ties": 8,
+          "losses": 1
+        },
+        "research": {
+          "preference": 0.4375,
+          "ci95": [
+            0.21875,
+            0.65625
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 3,
+          "ties": 8,
+          "losses": 5
+        },
+        "argument": {
+          "preference": 0.5,
+          "ci95": [
+            0.3125,
+            0.75
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 6,
+          "ties": 4,
+          "losses": 6
+        },
+        "proof": {
+          "preference": 0.34375,
+          "ci95": [
+            0.1875,
+            0.5
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 2,
+          "ties": 7,
+          "losses": 7
+        },
+        "control": {
+          "preference": 0.59375,
+          "ci95": [
+            0.5,
+            0.6875
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 4,
+          "ties": 11,
+          "losses": 1
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.5,
+          "ci95": [
+            0.41875,
+            0.58125
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 14,
+          "ties": 52,
+          "losses": 14
+        },
+        "naturalness": {
+          "preference": 0.4875,
+          "ci95": [
+            0.43125,
+            0.5375
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 7,
+          "ties": 64,
+          "losses": 9
+        },
+        "progression": {
+          "preference": 0.525,
+          "ci95": [
+            0.45,
+            0.6
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 14,
+          "ties": 56,
+          "losses": 10
+        },
+        "voice": {
+          "preference": 0.55,
+          "ci95": [
+            0.51875,
+            0.5875
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 8,
+          "ties": 72,
+          "losses": 0
+        },
+        "proof": {
+          "preference": 0.375,
+          "ci95": [
+            0.21875,
+            0.5
+          ],
+          "cases": 4,
+          "judgments": 16,
+          "wins": 2,
+          "ties": 8,
+          "losses": 6
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.5375,
+          "ci95": [
+            0.475,
+            0.6125
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 7,
+          "ties": 29,
+          "losses": 4
+        },
+        "grader-opus": {
+          "preference": 0.4875,
+          "ci95": [
+            0.3375,
+            0.6375
+          ],
+          "cases": 20,
+          "judgments": 40,
+          "wins": 15,
+          "ties": 9,
+          "losses": 16
+        }
+      },
+      "material_errors": {
+        "candidate": 0.1125,
+        "reference": 0.1125
+      }
+    },
+    "all": {
+      "overall": {
+        "preference": 0.5125,
+        "ci95": [
+          0.45625,
+          0.571875
+        ],
+        "cases": 20,
+        "judgments": 160,
+        "wins": 46,
+        "ties": 72,
+        "losses": 42
+      },
+      "categories": {
+        "ordinary": {
+          "preference": 0.578125,
+          "ci95": [
+            0.484375,
+            0.65625
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 11,
+          "ties": 15,
+          "losses": 6
+        },
+        "research": {
+          "preference": 0.46875,
+          "ci95": [
+            0.375,
+            0.609375
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 7,
+          "ties": 16,
+          "losses": 9
+        },
+        "argument": {
+          "preference": 0.46875,
+          "ci95": [
+            0.34375,
+            0.609375
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 11,
+          "ties": 8,
+          "losses": 13
+        },
+        "proof": {
+          "preference": 0.484375,
+          "ci95": [
+            0.359375,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 8,
+          "ties": 15,
+          "losses": 9
+        },
+        "control": {
+          "preference": 0.5625,
+          "ci95": [
+            0.5,
+            0.6875
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 9,
+          "ties": 18,
+          "losses": 5
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": 0.525,
+          "ci95": [
+            0.484375,
+            0.56875
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 34,
+          "ties": 100,
+          "losses": 26
+        },
+        "naturalness": {
+          "preference": 0.4625,
+          "ci95": [
+            0.415625,
+            0.509375
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 14,
+          "ties": 120,
+          "losses": 26
+        },
+        "progression": {
+          "preference": 0.484375,
+          "ci95": [
+            0.440625,
+            0.53125
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 21,
+          "ties": 113,
+          "losses": 26
+        },
+        "voice": {
+          "preference": 0.540625,
+          "ci95": [
+            0.509375,
+            0.571875
+          ],
+          "cases": 20,
+          "judgments": 160,
+          "wins": 16,
+          "ties": 141,
+          "losses": 3
+        },
+        "proof": {
+          "preference": 0.46875,
+          "ci95": [
+            0.3125,
+            0.625
+          ],
+          "cases": 4,
+          "judgments": 32,
+          "wins": 7,
+          "ties": 16,
+          "losses": 9
+        }
+      },
+      "judges": {
+        "astra-high": {
+          "preference": 0.5125,
+          "ci95": [
+            0.46875,
+            0.55625
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 17,
+          "ties": 48,
+          "losses": 15
+        },
+        "grader-opus": {
+          "preference": 0.5125,
+          "ci95": [
+            0.425,
+            0.6
+          ],
+          "cases": 20,
+          "judgments": 80,
+          "wins": 29,
+          "ties": 24,
+          "losses": 27
+        }
+      },
+      "material_errors": {
+        "candidate": 0.09375,
+        "reference": 0.14375
+      }
+    }
+  }
+}

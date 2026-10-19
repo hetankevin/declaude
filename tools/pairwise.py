@@ -26,6 +26,7 @@ except ImportError:
     import bench
 
 VERSION = 'pairwise-v1.1'
+MAX_SCHEMA_ATTEMPTS = 4  # Retain every answer and accept the first valid one.
 DEFAULT_SEED = 'declaude-pairwise-v1'
 DEFAULT_CONFIGS = 'haiku,sonnet-low,sonnet-high,opus-low,opus-xhigh,fable,astra-medium,astra-high,sol-low,luna-medium'
 DEFAULT_JUDGES = 'grader-opus,astra-high'
@@ -308,7 +309,7 @@ def grade_pair(case, lefttext, righttext, judge, *, out, config='local',
             save_json(request_path, request)
         # Reconstruct from exact raw evidence on resume. Corrupt normalized records
         # are repaired without consuming a call; failed raw attempts stay untouched.
-        for attempt in (1, 2):
+        for attempt in range(1, MAX_SCHEMA_ATTEMPTS + 1):
             raw_path = private / f'attempt-{attempt}.txt'
             status_path = private / f'attempt-{attempt}.json'
             if raw_path.exists():
@@ -343,7 +344,7 @@ def grade_pair(case, lefttext, righttext, judge, *, out, config='local',
                     return cached
             save_json(dest, record)
             return record
-        raise SchemaError('Two schema-invalid answers; see private raw attempts')
+        raise SchemaError(f'{MAX_SCHEMA_ATTEMPTS} schema-invalid answers; see private raw attempts')
 
 
 def csv_names(value):

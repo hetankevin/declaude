@@ -75,5 +75,11 @@
   },
   "grader_sha256": "48f37689d8877b22e6e9233f8acae85a9adb31e5fc49e4d9b9b8491666950277",
   "pairwise_grader_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
-  "pairwise_seed": "declaude-pairwise-v1"
+  "pairwise_seed": "declaude-pairwise-v1",
+  "pairwise_judges": [
+    "grader-opus",
+    "astra-high"
+  ],
+  "order_audit_fraction": 0.2,
+  "aggregation": "Pairwise: equal cases and configurations, equal judges within each pair; family aggregates have six Claude and four Codex configurations. Absolute assertion rates are assertion-weighted; intervals resample cases."
 }

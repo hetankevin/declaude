@@ -10,7 +10,7 @@ Public repo: https://github.com/hetankevin/declaude. Installed and packaged skil
 - 80 synthetic tasks: 40 development, 40 fresh holdout. Each split has eight ordinary prose, research, argument, proof, and control cases. Full tasks span about 240–720 words.
 - Independent authors and reviewers checked correctness, task/rubric agreement, and overlap before candidate runs. Only generic synthetic content belongs in this public repo.
 - Development: `evals/large/development.json`; balanced 20-case tuning and 20-case validation subsets. Both are development/selection data.
-- **Holdout remains sealed from the coordinator/tuner.** File: `.local/large-authoring/sealed-holdout.json`; hash: `evals/large/dataset-manifest.json`. Do not read its contents or run it until selection is fixed. Author/reviewer notes remain private.
+- Holdout was sealed through selection and has now been released unchanged as `evals/large/holdout.json`; its hash matches `evals/large/dataset-manifest.json`. No holdout outcome may change the skill, grader, or rubric. Author/reviewer notes remain private.
 - Ten configs: Haiku default; Sonnet low/high; Opus low/xhigh; Fable default; Astra medium/high; Sol low; Luna medium. These are requested CLI identities, not an independent backend audit.
 - Selection configs: Haiku, Sonnet high, Astra medium, Luna medium.
 - Candidate snapshots and hashes: `evals/versions/v4`, `v5a`, `v5b`; `evals/large/candidate-plan.json`. Two-candidate limit is reached. Do not tune on validation or holdout outcomes.
@@ -28,16 +28,19 @@ Two judges assess each pair. Intervals include 50% for both candidates. Neither 
 
 Reports: `evals/results/large-tuning/`. Selection summaries: `evals/large/tuning-v5a.json` and `tuning-v5b.json`. The v4 absolute grades differ across candidate comparisons because pools were graded separately; the reference response texts are identical.
 
-## Running jobs and next steps
+## Validation and final run
 
-1. Full ten-config development baselines, none/v4, completed all 800 outputs in `.local/large-final` with no generation failures. Log: `.local/large-development-baselines.log`. They run inside `.local/large_tune_pipeline.py`. Its eventual nonzero exit can reflect the earlier grading failure already repaired; check the baseline stage and artifact completeness separately.
-2. `.local/large_validation_pipeline.py` generates v5a on 20 validation cases and four configs, copies exact v4 responses from the running baseline, and streams both grading types. Outputs: `.local/large-validation-runs`; pairs: `.local/large-validation-pairs/v5a-vs-v4`; log: `.local/large-validation-pipeline.log`. Expected: 160 responses, 160 absolute grades, 188 pairwise judgments including order audits. It waits for baseline files rather than drawing another incumbent response.
-3. When validation is complete, apply `tools/large_select.py` with `.local/large-validation.json`, the validation run/pair roots, candidate v5a. Promote only if preference > 0.5, fidelity does not decrease, and material-error frequency does not increase. Otherwise retain v4. Record the decision and exact hashes before opening the holdout.
-4. Wait for all baseline writers to finish. Copy the selected candidate's already completed response/meta artifacts into `.local/large-final` if selecting v5a; do not copy selection grades. If retaining v4, no candidate copy is needed.
-5. Release the sealed holdout unchanged as `evals/large/holdout.json` and verify its preregistered hash. Freeze a final matrix manifest. Run `tools/large_run.py` with both dataset files, selected version/path, `.local/large-final`, and a separate pairwise root. It overlaps generation and grading with separate pools. It supports either three arms for v5a/v5b or two arms when retaining v4. Resume the same command after inspecting failures; never run concurrent writers in its roots.
-6. Publish exact outputs/grades, paired-case intervals, IS/OOS model/effort/category/dimension heatmaps, judge agreement and order checks, and actual failures. Inspect rendered charts. Update README and release metadata honestly, install the selected skill if changed, verify local/remote hashes, and push.
+V5a qualified narrowly under the fixed validation rule: 46 wins, 72 ties, 42 losses (51.25%, case CI 45.6–57.2), equal fidelity at 98.48%, material-error flags 15/160 versus 23/160 for v4. Absolute style/holistic scores fell, so do not call this a broad or statistically established improvement. Both kinds of evidence are published in `evals/results/large-validation/`. Selection was frozen before opening the holdout in `evals/large/selection.json`; matrix in `evals/large/final-matrix.json`, commit `2e24b27`.
 
-`.local/large_progress.py` prints current counts. No fresh-test performance exists yet.
+All 800 development no-skill/v4 outputs completed with no generation failures. Reused those and 160 selected-candidate outputs. The final streamed matrix is now running:
+
+```
+python3 tools/large_run.py --cases evals/large/development.json evals/large/holdout.json --selected v5a --skill evals/versions/v5a --out .local/large-final --pairs-out .local/large-final-pairs --generation-workers 16 --pairwise-workers 28 --grading-workers 8
+```
+
+Expected: 2,400 responses and absolute scorecards; 3,820 pairwise judgments including 620 order audits, split over v5a-versus-none and v5a-versus-v4. Log: `.local/large-final-pipeline.log`. Status/failures: `.local/large-final/.private/failures.json`. No concurrent writers to these roots. Inspect schema/transport failures and preserve raw attempts before resuming; never regenerate a poor candidate answer.
+
+Remaining: finish run and recover invalid grading jobs, publish reports with complete-matrix validation, inspect failures and actual plots, update README/release, install selected bundle locally and remotely, verify hashes, push. The report auditor is checking aggregation and completeness handling. Do not change the selected skill or grading criteria based on test results. Packaged/installed skill remains v4 until release.
 
 ## Grading and reliability
 
