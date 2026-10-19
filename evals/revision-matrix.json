@@ -1,0 +1,69 @@
+{
+  "skill_version": "v3",
+  "skill_sha256": "efb0552432b4072d790f9273f90f6f9962b9a717f7a85ca941e83f6b58dd39fb",
+  "configs": {
+    "haiku": {
+      "provider": "claude",
+      "model": "claude-haiku-5-5",
+      "effort": null
+    },
+    "sonnet-low": {
+      "provider": "claude",
+      "model": "claude-sonnet-5-5",
+      "effort": "low"
+    },
+    "sonnet-high": {
+      "provider": "claude",
+      "model": "claude-sonnet-5-5",
+      "effort": "high"
+    },
+    "opus-low": {
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low"
+    },
+    "opus-xhigh": {
+      "provider": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh"
+    },
+    "fable": {
+      "provider": "claude",
+      "model": "claude-fable-5-1",
+      "effort": null
+    },
+    "astra-medium": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "astra-high": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    "sol-low": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low"
+    },
+    "luna-medium": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium"
+    }
+  },
+  "cases_per_split": 8,
+  "conditions": [
+    "none",
+    "v3",
+    "v4"
+  ],
+  "total_outputs": 480,
+  "existing_outputs_reused": 240,
+  "new_outputs": 240,
+  "grading": "Seed-shuffled matched-condition pools of up to ten outputs; three configurations (nine outputs) per full pool, one configuration (three outputs) in final pool.",
+  "holdout_status": "Fresh heldout2 authored separately and preregistered before execution. Selection uses development only.",
+  "selected": "v4",
+  "grader": "v2"
+}

@@ -26,7 +26,7 @@ def plot_matrix(groups, selected, out, reference='none'):
         for kind,filename in [('difference','assertions'),(reference,'levels-none'),(selected,'levels-skill')]:
             with plt.rc_context({'font.size':10,'font.family':'DejaVu Sans','svg.fonttype':'none','text.color':fg,'axes.labelcolor':fg,'xtick.color':fg,'ytick.color':fg,'figure.facecolor':bg,'axes.facecolor':bg}):
                 fig=plt.figure(figsize=(16.5,9.1))
-                ax=fig.add_axes([.18,.16,.80,.76])
+                ax=fig.add_axes([.18,.16,.80,.73])
                 xs=[];x=0
                 for config in ORDER:
                     if config.endswith('-all') or config=='all':x+=.22
