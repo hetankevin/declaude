@@ -8,6 +8,8 @@ It removes rhetorical repetition and unnecessary abstractions while preserving f
 
 The [author-specific regrade](evals/results/context-regrade/report.md) finds clear gains on saved Claude outputs and on Codex proof exposition. **It does not establish a general improvement in Codex prose.** V4 and v5a have similar results, and the installed release remains v4.
 
+The changed scores assess **unchanged writing under a new judging setup**; they are not evidence of a new skill version improving. On the same 400 development pairs, Astra's v5a score changes from +25.5 to +37.8 pp. The expanded headline also uses different case coverage. Relative gains over each model's own baseline do not rank their absolute writing quality, and the Claude–Codex difference has not been causally isolated.
+
 Two blind Codex judges, Astra high and Sol high, graded the saved writing against the author's stated preferences: motivation before constructions, connected explanation, precise scope, preserved voice, and explicit displayed proof steps. There were **no new writing generations and no Claude calls**.
 
 The table shows **win rate minus loss rate in percentage points**, with ties contributing zero. A larger number means a more favorable balance of judgments, not a percentage increase in writing quality. Development uses 40 cases; the original holdout supplies 27 cases with complete outputs across all ten generation configurations.
