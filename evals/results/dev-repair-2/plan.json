@@ -1,0 +1,56 @@
+{
+  "candidate": "v7-dev",
+  "reference": "none",
+  "call_cap": 12,
+  "generation_calls": 6,
+  "judge_calls": 6,
+  "provider": "codex",
+  "judge": "astra-high",
+  "schema_attempts": 1,
+  "seed": "declaude-dev-repair-2",
+  "selection": "Six tune tasks: two practical documents, research, argument, proof and polished control. Two generation calls per Codex configuration: Astra medium, Sol low, Luna medium. Selected before candidate generation.",
+  "limitations": "Small descriptive development check, not a random sample. One same-family judge, no reversed-order audit or fresh holdout. Prior holdout feedback has influenced development. Reused no-skill outputs and new candidate generations include sampling variability. Do not infer significance or broad generalization.",
+  "skill_sha256": "1ec620cea4ca749a4fe7c1a8a328cb99ef0de92475a5fa13f69d6f7d66ba8d84",
+  "rubric_sha256": "cf53c5673b3e674e57c1cac8f79fdbf1f7f746497e644400116b7983c8733e22",
+  "proof_sha256": "b75b106358b8caa4283db9022c46632a9379c0bb7773db1b716cc2c7c2450acc",
+  "paper_voice_sha256": "8c8e3ffb038e435ad5eea0edc6ecb4c3d65b365eac17078caa137305720d476d",
+  "pairs": [
+    {
+      "case": "large-dev-a-01",
+      "config": "astra-medium",
+      "task_sha256": "b0edc54e807fc40350697e1c9bf11c0cb88668d75ea037ac9b9a56ef6fa379e0",
+      "reference_sha256": "47ce95b08df44333875ccfd13b854890fb70e21c1c2d9e713a111bc546af4139"
+    },
+    {
+      "case": "large-dev-b-03",
+      "config": "sol-low",
+      "task_sha256": "e36d9c46239da38aa4904afa903f9e83afacd295e133003fc44016ff09195e56",
+      "reference_sha256": "7dd480c54ca8a7d83125f1df9415365f62b303bb7d1c40eb925ba2c967d066eb"
+    },
+    {
+      "case": "large-dev-a-07",
+      "config": "luna-medium",
+      "task_sha256": "137e528e2cabe372f0ae211e50c0335252f97b78e9d19ae684803f0c2c1d76f3",
+      "reference_sha256": "7a7a514103fe41068edfd4d4841a1cdc1a8e6fd784cf2ecf35374acf1d923017"
+    },
+    {
+      "case": "large-dev-a-09",
+      "config": "astra-medium",
+      "task_sha256": "f1211688a4a0792bcf01e3667201d49b3d0455c369f34f244e5a8cb5ba372aae",
+      "reference_sha256": "34ba7c22c779402fb8e471a142b0b37f6fa3f9d98ecab203c5ed2621e309a101"
+    },
+    {
+      "case": "large-dev-a-13",
+      "config": "sol-low",
+      "task_sha256": "1a4428d9b0888c9bb812eb4a7f1255aee5b652b8718805e905d9234e456c17ce",
+      "reference_sha256": "fd0a01d1fbf9d0b8de3b9fa87b7bab98b096d46272af5ef1fb5140c924f09a01"
+    },
+    {
+      "case": "large-dev-a-17",
+      "config": "luna-medium",
+      "task_sha256": "cc36a15a43e53728acccdb4455885353f206c3f5accf930760f87beb4a40673e",
+      "reference_sha256": "ea7855e506a0ad5fa31085c2f53396d07483ea37dd71b6688e81324cc84e9a97"
+    }
+  ],
+  "decision_rule": "Keep as development-only evidence. A promising pilot requires positive overall and progression net advantage, no new material-error flag versus reference, and no overall/meaning/proof loss on the proof case or overall/meaning loss on the polished control. Otherwise do not promote. Even a pass is not a release or generalization claim."
+}

@@ -1,26 +1,30 @@
 #!/usr/bin/env python3
 """Run the frozen six-pair development diagnostic, with a persistent 12-call cap.
 
-Codex only. Reuses saved v5a responses. No schema/transport retries, holdout,
+Codex only. Reuses saved reference responses. No schema/transport retries, holdout,
 Claude, or absolute grader calls. Reruns reuse successful artifacts and cannot
 repeat a failed request. Private CLI envelopes stay under .local/.
 """
-import concurrent.futures, hashlib, json, time
+import argparse, concurrent.futures, hashlib, json, time
 from pathlib import Path
 import bench, pairwise
 
 ROOT=Path(__file__).resolve().parents[1]
 
-def main():
- public=ROOT/'evals/results/dev-repair-1'; work=ROOT/'.local/dev-repair-1'
+def main(pilot='dev-repair-1'):
+ if pilot not in ('dev-repair-1','dev-repair-2'):raise ValueError('Unknown authorized pilot')
+ public=ROOT/'evals/results'/pilot; work=ROOT/'.local'/pilot
  plan=json.loads((public/'plan.json').read_text())
  assert plan['provider']=='codex' and plan['call_cap']==12 and len(plan['pairs'])==6
  skill=bench.bundle(ROOT/'evals/versions'/plan['candidate'])
  assert pairwise.text_hash(skill)==plan['skill_sha256']
  assert pairwise.text_hash(pairwise.RUBRIC.read_text())==plan['rubric_sha256']
+ if 'proof_sha256' in plan:
+  for filename,key in [('proofs.md','proof_sha256'),('paper-voice.md','paper_voice_sha256')]:
+   assert pairwise.text_hash((ROOT/'evals/versions'/plan['candidate']/'references'/filename).read_text())==plan[key]
  cases={c['id']:c for c in json.loads((ROOT/'evals/large/development.json').read_text())['cases']}
  # Only the six frozen development references enter generation or judging.
- refs={(r['case'],r['config']):r for r in json.loads((ROOT/'evals/results/large-interim/responses.json').read_text()) if r['arm']=='v5a' and r['split']=='development'}
+ refs={(r['case'],r['config']):r for r in json.loads((ROOT/'evals/results/large-interim/responses.json').read_text()) if r['arm']==plan['reference'] and r['split']=='development'}
  for p in plan['pairs']:
   c=cases[p['case']]; assert c['subset']=='tune'
   assert pairwise.text_hash(c['task'])==p['task_sha256']
@@ -63,4 +67,6 @@ def main():
  pairwise.save_json(work/'status.json',outcomes)
  print('Finished;',len(json.loads((work/'calls.json').read_text())),'Codex calls; zero Claude calls',flush=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--pilot',choices=['dev-repair-1','dev-repair-2'],required=True)
+ main(parser.parse_args().pilot)

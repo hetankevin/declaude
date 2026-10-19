@@ -1,5 +1,11 @@
 # Handoff
 
+## Second bounded repair authorized
+
+The user authorized another small Codex-only dev attempt, explicitly keeping proof guidance. `dev-repair-2` is separately capped at 12 calls: six v7-dev outputs versus saved no-skill outputs, six blind Astra-high judgments. Three generator configs, two tasks each. Run only `python3 tools/dev_repair.py --pilot dev-repair-2`. The first pilot budget remains exhausted. No Claude calls, retries, or holdout evaluation. Do not resume the large benchmark.
+
+v7-dev simplifies prose guidance and limits it to correcting actual defects rather than imposing a rewrite. Both proofs.md and paper-voice.md are byte-identical to v5a, with hashes in the frozen plan. The packaged and installed release is still v4 pending results. This pilot is development evidence, not generalization or a model ranking.
+
 ## Bounded dev repair complete — no more calls authorized
 
 Completed exactly 12 Codex calls, zero Claude calls. Six development/tune outputs and six blind Astra-high judgments against saved v5a: 1 win / 3 ties / 2 losses, −16.7 pp overall and progression. Meaning tied all six; no material flags; proof and polished control tied. `evals/results/dev-repair-1/` contains frozen plan, outputs, exact judgments, summary, and report. `tools/dev_repair.py` enforces the persistent cap; it is exhausted. Do not run further model calls or resume the large benchmark.
