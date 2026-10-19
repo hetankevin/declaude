@@ -1,0 +1,4138 @@
+{
+  "schema": "prose-repair-v1",
+  "candidate": "v8-dev",
+  "subset": "tune",
+  "seed": "declaude-prose-repair-1",
+  "configs": {
+    "astra-medium": [
+      "codex",
+      "gpt-6-astra",
+      "medium"
+    ],
+    "astra-high": [
+      "codex",
+      "gpt-6-astra",
+      "high"
+    ],
+    "sol-low": [
+      "codex",
+      "gpt-6.1-sol",
+      "low"
+    ],
+    "luna-medium": [
+      "codex",
+      "gpt-6-luna",
+      "medium"
+    ]
+  },
+  "judges": {
+    "astra-high": [
+      "codex",
+      "gpt-6-astra",
+      "high"
+    ],
+    "sol-high": [
+      "codex",
+      "gpt-6.1-sol",
+      "high"
+    ]
+  },
+  "references": [
+    "none",
+    "v4"
+  ],
+  "batch_size": 4,
+  "max_attempts": 4,
+  "generated_output_cap": 80,
+  "generation_attempt_cap": 320,
+  "judge_attempt_cap": 480,
+  "case_ids": [
+    "large-dev-a-01",
+    "large-dev-a-03",
+    "large-dev-a-05",
+    "large-dev-a-07",
+    "large-dev-a-09",
+    "large-dev-a-11",
+    "large-dev-a-13",
+    "large-dev-a-15",
+    "large-dev-a-17",
+    "large-dev-a-19",
+    "large-dev-b-01",
+    "large-dev-b-03",
+    "large-dev-b-05",
+    "large-dev-b-07",
+    "large-dev-b-09",
+    "large-dev-b-11",
+    "large-dev-b-13",
+    "large-dev-b-15",
+    "large-dev-b-17",
+    "large-dev-b-19"
+  ],
+  "jobs": [
+    {
+      "case": "large-dev-a-01",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "e64434a2ffc9ee78d836a9ef"
+    },
+    {
+      "case": "large-dev-a-01",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "ccbda2e1b52ac3fdd4ec710d"
+    },
+    {
+      "case": "large-dev-a-01",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "adba95556806807528427c36"
+    },
+    {
+      "case": "large-dev-a-01",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "0cabd35e95167720d287fccc"
+    },
+    {
+      "case": "large-dev-a-01",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "380749a6c6801e572ff12b87"
+    },
+    {
+      "case": "large-dev-a-01",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "38c660b3a559195d540601f4"
+    },
+    {
+      "case": "large-dev-a-03",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "77ff05368cc7d896a8a69f86"
+    },
+    {
+      "case": "large-dev-a-03",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "2b7bbd85009ccff27fff6b8b"
+    },
+    {
+      "case": "large-dev-a-03",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "00e40a180535534e6e651f9e"
+    },
+    {
+      "case": "large-dev-a-03",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "d3aa1d6ab319d92aa39fc2ea"
+    },
+    {
+      "case": "large-dev-a-03",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "65332006fabc8b7b15a2aac8"
+    },
+    {
+      "case": "large-dev-a-03",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "885302b2ad3ecbf842770723"
+    },
+    {
+      "case": "large-dev-a-05",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "6b4d8b626815c01d06812c7a"
+    },
+    {
+      "case": "large-dev-a-05",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "49112ff97dff6d3e77226499"
+    },
+    {
+      "case": "large-dev-a-05",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "ca47951fcacf474372393d05"
+    },
+    {
+      "case": "large-dev-a-05",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "b3756e5a529579775e349b94"
+    },
+    {
+      "case": "large-dev-a-05",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "bad23c3001346f8c5bc0a776"
+    },
+    {
+      "case": "large-dev-a-05",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "083ae20cd106e7d149fb8839"
+    },
+    {
+      "case": "large-dev-a-07",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "6e3d55760d2d7393f64c1de0"
+    },
+    {
+      "case": "large-dev-a-07",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "18a9c0027895d8f876347efe"
+    },
+    {
+      "case": "large-dev-a-07",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "662c9fa8632baa5ff8ced318"
+    },
+    {
+      "case": "large-dev-a-07",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "02fe23caeac2923f7ede54de"
+    },
+    {
+      "case": "large-dev-a-07",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "452baf0af784a1af1e48d034"
+    },
+    {
+      "case": "large-dev-a-07",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "6d93c6072f02d5b01910e2ec"
+    },
+    {
+      "case": "large-dev-a-09",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "123d1b9910a0a1b84f9f885f"
+    },
+    {
+      "case": "large-dev-a-09",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "bf50378a06726c891bebf2dc"
+    },
+    {
+      "case": "large-dev-a-09",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "f26a5da19fb0db3016c741c5"
+    },
+    {
+      "case": "large-dev-a-09",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "620475022e83981712ce29ff"
+    },
+    {
+      "case": "large-dev-a-09",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "e89b43f65af6196aef3c6615"
+    },
+    {
+      "case": "large-dev-a-09",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "8f6c0b9847c2a8962c92d33d"
+    },
+    {
+      "case": "large-dev-a-11",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "8402726fbe4c1de9808034d8"
+    },
+    {
+      "case": "large-dev-a-11",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "5a343d4a7600bf6037033199"
+    },
+    {
+      "case": "large-dev-a-11",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "e477e73126ffe99a12de53e4"
+    },
+    {
+      "case": "large-dev-a-11",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "0c66cf12a321c2870deed7f8"
+    },
+    {
+      "case": "large-dev-a-11",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "c6ebc837a2a9e8393afd68a7"
+    },
+    {
+      "case": "large-dev-a-11",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "4ced62448c3053a07e6734d9"
+    },
+    {
+      "case": "large-dev-a-13",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "cb34bc4708c4e8a6ba1c877e"
+    },
+    {
+      "case": "large-dev-a-13",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "c32c9005d0169abd8a724dad"
+    },
+    {
+      "case": "large-dev-a-13",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "977e03af73acc9c682d9085e"
+    },
+    {
+      "case": "large-dev-a-13",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "60d57cb62c2e85581d9c255d"
+    },
+    {
+      "case": "large-dev-a-13",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "6e711a5779a92a835fa8e011"
+    },
+    {
+      "case": "large-dev-a-13",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "28dc33f283598d5d249b857e"
+    },
+    {
+      "case": "large-dev-a-15",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "796ee2ea4c8e837032b5ced8"
+    },
+    {
+      "case": "large-dev-a-15",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "f2ac2ebdc70ed8995eee3454"
+    },
+    {
+      "case": "large-dev-a-15",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "e333efc3513a1a95902cd262"
+    },
+    {
+      "case": "large-dev-a-15",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "60cddccc6175b937281807c8"
+    },
+    {
+      "case": "large-dev-a-15",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "adcf6ec9731a0b75705049a8"
+    },
+    {
+      "case": "large-dev-a-15",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "a4ebc68278827418853d3ac9"
+    },
+    {
+      "case": "large-dev-a-17",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "3d0eae57ec7fad60e50dd146"
+    },
+    {
+      "case": "large-dev-a-17",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "fa9cb0a0b4d509238ecbea45"
+    },
+    {
+      "case": "large-dev-a-17",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "65a56022cf2df62156a07b46"
+    },
+    {
+      "case": "large-dev-a-17",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "d5d147bfc6223eca5a70bca0"
+    },
+    {
+      "case": "large-dev-a-17",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "3f5a3a6d331e45e295437bf1"
+    },
+    {
+      "case": "large-dev-a-17",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "2a22cffd4706c2b0ab1e0f65"
+    },
+    {
+      "case": "large-dev-a-19",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "5ae434701e125c77642de323"
+    },
+    {
+      "case": "large-dev-a-19",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "af757bf2f7887aa4efae587f"
+    },
+    {
+      "case": "large-dev-a-19",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "ba4ce07f77e04cdfb9ba6dba"
+    },
+    {
+      "case": "large-dev-a-19",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "9b0dd44d0b56c45e835bdc27"
+    },
+    {
+      "case": "large-dev-a-19",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "828336283c9f55472752e921"
+    },
+    {
+      "case": "large-dev-a-19",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-a-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "f132da70f00c4a49bb327558"
+    },
+    {
+      "case": "large-dev-b-01",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "3eb7e1d6d0249c94d51955d0"
+    },
+    {
+      "case": "large-dev-b-01",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "b69afa7a55aafc7d6dc561dd"
+    },
+    {
+      "case": "large-dev-b-01",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "7d5be2ea95b047a72429a713"
+    },
+    {
+      "case": "large-dev-b-01",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "a089be0e44ad428eb03553f3"
+    },
+    {
+      "case": "large-dev-b-01",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "00b3b3e801771aede3bd9e4b"
+    },
+    {
+      "case": "large-dev-b-01",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-01",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-01",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "0235e1b3848a95a9793bab94"
+    },
+    {
+      "case": "large-dev-b-03",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "76c10575ca680d03416e3488"
+    },
+    {
+      "case": "large-dev-b-03",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "7cdc90171fd000489e0c4b95"
+    },
+    {
+      "case": "large-dev-b-03",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "2d32de96b7befa98334e24d8"
+    },
+    {
+      "case": "large-dev-b-03",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "155e8621ba77c6b1ba26d038"
+    },
+    {
+      "case": "large-dev-b-03",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "e9cde413441a8c88591b1480"
+    },
+    {
+      "case": "large-dev-b-03",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-03",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "b42cc37e65be556a001705a4"
+    },
+    {
+      "case": "large-dev-b-05",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "f5f6a8934c91ea633ad4b701"
+    },
+    {
+      "case": "large-dev-b-05",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "d19aab679883f1573af5de77"
+    },
+    {
+      "case": "large-dev-b-05",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "545213ad13df9e6d61bef859"
+    },
+    {
+      "case": "large-dev-b-05",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "c48ccd09ef5c5d236bc2f5ee"
+    },
+    {
+      "case": "large-dev-b-05",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-05",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "e255abd2962d0a45b095b88c"
+    },
+    {
+      "case": "large-dev-b-05",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-05",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "a6ed6329ff91d76239c76f3a"
+    },
+    {
+      "case": "large-dev-b-07",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "c8bffcbfd2823e63c7941a4d"
+    },
+    {
+      "case": "large-dev-b-07",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "f5917009bb49cd12832e7b72"
+    },
+    {
+      "case": "large-dev-b-07",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        }
+      ],
+      "id": "f9ff334bc80ced60a061eaed"
+    },
+    {
+      "case": "large-dev-b-07",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "f90675df9a97e08014edc3e9"
+    },
+    {
+      "case": "large-dev-b-07",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-07",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "0b9f39e56962e3db60c2bc70"
+    },
+    {
+      "case": "large-dev-b-07",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-07",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "fe487b386823414be6138f08"
+    },
+    {
+      "case": "large-dev-b-09",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "98e406fbbad699ffd7c6b66f"
+    },
+    {
+      "case": "large-dev-b-09",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "09a3c9001aba9fc54543132b"
+    },
+    {
+      "case": "large-dev-b-09",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        }
+      ],
+      "id": "527bca7ae91d4a5140e8ea56"
+    },
+    {
+      "case": "large-dev-b-09",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "c7f2879f704e57a7ba1d4382"
+    },
+    {
+      "case": "large-dev-b-09",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "64d2e1a13fbbee3965e6a67d"
+    },
+    {
+      "case": "large-dev-b-09",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        }
+      ],
+      "id": "41424726f4d9f0c5d98fce77"
+    },
+    {
+      "case": "large-dev-b-11",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "b347390b5001b203955b5fb0"
+    },
+    {
+      "case": "large-dev-b-11",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "eadd8984baf2758ed2cae771"
+    },
+    {
+      "case": "large-dev-b-11",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "b85f8133319debe6d8ea1522"
+    },
+    {
+      "case": "large-dev-b-11",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "8e186fa1400ca7a7cd76cf7f"
+    },
+    {
+      "case": "large-dev-b-11",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "0779a5e4b1c81a4195d228dc"
+    },
+    {
+      "case": "large-dev-b-11",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-11",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-11",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "054744795814623e84762216"
+    },
+    {
+      "case": "large-dev-b-13",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "49159292018204dafd94cb43"
+    },
+    {
+      "case": "large-dev-b-13",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "411b1d79b6d4a6566ee9f799"
+    },
+    {
+      "case": "large-dev-b-13",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P03"
+        }
+      ],
+      "id": "7cae0941657a15d02f27a3be"
+    },
+    {
+      "case": "large-dev-b-13",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "fc40d0524e84199985cf8bc1"
+    },
+    {
+      "case": "large-dev-b-13",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "08d9b581a4b36477e07d375e"
+    },
+    {
+      "case": "large-dev-b-13",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-13",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        }
+      ],
+      "id": "84e9ad3cb898d75481735748"
+    },
+    {
+      "case": "large-dev-b-15",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "3d430999b450c10550c10cf0"
+    },
+    {
+      "case": "large-dev-b-15",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "9d09d07630fb2431d850e61f"
+    },
+    {
+      "case": "large-dev-b-15",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ],
+      "id": "12ea3442df6ac77e502d6161"
+    },
+    {
+      "case": "large-dev-b-15",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "a6330478da485127a60dfafe"
+    },
+    {
+      "case": "large-dev-b-15",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "af2c83f2db0c7545726b51a9"
+    },
+    {
+      "case": "large-dev-b-15",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-15",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-15",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "cf664e47a2f499b2b8ffafb2"
+    },
+    {
+      "case": "large-dev-b-17",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "fb6cfe1eacd5a0a04317ec02"
+    },
+    {
+      "case": "large-dev-b-17",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "e399d3fc061f4a28027444b2"
+    },
+    {
+      "case": "large-dev-b-17",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "5060975bf02365cbcd4c66e9"
+    },
+    {
+      "case": "large-dev-b-17",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "1cc6078fbdede8ff8daf3d14"
+    },
+    {
+      "case": "large-dev-b-17",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "6527732ca6fc8ce855196ccd"
+    },
+    {
+      "case": "large-dev-b-17",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-17",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-17",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ],
+      "id": "227a7457e74c49dff2df00ae"
+    },
+    {
+      "case": "large-dev-b-19",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "583edaef599145fec79f83e1"
+    },
+    {
+      "case": "large-dev-b-19",
+      "judge": "astra-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "db371a37911798e07390ace3"
+    },
+    {
+      "case": "large-dev-b-19",
+      "judge": "astra-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "24c1ac086e24812a3180814f"
+    },
+    {
+      "case": "large-dev-b-19",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "25e1e9cfbc52ce4df1e041f8"
+    },
+    {
+      "case": "large-dev-b-19",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-19",
+          "config": "luna-medium",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-medium",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "v4",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-19",
+          "config": "sol-low",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ],
+      "id": "13211d1a1314104099c1813f"
+    },
+    {
+      "case": "large-dev-b-19",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-19",
+          "config": "astra-high",
+          "candidate": "v8-dev",
+          "reference": "none",
+          "a_side": "right",
+          "label": "P01"
+        }
+      ],
+      "id": "045e86a2b01ae64bf508537e"
+    }
+  ],
+  "files": {
+    "cases.json": "62a57343412068487d01de7c03fe677020e89c4b98f91dfe22acfcf681c334d2",
+    "baselines.json": "966eeb653c21f12bec60c506765a0773921bc546697ac0b09f96112ba577e59f",
+    "author-context.json": "820402982e342312ee46ae6f3ab269d4724bf63ef84055fda59fa8566547cb23",
+    "bundle.txt": "2df8cca9ea3131008e4ff4ab23eabbdeec464ab91486e6e2f650d0862ccaa921",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "protocol.md": "77cc4f088966c5223c435656b6eb18e2225251f189e5f07b057e549d02893298",
+    "proofs.md": "b75b106358b8caa4283db9022c46632a9379c0bb7773db1b716cc2c7c2450acc"
+  },
+  "candidate_files": {
+    "SKILL.md": "b4b27a996f03bb8535e4362462202be2e93da68e9a2bf542fa7318accf82ca97",
+    "references/paper-voice.md": "8c8e3ffb038e435ad5eea0edc6ecb4c3d65b365eac17078caa137305720d476d",
+    "references/proofs.md": "b75b106358b8caa4283db9022c46632a9379c0bb7773db1b716cc2c7c2450acc",
+    "references/tells.md": "973b6a905528796dfa85c94171e8a680e4a0cb2a06bc9499cfb4c47d0a925612",
+    "references/translation.md": "2b143e8f14cbb9d813be04d6cdc266915b0498c0fb369f46bf69565330b2a4b7"
+  },
+  "bundle_sha256": "2df8cca9ea3131008e4ff4ab23eabbdeec464ab91486e6e2f650d0862ccaa921",
+  "proof_sha256": "b75b106358b8caa4283db9022c46632a9379c0bb7773db1b716cc2c7c2450acc",
+  "source_development_sha256": "a1ea1453f70e5c051b8be2a1b3bd336654cf18e7d709404358fc95cce35b940c",
+  "selected_baselines_sha256": "2ee7fc5c154cb886fa79d66e3ea7feb403e906c8e6e379b7619f8a1a3fa937d5",
+  "rubric_source_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+  "context_source_sha256": "820402982e342312ee46ae6f3ab269d4724bf63ef84055fda59fa8566547cb23",
+  "audit_fraction": 0.2,
+  "primary_judgments": 320,
+  "audit_judgments": 64,
+  "policy": "First transport-valid writing and first fully schema-valid batch only. Four attempts for transport/schema failures. No writing quality retries. Development only; fresh holdout reserved unrun.",
+  "tool_sha256": {
+    "prose_repair.py": "337c22cf2815374b6921ef7e45d82f58d75ae7ebfa4afc9759e3be4803657a25",
+    "bench.py": "c8d95a83d29e0194578089c9a5b7bfe741c81bf701fe933c88f5ee814f08fd20",
+    "context_regrade.py": "3fce1e84d31aa0f45edd8f07dacb7ecdba9dee835ccb159bb68116d10e2419f4",
+    "pairwise.py": "bb663a03d066aa76e8cb226faea970c495291c691bc1914a9e228c22ead39038"
+  },
+  "plan_sha256": "88c07f1e48a54bcb5fbac64b9276b4ff55938f4132da4c9a03e53c7b6759a608"
+}
