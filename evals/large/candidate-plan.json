@@ -10,9 +10,12 @@
   "maximum_candidates": 2,
   "skill_sha256": {
     "v4": "2f56547251c3f77dc2e718cd35ceca893f78352c45eb98397a0a78ba6e5b33d4",
-    "v5a": "24d41e32ef5a5ef57af79515184d4e8881657936f88935d224d24e4943edae5c"
+    "v5a": "24d41e32ef5a5ef57af79515184d4e8881657936f88935d224d24e4943edae5c",
+    "v5b": "257c42040151eeb2851b35b03339da1ec8373b6973d874a94b58db1b0bd811cf"
   },
   "first_candidate_basis": "general reader-dependency, artifact-form, and completion guidance; no new model results inspected",
   "selection_rule": "best tuning candidate gets one validation evaluation; prefer over v4 only if mean pairwise preference > 0.5, no decrease in fidelity pass rate, no increase in material-error frequency; tie retains v4",
-  "fresh_holdout_used_for_selection": false
+  "fresh_holdout_used_for_selection": false,
+  "second_candidate": "v5b",
+  "second_candidate_basis": "Qualitative analysis of 25 completed triples across seven tuning cases, before inspecting validation or holdout. Targets relational fidelity, source-grounded bridges, voice-sample boundaries, and correct proof connections."
 }

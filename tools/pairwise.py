@@ -385,6 +385,8 @@ def main(argv=None):
                                  out=args.out, config=config, left_id=args.reference,
                                  right_id=args.candidate, seed=args.seed, reverse=reverse,
                                  a_side=('left', 'right')[int(digest([args.seed, case['id'], config, judge, 'side']), 16) % 2]))
+    # Mix judge families in the execution queue; assignments and cache keys stay fixed.
+    jobs.sort(key=lambda job: digest([args.seed, job['case']['id'], job['config'], job['judge'], job['reverse'], 'queue']))
     failures = 0
     with ThreadPoolExecutor(args.workers) as pool:
         futures = {pool.submit(grade_pair, **job): job for job in jobs}
