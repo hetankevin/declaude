@@ -4,7 +4,22 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## Results across models and effort levels
+## Larger benchmark: interim snapshot
+
+The new 80-task, ten-configuration experiment is **paused and incomplete**. The [interim report](evals/results/large-interim/report.md) contains 2,012 of 2,400 writing outputs, 1,458 absolute scorecards, and 2,078 of 3,820 pairwise judgments, including order audits. No additional model calls were made to publish this snapshot.
+
+| Split | Cases with complete pairwise coverage | V5a vs no skill | V5a vs v4 |
+|---|---:|---:|---:|
+| Development | 39/40 | 58.46% | 51.73% |
+| Fresh holdout | 3/40 | 37.50% | 51.67% |
+
+Percentages count wins plus half of ties, with both judge families and all ten configurations represented for every included case. **Three completed holdout cases cannot establish generalization.** They are an execution-order subset. Missing results are not counted as ties or zeros, and neither these results nor subsequent test results may be used to tune the selected revision.
+
+[Exact outputs and grading evidence](evals/results/large-interim/report.md#files) · [Coverage](evals/results/large-interim/coverage.json) · [Development selection](evals/large/selection.json) · [Frozen protocol](evals/large/protocol.md).
+
+V5a narrowly qualified on reserved development validation. The packaged and installed skill remains v4 pending completion and release. The following results describe the earlier, smaller experiment.
+
+## Earlier 16-case results
 
 The final comparison covers **10 configurations and 480 outputs**: eight development cases and eight fresh held-out cases, each run with no skill, v3, and v4. V4 improves assertion passes over no skill on the fresh cases, but **does not establish an improvement over v3**. Its development advantage did not generalize clearly.
 
