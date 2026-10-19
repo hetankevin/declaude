@@ -35,7 +35,7 @@ def _split_rows(summary):
         key = name.lower().replace('_', '-').replace(' ', '-')
         if key in ('is', 'in-sample', 'development', 'dev', 'train', 'training', 'tune'):
             split = 'IS'
-        elif key in ('oos', 'out-of-sample', 'test', 'testing', 'validation', 'holdout', 'held-out') or re.fullmatch(r'(?:heldout|holdout|held-out)(?:-?\d+)?', key):
+        elif key in ('oos', 'out-of-sample', 'test', 'testing', 'holdout', 'held-out') or re.fullmatch(r'(?:heldout|holdout|held-out)(?:-?\d+)?', key):
             split = 'OOS'
         else:
             raise ValueError(f'Unknown split {name!r}; use development/heldout or IS/OOS')

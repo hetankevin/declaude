@@ -95,6 +95,27 @@ def aggregate(rows,dimension=None,samples=3000):
  counts=collections.Counter(outcome(r) for r in rs)
  return {'preference':statistics.mean(case_means.values()),'ci95':[bs[int(.025*samples)],bs[int(.975*samples)-1]],'cases':len(ids),'judgments':len(rs),'wins':counts['win'],'ties':counts['tie'],'losses':counts['loss']}
 
+def order_diagnostics(records,cases):
+ """Counts are descriptive: each pair is one case/config/judge in both orders."""
+ pairmap=collections.defaultdict(dict)
+ for r in records:pairmap[(r['case'],r['config'],r['judge'])][r['order']]=r
+ audits=[v for v in pairmap.values() if 'primary' in v and 'reversed' in v]
+ def counts(items):
+  return dict(pairs=len(items),cases=len({v['primary']['case'] for v in items}),
+              case_config_pairs=len({(v['primary']['case'],v['primary']['config']) for v in items}),
+              same_verdict=sum(v['primary']['outcome']==v['reversed']['outcome'] for v in items),
+              opposite_non_tie=sum({v['primary']['outcome'],v['reversed']['outcome']}=={'win','loss'} for v in items))
+ judges=sorted({r['judge'] for r in records})
+ result=counts(audits)
+ result['by_judge']={j:counts([v for v in audits if v['primary']['judge']==j]) for j in judges}
+ result['by_split']={}
+ for split in sorted({c['split'] for c in cases.values()}):
+  items=[v for v in audits if cases[v['primary']['case']]['split']==split]
+  result['by_split'][split]=counts(items)
+  result['by_split'][split]['by_judge']={j:counts([v for v in items if v['primary']['judge']==j]) for j in judges}
+ return result
+
+
 def report(records,cases,out):
  out.mkdir(parents=True,exist_ok=True)
  primary=[r for r in records if r['order']=='primary']
@@ -111,10 +132,7 @@ def report(records,cases,out):
    for dim in dimensions:summary[split][cfg]['dimensions'][dim]=aggregate(rs,dim)
    for judge in sorted({r['judge'] for r in rs}):summary[split][cfg]['judges'][judge]=aggregate([r for r in rs if r['judge']==judge])
    summary[split][cfg]['material_errors']={arm:sum(r[arm+'_material_error'] for r in rs)/len(rs) if rs else None for arm in ['candidate','reference']}
- pairmap=collections.defaultdict(dict)
- for r in records:pairmap[(r['case'],r['config'],r['judge'])][r['order']]=r
- audits=[v for v in pairmap.values() if 'primary' in v and 'reversed' in v]
- auditsummary={'pairs':len(audits),'same_verdict':sum(v['primary']['outcome']==v['reversed']['outcome'] for v in audits),'opposite_non_tie':sum({v['primary']['outcome'],v['reversed']['outcome']}=={'win','loss'} for v in audits)}
+ auditsummary=order_diagnostics(records,cases)
  cross=collections.defaultdict(list)
  for r in primary:cross[(r['case'],r['config'])].append(r['outcome'])
  comparisons=[v for v in cross.values() if len(v)==2]
@@ -127,6 +145,10 @@ def report(records,cases,out):
   m=groups['all']['overall']
   if m:lines.append(f"| {split} | {100*m['preference']:.1f}% [{100*m['ci95'][0]:.1f}, {100*m['ci95'][1]:.1f}] | {m['wins']} / {m['ties']} / {m['losses']} | {m['cases']} |")
  lines+=['','Primary judgments only determine performance. Reversed-order repeats are diagnostic.','',f"Order audit: {auditsummary['same_verdict']}/{auditsummary['pairs']} identical verdicts; {auditsummary['opposite_non_tie']} win/loss reversals.",f"Cross-family judges: {disagreements['same_verdict']}/{disagreements['pairs']} identical verdicts; {disagreements['opposite_non_tie']} direct win/loss disagreements."]
+ lines+=['',f"Order audits cover {auditsummary['cases']} unique cases and {auditsummary['case_config_pairs']} case/configuration pairs. Audit pair counts include judges and are not independent task counts.",'', '| Split | Judge | Unique cases | Case/config pairs | Order pairs | Same verdict | Win/loss reversals |','|---|---|---:|---:|---:|---:|---:|']
+ for split,checks in auditsummary['by_split'].items():
+  for judge,check in [('all',checks)]+list(checks['by_judge'].items()):
+   lines.append(f"| {split} | {judge} | {check['cases']} | {check['case_config_pairs']} | {check['pairs']} | {check['same_verdict']} | {check['opposite_non_tie']} |")
  (out/'report.md').write_text('\n'.join(lines)+'\n')
  return summary
 
@@ -149,10 +171,10 @@ def main(argv=None):
     if a.strict or isinstance(r,dict) and r.get('order') in ['primary','reversed']:records.append(r)
  if a.strict:
   matrix=json.loads(a.matrix.read_text());configs=a.configs.split(',')
-  if a.order_audit!=.2:raise ValueError('Frozen final protocol requires threshold-20-percent audits')
+  if a.order_audit!=matrix.get('order_audit_fraction',.2):raise ValueError('Audit fraction differs from manifest')
   rubric=(Path(__file__).resolve().parents[1]/'evals/graders/pairwise-v1.txt').read_text(encoding='utf-8')
   responses=validate_manifest(matrix,a.cases,cases,configs,a.seed,a.candidate,a.reference,a.runs,rubric)
-  validate_records(records,cases,configs,['grader-opus','astra-high'],a.seed,a.order_audit,a.candidate,a.reference,rubric,responses)
+  validate_records(records,cases,configs,matrix.get('pairwise_judges',['grader-opus','astra-high']),a.seed,a.order_audit,a.candidate,a.reference,rubric,responses)
  keys=[(r['case'],r['config'],r['judge'],r['order']) for r in records]
  assert len(keys)==len(set(keys)),'Duplicate grades'
  assert records,'No observations'

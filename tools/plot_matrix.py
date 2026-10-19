@@ -60,10 +60,10 @@ def plot_matrix(groups, selected, out, reference='none'):
                 for spine in ax.spines.values():spine.set_visible(False)
                 cax=fig.add_axes([.24,.065,.38,.018]);hax=fig.add_axes([.71,.065,.24,.018])
                 if kind=='difference':
-                    cb=fig.colorbar(ScalarMappable(norm=Normalize(-assertion_limit,assertion_limit),cmap=div),cax=cax,orientation='horizontal');cb.set_label('Assertion difference (percentage points)')
+                    cb=fig.colorbar(ScalarMappable(norm=Normalize(-assertion_limit,assertion_limit),cmap=div),cax=cax,orientation='horizontal');cb.set_label('Assertion-weighted difference (percentage points)')
                     hb=fig.colorbar(ScalarMappable(norm=Normalize(-holistic_limit,holistic_limit),cmap=div),cax=hax,orientation='horizontal');hb.set_label('Holistic difference (points)')
                 else:
-                    cb=fig.colorbar(ScalarMappable(norm=Normalize(0,100),cmap=seq),cax=cax,orientation='horizontal');cb.set_label('Assertion pass rate (%)')
+                    cb=fig.colorbar(ScalarMappable(norm=Normalize(0,100),cmap=seq),cax=cax,orientation='horizontal');cb.set_label('Assertion-weighted pass rate (%)')
                     hb=fig.colorbar(ScalarMappable(norm=Normalize(1,5),cmap=seq),cax=hax,orientation='horizontal');hb.set_label('Holistic score (1–5)')
                 svg = out/f'{filename}-{mode}.svg'
                 fig.savefig(svg,facecolor=bg)
