@@ -1,0 +1,2802 @@
+[
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'If a reviewer requests a revision, you may edit the draft.' keeps 'may' as a permission."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "Conditional 'If... you may edit' does not say 'only if'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'You may publish only after a reviewer has approved it and the embargo has ended' makes approval necessary and, with the conjunction, not sufficient."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'We prefer a second review for large changes, but do not require one.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "No gate or load-bearing metaphor."
+      }
+    ],
+    "note": "Faithful. The opening 'Reviewer approval is required.' doesn't say what it is required for, and the later publish sentence repeats it.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "Reviewer approval is required. If a reviewer requests a revision, you may edit the draft. You may publish only after a reviewer has approved it and the embargo has ended. We prefer a second review for large changes, but do not require one.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'you may edit the draft' keeps permission."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'When a reviewer requests a revision' is not exclusive."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'requires reviewer approval and the end of the embargo' keeps both conditions."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'We prefer... but do not require one.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "No metaphor."
+      }
+    ],
+    "note": "Identical to R05; faithful and plain.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "When a reviewer requests a revision, you may edit the draft. Publication requires reviewer approval and the end of the embargo. We prefer a second review for large changes, but do not require one.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'you may edit the draft' keeps permission."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'When a reviewer requests a revision' is not exclusive."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'requires reviewer approval and the end of the embargo' keeps both conditions."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'We prefer... but do not require it.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "No gate metaphor."
+      }
+    ],
+    "note": "Faithful and direct. Same as R05 with trivial wording differences.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "When a reviewer requests a revision, you may edit the draft. Publication requires reviewer approval and the end of the embargo. We prefer a second review for large changes, but do not require it.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'you may edit the draft' keeps permission."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'When a reviewer requests a revision' is not exclusive."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'Publication requires reviewer approval and the end of the embargo' makes both necessary, so approval alone is insufficient."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'We prefer... but do not require one.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "No metaphor; compact."
+      }
+    ],
+    "note": "Logically equivalent. The insufficiency of approval comes through the conjunction rather than being stated outright, which is acceptable.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "When a reviewer requests a revision, you may edit the draft. Publication requires reviewer approval and the end of the embargo. We prefer a second review for large changes, but do not require one.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'If a reviewer requests a revision, you may edit the draft.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'If' conditional, not exclusive."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'approval alone doesn't authorize publication: the embargo must also have ended.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'We prefer a second review... but it isn't required.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": false,
+        "evidence": "Keeps the ornamental metaphor: 'Reviewer approval is the key gate.'"
+      }
+    ],
+    "note": "Meaning is preserved, but it keeps the gate metaphor the task asked to remove.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "Reviewer approval is the key gate. If a reviewer requests a revision, you may edit the draft. You need approval before you publish, but approval alone doesn't authorize publication: the embargo must also have ended. We prefer a second review for large changes, but it isn't required.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'you may edit the draft' keeps permission."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'When a reviewer requests a revision' is not exclusive."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'approval alone is not enough: the embargo must also have ended.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'We prefer a second review... but it is not required.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "No ornamental metaphor."
+      }
+    ],
+    "note": "Faithful, plain, and keeps the original order.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "When a reviewer requests a revision, you may edit the draft. Publication requires reviewer approval, but approval alone is not enough: the embargo must also have ended. We prefer a second review for large changes, but it is not required.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'you may edit the draft' keeps permission."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'When a reviewer requests a revision' is not exclusive."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'requires reviewer approval, but approval alone is not enough: the embargo must also have ended.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'preferred for large changes but not required.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "Plain statement with no gate metaphor."
+      }
+    ],
+    "note": "Fully faithful and direct. Keeps the explicit insufficiency of approval alone.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "Publication requires reviewer approval, but approval alone is not enough: the embargo must also have ended. When a reviewer requests a revision, you may edit the draft. A second review is preferred for large changes but not required.\n"
+  },
+  {
+    "case": "dev-permission",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps editing after a revision request as permission rather than obligation.",
+        "passed": true,
+        "evidence": "'If a reviewer requests a revision, you may edit the draft.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not make a revision request the only circumstance permitting edits.",
+        "passed": true,
+        "evidence": "'If' conditional, not 'only if'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps approval necessary but insufficient and the embargo condition.",
+        "passed": true,
+        "evidence": "'approval alone is not enough: the embargo must also have ended.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps a second review preferred, not required.",
+        "passed": true,
+        "evidence": "'preferred for large changes but not required.'"
+      },
+      {
+        "group": "style",
+        "text": "Expresses these conditions directly without ornamental gate metaphors.",
+        "passed": true,
+        "evidence": "No gate metaphor."
+      }
+    ],
+    "note": "Fully faithful and direct.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "Publication requires reviewer approval, but approval alone is not enough: the embargo must also have ended. If a reviewer requests a revision, you may edit the draft. A second review is preferred for large changes but not required.\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Base case and induction hypothesis are given, with the conclusion 'by induction'."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Displays the numerator combination to c(1-q^{t+1})/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Uses q>0 and q<1, keeps t\u22650, and gives the exact bound."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No limit claims."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Prose is minimal but brief and placed alongside the equations."
+      }
+    ],
+    "note": "Mathematically sound. The base case has no connective sentence, and it never says the step yields the claim for t+1.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "For \\(t=0\\),\n\\[\na_0=q^0a_0+\\frac{c(1-q^0)}{1-q}.\n\\]\nSuppose, for some integer \\(t\\ge 0\\), that\n\\[\na_t\\le q^t a_0+\\frac{c(1-q^t)}{1-q}.\n\\]\nUsing \\(a_{t+1}\\le qa_t+c\\) and \\(q>0\\), we obtain\n\\[\n\\begin{aligned}\na_{t+1}\n&\\le qa_t+c\\\\\n&\\le q\\left(q^t a_0+\\frac{c(1-q^t)}{1-q}\\right)+c\\\\\n&=q^{t+1}a_0+\\frac{c\\bigl(q-q^{t+1}+1-q\\bigr)}{1-q}\\\\\n&=q^{t+1}a_0+\\frac{c(1-q^{t+1})}{1-q}.\n\\end{aligned}\n\\]\nThe denominator is positive because \\(q<1\\). Thus, by induction, for every integer \\(t\\ge 0\\),\n\\[\n\\boxed{a_t\\le q^t a_0+\\frac{c(1-q^t)}{1-q}}.\n\\]\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Repeated substitution chain a_t \u2264 q a_{t-1}+c \u2264 q^2 a_{t-2}+c(1+q) \u22ee."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Reaches c\u2211q^j and evaluates it with the finite geometric sum identity."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Treats t=0 separately, then t\u22651, and concludes for every t\u22650 with the exact bound."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No limit claim is made."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Short remarks justify the substitutions (q>0) and the geometric sum."
+      }
+    ],
+    "note": "Faithful, but the \u22ee leaves the general substitution step implicit rather than proved.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "For \\(t=0\\), the bound holds with equality:\n\\[\na_0=q^0a_0+c\\frac{1-q^0}{1-q}.\n\\]\n\nFor \\(t\\geq1\\), repeated substitution of the recurrence gives\n\\[\n\\begin{aligned}\na_t\n&\\leq qa_{t-1}+c\\\\\n&\\leq q^2a_{t-2}+c(1+q)\\\\\n&\\ \\vdots\\\\\n&\\leq q^ta_0+c\\sum_{j=0}^{t-1}q^j.\n\\end{aligned}\n\\]\nEach substitution preserves the inequality because \\(q>0\\). Since \\(0<q<1\\), the finite geometric sum satisfies\n\\[\n\\sum_{j=0}^{t-1}q^j=\\frac{1-q^t}{1-q}.\n\\]\nSubstituting this identity yields\n\\[\na_t\\leq q^ta_0+c\\frac{1-q^t}{1-q},\n\\]\nas claimed for every integer \\(t\\geq0\\). \\(\\square\\)\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Induction with the induction hypothesis displayed."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Same explicit algebra to (1-q^{t+1})/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Uses 0<q<1 and t\u22650, and gives the exact bound."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No convergence claim is made."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Brief explanatory sentences, e.g. multiplying the hypothesis by q>0."
+      }
+    ],
+    "note": "Clean and faithful, with the hypothesis displayed explicitly.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "We prove the bound by induction on \\(t\\). For \\(t=0\\),\n\\[\nq^0a_0+c\\frac{1-q^0}{1-q}=a_0,\n\\]\nso the bound holds with equality.\n\nSuppose that for some integer \\(t\\geq0\\),\n\\[\na_t\\leq q^ta_0+c\\frac{1-q^t}{1-q}.\n\\]\nUsing the recurrence and multiplying the induction hypothesis by \\(q>0\\), we obtain\n\\[\n\\begin{aligned}\na_{t+1}\n&\\leq qa_t+c\\\\\n&\\leq q\\left(q^ta_0+c\\frac{1-q^t}{1-q}\\right)+c\\\\\n&=q^{t+1}a_0+c\\frac{q-q^{t+1}+1-q}{1-q}\\\\\n&=q^{t+1}a_0+c\\frac{1-q^{t+1}}{1-q}.\n\\end{aligned}\n\\]\nThe denominator is positive because \\(0<q<1\\). Thus, by induction,\n\\[\na_t\\leq q^ta_0+c\\frac{1-q^t}{1-q}\n\\qquad\\text{for every integer }t\\geq0.\n\\]\n\\(\\square\\)\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Induction with base case and inductive step."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Displays the combination over 1-q: (q-q^{t+1}+1-q)/(1-q) \u2192 (1-q^{t+1})/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Notes 0<q<1, keeps t\u22650, and gives the exact bound. Nothing contradicts c\u22650."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No limit claims."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Concise prose surrounds the displayed chain."
+      }
+    ],
+    "note": "Compact, faithful, and the steps are explicit.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "We prove the bound by induction on \\(t\\). For \\(t=0\\),\n\\[\nq^0a_0+c\\frac{1-q^0}{1-q}=a_0,\n\\]\nso the bound holds with equality.\n\nSuppose it holds for some integer \\(t\\geq 0\\). By the recurrence and \\(q>0\\),\n\\[\n\\begin{aligned}\na_{t+1}\n&\\leq qa_t+c\\\\\n&\\leq q\\left(q^ta_0+c\\frac{1-q^t}{1-q}\\right)+c\\\\\n&=q^{t+1}a_0+c\\frac{q-q^{t+1}+1-q}{1-q}\\\\\n&=q^{t+1}a_0+c\\frac{1-q^{t+1}}{1-q}.\n\\end{aligned}\n\\]\nThe denominator is nonzero because \\(0<q<1\\). Thus, by induction,\n\\[\na_t\\leq q^ta_0+c\\frac{1-q^t}{1-q}\n\\qquad\\text{for every integer }t\\geq 0.\n\\]\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Full induction with numbered inequalities (1)\u2013(3)."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Writes c = c(1-q)/(1-q) and combines to c(1-q^{t+1})/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Restates 0<q<1, c\u22650, t\u22650, and the exact bound."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "The remark says the RHS tends to c/(1-q), not to zero."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Explanatory sentences are brief and tied to the labelled equations."
+      }
+    ],
+    "note": "Correct and thorough. It adds a claim statement and a remark beyond 'return only the proof'.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "**Claim.** Let $0<q<1$, $c\\ge 0$, and suppose $a_{t+1}\\le q\\,a_t + c$ for all integers $t\\ge 0$. Then for all integers $t\\ge 0$,\n$$a_t \\le q^t a_0 + c\\,\\frac{1-q^t}{1-q}.$$\n\n**Proof.** We argue by induction on $t$.\n\n*Base case ($t=0$).* Since $q^0=1$,\n$$q^0 a_0 + c\\,\\frac{1-q^0}{1-q} = a_0 + 0 = a_0,$$\nso the claim holds with equality: $a_0 \\le a_0$.\n\n*Inductive step.* Assume for some $t\\ge 0$ that\n$$a_t \\le q^t a_0 + c\\,\\frac{1-q^t}{1-q}. \\tag{1}$$\nBy hypothesis,\n$$a_{t+1} \\le q\\,a_t + c. \\tag{2}$$\nBecause $q>0$, multiplying (1) by $q$ preserves the inequality, so\n$$q\\,a_t \\le q^{t+1} a_0 + c\\,\\frac{q(1-q^t)}{1-q}. \\tag{3}$$\nAdding $c$ to both sides of (3) and combining with (2) gives\n$$a_{t+1} \\le q^{t+1} a_0 + c\\,\\frac{q(1-q^t)}{1-q} + c.$$\nNow write $c = c\\,\\dfrac{1-q}{1-q}$, which is valid since $q\\ne 1$, and combine the fractions:\n$$c\\,\\frac{q(1-q^t)}{1-q} + c\\,\\frac{1-q}{1-q} = c\\,\\frac{q - q^{t+1} + 1 - q}{1-q} = c\\,\\frac{1-q^{t+1}}{1-q}.$$\nTherefore\n$$a_{t+1} \\le q^{t+1} a_0 + c\\,\\frac{1-q^{t+1}}{1-q},$$\nwhich is the claim for $t+1$.\n\nBy induction, the inequality holds for every integer $t\\ge 0$. $\\blacksquare$\n\n*Remark.* The contraction factor $q<1$ is what makes the bound useful: as $t\\to\\infty$ the right-hand side tends to $c/(1-q)$. The proof itself uses only $q>0$ (to preserve the inequality when multiplying) and $q\\ne1$ (to divide by $1-q$).\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Full induction, plus a remark that unrolls the recurrence."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Displays the common-denominator step: q(1-q^t)/(1-q)+1 = (1-q^{t+1})/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Concludes for every integer t\u22650 with the exact bound. Uses q>0 and q\u22601."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No convergence claim is made."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Brief connective sentences sit between the displays."
+      }
+    ],
+    "note": "Correct and complete. It defines S_t but never uses it, and adds a remark despite 'return only the proof'.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "**Proof.** We prove, by induction on $t$, that for every integer $t\\geq 0$\n\n$$\na_t \\leq q^t a_0 + c\\,\\frac{1-q^t}{1-q}.\n$$\n\nSince $q\\neq 1$, the right-hand side is well defined. Write $S_t = c\\,\\dfrac{1-q^t}{1-q}$.\n\n**Base case $t=0$.** Here $q^0=1$, so\n\n$$\nq^0 a_0 + c\\,\\frac{1-q^0}{1-q} = a_0 + 0 = a_0,\n$$\n\nand the claim holds with equality.\n\n**Inductive step.** Suppose the claim holds for some $t\\geq 0$. The recurrence gives $a_{t+1}\\leq q a_t + c$. Because $q>0$, multiplying the inductive hypothesis by $q$ preserves the inequality:\n\n$$\nq a_t \\leq q^{t+1} a_0 + q\\,c\\,\\frac{1-q^t}{1-q}.\n$$\n\nAdding $c$ to both sides and combining with the recurrence,\n\n$$\n\\begin{aligned}\na_{t+1}\n&\\leq q a_t + c\\\\\n&\\leq q^{t+1} a_0 + c\\left(\\frac{q(1-q^t)}{1-q} + 1\\right).\n\\end{aligned}\n$$\n\nWe simplify the term in parentheses by putting it over the common denominator $1-q$:\n\n$$\n\\begin{aligned}\n\\frac{q(1-q^t)}{1-q} + 1\n&= \\frac{q - q^{t+1} + 1 - q}{1-q}\\\\\n&= \\frac{1-q^{t+1}}{1-q}.\n\\end{aligned}\n$$\n\nTherefore\n\n$$\na_{t+1} \\leq q^{t+1} a_0 + c\\,\\frac{1-q^{t+1}}{1-q},\n$$\n\nwhich is the claim for $t+1$. By induction, it holds for all integers $t\\geq 0$. $\\qquad\\blacksquare$\n\n**Remark.** The same bound comes from unrolling the recurrence directly:\n\n$$\n\\begin{aligned}\na_t &\\leq q a_{t-1} + c\\\\\n&\\leq q^2 a_{t-2} + c(1+q)\\\\\n&\\;\\;\\vdots\\\\\n&\\leq q^t a_0 + c\\sum_{j=0}^{t-1} q^j\n= q^t a_0 + c\\,\\frac{1-q^t}{1-q},\n\\end{aligned}\n$$\n\nusing the finite geometric sum for the last equality. The induction above justifies each substitution, since multiplying by $q>0$ keeps the inequality direction.\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Induction, plus a remark that unrolls the recurrence."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Displays (q-q^{t+1})/(1-q)+(1-q)/(1-q) = (1-q^{t+1})/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Uses q>0 and q\u22601, keeps t\u22650, and gives the exact bound."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No convergence claim is made."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Brief prose links each display."
+      }
+    ],
+    "note": "Valid and clear. The extra unrolling remark goes beyond 'return only the proof'.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "**Proof.** We prove the claim by induction on $t$.\n\n*Base case.* For $t=0$ we have $q^0=1$ and $1-q^0=0$, so the right-hand side equals $a_0$:\n\n$$\nq^0 a_0 + c\\,\\frac{1-q^0}{1-q} = a_0 .\n$$\n\nHence $a_0 \\le q^0 a_0 + c\\,\\frac{1-q^0}{1-q}$ holds with equality.\n\n*Inductive step.* Suppose that for some integer $t\\ge 0$,\n\n$$\na_t \\le q^t a_0 + c\\,\\frac{1-q^t}{1-q}.\n$$\n\nSince $q>0$, multiplying this inequality by $q$ preserves its direction. Combining with the recurrence $a_{t+1}\\le q a_t + c$ gives\n\n$$\n\\begin{aligned}\na_{t+1}\n&\\le q a_t + c\\\\\n&\\le q\\left(q^t a_0 + c\\,\\frac{1-q^t}{1-q}\\right) + c\\\\\n&= q^{t+1} a_0 + c\\left(\\frac{q-q^{t+1}}{1-q} + 1\\right).\n\\end{aligned}\n$$\n\nWriting $1=\\frac{1-q}{1-q}$, which is valid because $q\\ne 1$, the bracket simplifies:\n\n$$\n\\frac{q-q^{t+1}}{1-q} + \\frac{1-q}{1-q}\n= \\frac{1-q^{t+1}}{1-q}.\n$$\n\nTherefore\n\n$$\na_{t+1} \\le q^{t+1} a_0 + c\\,\\frac{1-q^{t+1}}{1-q},\n$$\n\nwhich is the claim for $t+1$. By induction, the claim holds for every integer $t\\ge 0$. $\\qquad\\blacksquare$\n\n*Remark on the unrolled form.* The induction is the same as repeated substitution:\n\n$$\n\\begin{aligned}\na_t &\\le q a_{t-1} + c\\\\\n&\\le q^2 a_{t-2} + c(1+q)\\\\\n&\\le \\cdots\\\\\n&\\le q^t a_0 + c\\sum_{j=0}^{t-1} q^j\\\\\n&= q^t a_0 + c\\,\\frac{1-q^t}{1-q},\n\\end{aligned}\n$$\n\nwhere the last step is the finite geometric sum.\n"
+  },
+  {
+    "case": "dev-recursion-proof",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Shows repeated substitution or a complete induction rather than only naming unrolling.",
+        "passed": true,
+        "evidence": "Complete induction with base case t=0 (empty sum) and an inductive step for t+1."
+      },
+      {
+        "group": "proof",
+        "text": "Displays intermediate algebra that yields the exact geometric expression, either by evaluating the finite sum or by induction.",
+        "passed": true,
+        "evidence": "Displays distributing q, shifting the index, and absorbing c into the sum, then gives the closed-form geometric sum (1-q^t)/(1-q)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the q range, c condition, index range, and the exact upper bound.",
+        "passed": true,
+        "evidence": "Uses q>0 and q\u22601, keeps t\u22650, and concludes with the exact bound. Nothing contradicts c\u22650."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not claim convergence to zero for positive c.",
+        "passed": true,
+        "evidence": "No limit or convergence claim is made."
+      },
+      {
+        "group": "style",
+        "text": "Uses brief explanations alongside equations rather than long paragraphs of inline mathematics.",
+        "passed": true,
+        "evidence": "Short sentences explain each line, e.g. 'The third line distributes q, the fourth shifts the summation index\u2026'."
+      }
+    ],
+    "note": "Valid and clear. The geometric-sum conversion is stated at the start and repeated in the 'Closed form' section, which is a mild redundancy.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "**Proof.** We prove by induction on $t \\ge 0$ that\n\n$$\na_t \\le q^t a_0 + c\\,\\frac{1-q^t}{1-q}.\n$$\n\nSince $q \\neq 1$, the right side equals $q^t a_0 + c\\sum_{j=0}^{t-1} q^j$ by the finite geometric sum, and we use this form in the induction.\n\n**Base case $t=0$.** The sum is empty, so the right side is $a_0$, and the claim reads $a_0 \\le a_0$.\n\n**Inductive step.** Suppose the claim holds for some $t \\ge 0$:\n\n$$\na_t \\le q^t a_0 + c\\sum_{j=0}^{t-1} q^j .\n$$\n\nBecause $q>0$, multiplying this inequality by $q$ preserves its direction. Combining the result with the hypothesis $a_{t+1} \\le q a_t + c$ gives\n\n$$\n\\begin{aligned}\na_{t+1}\n&\\le q a_t + c \\\\\n&\\le q\\left(q^t a_0 + c\\sum_{j=0}^{t-1} q^j\\right) + c \\\\\n&= q^{t+1} a_0 + c\\sum_{j=0}^{t-1} q^{j+1} + c \\\\\n&= q^{t+1} a_0 + c\\sum_{j=1}^{t} q^{j} + c\\,q^0 \\\\\n&= q^{t+1} a_0 + c\\sum_{j=0}^{t} q^{j}.\n\\end{aligned}\n$$\n\nThe third line distributes $q$, the fourth shifts the summation index, and the last absorbs the term $c\\,q^0 = c$ into the sum. This is the claim for $t+1$.\n\n**Closed form.** For $q \\ne 1$, the finite geometric sum satisfies\n\n$$\n\\sum_{j=0}^{t-1} q^j = \\frac{1-q^t}{1-q}.\n$$\n\nTherefore, for every integer $t \\ge 0$,\n\n$$\na_t \\le q^t a_0 + c\\,\\frac{1-q^t}{1-q}. \\qquad \\blacksquare\n$$\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Opens with the estimation goal; the bias is stated before the correction."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "Calls C a correction matrix and says subtraction removes the additive bias; the motivation is minimal."
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'this known covariance by C'; 'alone does not establish finite-sample accuracy'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "Nothing invented."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": false,
+        "evidence": "'This construction is central to the estimator: the empirical second moment contains an additive bias' is a non sequitur. The colon joins two unrelated claims, which garbles the logic."
+      }
+    ],
+    "note": "Compressed into one paragraph with a confusing causal link. Faithful, but the clarity flaw is substantial.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "To estimate a shared subspace from noisy observations, we stack the observation vectors into a matrix \\(Z\\) and form their empirical second moment. This construction is central to the estimator: the empirical second moment contains an additive bias because the noise covariance is nonzero. We denote this known covariance by \\(C\\) and use it as a correction matrix. Subtracting \\(C\\) from the empirical second moment removes the additive bias, though this correction alone does not establish finite-sample accuracy.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Goal first, then 'This second moment is biased because the noise covariance is nonzero.'"
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "The bias comes just before 'Subtracting C ... removes the additive bias due to noise'. The link is only implicit."
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'Let C denote the known noise covariance'; 'does not, by itself, establish finite-sample accuracy'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No invented content."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "No promotional adjectives or contrasts."
+      }
+    ],
+    "note": "Reads close to a list of statements, with little motivation of notation or construction. It omits the author's point that the correction is the core of the estimator.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "We want to estimate a shared subspace from noisy observations. To form the estimator, we stack the observation vectors into a matrix \\(Z\\) and compute their empirical second moment. This second moment is biased because the noise covariance is nonzero.\n\nLet \\(C\\) denote the known noise covariance. Subtracting \\(C\\) from the empirical second moment removes the additive bias due to noise. This correction does not, by itself, establish finite-sample accuracy.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Goal first; 'This second moment is biased by the nonzero noise covariance' comes before C."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "'we subtract C ... to remove the additive bias' gives subtraction a purpose, though the explanation is thin."
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'C for the known noise covariance'; 'alone does not establish finite-sample accuracy'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No invented content."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "No promotional or decorative language."
+      }
+    ],
+    "note": "Very compressed and barely motivates notation. It drops the 'core of the estimator' point.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "We want to estimate a shared subspace from noisy observations. To construct the estimator, we stack the observation vectors into a matrix \\(Z\\) and form the empirical second moment. This second moment is biased by the nonzero noise covariance. Writing \\(C\\) for the known noise covariance, we subtract \\(C\\) from the empirical second moment to remove the additive bias. This correction alone does not establish finite-sample accuracy.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Opens with the subspace goal and states that the second moment is biased because the noise covariance is nonzero, before introducing C."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "'To remove the additive bias, we write C ... and subtract it' gives subtraction a purpose, though the reasoning is brief."
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'C for the known noise covariance'; 'removing the bias does not establish finite-sample accuracy'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No theorem, rate, citation, or dataset is added."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "Plain connected prose; drops 'robust, principled'; no decorative contrast."
+      }
+    ],
+    "note": "Faithful and clean. Terse, with little motivation of notation; the 'core of the estimator' point is softened to 'part of the estimator'.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "We want to estimate a shared subspace from noisy observations. We stack the observation vectors into a matrix \\(Z\\) and form the empirical second moment. Because the noise covariance is nonzero, this second moment is biased.\n\nTo remove the additive bias, we write \\(C\\) for the known noise covariance and subtract it from the empirical second moment. This subtraction is part of the estimator, though removing the bias does not establish finite-sample accuracy.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Goal comes first, then 'The trouble is that the empirical second moment is a biased view...' before C is introduced."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "'Since the bias is additive and C is exactly the quantity that produces it, the subtraction removes it.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'C, which we take to be the known noise covariance'; 'does not by itself establish finite-sample accuracy'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No theorem, rate, citation, or dataset."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "Conversational and connected. Some contrast framing remains ('more than bookkeeping', 'not a preprocessing step')."
+      }
+    ],
+    "note": "Strong exposition, but it adds content: Z holds columns, 'partly fitting the noise', and 'principled target for subspace estimation'. The 'not bookkeeping' claim is applied to Z as well as to the correction.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "Our goal is to estimate a shared subspace from noisy observations, and the first thing to settle is what we actually compute from those observations. To keep the notation compact, we stack the observation vectors as the columns of a single matrix Z. This is more than bookkeeping: working with Z lets us form the empirical second moment directly, and that quantity is where the estimator begins.\n\nThe trouble is that the empirical second moment is a biased view of the structure we care about. Because the noise covariance is nonzero, the noise contributes its own additive term to the second moment, and that term sits on top of the signal. If we extracted the subspace from the raw second moment, we would be partly fitting the noise.\n\nThis is what motivates the correction matrix C, which we take to be the known noise covariance. The construction is simple: subtract C from the empirical second moment. Since the bias is additive and C is exactly the quantity that produces it, the subtraction removes it. We regard this correction as the core of the estimator, not a preprocessing step, because it is what makes the second moment a principled target for subspace estimation.\n\nIt is worth being clear about what this does and does not give us. Subtracting C removes the additive bias, but it does not by itself establish finite-sample accuracy. That is a separate question, and the correction should not be read as answering it.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Goal paragraph first; the bias is explained before C is introduced."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "'the noise covariance is nonzero and adds a term to its expectation ... Subtracting C ... removes the additive bias, and the corrected matrix is the one the estimator uses.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'noise covariance, which we take to be known'; 'does not by itself give a finite-sample accuracy guarantee, and we do not claim one'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No theorem, rate, citation, or dataset."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "Connected, conversational prose. 'not a side adjustment' carries over the author's own emphasis rather than decorating."
+      }
+    ],
+    "note": "Faithful and well motivated, and it keeps the 'central to the estimator' point. 'Columns' is a negligible addition.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "Our goal is to estimate a shared subspace from noisy observations. To do this, we stack the observation vectors as the columns of a matrix Z, and we work with the empirical second moment computed from Z.\n\nThis second moment is a biased estimate of what we want, because the noise covariance is nonzero and adds a term to its expectation. We write C for this noise covariance, which we take to be known. Subtracting C from the empirical second moment removes the additive bias, and the corrected matrix is the one the estimator uses. The correction is therefore central to the estimator, not a side adjustment.\n\nRemoving the bias does not by itself give a finite-sample accuracy guarantee, and we do not claim one from this step.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "Goal, then Z and the second moment, then the bias, before the correction."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "'noise covariance is nonzero and adds to the second moment of the underlying signal. To remove this bias, we introduce a correction matrix C.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'C, which is the known noise covariance'; 'does not by itself establish finite-sample accuracy'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No invented content."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "Connected prose; the bookkeeping contrast mirrors the source's point."
+      }
+    ],
+    "note": "Faithful, keeps every fact, and motivates the correction. A single dense paragraph, but usable.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "We want to estimate a shared subspace from noisy observations. We stack the observation vectors into a matrix Z, and the estimator is built from the empirical second moment of Z. This moment is biased, because the noise covariance is nonzero and adds to the second moment of the underlying signal. To remove this bias, we introduce a correction matrix C, which is the known noise covariance. Subtracting C from the empirical second moment removes the additive bias. This correction is the central step of the estimator, not a bookkeeping adjustment. It does not by itself establish finite-sample accuracy.\n"
+  },
+  {
+    "case": "dev-research-flow",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "argument",
+        "text": "Introduces the estimation goal and noise-bias obstacle before the correction.",
+        "passed": true,
+        "evidence": "States the goal, then 'it is a biased estimate ... because the noise covariance is nonzero' before C."
+      },
+      {
+        "group": "argument",
+        "text": "Explains why subtraction is used instead of merely listing objects.",
+        "passed": true,
+        "evidence": "'adds a term to the second moment ... Subtracting C ... removes the additive bias.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Identifies C as known noise covariance and preserves the absence of a finite-sample guarantee.",
+        "passed": true,
+        "evidence": "'this noise covariance, which we take to be known'; 'does not by itself give a finite-sample accuracy guarantee'."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not invent a theorem, rate, citation, or dataset.",
+        "passed": true,
+        "evidence": "No theorem, rate, citation, or dataset."
+      },
+      {
+        "group": "style",
+        "text": "Uses connected technical prose without promotional adjectives or decorative contrasts.",
+        "passed": true,
+        "evidence": "Connected and conversational; no promotional adjectives."
+      }
+    ],
+    "note": "Good and faithful. 'This correction matrix is the central part of the estimator' slightly misattributes centrality to C itself rather than to the correction step.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "We want to estimate a subspace shared across a collection of noisy observations. Stack the observation vectors into a matrix Z. The natural starting point is the empirical second moment of Z, but it is a biased estimate of the quantity we care about, because the noise covariance is nonzero and adds a term to the second moment. Let C denote this noise covariance, which we take to be known. Subtracting C from the empirical second moment removes the additive bias, and this correction matrix is the central part of the estimator. Removing the bias does not by itself give a finite-sample accuracy guarantee.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'depends on the migration and cannot run until it finishes'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started, so reporting is blocked.'"
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "Merged into two sentences. 'depends on' plus 'cannot run until' is slightly redundant."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "Candor framing, metaphors and the closing slogan are removed. 'Blocked' is literal, not advice."
+      }
+    ],
+    "note": "Faithful and plain, with mild redundancy between 'depends on' and 'cannot run until'.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "The report depends on the migration and cannot run until it finishes. The migration has not started, so reporting is blocked.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'The report cannot run until the migration finishes.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started.'"
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "All the dependency statements are merged into one sentence."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "Staged candor, the scaffold/wiring and DOA metaphors, and 'full stop' are all removed."
+      }
+    ],
+    "note": "Same text as R01. Fully faithful and plain.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "The report cannot run until the migration finishes. The migration has not started.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'The report cannot run until the migration finishes.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started.'"
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "The repeated dependency claims are merged into one sentence."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "Rhetorical framing and slogan are removed. Nothing is added."
+      }
+    ],
+    "note": "Same text as R01. Fully faithful and plain.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "The report cannot run until the migration finishes. The migration has not started.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'The report cannot run until the migration finishes.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started.' Nothing suggests it is in progress."
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "The scaffold/wiring line, the 'cannot run' line and the 'dead on arrival' line are merged into one dependency sentence."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "'Genuinely/honest verdict', 'worth stating plainly', 'dead on arrival' and 'whole game, full stop' are all removed. No advice is added."
+      }
+    ],
+    "note": "Tight and faithful. Both facts are kept and all filler is gone.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "The report cannot run until the migration finishes. The migration has not started.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'The report can't run until the migration is done'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'the migration hasn't started'. But the closing 'Until it does, the reporting path won't work' refers back to 'started', which loosely suggests that starting is enough."
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": false,
+        "evidence": "Paraphrases each source sentence in turn: the scaffold contrast becomes 'essential, not just a placeholder', and 'dead on arrival' becomes 'won't work at all'."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": false,
+        "evidence": "Candor and slogan are dropped, but the scaffold metaphor survives as 'not just a placeholder' and the DOA emphasis survives as 'won't work at all'."
+      }
+    ],
+    "note": "It mirrors the source sentence by sentence instead of consolidating, and keeps the emphatic framing. The final 'Until it does' attaches to 'started' rather than 'done', which blurs the completion requirement.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "The migration is essential, not just a placeholder: the report depends on it. The report can't run until the migration is done, and the migration hasn't started. Until it does, the reporting path won't work at all.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'depends on the migration and cannot run until the migration finishes'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started, so the report cannot run yet.'"
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "Two sentences, not one paraphrase per source sentence. But the dependency is stated three times: 'depends on', 'cannot run until', 'so... cannot run yet'."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "Candor framing, metaphor and slogan are removed. No advice is added."
+      }
+    ],
+    "note": "Faithful. The dependency is restated three times, which is minor redundancy.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "The report depends on the migration and cannot run until the migration finishes. The migration has not started, so the report cannot run yet.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'depends on the migration and cannot run until the migration finishes'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started, so the report cannot run.'"
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "Two sentences, with some repetition of the dependency ('depends on', 'cannot run until', 'so... cannot run')."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "All rhetorical framing and the slogan are removed. Nothing is added."
+      }
+    ],
+    "note": "Faithful. The dependency is restated in the second clause, which is minor redundancy.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "The report depends on the migration and cannot run until the migration finishes. The migration has not started, so the report cannot run.\n"
+  },
+  {
+    "case": "dev-status",
+    "subset": "tune",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves that report execution requires migration completion.",
+        "passed": true,
+        "evidence": "'cannot run until the migration finishes'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves that the migration has not started, without implying it is underway.",
+        "passed": true,
+        "evidence": "'The migration has not started, so the report cannot run yet.'"
+      },
+      {
+        "group": "style",
+        "text": "Consolidates repeated dependency statements rather than paraphrasing each sentence.",
+        "passed": true,
+        "evidence": "Merged into two sentences, but 'depends on', 'cannot run until' and 'cannot run yet' repeat the same point."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged candor, metaphor, and closing slogan without adding new advice.",
+        "passed": true,
+        "evidence": "Staged candor, metaphor and slogan are removed. No advice is added."
+      }
+    ],
+    "note": "Same text as R02. Faithful, with minor redundancy.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "The report depends on the migration and cannot run until the migration finishes. The migration has not started, so the report cannot run yet.\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The final display shows ((X-m)+(m-Y))^2 expanded with the 2E[(X-m)(m-Y)] term."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "The cross-term chain is tagged 'since m-Y is F-measurable' and replaces E[X-m|F] with (m-m)=0."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "m\u2208L^2 via conditional Jensen, X-m and m-Y in L^2, product integrable by Cauchy\u2013Schwarz; no independence claimed."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "The cross-term display ends in 0, and the final display then drops the 2E[...] term. The link is implicit, with no annotation."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "Entirely displayed with short tags; no metaphor."
+      }
+    ],
+    "note": "Correct and fully displayed, but explanations are very sparse. The step to (m-m) and the substitution into the final display are not annotated.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "\\[\nm=\\mathbb E[X\\mid\\mathcal F],\n\\qquad\n\\mathbb E[m^2]\n\\le \\mathbb E\\!\\left[\\mathbb E[X^2\\mid\\mathcal F]\\right]\n=\\mathbb E[X^2]<\\infty\n\\quad\\text{(conditional Jensen).}\n\\]\n\n\\[\nX-m,\\ m-Y\\in L^2,\n\\qquad\n\\mathbb E\\!\\left[|(X-m)(m-Y)|\\right]\n\\le\n\\bigl(\\mathbb E[(X-m)^2]\\bigr)^{1/2}\n\\bigl(\\mathbb E[(m-Y)^2]\\bigr)^{1/2}\n<\\infty.\n\\]\n\n\\[\n\\begin{aligned}\n\\mathbb E[(X-m)(m-Y)]\n&=\\mathbb E\\!\\left[\\mathbb E[(X-m)(m-Y)\\mid\\mathcal F]\\right]\\\\\n&=\\mathbb E\\!\\left[(m-Y)\\mathbb E[X-m\\mid\\mathcal F]\\right]\n&&\\text{since }m-Y\\text{ is }\\mathcal F\\text{-measurable}\\\\\n&=\\mathbb E[(m-Y)(m-m)]\\\\\n&=0.\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n\\mathbb E[(X-Y)^2]\n&=\\mathbb E\\!\\left[((X-m)+(m-Y))^2\\right]\\\\\n&=\\mathbb E[(X-m)^2]\n+2\\mathbb E[(X-m)(m-Y)]\n+\\mathbb E[(m-Y)^2]\\\\\n&=\\mathbb E[(X-m)^2]+\\mathbb E[(m-Y)^2].\n\\end{aligned}\n\\]\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The decomposition is displayed, and the final align shows the 2E[(X-m)(m-Y)] term."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "States that m-Y is F-measurable; the chain reaches (E[X|F]-m), which is then set to 0."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "Gives the Jensen bound and Cauchy\u2013Schwarz; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "The cross term is shown to be 0 first, and the final expansion then drops it."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "Fully displayed."
+      }
+    ],
+    "note": "Correct, but justifications are thin. The Jensen display skips the tower step, and E[X|F]-m=0 is unannotated.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "By conditional Jensen\u2019s inequality,\n\\[\n\\mathbb E[m^2]\n=\\mathbb E\\!\\left[\\bigl(\\mathbb E[X\\mid F]\\bigr)^2\\right]\n\\leq \\mathbb E[X^2]<\\infty.\n\\]\nThus \\(X-m\\) and \\(m-Y\\) are square-integrable, and their product is integrable by Cauchy\u2013Schwarz.\n\nDecompose\n\\[\nX-Y=(X-m)+(m-Y).\n\\]\nSince \\(m-Y\\) is \\(F\\)-measurable,\n\\[\n\\begin{aligned}\n\\mathbb E[(X-m)(m-Y)]\n&=\\mathbb E\\!\\left[\\mathbb E[(X-m)(m-Y)\\mid F]\\right]\\\\\n&=\\mathbb E\\!\\left[(m-Y)\\mathbb E[X-m\\mid F]\\right]\\\\\n&=\\mathbb E\\!\\left[(m-Y)\\bigl(\\mathbb E[X\\mid F]-m\\bigr)\\right]\\\\\n&=0.\n\\end{aligned}\n\\]\nExpanding the square therefore gives\n\\[\n\\begin{aligned}\n\\mathbb E[(X-Y)^2]\n&=\\mathbb E\\!\\left[((X-m)+(m-Y))^2\\right]\\\\\n&=\\mathbb E[(X-m)^2]\n  +2\\mathbb E[(X-m)(m-Y)]\n  +\\mathbb E[(m-Y)^2]\\\\\n&=\\mathbb E[(X-m)^2]+\\mathbb E[(m-Y)^2].\n\\end{aligned}\n\\]\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The decomposition is displayed; the expansion appears inside the expectation as (X-m)^2+2(X-m)(m-Y)+(m-Y)^2."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "Displays E[X-m|F]=0 and states that m-Y is F-measurable."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "Gives the Jensen display and Cauchy\u2013Schwarz; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": false,
+        "evidence": "Jumps from the expanded integrand straight to the final identity. Linearity and the substitution of the zero cross term are merged and never shown."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "Displayed derivation, no metaphor."
+      }
+    ],
+    "note": "Correct, but the final step compresses linearity and the cross-term substitution.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "Since \\(X\\) is square-integrable, conditional Jensen\u2019s inequality gives\n\\[\n\\mathbb E[m^2]\n=\n\\mathbb E\\!\\left[\\bigl(\\mathbb E[X\\mid F]\\bigr)^2\\right]\n\\leq\n\\mathbb E\\!\\left[\\mathbb E[X^2\\mid F]\\right]\n=\n\\mathbb E[X^2]\n<\\infty.\n\\]\nThus \\(X-m\\) and \\(m-Y\\) are square-integrable, and their product is integrable by Cauchy\u2013Schwarz.\n\nWe decompose\n\\[\nX-Y=(X-m)+(m-Y).\n\\]\nSince \\(m-Y\\) is \\(F\\)-measurable and\n\\[\n\\mathbb E[X-m\\mid F]\n=\n\\mathbb E[X\\mid F]-m\n=\n0,\n\\]\nthe cross term satisfies\n\\[\n\\begin{aligned}\n\\mathbb E[(X-m)(m-Y)]\n&=\\mathbb E\\!\\left[\\mathbb E[(X-m)(m-Y)\\mid F]\\right]\\\\\n&=\\mathbb E\\!\\left[(m-Y)\\mathbb E[X-m\\mid F]\\right]\\\\\n&=0.\n\\end{aligned}\n\\]\nExpanding the square therefore yields\n\\[\n\\begin{aligned}\n\\mathbb E[(X-Y)^2]\n&=\\mathbb E\\!\\left[(X-m)^2+2(X-m)(m-Y)+(m-Y)^2\\right]\\\\\n&=\\mathbb E[(X-m)^2]+\\mathbb E[(m-Y)^2].\n\\end{aligned}\n\\]\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The decomposition is displayed, and the final align expands it with the 2E[(X-m)(m-Y)] term."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "Displays E[X-m|F]=E[X|F]-m=0 and states that m-Y is F-measurable before pulling it out."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "The Jensen display gives m\u2208L^2, and integrability uses Cauchy\u2013Schwarz; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "The cross term is shown to be 0 first; the 'therefore' expansion then drops it explicitly."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "Fully displayed with brief connecting sentences."
+      }
+    ],
+    "note": "Clean, faithful and explicit.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "Since \\(X\\) is square-integrable, conditional Jensen\u2019s inequality gives\n\\[\n\\mathbb E[m^2]\n=\\mathbb E\\!\\left[\\bigl(\\mathbb E[X\\mid F]\\bigr)^2\\right]\n\\leq \\mathbb E\\!\\left[\\mathbb E[X^2\\mid F]\\right]\n=\\mathbb E[X^2]<\\infty.\n\\]\nThus \\(X-m\\) and \\(m-Y\\) are square-integrable, and their product is integrable by Cauchy\u2013Schwarz.\n\nWe decompose\n\\[\nX-Y=(X-m)+(m-Y).\n\\]\nBecause \\(m-Y\\) is \\(F\\)-measurable and\n\\[\n\\mathbb E[X-m\\mid F]\n=\\mathbb E[X\\mid F]-m\n=0,\n\\]\nthe cross term vanishes:\n\\[\n\\begin{aligned}\n\\mathbb E[(X-m)(m-Y)]\n&=\\mathbb E\\!\\left[\\mathbb E[(X-m)(m-Y)\\mid F]\\right]\\\\\n&=\\mathbb E\\!\\left[(m-Y)\\mathbb E[X-m\\mid F]\\right]\\\\\n&=0.\n\\end{aligned}\n\\]\nExpanding the square therefore yields\n\\[\n\\begin{aligned}\n\\mathbb E[(X-Y)^2]\n&=\\mathbb E\\!\\left[((X-m)+(m-Y))^2\\right]\\\\\n&=\\mathbb E[(X-m)^2]\n  +2\\mathbb E[(X-m)(m-Y)]\n  +\\mathbb E[(m-Y)^2]\\\\\n&=\\mathbb E[(X-m)^2]+\\mathbb E[(m-Y)^2].\n\\end{aligned}\n\\]\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": false,
+        "evidence": "X-Y=(X-m)+(m-Y) is written inline in prose, not displayed; only the expansion is displayed."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "Z=m-Y is F-measurable; displays Z E[X-m|F]=Z(m-m)=0, then uses the tower property."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "States m\u2208L^2 via Jensen, Y\u2208L^2 and F-measurable, and Cauchy\u2013Schwarz integrability; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "Step 3: 'Substituting into Step 1' gives the identity."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "The derivation steps are displayed, though the Setup is a paragraph of inline math."
+      }
+    ],
+    "note": "Mathematically correct, but it misses the 'fully in displayed mathematics' request. The setup and the decomposition are inline prose under headers.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "**Setup.** Since $X \\in L^2$, the conditional expectation $m = E[X\\mid\\mathcal F]$ exists and $m \\in L^2$ (by the conditional Jensen inequality, $m^2 \\le E[X^2\\mid\\mathcal F]$, so $E[m^2]\\le E[X^2]<\\infty$). Also $Y\\in L^2$ and $Y$ is $\\mathcal F$-measurable.\n\n**Step 1: Decompose around $m$.** Write $X-Y = (X-m)+(m-Y)$. Then\n$$\nE[(X-Y)^2] = E[(X-m)^2] + 2\\,E[(X-m)(m-Y)] + E[(m-Y)^2].\n$$\nEvery term is finite, because $X-m$ and $m-Y$ are in $L^2$, and by Cauchy\u2013Schwarz the product $(X-m)(m-Y)$ is integrable.\n\n**Step 2: The cross term vanishes.** Let $Z = m-Y$. It is $\\mathcal F$-measurable (both $m$ and $Y$ are) and square-integrable. Since $(X-m)Z$ is integrable and $Z$ is $\\mathcal F$-measurable, we can pull $Z$ out of the conditional expectation:\n$$\nE[(X-m)Z\\mid\\mathcal F] = Z\\,E[X-m\\mid\\mathcal F] = Z\\,(m-m) = 0 .\n$$\nHere $E[m\\mid\\mathcal F]=m$ because $m$ is $\\mathcal F$-measurable. Taking expectations (tower property),\n$$\nE[(X-m)(m-Y)] = E\\big[E[(X-m)Z\\mid\\mathcal F]\\big] = 0 .\n$$\n\n**Step 3: Conclude.** Substituting into Step 1,\n$$\nE[(X-Y)^2] = E[(X-m)^2] + E[(m-Y)^2]. \\qquad\\blacksquare\n$$\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The decomposition and the expansion with the cross term are both displayed."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "Explains why m-Y is F-measurable, takes out what is known, and displays E[X-m|F]=m-m=0."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "Gives Jensen for m, square-integrability of m-Y, and Cauchy\u2013Schwarz for the product; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "'Therefore E[(X-m)(m-Y)]=0, and the expansion becomes' the final identity."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "Key steps are displayed. The prose is moderate but not a substitute for the derivation."
+      }
+    ],
+    "note": "Faithful and explicit, with every transition justified.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "**Proof.** Since $X$ is square-integrable, $m=\\mathbb E[X\\mid\\mathcal F]$ is square-integrable (by the conditional Jensen inequality, $m^2\\le\\mathbb E[X^2\\mid\\mathcal F]$, so $\\mathbb E[m^2]\\le\\mathbb E[X^2]<\\infty$). Hence $m-Y$ is also square-integrable, and every expectation below is finite.\n\nWe decompose around $m$:\n\n$$\nX-Y=(X-m)+(m-Y).\n$$\n\nSquaring and taking expectations gives\n\n$$\n\\mathbb E[(X-Y)^2]\n=\\mathbb E[(X-m)^2]+2\\,\\mathbb E[(X-m)(m-Y)]+\\mathbb E[(m-Y)^2].\n$$\n\nIt remains to show that the cross term is zero. The variable $m$ is $\\mathcal F$-measurable by definition of conditional expectation, and $Y$ is $\\mathcal F$-measurable by assumption, so $m-Y$ is $\\mathcal F$-measurable. The product $(X-m)(m-Y)$ is integrable by the Cauchy\u2013Schwarz inequality, since both factors are square-integrable. Because $m-Y$ is $\\mathcal F$-measurable and the product is integrable, we may take out what is known:\n\n$$\n\\begin{aligned}\n\\mathbb E[(X-m)(m-Y)]\n&=\\mathbb E\\!\\left[\\mathbb E\\big[(X-m)(m-Y)\\mid\\mathcal F\\big]\\right]\\\\\n&=\\mathbb E\\!\\left[(m-Y)\\,\\mathbb E\\big[X-m\\mid\\mathcal F\\big]\\right].\n\\end{aligned}\n$$\n\nBy linearity and the fact that $m$ is $\\mathcal F$-measurable,\n\n$$\n\\mathbb E[X-m\\mid\\mathcal F]\n=\\mathbb E[X\\mid\\mathcal F]-m\n=m-m\n=0.\n$$\n\nTherefore $\\mathbb E[(X-m)(m-Y)]=0$, and the expansion becomes\n\n$$\n\\mathbb E[(X-Y)^2]=\\mathbb E[(X-m)^2]+\\mathbb E[(m-Y)^2].\n\\qquad\\blacksquare\n$$\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The decomposition and the expansion with 2E[(X-m)(m-Y)] are each displayed."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "Notes that m-Y is F-measurable and pulled out, and that E[X|F]=m and E[m|F]=m give (m-m)."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "Gives the Jensen bound for m, square-integrability of X-m and m-Y, and Cauchy\u2013Schwarz; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "'Substituting into the expansion' yields the final identity."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "The derivation is displayed, with one-line justifications."
+      }
+    ],
+    "note": "Faithful, complete and well annotated. Only the Jensen bound is inline.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "**Proof.** Write the difference around $m$:\n\n$$\nX-Y=(X-m)+(m-Y).\n$$\n\nSince $X$ and $Y$ are square-integrable, so is $m=\\mathbb E[X\\mid\\mathcal F]$ (by conditional Jensen, $\\mathbb E[m^2]\\le \\mathbb E[X^2]$). Hence $X-m$ and $m-Y$ are square-integrable, and every expectation below is finite, the cross term by Cauchy\u2013Schwarz. Expanding the square gives\n\n$$\n\\mathbb E[(X-Y)^2]\n=\\mathbb E[(X-m)^2]+2\\,\\mathbb E[(X-m)(m-Y)]+\\mathbb E[(m-Y)^2].\n$$\n\nBoth $m$ and $Y$ are $\\mathcal F$-measurable, so $m-Y$ is $\\mathcal F$-measurable. Conditioning on $\\mathcal F$ and pulling out $m-Y$ gives\n\n$$\n\\begin{aligned}\n\\mathbb E[(X-m)(m-Y)]\n&=\\mathbb E\\big[\\,\\mathbb E[(X-m)(m-Y)\\mid\\mathcal F]\\,\\big]\\\\\n&=\\mathbb E\\big[(m-Y)\\,\\mathbb E[X-m\\mid\\mathcal F]\\big]\\\\\n&=\\mathbb E\\big[(m-Y)\\,(m-m)\\big]\\\\\n&=0.\n\\end{aligned}\n$$\n\nThe second line takes out the $\\mathcal F$-measurable factor $m-Y$. The third uses $\\mathbb E[X\\mid\\mathcal F]=m$ and $\\mathbb E[m\\mid\\mathcal F]=m$.\n\nSubstituting into the expansion,\n\n$$\n\\mathbb E[(X-Y)^2]=\\mathbb E[(X-m)^2]+\\mathbb E[(m-Y)^2].\n\\qquad\\blacksquare\n$$\n"
+  },
+  {
+    "case": "dev-cross-term",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 4,
+    "assertions": [
+      {
+        "group": "proof",
+        "text": "Displays the decomposition of X-Y and the square expansion including the mixed term.",
+        "passed": true,
+        "evidence": "The decomposition and the expansion with the 2E[(X-m)(m-Y)] term are displayed."
+      },
+      {
+        "group": "proof",
+        "text": "Shows the conditional expectation step using F-measurability of m-Y and E[X-m|F]=0.",
+        "passed": true,
+        "evidence": "Annotated chain: tower property, taking out what is known, linearity, and the definition of m giving 0."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves square integrability and measurability and does not claim independence.",
+        "passed": true,
+        "evidence": "Covers square-integrability of m via Jensen, finiteness via Cauchy\u2013Schwarz, and F-measurability of m-Y; no independence."
+      },
+      {
+        "group": "proof",
+        "text": "Connects the vanishing cross term explicitly to the final identity.",
+        "passed": true,
+        "evidence": "'Substituting this into the expansion yields' the identity."
+      },
+      {
+        "group": "style",
+        "text": "Avoids replacing derivation with paragraphs of inline math or metaphor.",
+        "passed": true,
+        "evidence": "The derivation is displayed with tag annotations."
+      }
+    ],
+    "note": "Strong annotated proof. The opening paragraph uses plain-text Unicode math, and the notation mixes F and \\mathcal F.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "**Proof.** Since X and Y are square-integrable, so is m = E[X | F] (by the conditional Jensen inequality, E[m\u00b2] \u2264 E[X\u00b2]). Hence X \u2212 m, m \u2212 Y, and X \u2212 Y are all square-integrable. Write\n\n$$\nX - Y = (X - m) + (m - Y).\n$$\n\nExpanding the square and taking expectations gives\n\n$$\n\\mathbb{E}\\big[(X-Y)^2\\big]\n= \\mathbb{E}\\big[(X-m)^2\\big]\n+ 2\\,\\mathbb{E}\\big[(X-m)(m-Y)\\big]\n+ \\mathbb{E}\\big[(m-Y)^2\\big].\n$$\n\nEvery term is finite: the first and third by square-integrability, and the middle one by the Cauchy\u2013Schwarz inequality.\n\nFor the cross term, m and Y are both F-measurable, so m \u2212 Y is F-measurable. Since (X \u2212 m)(m \u2212 Y) is integrable, we may condition on F and take the F-measurable factor out:\n\n$$\n\\begin{aligned}\n\\mathbb{E}\\big[(X-m)(m-Y)\\big]\n&= \\mathbb{E}\\Big[\\mathbb{E}\\big[(X-m)(m-Y)\\mid\\mathcal{F}\\big]\\Big] && \\text{(tower property)}\\\\\n&= \\mathbb{E}\\Big[(m-Y)\\,\\mathbb{E}\\big[X-m\\mid\\mathcal{F}\\big]\\Big] && \\text{(taking out what is known)}\\\\\n&= \\mathbb{E}\\Big[(m-Y)\\,\\big(\\mathbb{E}[X\\mid\\mathcal{F}]-m\\big)\\Big] && \\text{(linearity, } m \\text{ is } \\mathcal{F}\\text{-measurable)}\\\\\n&= \\mathbb{E}\\big[(m-Y)\\cdot 0\\big] && \\text{(definition of } m)\\\\\n&= 0.\n\\end{aligned}\n$$\n\nSubstituting this into the expansion yields\n\n$$\n\\mathbb{E}\\big[(X-Y)^2\\big]\n= \\mathbb{E}\\big[(X-m)^2\\big] + \\mathbb{E}\\big[(m-Y)^2\\big]. \\qquad\\blacksquare\n$$\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "Fixed H, both assumptions, expected squared error \u2264 C_H/n for n \u2265 2."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'C_H may increase with H'; 'upper bound, not a minimum error' preserves the not-a-floor point."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'single simulated dataset and does not test whether this rate predicts performance on real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "Framing removed; no new warning added."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Qualifications adjacent to their claims."
+      }
+    ],
+    "note": "Faithful. 'Minimum error' is an acceptable plain gloss of 'error floor'.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "For a fixed horizon H, under Assumptions 1 and 2, the expected squared error is at most C_H/n for n \u2265 2. The constant C_H may increase with H. This is an upper bound, not a minimum error. The current experiment uses a single simulated dataset and does not test whether this rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "Keeps fixed horizon H, Assumptions 1 and 2, expected squared error at most C_H/n, and n \u2265 2."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'The constant C_H may grow with H. This is an upper bound, not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'uses one simulated dataset and has not tested whether the rate predicts performance on real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "Drops 'honest shape' and 'boundary worth sitting with'; adds no new warning."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Each qualification sits next to the bound or experiment it limits."
+      }
+    ],
+    "note": "Faithful, plain rewrite.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "For a fixed horizon \\(H\\), under Assumptions 1 and 2, the expected squared error is at most \\(C_H/n\\) for \\(n \\geq 2\\). The constant \\(C_H\\) may grow with \\(H\\). This is an upper bound, not an error floor. The current experiment uses one simulated dataset and has not tested whether the rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "Fixed H, Assumptions 1 and 2, \u2264 C_H/n, n \u2265 2 all present."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'The constant may grow with H'; 'upper bound, not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'one simulated dataset and has not tested ... real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "Staged openers and closers removed."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Each qualification placed with its claim."
+      }
+    ],
+    "note": "Faithful, plain rewrite.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "For a fixed horizon \\(H\\), under Assumptions 1 and 2, the expected squared error is at most \\(C_H/n\\) for \\(n \\geq 2\\). The constant may grow with \\(H\\). This is an upper bound, not an error floor. The current experiment uses one simulated dataset and has not tested whether the rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "All conditions of the bound retained."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'C_H may grow with H'; 'upper bound, not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "One simulated dataset; real-data predictiveness untested."
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "Staged framing removed; nothing new substituted."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Qualifications stay adjacent to their claims."
+      }
+    ],
+    "note": "Faithful, plain rewrite.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "For a fixed horizon \\(H\\), under Assumptions 1 and 2, the expected squared error is at most \\(C_H/n\\) for \\(n \\geq 2\\). The constant \\(C_H\\) may grow with \\(H\\). This is an upper bound, not an error floor. The current experiment uses one simulated dataset and has not tested whether the rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "All bound conditions retained."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'C_H may grow with H'; 'upper bound, not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'single simulated dataset, so it does not test ... real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": false,
+        "evidence": "Replaces 'boundary worth sitting with' with a new admonition: 'That limitation should be kept in view.'"
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Qualifications are attached to the bound and the experiment."
+      }
+    ],
+    "note": "Content is faithful, but it swaps the staged closer for a new warning instead of removing it.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "For a fixed horizon H, under Assumptions 1 and 2, the expected squared error is at most C_H/n for n \u2265 2. The constant C_H may grow with H. This is an upper bound, not an error floor. The current experiment uses a single simulated dataset, so it does not test whether the rate predicts performance on real data. That limitation should be kept in view.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "Keeps H fixed, both assumptions, expected squared error \u2264 C_H/n for n \u2265 2."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'where the constant C_H may grow with H'; 'upper bound, not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'single simulated dataset, so it does not test whether the rate predicts performance on real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "Framing removed; no added recommendation."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "The H-dependence is attached to the bound with 'where'; the 'so' correctly ties the untested real-data claim to the simulated-only evidence."
+      }
+    ],
+    "note": "Faithful. The 'so' link is a valid inference.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "For a fixed horizon H, under Assumptions 1 and 2, the expected squared error is at most C_H/n for n \u2265 2, where the constant C_H may grow with H. This is an upper bound, not an error floor. The current experiment uses a single simulated dataset, so it does not test whether the rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "Keeps fixed H, Assumptions 1\u20132, \u2264 C_H/n, n \u2265 2."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'constant C_H may grow with H'; 'upper bound, not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'single simulated dataset, so we have not tested ... real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "No framing remains; no new warning added."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Qualifiers are attached to the bound and to the experiment respectively."
+      }
+    ],
+    "note": "Faithful. The shift to 'we' is acceptable for an abstract.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "For a fixed horizon H, under Assumptions 1 and 2, the expected squared error is at most C_H/n for n \u2265 2, where the constant C_H may grow with H. This is an upper bound, not an error floor. The current experiment uses a single simulated dataset, so we have not tested whether the rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-qualified-result",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Retains fixed H, both assumptions, n>=2, expected squared error, and C_H/n.",
+        "passed": true,
+        "evidence": "All bound conditions retained."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains possible dependence of the constant on H and does not turn the upper bound into a lower bound.",
+        "passed": true,
+        "evidence": "'where the constant C_H may grow with H'; 'not an error floor.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains the single simulated dataset and untested real-data applicability.",
+        "passed": true,
+        "evidence": "'single simulated dataset, so it does not test ... real data.'"
+      },
+      {
+        "group": "style",
+        "text": "Removes staged framing without substituting a new warning or recommendation.",
+        "passed": true,
+        "evidence": "Framing removed; nothing substituted."
+      },
+      {
+        "group": "argument",
+        "text": "Attaches qualifications to the result or evidence they qualify.",
+        "passed": true,
+        "evidence": "Qualifications attached to the relevant result and evidence."
+      }
+    ],
+    "note": "Faithful and plain.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "For a fixed horizon H, under Assumptions 1 and 2, the expected squared error is at most C_H/n for n \u2265 2, where the constant C_H may grow with H. This is an upper bound, not an error floor. The current experiment uses a single simulated dataset, so it does not test whether the rate predicts performance on real data.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps the two-retry limit and the payment exception."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": true,
+        "evidence": "Review history and caveat are removed."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "No guarantee is added and failure behavior is unaltered."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": true,
+        "evidence": "No reworded caveat or editing report."
+      }
+    ],
+    "note": "Faithful, clean edit.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "The client retries a failed request at most twice and never retries a payment request automatically.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "States 'at most twice' and 'never retries a payment request automatically'."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": true,
+        "evidence": "No review history, appendix note, or caveat sentences remain."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "No guarantee of success is added, and failure behavior is unchanged."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": true,
+        "evidence": "No reworded caveat and no editing report; the output is only the release note."
+      }
+    ],
+    "note": "Faithful, clean edit that keeps the behavior and the payment restriction.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "The client retries a failed request at most twice and never retries a payment request automatically.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps 'at most twice' and the automatic payment-retry exception."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": true,
+        "evidence": "Removes the review discussion and the caveat."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "Adds no success guarantee."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": true,
+        "evidence": "No caveat paraphrase or editing report."
+      }
+    ],
+    "note": "Faithful and complete.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "The client retries a failed request at most twice and never retries a payment request automatically.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps the two-retry limit and the payment exception."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": true,
+        "evidence": "Review history and both caveat sentences are removed."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "No guarantee is added, and behavior is unaltered."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": true,
+        "evidence": "Single sentence with no reintroduced caveat or meta commentary."
+      }
+    ],
+    "note": "Same correct edit as R01.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "The client retries a failed request at most twice and never retries a payment request automatically.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps 'at most twice' and 'never retries a payment request automatically'."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": false,
+        "evidence": "Keeps both caveat ideas: 'Retry is bounded and is not a guarantee of eventual success.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "No success guarantee is added; behavior is unchanged."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": false,
+        "evidence": "Condenses the two removed caveat sentences into one instead of dropping them."
+      }
+    ],
+    "note": "Review history is removed, but the repeated caveat survives almost verbatim.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "The client retries a failed request at most twice, and never retries a payment request automatically. Retry is bounded and is not a guarantee of eventual success.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 3,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps 'at most twice' and the automatic payment-retry exception."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": false,
+        "evidence": "Keeps the caveat: 'Retries do not guarantee that a request eventually succeeds.'"
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "Explicitly denies a guarantee, so nothing false is added and behavior is unchanged."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": false,
+        "evidence": "Reintroduces the removed 'not a guarantee of eventual success' caveat in reworded form."
+      }
+    ],
+    "note": "Review history is gone, but the caveat the user asked to remove is still there.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "The client retries a failed request at most twice. It never automatically retries a payment request. Retries do not guarantee that a request eventually succeeds.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 2,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps 'at most twice' and 'never automatically retries a payment request'."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": false,
+        "evidence": "Retains review-process history ('The old retry discussion has moved to an appendix') and the caveat ('bounded and do not guarantee...')."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "Does not claim eventual success; behavior is unchanged."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": false,
+        "evidence": "Restates the removed caveat in new words: 'Retries are bounded and do not guarantee that a request eventually succeeds.'"
+      }
+    ],
+    "note": "Ignores both removal instructions: it keeps the review/appendix history and the caveat.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "The client retries a failed request at most twice. It never automatically retries a payment request. Retries are bounded and do not guarantee that a request eventually succeeds.\n\nThe old retry discussion has moved to an appendix.\n"
+  },
+  {
+    "case": "dev-remove-discussion",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Keeps the limit of at most two retries and the exception for payment requests.",
+        "passed": true,
+        "evidence": "Keeps the two-retry limit and the payment exception."
+      },
+      {
+        "group": "style",
+        "text": "Removes the requested review history and repeated caveat.",
+        "passed": true,
+        "evidence": "Review history and caveat are removed."
+      },
+      {
+        "group": "fidelity",
+        "text": "Does not add a guarantee of eventual success or alter failure behavior.",
+        "passed": true,
+        "evidence": "No guarantee is added."
+      },
+      {
+        "group": "style",
+        "text": "Does not reintroduce the removed caveat in different words or add an editing report.",
+        "passed": true,
+        "evidence": "No reintroduced caveat or report."
+      }
+    ],
+    "note": "Faithful, clean edit.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "The client retries a failed request at most twice and never retries a payment request automatically.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "none",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "AND rule and unique stationary distribution unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "Upper versus matching lower bound distinction preserved verbatim."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Retains 'logic gate', 'upper bound', 'lower bound'."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source with no commentary."
+      }
+    ],
+    "note": "Correctly left unchanged.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R03"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "AND rule and unique stationary distribution unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "'not a matching lower bound' preserved."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Technical terms kept."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source with no added text."
+      }
+    ],
+    "note": "Correctly left unchanged.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R04"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "AND rule and unique stationary distribution unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "Upper versus matching lower bound distinction preserved."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Technical terms kept."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source with no commentary."
+      }
+    ],
+    "note": "Correctly left unchanged.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R06"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "astra-medium",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "AND rule and unique stationary distribution unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "'not a matching lower bound' preserved."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Technical terms kept."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source with no added text."
+      }
+    ],
+    "note": "Correctly left unchanged.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R07"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "none",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "First two sentences are verbatim, so the AND rule and unique stationary distribution are intact."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "'an upper bound ..., but no matching lower bound' keeps the same distinction: an upper bound exists and a matching lower bound does not."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Retains 'logic gate', 'upper bound', 'lower bound', 'mixing time'."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "The only change is 'not a' to 'but no', a minor wording swap with no commentary added."
+      }
+    ],
+    "note": "The one-word rephrase was unnecessary but changes no meaning; the text stays fully faithful and usable.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R05"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, but no matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v1",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "AND rule and unique stationary distribution unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "Upper versus matching lower bound distinction preserved verbatim."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Retains 'logic gate', 'upper bound', 'lower bound'."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source with no commentary."
+      }
+    ],
+    "note": "Correctly left unchanged.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R08"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v2",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "Keeps 'outputs one when both inputs are one' and 'unique stationary distribution' verbatim."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "Keeps 'upper bound on its mixing time, not a matching lower bound' verbatim."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Retains 'logic gate', 'upper bound', 'lower bound', 'mixing time'."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source and adds no commentary."
+      }
+    ],
+    "note": "Faithful unchanged control; the source was already plain English.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R01"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  },
+  {
+    "case": "dev-technical-control",
+    "subset": "validation",
+    "config": "sonnet-low",
+    "arm": "v3",
+    "score": 5,
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the AND-gate rule and the unique stationary distribution.",
+        "passed": true,
+        "evidence": "AND rule and unique stationary distribution unchanged."
+      },
+      {
+        "group": "fidelity",
+        "text": "Preserves the upper-versus-matching-lower-bound distinction.",
+        "passed": true,
+        "evidence": "'upper bound ... not a matching lower bound' preserved."
+      },
+      {
+        "group": "style",
+        "text": "Keeps legitimate technical terms rather than treating gate or bound as banned words.",
+        "passed": true,
+        "evidence": "Technical terms 'gate' and 'bound' retained."
+      },
+      {
+        "group": "style",
+        "text": "Leaves already clear prose substantially unchanged without added commentary.",
+        "passed": true,
+        "evidence": "Identical to the source with no added text."
+      }
+    ],
+    "note": "Correctly left unchanged.",
+    "grader": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "blind_label": "R02"
+    },
+    "response": "The logic gate outputs one when both inputs are one. The queue follows a Markov chain with a unique stationary distribution. We have an upper bound on its mixing time, not a matching lower bound.\n"
+  }
+]

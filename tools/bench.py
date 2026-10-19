@@ -129,7 +129,7 @@ def main():
     ap.add_argument('--out', type=Path, required=True)
     ap.add_argument('--skill', type=Path, default=ROOT/'skill')
     ap.add_argument('--configs', default='sonnet-low,sonnet-high,astra-medium')
-    ap.add_argument('--arms', default='none,v1')
+    ap.add_argument('--arms', default='none,v3')
     ap.add_argument('--subset', default='all')
     ap.add_argument('--workers', type=int, default=6)
     args=ap.parse_args()

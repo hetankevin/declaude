@@ -61,14 +61,14 @@ def plot(rows,selected,out):
                             v=(a-b if a is not None and b is not None else None) if kind=='difference' else (b if kind=='none' else a)
                             vals.append(float('nan') if v is None else 100*v)
                         data.append(vals)
-                    data=np.array(data);im=ax.imshow(data,cmap=div if j==2 else seq,vmin=-30 if j==2 else 0,vmax=30 if j==2 else 100,aspect='auto')
+                    data=np.array(data);im=ax.imshow(data,cmap=div if j==2 else seq,vmin=-60 if j==2 else 0,vmax=60 if j==2 else 100,aspect='auto')
                     ax.set_xticks(range(4),labels);ax.set_yticks(range(4),[m.capitalize() for m in metrics]);ax.tick_params(length=0,pad=7)
                     if i==0:ax.set_title(['No skill','Declaude','Difference (pp)'][j],fontsize=12)
                     if j==0:ax.set_ylabel('In sample' if i==0 else 'Held out',labelpad=14)
                     for y in range(4):
                         for x in range(4):
                             v=data[y,x];label='—' if np.isnan(v) else (f'{v:+.0f}' if j==2 else f'{v:.0f}')
-                            color='#ffffff' if (j!=2 and v>65) or (j==2 and abs(v)>18) else '#17212b'
+                            color='#ffffff' if (j!=2 and v>65) or (j==2 and abs(v)>36) else '#17212b'
                             ax.text(x,y,label,ha='center',va='center',color=color,fontsize=11)
                     for spine in ax.spines.values():spine.set_visible(False)
                     if i==0 and j==1:rate_im=im
@@ -85,7 +85,9 @@ def main():
     ap.add_argument('--runs',nargs='*',type=Path,default=[])
     ap.add_argument('--cases',nargs='+',type=Path,required=True)
     ap.add_argument('--observations',type=Path)
-    ap.add_argument('--selected',default='v2')
+    ap.add_argument('--selection-runs',nargs='*',type=Path,default=[])
+    ap.add_argument('--selection-observations',type=Path)
+    ap.add_argument('--selected',default='v3')
     ap.add_argument('--out',type=Path,required=True)
     ap.add_argument('--plot',action='store_true')
     a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True)
@@ -98,6 +100,12 @@ def main():
     keys=[(r['case'],r['config'],r['arm']) for r in rows]
     assert len(set(keys))==len(keys),'Duplicate observations; do not select a preferred repeat'
     (a.out/'observations.json').write_text(json.dumps(rows,indent=2)+'\n')
+    selection_rows=json.loads(a.selection_observations.read_text()) if a.selection_observations else []
+    for root in a.selection_runs:
+        for p in sorted(root.glob('*/*/*/grading.json')):
+            case,cfg,arm=p.parts[-4:-1];g=json.loads(p.read_text())
+            selection_rows.append(dict(case=case,subset=cases[case].get('subset'),config=cfg,arm=arm,score=g['score'],assertions=g['assertions'],note=g['note'],grader=g['grader'],response=p.with_name('response.md').read_text()))
+    (a.out/'selection-observations.json').write_text(json.dumps(selection_rows,indent=2)+'\n')
     final=[r for r in rows if r['arm'] in ['none',a.selected]]
     # A complete paired matrix is required before an overall benchmark is reported.
     configs=sorted({r['config'] for r in final})
@@ -124,7 +132,7 @@ def main():
     parts += ['## Development A/B selection','', 'The initial and revised skill versions were compared on Sonnet low and Astra medium only. These cases were available for selection and are not held out.','', '| Subset | Version | Assertions | Holistic |','|---|---|---:|---:|']
     for subset in ['tune','validation']:
         for arm in ['none','v1','v2','v3']:
-            rs=[r for r in rows if r['subset']==subset and r['arm']==arm and r['config'] in ['sonnet-low','astra-medium']]
+            rs=[r for r in selection_rows if r['subset']==subset and r['arm']==arm and r['config'] in ['sonnet-low','astra-medium']]
             if rs:parts.append(f'| {subset} | {arm} | {fmt("all",value(rs,"all"))} | {value(rs,"holistic"):.2f} |')
     (a.out/'report.md').write_text('\n'.join(parts)+'\n')
     (a.out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
