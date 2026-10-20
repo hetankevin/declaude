@@ -1,5 +1,11 @@
 # Handoff
 
+## Active: long-horizon benchmark and chart readability
+
+The user now explicitly authorizes building and running long-horizon revision evals, Codex only, especially Astra high, based on actual chat revision patterns and fully anonymized, with a fresh holdout. Existing 30-case isolated-rewrite holdout remains sealed. Work is beginning: a source-mining Codex agent writes only ignored provenance and pattern notes; a runner agent implements persistent isolated Codex sessions. No long-horizon model calls launched yet. Planned initial matrix: six development documents, eight sequential revision turns, Astra high and Sol low, none/v4/v8-dev, fixed feedback sequences. Freeze cases/criteria/bundles before execution; separate fresh long-horizon holdout must remain sealed.
+
+The user also objected to the readability of the new heatmaps. Restored the earlier grouped-table layout: adjacent Tune/Check rows per category, model/effort columns, comparison column groups, counts, and one-decimal signed values. Scores unchanged; light/dark category plots and dimension layout inspected.
+
 ## Codex prose repair experiment complete; v8 not promoted
 
 The user requested a dev-only repair of Codex prose, especially arguments, preserving proof guidance and the author-specific judge, Codex only, with a fresh holdout reserved. Both phases are complete. No jobs or model calls are queued. The requested general repair remains unresolved: v8-dev is a frozen partial improvement, not a release. **Packaged and installed v4 is unchanged.**

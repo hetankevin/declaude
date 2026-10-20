@@ -31,7 +31,7 @@ These tests evaluate single-turn, self-contained rewrites with explicit editing 
 
 The [fresh 30-case holdout](evals/large/fresh-holdout-20261019-manifest.json) remains private, unopened by the optimizer, and unrun. An independent review checked all cases, two were corrected privately, and the second review passed. It is backed up privately outside the temporary session files.
 
-The heatmaps show four cases per category in each phase, with 16 cases in “All prose” (all nonproof categories, including controls). Each cell combines both judges; the “All” column also combines the four generators. Values are rounded to whole percentage points. Neither row is OOS.
+The heatmaps show four cases per category in each phase, with 16 cases in “All prose” (all nonproof categories, including controls). Each cell combines both judges; the “All” column also combines the four generators. Values are shown to one decimal place. Paired Tune/Check rows make the two development phases directly comparable; neither is OOS.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/plots/v8-dev-categories-dark.svg">
