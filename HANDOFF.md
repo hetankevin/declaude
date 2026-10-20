@@ -1,5 +1,11 @@
 # Handoff
 
+## Active: economical cross-model check
+
+The user authorized completing evaluations economically after asking v9/no skill, v4/no skill and Claude comparisons. Frozen extension: the same three selected development cases, Sol low and Sonnet high, v9 only. Reuse twelve no-skill/v4 baseline drafts, six completed Astra comparisons and nine direct v4-vs-no-skill Sol-high grades. Six new writing calls plus three batched Sol-high judge calls, hard cap NINE, no automatic retries. Soft reported-token guard250k including cached inputs, not a billing or quota ceiling. No new agents, skill edits, installations, or holdout reads. This is a bounded cross-model development check, not completion of every possible model/effort or long-horizon evaluation.
+
+Frozen plan: evals/results/prose-repair/v9-cross-model/plan.json. Runner: tools/cross_model_small.py; private attempts under .local/prose-repair/v9-cross-model/. Skill, cases, baselines, historical evidence and source hashes verified. All twelve new pairwise judgments use the unchanged author-specific rubric and anonymous balanced A/B positions. Saved v4/no-skill judgments were verified against exact response and rubric/context hashes. Both fresh holdouts remain sealed. Do not restart older pipelines.
+
 ## Saved-draft grading complete; no generation or installation changes
 
 Latest user request: finish grading the saved drafts cheaply and regenerate nothing. Completed exactly TWO new Sol-high judge calls using the frozen author-specific rubric, context, A/B order and original saved drafts. No writing generations, no extra judge/reversed-order calls, no Claude calls, no skill or installation edits. Completed museum grades were reused. Both fresh holdouts remain sealed/unrun. No jobs remain running or queued.

@@ -1,0 +1,184 @@
+{
+  "candidate": "v9-dev",
+  "configs": {
+    "sol-low": [
+      "codex",
+      "gpt-6.1-sol",
+      "low"
+    ],
+    "sonnet-high": [
+      "claude",
+      "claude-sonnet-5-5",
+      "high"
+    ]
+  },
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "jobs": [
+    {
+      "id": "large-dev-b-09",
+      "case": "large-dev-b-09",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "sol-low",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sol-low",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sonnet-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "sonnet-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-12",
+      "case": "large-dev-a-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sonnet-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sonnet-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-14",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "left"
+        }
+      ]
+    }
+  ],
+  "max_calls": 9,
+  "max_generations": 6,
+  "max_judges": 3,
+  "retries": 0,
+  "soft_token_guard": 250000,
+  "writer_reservation": 30000,
+  "judge_reservation": 40000,
+  "selection": "Same three selected development cases as the Astra check, to compare model behavior. Two arguments and one proof; no fresh OOS evidence or broad family ranking.",
+  "packing": "Same fully inlined portable bundle and generation prompt as historical baselines.",
+  "files": {
+    "bundle.txt": "32c4e67ddfd708dab1339388c75cc7e7a809a7305e2499a9052d6c442ee8b9f9",
+    "baselines.json": "2dfd7b6de6c7d3b9a4e0a25d5465c6ab4ee4b64426f0a3e6658b75f7fdc95808",
+    "reused-observations.json": "0ed2d412da35c0575eef672f741e62db29f8058cf840b7b913a8f5a320e2ff96",
+    "cases.json": "10b3cc88e2cd0fb4eddb6e506f6039a3aea435bcfa5b5f451cebe0792fd2b54d",
+    "astra-responses.json": "5266385f1be3c20cfcb55bdfaab9a74f886ad8edd458d164cb04ac59c87dcaf8",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "runner_sha256": "2bd940498fb442a4d8b8630a051614d8ae1e7bd2799fadc1d4bfc62b61d0c22f",
+  "plan_sha256": "1a6cbf63d27d507c00800987d6de1072698953f044100a9c7dd044b2d0773d59"
+}
