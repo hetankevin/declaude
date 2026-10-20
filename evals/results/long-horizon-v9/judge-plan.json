@@ -1,0 +1,38 @@
+{
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "max_calls": 4,
+  "token_budget": 50000,
+  "reservation_tokens": 12500,
+  "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+  "context_sha256": "820402982e342312ee46ae6f3ab269d4724bf63ef84055fda59fa8566547cb23",
+  "protocol_sha256": "38f1172c284cbe7172c4e57b18c0477ec36d520e52e5b7b47c6fe259a0ec3a27",
+  "jobs": [
+    {
+      "case": "lh-dev-01",
+      "order": "primary",
+      "candidate_position": "A",
+      "checkpoints": "first and final common"
+    },
+    {
+      "case": "lh-dev-02",
+      "order": "primary",
+      "candidate_position": "B",
+      "checkpoints": "first and final common"
+    },
+    {
+      "case": "lh-dev-01",
+      "order": "reversed",
+      "candidate_position": "B",
+      "checkpoints": "final common only"
+    },
+    {
+      "case": "lh-dev-02",
+      "order": "reversed",
+      "candidate_position": "A",
+      "checkpoints": "final common only"
+    }
+  ]
+}
