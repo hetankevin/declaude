@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-20",
+  "authorization": "Finish grading saved drafts cheaply; regenerate nothing.",
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "max_new_calls": 2,
+  "retries": 0,
+  "soft_token_guard": 50000,
+  "reservation_tokens": 25000,
+  "jobs": [
+    "large-dev-a-12-primary",
+    "large-dev-b-14-primary"
+  ],
+  "prompt_sha256": {
+    "large-dev-a-12-primary": "2aaf9309411eca00e36ad3ce94618c3cc5637f33c713277073460313f4f0dda6",
+    "large-dev-b-14-primary": "27af6e6d78426ab12b30266105388c8c5d0fa1e96b7e63c308b41b460b51ea14"
+  },
+  "frozen": {
+    "responses.json": "5266385f1be3c20cfcb55bdfaab9a74f886ad8edd458d164cb04ac59c87dcaf8",
+    "bundle.txt": "32c4e67ddfd708dab1339388c75cc7e7a809a7305e2499a9052d6c442ee8b9f9",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "cases.json": "10b3cc88e2cd0fb4eddb6e506f6039a3aea435bcfa5b5f451cebe0792fd2b54d",
+    "original_plan.json": "483bfa4576b0eab70800ad680aab9a888ae74d8055d0aab41e4ad298ac173c1a"
+  },
+  "skip": "Completed museum comparison and reversed-order audit. Both holdouts remain sealed.",
+  "old_failed_attempt": "Retained unchanged. This explicitly authorized completion uses separate attempt directories."
+}
