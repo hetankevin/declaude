@@ -1,0 +1,157 @@
+{
+  "candidate": "v9-dev",
+  "selection": "Two previously observed Astra-high argument losses and one proof guard. Development debugging, not independent validation.",
+  "ids": [
+    "large-dev-b-09",
+    "large-dev-a-12",
+    "large-dev-b-14"
+  ],
+  "writer": {
+    "model": "gpt-6-astra",
+    "effort": "high"
+  },
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "jobs": [
+    {
+      "id": "large-dev-b-09-primary",
+      "case": "large-dev-b-09",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-12-primary",
+      "case": "large-dev-a-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-12",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-14-primary",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-09-reversed",
+      "case": "large-dev-b-09",
+      "judge": "sol-high",
+      "order": "reversed",
+      "pairs": [
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "reversed",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-09",
+          "config": "astra-high",
+          "candidate": "v9-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "reversed",
+          "label": "P02",
+          "a_side": "right"
+        }
+      ]
+    }
+  ],
+  "max_generations": 3,
+  "max_judges": 4,
+  "generation_total_token_guard": 250000,
+  "earlier_smoke_tokens": 92604,
+  "writer_reservation": 25000,
+  "judge_token_guard": 50000,
+  "judge_reservation": 12500,
+  "retries": 0,
+  "packing": "Same fully inlined portable bundle format as saved baselines; this does not test selective reference loading.",
+  "release": "Retain v4 if any final candidate loss to no skill, any proof loss to v4, any major material error, invalid/missing primary grades, or a manual substantive regression. Otherwise installation is provisional, limited by three selected development cases.",
+  "files": {
+    "bundle.txt": "32c4e67ddfd708dab1339388c75cc7e7a809a7305e2499a9052d6c442ee8b9f9",
+    "baselines.json": "8bf990d40d2283709b088b956b02abc2d22332c36039280d9668b10f6f080f14",
+    "author-context.json": "820402982e342312ee46ae6f3ab269d4724bf63ef84055fda59fa8566547cb23",
+    "cases.json": "10b3cc88e2cd0fb4eddb6e506f6039a3aea435bcfa5b5f451cebe0792fd2b54d",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "scripts": {
+    "small_repair.py": "5f0d90463afbeae383cf119044698b738f418f3e3795c3b8b853f00aed3c9086",
+    "grade_long_horizon.py": "f24aae797fe32953dfaa75ffe92c9746abb146ea52760809e8db06ad7c13c2d9",
+    "long_horizon.py": "563c11ff51e40a1fb0b7223fb0bc2e41b88d40f6fb60ed9de58d877a5d46e8e9",
+    "prose_repair.py": "cd7d6a118d155c43958eed107ed45a2218db37f354767d86e2ca435be7a62039",
+    "context_regrade.py": "3fce1e84d31aa0f45edd8f07dacb7ecdba9dee835ccb159bb68116d10e2419f4",
+    "pairwise.py": "bb663a03d066aa76e8cb226faea970c495291c691bc1914a9e228c22ead39038"
+  },
+  "plan_sha256": "9457301c219e6366d42487c5ba80f1a8455dd51759e6c451821729de71e8235b"
+}

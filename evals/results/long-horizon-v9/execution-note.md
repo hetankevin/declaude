@@ -1,0 +1,7 @@
+# Stopped before comparative evaluation
+
+One Astra-high no-skill revision completed and is retained privately. It used 89,067 input tokens (70,400 cached) and 3,537 output tokens: 92,604 reported tokens. The persistent validator expected an event-message representation, whereas this CLI records the submitted request as a response-item message. It stopped after preserving the document and raw transcript. The model call was not replayed.
+
+This file-editing harness is too expensive for the current economical pass. No further calls will be made under this plan. There is no matched comparison or long-horizon result. The frozen cases and runner are retained for future work, but the transcript validator needs a reviewed compatibility update before reuse. No trajectory or usage was erased to reset a budget.
+
+Before any further generation, the coordinator selected two existing development argument failures and a proof guard for a small isolated-rewrite check. That check reuses saved no-skill and v4 baselines, the same full-bundle prompt format, and the unchanged author-specific rubric. Its frozen plan is ../prose-repair/v9-small/plan.json. The combined writing guard includes this 92,604-token call. New generation is capped at three calls, grading at four, with no retries. This is a deliberate reduction of scope to respect usage, not a substitute claim of completed long-horizon evaluation.
