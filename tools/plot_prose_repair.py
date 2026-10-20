@@ -77,7 +77,10 @@ def plot(directories, out):
                 bar.set_label('Win rate − loss rate (percentage points)')
                 bar.outline.set_visible(False)
                 for ext in ('svg','png'):
-                    fig.savefig(out/f'{inputs[0][0]["candidate"]}-{section}-{theme}.{ext}',dpi=170)
+                    target = out/f'{inputs[0][0]["candidate"]}-{section}-{theme}.{ext}'
+                    fig.savefig(target,dpi=170)
+                    if ext == 'svg':
+                        target.write_text('\n'.join(line.rstrip() for line in target.read_text().splitlines())+'\n')
                 plt.close(fig)
 
 

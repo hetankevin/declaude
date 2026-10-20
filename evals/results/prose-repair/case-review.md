@@ -28,6 +28,18 @@ Astra's judge prefers the baseline's placement of qualifications and treatment o
 
 The lesson is not to remove more caveats. The request already identifies which edits are wanted, and some passages should stay unchanged. This failure remains visible in the control results; it is not hidden by the argument or proof gains.
 
+## The unchanged development check
+
+The remaining 20 development cases show a partial repair, not a reason to release v8. Nonproof comparisons improve over v4, but the argument advantage over no skill is uncertain and Astra-high arguments remain negative. The [complete report](v8-dev-validation/report.md) and [outputs](v8-dev-validation/responses.json) preserve every case.
+
+In `large-dev-a-12`, Astra high must separate a proposed reporting policy from its examples. Both judges prefer no skill. Its opening states the purpose before the proposed fields; it labels the supporting examples as examples, then gives the requirement to include runs without readings its own paragraph and rationale. V8 retains these facts but combines the examples, rule, missing-reading problem, and counts in one dense paragraph. This is an observable organization failure against the actual request, not merely a penalty for a banned phrase. The result directly limits the claimed argument repair.
+
+In the finite-population proof `large-dev-b-14`, both judges prefer Sol low with v4 to v8. V4 first expresses the residual second moment as an average of pairwise squared differences, establishing why the sum is needed. It then evaluates that sum and explains the counting in prose. V8 announces “The required sum satisfies” before showing how that sum enters the residual moment. Its displayed double-sum derivation is valid, but the purpose arrives later and the algebra receives less explanation. This is the kind of reader-order distinction the author's proof directions ask the judge to recognize. All five proof-task losses to v4 in the check have no material-error flag on either output; they concern exposition, including proof purpose, displayed expectation steps, and sequencing.
+
+The new outputs do have minor fidelity flags elsewhere. One methods rewrite turns a question about completeness into a claim that field-counting was actually performed first. Another changes optional disclosure into recommended disclosure, and a control drops who decides whether further checks are needed. The flags are published without treating them as infallible or counting repeated judgments as independent errors.
+
+The decision is to retain v4. V8 remains a frozen experimental candidate. Its proof and research-voice reference bytes are unchanged, but the complete prompt changed, so proof-output preservation had to be measured. The fresh holdout remains unrun; no candidate or grader is revised from this check.
+
 ## Limits of the comparison
 
 The skill files were frozen before writing generation. The author-specific rubric and context were unchanged, and judges received anonymous A/B pairs containing the source and actual outputs. The new core and translation instructions change together, so this experiment does not isolate which individual sentence caused the gains. There is only one generation per case/configuration/condition. Saved baselines were generated earlier, and requested model labels do not independently verify an unchanged backend. Case-bootstrap intervals do not capture all generation or judge uncertainty.

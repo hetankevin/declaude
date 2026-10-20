@@ -1,0 +1,4342 @@
+[
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-02",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d8746508ac4e3e902d547bba76007c688e1f8c24e8e29fe72d3b8c583c3470bb",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9873
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-02",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "7a32f0dbe8c7afdf06f5c73412054515e75e79fdec1c2e79b34c35ce780e1177",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9928
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-02",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "8992756685ecf73158de4f2a945541de3b3ec2b293ecadd8d4c61f24c6b7d1e9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9823
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-02",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "a0bce6490ca5344b4d6ee0151ba5fe4ce288c24aab0e2626e8670348101ad693",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9850
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-04",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cd54046494734cf5d1db65cef48533ff5c373ee1376edcd186336f7f4cc9eb0b",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9810
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-04",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c705c6c813ffc0f681ecdea70ba034196ba52bb1082c92d4a394ddc9e6c73f17",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9896
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-04",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "f4b003e7c8f045425c721a4c966da4f8adb64e9ceef746792623122b8046d9a2",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9739
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-04",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c89146c0ff261efc949c9eece3bb10c7412eeb7984b84d0ae41c4596fda006f4",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9783
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-06",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "8a7ede475c717c7c83ab8a4f2e3d4776eb02284c2bf5fb61fe01c6c529c3467d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10113
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-06",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "99af63b7197f7c1f3b8484e8b9c112f4d6ca1a8edb11b4a71c2d015ffb7a6de9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10202
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-06",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e57ef9b07058f47cdd3513c103e80c44ab22775f2e0073c450f36b62abf11016",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10074
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-06",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "33765fb9801322d0bdcb8c3467825e715ca8962bbbf043b36a5a74adf03f1f86",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10122
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-08",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "ac92fb77aa25319b32e097335bf0b0992139ce79de479fb6cab68eb468b0af4d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10043
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-08",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d7a42e7482049d3e773111a5f59a00847cd295822faeeabd541e2baf5a0b06c3",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10114
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-08",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cd005413bef6638f11a35975ddd66980c5f80f6c2b57635bbd2b0f7b2f32d3a6",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9935
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-08",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "36c8b284889953a4861eb1f0d0c29668a2fd24a00e01ea23f033046ef30cf4fb",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9986
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-10",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "62eeb77d8cd6e06d6eca899661b66e3ef649de9cb80b024b3cc26b571fe427a8",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9920
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-10",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "fbfee6624e5de734286b547ea1ec8ea67d185d2e831dcd062ad83f47603671b1",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10121
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-10",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c43e2d645637c81116bcacbf28a3e64f75f3e664c1680b351610ba41f0612c84",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 22274
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-10",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0a01c928f90055e6940953de593247375352c6668fc23aee04c15a740661cf9e",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9897
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-12",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "25473034aa59bbf0e2ef705bda6a7f22ea27019c4ca074aabc129de42e6df304",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10065
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-12",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "04239e9357a5bc54fff2e6b19e3d9e341ea55304800a63e95938469e023dda52",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10217
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-12",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "949c9f85997790306a9ad3b08cda332f8aba1c2142869f2e1eea79b55fee0026",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10025
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-12",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e7ba30e4c6285f8260efc5d04f4996dba8b0515f059b56932aff1a762796b095",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9962
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-14",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "26c572273299c2adc75486c0effbb7de8116f042c3be3f620a3ab1237f685ea7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10173
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-14",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "1ff5c982b467457c0b10db21abd9018873973fd2fe1291e5264c4615b725d13b",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10289
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-14",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "b87b9294cd82541602c83b48d27d350e2d262845b279194686f3a7a6a162ba1c",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10067
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-14",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6a7d10748edbb12a435366344da6a3220872e88147db1ff4c76b308f5b39840b",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9887
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-16",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d588729c9dbd9e41aeb6f16a55721c15452722e43c6e982be3d3a47c0ad21912",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10335
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-16",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "a69569e0b6e9d3d2be9f64cab095b770b4b3dd4df3f27c108bfcc257184adcf6",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10446
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-16",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "917564f9d6dd51c403ed54f048f9d490c2f4135f03c1f2a3eb1ee66ff782f97c",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10254
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-16",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5caa44b306e66faec12861edf4fe1daaaadbf9b9aa434d7051f9fe645011b10d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10095
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-18",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "512ec1c6c662d2c53603a90a799506ab4c9af12027436d84f6b904b2aee34cc7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9699
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-18",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "512ec1c6c662d2c53603a90a799506ab4c9af12027436d84f6b904b2aee34cc7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9728
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-18",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "512ec1c6c662d2c53603a90a799506ab4c9af12027436d84f6b904b2aee34cc7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9629
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-18",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "980f798ba88b1e79677b577277ae42544b14ea9c47bbb8c638c94ca724f795da",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9709
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-20",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3c8de39f7f18317e5b32363655eac192c41bbfc325395e29ef9aa03604e735fe",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9771
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-20",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "a3e5e9bafda1fb490bd30a0424043e4dafbe0b9a57d0f32a6ecdb6e0fae3b535",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9869
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-20",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3335aca6aa99dc1f510cf703838f7e2c51706537521830ab14ed0fb6913841c3",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9705
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-a-20",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "661de30571096a3b446686fac70252ca81d42054ebc1dcae8aaa008c03ec71fe",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9775
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-02",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "53c4ea28c6229394fb5a32ba8cab2c26bae5308d0852a394079874dd0f9cbdef",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9813
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-02",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "96745ca2cc7ebd17eca7eef765cff850f7a6163fa4e335780b95fc013afdd307",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9881
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-02",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "89d2473e6dbbceb1f014ad7bc83fa1d066660ce08e87b9f90a8ac56324ee9284",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9744
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-02",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "eafb17ebbcb81f7006e60a6447fce1d4654a0dd7236ec9de4ee4560045ca335e",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9822
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-04",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "71915bc4061d4eb19bcbd242df5850cd63aeae6ea879fcff1b0b62348ca82033",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9741
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-04",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "1df0bcbd4f4089abcd788314a7093a6a60f66bc3224307b85674eb0416ab3784",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9785
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-04",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "b177fcb25a40790dba55597ff6bd5b1e5d7611fe852b3713ddae32c1247a2bd8",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9675
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-04",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "9d42ba01fd4728d508d560c938d4ee516a60b10d1868665a4f8279d6d9c645da",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9748
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-06",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d73dc6ed1d69b798e564be2ac798e6d7b44433ad8780e163a465c53846d7976f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10033
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-06",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "452817d2898d89988ddf64877063cf1034b770bd9703110af92d32f6d2975977",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10141
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-06",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "15bcf49b9a129e35c051ced1432d7b9b28c4a6710ed41145f4df19a2206a995b",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9949
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-06",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "7b6945062afad1eefe6b56d7ddc6a3b4f1edd69a9907a561c20aa91ffc66d211",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9990
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-08",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "675809bb992a7c70fd76c9ce2a77195c6175d864fa1fa369ccf09b4a56d6b2a6",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10079
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-08",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e3c689c8713de870c36a708701650c59b564aba98a9d80996fc5670a344fe67a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10169
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-08",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "26b604adfb1bfb1dc0415a2d923724c5195c7368f9bbcc222e75c49b38bc79dd",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10040
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-08",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "de86baf6fb2bf61cb108f5bde7c3263f8b4a0897600a964aaa846d9d071f9d86",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10034
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-10",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "65e71f354f1d441fae5285d9b6623d61d3ed21bcfa6cb840f302a10b1852b2e7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9944
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-10",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "200dae8857666e2969fbc44ef39a4f4dd4130d03783b5009cb5b4a734bc7d410",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9993
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-10",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0a83b15e2d71d7cff57a820b6eaf99b97863ffde7abd068954572037642d8741",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9860
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-10",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "46012d19bfdcb9e3e2ec067183a69b874c8fee149bd74f0281f76a05d2a40efb",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9901
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-12",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0efd8dbfb28d0c8d1a51301e6db93881c4d31972776ea48a5d6c4f87745d545a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9807
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-12",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "20698e3c5e2f788b9de42d4dd0e90579d02cfe3feb5405621fa8a61f04ea43ae",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9984
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-12",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cb8589ea545ef99ac90ff168fed5e76b0c417ed0fbf911fd1fddf4c66f12582a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9741
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-12",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "60af2e1ca9c3782f6fbae97228e241f463c2993a2eb30f140e24fae9b9cb5632",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9800
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-14",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "1c67fcc256773d07995ca53d384d73bbc04f4c860475190b5e017ac625af37a7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 23108
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-14",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c226e1427fff512aa529191249a87e92fd994824bd006a3cb9ae3b6b3e59d84a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10872
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-14",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0554b1c3ff699090fe248873beedc69eebc5fac3aeb3abd2a856ca214a075fab",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10680
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-14",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d56ca84c7d1cf48a80cf14fea332fc9d385bb603d05cf2b964f5a3ead4cdae3a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10546
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-16",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "b592a68c7e4be7c0ffb1f42a591ee3a1ae4cbe506a7cac3ee7412b51c695d3a5",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10180
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-16",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "204b49944367dcf266a3e91fde2aa3613be0a981cb9208f6e7a71215db178d1f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10195
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-16",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3a1d3b768bbfa4f5789ac28c625f369e1abbe76f13b5142986a597b14afee888",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 10117
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-16",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d9d2a8186ccbdca36df6be794ac1103192d087c58915071c61ce11b52cf9a848",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 10138
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-18",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "f00d8a983a5e8f43451db091f3f3f9b39b0c3aef0e423e8443e66d0cea84b5bf",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9676
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-18",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "87f7b628b4bd1bdaa913c32c22a01d7f89998fed7b5f9cbe846f02f1d0294575",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9946
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-18",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "87f7b628b4bd1bdaa913c32c22a01d7f89998fed7b5f9cbe846f02f1d0294575",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 13833
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-18",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "197208a94b77af469339f2d74d84a2c4801cbcbabeeb8cf739fbe19b66351feb",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9685
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-20",
+      "config": "astra-medium"
+    },
+    "config": "astra-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5194993f3ab9b53a42048973a4843efca205c3d4344825235ed730f1615a1b21",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9855
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-20",
+      "config": "astra-high"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "533efe9f1a029fac168649dfb1d8844325670973d41b1b06dd502be28c4bbd77",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9984
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-20",
+      "config": "sol-low"
+    },
+    "config": "sol-low",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e8a674a56637c396431be4b07fbf531bf9b8fa2bc90114b0b20ca9f40329afa3",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "usage": {
+        "reported_tokens": 9800
+      }
+    }
+  },
+  {
+    "stage": "generation",
+    "identity": {
+      "case": "large-dev-b-20",
+      "config": "luna-medium"
+    },
+    "config": "luna-medium",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "23d630389b473e1fc31bc61f3d89c0d92d31e074afa18a22770059fe1403604d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "usage": {
+        "reported_tokens": 9836
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "53eea4edfd86db0ba2c98a6e"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2b4721ec997af0f59d1c9c03c44bd5f77a9baedf8b1b209f913439c9a6074a13",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 24182
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "15ae6169f7cae81d0b7bf2e7"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0a1e49063eca7600608b639630a9bc498b6c483ca56779f5fa76247b00a2c778",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12196
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "17651f9a69b0aaf6f2c4f5a1"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "caa95183d8090c25493f34b637efad0a588d06c109c625ee4c79c9fe41221e3f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8342
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ae1c42373f0bf75997847c3b"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0e5529ee588330ae957e90e90a28b0e2685cfc5be3e21ae099c4b09c5b258865",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12701
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "18d98860fc8e3c69c034b537"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "7806e5d90b1041217dac7ec5f048b4ba28a31db1783cc8a13fdfed6b58247580",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 26094
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "dd6b25751a61709233493dfc"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d6164965baf640030dcdfeac583a2d87f3a7f6f86ea21bfbefaabc926920f021",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9014
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "6f29ac006f47f475e4f7e8ba"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3c3f327b64793d74048317a195891b3f818595df5f7acfd8d441b3afe3a97107",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12457
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "3076dd41b13049e68afbec3e"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cd0e1df220a2a58f60a33cdb9553fe7699ec5c327754667c843c26d4a0a6fd99",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11213
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "44ee105d62fed173511c02cf"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2834226b3a1ba7175c6a452b381e5f05518368f1c5606d53697d69b4a48ee2e1",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8352
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "32281c6c9d627e3879fce52b"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c7896aad54f690e45b2d18704703081346e444739dc8aef23c54b964b4f05957",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12374
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "97fa284deffec54f454b6701"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "b9cadc19e929fe3baf71ee43cbfbf4a7f92fae96f87ab2ef67e78f8d4e099010",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 25352
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "54860fab333786766f323c8c"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6c15941414382ae885d59f8bf7943e3d8ec134dfb1588f1a8ee764817f103a7b",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8946
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "fb4a137d9704f6eb186697b2"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2c3050e19390834c00f5df98cdb10d2a9b8fd07a0ff6cd028fad95019aa00446",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12945
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2bb6bf17abdbeb40ddf92307"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c285dd5f66751a0c9aa3e5c31c12bc578c4811046d450bd39d73a401d8bee334",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14453
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "4194c15f0d7eb9caf56b5250"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "f4dc2f1d280b488f8d8387611715db4029066cdbcc8c02d05c36ebb624bf5965",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9714
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "9d260e2792c45a71bf57243f"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "537c9a982f9c828dffcd13ab01f6361b5f56ee490a85c9d339e27f39c8d2d6a1",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13776
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "6b23717e2fa95491d863e57e"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "f412f95dd603771a28110974900c03e3c68fec79792cbafa4251f21bc5c52478",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 27091
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ee485191f1111f0bd4141a34"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "40ddc750af58546c46d03aa9f01274e9928a49dfe1e7ff0bbf925c85e2a6a076",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10138
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "8bb6151fa1245399af5181da"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e2c6d5ef214d6fbad4c749813b84b1909386ee29f49e9fdbeddfff0f2128607f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13128
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f57813c824e6b0553c6cfd0d"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "9a2f797d7a79d265acb8b81a656eedf98c721a75c54972edb533ec50df98aafd",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13316
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "41513809cdb96efaec794edb"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "96b74f44a54013a5b7409691a3506349e0382a15920c7ef499ed16de24e62ef1",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7142
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "41513809cdb96efaec794edb"
+    },
+    "config": "astra-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cf45a0501676f86649683ce92481bedeaa4f278e2ac29cf9196a11ce2906379f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7066
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "06afcb1a7bee89ad90ae9f38"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5d277f615d72ae3e1d993bfa7545c191f093b122bf1bde5b2bc1829d4ed4449f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13971
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "021ea72902fa9648e31ae893"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6a41cad9c237b03b1f05c6f68d34140ba20c8e24642935ec877f17b162f8f020",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13876
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d45f9f3946fdf7ea99397a48"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "4e4dd028afdd084aca63cfe2cd9c964ac07ad7c79d8f55fd76756ea57b752da9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7619
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "442b25714073d92c4cc169fd"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cad6ecb2662695ddc7b3dd1924082d0fbca44774a0dbdfd6fab1f4e9e5a79ffa",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12917
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ebbdf75059a5d118d0761062"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "281d582cdd212ca461654b0a13c6fbd35a6ed176554e84eebb0d090a4d652801",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12722
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f06c03671966b2aac6635b26"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2bdaf8968c0c8cbdc452fda44f3048528a2bd03718fbc6b491f328d6c7bfa3ff",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10850
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "03784decaa645eb207659369"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "8a3b38f24896caa248a746c3e840808dcdaa14db5e8f255e9f90f1f20715d9d7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14253
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "4998afaa1f8e0d982a127b99"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "f3029b6d05da1539d8938c1f27a33ae2f6281b223268d24dd75687f71d95e6d6",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15957
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "157f8ca72841bff01fde685b"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "4bc2f67710afb3a2fd7bd91d876f85770d5561491149068dc73bc02450d2b625",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12858
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "38d8aecd527807f8b7d15f06"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cc3736b4829d4127d54df186b1e692b4a071488957341cc36d8244a21dfa5c4d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13806
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2ff24ddb26cdc7d2fcc1e202"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0b7ec1b9b8c5ad5677d71ccc433a4cfe2871760518b7340775b85a1cee19b271",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12876
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2ff24ddb26cdc7d2fcc1e202"
+    },
+    "config": "astra-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "7772a5230c2b4c04de18f852244597a314a13e43200f11fb8830c947eb6f2b05",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12861
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2ff24ddb26cdc7d2fcc1e202"
+    },
+    "config": "astra-high",
+    "attempt": 3,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e374f9dd8b6913cecb625217fb3cc7cab9605679cca9a214e7c94f0dc30e3383",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12892
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2ff24ddb26cdc7d2fcc1e202"
+    },
+    "config": "astra-high",
+    "attempt": 4,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "44b3aa6a8f168c73131568f2e7d1820d873025e05dcc559632c7999d5808c5a7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13897
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "9d8bb849a8ba77bac1cdacc8"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "49c2d6472641b2a91a9a4360788529e421dfdd4909a130f16540390c99b40078",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7291
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d683225a7ea2e6de0c1c39c6"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "482f4782ab1f2532706442a5a7c9a645059c165f877959e802c56915836297bb",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14581
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "c1c64766b0ed86f0ad146295"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "7ceeab61679e3791ffe627273c4be050467795c2d106f1986056af37a6e744f3",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14058
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "e5312893b5404d034605728a"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "9bd60afb83206eb46a701443d2f440d061f0c084ab012650d1b89de59bd2dfd1",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7226
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "7ec3acc32f210e0cb9fd8162"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5955137ba7f372ff9864cf7327cacedbac5a5ac1f5cbb42a35c6930a8a505c4b",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15792
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "90d50f35273ec2cc5ee735c7"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "1353647898a90633ee20e73c275c4a80f969a45aa56aeda590a8fc7e3204d2bc",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 16646
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d0ac65a6003b25b41b60e53d"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "fc4527467edf5b9817b923294c6795656f17545cf2a4c28e11050c458d0ddd63",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10635
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "82a1f21dfafdade452f8a5aa"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0d723bffb5150e36047e8cb28002d67c124f3c3de0d7a9f9fa5492cd876765a9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 16034
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "82a1f21dfafdade452f8a5aa"
+    },
+    "config": "sol-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0391597a8f8c5cc44ae13fbaaf9a82700426f09cf0176ce7d56c45df56b3cbac",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15824
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "1aafb155205d0136c7abcbf9"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "010fa5095b495b0179dc9c53f428a8f63794c8e4ff0fa7cb11865b6f0a842bda",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15541
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "0872003630dcb3d686d7d4a0"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e8fc6d81f72a95547914edbe2c13cfc583e4ddf68ba71742864407b84ce711d5",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10870
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2e6f70ca72dad9f497033662"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "49615f22b28c3c7f01f1040ac70b6a3a15021c2fbfef11893480735652e72b94",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 16773
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "e2a832acd08d9663534142f8"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "ad7b1d7e90a2bc1da3a9fc0a59118a61de98d2471137806bd5b4653b7f8d1749",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 16870
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "8ec1e8375657483e58cd6763"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "24f5fd81e3449b9537f592918ed02a181225ad3482c5ad4aa3cfb56d94c24786",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8521
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "317eeb8114138822aa4bb723"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2a3434e4ad4b9ed58a69c947ef6e10293c0217da3f47a8c16924f53cf91e2a02",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 17665
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "317eeb8114138822aa4bb723"
+    },
+    "config": "sol-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "aff49b8ca43ffd98ad164cbc6bdbdaa426c1aa2cf8ddaac16233f3b6d71b75af",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 17677
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b0eb60a0146b7fbc9e260c99"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5f32c77d094de7ceaaeec9b85332bcabe3c129b5d93dd42bfbef17df20c664e4",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 17564
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b0eb60a0146b7fbc9e260c99"
+    },
+    "config": "sol-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "7290956a7aeb5e6eaa5c18f138b024a1ef1d222696433e6a9291af63e01b4e03",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 17050
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "47f70f311b897008213dc04d"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "4e423a29b787fc39f45f5736eb0e13105b300a6638c958e713ac2c8fbe0b4f8a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8501
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "86adb727772889317fc81a7a"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "10f77a518b6883567c5a88ad63106495d28614271b9df2c628286e656b45f091",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10294
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "462e56eab97e16efa8c1994d"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "99f3eb4b226d4bc15500c1f63f5435025bb39dc842a55774cf6e63597fb928a9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10587
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "befb332e10c9885ebb38bcca"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "66e8cce225f7bfefbdbb3fb214c856dc8de5099e289eb58207b005e1f5952824",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 6433
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f618738bcd68ecec99da6e32"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "91b9d2d8bd948a14b50dcd7cded03bda2532d0aa35aa3cdeaff3e19060ff7cb6",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10854
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d0af59b4789d0d15638ebdce"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "03dfc357b44f6031ddfbd09fb2c391eb12b2e97df95812c49862d7ba2bed6eed",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10551
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "1f2f6c3ebb008347dc26bc70"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "8b365f39f07bf05d3766ba08c29326387914bbc4c55476ee572b56b078372e59",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 6217
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "74198413b358370eb0c75b95"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "a36371ee4fb4b5195c97ad191562ab1990f0152edb0268b02f87401707751d05",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11015
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "cf3054ad69c333e9f394bb68"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "53083278eeb409590c70dde0a4f0344544bba2f4223a1c62cea676581e7b1874",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11124
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "67477231006646bba3f448a6"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "62ca7d4637f0a57a6f380399e44837192c99fe2062ac7720da363ddb7a0441bb",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8242
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "8f262161d981d34a15d75286"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "dc11b62090b5205879d536ec0fd6085a3fb736b3154ccff4a9b79e4fa334de36",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11851
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "67bc21800bf5a68771aa6f62"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3ea1220b674315e7aab2846f91da5ebcf2cc18de8c3ee62191a3fb8087d1f5cf",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11195
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "4ca5269b39e78f6c2eaeee2c"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6d83b1016d4b60a528f0ded657f82bb96cfb0e408d45d8e3df0717c0374d1ccc",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9046
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "101c601674fdf1adb5c8edd1"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "d7b7b139b93709ccf771eeffda2060c3942fd77fca1840bb3b1011d4c1f98ae9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12687
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "0fc21bb1f54f96f876aafa6a"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "92d2a8d2b889927b0dc1fb4c7825f88319fe122cc1ec1c3f3d4e0097af9b6938",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12016
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "0fc21bb1f54f96f876aafa6a"
+    },
+    "config": "astra-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3ede7a30865adcb15e2d2161786c7bb5d2c2148acf4970b1947a3f751c1f34bd",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12314
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "0fc21bb1f54f96f876aafa6a"
+    },
+    "config": "astra-high",
+    "attempt": 3,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "989c6448f3b85dc24e03fcc1c9a8ac0b3924fae33077b4b4f84003b63eff83ed",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12363
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "cc5a7645cd24c57e821e0fbb"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e55b490243f03839ca4e7f42c2926f9325f48e0b72c5953652f3582dc82a6b66",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7366
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "1824f3337bff8a5850f4aba9"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "fb7a9cc94b990e43faae28b21a36f5e4bb1aaa9015bd065a3f5784e764f99bb4",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 16210
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d0f66d06e920dda2287caf8d"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5d9391f1e3301399bd41492afc03e496f5fe3d776fd3011c677d5b11178b9898",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 26091
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "45ac6aa116213c27ec2e475b"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "290bb676ace6605e60bcb8e811add54a221b37fbd5e095c4db2304338e7b181e",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7477
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ca1b900c544dfb14b9927e44"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e3245962489874209005faf446b7adc8f573602ddcb88e286e861a213417e236",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11330
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "51c2f51c13a7edc66f682199"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "bf0a8d75f741e14bf621a3b78752b43f641a052abcb66745967ce1bca5c27780",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11213
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "0ad04b1d9d78882132ce736f"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "9fc4ae30d5acc69c4c015de83a15ddf71fff6b829ee333b584f975cc9656d6d8",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 6777
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ba5ee68b3c8b62ce074cc6d8"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "81b852e855d4255393282da2645c7992f51363f23ac35c4846686e59ee019018",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12313
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d65a9030036ee4e5af15896e"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c7e14041acc1b8fea3dbd930a52ecfdad358160c0ae37dd5ee935e0d42d99f12",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11920
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "1c0c0a2e68b59844527c631e"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "1b1c88a355e0951ba3c378864a74f0466fe718f5d8c8c1001529bcd0ef939285",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 19077
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2f7e461f02b2ba6c61db0c32"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e3b15539a19ac699ea5fd721b7afb7b389563717149fa168f52ba8cb60a7927f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13135
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "66f0cceece4f06acda23c45b"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "4e109323825e707c73e1948502b3de249e0baa0bab8afbe1b4b11c8785f0576c",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12735
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "66f0cceece4f06acda23c45b"
+    },
+    "config": "astra-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "dbb9e52274e1757aa978c255b07784ae85802feffa815089ccab9187fffdddad",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13592
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "eea4b5e39ae1e06ba9232e4c"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "ba70e1fab55ccf57bb4d18876809bf4f490346e9656c12fcde7306e064904771",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11608
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f3fe82879087937fbb0d9cda"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6aea824fc5146aa82056ffe511a153bbb4489a6f08aaf70624bfd5c4f9a54b3d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14217
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "6391819b64151a61ff225988"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "b4350c2812f8efc537bd60d128609ed93176daca53552e2a17781d5f766ca460",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14659
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b294567f771cf709f498a892"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "0d61d7aa6abd38413c5dfd723feaca0be46224ba209eca0d59aaf62b58d61185",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11770
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "c7dd3fc2c02747196e080731"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "861b10d93c095a3ab6ed53eac188ea71504d061e0ebc2c147a3bbc5a37e602dd",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12926
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d3ca23a6a6dc2c471e8265ff"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "653f34ef9ef3e4c07083152cabe8314e2a3ea3f4619e46d3447f450eb73b0158",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13070
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ef8d7c8d19a9e7accbfbcc70"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "632a9c5b10a07c860c5c0c7e8e7b1ed733c885bd5f9ecf8f66be8cd58a4dfe22",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7291
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "80d1b41983ee85fc1305df96"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "797893cf3dff82c7de8add6c6588ba8ad6c680b6e2d8becd1d034ff5eed97c8d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 27757
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ec2f6fce113c853e8914715f"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "4108ce6d3e92ed9fa1257c8dc488f74652af9f89cffee2d75fb0a706ef082755",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13379
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d3c442a33a3018401a6312bb"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "edaf4830aff77482c506c6f97fe0e6adcf87b283e5638e2bad4c58b4fb299a0c",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7334
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "833a3e76c9318949b914a1fb"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5782f95a082183d4c83341f942ea2204d8844af3edc20779cbeae3ec5876ee39",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12356
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d396ea50168b38d9414be02c"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2ebc205b1a77afff5b1bfbfb455a3bebb96f8e385efc6f79c82d99dee27ac409",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 13099
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ec01cb192cab5f4df59cc3ec"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "297d34a4f435fb769a90f59b2368f693e727e0d8cc982cdfd9b45a41e1b73365",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 6785
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "3fcf0d4ef646632f8ce63506"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6e27701cffa3b02b4955638d53acb2c6c2ecc8a2775f04dcb963b752bb1ad692",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12772
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f89aba501f50421dfb86ee58"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "1361aa6a6d7fa363e4d8ff389c06bfa3a2ae18b6f4cf9ef96c64b125a2e2652c",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7501
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "86c94b445ccbec365abd6faa"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "5e31d4fe41fbc91496ee45f5f1673ce454db42333049afd50db3dbfdc437888f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 7060
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "46f744fc7597d2478fc1dbcc"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "de4284c8742c57d528adf198369d87260c7f6f2bf217fdb1735c93f5422c836a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11652
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "c49abf5e80d580b33bbf0ed7"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c614b755f90ce582039b2236eb6bfbb82957a17f74d397c25132b2458a0d63c9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11280
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "7f2cd451cee82fce7948fea5"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "116665ab0d861fde11e6a55f6498e0c79d0895f26b0bf3e2d09ac9db1f758a21",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8603
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "dca68b507f5a58e91beaab1b"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c1545294a14d10f6be8641912a5afa0ef3e681eb13a9153f6cd3f98ec996a422",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11998
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "fab069a48580f914e693a3f1"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c0d57096228524ccce8d8cee59b5f259df87f3de1fc2ca1c5c2f975b450866e8",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12037
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "c6078db49e003cd6c81b62eb"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "97a0b6ac715e64c8250c7928435f30040ee8ef61d10721c9c0abd94911449bc4",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8473
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "3fcbe1b73b284711a735cc1b"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "2f5098280c5400e15d2a8ca4bfd9fd9d95a429365ff4ba6c6cef5e576979740a",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 20499
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b5b88d15fbf1da27353cfb28"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "ce9abd8bcaeb9d54934b12390a3b1449cbf1b6fb6e87ecf17b3e0544d41ce06f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 19464
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b5b88d15fbf1da27353cfb28"
+    },
+    "config": "astra-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "77e80e1f80026f488d17584af952156a8379d72290be5eee9cae5072e30ad6b3",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 20803
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "e202d01b7a2a4a73d338ad15"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "8c9ff8517a82ce369f7d7e64eb15d1140d6ca77ec71c0e0e7eebafa06d928550",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8568
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d09f57f195b4df84063b98a8"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "ad113a374c6e6ab0e68a5a43c0bdfe5680687b65f33e8272c785503b8c570b8e",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 21239
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "05567406051e8a47139a0b43"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "93b19f9c7404b5afa7e9e50dd66ab00a2e1e696b32700f0f0aaf1ff4f9ed3ce9",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 20738
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "05567406051e8a47139a0b43"
+    },
+    "config": "sol-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "697459acc691c1e09867ad59029f5c5b933fff2abc4fedc50480bccbcfd40981",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 21417
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "33f10370b141b47bf149ae16"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "feb8660db1e20d8dada6ba1ebe4e7e8af191dff3a59e43ea4d91b44a87450eb2",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8932
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "5c0ef5aa4779ace4411aa3c4"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "74bd89bbb296677d51940dc499ac6e1965557ef45498ed689b8914bbc1e290b6",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 14789
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "1a25ee613de7cb5f2749e13b"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": true,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "4e20b66027a293f6cf9b3ae305b1a9bc41d8786b1e32a85708ac06300f34bfe8",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15030
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "1a25ee613de7cb5f2749e13b"
+    },
+    "config": "astra-high",
+    "attempt": 2,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6a520c112d184afca3bca994c7d74fd26834c02916fe4494a434729eecba1843",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15863
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "ac8aaac69fcf3adc6275159d"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "8de8895ca8035dcb05877f9b569645c9745a9bf11bd4d1a632df09531836ea16",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8277
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f81747e0015fcdebd8b77cb3"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e6ca2fd275e8e5bb46d0fe6aba013e2a01f6410d2677046bfcb62fc62431f173",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 15576
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b40e8d36a79cd0e4a0e459c1"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "259dbaa868b6c68b18ed47fdf071abf98da6a06630f8a1874410eaa2ce06263f",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 16270
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "6ba912beb19a1d0e984c469a"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "58b2ba293a7f1d0abb60bf6e3e9af54dcbc56ba0e1a40e4ef94a0130ea50646e",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8244
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "72c1ecea915e5773659af782"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "a701b81b0deed8f3f9c50b2fbef6d287a5d269ad927713ac01d0f25aa6af9329",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 23252
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "9b8f835e4eae1898f309f4b2"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "cb70bee9d700115442d5a04bc1106f2e4cded88e7d114a1f6eb2704ca98bd0a5",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 10722
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "d0fb77302161cbf4c5106a57"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e3a24fd4fdd6a0a395e88f85dbfe59c2bcc6b608ac5a169c1ac855ff5f673963",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8107
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "f8de4401f262b688b3cf5ca2"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "6900beba4e118c06dd4334a0e0af984607b37709dba680457f9fa889cc6c49f7",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11219
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "06543adeb7a227e72e3bb8c7"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "da084fbf06364a49e03ff3aecff607a1bf696511c7684517c7c6e6395004cb75",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11566
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b07749d1187dfdef44c93376"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "43a0cf8f9940c365c617aaf6cb5d851c89ecbb0a0bef1e29ccd041d78ea8a8ad",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8300
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "00137f3ad93bcf15b07b8521"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "088499b8c28168d07a3c28fa1fa7b9cd396623fc77556bc82473b1e1d96fd509",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12480
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "092356a31438e53023c9b755"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "c988ec5929cf222259479459b778fecd4a4e624eafc419942332c232606c4100",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 11843
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "2bd8492754945c3f175d4419"
+    },
+    "config": "astra-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "e38c181523c077453768a92ceb808814779fdf479329fb585497cc20eb07f11d",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 8903
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "3610a7e1a802265f8d54393b"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "3645f942da27b1f1132cdff1aba9998bb9888ceaadbeaa124cbca8c29dec7202",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 12815
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "324f6c872f36a696bf44ef08"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "a9bf11b556dc60942e9b703905052fca4526e6f482bb4ea0345bd62b22a04df2",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 24401
+      }
+    }
+  },
+  {
+    "stage": "judge",
+    "identity": {
+      "batch": "b90ddb36a9c6071171f3f7df"
+    },
+    "config": "sol-high",
+    "attempt": 1,
+    "state": "answered",
+    "invalid_schema": false,
+    "runner_sha256": "dd6105e70d782428cd2454b10d7c5629da143ad35c9dd978905c662fc7656a53",
+    "raw_sha256": "590ada35de483636a97b30f40ef2ea254b36824886456df78d2d9960a0ea2041",
+    "call": {
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "usage": {
+        "reported_tokens": 9253
+      }
+    }
+  }
+]

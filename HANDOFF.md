@@ -1,18 +1,38 @@
 # Handoff
 
-## Active: Codex prose repair
+## Codex prose repair experiment complete; v8 not promoted
 
-The user authorizes fixing prose regressions on development data, especially arguments, keeping proof guidance and the frozen author-specific judge, Codex only, with a fresh holdout reserved. Protocol: `evals/large/prose-repair-protocol.md`. V8-dev retains proofs.md and paper-voice.md byte-for-byte from v4 and separates argument development from compression.
+The user requested a dev-only repair of Codex prose, especially arguments, preserving proof guidance and the author-specific judge, Codex only, with a fresh holdout reserved. Both phases are complete. No jobs or model calls are queued. The requested general repair remains unresolved: v8-dev is a frozen partial improvement, not a release. **Packaged and installed v4 is unchanged.**
 
-Tuning is complete and published in `evals/results/prose-repair/v8-dev-tune/`: 80 writing outputs, 320 primary judgments, 64 order audits. 202 Codex calls including two malformed-JSON retries, zero Claude calls, 2,341,342 CLI-reported tokens. Nonproof net advantage is +12.5 pp versus no skill and +24.2 versus v4; argument +18.75 and +40.625. No candidate material flags. Controls and Astra-high prose remain concerns. All 44 tests pass; portable evidence revalidation passed. Tuning plots inspected. Candidate selection is frozen in `evals/results/prose-repair/selection.json`.
+Protocol: `evals/large/prose-repair-protocol.md`. Tuning selection: `evals/results/prose-repair/selection.json`. Final decision: `evals/results/prose-repair/release-decision.json`. V8 keeps proofs.md and paper-voice.md byte-for-byte from v4. Its core and translation reference distinguish argument development from compression and preserve useful explanatory steps.
 
-The unchanged candidate is running on the other 20 DEVELOPMENT cases, not OOS. Session 63156 owns `python3 tools/prose_repair.py run --candidate v8-dev --subset validation --workers 12`; private log `.local/prose-repair-v8-validation.log`. Do not start a duplicate writer. The new frozen plan is under `evals/results/prose-repair/v8-dev-validation/`. Finish reporting, inspect actual gains/losses, update charts/README, and make an honest release decision. Do not retune on this check. Installed and packaged remains v4 pending results.
+Each phase covers 20 development cases, four Codex generators (Astra medium/high, Sol low, Luna medium), 80 new writing outputs, 320 primary judgments and 64 order audits. Baselines are exact saved no-skill and v4 outputs. Astra high and Sol high use the same frozen author-specific judge. No Claude calls occurred.
 
-A fresh 30-case holdout is sealed and UNRUN. Public manifest: `evals/large/fresh-holdout-20261019-manifest.json`. Independent author and reviewer saw no candidates/development outputs. Two initially faulty cases were corrected privately; second review passes all 30. Final hash: 4af1d135109531a68c9810cc90a6e6047539ce8467f98efbbbf47fa5a548541a. Contents and review notes are in ignored `.local/fresh-holdout-20261019/`; optimizer must not read them. Private durable-backup location is in `.local/holdout-storage.json`. Backup is refreshed to the final hash. Publish only the manifest, never private contents or paths during this repair.
+- Tuning: nonproof +12.5 pp versus no skill and +24.2 versus v4; argument +18.75 and +40.625. Proof +53.125 and +6.25. Selected unchanged for the second phase.
+- Remaining development check: nonproof +9.375 pp [−2.34375,20.3125] versus no skill and +20.3125 [1.5625,38.28125] versus v4. Argument +6.25 [−21.875,31.25] and +12.5 [−21.875,40.625]. Proof +81.25 versus no skill but −15.625 [−31.25,−3.125] versus v4 (0 wins,27 ties,5 losses).
+- Astra-high argument score against no skill is −12.5 pp in both phases. In the check it is 1 win,5 ties,2 losses; all nonproof is +12.5 [−15.625,37.5]. Argument versus v4 is +25.0 in the check. Do not hide the unresolved argument result behind the aggregate.
+- Check material-error flags: candidate/reference 3/10 against no skill and 4/8 against v4, all minor. They count judgments, not independent errors. Proof losses concern exposition, not flagged mathematical errors.
+- Check judge agreement 130/160, order agreement 46/64 with two direct reversals. Full findings and actual examples are in `evals/results/prose-repair/case-review.md`.
+- Total two phases: 415 Codex calls (160 writing,255 judge including15 malformed-judgment retries), zero Claude; 4,897,358 CLI-reported tokens. This is not an account-percentage or billing estimate. All attempts retained privately; first valid answers retained without quality regeneration.
 
-The user asked why the prior gain became dramatic and why Claude improved more. Explained that the prior regrade changed assessment of unchanged writing (same 400 dev pairs +25.5→+37.75 pp), with different headline coverage too. They correctly pointed out the family gap existed with Claude judges as well, weakening a judge-family explanation. More room for improvement versus better fit of the instructions remains unisolated; relative gains do not compare absolute writing quality. README now makes the regrade distinction explicit. Current v8 comparisons keep the new judge fixed.
+Reports and exact synthetic evidence: `evals/results/prose-repair/v8-dev-{tune,validation}/`. Updated two-phase light/dark heatmaps in `evals/results/prose-repair/plots/` and README. Neither phase is OOS. Private runtime directories mirror these phases under `.local/prose-repair/`. The run owned by session63156 is finished; do not restart it. Reports were rebuilt only to fix Markdown table headers and distinguish category/dimension/generator/judge labels; grading and summary values did not change.
 
-The user also notes that most source complaints came from Astra high. This does not establish transfer: the benchmark is a fresh single-turn rewrite with a complete passage and explicit request, whereas many complaints concerned long manuscript sessions and successive corrections. README and `evals/results/prose-repair/case-review.md` now state that limitation, with an actual Astra-high tuning loss where both outputs are usable but the baseline organizes the argument more precisely. Report Astra-high argument/nonproof results separately in the final release decision. Do not launch a new workflow study or consume the fresh holdout as a response to this observation.
+A fresh 30-case holdout is sealed and UNRUN. Public manifest: `evals/large/fresh-holdout-20261019-manifest.json`. Independent author/reviewer saw no candidates or development outputs. Two initially faulty cases were corrected privately; second review passes all30. Final hash: 4af1d135109531a68c9810cc90a6e6047539ce8467f98efbbbf47fa5a548541a. Private content and reviews are in ignored `.local/fresh-holdout-20261019/`, with durable-backup location in `.local/holdout-storage.json`. Optimizer must not read these contents. Publish only the manifest; a future performance test requires separate authorization.
+
+The user's interpretive questions matter to future work. Earlier dramatic gains came from regrading unchanged writing with a different setup and coverage. The Claude/Codex relative-gain difference existed with Claude judges too, weakening a judge-family explanation. Many source complaints came from Astra high, but the benchmark transforms long manuscript sessions into isolated complete-passage rewrites. It does not test preservation of the story across successive corrections. README and case review state this limitation; the fresh holdout has the same broad task-format limit. No causal explanation for the family gap has been isolated. A faithful-workflow study would be a distinct experiment, not a reinterpretation of the current holdout.
+
+Next work, if requested: target the remaining organization/overediting failures without weakening proof exposition; use a new development protocol and keep the sealed holdout separate. Do not retune v8 or the judge on the completed check and claim it remains validation. Do not automatically resume any older benchmark. No installation changes are pending from this experiment.
+
+Verification complete: all 44 tests pass; both published evidence sets revalidate; 220 chart point estimates match the summaries; tuning selection hash is unchanged; light/dark category and dimension plots inspected; new public artifacts passed the private-pattern scan. Generated SVG trailing whitespace was removed without changing the rendered figures.
+
+Verification commands (no model calls):
+
+```sh
+python3 tools/prose_repair.py report --candidate v8-dev --subset tune --published
+python3 tools/prose_repair.py report --candidate v8-dev --subset validation --published
+MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/plot_prose_repair.py evals/results/prose-repair/v8-dev-tune evals/results/prose-repair/v8-dev-validation --out evals/results/prose-repair/plots
+python3 -B -m unittest discover -s tools -p 'test_*.py'
+```
 
 ## Author-specific regrade complete
 

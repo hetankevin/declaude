@@ -4,28 +4,59 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## Codex prose repair: development results
+## Codex prose repair: partial improvement, not promoted
 
-A new revision, **v8-dev**, separates argument development from compression. It preserves useful explanatory steps and keeps the proof and research-voice reference files byte-for-byte unchanged. This comparison uses the **same frozen author-specific judge** throughout: Astra high and Sol high. No Claude calls were made.
+**V8-dev improves nonproof writing over v4, but does not resolve Astra-high argument writing and loses some proof-exposition comparisons. Packaged and installed release remains v4.** The candidate separates argument development from compression, preserves useful explanatory steps, and keeps the proof and research-voice reference files byte-for-byte unchanged.
 
-The first 20 development cases are complete across Astra medium/high, Sol low, and Luna medium. The revision is selected for an unchanged check on the other 20 development cases, now running. **Packaged and installed release remains v4 while that check runs.**
+Both development phases are complete: 20 tuning cases followed by 20 different development cases with the candidate unchanged, across Astra medium/high, Sol low, and Luna medium. Both use the **same frozen author-specific judges**, Astra high and Sol high. No Claude calls were made. These are previously used development tasks, not fresh-test evidence.
 
-| Tuning scope | v8 vs no skill, pp [95% case CI] | v8 vs v4, pp [95% case CI] |
+Scores are win rate minus loss rate in percentage points; ties contribute zero. Intervals are 95% case-bootstrap intervals.
+
+| Phase and scope | v8 vs no skill, pp [95% case CI] | v8 vs v4, pp [95% case CI] |
 |---|---:|---:|
-| Nonproof writing (16 cases) | +12.5 [+0.8, +24.2] | +24.2 [+10.2, +39.1] |
-| Argument writing (4 cases) | +18.8 [+6.2, +25.0] | +40.6 [+18.8, +62.5] |
-| Proofs (4 cases) | +53.1 [+31.2, +78.1] | +6.2 [−15.6, +21.9] |
+| Tuning: nonproof (16 cases) | +12.5 [+0.8, +24.2] | +24.2 [+10.2, +39.1] |
+| Tuning: argument (4 cases) | +18.8 [+6.2, +25.0] | +40.6 [+18.8, +62.5] |
+| Tuning: proof (4 cases) | +53.1 [+31.2, +78.1] | +6.2 [−15.6, +21.9] |
+| Development check: nonproof (16 cases) | +9.4 [−2.3, +20.3] | +20.3 [+1.6, +38.3] |
+| Development check: argument (4 cases) | +6.2 [−21.9, +31.2] | +12.5 [−21.9, +40.6] |
+| Development check: proof (4 cases) | +81.2 [+62.5, +100.0] | −15.6 [−31.2, −3.1] |
 
-These are selection results on previously used development data, not fresh-test evidence. They evaluate single-turn, self-contained rewrites with explicit editing instructions. They do not replay the long manuscript revisions and successive corrections that motivated many of the original complaints. A fresh holdout in this same format tests new passages, not that longer workflow. Gains differ by model: Astra high still trails no skill on nonproof tasks, and some already-good controls are overedited. The judges flagged no material errors in the new outputs; that is a judgment result, not a guarantee. Judge agreement is 129/160 and reversed-order agreement is 45/64, with one direct win/loss disagreement in each check.
+**Astra high needs separate attention.** Its argument score against no skill is −12.5 pp in both phases. In the development check that means one win, five ties and two losses across four cases and two judges, with a wide case interval [−75.0, +37.5]. It improves on v4's arguments (+25.0 pp in the check), but that is not evidence of beating no skill. Its check score across all nonproof categories is +12.5 pp [−15.6, +37.5], so the earlier negative result is not universal across prose. Other models also vary: Sol low's argument gain in tuning becomes a loss in the check.
+
+The proof-task comparison against v4 has zero wins, 27 ties and five losses in the check. The inspected losses concern purpose and ordering of explanations, rather than mathematical errors. Unchanged reference files did not guarantee unchanged behavior under a different core prompt. This tradeoff, together with unresolved argument results and overediting of some controls, prevents promotion. [Actual examples and the remaining failures](evals/results/prose-repair/case-review.md) explain the decision.
+
+The check's candidate/reference material-error flags are 3/10 against no skill and 4/8 against v4, all minor. These are counts of judgments, not independent errors, and different pairs can yield different flags for the same output. Judges agree on 130/160 primary pairs; reversed order preserves 46/64 audited verdicts, with two direct reversals. The two phases used 415 Codex calls including 15 malformed-judgment retries and 4,897,358 CLI-reported tokens. Accepted outputs were never regenerated for quality.
+
+These tests evaluate single-turn, self-contained rewrites with explicit editing instructions. They do not replay the long manuscript revisions and successive corrections that motivated many original complaints. Mining Astra-high chats does not establish that this synthetic task format preserves the conditions behind those failures. A fresh holdout in the same format tests new passages, not that longer workflow.
 
 The [fresh 30-case holdout](evals/large/fresh-holdout-20261019-manifest.json) remains private, unopened by the optimizer, and unrun. An independent review checked all cases, two were corrected privately, and the second review passed. It is backed up privately outside the temporary session files.
 
+The heatmaps show four cases per category in each phase, with 16 cases in “All prose” (all nonproof categories, including controls). Each cell combines both judges; the “All” column also combines the four generators. Values are rounded to whole percentage points. Neither row is OOS.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/plots/v8-dev-categories-dark.svg">
-  <img src="evals/results/prose-repair/plots/v8-dev-categories-light.svg" alt="Codex-only development tuning results for v8 versus no skill and v4, by writing category and model effort; signed win-minus-loss percentage points.">
+  <img src="evals/results/prose-repair/plots/v8-dev-categories-light.svg" alt="Codex-only tuning and development-check results for v8 versus no skill and v4, by writing category and model effort; signed win-minus-loss percentage points.">
 </picture>
 
-[Full tuning report](evals/results/prose-repair/v8-dev-tune/report.md) · [Frozen protocol](evals/large/prose-repair-protocol.md) · [Selection](evals/results/prose-repair/selection.json) · [Exact outputs](evals/results/prose-repair/v8-dev-tune/responses.json).
+<details>
+<summary>Meaning, naturalness, progression, voice, and proof dimensions</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/plots/v8-dev-dimensions-dark.svg">
+  <img src="evals/results/prose-repair/plots/v8-dev-dimensions-light.svg" alt="V8 tuning and development-check results by judged dimension and model effort.">
+</picture>
+
+</details>
+
+[Tuning report](evals/results/prose-repair/v8-dev-tune/report.md) · [Development check](evals/results/prose-repair/v8-dev-validation/report.md) · [Release decision](evals/results/prose-repair/release-decision.json) · [Frozen protocol](evals/large/prose-repair-protocol.md) · [Tuning selection](evals/results/prose-repair/selection.json).
+
+Reproduce the completed reports and charts without model calls:
+
+```sh
+python3 tools/prose_repair.py report --candidate v8-dev --subset tune --published
+python3 tools/prose_repair.py report --candidate v8-dev --subset validation --published
+MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/plot_prose_repair.py evals/results/prose-repair/v8-dev-tune evals/results/prose-repair/v8-dev-validation --out evals/results/prose-repair/plots
+```
 
 ## Does it improve writing?
 

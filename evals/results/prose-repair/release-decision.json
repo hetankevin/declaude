@@ -1,0 +1,21 @@
+{
+  "candidate": "v8-dev",
+  "decision": "retain v4; do not promote v8-dev",
+  "packaged_release": "v4",
+  "installed_release_changed": false,
+  "evidence_summary_sha256": {
+    "tune": "d07d3e206adde5b21a36799abea8b39573afde5c5fe314d66323582eea2a8499",
+    "validation": "d85f138f47160a90c70df0f835d5a919ce377f2e4e9698a68d4385db84ed9cac"
+  },
+  "reason": "Nonproof gains over v4 repeat, but argument gains over no skill remain uncertain, Astra-high arguments trail no skill in both phases, and proof-task judgments regress against v4 in the development check. This is a partial repair, not the requested general fix.",
+  "proof_reference_unchanged": true,
+  "research_voice_reference_unchanged": true,
+  "fresh_holdout": "30 cases sealed, not inspected by optimizer, unrun",
+  "further_calls_queued": false,
+  "limitations": [
+    "Previously used development data, not OOS",
+    "Four argument cases per phase",
+    "Fallible author-context model judgments, not validated human labels",
+    "Isolated rewrites do not reproduce long manuscript revision workflows"
+  ]
+}
