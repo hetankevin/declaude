@@ -1,6 +1,6 @@
 {
-  "calls_including_file_smoke": 6,
-  "reported_tokens_known_subtotal": 168538,
+  "calls_including_file_smoke": 8,
+  "reported_tokens_known_subtotal": 211329,
   "unreported_attempts": 1,
   "earlier_file_smoke_reported_tokens": 92604,
   "attempts": [
@@ -59,8 +59,38 @@
         "output_tokens": 3267
       },
       "transport_failed": false
+    },
+    {
+      "stage": "judge-completion",
+      "id": "large-dev-a-12-primary",
+      "completed": true,
+      "reported_tokens": 19694,
+      "usage": {
+        "input_tokens": 16073,
+        "cached_input_tokens": 0,
+        "output_tokens": 3621
+      },
+      "transport_failed": false
+    },
+    {
+      "stage": "judge-completion",
+      "id": "large-dev-b-14-primary",
+      "completed": true,
+      "reported_tokens": 23097,
+      "usage": {
+        "input_tokens": 19598,
+        "cached_input_tokens": 0,
+        "output_tokens": 3499
+      },
+      "transport_failed": false
     }
   ],
   "claude_calls": 0,
+  "completion": {
+    "new_judge_calls": 2,
+    "new_generation_calls": 0,
+    "reported_tokens_known_subtotal": 42791,
+    "unreported_attempts": 0
+  },
   "note": "Input plus output tokens, including cached input. Failed-call usage is unknown, not zero. Coordinator/helper usage is separate. No billing or account-percentage inference."
 }

@@ -1,18 +1,25 @@
 [
   {
     "id": "large-dev-b-09-primary",
-    "status": "accepted"
+    "order": "primary",
+    "status": "accepted",
+    "source": "original"
   },
   {
     "id": "large-dev-a-12-primary",
-    "status": "transport_failed"
+    "order": "primary",
+    "status": "accepted",
+    "source": "completion"
   },
   {
     "id": "large-dev-b-14-primary",
-    "status": "unrun"
+    "order": "primary",
+    "status": "accepted",
+    "source": "completion"
   },
   {
     "id": "large-dev-b-09-reversed",
+    "order": "reversed",
     "status": "unrun"
   }
 ]

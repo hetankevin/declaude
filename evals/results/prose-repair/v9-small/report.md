@@ -1,19 +1,40 @@
-# Small v9 development check — incomplete
+# Small v9 development check
 
-V9 simplifies the prose instructions, separates argument editing from rhetorical compression, and preserves proof and research-voice reference files byte-for-byte. Three new Astra-high drafts are saved. A Sol-high transport timeout stopped grading after the first case. V4 remains packaged and installed; the general Codex prose repair is unresolved.
+6/6 primary pairwise judgments accepted across three selected Astra-high development drafts. The original museum comparison is reused. The authorized completion grades saved drafts only, with the same Sol-high judge, author-specific rubric, context and anonymous A/B order. No text was regenerated or edited.
 
 | Selected development case | vs no skill | vs v4 |
 |---|---|---|
 | Museum recommendation | tie | win |
-| Reporting-policy argument | ungraded | ungraded |
-| Finite-population proof | ungraded | ungraded |
+| Reporting-policy argument | win | win |
+| Finite-population proof | win | win |
 
-The two accepted judgments concern one case only. They use the unchanged author-specific rubric and anonymous A/B texts. There is no aggregate improvement claim, order check, or new OOS result. Missing judgments are not ties. These cases were selected from known development weaknesses, and saved baselines were generated earlier.
+| Comparison | Wins | Ties | Losses | Net advantage (pp) |
+|---|---:|---:|---:|---:|
+| none | 2 | 1 | 0 | +66.7 |
+| v4 | 3 | 0 | 0 | +100.0 |
 
-The full bundle is inlined, matching the prior benchmark format. This does not test selective reference loading. The [manual artifact review](artifact-review.md) finds the proof valid and the argument changes mixed; it is not an independent blind grade.
+Ties contribute zero. These are three deliberately selected development cases, not a fresh test or stable population estimate. One fallible judge was used. The reversed-order audit is omitted to save usage; it is not counted as a tie. Saved baselines were generated earlier, so matching model labels do not prove an unchanged backend.
 
-The separate persistent file-editing pilot stopped after its first no-skill turn used 92,604 reported tokens. Its validator also encountered a newer transcript format. That completed draft is retained privately without replay. No matched or long-horizon result exists. The new two-case six-turn holdout and the earlier 30-case holdout remain sealed/unrun and privately backed up.
+## Decision
 
-This pass made 6 benchmark calls: one file-editing smoke, three isolated rewrites, and two grading calls. The known subtotal is 168,538 CLI-reported tokens, including cached input; the failed grading call reported no usage. This is not a complete token total, billing estimate, or account-quota measurement. No Claude calls, replacement generations, or application-level retries were made. The failed call attempted internal transport reconnection. No jobs remain running.
+Primary grade checks pass on three selected development cases. This task completed grading only; no installation change.. Packaged and installed v4 remain unchanged. No further calls are queued.
 
-The original frozen plans and raw failed evidence are retained. This report uses a read-only finalizer because the original runner deliberately stops on missing successful usage. Reproduce without model calls: `python3 tools/finalize_small_repair.py`. Do not resume the benchmark automatically.
+## Decisive comparisons
+
+**Reporting-policy argument versus none: win. Neither has a material error. B better meets this user’s decisive priority: explain the problem and governing distinction before elaborating the construction. Its closing paragraph keeps the compromise and remaining costs together without A’s additional recap.
+
+**Reporting-policy argument versus v4: win. Neither has a material error, and both retain the unresolved tradeoff. A better serves this user’s requested argument development: it establishes why exclusions need documentation before detailing the table, and presents the counts beside the problem they solve. B’s comprehensive opening is usable but creates more repetition.
+
+**Finite-population proof versus none: win. Neither has a material error. A is the better completed appendix for this user because its pairwise-sum derivation explains the counting and centering steps, directly addressing the request to unpack the valid but compressed source. B remains a sound alternative.
+
+**Finite-population proof versus v4: win. Neither has a material error, and both are usable proofs. B wins narrowly because its explanation of the pairwise identity more directly serves this user's explicit priority of laying out operations and their reasons; A leaves those particular justifications largely to the display.
+
+## Scope and usage
+
+The full bundle was inlined, matching the prior benchmark format. Selective reference loading was not tested. The [artifact review](artifact-review.md) is coordinator inspection, not an independent human grade. Proof and research-voice references remain byte-identical to v4.
+
+The separate file-editing pilot stopped after one no-skill turn and a transcript-format validation failure. There is no matched long-horizon result. The fresh two-case six-turn holdout and earlier 30-case holdout remain sealed/unrun.
+
+The grading completion used 2 new judge calls and zero writing calls, reporting 42,791 tokens. The full small pass now has 8 benchmark calls and a known subtotal of 211,329 reported tokens. The earlier failed judge call has unknown usage and is retained. These counts include cached inputs and are not billing or account quota. No automatic retry or order audit was run in the completion.
+
+Reproduce without model calls: `python3 tools/finalize_small_repair.py`. Original frozen plans, completed grades and failed-attempt evidence are preserved.

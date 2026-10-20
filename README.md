@@ -4,19 +4,23 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## Latest small Codex check
+## Latest small Codex check: grading complete
 
-V9-dev simplifies the prose rules while preserving the proof and research-voice references. Three Astra-high development rewrites are saved. One blind Sol-high comparison ties no skill and beats v4; a transport timeout left the other two cases ungraded. **V4 remains the installed release. The Codex prose repair is not yet established.**
+V9-dev simplifies the prose rules while preserving the proof and research-voice references. Blind Sol-high grading of three saved Astra-high development rewrites is complete. V9 wins twice and ties once against no skill, and wins all three comparisons against v4. **These are three deliberately selected development cases, not evidence of a general Codex improvement or fresh OOS performance.** Packaged and installed v4 are unchanged by this grading-only task.
 
 | Selected development case | vs no skill | vs v4 |
 |---|---|---|
 | Museum recommendation | tie | win |
-| Reporting-policy argument | ungraded | ungraded |
-| Finite-population proof | ungraded | ungraded |
+| Reporting-policy argument | win | win |
+| Finite-population proof | win | win |
 
-This economical pass reused saved baselines and the same author-specific rubric. It made six benchmark calls including a stopped file-editing smoke: 168,538 known CLI-reported tokens, plus unknown usage from the failed judge call. No Claude calls or replacement generations. The persistent revision harness was stopped after its first turn proved too expensive for this pass; **there is no long-horizon result**. Both fresh holdouts remain sealed/unrun. The earlier heatmaps below are unchanged historical results, not scores for v9.
+Net win-minus-loss advantage is **+66.7 percentage points versus no skill** and **+100.0 versus v4**, with ties contributing zero. The proof win over v4 is narrow and concerns explanation of the counting and centering steps. No material errors were flagged in any accepted comparison. One fallible judge was used; the reversed-order audit was skipped to save usage.
 
-[Partial report and saved drafts](evals/results/prose-repair/v9-small/report.md) · [Artifact inspection](evals/results/prose-repair/v9-small/artifact-review.md) · [Release decision](evals/results/prose-repair/v9-small/release-decision.json) · [Stopped long-horizon pilot](evals/results/long-horizon-v9/execution-note.md).
+Completion required **two judge calls, 42,791 reported tokens, and zero regenerated drafts**. It reused the completed museum judgment, unchanged rubric/context, anonymous A/B order, and frozen saved outputs. Earlier failed-call evidence is preserved. Across the whole small pass, eight benchmark calls have a known subtotal of 211,329 reported tokens plus unknown usage from the earlier failed judge call. Counts include cached input and are not billing or account quota.
+
+The persistent revision harness remains stopped; there is no long-horizon result. Both fresh holdouts remain sealed/unrun. The compact heatmaps below are unchanged historical results, not v9 scores.
+
+[Complete primary grades and saved drafts](evals/results/prose-repair/v9-small/report.md) · [Artifact inspection](evals/results/prose-repair/v9-small/artifact-review.md) · [Release status](evals/results/prose-repair/v9-small/release-decision.json) · [Grading-only completion](evals/results/prose-repair/v9-small/grading-completion.json).
 
 ## Codex prose repair: partial improvement, not promoted
 
