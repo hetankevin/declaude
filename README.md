@@ -16,7 +16,7 @@ The first 20 development cases are complete across Astra medium/high, Sol low, a
 | Argument writing (4 cases) | +18.8 [+6.2, +25.0] | +40.6 [+18.8, +62.5] |
 | Proofs (4 cases) | +53.1 [+31.2, +78.1] | +6.2 [−15.6, +21.9] |
 
-These are selection results on previously used development data, not fresh-test evidence. Gains differ by model: Astra high still trails no skill on nonproof tasks, and some already-good controls are overedited. The judges flagged no material errors in the new outputs; that is a judgment result, not a guarantee. Judge agreement is 129/160 and reversed-order agreement is 45/64, with one direct win/loss disagreement in each check.
+These are selection results on previously used development data, not fresh-test evidence. They evaluate single-turn, self-contained rewrites with explicit editing instructions. They do not replay the long manuscript revisions and successive corrections that motivated many of the original complaints. A fresh holdout in this same format tests new passages, not that longer workflow. Gains differ by model: Astra high still trails no skill on nonproof tasks, and some already-good controls are overedited. The judges flagged no material errors in the new outputs; that is a judgment result, not a guarantee. Judge agreement is 129/160 and reversed-order agreement is 45/64, with one direct win/loss disagreement in each check.
 
 The [fresh 30-case holdout](evals/large/fresh-holdout-20261019-manifest.json) remains private, unopened by the optimizer, and unrun. An independent review checked all cases, two were corrected privately, and the second review passed. It is backed up privately outside the temporary session files.
 

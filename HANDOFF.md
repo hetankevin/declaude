@@ -12,6 +12,8 @@ A fresh 30-case holdout is sealed and UNRUN. Public manifest: `evals/large/fresh
 
 The user asked why the prior gain became dramatic and why Claude improved more. Explained that the prior regrade changed assessment of unchanged writing (same 400 dev pairs +25.5→+37.75 pp), with different headline coverage too. They correctly pointed out the family gap existed with Claude judges as well, weakening a judge-family explanation. More room for improvement versus better fit of the instructions remains unisolated; relative gains do not compare absolute writing quality. README now makes the regrade distinction explicit. Current v8 comparisons keep the new judge fixed.
 
+The user also notes that most source complaints came from Astra high. This does not establish transfer: the benchmark is a fresh single-turn rewrite with a complete passage and explicit request, whereas many complaints concerned long manuscript sessions and successive corrections. README and `evals/results/prose-repair/case-review.md` now state that limitation, with an actual Astra-high tuning loss where both outputs are usable but the baseline organizes the argument more precisely. Report Astra-high argument/nonproof results separately in the final release decision. Do not launch a new workflow study or consume the fresh holdout as a response to this observation.
+
 ## Author-specific regrade complete
 
 The user's latest request is fulfilled: regrade saved outputs with the contextual judge, Codex only, without the earlier small-budget restriction. **No further model calls are needed or queued. No skill changes or installation changes were made. Packaged/installed remains v4.**
