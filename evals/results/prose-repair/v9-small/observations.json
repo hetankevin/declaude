@@ -1,0 +1,318 @@
+[
+  {
+    "version": "prose-repair-v1",
+    "batch": "large-dev-b-09-primary",
+    "case": "large-dev-b-09",
+    "config": "astra-high",
+    "candidate": "v9-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "A",
+    "pair_id": "P01",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a committee recommendation, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the costs and their scope, both options’ affordability, the original’s historical value, and the untested teaching benefit. The recommendation remains grounded in the planned activity.",
+          "quotes": {
+            "source": [
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [
+              "No visitor trial has yet taken place, so we cannot claim that handling has improved understanding."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the options, costs, historical alternative, and decision consequence without claiming demonstrated learning gains or making affordability the deciding reason.",
+          "quotes": {
+            "source": [
+              "Both options fit the allocated budget.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [],
+            "B": [
+              "Both fit the allocated budget, and neither quote is a complete estimate of staff time.",
+              "The recommendation rests on the replica’s fit with the intended activity, not on a demonstrated teaching benefit."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the prices and included components, handling constraint, visible correction, repair alternative, and trial limitation. Neither materially changes the recommendation’s grounds or certainty.",
+          "quotes": {
+            "source": [
+              "The loan would cost 18,000 units from the exhibit budget, including transport, insurance, and a sealed case.",
+              "The handling replica would cost 7,000 units, including replacement parts for the season."
+            ],
+            "A": [
+              "The loan would cost 18,000 units, including transport, insurance, and a sealed case; the handling replica would cost 7,000 units, including replacement parts for the season."
+            ],
+            "B": [
+              "The loan would cost 18,000 units from the exhibit budget, including transport, insurance, and a sealed case.",
+              "The replica would cost 7,000 units, including replacement parts for the season."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable committee prose. A moves economically between considerations; B adds explicit interpretive transitions that remain idiomatic. Neither has a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Our current text, however, is organized around reading and error."
+            ],
+            "B": [
+              "Cost supports the choice of the replica without deciding it."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the activity’s purpose, consider the original’s competing value, put cost in its proper role, address testing, and close with the committee’s decision. B explains the historical paragraph’s implication more explicitly, while A’s transition already makes that implication clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Making repair central would mean redesigning the exhibit and using the season’s remaining preparation time for that work.",
+              "That testing remains necessary."
+            ],
+            "B": [
+              "These strengths support considering the original, but they do not establish that it best serves the exhibit we have designed.",
+              "That testing is necessary."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both develop a connected argument around purpose and constraints, give the historical alternative substantive consideration, and keep uncertainty beside the proposed benefit. B’s additional contrasts and A’s more economical explanation are comparably consistent with the author’s preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The replica would let visitors explore that question, though we still need to test whether the proposed activity helps them understand it."
+            ],
+            "B": [
+              "The replica would let them investigate that question directly, although whether the proposed activity helps them understand it remains to be tested."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: explaining why the replica fits the current exhibit while preserving the original’s value and the need for testing. Their closing decision consequences are equally usable; the differences in explicitness do not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Choosing the replica now would match the object to the existing question and leave resources for that trial."
+            ],
+            "B": [
+              "Choosing the replica now would preserve the exhibit’s focus while leaving resources to test how well the activity works."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "none": "946f21e7310e901ac9c13498a9b8160a2142c11aa9266931db91226fce013212",
+      "v9-dev": "aeac710a2bdda2379a4fbbf11ca750c21384b67932205a8f51c6c19700ac2bba"
+    },
+    "prompt_sha256": "35a2201d8dcf2171976e4413676832c687de46bf37c4e8d19638977d61af1551",
+    "raw_sha256": "94df845f65b03b6bda7dfc2c19469eac51224649bfd893df903c3771283ca4be",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "9457301c219e6366d42487c5ba80f1a8455dd51759e6c451821729de71e8235b",
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "record_sha256": "0eb4a36222b76c02f010826a4ef549f6938c0b07f618e8d2c3a2e02e735ce7a0"
+  },
+  {
+    "version": "prose-repair-v1",
+    "batch": "large-dev-b-09-primary",
+    "case": "large-dev-b-09",
+    "config": "astra-high",
+    "candidate": "v9-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "candidate_position": "B",
+    "pair_id": "P02",
+    "attempt": 1,
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a committee recommendation, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the options, quoted costs and components, budget fit, handling constraint, historical alternative, and unrun trial. Its statement that suitability needs testing is reasonably qualified by the following discussion of visitor attention and understanding.",
+          "quotes": {
+            "source": [
+              "The proposed activity therefore still needs a trial with visitors.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [
+              "The replica’s suitability still needs to be tested with visitors.",
+              "No trial has taken place, so we cannot yet claim that handling improves understanding."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source’s facts and constraints, including both options’ affordability and the original’s distinctive value. It recommends the replica for the planned activity without asserting a proven teaching benefit.",
+          "quotes": {
+            "source": [
+              "Both options fit the allocated budget.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [],
+            "B": [
+              "Both options fit the allocated budget.",
+              "The recommendation rests on the replica’s suitability for the planned activity, with its teaching value still to be tested."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the recommendation, cost details, historical connection, visible correction, redesign tradeoff, and visitor-trial limitation. A’s stronger general caution about claiming improved understanding remains compatible with the source’s lack of trial evidence.",
+          "quotes": {
+            "source": [
+              "A maker's correction remains visible on its scale.",
+              "We could redesign it around repair, but that would be a different use of the season's remaining preparation time."
+            ],
+            "A": [
+              "A maker’s correction remains visible on its scale and could support an account of repair and adaptation.",
+              "Making repair central would require a redesign and a different use of the season’s remaining preparation time."
+            ],
+            "B": [
+              "A maker’s correction remains visible on its scale, and that detail could support an account of repair and adaptation.",
+              "Making repair central would mean redesigning the exhibit and using the season’s remaining preparation time for that work."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readable in the requested register. A’s standalone affordability sentence is somewhat emphatic, while B repeats the need for testing more often; neither difference materially impairs the prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The loan is not unaffordable."
+            ],
+            "B": [
+              "That testing remains necessary."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B completes the opening causal link by stating what the replica enables, then uses the testing discussion to qualify that benefit and closes by bringing fit and testing resources together. A leaves the enabling link implicit initially and places its decision consequence within the testing paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The exhibit asks visitors to work out how a reading changes when an instrument is tilted, and visitors cannot tilt the original.",
+              "Choosing the replica would let us test an activity that matches the exhibit’s existing question."
+            ],
+            "B": [
+              "The replica would let visitors explore that question, though we still need to test whether the proposed activity helps them understand it.",
+              "Choosing the replica now would match the object to the existing question and leave resources for that trial."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better serves the author’s preference for explaining an object through its purpose: the opening connects handling to the exhibit question and immediately distinguishes that opportunity from established teaching value. A preserves the reasoning but makes the reader supply more of that connection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The committee should choose the handling replica for the navigation exhibit this season because it fits the activity we have designed.",
+              "The replica’s suitability still needs to be tested with visitors."
+            ],
+            "B": [
+              "The replica would let visitors explore that question, though we still need to test whether the proposed activity helps them understand it.",
+              "The recommendation rests on the replica’s suitability for the planned activity, with its teaching value still to be tested."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a modest advantage on the task’s central goal: it explicitly explains what choosing the replica enables and ends by connecting the decision to both the existing question and the required trial. A retains those considerations but develops their connection less fully.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Choosing the replica would let us test an activity that matches the exhibit’s existing question."
+            ],
+            "B": [
+              "The replica would let visitors explore that question, though we still need to test whether the proposed activity helps them understand it.",
+              "Choosing the replica now would match the object to the existing question and leave resources for that trial."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "response_sha256": {
+      "v4": "43b9ab8c196df991d369ef673b184ac10dc39ec41a3e1bb6f73f6ea6b9f5f923",
+      "v9-dev": "aeac710a2bdda2379a4fbbf11ca750c21384b67932205a8f51c6c19700ac2bba"
+    },
+    "prompt_sha256": "35a2201d8dcf2171976e4413676832c687de46bf37c4e8d19638977d61af1551",
+    "raw_sha256": "94df845f65b03b6bda7dfc2c19469eac51224649bfd893df903c3771283ca4be",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "9457301c219e6366d42487c5ba80f1a8455dd51759e6c451821729de71e8235b",
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "record_sha256": "0bd3e38480793a1b8ee7cc286a0c333301bd471ea4fa6d1d4b32d2adaf97c921"
+  }
+]

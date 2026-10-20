@@ -4,6 +4,20 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
+## Latest small Codex check
+
+V9-dev simplifies the prose rules while preserving the proof and research-voice references. Three Astra-high development rewrites are saved. One blind Sol-high comparison ties no skill and beats v4; a transport timeout left the other two cases ungraded. **V4 remains the installed release. The Codex prose repair is not yet established.**
+
+| Selected development case | vs no skill | vs v4 |
+|---|---|---|
+| Museum recommendation | tie | win |
+| Reporting-policy argument | ungraded | ungraded |
+| Finite-population proof | ungraded | ungraded |
+
+This economical pass reused saved baselines and the same author-specific rubric. It made six benchmark calls including a stopped file-editing smoke: 168,538 known CLI-reported tokens, plus unknown usage from the failed judge call. No Claude calls or replacement generations. The persistent revision harness was stopped after its first turn proved too expensive for this pass; **there is no long-horizon result**. Both fresh holdouts remain sealed/unrun. The earlier heatmaps below are unchanged historical results, not scores for v9.
+
+[Partial report and saved drafts](evals/results/prose-repair/v9-small/report.md) · [Artifact inspection](evals/results/prose-repair/v9-small/artifact-review.md) · [Release decision](evals/results/prose-repair/v9-small/release-decision.json) · [Stopped long-horizon pilot](evals/results/long-horizon-v9/execution-note.md).
+
 ## Codex prose repair: partial improvement, not promoted
 
 **V8-dev improves nonproof writing over v4, but does not resolve Astra-high argument writing and loses some proof-exposition comparisons. Packaged and installed release remains v4.** The candidate separates argument development from compression, preserves useful explanatory steps, and keeps the proof and research-voice reference files byte-for-byte unchanged.

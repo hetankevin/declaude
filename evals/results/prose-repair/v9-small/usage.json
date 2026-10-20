@@ -1,0 +1,66 @@
+{
+  "calls_including_file_smoke": 6,
+  "reported_tokens_known_subtotal": 168538,
+  "unreported_attempts": 1,
+  "earlier_file_smoke_reported_tokens": 92604,
+  "attempts": [
+    {
+      "stage": "generation",
+      "id": "large-dev-a-12",
+      "completed": true,
+      "reported_tokens": 18740,
+      "usage": {
+        "input_tokens": 18173,
+        "cached_input_tokens": 9856,
+        "output_tokens": 567
+      },
+      "transport_failed": false
+    },
+    {
+      "stage": "generation",
+      "id": "large-dev-b-09",
+      "completed": true,
+      "reported_tokens": 18579,
+      "usage": {
+        "input_tokens": 18123,
+        "cached_input_tokens": 0,
+        "output_tokens": 456
+      },
+      "transport_failed": false
+    },
+    {
+      "stage": "generation",
+      "id": "large-dev-b-14",
+      "completed": true,
+      "reported_tokens": 19520,
+      "usage": {
+        "input_tokens": 18176,
+        "cached_input_tokens": 0,
+        "output_tokens": 1344
+      },
+      "transport_failed": false
+    },
+    {
+      "stage": "judge",
+      "id": "large-dev-a-12-primary",
+      "completed": false,
+      "reported_tokens": null,
+      "usage": {},
+      "transport_failed": true
+    },
+    {
+      "stage": "judge",
+      "id": "large-dev-b-09-primary",
+      "completed": true,
+      "reported_tokens": 19095,
+      "usage": {
+        "input_tokens": 15828,
+        "cached_input_tokens": 15744,
+        "output_tokens": 3267
+      },
+      "transport_failed": false
+    }
+  ],
+  "claude_calls": 0,
+  "note": "Input plus output tokens, including cached input. Failed-call usage is unknown, not zero. Coordinator/helper usage is separate. No billing or account-percentage inference."
+}

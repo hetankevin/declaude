@@ -1,14 +1,20 @@
 # Handoff
 
-## Active: long-horizon benchmark and chart readability
+## Latest economical pass stopped; v9 saved, v4 retained
 
-The first persistent Astra-high no-skill revision completed, using 92,604 reported tokens including 70,400 cached input tokens. The validator then stopped on a newer response-item user-message format. Raw transcript and edited document remain private; no replay. No comparative/long-horizon result exists. That file-editing pilot is STOPPED to respect the user's usage request. See evals/results/long-horizon-v9/execution-note.md. Do not resume it automatically.
+The user asked to fix Codex prose while using remaining quota economically, then permitted other GPT/Claude models. No Claude calls were needed. V9-dev simplifies the prose core and keeps proofs.md and paper-voice.md byte-identical to v4. It is NOT promoted or installed: complete primary comparisons are missing. The general Codex prose repair remains unresolved.
 
-Current economical repair: three selected existing development cases (two known Astra-high argument failures and one proof guard), v9-dev new generations, cached none/v4 baselines, same fully inlined bundle format, unchanged author-specific rubric. Three writing calls and at most four Sol-high grading calls, no retries. Writing soft guard 250k reported tokens INCLUDING the stopped 92,604-token smoke; grading guard50k. Freeze: evals/results/prose-repair/v9-small/plan.json. This is targeted development debugging, not OOS, and does not test selective loading. Packaged/installed v4 remains until results and manual review justify a provisional change. V9 proof and research-voice references are unchanged from v4.
+All three planned Astra-high isolated development outputs are saved in evals/results/prose-repair/v9-small/responses.json. On the museum argument, the unchanged author-specific Sol-high judge ties no skill and prefers v9 over v4. The next judge call timed out after transport reconnection, without an answer or usage. The other argument and proof are ungraded; the order audit is unrun. No replacement generations or application-level retries. Manual review finds a sound proof with improved purpose-before-calculation, but mixed argument changes. Read artifact-review.md and report.md. Do not call this a general or OOS improvement.
 
-Two fresh independently authored six-turn holdout cases and the earlier30-case isolated holdout remain sealed/unrun. No new agents or Claude campaign is scheduled.
+This pass made six benchmark calls: one persistent file-editing smoke, three isolated rewrites, two grading calls. Known reported input+output subtotal168,538 includes cached input; the failed call's usage is UNKNOWN, not zero. Coordinator/helper usage is separate. No processes remain running (checked after the timeout). No jobs are queued. Do not resume either run automatically or expand the benchmark.
 
-The user also objected to the readability of the new heatmaps. Restored the earlier grouped-table layout: adjacent Tune/Check rows per category, model/effort columns, comparison column groups, counts, and one-decimal signed values. Scores unchanged; light/dark category plots and dimension layout inspected.
+The long-horizon smoke completed a no-skill document but cost92,604 reported tokens, including70,400 cached input. Its validator then stopped because the new CLI represents the request as a response-item message, not an event user_message. Raw evidence/document are retained privately without replay. The persistent runner needs a reviewed compatibility fix before reuse. There is no matched or long-horizon result. The smaller single-turn check was frozen before new outputs; its writing budget included the smoke. Original plans and scripts remain intact. tools/finalize_small_repair.py reconstructs the incomplete publication without model calls, handling missing usage explicitly.
+
+Two new six-turn holdout cases and the earlier30-case holdout remain sealed/unrun, with hashes and manifests public, private durable backups verified bytewise. The new set was authored independently of the candidate/dev cases from abstract source patterns, self-checked only; a second review was deferred to save quota. Private backup location is recorded in .local/long-horizon-holdout/storage.json. Never publish or inspect its cases during tuning.
+
+README now begins with the small incomplete check and clearly labels the existing compact heatmaps as historical. Their layout/readability fix remains unchanged. No installation changes were made to Mac or remote Claude/Codex. All65 prior tests passed before publication; the new read-only finalizer should be rerun to verify saved report reconstruction.
+
+Reconstruct only (no model calls): `python3 tools/finalize_small_repair.py`. Tests: `python3 -B -m unittest discover -s tools -p 'test_*.py'`.
 
 ## Codex prose repair experiment complete; v8 not promoted
 
