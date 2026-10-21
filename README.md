@@ -4,6 +4,21 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
+## Focused repair: two known dev failures
+
+The new drafts remove the false dependence claim and reduce repetition in Sol's excluded-runs argument. Neither final draft has a material-error flag. The results are mixed on overall writing quality:
+
+| Tested draft / generator | vs no skill | vs v4 | vs restored v9 | vs v10 |
+|---|---|---|---|---|
+| v11 argument / Sol low | Win | Tie | Win | Tie |
+| v12 proof / Sonnet high | Win | Win | Loss | Win |
+
+Each cell is one comparison with a saved baseline. Sonnet also beats its failed v11 draft. It still loses to restored v9 because two intermediate calculations are less explicitly displayed, despite the corrected claim. Sol was not rerun after v12's proof-only reference change; v12 retains the tested v11 core exactly. These selected dev cases do not establish general improvement or preservation of gains on other cases. Packaged and installed remain v4.
+
+V11 improves explanation placement and checks the logical force of informal claims. V12 adds a specific proof-reference safeguard: a shared construction alone establishes neither independence nor dependence. The existing argument and proof guidance remains. [Full case analysis and evidence](evals/results/prose-repair/v12-targeted/focused-report.md) · [Candidate](evals/versions/v12-dev/SKILL.md).
+
+All six calls finished: three drafts and three blind Sol-high grading batches, **150,998 reported tokens**, **9.92 estimated Codex paid-credit equivalents**, plus two Sonnet calls. All baselines were reused; both fresh holdouts remain untouched. One Sol judgment required preserving and validating duplicate quotation lists, without changing its preference or reasons; the report documents that repair. No further calls are queued.
+
 ## V10 targeted dev repair: partial improvement, not promoted
 
 The cheaper Sol-low/Sonnet-high check is finished. V10 improves several known problems with explanation order, repeated qualifications, and unsolicited production advice, but **it does not preserve every fidelity gain**, so it remains a development candidate. Packaged and installed remain v4.

@@ -1,10 +1,14 @@
 # Handoff
 
-## V11/V12 focused dev repair in progress
+## V11/V12 focused dev repair complete
 
-User asked only to fix Sol excluded-runs and Sonnet dependence. V11 added core safeguards and reran exactly those cases (4calls,94,657 tokens,6.14136 estimatedCodexcredits). Sol source-validated outcome vsnone win,v4 tie,restoredv9 win,v10 tie. Its judge duplicated quotation arrays; tools/review_v11_evidence.py preserves both lists and validates all quotes, with no reason/preference changes. Reviewed results in validated-observations.json; original frozen artifacts untouched.
+Both requested defects are absent in the inspected final drafts, with zero candidate material-error flags. Sol v11 excluded-runs: vsnone win, v4 tie, restoredv9 win, v10 tie. Sonnet v12 variance proof: vsnone win, v4 win, restoredv9 loss, v10 win, v11 win. The remaining Sonnet loss is exposition: restoredv9 displays intermediate centering and pair-count normalization steps more explicitly. Do not claim every gain preserved or broad superiority. No installs; packaged/installed remainv4.
 
-V11 Sonnet still asserts dependence falsely. V12 adds a symmetric independence/dependence warning in references/proofs.md, including constant-variable edge cases; all other files identical to v11. One additional Sonnet draft+judge allowed, same combined160k-token/20credit guard (6calls maximum across phases). tools/v12_check.py frozen before run, reuses none/v4/restoredv9/v10/v11, does not regenerate Sol. Thus final proof-only amendment is not rerun on Sol. Generation now omits false dependence claim; blind grade pending. No other cases, no holdout reads/runs, no installs. Do not duplicate active run.
+V11 changes only core explanation placement and logical-force safeguards; its Sonnet proof still falsely asserted dependence. V12 changes only references/proofs.md to warn that a shared construction establishes neither independence nor dependence and that a constant variable is independent of every variable. Other proof guidance remains. Sol was not regenerated after this proof-only amendment: its evidence is v11, with exactly the same core as v12. No other cases or holdouts read/run.
+
+All6 calls finished (3 drafts,3 judges), no retries/failures/unknown usage. 150,998 reported tokens and9.91822 estimatedCodexcredits plus2Sonnetgenerationcalls, below combined160k/20 guards. Coordinator excluded; credits not measured account debits. Stop: no more calls or queued work for this request.
+
+Final report:evals/results/prose-repair/v12-targeted/focused-report.md and focused-summary.json. V12 has5/5 strict valid verdicts. V11 has8/8 after tools/review_v11_evidence.py preserves duplicate quotation lists and validates every quote without changing reasons/preferences/severity. One Sol/restoredv9 verdict has list repairs. Original frozen artifacts remain untouched; original v11 report retains pre-review4/8 coverage, so use validated-observations.json. Reproduce without calls:python3 tools/review_v11_evidence.py;python3 tools/v12_check.py report. Frozen runner, case, rubric, candidate and source hashes must stay intact.
 
 ## V10 targeted dev check finished; fidelity requirement FAILED
 

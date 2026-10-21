@@ -1,0 +1,77 @@
+{
+  "calls": 2,
+  "writing_calls": 1,
+  "judge_calls": 1,
+  "claude_calls": 1,
+  "known_reported_tokens": 56341,
+  "unknown_attempts": 0,
+  "codex_paid_credit_equivalent": 3.77465,
+  "charged_tokens": 56341,
+  "charged_credits": 3.77465,
+  "attempts": [
+    {
+      "id": "large-dev-b-14--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 17344,
+      "charged_tokens": 17344,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 12456,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 3318,
+        "output_tokens_details": {
+          "thinking_tokens": 1109
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 12456,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 3318,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 12456,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 12456
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-14--batch",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 38997,
+      "charged_tokens": 38997,
+      "codex_credits": 3.77465,
+      "usage": {
+        "input_tokens": 29873,
+        "cached_input_tokens": 0,
+        "output_tokens": 9124
+      },
+      "credit_is_reservation": false
+    }
+  ],
+  "note": "Estimated paid-credit equivalents, not subscription usage or billed debits. Claude separately capped. Coordinator excluded."
+}
