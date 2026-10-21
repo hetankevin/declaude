@@ -1,0 +1,22 @@
+{
+  "rule": "Only the first character of an evidence quote may change case, and only if exactly one matching span exists in the supplied source. All other characters, reasons, severity flags, and preferences remain unchanged. Other invalid evidence remains invalid.",
+  "repairs": [
+    {
+      "job": "large-dev-a-08--batch1",
+      "pair": "P01",
+      "changes": [
+        {
+          "field": "material_errors.B.quotes.source",
+          "index": 1,
+          "before": "Those exchanges",
+          "after": "those exchanges"
+        }
+      ],
+      "original_raw_sha256": "1ac75169d84abb4951fcde6020b3192bcf624386d8a0df137db072f5bfca7356",
+      "validation_input_sha256": "ddabf22d9f39d306b7232f37c5322f42142ec3bdc24bae965757159bb54e5079"
+    }
+  ],
+  "new_model_calls": 0,
+  "script_sha256": "a8634345fbaa8f79f612d7f9440dd197ef90487c7c47c954b2c5451419f8c159",
+  "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1"
+}
