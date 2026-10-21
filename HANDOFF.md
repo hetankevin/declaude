@@ -1,10 +1,19 @@
 # Handoff
 
-## Active: economical cross-model check
+## Economical cross-model check complete
 
-The user authorized completing evaluations economically after asking v9/no skill, v4/no skill and Claude comparisons. Frozen extension: the same three selected development cases, Sol low and Sonnet high, v9 only. Reuse twelve no-skill/v4 baseline drafts, six completed Astra comparisons and nine direct v4-vs-no-skill Sol-high grades. Six new writing calls plus three batched Sol-high judge calls, hard cap NINE, no automatic retries. Soft reported-token guard250k including cached inputs, not a billing or quota ceiling. No new agents, skill edits, installations, or holdout reads. This is a bounded cross-model development check, not completion of every possible model/effort or long-horizon evaluation.
+Latest user request: complete evaluations without burning too many credits. Completed the announced bounded extension: six v9 writing calls (same three selected development cases on Sol low and Sonnet high) and three batched Sol-high blind judge calls. Exactly NINE new calls,183,559 reported input/output+cache tokens, zero unknown usage, zero automatic retries. All6 drafts and12 new primary pairwise judgments are valid. No jobs remain running/queued. No broad matrix, subagents, skill edits, installations or holdout runs were added.
 
-Frozen plan: evals/results/prose-repair/v9-cross-model/plan.json. Runner: tools/cross_model_small.py; private attempts under .local/prose-repair/v9-cross-model/. Skill, cases, baselines, historical evidence and source hashes verified. All twelve new pairwise judgments use the unchanged author-specific rubric and anonymous balanced A/B positions. Saved v4/no-skill judgments were verified against exact response and rubric/context hashes. Both fresh holdouts remain sealed. Do not restart older pipelines.
+Results across the three cases (two arguments,one proof), win/tie/loss:
+- Astra high, reused: v9 vs none2/1/0 (+66.7pp); v4 vs none1/2/0 (+33.3); v9 vs v4 3/0/0 (+100).
+- Sol low: v9 vs none1/2/0 (+33.3); v4 vs none2/1/0 (+66.7); v9 vs v4 1/1/1 (0).
+- Sonnet high: v9 vs none3/0/0 (+100); v4 vs none3/0/0 (+100); v9 vs v4 2/0/1 (+33.3).
+
+Argument-only: Astra v9 beats v4 twice; Sol and Sonnet split1win/1loss. Proof: v9 beats v4 on Astra/Sonnet, ties on Sol. Sonnet's two wins over v4 are fidelity-driven: could->would on the policy claim; an added universal dependence assertion in the proof fails at N=2 where Z is constant. Coordinator verified that counterexample, but this is not independent human calibration. No candidate material errors were flagged in the new comparisons. Do not call the small Sonnet edge a general style improvement or extrapolate to Opus. Direct v4/no-skill grades and Astra results were reused after exact response/rubric/context/evidence checks. Pairwise batches may produce nontransitive preferences. n=3 selected development cases do not establish general or OOS performance.
+
+Frozen plan and results: evals/results/prose-repair/v9-cross-model/. Runner: tools/cross_model_small.py. Private attempts: .local/prose-repair/v9-cross-model/. README now leads with the compact three-model comparison and links interpretation.md for actual passage-level findings. All prior broad heatmaps remain historical. Packaged and installed v4 are unchanged. Both fresh holdouts stay sealed/unrun; the long-horizon study remains uncompleted. Do not resume older pipelines or add calls automatically.
+
+Read-only reproduction: `python3 tools/cross_model_small.py report`. All frozen hashes,9-call cap,6-output/12-new-grade coverage, source quotes, balanced anonymous ordering and privacy checks pass. No model calls are needed to reconstruct the report.
 
 ## Saved-draft grading complete; no generation or installation changes
 

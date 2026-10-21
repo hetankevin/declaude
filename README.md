@@ -4,23 +4,25 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## Latest small Codex check: grading complete
+## Latest economical cross-model check
 
-V9-dev simplifies the prose rules while preserving the proof and research-voice references. Blind Sol-high grading of three saved Astra-high development rewrites is complete. V9 wins twice and ties once against no skill, and wins all three comparisons against v4. **These are three deliberately selected development cases, not evidence of a general Codex improvement or fresh OOS performance.** Packaged and installed v4 are unchanged by this grading-only task.
+On the same three selected development cases, **v9 beats v4 on Astra high, splits on Sol low, and has a small net advantage on Sonnet high**. Both v4 and v9 help relative to no skill on this set, but proof gains should not be confused with a uniform prose improvement. These are two argument cases and one proof, with one blind Sol-high judge, not fresh OOS validation or a complete model/effort benchmark.
 
-| Selected development case | vs no skill | vs v4 |
-|---|---|---|
-| Museum recommendation | tie | win |
-| Reporting-policy argument | win | win |
-| Finite-population proof | win | win |
+Each cell is win rate minus loss rate in **percentage points**, with ties contributing zero and **n=3**. Exact win/tie/loss counts and all case-level results are in the [report](evals/results/prose-repair/v9-cross-model/report.md).
 
-Net win-minus-loss advantage is **+66.7 percentage points versus no skill** and **+100.0 versus v4**, with ties contributing zero. The proof win over v4 is narrow and concerns explanation of the counting and centering steps. No material errors were flagged in any accepted comparison. One fallible judge was used; the reversed-order audit was skipped to save usage.
+| Generator / effort | v9 vs no skill | v4 vs no skill | v9 vs v4 |
+|---|---:|---:|---:|
+| Astra high | +66.7 | +33.3 | +100.0 |
+| Sol low | +33.3 | +66.7 | +0.0 |
+| Sonnet high | +100.0 | +100.0 | +33.3 |
 
-Completion required **two judge calls, 42,791 reported tokens, and zero regenerated drafts**. It reused the completed museum judgment, unchanged rubric/context, anonymous A/B order, and frozen saved outputs. Earlier failed-call evidence is preserved. Across the whole small pass, eight benchmark calls have a known subtotal of 211,329 reported tokens plus unknown usage from the earlier failed judge call. Counts include cached input and are not billing or account quota.
+The argument-only results are less uniform: Astra v9 beats v4 twice; Sol and Sonnet each have one win and one loss. On the proof, v9 beats v4 for Astra and Sonnet and ties for Sol. **Sonnet's two wins over v4 are fidelity decisions**, including an incorrect dependence assertion in its saved proof, rather than evidence that its prose is consistently better. The [interpretation](evals/results/prose-repair/v9-cross-model/interpretation.md) explains the actual passages and why v4's broader Claude evidence still matters. No installation or skill files were changed; packaged and installed remain v4.
 
-The persistent revision harness remains stopped; there is no long-horizon result. Both fresh holdouts remain sealed/unrun. The compact heatmaps below are unchanged historical results, not v9 scores.
+This extension used **six writing calls and three batched judge calls**, with **183,559 reported tokens**, including cached input. It reused twelve no-skill/v4 drafts, completed Astra comparisons, and direct v4/no-skill grades. The rubric, author context, skill bundle and cases were frozen; no automatic retries or extra order audits were run. The hard limit was nine calls. Token counts are not account quota or billing.
 
-[Complete primary grades and saved drafts](evals/results/prose-repair/v9-small/report.md) · [Artifact inspection](evals/results/prose-repair/v9-small/artifact-review.md) · [Release status](evals/results/prose-repair/v9-small/release-decision.json) · [Grading-only completion](evals/results/prose-repair/v9-small/grading-completion.json).
+Both fresh holdouts remain sealed/unrun. There is still no matched long-horizon result. The compact heatmaps below show earlier broader experiments and were not replaced with tiny-sample headline charts.
+
+[Full cross-model results](evals/results/prose-repair/v9-cross-model/report.md) · [Interpretation and limitations](evals/results/prose-repair/v9-cross-model/interpretation.md) · [Frozen plan](evals/results/prose-repair/v9-cross-model/plan.json) · [Earlier Astra-only check](evals/results/prose-repair/v9-small/report.md).
 
 ## Codex prose repair: partial improvement, not promoted
 
