@@ -1,0 +1,1999 @@
+{
+  "candidate": "v9-restored-dev",
+  "configs": {
+    "astra-high": [
+      "codex",
+      "gpt-6-astra",
+      "high"
+    ],
+    "sol-low": [
+      "codex",
+      "gpt-6.1-sol",
+      "low"
+    ],
+    "sonnet-high": [
+      "claude",
+      "claude-sonnet-5-5",
+      "high"
+    ]
+  },
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "jobs": [
+    {
+      "id": "large-dev-a-02--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-02",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-02--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-02",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-02--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-02",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-02--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-02",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-02",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-02",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-02",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-02",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-02--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-02",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-02",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-02",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-06--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-06",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-06--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-06",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-06--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-06",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-06--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-06",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-06",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-06",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-06",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-06",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-06--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-06",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-06",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-06",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-10--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-10",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-10--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-10",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-10--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-10",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-10--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-10",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-10",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-10--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-10",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-10",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-14--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-14",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-14--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-14",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-14--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-14",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-14--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-14",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-14",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-14",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-14",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-14--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-14",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-14",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-18--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-18",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-18--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-18",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-18--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-18",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-18--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-18",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-18",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-18",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-18",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-18",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-18--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-18",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-18",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-18",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-04--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-04",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-04--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-04",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-04--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-04",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-04--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-04",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-04",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-04",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-04",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-04",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-04--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-04",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-04",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-04",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-08--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-08",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-08--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-08",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-08--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-08",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-08--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-08",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-08",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-08",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-08",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-08",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-08--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-08",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-08",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-08",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-12--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-12",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-12--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-12",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-12--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-12",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-12--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-12",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-12--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-12",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-16--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-16",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-16--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-16",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-16--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-16",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-16--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-16",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-16",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-16",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-16",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-16",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-16--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-16",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-16",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-16",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-20--astra-high",
+      "stage": "generation",
+      "case": "large-dev-a-20",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-a-20--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-20",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-20--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-20",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-20--batch1",
+      "stage": "judge",
+      "case": "large-dev-a-20",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-20",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-20",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-a-20",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-a-20",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-20--batch2",
+      "stage": "judge",
+      "case": "large-dev-a-20",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-20",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-a-20",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-02--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-02",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-02--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-02",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-02--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-02",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-02--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-02",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-02",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-02",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-02",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-02",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-02--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-02",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-02",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-02",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-06--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-06",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-06--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-06",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-06--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-06",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-06--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-06",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-06",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-06--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-06",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-06",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-10--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-10",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-10--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-10",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-10--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-10",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-10--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-10",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-10",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-10",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-10",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-10",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-10--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-10",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-10",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-10",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-14--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-14--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-14--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-14--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-14--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-18--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-18",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-18--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-18",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-18--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-18",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-18--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-18",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-18",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-18",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-18",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-18",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-18--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-18",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-18",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-18",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-04--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-04",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-04--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-04",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-04--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-04",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-04--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-04",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-04",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-04",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-04",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-04",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-04--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-04",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-04",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-04",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-08--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-08",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-08--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-08",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-08--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-08",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-08--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-08",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-08",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-08",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-08",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-08",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-08--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-08",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-08",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-08",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-12--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-12",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-12--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-12",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-12--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-12",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-12--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-12",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-12",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-12",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-12",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-12--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-12",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-12",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-16--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-16",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-16--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-16",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-16--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-16",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-16--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-16",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-16",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-16",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-16",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-16",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-16--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-16",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-16",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-16",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P02"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-20--astra-high",
+      "stage": "generation",
+      "case": "large-dev-b-20",
+      "config": "astra-high"
+    },
+    {
+      "id": "large-dev-b-20--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-20",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-20--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-20",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-20--batch1",
+      "stage": "judge",
+      "case": "large-dev-b-20",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-20",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-20",
+          "config": "astra-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        },
+        {
+          "case": "large-dev-b-20",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P03"
+        },
+        {
+          "case": "large-dev-b-20",
+          "config": "sol-low",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P04"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-20--batch2",
+      "stage": "judge",
+      "case": "large-dev-b-20",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-20",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "left",
+          "label": "P01"
+        },
+        {
+          "case": "large-dev-b-20",
+          "config": "sonnet-high",
+          "candidate": "v9-restored-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "a_side": "right",
+          "label": "P02"
+        }
+      ]
+    }
+  ],
+  "max_calls": 100,
+  "max_generations": 60,
+  "max_judges": 40,
+  "max_claude_calls": 20,
+  "max_workers": 3,
+  "retries": 0,
+  "token_guard": 2500000,
+  "codex_credit_guard": 300,
+  "writer_token_reservation": 30000,
+  "judge_token_reservation": 40000,
+  "credit_reservations": {
+    "astra-high": 8,
+    "sol-low": 3,
+    "sol-high": 5
+  },
+  "credit_rates": {
+    "astra-high": [
+      250,
+      25,
+      1250
+    ],
+    "sol-low": [
+      50,
+      2.5,
+      250
+    ],
+    "sol-high": [
+      50,
+      2.5,
+      250
+    ]
+  },
+  "selection": "Existing balanced validation subset of DEVELOPMENT, four cases per category. Previously inspected, not fresh validation or OOS.",
+  "packing": "Fully inlined portable bundle, matching prior writing format. No selective-loading or long-horizon claim.",
+  "budget_note": "Hard attempt caps; token/credit reservation guards can overshoot within active calls. At most three active calls. Unknown usage stops further scheduling. Claude separately capped at 20 calls. Coordinator usage excluded.",
+  "files": {
+    "bundle.txt": "736891658ce8ec7c5284889e61f2b23f476b06da7cfecd0ac3e71be56d283001",
+    "baselines.json": "e7402a5acd794d68f241a7679680d901dcd20b9747e23fa60271adfd811ee217",
+    "reused-observations.json": "678facba12a08c3281176a9e97a3ebcf3f21515ae5aecd2eedc2646102bd2dcd",
+    "cases.json": "55df67874b5c490ae4d6a3f405f9b3cbdf8f3a0e72740094e86f081822f0aee3",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "scripts": {
+    "restored_check.py": "f7c94bf15e2e29604506a58b311f3d33d2eed3533c00a582525f3780a3a6567b",
+    "bench.py": "c8d95a83d29e0194578089c9a5b7bfe741c81bf701fe933c88f5ee814f08fd20",
+    "grade_long_horizon.py": "f24aae797fe32953dfaa75ffe92c9746abb146ea52760809e8db06ad7c13c2d9",
+    "long_horizon.py": "563c11ff51e40a1fb0b7223fb0bc2e41b88d40f6fb60ed9de58d877a5d46e8e9",
+    "pairwise.py": "bb663a03d066aa76e8cb226faea970c495291c691bc1914a9e228c22ead39038",
+    "prose_repair.py": "cd7d6a118d155c43958eed107ed45a2218db37f354767d86e2ca435be7a62039",
+    "context_regrade.py": "3fce1e84d31aa0f45edd8f07dacb7ecdba9dee835ccb159bb68116d10e2419f4",
+    "cross_model_small.py": "2bd940498fb442a4d8b8630a051614d8ae1e7bd2799fadc1d4bfc62b61d0c22f"
+  },
+  "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1"
+}

@@ -1,5 +1,9 @@
 # Handoff
 
+## Restored v9 20-case check authorized and frozen
+
+Runner tools/restored_check.py; public inputs evals/results/prose-repair/v9-restored-20/. Existing balanced 20-case development validation subset, 4 per category, already inspected historically (not fresh OOS). Astra high, Sol low, Sonnet high. Reuse 120 exact saved baselines and 60 verified historical v4/none grades. New candidate only: 60 writes, 40 blind Sol-high batches, 120 pairwise verdicts. Hard 100-call cap, 20 Claude writes, no automatic retries; scheduling guards 2.5M reported tokens and 300 estimated Standard Codex paid credits with reservations for up to 3 active calls. Guards may overshoot within an in-flight call. Unknown usage stops scheduling. Candidate, rubric, cases, order, code and inputs frozen before run. Both fresh holdouts stay sealed. No installation changes. Run/report via python3 tools/restored_check.py; never resume an ambiguous unfinished reservation or launch another pipeline. Ten mocked/local budget tests pass.
+
 ## V9 safeguards restored; no evaluation launched
 
 User requested restoration of the six useful omissions while preserving argument/proof guidance, and asked for rerun costs. New candidate: evals/versions/v9-restored-dev/. Original v9-dev and all recorded results remain frozen. Only the new SKILL.md differs from original v9; all references and UI metadata are byte-identical. Restored concrete logical-force distinctions, personal research semicolon preference, internal-discussion exclusions, adverse-result protection, detailed fidelity/math checks, and the warning against cosmetic “so what” slogans. No generations, judges, installations, or holdout reads/runs. Packaged/installed remain v4. README clearly separates unevaluated restored candidate from tested v9. Cost estimates are in evals/rerun-cost-estimate.md; estimates are not authorization to launch.
