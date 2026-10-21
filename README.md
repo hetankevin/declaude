@@ -6,6 +6,8 @@ It removes rhetorical repetition and unnecessary abstractions while preserving f
 
 ## Restored v9 candidate
 
+The authorized continuation is running with a **101-call total cap**. The Astra retry succeeded; completed work is reused and fresh holdouts remain untouched. The checkpoint below describes the earlier stop, not the current final result.
+
 [v9-restored-dev](evals/versions/v9-restored-dev/SKILL.md) restores the explicit meaning checks, personal research punctuation preference, exclusions for internal discussion, protection of adverse results, detailed final fidelity checks, and the warning against cosmetic “so what” endings. V9's argument organization, correction retention, selective guidance, and proof instructions remain. All reference files are unchanged from the tested v9. The [budgeted 20-case development check](evals/results/prose-repair/v9-restored-20/report.md) **stopped incomplete** when Astra reported model capacity without token usage. The frozen budget rule stopped new calls at 66/100 attempts: 13/20 complete cases, 39 drafts, and 78 valid pairwise verdicts. Known usage is 1,248,598 reported tokens and 124.51 estimated Codex paid credits, plus 13 Claude calls and one failed attempt with unreported usage. One initial-letter quote capitalization mismatch was repaired deterministically with an audit record, without changing the verdict or making another call. No jobs remain active. Fresh holdouts remain untouched. No aggregate or new heatmap is claimed from this incomplete sample; the results below concern the original frozen v9. Packaged and installed remain v4. [Rerun cost estimates](evals/rerun-cost-estimate.md) describe options without launching them.
 
 ## Latest economical cross-model check
