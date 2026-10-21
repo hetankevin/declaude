@@ -1,0 +1,4031 @@
+[
+  {
+    "case": "large-dev-a-06",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a findings-section rewrite with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the design, allocation, observations, numerical results, measurement boundaries, confounding, and conditional follow-up. The added scorer check reasonably concerns consistency in context.",
+          "quotes": {
+            "source": [
+              "All 48 drain-storm observations were available.",
+              "although the comparison does not by itself identify a cover effect."
+            ],
+            "A": [
+              "All 48 drain-storm observations (6 drains × 8 storms) were available.",
+              "it does not by itself identify an effect of the cover."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the design, values, missing measurements, competing explanations, and proposed follow-up. Although 'not evidence' sounds stronger than nonidentification, its surrounding qualification makes a categorical rejection of all evidential value ambiguous rather than a clear material error.",
+          "quotes": {
+            "source": [
+              "although the comparison does not by itself identify a cover effect."
+            ],
+            "A": [],
+            "B": [
+              "The larger drop on the lower street does not by itself identify an effect of the cover.",
+              "but it is not evidence that the new cover caused it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the numerical findings and distinguish duration from unmeasured outcomes, causal identification, and untested scorer agreement. A's consistency-check shorthand and B's stronger evidential wording do not clearly change the claims when read in context.",
+          "quotes": {
+            "source": [
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration."
+            ],
+            "A": [
+              "We have not tested whether different scorers assign the same duration to the same recording, so the consistency of the measure is unknown."
+            ],
+            "B": [
+              "Staff reported that all recordings could be scored. We have not tested whether different scorers assign the same duration to the same recording."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as connected report prose. A's table is useful, but its narration repeatedly labels what the account is doing, making the reading more procedural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is a description of the recordings.",
+              "They should not be read as evidence of the following:"
+            ],
+            "B": [
+              "Two other changes coincided with the cover change.",
+              "Because both streets were cleaned, cleaning does not automatically explain why the lower street improved more."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B carries the reader from results through attribution problems and measurement limits to follow-up and current usefulness. A separates reliability from current usefulness and repeats the causal limitation at the end, dispersing the conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## Reliability of the duration measure",
+              "## What the existing recordings can support",
+              "They do not establish that the new covers shortened ponding."
+            ],
+            "B": [
+              "### Possible follow-up and current use of the data",
+              "The existing recordings remain useful for describing these eight storms and for testing whether the camera-based duration measure is practical."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B supplies a useful explanation of why allocation matters and links the remaining uncertainties in prose. A also explains the obstacles well, but its successive limitation sections and repeated caution are less aligned with the author's request to remove defensive repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## What the measurements cannot explain",
+              "## What was not measured",
+              "The recordings remain useful for describing these eight storms and for assessing whether camera-based duration is a practical measure."
+            ],
+            "B": [
+              "Because the lower street was selected for its complaint history, the two streets may have differed before the change in ways we did not measure.",
+              "Two other changes coincided with the cover change."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets the decisive preference for a connected account: it explains the allocation obstacle, develops the competing explanations, and ends by joining follow-up with the recordings' present usefulness. A's helpful table and explanations come with repeated defensive framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is a description of the recordings.",
+              "They do not establish that the new covers shortened ponding."
+            ],
+            "B": [
+              "Because the lower street was selected for its complaint history, the two streets may have differed before the change in ways we did not measure.",
+              "### Possible follow-up and current use of the data"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "2a3ae46d64e88b4c1e99a45cb48dde88a638726c8380439a9b25388871ce3716",
+    "prompt_sha256": "4ef1df1051878014f422c9907c14282fdcde60564c2ae5acb1860d885ba25913",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "5147d9820ef3765e38d52aa7891508b7ab0a6ac00cb8ab6c106847f05017e4c3",
+      "v9-restored-dev": "59ee16276b79d499d8721019429c9709931220ed2e05b3e07d29342aa931e584"
+    }
+  },
+  {
+    "case": "large-dev-a-06",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a findings-section rewrite with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the design, values, measurement distinctions, rainfall and cleaning uncertainties, and conditional follow-up. Its 'not evidence' wording is stronger than the source, but the adjacent nonidentification qualification leaves its intended scope ambiguous rather than clearly materially wrong.",
+          "quotes": {
+            "source": [
+              "although the comparison does not by itself identify a cover effect."
+            ],
+            "A": [
+              "The larger drop on the lower street does not by itself identify an effect of the cover.",
+              "but it is not evidence that the new cover caused it."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all six drains, eight storms, 48 observations, correct means and allocation, missing measurements, unresolved explanations, and proposed follow-up. It keeps scoring feasibility distinct from scorer agreement and supplies no expansion recommendation.",
+          "quotes": {
+            "source": [
+              "All 48 drain-storm observations were available.",
+              "A later study could rotate covers among comparable drains and record local rainfall intensity and debris before cleaning."
+            ],
+            "A": [],
+            "B": [
+              "All 48 drain-storm observations were available.",
+              "A later study could rotate covers among comparable drains and record local rainfall intensity, along with the amount of debris before cleaning."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive evidence and its limitations. A explains the possible preexisting street differences more explicitly; B stays closer to the source's calibrated causal wording. Neither difference establishes a material fidelity advantage.",
+          "quotes": {
+            "source": [
+              "The lower street was chosen because crews had received more complaints there, so cover allocation was not random.",
+              "although the comparison does not by itself identify a cover effect."
+            ],
+            "A": [
+              "the two streets may have differed before the change in ways we did not measure.",
+              "The larger drop on the lower street does not by itself identify an effect of the cover."
+            ],
+            "B": [
+              "Cover allocation was therefore not random.",
+              "the comparison does not by itself identify an effect of the cover."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B states the observed pattern and limitations directly. A adds emphatic packaging such as 'and nothing more' and repeats the causal warning within one paragraph, making its tone more defensive.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The camera records show shorter durations above the line, and nothing more.",
+              "but it is not evidence that the new cover caused it."
+            ],
+            "B": [
+              "The camera records show shorter durations above the line at both sets of drains in the later period.",
+              "This may help in deciding what to study next, but the comparison does not by itself identify an effect of the cover."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B more directly connects the observed improvement to the uncertainties that obstruct its explanation: its rainfall paragraph explains the consequence for interpreting durations. A's explicit allocation explanation is useful, but its rainfall paragraph stops at uncertainty about rainfall itself.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "so we cannot say how rainfall differed at the study drains."
+            ],
+            "B": [
+              "so we cannot say how much of the shorter durations at both sets of drains reflects lighter rain."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better removes rhetorical repetition while preserving useful explanation. Its rainfall and cleaning passages explain why the missing information matters, and its result paragraph states the causal qualification once. A's explanation of selection is a strength, but its repeated disclaimers add less for this reader.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The larger drop on the lower street does not by itself identify an effect of the cover.",
+              "The difference may be useful for deciding what to study next, but it is not evidence that the new cover caused it."
+            ],
+            "B": [
+              "Because the initial quantity of leaves was not recorded, we cannot say whether cleaning explains why the lower street improved more.",
+              "Nor can cleaning be set aside as irrelevant just because both streets were cleaned."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves the requested coherent findings account by connecting missing rainfall information directly to the unexplained duration changes and avoiding repeated causal disclaimers. A usefully explains nonrandom allocation, but B's account more consistently preserves explanation while removing rhetorical repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "so we cannot say how rainfall differed at the study drains.",
+              "The camera records show shorter durations above the line, and nothing more."
+            ],
+            "B": [
+              "so we cannot say how much of the shorter durations at both sets of drains reflects lighter rain.",
+              "This would address some of the ambiguities above, though rotation alone would not make storms identical."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "2a3ae46d64e88b4c1e99a45cb48dde88a638726c8380439a9b25388871ce3716",
+    "prompt_sha256": "4ef1df1051878014f422c9907c14282fdcde60564c2ae5acb1860d885ba25913",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "5e9360a76ad331d06902aa0ecd3b8429123684d700daa5e43b0ad64bd8ec6983",
+      "v9-restored-dev": "59ee16276b79d499d8721019429c9709931220ed2e05b3e07d29342aa931e584"
+    }
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an infrastructure briefing with practical reasoning, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the facts and limitations. Making staff allocation an explicit approval condition reasonably operationalizes the source's unresolved staffing concern; it does not claim that funding or staff have been committed.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated."
+            ],
+            "A": [
+              "allocating staff time for those checks",
+              "Staff time has not yet been allocated"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains conditional support, staffing uncertainty, cost limitations, equipment and driver risks, and separate drainage reporting. The explicit staffing condition does not invent an existing commitment.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "A reporting requirement cannot guarantee construction"
+            ],
+            "A": [],
+            "B": [
+              "Staff time has not yet been allocated",
+              "it would not guarantee construction."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's substantive distinctions and qualifications. A states the cost comparison and concern about drainage pressure more precisely, but B still communicates the same conclusions in context.",
+          "quotes": {
+            "source": [
+              "The sign proposal should therefore be assessed as a response to delayed warnings rather than as the cheaper way of achieving an identical outcome."
+            ],
+            "A": [
+              "The signs should therefore be assessed as a response to delayed warnings, not as a cheaper way to achieve the same outcome as pipe replacement."
+            ],
+            "B": [
+              "There is no agreed estimate of how much either option would reduce injuries or vehicle damage, so the decision should not present them as cheaper ways to achieve the same outcome."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses more concrete, idiomatic wording. B's references to completing 'the flood work' and to presenting both options as 'cheaper ways' make the reader reconstruct the intended comparison.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Installing them would complete a warning project while leaving the drainage problem unresolved."
+            ],
+            "B": [
+              "Installing them would complete a warning project, not the flood work.",
+              "present them as cheaper ways to achieve the same outcome."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from conditional recommendation through the warning problem, costs, operating limitations, and the separate pipe decision. A names the drainage concern explicitly; B builds it into the purpose of reporting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "There is a reasonable concern that a visible new device could reduce pressure to address the drainage problem."
+            ],
+            "B": [
+              "To help prevent a visible warning system from displacing attention to drainage"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better sustains the author's explanatory register through concrete descriptions of the unresolved problem and the limited response to an objection. B's more compressed formulations sometimes obscure those relationships.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To address part of that concern, the next infrastructure report should explicitly state the pipe project's status."
+            ],
+            "B": [
+              "This would maintain visibility of the unresolved work"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A is preferable because it makes the comparison and objection easier to follow without strengthening the claims: it names the unresolved drainage problem and explicitly presents reporting as a partial response. B preserves the argument but makes several relationships less precise.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "There is a reasonable concern that a visible new device could reduce pressure to address the drainage problem.",
+              "To address part of that concern"
+            ],
+            "B": [
+              "not the flood work.",
+              "To help prevent a visible warning system from displacing attention to drainage"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "3381d650a8780c7e3d75a97b184cad06bf114ee0c27ae9cdf1a8e58806c856cc",
+    "prompt_sha256": "aeee30f8a9c54e2eaf30a05634e74155e8b74366c4896cb191864013ce7156d0",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "1292a83678de8d331f36bf311b6903dd3736693e7c4d3e47beba9e523d0a97cb",
+      "v9-restored-dev": "0c4870e2c0f69eb937b89393536d68b8dfa828b77227af8b87961fce886e7ef4"
+    }
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is a recommendation-editing task without a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the recommendation, operational requirements, costs and uncertainties, failure risks, residual unsafe entry, and drainage reporting limitation. The distinction between warning and drainage adequately preserves the physical-protection qualification in context.",
+          "quotes": {
+            "source": [
+              "It would complete a warning project. The drainage project would still be unresolved."
+            ],
+            "A": [
+              "Installing signs would complete the warning project, while leaving the drainage project unresolved."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's facts and qualifications. Explicit staff allocation makes the unresolved operating requirement concrete without asserting an existing resource commitment.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "This notice does not solve the problem of drivers overlooking or disregarding warnings."
+            ],
+            "A": [],
+            "B": [
+              "Staff time has not yet been allocated",
+              "Drivers may still overlook or disregard warnings"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain conditional support and all material limitations. B states explicitly that signs cannot keep water out; A conveys the same distinction through the projects' different purposes and the unresolved drainage work.",
+          "quotes": {
+            "source": [
+              "This is not an argument that a sign will keep water out.",
+              "Neither estimate includes annual maintenance."
+            ],
+            "A": [
+              "signs warn drivers, while pipe replacement addresses drainage.",
+              "Neither estimate includes annual maintenance."
+            ],
+            "B": [
+              "they would not keep water out.",
+              "Neither estimate includes annual maintenance."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and appropriate for a public infrastructure briefing. A's combined explanations and B's more segmented explanations remain readable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Signs would cost less initially, but the two projects serve different purposes"
+            ],
+            "B": [
+              "Signs would cost less initially, but we have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A gives the concrete problem as the reason for its recommendation, then uses the cost discussion to explain the projects' different purposes. B introduces delayed warnings in the opening and returns to that setup in a separate paragraph before reaching the comparison.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We should install the proposed automatic warning signs because the underpass sometimes floods before a maintenance crew can close the road.",
+              "the two projects serve different purposes: signs warn drivers, while pipe replacement addresses drainage."
+            ],
+            "B": [
+              "to address delays in warning drivers when the underpass floods.",
+              "The underpass sometimes fills with water before a maintenance crew can close the road."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better integrates the distinctions into the argument while retaining their explanation. Its cost paragraph explains why lower purchase cost does not establish an equivalent outcome, and its closing puts unresolved drainage beside the reporting response.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Signs would cost less initially, but the two projects serve different purposes: signs warn drivers, while pipe replacement addresses drainage."
+            ],
+            "B": [
+              "Installing them would complete a warning project while leaving the drainage problem unresolved.",
+              "Signs would cost less initially, but we have no agreed estimate"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested or supplied for assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the author's priority of integrating explanation: it connects the flooding delay directly to the recommendation and explains the warning-versus-drainage distinction where the cost comparison needs it. Its consolidation removes repetition without removing the rationale.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "because the underpass sometimes floods before a maintenance crew can close the road.",
+              "the two projects serve different purposes: signs warn drivers, while pipe replacement addresses drainage."
+            ],
+            "B": [
+              "to address delays in warning drivers when the underpass floods.",
+              "Automatic signs could warn drivers sooner, but they would not keep water out."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "3381d650a8780c7e3d75a97b184cad06bf114ee0c27ae9cdf1a8e58806c856cc",
+    "prompt_sha256": "aeee30f8a9c54e2eaf30a05634e74155e8b74366c4896cb191864013ce7156d0",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "ccf408d2fc5d1fe139dd8f1ca03a0a75b167433a83ac9339439e1b905f04a19c",
+      "v9-restored-dev": "0c4870e2c0f69eb937b89393536d68b8dfa828b77227af8b87961fce886e7ef4"
+    }
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit a public infrastructure briefing; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the decision's conditions, separate installation estimates, maintenance exclusions, equipment limitations, and qualified reporting proposal.",
+          "quotes": {
+            "source": [
+              "I support purchasing the signs only if the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure when the system is unavailable."
+            ],
+            "A": [
+              "provided the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure for when the system is unavailable."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B expressly makes allocation of staff time a prerequisite for approval. The source notes unallocated time and requires the responsibility and closure arrangements to be explicit in the decision; it does not establish that allocation must precede approval. This changes the stated approval gate.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "It would be misleading to call the purchase ready for approval while leaving that condition implicit."
+            ],
+            "A": [],
+            "B": [
+              "Staff time for these checks has not yet been allocated. Until it is, the purchase is not ready for approval."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the warning-versus-drainage distinction, costs, failures, and remaining risks. A more faithfully retains the source's explicit decision conditions; B adds an allocation prerequisite.",
+          "quotes": {
+            "source": [
+              "It would be misleading to call the purchase ready for approval while leaving that condition implicit."
+            ],
+            "A": [
+              "the purchase is not ready for approval until that condition is written into the decision."
+            ],
+            "B": [
+              "Until it is, the purchase is not ready for approval."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable briefings. B's reliability explanation uses direct, idiomatic sentences where A ends with an awkward backward reference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Monthly sensor checks and a manual closure procedure are the conditions above because the system can be unavailable."
+            ],
+            "B": [
+              "Monthly sensor checks reduce the chance that the system is silently down. The manual closure procedure covers the periods when it is."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B places the residual unsafe-entry objection beside the explanation of warning equipment's limits and connects the operational conditions to their purposes. A introduces the rejection objection before developing those limitations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Warning equipment should not be rejected merely because it cannot prevent every unsafe entry."
+            ],
+            "B": [
+              "Because signs cannot prevent every unsafe entry, some drivers will still overlook or disregard them. That is not a reason to reject warning equipment."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better satisfies the author's preference for explaining why each arrangement belongs. Its explanation distinguishes the purposes of checks and manual closure, whereas A gives only their shared general motivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the conditions above because the system can be unavailable."
+            ],
+            "B": [
+              "Monthly sensor checks reduce the chance that the system is silently down.",
+              "The manual closure procedure covers the periods when it is."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or mathematical derivation is part of this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A supplies a complete, usable recommendation while preserving the stated approval conditions. B explains the operational rationale better, but its new requirement that staff time be allocated before approval changes what decision-makers may do. Fidelity to the recommendation's conditions is decisive here.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the purchase is not ready for approval until that condition is written into the decision."
+            ],
+            "B": [
+              "Staff time for these checks has not yet been allocated. Until it is, the purchase is not ready for approval."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "1715f3ab094beaf797b69cc49708469efd1c358c365cdb930ee6803c308f04b2",
+    "prompt_sha256": "98c75644093cbe26a479e452211b6d7b7e53ca70a7303d18b94751199cf187ea",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "4d60b351506ccb7112ceb5c16b12f860490d4ebc80ce00a8a08c4c775882f5d3",
+      "v9-restored-dev": "db511d438a3ab02213d739c87e3f9194f478ad10d3a0ddd7b4f62db3bd4f66f6"
+    }
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the recommendation and rationale in a public briefing, not a proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A turns the absence of an established measured substitute and an agreed harm-reduction estimate into a categorical claim that nobody has measured the signs as a substitute. The source leaves open whether comparative measurements exist without establishing equivalence or agreement.",
+          "quotes": {
+            "source": [
+              "not a measured substitute for pipe replacement.",
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ],
+            "A": [
+              "nobody has measured them as a substitute for the pipe."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the conditional recommendation, cost and evidence qualifications, sensor and power limitations, unresolved drainage work, and limited force of reporting.",
+          "quotes": {
+            "source": [
+              "The difference makes signs a smaller initial purchase, not a measured substitute for pipe replacement."
+            ],
+            "A": [],
+            "B": [
+              "The signs are therefore a smaller initial purchase, but they are not a measured substitute for pipe replacement."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the principal conditions and limitations. B preserves the source's distinction between lower installation cost and unestablished comparative outcomes; A overstates the absence of measurement.",
+          "quotes": {
+            "source": [
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ],
+            "A": [
+              "nobody has measured them as a substitute for the pipe."
+            ],
+            "B": [
+              "they are not a measured substitute for pipe replacement."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A generally reads as connected, conversational technical prose. B is readable, but its sentence referring to the 'conditions above' is more mechanical than A's direct statement of the conditions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I support buying the signs only if the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure for when the system is unavailable."
+            ],
+            "B": [
+              "Monthly sensor checks and a manual closure procedure are the conditions above because the system can be unavailable."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A develops the warning, cost, and reliability rationale before specifying the operational conditions. B makes the complete conditional recommendation immediately assessable and then develops its supporting topics. Both orders work for this briefing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "provided the installation includes the maintenance and manual-closure arrangements described below."
+            ],
+            "B": [
+              "provided the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure for when the system is unavailable."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better sustains the author's connected explanatory register and trims repeated defensive commentary. B's headings are suitable for a briefing, but its closing disclaimer repeats a limitation already stated.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A reporting requirement cannot guarantee that the pipe will be built."
+            ],
+            "B": [
+              "A reporting requirement cannot guarantee construction, and I am not claiming that it can."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B preserves the evidentiary qualification and presents the complete conditional recommendation at the outset. A has a more connected voice, but its categorical assertion about nobody having measured substitution overstates the source's evidence. B's lower material-error severity outweighs A's stylistic advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "nobody has measured them as a substitute for the pipe."
+            ],
+            "B": [
+              "they are not a measured substitute for pipe replacement.",
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "1715f3ab094beaf797b69cc49708469efd1c358c365cdb930ee6803c308f04b2",
+    "prompt_sha256": "98c75644093cbe26a479e452211b6d7b7e53ca70a7303d18b94751199cf187ea",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "85689bd7bd4cb1495be23544946b592aad5b1ae6c26cf5058c4974851f750897",
+      "v9-restored-dev": "db511d438a3ab02213d739c87e3f9194f478ad10d3a0ddd7b4f62db3bd4f66f6"
+    }
+  },
+  {
+    "case": "large-dev-a-14",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a repaired mathematical proof, including the cross-term calculation and exact equality case.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The finite-space calculation preserves the cell means, arbitrary c, identity, and inequality. Zero-probability cells are handled without division, and equality remains almost sure.",
+          "quotes": {
+            "source": [
+              "Set mu_j = 0 when p_j = 0.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [
+              "with μ_j = 0 when p_j = 0.",
+              "Hence equality holds if and only if M = c with probability one."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The proof uses the given finite sums and cell means without adding independence. It excludes zero-weight cells from the relevant sums and preserves the identity and exact almost-sure equality condition.",
+          "quotes": {
+            "source": [
+              "Cells of probability zero contribute nothing to expectations",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [],
+            "B": [
+              "So every outcome in such a cell has weight zero in every expectation below, whatever value $M$ takes there.",
+              "Hence equality holds exactly when $\\mathbb P(M=c)=1$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the hypotheses and conclusions and replace independence with the required cellwise calculation. Neither strengthens the equality condition to pointwise equality.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells. Do not add an independence assumption."
+            ],
+            "A": [
+              "We use only that M is constant on each cell.",
+              "Hence equality holds if and only if M = c with probability one."
+            ],
+            "B": [
+              "We do not claim that $X-M$ is independent of $M$.",
+              "Hence equality holds exactly when $\\mathbb P(M=c)=1$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is understandable, but its repeated commentary about where the repair occurs interrupts the teaching-note prose. B explains the operations more directly and presents the mathematics in readable notation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is the first place the zero-probability cells are handled.",
+              "This is the second place the zero-probability cells matter."
+            ],
+            "B": [
+              "On such a cell $M=\\mu_j$ is constant, so the factor $\\mu_j-c$ comes out of the inner sum, and (1) applies:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both develop residual cancellation, the cross term, the expansion, and equality in a sound order. B finishes at the equality conclusion; A repeatedly steps outside that argument to describe the repair and then summarizes it again.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Summary of the repair.**",
+              "The zero-probability cells are used twice:"
+            ],
+            "B": [
+              "**Step 2: the cross term vanishes.**",
+              "Taking expectations is linear for finite sums, so by Step 2"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the preference for explaining useful steps while removing rhetorical repetition. A supplies the mathematics but surrounds it with revision commentary that the completed teaching note does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Without this case, (1) would not follow from the definition of μ_j, which is given only for p_j > 0.",
+              "**Summary of the repair.**"
+            ],
+            "B": [
+              "Every term in a cell with $p_j=0$ has weight $\\mathbb P(\\{\\omega\\})=0$, so those cells contribute nothing, and the sum runs only over $j$ with $p_j>0$."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both arguments are correct and explain the essential cancellation and equality case. B better meets the explicit displaystyle requirement through aligned intermediate calculations; A often places lengthy calculations in raw-text lines.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "E[(X − c)²] = E[(X − M)²] + 2·0 + E[(M − c)²] = E[(X − M)²] + E[(M − c)²]."
+            ],
+            "B": [
+              "\\begin{aligned}\n\\mathbb E\\bigl[(X-c)^2\\bigr]\n&=\\mathbb E\\bigl[(X-M)^2\\bigr]+2\\,\\mathbb E\\bigl[(X-M)(M-c)\\bigr]+\\mathbb E\\bigl[(M-c)^2\\bigr]\\\\\n&=\\mathbb E\\bigl[(X-M)^2\\bigr]+\\mathbb E\\bigl[(M-c)^2\\bigr]."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material mathematical error. B is the more useful completed teaching-note proof because it preserves the full reasoning in properly displayed calculations without A's repeated commentary about the repair.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Summary of the repair.** The independence claim is replaced by the cell-wise identity (1) together with the fact that M is constant on cells."
+            ],
+            "B": [
+              "On such a cell $M=\\mu_j$ is constant, so the factor $\\mu_j-c$ comes out of the inner sum, and (1) applies:",
+              "Hence equality holds exactly when $\\mathbb P(M=c)=1$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "7aba37af90d9a6a9d68e38fc54b0b54bb471abcf11b0085b4159536c8b926278",
+    "prompt_sha256": "25c25c02a714402dad95ad20a54ad9218dd75a2331697d3cf25d5f0ec3637eef",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "913627de7f0f6151ee2cb923195b60cfada15d0b9205163e91f0b4c59c842ba5",
+      "v9-restored-dev": "fca42607b1a69e627160899e69b816af24e224f60efb0788052aa9cbf3386307"
+    }
+  },
+  {
+    "case": "large-dev-a-14",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a repaired mathematical proof, including the cross-term calculation and exact equality case.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The proof preserves the given finite-space setting, cell means, arbitrary c, identity, and inequality. It divides only on positive-probability cells and gives the exact almost-sure equality condition.",
+          "quotes": {
+            "source": [
+              "For p_j = P(G_j) > 0 define mu_j",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [
+              "Fix $j$ with $p_j>0$.",
+              "Hence equality holds exactly when $\\mathbb P(M=c)=1$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The proof correctly uses the partition and cell means for every real c. Its all-cell residual identity includes zero-weight cells, and its equality argument imposes no condition on those cells.",
+          "quotes": {
+            "source": [
+              "Set mu_j = 0 when p_j = 0.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [],
+            "B": [
+              "For a cell with $p_j=0$ the term is zero whatever $\\mu_j$ is, so the convention $\\mu_j=0$ puts no condition on $c$.",
+              "The union of the remaining cells has probability zero, so this says precisely that $M=c$ with probability one."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the conditional-mean strategy, justify cancellation through cellwise constancy, and preserve all conclusions and zero-probability qualifications. Their different treatments of zero-weight cells are equally valid.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells. Do not add an independence assumption."
+            ],
+            "A": [
+              "We do not claim that $X-M$ is independent of $M$.",
+              "The arbitrary value $\\mu_j=0$ assigned to zero-probability cells has no effect on this conclusion."
+            ],
+            "B": [
+              "No independence of $X-M$ and $M$ is needed or claimed.",
+              "For a cell with $p_j=0$ the term is zero whatever $\\mu_j$ is, so the convention $\\mu_j=0$ puts no condition on $c$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic explanatory prose and readable mathematical displays. B's shorter probability notation and A's more explicit set calculation are both appropriate for the teaching note.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Taking expectations is linear for finite sums, so by Step 2",
+              "The set $\\{M\\ne c\\}$ is the union of the cells with $\\mu_j\\ne c$"
+            ],
+            "B": [
+              "Taking expectations and using Step 2 to drop the middle term gives",
+              "The union of the remaining cells has probability zero"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B first explains why the partition lets expectations split into cells, then establishes one residual identity covering every cell and immediately reuses it. A's argument is coherent but repeatedly removes zero-weight cells at successive stages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Every term in a cell with $p_j=0$ has weight $\\mathbb P(\\{\\omega\\})=0$, so those cells contribute nothing, and the sum runs only over $j$ with $p_j>0$.",
+              "Grouping by cells and again discarding the cells with $p_j=0$"
+            ],
+            "B": [
+              "since $G_1,\\dots,G_m$ partition $\\Omega$, each sum can be split over the cells.",
+              "**Step 1: the residual has zero weighted sum on each cell.**",
+              "where the last line uses (1)."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better connects each construction to its purpose: the partition enables splitting sums, the all-cell residual identity enables cancellation, and the final sum explains exactly why null cells impose no restriction. It removes repetition while retaining the useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Dividing by $p_j$, this says $\\mathbb E[X-M\\mid G_j]=0$.",
+              "Grouping by cells and again discarding the cells with $p_j=0$"
+            ],
+            "B": [
+              "since $G_1,\\dots,G_m$ partition $\\Omega$, each sum can be split over the cells.",
+              "For a cell with $p_j=0$ the term is zero whatever $\\mu_j$ is, so the convention $\\mu_j=0$ puts no condition on $c$."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both provide valid, displayed derivations of residual cancellation, factorization of the cross term, the squared-error identity, and the exact equality condition. B's all-cell calculation and A's restriction to positive-probability cells both explain the necessary steps.",
+          "quotes": {
+            "source": [
+              "The resulting conclusion that E[(X-M)(M-c)] is zero is nevertheless correct and needs a different justification."
+            ],
+            "A": [
+              "On such a cell $M=\\mu_j$ is constant, so the factor $\\mu_j-c$ comes out of the inner sum, and (1) applies:"
+            ],
+            "B": [
+              "On $G_j$ the function $M$ equals the constant $\\mu_j$, so $M-c=\\mu_j-c$ can be pulled out of the sum over $G_j$:",
+              "where the last line uses (1)."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both satisfy the mathematical repair. B has a modest substantive advantage for this author: its unified all-cell identity gives the proof a clearer through-line while preserving the explanation and displays the user requested.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Grouping by cells and again discarding the cells with $p_j=0$"
+            ],
+            "B": [
+              "**Step 1: the residual has zero weighted sum on each cell.**",
+              "where the last line uses (1).",
+              "For a cell with $p_j=0$ the term is zero whatever $\\mu_j$ is, so the convention $\\mu_j=0$ puts no condition on $c$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "tie",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "7aba37af90d9a6a9d68e38fc54b0b54bb471abcf11b0085b4159536c8b926278",
+    "prompt_sha256": "25c25c02a714402dad95ad20a54ad9218dd75a2331697d3cf25d5f0ec3637eef",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "06087a6161fe77d0228fdd0a73d1fe1ae04c8be85a4b66820f6260e96f845759",
+      "v9-restored-dev": "fca42607b1a69e627160899e69b816af24e224f60efb0788052aa9cbf3386307"
+    }
+  },
+  {
+    "case": "large-dev-a-08",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an editorial task concerning a classroom evaluation, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the design, all participant and score counts, both scoring criteria, assessment procedures, and limits on interpretation. Expressing table entries with denominators does not change the evidence.",
+          "quotes": {
+            "source": [
+              "Both points were awarded on 31 of 52 A worksheets and 27 of 49 B worksheets.",
+              "One point was awarded on 15 A worksheets and 16 B worksheets."
+            ],
+            "A": [
+              "| Two points | 31 of 52 | 27 of 49 |",
+              "| One point | 15 of 52 | 16 of 49 |"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the substantive evidence and limitations. 'Independently' could imply separation from the first ratings, which is unspecified, but can also describe the second scorer supplying their own ratings. This ambiguity does not establish a material error.",
+          "quotes": {
+            "source": [
+              "Ten transcribed answers were scored again by a second scorer.",
+              "The scorers agreed on nine, and discussion resolved the tenth before the final totals above were compiled."
+            ],
+            "A": [],
+            "B": [
+              "A second scorer independently scored ten transcribed answers.",
+              "The scorers agreed on nine, and discussion resolved the tenth before the final totals were compiled."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the counts, procedures, single-question scope, and noncausal conclusion. B's ambiguous scoring qualifier does not clearly establish a different procedure.",
+          "quotes": {
+            "source": [
+              "The side-by-side layout was associated with a somewhat larger share of fully credited answers in these classes.",
+              "The evaluation cannot separate layout from class differences or classroom assistance."
+            ],
+            "A": [
+              "The layout with diagrams beside the questions was associated with a somewhat larger share of fully credited answers in these classes.",
+              "it cannot separate worksheet layout from class differences or classroom assistance."
+            ],
+            "B": [
+              "In these classes, the layout with diagrams beside each question was associated with a somewhat larger share of fully credited answers.",
+              "The evaluation cannot establish whether that difference reflected layout, differences between classes, or classroom assistance."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use straightforward bulletin prose. B's title and separate assistance paragraph are appropriate, while A's more continuous presentation is equally idiomatic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A scorer assessed transcribed answers to the final explanation question without seeing the worksheet layout."
+            ],
+            "B": [
+              "A scorer who could not see the worksheet layout assessed transcribed answers to the final explanation question."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A interprets the table immediately and keeps the single-question qualification beside that interpretation. B places the scope, baseline, and scoring-check discussions between the table and its central comparative finding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The layout with diagrams beside the questions was associated with a somewhat larger share of fully credited answers in these classes. These scores describe responses to one question, rather than pupils’ general understanding of volume."
+            ],
+            "B": [
+              "These scores describe responses to one question; they do not measure pupils’ general understanding of volume. No earlier baseline task was scored, so the groups’ starting knowledge is unknown.",
+              "In these classes, the layout with diagrams beside each question was associated with a somewhat larger share of fully credited answers."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more directly connects the evidence to its meaning and makes the closing information gaps concrete. This fits the user's preference for useful explanation rather than a generic contribution statement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "including pupils’ starting knowledge and the assistance they received during the lesson."
+            ],
+            "B": [
+              "identifies information that a more controlled evaluation would need to record."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a demonstrated material error. A has a modest substantive advantage in exposition: it explains the central association directly after the table and closes with specific information gaps. B is usable but postpones the table's interpretation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The layout with diagrams beside the questions was associated with a somewhat larger share of fully credited answers in these classes.",
+              "including pupils’ starting knowledge and the assistance they received during the lesson."
+            ],
+            "B": [
+              "A second scorer independently scored ten transcribed answers.",
+              "In these classes, the layout with diagrams beside each question was associated with a somewhat larger share of fully credited answers."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "1ac75169d84abb4951fcde6020b3192bcf624386d8a0df137db072f5bfca7356",
+    "prompt_sha256": "1c3ecefcafd2c2fc2580bea60344e5b4da6a5e8ee56bbc8192649b0470576711",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "da774790ccad2e31b11f8b181105fc0ae5d8cae4c15870d41a195c7d2c7096e8",
+      "v9-restored-dev": "d2f5421f55224aa3b394635deb49ca1845efeeec44db60cca5f84ea51845a646"
+    }
+  },
+  {
+    "case": "large-dev-a-08",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task calls for a school bulletin report, with no proof or derivation to evaluate.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all evidence and qualifications. 'The effect of layout' appears within an explicit statement that it cannot be separated from other explanations, so it does not assert an established causal effect.",
+          "quotes": {
+            "source": [
+              "The evaluation cannot separate layout from class differences or classroom assistance.",
+              "The analysis included only returned worksheets."
+            ],
+            "A": [
+              "The evaluation cannot separate the effect of layout from class differences or classroom assistance.",
+              "The analysis included only returned worksheets."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the layout-only comparison, selection and assistance limitations, returns and absences, complete scores, assessment checks, and restricted outcome claims.",
+          "quotes": {
+            "source": [
+              "Six additional pupils assigned A and five assigned B were absent.",
+              "That small check supports describing the procedure, but it is not a complete reliability study."
+            ],
+            "A": [],
+            "B": [
+              "Six additional pupils assigned A and five assigned B were absent.",
+              "This small check supports the description of the scoring procedure, but it does not constitute a complete reliability study."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the full numerical evidence and scoring rules, distinguish the outcome from broad understanding, and retain the limits on causal and preference conclusions.",
+          "quotes": {
+            "source": [
+              "The scoring rule awarded one point for stating that the amount was unchanged and one for explaining that vessel shape changed the water level.",
+              "It also does not show which layout pupils preferred, because no preference question was asked."
+            ],
+            "A": [
+              "Pupils received one point for stating that the amount of water was unchanged and one for explaining that vessel shape changed the water level.",
+              "It also provides no evidence about which layout pupils preferred, because no preference question was asked."
+            ],
+            "B": [
+              "The scoring rule awarded one point for stating that the amount of water was unchanged and one for explaining that vessel shape changed the water level.",
+              "It also provides no evidence about pupils’ layout preferences, because no preference question was asked."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are clear, restrained, and readable for teachers. Neither has a meaningful advantage in sentence-level fluency.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A slightly larger share of returned worksheets received full credit with Version A: 31 of 52, compared with 27 of 49 for Version B."
+            ],
+            "B": [
+              "The layout with diagrams beside the questions was associated with a somewhat larger share of fully credited answers in these classes."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B explains whose worksheets were analysed and what earned each point before displaying the scores. A presents the finding and table before defining the score, postpones participant accounting, and repeats the main finding at the end.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A slightly larger share of returned worksheets received full credit with Version A:",
+              "A scorer who could not see the worksheet layout assessed transcribed answers to the final explanation question.",
+              "In these classes, placing diagrams beside questions was associated with a somewhat larger share of fully credited answers."
+            ],
+            "B": [
+              "The analysis included 52 returned worksheets for A and 49 for B.",
+              "The scoring rule awarded one point for stating that the amount of water was unchanged and one for explaining that vessel shape changed the water level."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the user's preference for introducing a procedure with the explanation needed to understand its results. Its immediate qualification of the table also keeps the outcome's scope close to the finding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The scores were:",
+              "These scores describe responses to that single question, not pupils’ general understanding of volume."
+            ],
+            "B": [
+              "The scoring rule awarded one point for stating that the amount of water was unchanged and one for explaining that vessel shape changed the water level.",
+              "These scores describe responses to one question, rather than pupils’ general understanding of volume."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both preserve the evidence without material errors. B better meets the decisive priority of making the reasoning readable in order: it establishes the analysed sample and scoring criteria before the table, then states the association and its narrow scope together.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The scores were:",
+              "The analysis included only returned worksheets."
+            ],
+            "B": [
+              "The scoring rule awarded one point for stating that the amount of water was unchanged and one for explaining that vessel shape changed the water level.",
+              "The layout with diagrams beside the questions was associated with a somewhat larger share of fully credited answers in these classes. These scores describe responses to one question, rather than pupils’ general understanding of volume."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "1ac75169d84abb4951fcde6020b3192bcf624386d8a0df137db072f5bfca7356",
+    "prompt_sha256": "1c3ecefcafd2c2fc2580bea60344e5b4da6a5e8ee56bbc8192649b0470576711",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "b5f1eb4cca6acc016ef6b631e1f44651935b9ee853e295c4029b3a62efda8ecb",
+      "v9-restored-dev": "d2f5421f55224aa3b394635deb49ca1845efeeec44db60cca5f84ea51845a646"
+    }
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a policy argument without a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the rule and fault exception, reporting fields and counts, underlying readings, inclusion of failures without readings, shared explanations, and limitations.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [
+              "A completed run with an unusual result is retained unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all substantive requirements and qualifications. In context, recording a reason for every run refers to each excluded run in the proposed table.",
+          "quotes": {
+            "source": [
+              "The report template should show excluded runs in a separate table with the reason each was excluded."
+            ],
+            "A": [],
+            "B": [
+              "The table should list each excluded run’s identifier, completion status, reason for exclusion, and whether a usable reading exists."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both keep the proposal separate from the existing rule, preserve attempted-versus-retained accounting, and acknowledge that inspection does not guarantee justified or honest decisions.",
+          "quotes": {
+            "source": [
+              "A fuller table cannot guarantee honest recording or repair an ambiguous rule."
+            ],
+            "A": [
+              "Fuller reporting cannot guarantee honest records or resolve an ambiguous rule; it can make the documented decisions easier to examine."
+            ],
+            "B": [
+              "The table would make decisions available for inspection, but it cannot guarantee honest recording or resolve an ambiguous rule."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable and appropriately conversational for a methods meeting. Their explanations of incomplete runs are direct and accessible.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The table should include excluded runs even when they produced no usable reading."
+            ],
+            "B": [
+              "A table containing only excluded numeric values would miss those failures and could make a difficult batch look cleaner than it was."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B explains the current summary's limitation before presenting the detailed table. Its later paragraphs then address missing readings, misuse, and workload in turn. A's opening presents the complete specification before developing its necessity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The summary would show the mean, the number of runs attempted, and the number retained."
+            ],
+            "B": [
+              "The final summary currently lists only the runs used to calculate the reported mean."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both preserve the measured register and unresolved tradeoff. B better fits the author's preference for grounding a construction in the problem first, then explaining the purpose of its details.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A separate exclusions table would account for the difference, listing each excluded run’s identifier, completion status, reason for exclusion, and whether a usable reading exists."
+            ],
+            "B": [
+              "Recording whether a usable reading exists also ensures that failures with no numeric result appear in the report."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no mathematical proof to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both are faithful and usable. A makes the full proposal immediately available, but B better develops why it is needed before specifying it, while clearly separating the existing rule from examples and retaining the unresolved reporting tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These examples illustrate the existing rule; the proposed reporting policy would show how that rule was applied."
+            ],
+            "B": [
+              "The proposed table would let readers inspect how this distinction was applied."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "1ee1c392e323f0242d0acf233c9bac712e1466d916880daf6b2d257ff0e58eb5",
+    "prompt_sha256": "d17ae043a66eb62cefc4e9288142c725aefeea96ffb623b66647f5f30b8e8449",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "2a5cef85851f6d4fd7552b459ca77c8291687749a703aec846e1deee4f80687f",
+      "v9-restored-dev": "ed35a1169b12dc77842ff1654727c8504e38be3f7a8eabcce551a5870ddbc2a0"
+    }
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an explanatory policy revision, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the existing exclusion rule, proposed reporting requirements, raw-record access, runs without readings, shared explanations, and unresolved risks and burden.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [
+              "Under that rule, controller failures are excluded, while unusual completed results are retained unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the same rule, table fields, counts, raw-record access, and individual accounting. It acknowledges possible misuse without claiming labeling eliminates it, and preserves reviewer judgment and reporting costs.",
+          "quotes": {
+            "source": [
+              "There is a concern that showing failed runs will invite readers to calculate a new mean from everything in sight. It might."
+            ],
+            "A": [],
+            "B": [
+              "Showing excluded runs may invite readers to calculate a new mean from everything listed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all substantive requirements. A explicitly says the risk remains; B acknowledges that risk and never claims the proposed safeguards eliminate it.",
+          "quotes": {
+            "source": [
+              "The summary should report the number attempted and the number retained beside the mean, with the exclusions table accounting for the difference."
+            ],
+            "A": [
+              "I propose reporting the number of runs attempted and the number retained beside the mean, with the exclusions table accounting for the difference."
+            ],
+            "B": [
+              "The summary should also report the number of runs attempted and retained beside the mean, with the table accounting for the difference."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use clear, idiomatic technical prose and concrete explanations. B's consolidation does not establish a separate sentence-level advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Including every raw reading in the table is unnecessary for documenting the decisions and could make them harder to follow."
+            ],
+            "B": [
+              "We do not need to include every raw reading to make the decisions inspectable, and doing so could obscure them."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both establish the reporting problem first. B then keeps fields, counts, missing readings, and the stopped-run distinction together, and explains raw-reading access alongside the misuse objection. A separates and revisits those related decisions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Recording whether a usable reading exists also ensures that failures with no numeric result appear in the report."
+            ],
+            "B": [
+              "This would include runs with no usable reading, which a table of excluded numeric values would miss."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better connects each reporting choice to its reason without removing useful explanation. Its accounting paragraph places the two possible distortions together, matching the author's preference for a developed argument rather than separated claims.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Stopped runs should nevertheless remain distinct from measured outcomes."
+            ],
+            "B": [
+              "Omitting those failures could make a difficult batch look cleaner than it was, while treating stopped runs as measured outcomes would create a different distortion."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. A is complete and explicit about remaining risks, but B better meets the user's priority of connected reasoning: counts and inclusion are explained together, raw readings are addressed with the misuse objection, and the reporting compromise retains its cost.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The remaining tradeoff is between making exclusions easier to inspect and the added reporting work and risk of misinterpretation."
+            ],
+            "B": [
+              "The proposal leaves a tradeoff between making exclusion decisions easier to inspect and adding reporting work, especially when one fault affects several runs."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "1ee1c392e323f0242d0acf233c9bac712e1466d916880daf6b2d257ff0e58eb5",
+    "prompt_sha256": "d17ae043a66eb62cefc4e9288142c725aefeea96ffb623b66647f5f30b8e8449",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "d301f631b55630140abfb37108930645324e9925cef5fcf65bec188167f741a9",
+      "v9-restored-dev": "ed35a1169b12dc77842ff1654727c8504e38be3f7a8eabcce551a5870ddbc2a0"
+    }
+  },
+  {
+    "case": "large-dev-b-02",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a survey invitation; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the assigned date, unusual and zero-trip days, estimation limits, household questions, privacy limits, voluntary participation, and reminder policy. The editorial note affects print readiness, not factual fidelity.",
+          "quotes": {
+            "source": [
+              "Please describe that date even if it was unusual for you",
+              "Until then, the responses are not anonymous."
+            ],
+            "A": [
+              "Please describe that date even if it was unusual for you.",
+              "Until then, responses are not anonymous."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the substantive instructions, protections, and limits. Its editorial note assigns receipt as the reference point for the relative date, which the source leaves ambiguous; that uncertainty does not establish a material change to the invitation's schedule.",
+          "quotes": {
+            "source": [
+              "which is scheduled for the end of the following month.",
+              "We cannot remove a response after the address list has been deleted"
+            ],
+            "A": [],
+            "B": [
+              "\"the end of the following month\" is relative to when the reader receives the letter.",
+              "After the list is deleted, we cannot remove a response."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the important distinctions and promises, including estimating departure times without inventing trips, accepting incomplete returns, and losing the ability to remove responses after deletion.",
+          "quotes": {
+            "source": [
+              "If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ],
+            "A": [
+              "If you cannot remember whether a trip happened at all, leave that part blank rather than entering a likely trip.",
+              "an incomplete form stops reminders just as a complete one does."
+            ],
+            "B": [
+              "Please don't fill in a likely trip.",
+              "An incomplete form stops reminders just as a complete one does."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use direct, accessible language suited to residents. A reads as a conversational letter; B's instructions remain idiomatic and usable as a checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The survey is about trips, but a day with no trips is useful to us too."
+            ],
+            "B": [
+              "Use the date on the enclosed card."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B keeps the consequences of deleting the address list beside the explanation of linkage and deletion. A moves the removal limit into a separate choices section, making the privacy explanation somewhat less continuous.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Your choices**",
+              "We cannot remove a response after the address list has been deleted"
+            ],
+            "B": [
+              "**How we handle your information**",
+              "After the list is deleted, we cannot remove a response."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the preference for connected prose: its paired memory instructions explain the distinction in one paragraph. B distributes that explanation across separate bold-led items, though its format remains appropriate for a notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you cannot remember when a trip began, an estimate is welcome. Please mark estimates in the box provided. If you cannot remember whether a trip happened at all, leave that part blank rather than entering a likely trip."
+            ],
+            "B": [
+              "- **Estimates are welcome.**",
+              "- **If you can't remember whether a trip happened,**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both give residents usable instructions and a welcoming invitation. A offers more connected prose; B makes the privacy consequences easier to follow together. Both append a production note that would need removal before printing, so neither has a decisive advantage as the completed artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We hope you will help, even if your household stayed home all day.",
+              "Note for the print version:"
+            ],
+            "B": [
+              "We hope you will help, including if the whole story of your day is that you stayed put.",
+              "Note for the survey team:"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "6e393e00fc08e52abd7e6c0b5be5791c3e61aa2e4105c3c00cfd517197d4fc8f",
+    "prompt_sha256": "358e20c0d573fe2e51a02c73eee978b516154120a3d5cd6f8b0c73b146a5d0dc",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "9c8ae9ee198069287a476409ea16d37cde6577eb02e599b22f4a7674ca659bcc",
+      "v9-restored-dev": "38b7f2723768aff0194368301675aba0581835ce014669f334fbd48630d2c281"
+    }
+  },
+  {
+    "case": "large-dev-b-02",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a survey invitation; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the survey instructions, household details, voluntary participation, reminder policy, publication scope, and privacy limits. Explaining the assigned date as preventing respondent selection is supported by the source's distinction.",
+          "quotes": {
+            "source": [
+              "ordinary here means a day from everyday life rather than a day you choose to represent it.",
+              "Until then, the responses are not anonymous."
+            ],
+            "A": [
+              "We assign the date so that the day comes from everyday life and is not one you choose to represent it.",
+              "Until then, your responses are not anonymous."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all substantive promises and limits, including zero-trip and unusual days, the distinction between estimates and uncertain trips, and the consequences of deleting the address list. The print note is an artifact-scope issue rather than a changed survey promise.",
+          "quotes": {
+            "source": [
+              "If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.",
+              "We cannot remove a response after the address list has been deleted"
+            ],
+            "A": [],
+            "B": [
+              "If you cannot remember whether a trip happened at all, leave that part blank rather than entering a likely trip.",
+              "We cannot remove a response after the address list has been deleted"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the assigned date, participation choices, reminder cessation, code linkage, deletion schedule, and limits on anonymity and removal. Neither adds an assurance unsupported by the source.",
+          "quotes": {
+            "source": [
+              "Skipping a question is also allowed, and returning an incomplete form will stop reminders just as a complete form will.",
+              "The team receiving completed forms can see that code."
+            ],
+            "A": [
+              "You may skip any question. An incomplete form stops reminders just as a complete one does.",
+              "The team that receives completed forms can see this code."
+            ],
+            "B": [
+              "You may skip any question, and an incomplete form stops reminders just as a complete one does.",
+              "The team that receives completed forms can see this code."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable, but B explains the intended meaning of ordinary more naturally. A's claim that assigning a date makes the day come from everyday life is an awkward causal formulation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We assign the date so that the day comes from everyday life"
+            ],
+            "B": [
+              "By an ordinary day we mean a day from everyday life, not a day you choose to represent it."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from inclusion to the assigned day, completion instructions, information handling, and participation choices. Each places the removal limit under participation choices, where it remains understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## How your answers are handled",
+              "## Taking part"
+            ],
+            "B": [
+              "**The code on your invitation**",
+              "**Your choices**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Both retain conversational technical explanations. A also preserves the source's light closing about the day's travel story, maintaining the invitation's personality and attention to people who stay home.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We hope you will help, including if your day's whole travel story is that you stayed put."
+            ],
+            "B": [
+              "We hope you will help, even if your household stayed home all day."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better satisfies the request for a completed printed invitation: it ends with the welcoming invitation and preserves the source's light closing. B appends editorial advice requiring another production decision and removal before printing. That artifact-readiness advantage outweighs A's locally awkward explanation of the assigned date.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We hope you will help, including if your day's whole travel story is that you stayed put."
+            ],
+            "B": [
+              "Note for the print version:",
+              "Consider replacing it with the calendar month, if the schedule allows."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "6e393e00fc08e52abd7e6c0b5be5791c3e61aa2e4105c3c00cfd517197d4fc8f",
+    "prompt_sha256": "358e20c0d573fe2e51a02c73eee978b516154120a3d5cd6f8b0c73b146a5d0dc",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "e504589d045122e24eb9b055cc31f4a7906bdbce1008fb589668c4a05e26e1c9",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "db968d5114cfab923ee4cb483d0fe6fb484d15363cabe0ae2c7f635ae41a6831",
+      "v9-restored-dev": "38b7f2723768aff0194368301675aba0581835ce014669f334fbd48630d2c281"
+    }
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves every count and percentage, the budget stopping rule, nonrandom inclusion, common question and month, and absence of weights or imputation. It retains both population and mode limitations.",
+          "quotes": {
+            "source": [
+              "reaching a household and obtaining agreement both determined who entered it.",
+              "No weights or imputed responses were used."
+            ],
+            "A": [
+              "inclusion depended on both reaching a household and obtaining its agreement.",
+              "no weights or imputed responses were used."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the study's numerical and methodological details. The lower combined percentage is explicitly a respondent-pool result, and neither nonresponse correction nor a mode effect is claimed.",
+          "quotes": {
+            "source": [
+              "The change from 70 to 65.3 percent is a change in the observed respondent pool.",
+              "Nor does it isolate a telephone-mode effect from a difference in the people reached."
+            ],
+            "A": [],
+            "B": [
+              "The combined percentage still describes responding households.",
+              "We therefore cannot separate differences associated with mode from differences in the people reached."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the numbers, denominator distinctions, selection mechanism, and unresolved questions. A's different placement of the mode limitation affects organization, not meaning.",
+          "quotes": {
+            "source": [
+              "It cannot by itself tell us the prevalence among all 600 invitees, since 150 households still supplied no response."
+            ],
+            "A": [
+              "The follow-up does not establish library-use prevalence among all 600 invitees. The remaining 150 households supplied no response"
+            ],
+            "B": [
+              "Another 150 households supplied no response",
+              "It does not establish the percentage using libraries among all invited households."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use clear explanatory sentences suited to readers who understand percentages. Neither's modest differences in length or terminology create a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The decline from 70 to 65.3 percent shows how the descriptive result changed when more households answered."
+            ],
+            "B": [
+              "The follow-up therefore broadened the group we observed and lowered the percentage reporting library use from 70 to 65.3 percent."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B explains the observed group difference and its mode limitation together, then turns to remaining nonresponse. A interrupts the population-uncertainty discussion with the separate mode question before returning to correction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The remaining 150 households supplied no response, and we do not know whether their library use resembles that of either responding group. Although both stages used the same question and reference month, mode was not experimentally assigned."
+            ],
+            "B": [
+              "It shows that the initial respondents and the households reached in the follow-up differed in their reports. Although both stages used the same question and reference month, households were not experimentally assigned to questionnaire or telephone modes."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the author's preference for keeping qualifications beside the claims they constrain. Its paragraph on remaining households then develops one connected explanation of why correction is unestablished.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up broadened the observed group, but it did not demonstrate that nonresponse had been statistically corrected."
+            ],
+            "B": [
+              "Another 150 households supplied no response, and we do not know whether their library use resembles that of either responding group. The follow-up added information about some initial nonrespondents, but claiming that it corrected the remaining nonresponse would require assumptions we did not evaluate."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets the decisive preference for reasoning in order: it finishes explaining the observed difference before addressing unobserved households and correction. A makes readers move between these two distinct limitations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up does not establish library-use prevalence among all 600 invitees.",
+              "The difference between stages therefore cannot be separated into an effect of telephone interviewing and a difference in the households reached."
+            ],
+            "B": [
+              "We therefore cannot separate differences associated with mode from differences in the people reached.",
+              "The combined percentage still describes responding households."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "76e7c29e66c365a6b6137de41e4c56e7c39d7f80ad0c000bbdfd676946959908",
+    "prompt_sha256": "02461bcac8cd2d050e985f8502925ad450348353c7772a3150c40a0eed051164",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "197f07e65ac1f1ce17ea1094be0613136d9d7d43be00feadfea44796a23d1509",
+      "v9-restored-dev": "ab6daf0533f5b66a74541b0cd45335cab622e35b4e0e9bebe4c84396676ee57f"
+    }
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the counts, correct percentage denominators, selection and stopping conditions, common question and month, mode uncertainty, and lack of weighting or imputation. Its reporting recommendation remains within the source's scope.",
+          "quotes": {
+            "source": [
+              "The report should therefore retain both stages rather than replacing the first percentage with a supposedly final population estimate."
+            ],
+            "A": [
+              "The report should retain the results from both stages and present the combined 65.3 percent alongside this uncertainty, rather than replacing the initial percentage with a final estimate for all 600 invitees."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all study details and limitations. Its final description of the added 90 responses and their lower reported use follows directly from the source counts.",
+          "quotes": {
+            "source": [
+              "Forty-two of these 90 households reported library use in the previous month, approximately 46.7 percent.",
+              "That is 70 percent of initial respondents"
+            ],
+            "A": [],
+            "B": [
+              "responses from 90 households absent from the initial calculation, whose reported library use was lower than that of the initial respondents."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both accurately preserve the descriptive contribution, all denominators, and the limits on population and causal interpretation.",
+          "quotes": {
+            "source": [
+              "Nor does it isolate a telephone-mode effect from a difference in the people reached."
+            ],
+            "A": [
+              "We therefore cannot separate differences associated with mode from differences in the people reached."
+            ],
+            "B": [
+              "We therefore cannot separate a possible effect of answering by telephone from differences in the households reached."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable and appropriately conversational. B's more specific ending improves emphasis rather than establishing a broad difference in sentence-level fluency.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The combined percentage still describes responding households."
+            ],
+            "B": [
+              "The follow-up broadened the group for which we have responses"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both order the study stages and limitations coherently. B's conclusion moves from reporting scope to the concrete information gained, whereas A closes by repeating the population limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up shows how much the observed result changed when another group answered. It does not establish the percentage using libraries among all invited households."
+            ],
+            "B": [
+              "Alongside the uncertainty about the remaining households, it should make clear what the follow-up added: responses from 90 households absent from the initial calculation, whose reported library use was lower than that of the initial respondents."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more fully respects the preference to preserve the concrete contribution without repeated defensive commentary. Its ending names what was learned instead of restating a limitation already explained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does not establish the percentage using libraries among all invited households."
+            ],
+            "B": [
+              "responses from 90 households absent from the initial calculation, whose reported library use was lower than that of the initial respondents."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material error. B better satisfies the user's central balance: explain uncertainty while keeping the follow-up's useful information visible. Its final sentence explicitly identifies the added households and their lower reported use; A ends with another population warning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up shows how much the observed result changed when another group answered. It does not establish the percentage using libraries among all invited households."
+            ],
+            "B": [
+              "Alongside the uncertainty about the remaining households, it should make clear what the follow-up added: responses from 90 households absent from the initial calculation, whose reported library use was lower than that of the initial respondents."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "76e7c29e66c365a6b6137de41e4c56e7c39d7f80ad0c000bbdfd676946959908",
+    "prompt_sha256": "02461bcac8cd2d050e985f8502925ad450348353c7772a3150c40a0eed051164",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "40c9dd6abd82c330498c8c1585ac4d5f402795f29d760b9cf4767d22562ae65e",
+      "v9-restored-dev": "ab6daf0533f5b66a74541b0cd45335cab622e35b4e0e9bebe4c84396676ee57f"
+    }
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the counts, denominators, stopping rule, selection mechanism, mode limitation, and distinction between broadening observations and correcting nonresponse.",
+          "quotes": {
+            "source": [
+              "a claim that the remaining nonresponse has been corrected would require assumptions not evaluated here."
+            ],
+            "A": [
+              "saying the remaining nonresponse has been corrected would require assumptions that we have not evaluated."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the study details and qualifications, including the remaining nonrespondents and the inability to distinguish mode effects from respondent differences.",
+          "quotes": {
+            "source": [
+              "Nor does it isolate a telephone-mode effect from a difference in the people reached."
+            ],
+            "A": [],
+            "B": [
+              "It also does not separate an effect of telephone mode from a difference between the people reached."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the correct percentages and populations, explain what the additional responses establish, and preserve the limits on population inference. A's expanded explanation adds no material change.",
+          "quotes": {
+            "source": [
+              "294 reports of library use among 450 responding households, or approximately 65.3 percent."
+            ],
+            "A": [
+              "294 reports of library use among 450 responding households, about 65.3 percent."
+            ],
+            "B": [
+              "294 reports of library use among 450 responding households, approximately 65.3 percent."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic explanations suitable for readers familiar with percentages. A's more segmented presentation does not itself make its sentences less natural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Which households entered the group depended on whether interviewers could reach them and whether they agreed to take part."
+            ],
+            "B": [
+              "These 90 households are not a simple random sample of the 240, because both reaching a household and obtaining its agreement determined who was included."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the changed respondent pool directly to its evidential limits, then explains adjustment and the reporting recommendation. A remains coherent but revisits those limits across separate sections and after the table.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**What the follow-up does not settle.**",
+              "**Not an adjustment for nonresponse.**"
+            ],
+            "B": [
+              "The drop from 70 to 65.3 percent reflects a change in who is observed",
+              "We considered describing the follow-up as an adjustment for nonresponse."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected technical prose with substantive qualifications stated once in context. A's table is usable, but its additional warning and repeated concluding guidance add packaging without developing the argument further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the combined figure should not be read as a corrected estimate.",
+              "The combined figure should be accompanied by a plain statement of that uncertainty."
+            ],
+            "B": [
+              "In a statistical sense, though, saying that the remaining nonresponse has been corrected would require assumptions we have not evaluated.",
+              "The follow-up is useful because it shows how far the descriptive result moved once another group answered."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better fulfills the user's decisive preference for a connected account: it explains the follow-up's contribution and limits together, then motivates the reporting recommendation. A supplies the same information with more repeated caution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Recommendation for reporting.** The report should keep both stages visible",
+              "The statement should not obscure what the follow-up showed"
+            ],
+            "B": [
+              "The report should therefore present both stages instead of replacing the first percentage with a supposedly final estimate for the population.",
+              "The follow-up is useful because it shows how far the descriptive result moved once another group answered."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "f0fc76e9e272dbebc63ac934057768ad2b011e528418212e2e14c560f393c61a",
+    "prompt_sha256": "c052c7a1106ecd6d749ec76dd056ddd5067a153aaa32da0bc39f6b56c5a23cc7",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "5ebd2fe2a006fd11042d52843e92e924ef56148934eefc167ddcf8dc939bdb61",
+      "v9-restored-dev": "d7256764d52e7755cde9e0215ee1a914970881f64a2b712fc8515cedb25e45a3"
+    }
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the study details, inferential qualifications, and recommendation to retain both stages without claiming that recommendation has already been implemented.",
+          "quotes": {
+            "source": [
+              "The report should therefore retain both stages"
+            ],
+            "A": [
+              "The report should therefore present both stages"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Changes a recommendation about reporting into an assertion that the report already follows it. This permits an unsupported inference about the report's actual contents, although the study numbers and statistical limitations remain intact.",
+          "quotes": {
+            "source": [
+              "The report should therefore retain both stages rather than replacing the first percentage with a supposedly final population estimate."
+            ],
+            "A": [],
+            "B": [
+              "The report therefore keeps both stages instead of replacing the first percentage with a final population estimate."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the numerical results and methodological limits. A also preserves the source's advisory modality; B presents the proposed reporting practice as an established fact.",
+          "quotes": {
+            "source": [
+              "The report should therefore retain both stages"
+            ],
+            "A": [
+              "The report should therefore present both stages"
+            ],
+            "B": [
+              "The report therefore keeps both stages"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and accessible. B's shorter sentences and A's slightly fuller transitions are comparably readable for the intended audience.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The drop from 70 to 65.3 percent reflects a change in who is observed, and it shows that the initial respondents and the reached follow-up respondents differed in what they reported."
+            ],
+            "B": [
+              "The change from 70 to 65.3 percent comes from a change in which households are observed. It shows that the initial respondents and the reached follow-up respondents differed in their reports."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow the same coherent sequence from the initial misinterpretation through follow-up selection, combined results, adjustment, and reporting. Each explains why additional observations help without settling population prevalence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In a descriptive sense, it does broaden the observed group by adding households that were absent from the first calculation."
+            ],
+            "B": [
+              "It does broaden the observed group by adding households that were absent from the first calculation."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain useful explanation in connected prose without repetitive defensive sections. A keeps the opening framing and explicitly names the descriptive/statistical distinction; B's removal of that packaging leaves the substantive reasoning understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In a statistical sense, though, saying that the remaining nonresponse has been corrected would require assumptions we have not evaluated."
+            ],
+            "B": [
+              "But saying that the remaining nonresponse has been corrected would require assumptions we have not evaluated."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "The two accounts comparably satisfy the user's preference for readable reasoning and appropriately scoped statistical claims. A wins on fidelity because B's otherwise effective revision introduces a minor unsupported assertion that the reporting recommendation has already been adopted.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The report should therefore present both stages instead of replacing the first percentage with a supposedly final estimate for the population."
+            ],
+            "B": [
+              "The report therefore keeps both stages instead of replacing the first percentage with a final population estimate."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "f0fc76e9e272dbebc63ac934057768ad2b011e528418212e2e14c560f393c61a",
+    "prompt_sha256": "c052c7a1106ecd6d749ec76dd056ddd5067a153aaa32da0bc39f6b56c5a23cc7",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "5f2653b4395d5fd0568ab4d37f66347fdc22da0ded31fb597daab0631d2dbfc3",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "da8b0c5170eb9ddb5e3997f69dcca9a7303ef77a302acc379b44e2a1009d6e43",
+      "v9-restored-dev": "d7256764d52e7755cde9e0215ee1a914970881f64a2b712fc8515cedb25e45a3"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task explicitly asks for a revised mathematical proof with conditional-expectation steps explained.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves all source assumptions and conclusions, correctly uses conditional mean zero, averages over unordered pairs, and covers degenerate cases. Its shorter identity derivation is valid.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z)=\\frac{N-2}{2(N-1)}\\sigma^2.",
+              "This is an orthogonality argument; it does not require independence of \\(Y\\) and \\(Z\\)."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the fixed population, both uniform choices, variance normalization, unbiasedness, exact factor, and boundary cases. Its expanded calculations introduce no unsupported assumption.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [],
+            "B": [
+              "\\operatorname{Var}(Z)=\\frac{N-2}{2(N-1)}\\sigma^2.",
+              "The argument does not divide by \\(\\sigma^2\\)."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the source's statistical interpretation and all mathematical conclusions. Their differences are in explanation and ordering.",
+          "quotes": {
+            "source": [
+              "This concerns repeated sampling from the fixed population, not uncertainty in the responses themselves."
+            ],
+            "A": [
+              "All expectations and variances below refer to repeated sampling from this fixed population."
+            ],
+            "B": [
+              "All expectations and variances refer to repeated sampling from this fixed population."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose and connect conditioning to the calculation without awkward or ornamental language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because \\(Z-\\mu\\) is determined by \\(P\\), it can be taken outside the conditional expectation:"
+            ],
+            "B": [
+              "The mixed term has expectation zero. Indeed, \\(Z-\\mu\\) is determined by \\(P\\), and"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A establishes marginal moments first and postpones the residual calculation until needed. B announces the variance decomposition before evaluating its cross term, but computes the conditional residual early. Both remain coherent, with different local advantages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Thus the two terms in \\(Y-\\mu=(Y-Z)+(Z-\\mu)\\) have zero expected cross-product.",
+              "To evaluate the remaining expectation, observe that,"
+            ],
+            "B": [
+              "To relate the two variances, write",
+              "It remains to evaluate \\(\\mathbb E[(Y-Z)^2]\\)."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the explicit preference for laying out operations and explaining why they follow. Its coefficient count and explanation of the centered-sum equalities replace A's invocation of a compressed identity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The finite-population identity"
+            ],
+            "B": [
+              "To evaluate the sum, expand each squared difference.",
+              "The second equality uses the expansion of \\((\\sum_i y_i)^2\\), and the next two use \\(\\sum_i y_i=N\\mu\\)."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both proofs are correct and justify the conditional cross term without independence. B additionally displays the full square expansion and develops the pairwise identity through counted square terms and an intermediate centered expression; A leaves those steps compressed.",
+          "quotes": {
+            "source": [
+              "The source argument is valid but compresses several distinct steps."
+            ],
+            "A": [
+              "Expanding the square and using \\(\\mathbb E[Z]=\\mu\\) yields",
+              "The finite-population identity"
+            ],
+            "B": [
+              "Each \\(y_i^2\\) appears in \\(N-1\\) pairs, so",
+              "N\\left(\\sum_{i=1}^N y_i^2-N\\mu^2\\right)"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets the central request to unpack the compressed proof: its explanation of pair multiplicities and displayed intermediate algebra gives the reader the missing derivation while retaining the exact result and assumptions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The finite-population identity"
+            ],
+            "B": [
+              "Each \\(y_i^2\\) appears in \\(N-1\\) pairs, so",
+              "The second equality uses the expansion of \\((\\sum_i y_i)^2\\), and the next two use \\(\\sum_i y_i=N\\mu\\)."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "6157f168f8f9f2f4132c5bc6b39b6418e650151653d9d105ef38a2132c448b03",
+    "prompt_sha256": "b9aab04804aef15dbf868247e828d1ad87bcd34b5b10912d474ad91e496d00f0",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "898e2cc9259fad50dd29795b08d9e846d5c71d6aadfa66e1c5d9662fb66e553d",
+      "v9-restored-dev": "d1fd15ebd92ee1ca079c5522b245fa8fdafe58769428c3325c99d06bc28e5dc2"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The artifact is a finite-population proof whose conditional reasoning and intermediate calculations must be assessed.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the estimator, sampling assumptions, fixed-population normalization, exact variance, and boundary cases. Its conditional orthogonality and expanded identity are correct.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z)=\\frac{N-2}{2(N-1)}\\sigma^2.",
+              "The argument does not divide by \\(\\sigma^2\\)."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all substantive source claims and assumptions. Its direct counting establishes marginal uniformity, its conditioning eliminates the mixed term, and its variance calculation remains valid at zero variance.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [],
+            "B": [
+              "\\operatorname{Var}(Z)=\\frac{N-2}{2(N-1)}\\sigma^2.",
+              "The mixed term vanishes by conditional expectation. This does not require \\(Y\\) and \\(Z\\) to be independent."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the two-stage uniform design, population variance normalized by N, unbiasedness, exact variance factor, fixed-response interpretation, and degeneracies.",
+          "quotes": {
+            "source": [
+              "This concerns repeated sampling from the fixed population, not uncertainty in the responses themselves."
+            ],
+            "A": [
+              "All expectations and variances refer to repeated sampling from this fixed population."
+            ],
+            "B": [
+              "All expectations and variances refer to repeated sampling from the fixed population."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as technical appendix prose. B's direct counting explanation and A's explanatory algebra are equally idiomatic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate the sum, expand each squared difference."
+            ],
+            "B": [
+              "Each index \\(i\\) belongs to \\(N-1\\) pairs, and its conditional probability of being selected from any such pair is \\(1/2\\)."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B develops the marginal moments, conditional mean, and variance decomposition in order, then introduces the residual calculation when its role is established. A computes that residual near the beginning and returns to it after the decomposition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Also, conditional on this pair,",
+              "Averaging its conditional value over the uniformly chosen pairs gives"
+            ],
+            "B": [
+              "To relate the variances, write",
+              "It remains to compute \\(\\mathbb E[(Y-Z)^2]\\)."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more consistently introduces calculations with their immediate purpose, matching the author's preference for reasoning readable in order. It retains the substantive pair-counting explanation and displayed derivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Also, conditional on this pair,"
+            ],
+            "B": [
+              "It remains to compute \\(\\mathbb E[(Y-Z)^2]\\).",
+              "Here each \\(y_i^2\\) occurs in \\(N-1\\) pairs, and the second equality uses the expansion of \\((\\sum_i y_i)^2\\)."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both fully justify marginal uniformity, conditional orthogonality, the square expansion, pair averaging, and degenerate cases. A includes an additional centered-sum intermediate; B still provides the essential pairwise expansion and multiplicity explanation.",
+          "quotes": {
+            "source": [
+              "Every index belongs to N-1 pairs, so J is uniform on all N indices.",
+              "For the remaining term, the finite identity is"
+            ],
+            "A": [
+              "Each \\(y_i^2\\) appears in \\(N-1\\) pairs, so",
+              "The second equality uses the expansion of \\((\\sum_i y_i)^2\\), and the next two use \\(\\sum_i y_i=N\\mu\\)."
+            ],
+            "B": [
+              "its conditional probability of being selected from any such pair is \\(1/2\\).",
+              "Here each \\(y_i^2\\) occurs in \\(N-1\\) pairs, and the second equality uses the expansion of \\((\\sum_i y_i)^2\\)."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both sufficiently unpack the proof. B better satisfies the user's priority of understanding why each calculation belongs: it places the conditional residual calculation immediately after the decomposition identifies it as the remaining quantity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Also, conditional on this pair,",
+              "It remains to evaluate \\(\\mathbb E[(Y-Z)^2]\\)."
+            ],
+            "B": [
+              "It remains to compute \\(\\mathbb E[(Y-Z)^2]\\). Given \\(P=\\{i,j\\}\\),"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "tie",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "6157f168f8f9f2f4132c5bc6b39b6418e650151653d9d105ef38a2132c448b03",
+    "prompt_sha256": "b9aab04804aef15dbf868247e828d1ad87bcd34b5b10912d474ad91e496d00f0",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "62ab59f249d816a165ce844dc5e039027044b0039f396e827213a112a3a779ff",
+      "v9-restored-dev": "d1fd15ebd92ee1ca079c5522b245fa8fdafe58769428c3325c99d06bc28e5dc2"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded finite-population proof using conditional expectation and a variance decomposition.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A changes possible dependence into categorical dependence. For the permitted case N = 2, Z is constant and therefore independent of Y. This false side claim does not invalidate the variance derivation.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent.",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "Y and Z are dependent, since Z is determined by P and Y is drawn from within P."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the fixed population, two-stage uniform sampling, variance normalization, exact formula, and degenerate cases. It correctly avoids requiring independence.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [],
+            "B": [
+              "\\operatorname{Var}(Z)=\\frac{N-2}{2(N-1)}\\,\\sigma^2 .",
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the estimator, sampling design, and exact moments. B also preserves the source's qualification about independence; A incorrectly excludes independence in allowed degenerate cases.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "Y and Z are dependent, since Z is determined by P and Y is drawn from within P."
+            ],
+            "B": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose that explains the operations directly. Their sentence-level differences do not establish a substantive naturalness advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Fix P = {i, j}. Given P, Y equals yᵢ or yⱼ with probability ½ each."
+            ],
+            "B": [
+              "Both values of $Y$ lie at distance $|y_i-y_j|/2$ from $Z$, so"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both connect the sampling identities to unbiasedness, eliminate the cross term, and then evaluate the residual variance. A supplies an opening comparison; B explicitly connects the finite identity back to the conditional calculation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proof compares Y, a single draw, with Z, the mean of the pair containing it.",
+              "Substituting (2) into (1):"
+            ],
+            "B": [
+              "First we need a finite identity for the sum of squared differences.",
+              "Now average (1) over the $\\binom N2$ equally likely pairs:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better meets the author's specific request for displayed, laid-out mathematics and explanations of nontrivial transitions. A's introductory roadmap helps, but its plain-text derivation and abbreviated summation explanation are less suited to the requested appendix.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the sum, note that Σ_{i<j} = ½ Σᵢ Σⱼ, so"
+            ],
+            "B": [
+              "Summing over ordered pairs counts each unordered pair twice and gives zero for $i=j$, so",
+              "\\begin{aligned}\n\\sum_{i<j}(y_i-y_j)^2"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both main derivations correctly establish marginal uniformity, conditional centering, the pairwise identity, and the exact variance without dividing by the population variance. B gives a more explicit ordered-pair explanation and aligned calculations while avoiding A's false dependence assertion.",
+          "quotes": {
+            "source": [
+              "The source argument is valid but compresses several distinct steps.",
+              "Since Z is determined by P,"
+            ],
+            "A": [
+              "This uses only E[Y − Z | P] = 0 from Step 2, not independence of Y and Z.",
+              "For the sum, note that Σ_{i<j} = ½ Σᵢ Σⱼ, so"
+            ],
+            "B": [
+              "The cross term vanishes because $Z-\\mu$ is determined by $P$, so it can be taken outside the conditional expectation given $P$:",
+              "Summing over ordered pairs counts each unordered pair twice and gives zero for $i=j$, so"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A adds a minor false assertion of universal dependence. B also better serves the decisive exposition requirement by displaying the intermediate calculations and explaining the ordered-pair counting. A's useful opening roadmap does not outweigh those advantages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Y and Z are dependent, since Z is determined by P and Y is drawn from within P.",
+              "The proof compares Y, a single draw, with Z, the mean of the pair containing it."
+            ],
+            "B": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used.",
+              "Summing over ordered pairs counts each unordered pair twice and gives zero for $i=j$, so"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "47b960f80f94bc040a7a4ec919d27cd35799cadd1fba5cba438269514e32faef",
+    "prompt_sha256": "38fd3293623e77dbcce49b924f915c8f6ef3dc5b115195eb0b9cbd6b87ff9311",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "cd0d271d25a12c46996ecc1464bdc72270fa75eabe5d27029d1d5ef6bb62ed06",
+      "v9-restored-dev": "9d4dcbfceed374c23c88e48816ca506acaa985115cbc7cbd165f6604f37dcd50"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a mathematical proof with expanded conditional-expectation reasoning and intermediate calculations.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the sampling scheme, fixed responses, population variance normalization, exact estimator moments, and edge cases. Its conditional argument makes no independence assumption.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z)=\\frac{N-2}{2(N-1)}\\,\\sigma^2 .",
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B asserts that Y and Z are not independent for the full stated setup. This fails when N = 2 or the responses are constant, because Z is then constant. The error is an ancillary claim; the variance calculation remains valid.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent.",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [],
+            "B": [
+              "It does not assume that $Y$ and $Z$ are independent, and they are not."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the substantive sampling result and handle zero variance. A retains the source's qualified independence statement, whereas B adds an incorrect universal dependence claim.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ],
+            "B": [
+              "It does not assume that $Y$ and $Z$ are independent, and they are not."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic explanatory prose with readable mathematical transitions. Neither has a substantial sentence-level advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both values of $Y$ lie at distance $|y_i-y_j|/2$ from $Z$, so"
+            ],
+            "B": [
+              "To evaluate the sum, note that the ordered double sum counts each unordered pair twice and has zero diagonal terms:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both organize the proof around the same coherent dependencies. A derives the finite identity before averaging; B first shows the average that requires the identity. Either route makes the calculation's purpose clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "First we need a finite identity for the sum of squared differences.",
+              "Now average (1) over the $\\binom N2$ equally likely pairs:"
+            ],
+            "B": [
+              "Since $P$ is uniform over the $\\binom N2$ pairs, Step 1 gives",
+              "To evaluate the sum, note that the ordered double sum counts each unordered pair twice and has zero diagonal terms:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both fit the appendix form through displayed calculations and explanations beside the steps they justify. B expands the tower-property calculation further; A gives similarly useful detail when averaging the residual variance. Neither offers a distinctly stronger overall argument roadmap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The cross term vanishes because $Z-\\mu$ is determined by $P$, so it can be taken outside the conditional expectation given $P$:"
+            ],
+            "B": [
+              "For the cross term, $Z$ is a function of $P$, so $Z-\\mu$ can be taken outside the conditional expectation given $P$:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both provide correct, sufficiently expanded variance derivations, including conditional centering, pair counting, and degenerate cases. B's extra tower-property line is useful, but its categorical dependence assertion is mathematically false under the stated hypotheses; A avoids that error.",
+          "quotes": {
+            "source": [
+              "make the conditional-expectation reasoning understandable without adding an independence assumption.",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "This is orthogonality of $Y-Z$ and $Z-\\mu$, which follows from conditioning on $P$.",
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ],
+            "B": [
+              "where the last equality uses $\\mathbb E[Y\\mid P]=Z$ from Step 1.",
+              "It does not assume that $Y$ and $Z$ are independent, and they are not."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error, while B adds a minor false statement about dependence in allowed edge cases. Both otherwise satisfy the author's priority of explaining the conditional reasoning through displayed intermediate steps. B's additional expansion does not outweigh A's more accurate qualification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used.",
+              "Now average (1) over the $\\binom N2$ equally likely pairs:"
+            ],
+            "B": [
+              "It does not assume that $Y$ and $Z$ are independent, and they are not.",
+              "where the last equality uses $\\mathbb E[Y\\mid P]=Z$ from Step 1."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "47b960f80f94bc040a7a4ec919d27cd35799cadd1fba5cba438269514e32faef",
+    "prompt_sha256": "38fd3293623e77dbcce49b924f915c8f6ef3dc5b115195eb0b9cbd6b87ff9311",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "1f6d6d3a3d1338671ddd46e3d6d98b916b11d7db0402a7d66c792135df628d86",
+      "v9-restored-dev": "9d4dcbfceed374c23c88e48816ca506acaa985115cbc7cbd165f6604f37dcd50"
+    }
+  },
+  {
+    "case": "large-dev-b-16",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for a completed mathematical proof repairing the application of a lower bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the rectangular model, noise bound, arbitrary minimizer, and restricted lower bound. Its kernel decomposition proves the projected estimate, and both edge cases preserve the distinction between observable recovery and uniqueness.",
+          "quotes": {
+            "source": [
+              "||P(x̂-x)||_2 ≤ ε/γ."
+            ],
+            "A": [
+              "\\gamma\\|Ph\\|_2\\ \\le\\ \\|A\\,Ph\\|_2\\ =\\ \\|Ah\\|_2\\ \\le\\ \\varepsilon ."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B invokes the stated hypotheses rather than fully restating the observation model. Its subsequent use of the noise bound, normal equations, and lower bound is faithful. The decomposition and edge cases introduce no stronger recovery or uniqueness claim.",
+          "quotes": {
+            "source": [
+              "This only bounds the observable component of the estimation error."
+            ],
+            "A": [],
+            "B": [
+              "The result bounds only the observable component Ph."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both establish exactly the projected-error bound for an arbitrary minimizer. Neither applies the lower bound to unrestricted h, assumes invertibility, or claims control of the kernel component.",
+          "quotes": {
+            "source": [
+              "h has not been shown to belong to K^⊥, and its component in K can be arbitrary."
+            ],
+            "A": [
+              "The lower bound holds only on $K^\\perp$, and $h$ need not lie in $K^\\perp$."
+            ],
+            "B": [
+              "Now Ph ∈ K^⊥, so the hypothesis ‖Av‖₂ ≥ γ‖v‖₂ for v ∈ K^⊥ applies to v = Ph."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose and explain the algebra in ordinary language. Neither has a substantial idiomatic advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since $Ph\\in K^\\perp$, the assumption applies to $v=Ph$."
+            ],
+            "B": [
+              "Because (I − P)h ∈ K, we have A(I − P)h = 0, and therefore"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the normal equations to the image-error bound, explain why projection is necessary, and then apply the restricted lower bound. The reader can follow the purpose of each construction in either.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Step 3: the observation of $h$ depends only on $Ph$.**"
+            ],
+            "B": [
+              "Instead, decompose"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A presents the restriction on h as part of the finished mathematical explanation. B retains revision history about what the draft did, which conflicts with the requested integrated appendix proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The lower bound holds only on $K^\\perp$, and $h$ need not lie in $K^\\perp$. Decompose"
+            ],
+            "B": [
+              "The draft applied the lower bound to h itself, but h need not lie in K^⊥."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are valid and sufficiently explain the kernel decomposition and zero-image case. A additionally follows the explicit displaystyle preference with mathematical displays and aligned intermediate calculations; B supplies separate Unicode equation lines without mathematical display markup.",
+          "quotes": {
+            "source": [
+              "use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "\\begin{aligned}\n0 &= h^\\top A^\\top(Ah-e)\\\\\n  &= \\langle Ah,\\,Ah-e\\rangle ,\n\\end{aligned}"
+            ],
+            "B": [
+              "0 = hᵀAᵀ(Ah − e) = ⟨Ah, Ah − e⟩,"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material mathematical error. A better delivers this user's finished appendix artifact: it integrates the essential projection repair directly into the argument and presents the derivation in the explicitly requested mathematical displays. B retains draft commentary and requires formatting cleanup.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Step 3: the observation of $h$ depends only on $Ph$.**"
+            ],
+            "B": [
+              "**Step 3: the repair, passing to the observable component.**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "4063a673bcd3985d7059da3b05b9f62a18a1d3fff0bac49d917ad4d774313ff3",
+    "prompt_sha256": "66c80610d20201af76dbfe6562b76c69c2c04d95887da74f637405da95a355d2",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "ae5968a768913049fc4cc36a9209b75cd7ef2c8bbb65d2c8d0338e966f25a6cd",
+      "v9-restored-dev": "6f2de95affe3df1a1525810adc256ade18993d4f0b316f9fc33a87f38f8e9156"
+    },
+    "validation_input_sha256": "132dc1ad1b683605e968cf8ada70ca542026b5d36a2c2705712a3a056275a5cd",
+    "initial_case_quote_repairs": [
+      {
+        "kind": "optional_source_quote_removed",
+        "field": "dimensions.voice.quotes.source",
+        "index": 0,
+        "before": "Integrates the repaired step into a connected proof rather than leaving the draft's erroneous conclusion or an editorial repair instruction in the finished exposition.",
+        "after": null,
+        "reason": "Exact quote from supplied assertions, outside original source/context quote pool."
+      }
+    ],
+    "optional_source_quote_qualified": true
+  },
+  {
+    "case": "large-dev-b-16",
+    "config": "sonnet-high",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requires a substantive mathematical derivation completing a projected-error estimate.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the observation relation, noise and positivity assumptions, arbitrary minimizer, and projected conclusion. Although it leaves the matrix dimensions implicit, its domain and range remain compatible with the rectangular source model. Its repair and edge cases are valid.",
+          "quotes": {
+            "source": [
+              "suppose y = Ax+e with ||e||_2 ≤ ε, where ε ≥ 0."
+            ],
+            "A": [
+              "Suppose y = Ax + e with ‖e‖₂ ≤ ε and ε ≥ 0, and suppose that for some γ > 0"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B explicitly retains the rectangular setup and all operative assumptions. It applies the lower bound only to Ph, handles zero noise and the trivial observable subspace, and makes no unsupported full-vector recovery claim.",
+          "quotes": {
+            "source": [
+              "This only bounds the observable component of the estimation error."
+            ],
+            "A": [],
+            "B": [
+              "This bounds only the observable component of the error. Nothing is claimed about the component in $K$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the assumptions and exact bound, explain why APh equals Ah, and allow nonunique minimizers. B restates dimensions more explicitly, but A does not change the model or mathematical scope.",
+          "quotes": {
+            "source": [
+              "||P(x̂-x)||_2 ≤ ε/γ."
+            ],
+            "A": [
+              "\\|P(\\hat x - x)\\|_2 = \\|Ph\\|_2 \\le \\frac{\\varepsilon}{\\gamma},"
+            ],
+            "B": [
+              "\\|P(\\hat x-x)\\|_2=\\|Ph\\|_2\\ \\le\\ \\frac{\\varepsilon}{\\gamma}. \\qquad\\blacksquare"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readable for a technical appendix. A's conversational transitions and B's more explicit step descriptions are both appropriate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The lower bound on A applies only to vectors in K^⊥, and h need not lie there. So we split h as"
+            ],
+            "B": [
+              "The lower bound holds only on $K^\\perp$, and $h$ need not lie in $K^\\perp$. Decompose"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the obstacle before introducing the decomposition and carry the reader through the same justified chain. A groups the work into two main stages; B's finer divisions also preserve the logical connections.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since Ph ∈ K^⊥, the assumed lower bound applies to it. Combining it with (2) and (1),"
+            ],
+            "B": [
+              "Since $Ph\\in K^\\perp$, the assumption applies to $v=Ph$. Combining it with Steps 3 and 2,"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves useful explanation while avoiding repeated scope commentary. B states the kernel limitation before the claim, immediately after it, and again in its closing remark. A better matches the author's preference to remove repetition without compressing the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This bounds only the component of the error in K^⊥. The matrix A does not see the component in K, and nothing here bounds it."
+            ],
+            "B": [
+              "Nothing is claimed about the component in $K$.",
+              "The component $(I-P)\\hat x-(I-P)x$ in $K$ is not bounded, because $A$ gives no information about it."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both give correct, adequately explained derivations with displayed calculations. A's transition from multiplication by hᵀ to the norm identity is sufficiently explicit; B's additional intermediate equality is useful but does not repair a missing argument in A. Both handle division by zero and the required edge cases.",
+          "quotes": {
+            "source": [
+              "Multiplying on the left by hᵀ gives\n||Ah||_2² = ⟨Ah,e⟩ ≤ ||Ah||_2 ε."
+            ],
+            "A": [
+              "Multiplying on the left by hᵀ and using Cauchy–Schwarz,",
+              "\\|Ah\\|_2^2 &= \\langle Ah, e\\rangle"
+            ],
+            "B": [
+              "0 &= h^\\top A^\\top(Ah-e)\\\\\n  &= \\langle Ah,\\,Ah-e\\rangle ,"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are mathematically faithful and complete. A has a modest advantage for this short appendix: its two stages retain the reason for projection and every necessary calculation, while its closing remarks cover the required cases without repeating the kernel-scope explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Step 1: a bound on Ah.**",
+              "**Step 2: passing to the component in K^⊥.**"
+            ],
+            "B": [
+              "**Step 4: apply the lower bound to $Ph$.**",
+              "The proof never uses invertibility of $A$."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "tie",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "4063a673bcd3985d7059da3b05b9f62a18a1d3fff0bac49d917ad4d774313ff3",
+    "prompt_sha256": "66c80610d20201af76dbfe6562b76c69c2c04d95887da74f637405da95a355d2",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "a1f050907fd12a3a926dce6e5bae169d1005003b09f8801e539ccc40ba5f04a7",
+      "v9-restored-dev": "6f2de95affe3df1a1525810adc256ade18993d4f0b316f9fc33a87f38f8e9156"
+    },
+    "validation_input_sha256": "5c38d1dbf425ff504a547f660b2daa6752caed20d7a5cd3dbefd5de738bfbebb",
+    "initial_case_quote_repairs": [
+      {
+        "kind": "optional_source_quote_removed",
+        "field": "dimensions.voice.quotes.source",
+        "index": 0,
+        "before": "Concision removes repetition, not explanation.",
+        "after": null,
+        "reason": "Nonverbatim optional source quote; retained only in raw evidence, not accepted as a quotation."
+      }
+    ],
+    "optional_source_quote_qualified": true
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task updates an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the other paragraphs and correctly states the mandatory repeat, timing, logging, and two escalation outcomes. Retains further-check authority and all limits on operator action.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "If the repeat is within the band, no call is required by this rule."
+            ],
+            "A": [
+              "Record both readings in the shift log.",
+              "if the repeat is within the band, no call is required by this rule."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the approved paragraphs and all required operational distinctions. Repeating the logging requirement is redundant but does not change the procedure or grant additional authority.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "The lead will decide whether a further check is needed."
+            ],
+            "A": [],
+            "B": [
+              "Log both readings.",
+              "call the shift lead after logging both readings.",
+              "The lead will decide whether a further check is needed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both implement the update faithfully, preserve the first reading for trend comparison, and maintain the unchanged check, acceptance band, and authority boundaries.",
+          "quotes": {
+            "source": [
+              "a first reference-block reading outside the acceptance band must be repeated once after the probe has rested in the fixture for ten minutes."
+            ],
+            "A": [
+              "repeat the reading once after the probe has rested in the fixture for ten minutes."
+            ],
+            "B": [
+              "let the probe rest in the fixture for ten minutes, then repeat the reading once."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A pairs the alternative outcomes naturally and gives the logging instruction once. B repeats logging in consecutive instructions, making this short procedure slightly more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat is also outside the band, call the shift lead; if the repeat is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "Log both readings. If the repeat is also outside the band, call the shift lead after logging both readings."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both present the repeat, logging, and escalation branches before clarifying the unchanged routine. Both place the lead's further-check authority later than the call instruction, but the connection remains understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The ten-minute rest applies only before the repeat; the start-of-shift check and acceptance band are unchanged. The lead will decide whether a further check is needed."
+            ],
+            "B": [
+              "The ten-minute rest applies only before the repeat. The start-of-shift check and acceptance band are unchanged. The lead will decide whether a further check is needed."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better follows the author's preference for connected prose that removes repetition without losing explanation. It joins related qualifications and retains the complete procedure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The ten-minute rest applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": [
+              "Log both readings. If the repeat is also outside the band, call the shift lead after logging both readings."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A has a modest advantage for this user's stated preference: it gives the logging instruction once and connects the two possible outcomes without losing any operational qualification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Record both readings in the shift log. If the repeat is also outside the band, call the shift lead; if the repeat is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "Log both readings. If the repeat is also outside the band, call the shift lead after logging both readings."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "740587e69b936a83010d5e1e3a93b7f1dd921e3ab8e2ace70a7b6e1338442090",
+    "prompt_sha256": "34477921062383f77070bee5cea0bfdc08323c919ff397da3d057938e215471e",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "424aff0e188f7259a2fda8b2fea62e81c8078e2d959349e72684141d959a95ea",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "none": "5d2383a02922efc75a2a2168f0005c328430588234bd4cdd47946af9f748d0b9",
+      "v9-restored-dev": "df746f7b65843b8a4b9a61f5e6a9f6ed8dc9dd15014ac33e7003d088e1af5fb7"
+    }
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "sol-low",
+    "candidate": "v9-restored-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task updates an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Correctly revises only paragraph two and retains all required procedure and authority limits. The repeated logging instruction is stylistic redundancy, not a changed requirement.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "A": [
+              "Log both readings.",
+              "The ten-minute rest applies only before the repeat. The start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Correctly revises only paragraph two, preserving the approved paragraphs and all escalation, logging, and authority requirements. The routine check and band remain established in the unchanged first paragraph.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "A": [],
+            "B": [
+              "The rest period applies only before the repeat.",
+              "Record both readings in the shift log before making any required call."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the required repeat, ten-minute rest, escalation branches, logging, and first-reading chart policy. A explicitly restates unchanged conditions; B preserves them through the retained instructions and restricted rest rule.",
+          "quotes": {
+            "source": [
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "A": [
+              "The ten-minute rest applies only before the repeat. The start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": [
+              "The rest period applies only before the repeat."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B states logging and its timing in one ordinary instruction. A repeats the same logging action immediately, adding verbal friction without further clarification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Log both readings. If the repeat is also outside the band, call the shift lead after logging both readings."
+            ],
+            "B": [
+              "Record both readings in the shift log before making any required call."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B places the rest qualification immediately after the rest instruction, then proceeds through logging and escalation. A postpones that qualification until after both escalation outcomes.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat is within the band, no call is required by this rule. The ten-minute rest applies only before the repeat."
+            ],
+            "B": [
+              "then repeat the reading once. The rest period applies only before the repeat. Record both readings in the shift log before making any required call."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the author's preference for purposeful ordering and removal of repetition while preserving useful explanation. Its compactness comes from combining the logging instruction, not omitting a procedural step.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Log both readings. If the repeat is also outside the band, call the shift lead after logging both readings."
+            ],
+            "B": [
+              "Record both readings in the shift log before making any required call. If the repeat is also outside the band, call the shift lead."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B offers a modest usability advantage: it attaches the rest limitation to the relevant action and gives one complete logging instruction. This serves the user's preference for readable procedural order without broadening the edit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Log both readings. If the repeat is also outside the band, call the shift lead after logging both readings."
+            ],
+            "B": [
+              "The rest period applies only before the repeat. Record both readings in the shift log before making any required call."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "raw_sha256": "740587e69b936a83010d5e1e3a93b7f1dd921e3ab8e2ace70a7b6e1338442090",
+    "prompt_sha256": "34477921062383f77070bee5cea0bfdc08323c919ff397da3d057938e215471e",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "424aff0e188f7259a2fda8b2fea62e81c8078e2d959349e72684141d959a95ea",
+    "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+    "response_sha256": {
+      "v4": "5f9ee57832575d97baba40ca10617fb757febdb0270d0dd8cf37f06ee5ec4e62",
+      "v9-restored-dev": "df746f7b65843b8a4b9a61f5e6a9f6ed8dc9dd15014ac33e7003d088e1af5fb7"
+    }
+  }
+]

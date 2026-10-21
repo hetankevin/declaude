@@ -1,0 +1,659 @@
+{
+  "candidate": "v10-dev",
+  "configs": {
+    "sol-low": [
+      "codex",
+      "gpt-6.1-sol",
+      "low"
+    ],
+    "sonnet-high": [
+      "claude",
+      "claude-sonnet-5-5",
+      "high"
+    ]
+  },
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "jobs": [
+    {
+      "id": "large-dev-a-06--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-06",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-06--batch",
+      "stage": "judge",
+      "case": "large-dev-a-06",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-06",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-06",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-06",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-08--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-08",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-08--batch",
+      "stage": "judge",
+      "case": "large-dev-a-08",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-08",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-08",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-08",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-10--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-10",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-10--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-10",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-10--batch",
+      "stage": "judge",
+      "case": "large-dev-a-10",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-10",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P05",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-10",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P06",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-12--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-12",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-12--batch",
+      "stage": "judge",
+      "case": "large-dev-a-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-a-14--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-a-14",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-a-14--batch",
+      "stage": "judge",
+      "case": "large-dev-a-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-14",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-14",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-14",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-02--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-02",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-02--batch",
+      "stage": "judge",
+      "case": "large-dev-b-02",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-02",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-02",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-02",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-06--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-06",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-06--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-06",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-06--batch",
+      "stage": "judge",
+      "case": "large-dev-b-06",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-06",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P05",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-06",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P06",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-14--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-14--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-14--batch",
+      "stage": "judge",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P05",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P06",
+          "a_side": "right"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-16--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-16",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-16--batch",
+      "stage": "judge",
+      "case": "large-dev-b-16",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-16",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-16",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-16",
+          "config": "sonnet-high",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-20--sol-low",
+      "stage": "generation",
+      "case": "large-dev-b-20",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-b-20--batch",
+      "stage": "judge",
+      "case": "large-dev-b-20",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-20",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-20",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-20",
+          "config": "sol-low",
+          "candidate": "v10-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        }
+      ]
+    }
+  ],
+  "max_calls": 23,
+  "max_generations": 13,
+  "max_judges": 10,
+  "max_claude_calls": 7,
+  "max_workers": 2,
+  "retries": 0,
+  "token_guard": 700000,
+  "codex_credit_guard": 90,
+  "writer_token_reservation": 30000,
+  "judge_token_reservation": 50000,
+  "credit_reservations": {
+    "sol-low": 3,
+    "sol-high": 6
+  },
+  "credit_rates": {
+    "astra-high": [
+      250,
+      25,
+      1250
+    ],
+    "sol-low": [
+      50,
+      2.5,
+      250
+    ],
+    "sol-high": [
+      50,
+      2.5,
+      250
+    ]
+  },
+  "selection": {
+    "sol-low": [
+      "large-dev-a-10",
+      "large-dev-a-12",
+      "large-dev-b-06",
+      "large-dev-b-14",
+      "large-dev-b-20",
+      "large-dev-a-08"
+    ],
+    "sonnet-high": [
+      "large-dev-a-06",
+      "large-dev-a-14",
+      "large-dev-b-02",
+      "large-dev-b-16",
+      "large-dev-b-14",
+      "large-dev-a-10",
+      "large-dev-b-06"
+    ]
+  },
+  "selection_reason": "Targeted development repair: all five Sol losses and all four Sonnet losses vs v4, Sol scoring-order win, and three Sonnet fidelity wins. Unequal selected samples; no population or family ranking. No holdout access.",
+  "validation": "Original strict evidence validator plus predeclared source-verified initial-case repair and optional source quote removal. Reasons/preferences unchanged. Qualified verdicts flagged and excluded in sensitivity. No retries.",
+  "packing": "Unchanged fully inlined generation format and frozen author-specific Sol-high judge. All three comparator arms reused, no extra order audits.",
+  "files": {
+    "historical-observations.json": "5e5dd1882166acb5131debcec178f24d7e869fcfef9840b52cff04e5480c0ad0",
+    "bundle.txt": "78f64a9b764ed68c0315105d701f68203966580955be795ac575c3b33944c3c5",
+    "baselines.json": "17cfd03526533165cd057601ec7d6e721c41f154f0cfe34623e3782e4a3583de",
+    "cases.json": "8b38dfdf4fbc56f0e63745d491e99f450febcda0f647b02bec570f68ea92f1ef",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "scripts": {
+    "v10_check.py": "62d7efbff013709a1f73b797a6d56e3bf3b59cfb65a95ed4b7f2de000ade56c9",
+    "restored_check.py": "f7c94bf15e2e29604506a58b311f3d33d2eed3533c00a582525f3780a3a6567b",
+    "bench.py": "c8d95a83d29e0194578089c9a5b7bfe741c81bf701fe933c88f5ee814f08fd20",
+    "grade_long_horizon.py": "f24aae797fe32953dfaa75ffe92c9746abb146ea52760809e8db06ad7c13c2d9",
+    "long_horizon.py": "563c11ff51e40a1fb0b7223fb0bc2e41b88d40f6fb60ed9de58d877a5d46e8e9",
+    "pairwise.py": "bb663a03d066aa76e8cb226faea970c495291c691bc1914a9e228c22ead39038",
+    "prose_repair.py": "cd7d6a118d155c43958eed107ed45a2218db37f354767d86e2ca435be7a62039",
+    "context_regrade.py": "3fce1e84d31aa0f45edd8f07dacb7ecdba9dee835ccb159bb68116d10e2419f4",
+    "cross_model_small.py": "2bd940498fb442a4d8b8630a051614d8ae1e7bd2799fadc1d4bfc62b61d0c22f",
+    "finalize_restored_results.py": "f4f98317b3d0c11f5d9eabf4005fadacfaa3c07dae0bf07b0ad943e80065485e",
+    "finish_restored_check.py": "e481a56608df7f64bf59e87d3eae46b45bbdbefd93feb8c1f93dbb7b208c176d"
+  },
+  "source_artifacts": {
+    "responses.json": "c6ce7bb715e359f53a2ec6517b101c39b85d48e0c72ffbe3eb4efdbf67cf0b25",
+    "observations.json": "65479799cd624842231694390a87db1d65afc3b1c65bc17915a8bdfaa620e4c8",
+    "cases.json": "55df67874b5c490ae4d6a3f405f9b3cbdf8f3a0e72740094e86f081822f0aee3",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede"
+}

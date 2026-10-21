@@ -1,5 +1,9 @@
 # Handoff
 
+## V10 targeted dev repair running
+
+User authorized cheap Sol/Sonnet repair, saved baselines, untouched holdouts. Candidate evals/versions/v10-dev changes only core guidance: integrate reasons/qualifications where needed; avoid repetitive caution; order proof calculations by purpose; return finished artifact without unsolicited production advice. Fidelity safeguards retained; all reference files byte-identical. Frozen before calls. tools/v10_check.py uses existing budgeted transport with a new isolated output/runtime directory.13 drafts (6 Sol low,7 Sonnet high),10 Sol-high blind judge batches,39 comparisons vsnone/v4/restored-v9.23-call hard cap,700k reported-token/90 estimated-Codex-credit guards,7 Claude calls,2 workers,no retries. Selected known failures plus retained-gain checks, not OOS; different model subsets. See evals/results/prose-repair/v10-targeted/plan.json. Do not launch a duplicate or read holdouts. Installed v4 unchanged.
+
 ## Restored v9 check COMPLETE; no more calls
 
 All20 development cases completed on Astra high, Sol low, Sonnet high. 60 valid new drafts,120 comparisons,120 saved baselines reused. 101 total attempts (61 writing including original capacity failure and successful authorized retry;40 judge batches). The continuation added35 calls and670,656 reported tokens. Total known1,919,254 tokens;188.71271 estimated Standard Codex paid-credit equivalents, plus20 Claude calls. Unknown original failure retains30,000-token/8-credit reservation: charged1,949,254 tokens/196.71271 credits, below2.5M/300 guards. No active or queued jobs. Completed outputs and frozen runner/candidate/rubric/cases preserved. Both fresh holdouts untouched. Packaged/installed stillv4.
