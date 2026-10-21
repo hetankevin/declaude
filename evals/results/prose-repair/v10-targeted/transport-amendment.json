@@ -1,0 +1,55 @@
+{
+  "original_plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+  "reason": "Sandbox blocked Claude authentication and Codex workspace routing before any drafts. Auth verified outside sandbox. Retry each once with network access; no quality regeneration.",
+  "max_process_attempts": 25,
+  "planned_model_calls": 23,
+  "max_new_retries": 2,
+  "failed_jobs": [
+    "large-dev-a-06--sonnet-high",
+    "large-dev-a-08--sol-low"
+  ],
+  "old_attempts": [
+    {
+      "id": "large-dev-a-06--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": false,
+      "reported_tokens": 0,
+      "charged_tokens": 0,
+      "codex_credits": 0,
+      "usage": {},
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-a-08--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": false,
+      "completed": false,
+      "reported_tokens": null,
+      "charged_tokens": 30000,
+      "codex_credits": 3,
+      "usage": {},
+      "credit_is_reservation": true
+    }
+  ],
+  "preserved": {
+    "generation/large-dev-a-06--sonnet-high/request.json": "4ef62f6db4fedcb436953ee4067edaca0211d1cbf582fca6eeb85cf6fa41a8c7",
+    "generation/large-dev-a-06--sonnet-high/result.json": "24f8895b0788fc88804ed0e35f92f49b0672ce08284627c632469c07ef336665",
+    "generation/large-dev-a-06--sonnet-high/cli.json": "be78f9e23ee68a52ea884452a52335953c292eaed6312868ccf29e7c81bbd5d6",
+    "generation/large-dev-a-06--sonnet-high/failure.json": "71ab42486d757b0ed1af9228a6a6a5b4281aa813610347fb90c95581278c4fe1",
+    "generation/large-dev-a-08--sol-low/request.json": "f3ab12ce6228e34030d93147d1b95642ac333fef409e51e2ba4ba99cca46d664",
+    "generation/large-dev-a-08--sol-low/result.json": "b3482ddb5e1f80d0c322e7b0ebcc1c14f0e16a42a11b705b1cc04e95e0f8e5f5",
+    "generation/large-dev-a-08--sol-low/stderr.txt": "cf88bde91b4f0cc44dbf23577f7d5e02791c504f755658b9815985758e638c7a",
+    "generation/large-dev-a-08--sol-low/cli.jsonl": "5c3efe7c4ec5826e6d9443d5faa9e0cf80891eee543dcfdb8dccff0926865545",
+    "generation/large-dev-a-08--sol-low/failure.json": "c372eff75263b5a633e52691365272a0527cf81641075076e8712ea6f2ae1f6d"
+  },
+  "token_guard": 700000,
+  "codex_credit_guard": 90,
+  "unknown_usage_policy": "Original Codex failure retains30k-token/3-credit reservation. Any new unknown failure stops. Claude explicitly reports zero API usage.",
+  "runner_sha256": "80dcfeed29c8f6afc12049cbcd1d888ca486eddc332ed1190bd32e07672a3be7",
+  "sha256": "14a3f1e3d4ee0583c5edacccb9fa8b9990f7e2a147a90b2cb60a3922983f6d13"
+}

@@ -4,6 +4,10 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
+## V10 development repair in progress
+
+A small frozen Sol-low/Sonnet-high check is testing whether v10 integrates explanations and qualifications better while retaining v9's fidelity safeguards and unchanged proof guidance. It targets previously observed failures plus retained-gain checks, so it is a tuning diagnostic, not OOS evidence. The plan reuses all comparator drafts: 13 new drafts and 10 blind grading batches. Two sandbox transport failures are preserved and retried with network access; no completed drafts are regenerated. Both fresh holdouts remain untouched. [Plan](evals/results/prose-repair/v10-targeted/plan.json) · [Candidate](evals/versions/v10-dev/SKILL.md). Packaged and installed remain v4.
+
 ## Restored v9: completed 20-case check
 
 Restored v9 beats no skill on all three generators in this development check. Against v4, Astra high improves, Sol low regresses, and Sonnet high has a small net advantage. **This is not a uniform replacement for v4**, which remains packaged and installed.
