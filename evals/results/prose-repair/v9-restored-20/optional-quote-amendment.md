@@ -1,0 +1,7 @@
+# Optional evidence quote validation
+
+After all 101 authorized calls finished, two Sonnet proof comparisons failed because of optional source quotes in the voice dimension. One quote was verbatim from the assertions supplied to the judge, which the original validator did not include in its source/context quote pool. The other paraphrased the author's preference as a quotation. Neither is silently accepted as a verbatim source quote.
+
+The final no-call report adapter removes these optional source quotes from accepted evidence while preserving the raw answers. It does not replace them with invented or selected evidence. Preferences, reasons and severity flags are unchanged. The same rule applies irrespective of candidate position or outcome and is limited to dimensions whose source quotes are optional: naturalness, progression, voice and overall. Required response quotations and required source evidence in meaning, proof and material-error checks remain strict. All amended verdicts must pass the original validator.
+
+This is a disclosed post-freeze reporting amendment. The two verdicts are marked `optional_source_quote_qualified`, their removals are recorded in `quote-format-repairs.json`, and `quote-sensitivity.json` excludes them. The original 117 strictly validated verdicts remain unchanged. A separate, previously documented initial-letter correction validates the 118th. No additional model calls were made.

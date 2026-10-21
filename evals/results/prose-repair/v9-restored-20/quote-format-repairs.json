@@ -1,5 +1,5 @@
 {
-  "rule": "Only the first character of an evidence quote may change case, and only if exactly one matching span exists in the supplied source. All other characters, reasons, severity flags, and preferences remain unchanged. Other invalid evidence remains invalid.",
+  "rule": "Original source-verified first-letter correction, plus removal of nonverbatim OPTIONAL source quotes only in naturalness/progression/voice/overall. Required response quotes and required source evidence in meaning, material-error and proof checks remain strict. No reason, preference or severity changes. Raw answers retained. Report sensitivity excluding qualified verdicts.",
   "repairs": [
     {
       "job": "large-dev-a-08--batch1",
@@ -14,9 +14,43 @@
       ],
       "original_raw_sha256": "1ac75169d84abb4951fcde6020b3192bcf624386d8a0df137db072f5bfca7356",
       "validation_input_sha256": "ddabf22d9f39d306b7232f37c5322f42142ec3bdc24bae965757159bb54e5079"
+    },
+    {
+      "job": "large-dev-b-16--batch2",
+      "pair": "P01",
+      "changes": [
+        {
+          "kind": "optional_source_quote_removed",
+          "field": "dimensions.voice.quotes.source",
+          "index": 0,
+          "before": "Integrates the repaired step into a connected proof rather than leaving the draft's erroneous conclusion or an editorial repair instruction in the finished exposition.",
+          "after": null,
+          "reason": "Exact quote from supplied assertions, outside original source/context quote pool."
+        }
+      ],
+      "original_raw_sha256": "4063a673bcd3985d7059da3b05b9f62a18a1d3fff0bac49d917ad4d774313ff3",
+      "validation_input_sha256": "132dc1ad1b683605e968cf8ada70ca542026b5d36a2c2705712a3a056275a5cd"
+    },
+    {
+      "job": "large-dev-b-16--batch2",
+      "pair": "P02",
+      "changes": [
+        {
+          "kind": "optional_source_quote_removed",
+          "field": "dimensions.voice.quotes.source",
+          "index": 0,
+          "before": "Concision removes repetition, not explanation.",
+          "after": null,
+          "reason": "Nonverbatim optional source quote; retained only in raw evidence, not accepted as a quotation."
+        }
+      ],
+      "original_raw_sha256": "4063a673bcd3985d7059da3b05b9f62a18a1d3fff0bac49d917ad4d774313ff3",
+      "validation_input_sha256": "5c38d1dbf425ff504a547f660b2daa6752caed20d7a5cd3dbefd5de738bfbebb"
     }
   ],
   "new_model_calls": 0,
-  "script_sha256": "a8634345fbaa8f79f612d7f9440dd197ef90487c7c47c954b2c5451419f8c159",
-  "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1"
+  "script_sha256": "e481a56608df7f64bf59e87d3eae46b45bbdbefd93feb8c1f93dbb7b208c176d",
+  "plan_sha256": "b00a44bf602c2c1d0e94e91a92a0b66a55b7b89c4f17186deeb2875be8da40e1",
+  "report_adapter_sha256": "f4f98317b3d0c11f5d9eabf4005fadacfaa3c07dae0bf07b0ad943e80065485e",
+  "continuation_plan_sha256": "b7f2e63893e09e2554a65f0c5c0f03bac0b2854efb5a81fe96c7d0365308d5dd"
 }

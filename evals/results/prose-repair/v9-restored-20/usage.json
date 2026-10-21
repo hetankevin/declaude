@@ -1,14 +1,27 @@
 {
-  "calls": 66,
-  "writing_calls": 40,
-  "judge_calls": 26,
-  "claude_calls": 13,
-  "known_reported_tokens": 1248598,
+  "calls": 101,
+  "writing_calls": 61,
+  "judge_calls": 40,
+  "claude_calls": 20,
+  "known_reported_tokens": 1919254,
   "unknown_attempts": 1,
-  "codex_paid_credit_equivalent": 124.51221,
-  "budget_charged_tokens": 1278598,
-  "budget_charged_codex_credits": 132.51221,
+  "codex_paid_credit_equivalent": 188.71271,
+  "budget_charged_tokens": 1949254,
+  "budget_charged_codex_credits": 196.71271,
   "attempts": [
+    {
+      "id": "large-dev-b-14--astra-high--original-capacity-failure",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": false,
+      "completed": false,
+      "reported_tokens": null,
+      "charged_tokens": 30000,
+      "codex_credits": 8,
+      "usage": {},
+      "credit_is_reservation": true
+    },
     {
       "id": "large-dev-a-02--astra-high",
       "stage": "generation",
@@ -1496,14 +1509,803 @@
       "stage": "generation",
       "config": "astra-high",
       "finished": true,
-      "known": false,
-      "completed": false,
-      "reported_tokens": null,
-      "charged_tokens": 30000,
-      "codex_credits": 8,
-      "usage": {},
-      "credit_is_reservation": true
+      "known": true,
+      "completed": true,
+      "reported_tokens": 19588,
+      "charged_tokens": 19588,
+      "codex_credits": 4.13,
+      "usage": {
+        "input_tokens": 18195,
+        "cached_input_tokens": 9600,
+        "output_tokens": 1393
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-14--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 19572,
+      "charged_tokens": 19572,
+      "codex_credits": 1.2406,
+      "usage": {
+        "input_tokens": 18262,
+        "cached_input_tokens": 0,
+        "output_tokens": 1310
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-14--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 16390,
+      "charged_tokens": 16390,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11836,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 2984,
+        "output_tokens_details": {
+          "thinking_tokens": 795
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11836,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2984,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11836,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11836
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-14--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 31620,
+      "charged_tokens": 31620,
+      "codex_credits": 2.8664,
+      "usage": {
+        "input_tokens": 25193,
+        "cached_input_tokens": 0,
+        "output_tokens": 6427
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-14--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 24450,
+      "charged_tokens": 24450,
+      "codex_credits": 2.0859,
+      "usage": {
+        "input_tokens": 20133,
+        "cached_input_tokens": 0,
+        "output_tokens": 4317
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-18--astra-high",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18532,
+      "charged_tokens": 18532,
+      "codex_credits": 5.133,
+      "usage": {
+        "input_tokens": 18032,
+        "cached_input_tokens": 0,
+        "output_tokens": 500
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-18--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18364,
+      "charged_tokens": 18364,
+      "codex_credits": 0.9722,
+      "usage": {
+        "input_tokens": 18094,
+        "cached_input_tokens": 0,
+        "output_tokens": 270
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-18--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 13872,
+      "charged_tokens": 13872,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11572,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 730,
+        "output_tokens_details": {
+          "thinking_tokens": 319
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11572,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 730,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11572,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11572
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-18--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 21256,
+      "charged_tokens": 21256,
+      "codex_credits": 2.0744,
+      "usage": {
+        "input_tokens": 16198,
+        "cached_input_tokens": 0,
+        "output_tokens": 5058
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-18--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 17570,
+      "charged_tokens": 17570,
+      "codex_credits": 1.3717,
+      "usage": {
+        "input_tokens": 15104,
+        "cached_input_tokens": 0,
+        "output_tokens": 2466
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-04--astra-high",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18455,
+      "charged_tokens": 18455,
+      "codex_credits": 5.01075,
+      "usage": {
+        "input_tokens": 18058,
+        "cached_input_tokens": 0,
+        "output_tokens": 397
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-04--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18425,
+      "charged_tokens": 18425,
+      "codex_credits": 0.98225,
+      "usage": {
+        "input_tokens": 18120,
+        "cached_input_tokens": 0,
+        "output_tokens": 305
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-04--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 14023,
+      "charged_tokens": 14023,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11627,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 826,
+        "output_tokens_details": {
+          "thinking_tokens": 353
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11627,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 826,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11627,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11627
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-04--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 20813,
+      "charged_tokens": 20813,
+      "codex_credits": 1.88585,
+      "usage": {
+        "input_tokens": 16587,
+        "cached_input_tokens": 0,
+        "output_tokens": 4226
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-04--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18044,
+      "charged_tokens": 18044,
+      "codex_credits": 0.72628,
+      "usage": {
+        "input_tokens": 15306,
+        "cached_input_tokens": 15232,
+        "output_tokens": 2738
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-08--astra-high",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18759,
+      "charged_tokens": 18759,
+      "codex_credits": 5.19275,
+      "usage": {
+        "input_tokens": 18256,
+        "cached_input_tokens": 0,
+        "output_tokens": 503
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-08--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18766,
+      "charged_tokens": 18766,
+      "codex_credits": 1.0271,
+      "usage": {
+        "input_tokens": 18322,
+        "cached_input_tokens": 0,
+        "output_tokens": 444
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-08--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 14571,
+      "charged_tokens": 14571,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11919,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 1082,
+        "output_tokens_details": {
+          "thinking_tokens": 400
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11919,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 1082,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11919,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11919
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-08--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 23452,
+      "charged_tokens": 23452,
+      "codex_credits": 2.2764,
+      "usage": {
+        "input_tokens": 17933,
+        "cached_input_tokens": 0,
+        "output_tokens": 5519
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-08--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 19396,
+      "charged_tokens": 19396,
+      "codex_credits": 1.16032,
+      "usage": {
+        "input_tokens": 16133,
+        "cached_input_tokens": 9728,
+        "output_tokens": 3263
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-12--astra-high",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18535,
+      "charged_tokens": 18535,
+      "codex_credits": 5.08275,
+      "usage": {
+        "input_tokens": 18086,
+        "cached_input_tokens": 0,
+        "output_tokens": 449
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-12--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18494,
+      "charged_tokens": 18494,
+      "codex_credits": 0.53142,
+      "usage": {
+        "input_tokens": 18150,
+        "cached_input_tokens": 9728,
+        "output_tokens": 344
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-12--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 14133,
+      "charged_tokens": 14133,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11705,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 858,
+        "output_tokens_details": {
+          "thinking_tokens": 290
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11705,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 858,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11705,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11705
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-12--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 21718,
+      "charged_tokens": 21718,
+      "codex_credits": 1.59022,
+      "usage": {
+        "input_tokens": 16886,
+        "cached_input_tokens": 9728,
+        "output_tokens": 4832
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-12--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18404,
+      "charged_tokens": 18404,
+      "codex_credits": 1.503,
+      "usage": {
+        "input_tokens": 15490,
+        "cached_input_tokens": 0,
+        "output_tokens": 2914
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-16--astra-high",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18897,
+      "charged_tokens": 18897,
+      "codex_credits": 3.28225,
+      "usage": {
+        "input_tokens": 18179,
+        "cached_input_tokens": 9600,
+        "output_tokens": 718
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-16--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18890,
+      "charged_tokens": 18890,
+      "codex_credits": 1.0731,
+      "usage": {
+        "input_tokens": 18247,
+        "cached_input_tokens": 0,
+        "output_tokens": 643
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-16--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 15480,
+      "charged_tokens": 15480,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11806,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 2104,
+        "output_tokens_details": {
+          "thinking_tokens": 591
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11806,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2104,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11806,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11806
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-16--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 25819,
+      "charged_tokens": 25819,
+      "codex_credits": 2.04547,
+      "usage": {
+        "input_tokens": 19736,
+        "cached_input_tokens": 9728,
+        "output_tokens": 6083
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-16--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 22391,
+      "charged_tokens": 22391,
+      "codex_credits": 1.46087,
+      "usage": {
+        "input_tokens": 18374,
+        "cached_input_tokens": 9728,
+        "output_tokens": 4017
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-20--astra-high",
+      "stage": "generation",
+      "config": "astra-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18826,
+      "charged_tokens": 18826,
+      "codex_credits": 5.3985,
+      "usage": {
+        "input_tokens": 18134,
+        "cached_input_tokens": 0,
+        "output_tokens": 692
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-20--sol-low",
+      "stage": "generation",
+      "config": "sol-low",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18547,
+      "charged_tokens": 18547,
+      "codex_credits": 0.99675,
+      "usage": {
+        "input_tokens": 18200,
+        "cached_input_tokens": 0,
+        "output_tokens": 347
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-20--sonnet-high",
+      "stage": "generation",
+      "config": "sonnet-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 14333,
+      "charged_tokens": 14333,
+      "codex_credits": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 11727,
+        "cache_read_input_tokens": 1568,
+        "output_tokens": 1036,
+        "output_tokens_details": {
+          "thinking_tokens": 526
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11727,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 1036,
+            "cache_read_input_tokens": 1568,
+            "cache_creation_input_tokens": 11727,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 11727
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-20--batch1",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 21890,
+      "charged_tokens": 21890,
+      "codex_credits": 2.0831,
+      "usage": {
+        "input_tokens": 16947,
+        "cached_input_tokens": 0,
+        "output_tokens": 4943
+      },
+      "credit_is_reservation": false
+    },
+    {
+      "id": "large-dev-b-20--batch2",
+      "stage": "judge",
+      "config": "sol-high",
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "reported_tokens": 18381,
+      "charged_tokens": 18381,
+      "codex_credits": 1.01717,
+      "usage": {
+        "input_tokens": 15580,
+        "cached_input_tokens": 9728,
+        "output_tokens": 2801
+      },
+      "credit_is_reservation": false
     }
   ],
-  "note": "Paid-credit equivalent, not account debit or subscription percentage. Claude usage separate. Guards reserve active calls; overshoot can occur inside a call. Coordinator usage excluded."
+  "note": "Paid-credit equivalent, not account debit or subscription percentage. Claude usage separate. Guards reserve active calls; overshoot can occur inside a call. Coordinator usage excluded.",
+  "call_cap": 101,
+  "continuation_calls": 35,
+  "authorized_retries": 1,
+  "continuation_plan_sha256": "b7f2e63893e09e2554a65f0c5c0f03bac0b2854efb5a81fe96c7d0365308d5dd"
 }

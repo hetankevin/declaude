@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "historical_stop": "stop.json",
+  "continuation_plan_sha256": "b7f2e63893e09e2554a65f0c5c0f03bac0b2854efb5a81fe96c7d0365308d5dd",
+  "outputs": 60,
+  "comparisons": 120,
+  "calls": 101,
+  "new_calls": 35,
+  "known_reported_tokens": 1919254,
+  "new_known_reported_tokens": 670656,
+  "estimated_codex_paid_credit_equivalent": 188.71271,
+  "unknown_attempts": 1,
+  "budget_charged_tokens": 1949254,
+  "budget_charged_codex_credits": 196.71271,
+  "claude_calls": 20,
+  "original_strict_verdicts": 117,
+  "initial_case_repaired": 1,
+  "optional_source_quote_qualified": 2,
+  "no_active_calls": true,
+  "holdouts": "untouched; neither read nor run",
+  "installed_release": "v4",
+  "reproduce": [
+    "python3 tools/finalize_restored_results.py",
+    "python3 tools/plot_restored_check.py"
+  ]
+}

@@ -4,13 +4,45 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## Restored v9 candidate
+## Restored v9: completed 20-case check
 
-The authorized continuation is running with a **101-call total cap**. The Astra retry succeeded; completed work is reused and fresh holdouts remain untouched. The checkpoint below describes the earlier stop, not the current final result.
+Restored v9 beats no skill on all three generators in this development check. Against v4, Astra high improves, Sol low regresses, and Sonnet high has a small net advantage. **This is not a uniform replacement for v4**, which remains packaged and installed.
 
-[v9-restored-dev](evals/versions/v9-restored-dev/SKILL.md) restores the explicit meaning checks, personal research punctuation preference, exclusions for internal discussion, protection of adverse results, detailed final fidelity checks, and the warning against cosmetic “so what” endings. V9's argument organization, correction retention, selective guidance, and proof instructions remain. All reference files are unchanged from the tested v9. The [budgeted 20-case development check](evals/results/prose-repair/v9-restored-20/report.md) **stopped incomplete** when Astra reported model capacity without token usage. The frozen budget rule stopped new calls at 66/100 attempts: 13/20 complete cases, 39 drafts, and 78 valid pairwise verdicts. Known usage is 1,248,598 reported tokens and 124.51 estimated Codex paid credits, plus 13 Claude calls and one failed attempt with unreported usage. One initial-letter quote capitalization mismatch was repaired deterministically with an audit record, without changing the verdict or making another call. No jobs remain active. Fresh holdouts remain untouched. No aggregate or new heatmap is claimed from this incomplete sample; the results below concern the original frozen v9. Packaged and installed remain v4. [Rerun cost estimates](evals/rerun-cost-estimate.md) describe options without launching them.
+| Generator / effort | Restored v9 vs no skill | Restored v9 vs v4 |
+|---|---:|---:|
+| Astra high | +35.0 pp | +15.0 pp |
+| Sol low | +35.0 pp | −15.0 pp |
+| Sonnet high | +60.0 pp | +10.0 pp |
+| All | +43.3 pp | +3.3 pp |
 
-## Latest economical cross-model check
+Scores are win rate minus loss rate; ties contribute zero. Each model has 20 cases: four each of ordinary prose, research, argument, proof, and already-good controls. These are previously inspected development cases, **not fresh OOS evidence**. One frozen author-specific Sol-high judge evaluates anonymized pairs with balanced A/B positions. Case-bootstrap intervals, counts, and all evidence are in the [report](evals/results/prose-repair/v9-restored-20/report.md). The pooled interval against v4 is −8.3 to +18.3 pp.
+
+Astra's argument result is +50 pp against v4 but **0 pp against no skill**. Sol's argument result is −50 pp against v4. Proof tasks improve strongly over no skill, but their overall writing score is −16.7 pp against v4 across models. Inspected proof losses concern explanation order and repeated qualifications, rather than flagged mathematical errors. The proof dimension and the overall judgment can disagree: explicit derivations can improve while the passage becomes less coherent. [Case interpretation](evals/results/prose-repair/v9-restored-20/interpretation.md).
+
+The category heatmap shows four cases per category and 16 in “All prose,” which includes controls and excludes proofs. The dimension heatmap uses 20 cases except for proof, which uses four. The “All” column pools the three generators.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/v9-restored-20/categories-dark.svg">
+  <img src="evals/results/prose-repair/v9-restored-20/categories-light.svg" alt="Restored v9 versus no skill and v4 by writing category, model, and effort. Win-minus-loss percentage points on 20 development cases.">
+</picture>
+
+<details>
+<summary>Meaning, naturalness, progression, voice, proof, and overall</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/v9-restored-20/dimensions-dark.svg">
+  <img src="evals/results/prose-repair/v9-restored-20/dimensions-light.svg" alt="Restored v9 versus no skill and v4 by judge dimension, model, and effort.">
+</picture>
+
+</details>
+
+The run produced 60 drafts and 120 comparisons, reusing all 120 saved no-skill/v4 baselines and all completed work after the capacity interruption. It used **101 attempts**, including the authorized Astra retry: 61 writing attempts and 40 judge batches. The continuation added 35 calls and 670,656 reported tokens. Total known usage was 1,919,254 tokens and 188.71 estimated Standard Codex paid-credit equivalents, plus usage from 20 Claude calls. The original failed attempt had unknown usage; its 30,000-token/8-credit reservation keeps budget accounting at 1,949,254 tokens and 196.71 credits, below the 2.5M/300 scheduling guards. These estimates are not account debits or subscription percentages. No calls remain running.
+
+Of 120 verdicts, 117 passed the original validator, one required a source-verified first-letter capitalization correction, and two had inadmissible optional source quotations removed with raw evidence and preferences retained. Required factual, proof, and response quotations remain strict. Excluding those two qualified Sonnet proof verdicts leaves the direction of every model's aggregate result unchanged; see the [disclosed amendment](evals/results/prose-repair/v9-restored-20/optional-quote-amendment.md) and [sensitivity results](evals/results/prose-repair/v9-restored-20/quote-sensitivity.json).
+
+[v9-restored-dev](evals/versions/v9-restored-dev/SKILL.md) restores explicit meaning checks, the author's research punctuation preference, exclusions for internal discussion, protection of adverse results, detailed fidelity checks, and the warning against cosmetic “so what” endings. V9's argument organization, correction retention, selective guidance, and proof instructions remain. All reference files are unchanged from the tested v9. This check inlined the full bundle, so it does not test selective reference loading or long-horizon retention. Both fresh holdouts remain sealed and unrun. The earlier studies below use different candidates and populations.
+
+## Earlier three-case check: original v9
 
 On the same three selected development cases, **v9 beats v4 on Astra high, splits on Sol low, and has a small net advantage on Sonnet high**. Both v4 and v9 help relative to no skill on this set, but proof gains should not be confused with a uniform prose improvement. These are two argument cases and one proof, with one blind Sol-high judge, not fresh OOS validation or a complete model/effort benchmark.
 

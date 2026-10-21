@@ -1,10 +1,20 @@
 # Handoff
 
-## Authorized continuation to 101 calls
+## Restored v9 check COMPLETE; no more calls
+
+All20 development cases completed on Astra high, Sol low, Sonnet high. 60 valid new drafts,120 comparisons,120 saved baselines reused. 101 total attempts (61 writing including original capacity failure and successful authorized retry;40 judge batches). The continuation added35 calls and670,656 reported tokens. Total known1,919,254 tokens;188.71271 estimated Standard Codex paid-credit equivalents, plus20 Claude calls. Unknown original failure retains30,000-token/8-credit reservation: charged1,949,254 tokens/196.71271 credits, below2.5M/300 guards. No active or queued jobs. Completed outputs and frozen runner/candidate/rubric/cases preserved. Both fresh holdouts untouched. Packaged/installed stillv4.
+
+Net win-minus-loss pp vsnone/v4: Astra+35/+15;Sol+35/−15;Sonnet+60/+10;pooled+43.3/+3.3. Astra argument vsnone0, vsv4+50. Sol argument vsv4−50. Pooled proof-task overall vsv4−16.7 despite a positive proof-dimension score. No universal promotion supported. Four cases/category, previously inspected dev, one frozen author-specific Sol-high judge, no new order audits or long-horizon evidence. See interpretation.md for actual passage-level explanations and limitations.
+
+Final public artifacts: evals/results/prose-repair/v9-restored-20/. README now leads with complete tables and readable light/dark category and dimension heatmaps. stop.json is the historical66-call interruption; completion.json supersedes it without erasing it. 117 verdicts passed original strict validation;1 source-verified initial-letter correction;2 optional source quotes removed (one supplied assertion outside validator pool, one paraphrase). Raw answers/preferences/reasons/severities retained, required evidence strict. Qualified verdicts flagged; sensitivity excluding both preserves aggregate directions. No repair model calls. Post-freeze reporting amendment documented, never claim120 pristine judgments.
+
+Reproduce with no model calls: python3 tools/finalize_restored_results.py, then MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/plot_restored_check.py. Finalizer verifies continuation preservation hashes, reconstructs raw reporting, applies disclosed evidence repairs, and writes sensitivity. Do not rerun the original report alone over final artifacts, launch a duplicate, reopen holdouts, or install/promote without a new request. Historical notes below describe earlier states.
+
+## Historical: authorized continuation to 101 calls
 
 User explicitly approved the extra call and retrying Astra to finish all20 cases, reusing completed work and leaving holdouts untouched. tools/resume_restored_check.py freezes continuation-plan.json, preserves all prior attempt files and their hashes, and routes exactly the failed generation to a new private retry directory. 35 new calls maximum,101 total including original failure; same2.5M-token/300-credit guards, keeping the unknown failure reservation. Retry first, then34 unrun jobs. No new skill/rubric/case/model changes. Original runner/plan remain frozen. Reproduce final reports via python3 tools/resume_restored_check.py report. Do not launch another runner.
 
-## Restored v9 check stopped by capacity; all jobs ended
+## Historical: initial capacity stop, superseded by completion
 
 Latest authorized 20-case check stopped at66/100 attempts when Astra returned “Selected model is at capacity” without token usage. Frozen unknown-usage guard stopped scheduling and let active judges finish. Nothing running. 40 writing attempts (39 outputs,1 capacity failure),26 judge calls,78/120 valid pairwise comparisons,13/20 complete cases. Known usage1,248,598 tokens;124.51221 estimated Standard Codex paid-credit equivalent, plus13 Claude calls and one unreported failed attempt. Budget accounting reserves8 credits/30,000 tokens for the unknown attempt, not claimed as measured usage. No retries/model substitutions/holdout reads/installations.
 
