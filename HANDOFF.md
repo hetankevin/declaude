@@ -1,5 +1,11 @@
 # Handoff
 
+## README visualization restored
+
+User wants neurotypical-style criterion-by-model/effort heatmaps, paired IS/OOS, and ONLY versus-no-skill comparisons displayed. Version comparisons belong in development reports, not README figures/tables. README now leads with installed-v4 category and dimension heatmaps from the existing author-specific retrospective regrade. Separate no-skill-only plots cover restored-v9's 20-case dev check and the latest one-case-per-model repairs; no mixed populations or invented OOS. Chronological results and all version comparisons remain in existing reports. Sources, install instructions and reproduction commands retained.
+
+New tools/plot_readme.py reads only committed summaries and validated observations, emitting docs/img/{restored-dev-categories,restored-dev-dimensions,focused-dev}-{light,dark}.{svg,png}. No model calls, skill edits or holdout reads/runs. Existing benchmark figures and results unchanged. Latest repair plot uses Sol-v11 and Sonnet-v12 explicitly, with proof NA on the argument and categorical outcomes for n=1. Verified all six new plots in both themes, README links and SVG parsing; no version-comparator figures remain displayed. Reproduce:MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/plot_readme.py.
+
 ## V11/V12 focused dev repair complete
 
 Both requested defects are absent in the inspected final drafts, with zero candidate material-error flags. Sol v11 excluded-runs: vsnone win, v4 tie, restoredv9 win, v10 tie. Sonnet v12 variance proof: vsnone win, v4 win, restoredv9 loss, v10 win, v11 win. The remaining Sonnet loss is exposition: restoredv9 displays intermediate centering and pair-count normalization steps more explicitly. Do not claim every gain preserved or broad superiority. No installs; packaged/installed remainv4.
