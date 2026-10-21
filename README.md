@@ -4,9 +4,29 @@ A Claude Code and Codex skill for plain English, research exposition in the auth
 
 It removes rhetorical repetition and unnecessary abstractions while preserving facts, logical force, uncertainty, permissions, and scientific qualifications. It also supports drafting connected explanations rather than merely shortening text.
 
-## V10 development repair in progress
+## V10 targeted dev repair: partial improvement, not promoted
 
-A small frozen Sol-low/Sonnet-high check is testing whether v10 integrates explanations and qualifications better while retaining v9's fidelity safeguards and unchanged proof guidance. It targets previously observed failures plus retained-gain checks, so it is a tuning diagnostic, not OOS evidence. The plan reuses all comparator drafts: 13 new drafts and 10 blind grading batches. Two sandbox transport failures are preserved and retried with network access; no completed drafts are regenerated. Both fresh holdouts remain untouched. [Plan](evals/results/prose-repair/v10-targeted/plan.json) · [Candidate](evals/versions/v10-dev/SKILL.md). Packaged and installed remain v4.
+The cheaper Sol-low/Sonnet-high check is finished. V10 improves several known problems with explanation order, repeated qualifications, and unsolicited production advice, but **it does not preserve every fidelity gain**, so it remains a development candidate. Packaged and installed remain v4.
+
+| Generator / effort | v10 vs no skill | v10 vs v4 | v10 vs restored v9 |
+|---|---:|---:|---:|
+| Sol low (6 selected cases) | +33.3 pp | 0.0 pp | 0.0 pp |
+| Sonnet high (7 selected cases) | +100.0 pp, n=6 | +42.9 pp | +42.9 pp |
+
+Win rate minus loss rate; ties zero. The models use **different selected dev samples**, not a comparable population or fresh OOS test. Sol has one win, four ties and one loss against restored v9; Sonnet has four wins, two ties and one loss. One Sonnet/no-skill judgment failed evidence validation and is excluded, not counted as a tie.
+
+Sonnet's improvements cover the drainage explanation, warning-sign recommendation, print-ready invitation, and projection proof. Sol stops repeating the maintenance logging instruction. However, **Sol's excluded-runs argument still repeats and separates related explanations**, and **Sonnet reintroduces an incorrect dependence assertion in the variance proof**. When the sample contains the whole population, the averaged variable is constant, so the added claim fails. This one output defect appears in three paired judgments. The positive aggregate therefore does not establish that the requested fidelity-preserving repair succeeded. [Case analysis](evals/results/prose-repair/v10-targeted/interpretation.md) · [Full report](evals/results/prose-repair/v10-targeted/report.md) · [Candidate](evals/versions/v10-dev/SKILL.md).
+
+Each cell below is one comparison: +1 win, 0 tie, −1 loss. A dash means that model/case was not selected; a question mark means the judgment failed validation. The variance-proof candidate has a fidelity error even where it beats an inferior comparator.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="evals/results/prose-repair/v10-targeted/cases-dark.svg">
+  <img src="evals/results/prose-repair/v10-targeted/cases-light.svg" alt="Targeted v10 development outcomes against saved no-skill, v4, and restored-v9 drafts, by case and model effort. Missing or invalid comparisons are distinct from ties.">
+</picture>
+
+All 13 candidate drafts and 10 blind Sol-high grading batches finished; 38/39 verdicts validate. A reporting-only repair collapses an identical duplicate JSON key; the remaining required proof quotation stays rejected. The run reused all 39 comparator drafts and left both fresh holdouts untouched. Proof and all other reference files are byte-identical to restored v9. No installation changed.
+
+Cost: **23 planned model calls**, plus two initial sandbox transport failures, **484,495 reported tokens**, and **29.44 estimated Codex paid-credit equivalents**, plus seven successful Sonnet calls. The original Codex failure retains a 30k-token/3-credit reservation; charged totals of 514,495 tokens/32.44 credits remain below the 700k/90 guards. These are not account debits or quota percentages. No jobs remain active and no further calls are queued.
 
 ## Restored v9: completed 20-case check
 

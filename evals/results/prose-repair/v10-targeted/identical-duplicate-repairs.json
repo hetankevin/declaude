@@ -1,0 +1,25 @@
+{
+  "new_model_calls": 0,
+  "rule": "Collapse duplicate keys only when their parsed values are identical. Reject conflicting duplicates. Preserve original raw evidence and every preference/reason.",
+  "repairs": [
+    {
+      "job": "large-dev-b-16--batch",
+      "raw_sha256": "f13e918b85ff86c1c39cd2b4995a83e47f493ebcbc3883fa8d143503b9a28e8e",
+      "normalized_sha256": "5ba0ff34eaf3d1f9c91afcc9e936d5f9e3cef764c2608705198a823df9464ff7",
+      "repairs": [
+        {
+          "key": "source",
+          "value": [],
+          "action": "collapse identical duplicate"
+        }
+      ],
+      "remaining_validation_errors": [
+        {
+          "pair": "P01",
+          "error": "Nonverbatim source quote at proof"
+        }
+      ]
+    }
+  ],
+  "script_sha256": "9dc3275a1f35ea9368983272229030f2bc58da86ad1dbe72fd29bf80b9747114"
+}

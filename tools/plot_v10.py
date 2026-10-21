@@ -11,7 +11,8 @@ def main():
  import matplotlib.pyplot as plt
  from matplotlib.colors import ListedColormap,BoundaryNorm
  from matplotlib.patches import Rectangle,Patch
- assert json.loads((OUT/'coverage.json').read_text())['complete']
+ assert json.loads((OUT/'coverage.json').read_text())['outputs']==13
+ plan=json.loads((OUT/'plan.json').read_text());selected={(cid,cfg) for cfg,ids in plan['selection'].items() for cid in ids}
  rows=json.loads((OUT/'observations.json').read_text());lookup={(r['case'],r['config'],r['reference']):r['outcome'] for r in rows}
  for theme in ['light','dark']:
   bg,fg=('white','#20252b') if theme=='light' else ('#1a1a19','#f0efec')
@@ -25,7 +26,7 @@ def main():
      for y,cid in enumerate(LABELS):
       outcome=lookup.get((cid,cfg,ref));color=colors.get(outcome,bg)
       ax.add_patch(Rectangle((x+.025,y+.025),.95,.95,facecolor=color,edgecolor='none'))
-      ax.text(x+.5,y+.5,{'win':'+1','tie':'0','loss':'−1'}.get(outcome,'—'),ha='center',va='center',color=('#17212b' if outcome=='tie' else 'white') if outcome else fg)
+      ax.text(x+.5,y+.5,{'win':'+1','tie':'0','loss':'−1'}.get(outcome,'?' if (cid,cfg) in selected else '—'),ha='center',va='center',color=('#17212b' if outcome=='tie' else 'white') if outcome else fg)
     ax.text(ci*3.4+1.5,1.16,['Sol low','Sonnet high'][ci],transform=ax.get_xaxis_transform(),ha='center',va='bottom',fontsize=12)
    ax.set_xlim(0,6.4);ax.set_ylim(10,0);ax.set_xticks([x+.5 for x,_ in columns],[s for _,s in columns]);ax.xaxis.tick_top();ax.set_yticks([i+.5 for i in range(10)],list(LABELS.values()));ax.tick_params(length=0,pad=8)
    ax.set_xlabel('Comparator',labelpad=10);ax.set_ylabel('Development case')
