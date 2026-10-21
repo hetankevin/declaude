@@ -1,5 +1,9 @@
 # Handoff
 
+## Authorized continuation to 101 calls
+
+User explicitly approved the extra call and retrying Astra to finish all20 cases, reusing completed work and leaving holdouts untouched. tools/resume_restored_check.py freezes continuation-plan.json, preserves all prior attempt files and their hashes, and routes exactly the failed generation to a new private retry directory. 35 new calls maximum,101 total including original failure; same2.5M-token/300-credit guards, keeping the unknown failure reservation. Retry first, then34 unrun jobs. No new skill/rubric/case/model changes. Original runner/plan remain frozen. Reproduce final reports via python3 tools/resume_restored_check.py report. Do not launch another runner.
+
 ## Restored v9 check stopped by capacity; all jobs ended
 
 Latest authorized 20-case check stopped at66/100 attempts when Astra returned “Selected model is at capacity” without token usage. Frozen unknown-usage guard stopped scheduling and let active judges finish. Nothing running. 40 writing attempts (39 outputs,1 capacity failure),26 judge calls,78/120 valid pairwise comparisons,13/20 complete cases. Known usage1,248,598 tokens;124.51221 estimated Standard Codex paid-credit equivalent, plus13 Claude calls and one unreported failed attempt. Budget accounting reserves8 credits/30,000 tokens for the unknown attempt, not claimed as measured usage. No retries/model substitutions/holdout reads/installations.
