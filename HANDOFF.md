@@ -1,5 +1,9 @@
 # Handoff
 
+## V11 two-case dev repair running
+
+User requested only Sol excluded-runs and Sonnet dependence regression. Candidate evals/versions/v11-dev adds distinction between not requiring an assumption and negating it; informal proof claims checked against all allowed cases; one location for each reason/consequence and compromise with its cost. All v10 gains guidance and reference files preserved. tools/v11_check.py freezes2 drafts/2 blind Sol-high batches,8 comparisons against saved none/v4/restored-v9/v10. Hard4 calls,160k-token/20 estimated-Codex-credit guards,1 Claude call,2 workers,no retries. Run with authenticated network access to avoid prior sandbox failure. Holdouts untouched; no automatic installation. Sample1/model does not establish preservation of untested gains. Do not launch a duplicate.
+
 ## V10 targeted dev check finished; fidelity requirement FAILED
 
 User asked for cheap Sol/Sonnet dev repair with saved baselines, unchanged proof guidance, untouched holdouts. All13 drafts/10 judge batches finished.38/39 valid comparisons; no active/queued calls. V10 core integrates explanations/qualifications, removes production notes, and orders proof calculations by purpose. All references unchanged. Installed/packaged stillv4; DO NOT promote v10: one Sonnet variance proof adds a false universal dependence assertion (N=2 makes Z constant); Sol excluded-runs prose also worsens. Full user goal is not achieved by this candidate despite some wins.

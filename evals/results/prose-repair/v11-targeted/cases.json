@@ -1,0 +1,95 @@
+[
+  {
+    "id": "large-dev-a-12",
+    "category": "argument",
+    "difficulty": "hard",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves the existing exclusion rule: controller failures are excluded and unusual completed results are retained absent a separately recorded equipment or handling fault."
+      },
+      {
+        "group": "fidelity",
+        "text": "Keeps the proposed table's fields and raw readings in the underlying record under the existing review process."
+      },
+      {
+        "group": "fidelity",
+        "text": "Includes runs without usable readings and reports attempted and retained counts beside the mean."
+      },
+      {
+        "group": "fidelity",
+        "text": "Allows a shared reason for a group while requiring each affected run to appear."
+      },
+      {
+        "group": "argument",
+        "text": "Explains how the proposal exposes application of the rule without changing which observations enter the mean."
+      },
+      {
+        "group": "argument",
+        "text": "Acknowledges possible reader misuse and reporting burden without claiming transparency guarantees honest or correct exclusion decisions."
+      },
+      {
+        "group": "style",
+        "text": "Resolves references among runs, readings, and decisions so the proposal's accounting logic remains clear throughout."
+      }
+    ],
+    "quality_dimensions": [
+      "policy precision",
+      "argument structure",
+      "technical distinctions"
+    ],
+    "split": "development",
+    "source_words": 395,
+    "task": "Revise this laboratory policy argument for a methods meeting. Clarify its reasoning and make the proposed policy distinguishable from its supporting examples. Keep the unresolved tradeoff visible. The policy is proposed, not already adopted.\n\nSource to revise:\nThe report template should show excluded runs in a separate table with the reason each was excluded. At present the final summary lists only the runs used to calculate the reported mean. That is convenient for reading the mean, but it leaves a reader unable to tell whether a batch had no exclusions or whether the exclusions simply disappeared from the summary. I am not proposing that every excluded reading should enter the mean.\n\nA run stopped because the temperature controller failed is different from a completed run with a result that looks unusual. In the first case, the stated measurement conditions were not met. In the second, an unusual result alone does not show that the conditions failed. Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion. The proposed table would expose how that rule was applied. It would not change the rule.\n\nThere is a concern that showing failed runs will invite readers to calculate a new mean from everything in sight. It might. We should therefore label the table as a record of exclusions and omit no reason just because it sounds repetitive. However, adding every raw reading to that table is unnecessary for this purpose and could make it harder to see the decisions. I propose listing run identifier, completion status, reason, and whether a usable reading exists. Raw readings would remain in the underlying record, available through the existing review process.\n\nThis also matters when a run has no usable reading at all. A table containing only excluded numeric values would miss those failures, which could make a difficult batch look cleaner than it was. On the other hand, counting all stopped runs as if they were measured outcomes would create a different distortion. The summary should report the number attempted and the number retained beside the mean, with the exclusions table accounting for the difference.\n\nReviewers will still have to judge whether the documented reasons are convincing. A fuller table cannot guarantee honest recording or repair an ambiguous rule. It can make the decisions available for inspection. The additional reporting takes time, especially when the same fault affects several runs. We could permit a shared explanation for that group, but each affected run should still appear. That compromise reduces repeated prose while keeping the batch's history countable.",
+    "subset": "validation",
+    "user_context": "The author asked for prose that follows their established writing preferences, not generic polished AI prose. Their recurring directions are to keep the big picture, explain why each construction is needed, and make the reasoning readable in order. They distinguish removing rhetorical repetition from compressing useful explanation. They want fidelity to the requested contribution and artifact form. Current task-specific instructions and audience take precedence. Do not infer personality, diagnoses, or private background.\n\nThe author wants the reasons and objections to form an argument the reader can follow, not a catalogue of claims or slogans. Keep real tradeoffs and limitations. Do not make the claim stronger to create a more satisfying story. Respect the supplied register and proposed conclusion.",
+    "is_proof": false
+  },
+  {
+    "id": "large-dev-b-14",
+    "split": "development",
+    "category": "proof",
+    "task": "Revise the following finite-population proof for a survey methods appendix. Preserve the estimator and exact variance formula, and make the conditional-expectation reasoning understandable without adding an independence assumption. The source argument is valid but compresses several distinct steps.\n\nSOURCE:\nLet N ≥ 2 and let y_1,...,y_N be fixed real responses. Write μ = N^{-1}Σ_i y_i and σ² = N^{-1}Σ_i(y_i-μ)². Choose an unordered pair P uniformly from the C(N,2) pairs, and then choose J uniformly from the two indices in P. Set Y = y_J and Z = (1/2)Σ_{i∈P} y_i. We claim that E[Z] = μ and\nVar(Z) = ((N-2)/(2(N-1)))σ².\nThis concerns repeated sampling from the fixed population, not uncertainty in the responses themselves.\n\nConditional on P = {i,j}, Y takes y_i and y_j with equal probabilities. Thus\nE[Y|P] = Z,\nE[(Y-Z)²|P={i,j}] = (y_i-y_j)²/4.\nEvery index belongs to N-1 pairs, so J is uniform on all N indices. Consequently E[Y] = μ and Var(Y) = σ², and averaging the first conditional identity gives E[Z] = μ.\n\nExpand around Z. Since Z is determined by P,\nE[(Y-Z)(Z-μ)]\n= E[(Z-μ)E[Y-Z|P]]\n= 0.\nIt follows that σ² = E[(Y-Z)²] + Var(Z). This is orthogonality, although Y and Z need not be independent.\n\nFor the remaining term, the finite identity is\nΣ_{i<j}(y_i-y_j)²\n= NΣ_i y_i²-(Σ_i y_i)²\n= NΣ_i(y_i-μ)²\n= N²σ².\nTherefore\nE[(Y-Z)²] = N²σ²/(4C(N,2))\n= Nσ²/(2(N-1)).\nSubtracting gives the formula. At N = 2 the pair is the full population and Z is constant. If all responses coincide, both variances vanish for every N. No division by σ² is needed.",
+    "assertions": [
+      {
+        "group": "fidelity",
+        "text": "Preserves uniform unordered-pair sampling followed by a uniform member choice, fixed population responses, and population variance normalized by N."
+      },
+      {
+        "group": "fidelity",
+        "text": "Retains unbiasedness of Z and the exact variance factor (N-2)/(2(N-1))."
+      },
+      {
+        "group": "proof",
+        "text": "Justifies the marginal uniformity of J and E[Y|P] = Z from the stated two-stage sampling scheme."
+      },
+      {
+        "group": "proof",
+        "text": "Explains the vanishing cross term through conditional expectation rather than claiming independence of Y and Z."
+      },
+      {
+        "group": "proof",
+        "text": "Correctly expands the pairwise squared-difference sum and uses C(N,2) to average the conditional residual variance."
+      },
+      {
+        "group": "proof",
+        "text": "Handles N = 2 and constant responses without an invalid division or an assumption of positive variance."
+      },
+      {
+        "group": "style",
+        "text": "Connects the conditional identities, variance decomposition, and combinatorial calculation as one argument rather than a sequence of unexplained formulas."
+      }
+    ],
+    "quality_dimensions": [
+      "sampling fidelity",
+      "conditional-expectation reasoning",
+      "algebraic accuracy",
+      "proof structure"
+    ],
+    "source_words": 216,
+    "difficulty": "hard",
+    "subset": "validation",
+    "user_context": "The author asked for prose that follows their established writing preferences, not generic polished AI prose. Their recurring directions are to keep the big picture, explain why each construction is needed, and make the reasoning readable in order. They distinguish removing rhetorical repetition from compressing useful explanation. They want fidelity to the requested contribution and artifact form. Current task-specific instructions and audience take precedence. Do not infer personality, diagnoses, or private background.\n\nThe author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps. They dislike long paragraphs of inline mathematics that conceal the derivation and do not want proof steps skipped to meet a length target. Explain why the operations follow, retain the actual mathematical objects and assumptions, and keep short symbol references inline. Preserve the task's required proof strategy.",
+    "is_proof": true
+  }
+]

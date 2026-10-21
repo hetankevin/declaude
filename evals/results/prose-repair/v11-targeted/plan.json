@@ -1,0 +1,201 @@
+{
+  "candidate": "v11-dev",
+  "configs": {
+    "sol-low": [
+      "codex",
+      "gpt-6.1-sol",
+      "low"
+    ],
+    "sonnet-high": [
+      "claude",
+      "claude-sonnet-5-5",
+      "high"
+    ]
+  },
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "jobs": [
+    {
+      "id": "large-dev-a-12--sol-low",
+      "stage": "generation",
+      "case": "large-dev-a-12",
+      "config": "sol-low"
+    },
+    {
+      "id": "large-dev-a-12--batch",
+      "stage": "judge",
+      "case": "large-dev-a-12",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v11-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v11-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v11-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-a-12",
+          "config": "sol-low",
+          "candidate": "v11-dev",
+          "reference": "v10-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "left"
+        }
+      ]
+    },
+    {
+      "id": "large-dev-b-14--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-14--batch",
+      "stage": "judge",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v11-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v11-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v11-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v11-dev",
+          "reference": "v10-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "left"
+        }
+      ]
+    }
+  ],
+  "max_calls": 4,
+  "max_generations": 2,
+  "max_judges": 2,
+  "max_claude_calls": 1,
+  "max_workers": 2,
+  "retries": 0,
+  "token_guard": 160000,
+  "codex_credit_guard": 20,
+  "writer_token_reservation": 30000,
+  "judge_token_reservation": 50000,
+  "credit_reservations": {
+    "sol-low": 3,
+    "sol-high": 6
+  },
+  "credit_rates": {
+    "astra-high": [
+      250,
+      25,
+      1250
+    ],
+    "sol-low": [
+      50,
+      2.5,
+      250
+    ],
+    "sol-high": [
+      50,
+      2.5,
+      250
+    ]
+  },
+  "selection": {
+    "sol-low": [
+      "large-dev-a-12"
+    ],
+    "sonnet-high": [
+      "large-dev-b-14"
+    ]
+  },
+  "selection_reason": "Only the two requested known regressions: Sol excluded-runs argument and Sonnet variance proof. One case per model; repair diagnostic, not generalization or preservation of all earlier gains. Holdouts untouched.",
+  "validation": "Original strict evidence validator plus predeclared source-verified initial-case repair and optional source quote removal. Reasons/preferences unchanged. Qualified verdicts flagged and excluded in sensitivity. No retries.",
+  "packing": "Unchanged fully inlined generation format and frozen author-specific Sol-high judge. All three comparator arms reused, no extra order audits.",
+  "files": {
+    "historical-observations.json": "c19b58b328a4782049d461bf2483f1b479c0def1816d7e8e87dee9d97603754d",
+    "bundle.txt": "3fd2bfb9c3bb82e273aafa817259b054820da930aea5f6dd599f9fe2c1bb4a7c",
+    "baselines.json": "13d51d0296d83415f382f7fbd65abe5b4fe491e55b92583cb9ecf4d21a7de4b1",
+    "cases.json": "c972800b7163cf384d0750d0afb3255973e2ed256b60a3cb82064fabf6890308",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "scripts": {
+    "v11_check.py": "6e94f01cef1e4fa2f50bf47e0731130522fe02532efa9d3a1b38599bce724de5",
+    "restored_check.py": "f7c94bf15e2e29604506a58b311f3d33d2eed3533c00a582525f3780a3a6567b",
+    "bench.py": "c8d95a83d29e0194578089c9a5b7bfe741c81bf701fe933c88f5ee814f08fd20",
+    "grade_long_horizon.py": "f24aae797fe32953dfaa75ffe92c9746abb146ea52760809e8db06ad7c13c2d9",
+    "long_horizon.py": "563c11ff51e40a1fb0b7223fb0bc2e41b88d40f6fb60ed9de58d877a5d46e8e9",
+    "pairwise.py": "bb663a03d066aa76e8cb226faea970c495291c691bc1914a9e228c22ead39038",
+    "prose_repair.py": "cd7d6a118d155c43958eed107ed45a2218db37f354767d86e2ca435be7a62039",
+    "context_regrade.py": "3fce1e84d31aa0f45edd8f07dacb7ecdba9dee835ccb159bb68116d10e2419f4",
+    "cross_model_small.py": "2bd940498fb442a4d8b8630a051614d8ae1e7bd2799fadc1d4bfc62b61d0c22f",
+    "finalize_restored_results.py": "f4f98317b3d0c11f5d9eabf4005fadacfaa3c07dae0bf07b0ad943e80065485e",
+    "finish_restored_check.py": "e481a56608df7f64bf59e87d3eae46b45bbdbefd93feb8c1f93dbb7b208c176d",
+    "finalize_v10.py": "9dc3275a1f35ea9368983272229030f2bc58da86ad1dbe72fd29bf80b9747114"
+  },
+  "source_artifacts": {
+    "responses.json": "6622dd84f7e2ecf731ac31578df356c3e32a9b8f5e5a476c10de27bdc3c1cf0f",
+    "observations.json": "6627d02d9c1339e4ffaef6d40aeb16a0e0136620ac56eacd37dda47a525e2760",
+    "cases.json": "8b38dfdf4fbc56f0e63745d491e99f450febcda0f647b02bec570f68ea92f1ef",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "plan_sha256": "e7689f63e267d7e38fdb229346d7ae275ec463b082cb81957e1a6b21fa5098ec"
+}

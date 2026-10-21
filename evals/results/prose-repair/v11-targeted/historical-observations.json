@@ -1,0 +1,915 @@
+[
+  {
+    "case": "large-dev-a-12",
+    "config": "sol-low",
+    "candidate": "v10-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P01",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of a laboratory policy argument, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the existing exclusion rule, proposed table fields, underlying records and review process, attempted and retained counts, and individual accounting under shared explanations. It retains the proposal's limitations.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [
+              "The rule therefore excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the rule and all proposed reporting requirements, including runs without readings and shared explanations with individual entries. Its risk-reduction language remains qualified and promises no guarantee.",
+          "quotes": {
+            "source": [
+              "We could permit a shared explanation for that group, but each affected run should still appear."
+            ],
+            "A": [],
+            "B": [
+              "When the same fault affects several runs, a shared explanation could reduce repeated prose, but each affected run should still appear."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the distinction between changing reporting and changing exclusions, retain the complete accounting proposal, and acknowledge workload, misuse, and the limits of inspection.",
+          "quotes": {
+            "source": [
+              "The proposed table would expose how that rule was applied. It would not change the rule."
+            ],
+            "A": [
+              "The proposal would make those decisions visible without changing which runs enter the mean."
+            ],
+            "B": [
+              "I propose revising the report template to make exclusions visible without changing which runs enter the reported mean."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, conversational technical prose and clear references among runs, readings, and exclusion decisions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "An unusual result alone does not establish that those conditions failed."
+            ],
+            "B": [
+              "An unusual result alone does not establish that the measurement conditions failed."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A explains the reporting gap before specifying the table, but repeats counts and shared explanations. B supplies the full proposal before explaining the gap, then develops its justification with less repetition. Both provide a coherent argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "At present, it lists only the runs used to calculate the mean, so readers cannot tell whether a batch had no exclusions or whether excluded runs were simply left out of the summary."
+            ],
+            "B": [
+              "A separate exclusions table would account for the difference, listing each excluded run’s identifier, completion status, reason for exclusion, and whether a usable reading exists.",
+              "The current summary lists only runs used to calculate the mean."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A gives reasons before detailed specifications and frames a concrete meeting decision. B consolidates the proposal and explicitly distinguishes the examples from the reporting policy. These are comparable ways to meet the author's priorities, with different organizational costs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The question for the meeting is whether the added visibility justifies the reporting work and the remaining risk of misinterpretation."
+            ],
+            "B": [
+              "These examples illustrate the existing rule; the proposed reporting policy would show how that rule was applied."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both explain why exclusions need separate accounting while preserving the unresolved tradeoff. A's earlier explanation of the reporting gap balances B's consolidated proposal and reduced repetition; neither has a decisive advantage for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Including runs without usable readings matters because a table of excluded numeric values would miss those failures and could make a difficult batch look cleaner than it was."
+            ],
+            "B": [
+              "A table limited to excluded numeric values would omit those failures and could make a difficult batch appear cleaner than it was."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "source_quote_repairs": [],
+    "optional_source_quote_qualified": false,
+    "json_syntax_repairs": [],
+    "raw_sha256": "bb74f8e5fdd3831868da03847428c3bb4b4ab4bc8ed6c30e6715c2a3ca3cb806",
+    "prompt_sha256": "4a545112fedcc35c429c9fea2d8425ba4b90fc8848d8b7801abba11ef900bd16",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+    "response_sha256": {
+      "none": "2a5cef85851f6d4fd7552b459ca77c8291687749a703aec846e1deee4f80687f",
+      "v10-dev": "f761cb67759ab0d2b3bd8cc1c3e945c332449b49fafd8e604d37770a166fdbfc"
+    }
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "sol-low",
+    "candidate": "v10-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P02",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns exposition of a proposed laboratory reporting policy, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the exclusion rule, table fields, raw-record access, counts, runs without readings, and conditional shared explanations. The proposal remains unadopted and its limitations remain explicit.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [
+              "The rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's reporting requirements and exclusion criteria, including individual entries for grouped faults. It preserves review requirements and makes no unsupported guarantee.",
+          "quotes": {
+            "source": [
+              "Raw readings would remain in the underlying record, available through the existing review process."
+            ],
+            "A": [],
+            "B": [
+              "Raw readings would remain in the underlying record, available through the existing review process."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive proposal, existing exclusion rule, accounting requirements, possible misuse, and reporting burden. A's consolidation removes repetition without omitting a qualification.",
+          "quotes": {
+            "source": [
+              "The summary should report the number attempted and the number retained beside the mean, with the exclusions table accounting for the difference."
+            ],
+            "A": [
+              "The summary should also report the number of runs attempted and retained beside the mean, with the table accounting for the difference."
+            ],
+            "B": [
+              "Each affected run should appear, including runs with no usable reading, so the table accounts for the difference between the number attempted and the number retained."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and accessible for a methods meeting. A is more consolidated, but B's individual sentences are equally readable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Showing excluded runs may invite readers to calculate a new mean from everything listed."
+            ],
+            "B": [
+              "There is still a risk that readers will use excluded readings to calculate a new mean."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A keeps table fields, counts, and the reason to include runs without readings together, then introduces shared explanations when discussing workload. B introduces shared explanations earlier and repeats them in the conclusion, making the argument retrace a completed step.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposal leaves a tradeoff between making exclusion decisions easier to inspect and adding reporting work, especially when one fault affects several runs. We could allow a shared explanation for those runs, provided each run still appears in the table."
+            ],
+            "B": [
+              "Where the same fault affects several runs, we could permit a shared explanation while still listing each run.",
+              "Allowing shared explanations could reduce that burden while preserving a count of every affected run."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better follows the author's preference for removing repetition while retaining useful explanation: it explains both accounting distortions together and connects the shared explanation directly to the burden it addresses.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Omitting those failures could make a difficult batch look cleaner than it was, while treating stopped runs as measured outcomes would create a different distortion."
+            ],
+            "B": [
+              "Including runs without usable readings matters because a table of excluded numeric values would miss those failures and could make a difficult batch look cleaner than it was.",
+              "Reporting attempted and retained counts alongside the mean would show the extent of the exclusions without treating every attempt as a measurement."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the task nor the source contains a proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better meets the user's central preference for connected reasoning without rhetorical repetition: the workload objection leads immediately to the shared-explanation compromise, while B states that compromise twice. A preserves the substantive explanation and unresolved tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This would reduce repeated prose while preserving a countable record of the batch."
+            ],
+            "B": [
+              "Where the same fault affects several runs, we could permit a shared explanation while still listing each run.",
+              "Allowing shared explanations could reduce that burden while preserving a count of every affected run."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "source_quote_repairs": [],
+    "optional_source_quote_qualified": false,
+    "json_syntax_repairs": [],
+    "raw_sha256": "bb74f8e5fdd3831868da03847428c3bb4b4ab4bc8ed6c30e6715c2a3ca3cb806",
+    "prompt_sha256": "4a545112fedcc35c429c9fea2d8425ba4b90fc8848d8b7801abba11ef900bd16",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+    "response_sha256": {
+      "v4": "d301f631b55630140abfb37108930645324e9925cef5fcf65bec188167f741a9",
+      "v10-dev": "f761cb67759ab0d2b3bd8cc1c3e945c332449b49fafd8e604d37770a166fdbfc"
+    }
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "sol-low",
+    "candidate": "v10-dev",
+    "reference": "v9-restored-dev",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P03",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a laboratory policy argument without a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all substantive requirements: unchanged exclusion criteria, proposed fields, raw-record access, complete run accounting, counts, shared explanations, and limitations on transparency.",
+          "quotes": {
+            "source": [
+              "Reviewers will still have to judge whether the documented reasons are convincing. A fuller table cannot guarantee honest recording or repair an ambiguous rule."
+            ],
+            "A": [
+              "Reviewers would still need to judge whether the documented reasons are convincing.",
+              "The table could make exclusion decisions available for inspection, but it could not guarantee honest recording or resolve an ambiguous rule."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the rule, proposed reporting requirements, record access, counts, and unresolved limitations. In context, its statement about recording reading availability accompanies the requirement to list each excluded run; it does not replace that requirement.",
+          "quotes": {
+            "source": [
+              "This also matters when a run has no usable reading at all. A table containing only excluded numeric values would miss those failures"
+            ],
+            "A": [],
+            "B": [
+              "The table should list each excluded run’s identifier, completion status, reason for exclusion, and whether a usable reading exists.",
+              "Recording whether a usable reading exists also ensures that failures with no numeric result appear in the report."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the same proposed policy, existing exclusion rule, complete accounting, and substantive tradeoffs. B's shorter instruction to distinguish stopped runs from measured outcomes preserves the source's distinction.",
+          "quotes": {
+            "source": [
+              "On the other hand, counting all stopped runs as if they were measured outcomes would create a different distortion."
+            ],
+            "A": [
+              "But counting stopped runs as measured outcomes would create a different distortion."
+            ],
+            "B": [
+              "Stopped runs should nevertheless remain distinct from measured outcomes."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both maintain a conversational technical register with readable sentences and understandable references. Neither has a substantive advantage in idiom or sentence-level clarity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does not need every raw reading to make the decisions inspectable, and including them could make those decisions harder to follow."
+            ],
+            "B": [
+              "Including every raw reading in the table is unnecessary for documenting the decisions and could make them harder to follow."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B states the existing rule before illustrating it, keeps the no-reading issue with the attempted-versus-retained accounting, and introduces shared explanations once as a response to workload. A is coherent but repeats the counts and shared-explanation proposal across paragraphs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Where the same fault affects several runs, we could permit a shared explanation while still listing each run.",
+              "Allowing shared explanations could reduce that burden while preserving a count of every affected run."
+            ],
+            "B": [
+              "The additional reporting would take time, especially when one fault affects several runs. We could permit a shared explanation for such a group, provided each affected run still appears."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more closely follows the preference for removing repeated explanation while preserving the argument. Its rule-first presentation also makes the supporting example's role explicit without adding claims or rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Our existing rule distinguishes a run stopped by a temperature controller failure from a completed run with an unusual result."
+            ],
+            "B": [
+              "Under that rule, controller failures are excluded, while unusual completed results are retained unless a separately recorded equipment or handling fault justifies exclusion.",
+              "For example, a run stopped because the temperature controller failed did not meet the stated measurement conditions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a modest advantage because it preserves the useful explanations while consolidating repeated accounting and placing the shared-explanation compromise directly after its workload rationale. It also clearly separates the existing rule from its example and leaves the tradeoff unresolved.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The question for the meeting is whether the added visibility justifies the reporting work and the remaining risk of misinterpretation."
+            ],
+            "B": [
+              "That would reduce repeated prose while preserving a count of the affected runs. The remaining tradeoff is between making exclusions easier to inspect and the added reporting work and risk of misinterpretation."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "source_quote_repairs": [],
+    "optional_source_quote_qualified": false,
+    "json_syntax_repairs": [],
+    "raw_sha256": "bb74f8e5fdd3831868da03847428c3bb4b4ab4bc8ed6c30e6715c2a3ca3cb806",
+    "prompt_sha256": "4a545112fedcc35c429c9fea2d8425ba4b90fc8848d8b7801abba11ef900bd16",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "6b6ebba8fb97e816d37d5c14322957a9ec1594bc6a518dd9fa935116de8ba27b",
+    "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+    "response_sha256": {
+      "v9-restored-dev": "ed35a1169b12dc77842ff1654727c8504e38be3f7a8eabcce551a5870ddbc2a0",
+      "v10-dev": "f761cb67759ab0d2b3bd8cc1c3e945c332449b49fafd8e604d37770a166fdbfc"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sonnet-high",
+    "candidate": "v10-dev",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P04",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an appendix proof with explicit mathematical calculations and conditional-expectation explanations.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A incorrectly asserts dependence unconditionally. At the permitted case N=2, Z is constant and therefore independent of Y. This changes the dependence claim but does not invalidate the variance derivation.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent.",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "Indeed they are dependent, since $Y$ is one of the two values averaged in $Z$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B likewise asserts dependence for all allowed populations, although constant Z at N=2 is independent of Y. The main derivation remains correct. Its later 'every quantity' wording is ambiguous in a variance-focused remark, rather than a decisive additional error.",
+          "quotes": {
+            "source": [
+              "At N = 2 the pair is the full population and Z is constant.",
+              "If all responses coincide, both variances vanish for every N."
+            ],
+            "A": [],
+            "B": [
+              "Y and Z are dependent, since Z is determined by P and Y is drawn from within P.",
+              "then σ² = 0 and every quantity above is zero for every N."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the estimator and exact calculation but make the same unsupported universal dependence claim. B's 'every quantity' could mean the variance quantities in context; that ambiguity does not establish a further material difference.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "Indeed they are dependent"
+            ],
+            "B": [
+              "Y and Z are dependent"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both explain the conditioning in readable technical prose. B's mathematical presentation affects the requested exposition more than the idiomatic quality of its sentences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the factor $Z-\\mu$ is known once we condition on $P$"
+            ],
+            "B": [
+              "Z − μ is a function of P, so it can be taken outside the conditional expectation:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B explicitly explains why the auxiliary draw Y is useful before beginning the calculations. A moves directly into conditional moments, although its subsequent sequence is coherent.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "*Step 1: conditioning on the pair.*"
+            ],
+            "B": [
+              "The proof compares Y, a single draw, with Z, the mean of the pair containing it."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A meets the explicit request for displayed, laid-out mathematics. B presents its multi-line derivation as plain Unicode text, making the calculation less suited to the requested appendix format.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\begin{aligned}\n\\sum_{i<j}(y_i-y_j)^2"
+            ],
+            "B": [
+              "Σ_{i<j} (yᵢ − yⱼ)² = ½ Σᵢ Σⱼ (yᵢ² − 2yᵢyⱼ + yⱼ²)"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both have the same minor dependence error and otherwise valid derivations. A better satisfies the proof-exposition requirement through aligned displays and explicit explanations of the centering equalities.",
+          "quotes": {
+            "source": [
+              "use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "The fourth uses $\\sum_i(y_i-\\mu)^2=\\sum_i y_i^2-N\\mu^2$."
+            ],
+            "B": [
+              " = N [Σᵢ yᵢ² − Nμ²]\n = N Σᵢ (yᵢ − μ)²"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both require the same correction to their categorical dependence claim. At equal material-error severity, A is more usable for this user because it supplies properly displayed derivations and explains their intermediate equalities; B's helpful overview does not offset its presentation gap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The second line expands the square and uses $\\sum_{i,j}y_iy_j=(\\sum_i y_i)^2$."
+            ],
+            "B": [
+              "Σ_{i<j} (yᵢ − yⱼ)² = ½ Σᵢ Σⱼ (yᵢ² − 2yᵢyⱼ + yⱼ²)"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "source_quote_repairs": [],
+    "optional_source_quote_qualified": false,
+    "json_syntax_repairs": [],
+    "raw_sha256": "b40ac849f538560291502674b190cd4ef5717100b1936420be5fb13ae18158bf",
+    "prompt_sha256": "003cd89ef4dc7c379b9e27e731033b12c80e5bf2ee3b0ecc933b4c6805203932",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+    "response_sha256": {
+      "none": "cd0d271d25a12c46996ecc1464bdc72270fa75eabe5d27029d1d5ef6bb62ed06",
+      "v10-dev": "6284d1d6e51a44d3fb9f9c98dcae9ca750bee78e7d59d88f3d5eb0e03e266d21"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sonnet-high",
+    "candidate": "v10-dev",
+    "reference": "v4",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P05",
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The artifact is a mathematical proof whose correctness and explanatory expansion are both requested.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A incorrectly says Y and Z are not independent without qualification. For N=2, Z is constant and independent of Y. The conditional-expectation argument itself remains valid.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent.",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "It does not assume that $Y$ and $Z$ are independent, and they are not."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B makes the same false universal dependence claim, overlooking allowed constant-Z cases. Its exact variance calculation does not rely on that claim and remains correct.",
+          "quotes": {
+            "source": [
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [],
+            "B": [
+              "Indeed they are dependent, since $Y$ is one of the two values averaged in $Z$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the design, normalization, formula, and edge cases but replace possible dependence with an incorrect categorical assertion. The consequences are equivalent.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "and they are not."
+            ],
+            "B": [
+              "Indeed they are dependent"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both have readable mathematical prose and straightforward explanations. Their differences in wording and length do not create a substantive naturalness advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The last term is $\\operatorname{Var}(Z)$ because $\\mathbb E[Z]=\\mu$."
+            ],
+            "B": [
+              "In particular $\\operatorname{Var}(Z)=\\mathbb E[(Z-\\mu)^2]$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow the same understandable route: conditional moments, marginal uniformity, variance decomposition, pairwise sum, and conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since $P$ is uniform over the $\\binom N2$ pairs, Step 1 gives"
+            ],
+            "B": [
+              "Averaging the conditional second moment from Step 1 over the $\\binom N2$ equally likely pairs gives"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the author's preference for displayed calculations and explanations of nontrivial transitions. Their step labels support essentially the same degree of exposition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the ordered double sum counts each unordered pair twice and has zero diagonal terms:"
+            ],
+            "B": [
+              "Summing over ordered pairs counts each unordered pair twice, and the diagonal terms are zero, so"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly prove the requested result but contain the same minor dependence error. A expands the double sum more explicitly; B expands the conditional residual moment and centering calculation. Both explain the required operations sufficiently.",
+          "quotes": {
+            "source": [
+              "The source argument is valid but compresses several distinct steps."
+            ],
+            "A": [
+              "The fourth line uses $\\sum_i(y_i-\\mu)^2=\\sum_i y_i^2-N\\mu^2"
+            ],
+            "B": [
+              "The fourth uses $\\sum_i(y_i-\\mu)^2=\\sum_i y_i^2-N\\mu^2$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Both need the same qualification to their dependence assertion, with no difference in its mathematical consequences. Their otherwise correct, expanded proofs comparably meet the user's appendix-writing goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The argument never divides by $\\sigma^2$"
+            ],
+            "B": [
+              "The argument never divides by $\\sigma^2$"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "tie",
+      "overall": "tie"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "source_quote_repairs": [],
+    "optional_source_quote_qualified": false,
+    "json_syntax_repairs": [],
+    "raw_sha256": "b40ac849f538560291502674b190cd4ef5717100b1936420be5fb13ae18158bf",
+    "prompt_sha256": "003cd89ef4dc7c379b9e27e731033b12c80e5bf2ee3b0ecc933b4c6805203932",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+    "response_sha256": {
+      "v4": "1f6d6d3a3d1338671ddd46e3d6d98b916b11d7db0402a7d66c792135df628d86",
+      "v10-dev": "6284d1d6e51a44d3fb9f9c98dcae9ca750bee78e7d59d88f3d5eb0e03e266d21"
+    }
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "sonnet-high",
+    "candidate": "v10-dev",
+    "reference": "v9-restored-dev",
+    "judge": "sol-high",
+    "order": "primary",
+    "pair_id": "P06",
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a mathematical proof with an understandable conditional-expectation derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A incorrectly asserts that Y and Z are necessarily dependent. At N=2, Z is constant and independent of Y. This auxiliary claim is false, although the variance proof remains valid.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent.",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "Indeed they are dependent, since $Y$ is one of the two values averaged in $Z$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the sampling design, fixed responses, population variance normalization, exact formula, and special cases. It correctly uses conditional orthogonality without asserting dependence or independence.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [],
+            "B": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B preserves the source's qualification about independence. A strengthens it to a false universal dependence claim, excluding permitted degenerate cases.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "Indeed they are dependent"
+            ],
+            "B": [
+              "This is orthogonality of $Y-Z$ and $Z-\\mu$, which follows from conditioning on $P$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both explain the mathematical operations in readable prose. Their wording differences do not establish a substantial naturalness advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the factor $Z-\\mu$ is known once we condition on $P$"
+            ],
+            "B": [
+              "The cross term vanishes because $Z-\\mu$ is determined by $P$"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A introduces the averaged residual before evaluating its sum; B establishes the needed identity before averaging. Both clearly connect the conditional residual to the final variance calculation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Averaging the conditional second moment from Step 1"
+            ],
+            "B": [
+              "Now average (1) over the $\\binom N2$ equally likely pairs:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both provide displayed derivations, explanatory transitions, and explicit special cases appropriate to the appendix. Neither has a meaningful advantage in the requested explanatory voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Summing over ordered pairs counts each unordered pair twice, and the diagonal terms are zero"
+            ],
+            "B": [
+              "Summing over ordered pairs counts each unordered pair twice and gives zero for $i=j$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both correctly derive the exact variance and explain conditional orthogonality. B also keeps the mathematical qualification correct, whereas A adds a false assertion of necessary dependence.",
+          "quotes": {
+            "source": [
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "Indeed they are dependent, since $Y$ is one of the two values averaged in $Z$."
+            ],
+            "B": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, while A adds a false dependence claim that fails at N=2. Both otherwise supply the requested explanatory proof, so B's preservation of the mathematical qualification is decisive.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Indeed they are dependent"
+            ],
+            "B": [
+              "It does not say that $Y$ and $Z$ are independent, and none is used."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "source_quote_repairs": [],
+    "optional_source_quote_qualified": false,
+    "json_syntax_repairs": [],
+    "raw_sha256": "b40ac849f538560291502674b190cd4ef5717100b1936420be5fb13ae18158bf",
+    "prompt_sha256": "003cd89ef4dc7c379b9e27e731033b12c80e5bf2ee3b0ecc933b4c6805203932",
+    "rubric_sha256": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "context_sha256": "eb1e7fa0cd67f24c602f35dadeae1c218af420d949de07cbdbc4d0b2d7b57bdb",
+    "plan_sha256": "98c468f1311093b77cb6415d00e4f947c2559210ce2ee6f826309bd00c696ede",
+    "response_sha256": {
+      "v9-restored-dev": "9d4dcbfceed374c23c88e48816ca506acaa985115cbc7cbd165f6604f37dcd50",
+      "v10-dev": "6284d1d6e51a44d3fb9f9c98dcae9ca750bee78e7d59d88f3d5eb0e03e266d21"
+    }
+  }
+]
