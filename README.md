@@ -6,7 +6,7 @@ It removes rhetorical repetition and unnecessary abstractions while preserving f
 
 ## Restored v9 candidate
 
-[v9-restored-dev](evals/versions/v9-restored-dev/SKILL.md) restores the explicit meaning checks, personal research punctuation preference, exclusions for internal discussion, protection of adverse results, detailed final fidelity checks, and the warning against cosmetic “so what” endings. V9's argument organization, correction retention, selective guidance, and proof instructions remain. All reference files are unchanged from the tested v9. This candidate is **unevaluated**; the results below concern the original frozen v9. Packaged and installed remain v4. [Rerun cost estimates](evals/rerun-cost-estimate.md) describe options without launching them.
+[v9-restored-dev](evals/versions/v9-restored-dev/SKILL.md) restores the explicit meaning checks, personal research punctuation preference, exclusions for internal discussion, protection of adverse results, detailed final fidelity checks, and the warning against cosmetic “so what” endings. V9's argument organization, correction retention, selective guidance, and proof instructions remain. All reference files are unchanged from the tested v9. A [budgeted 20-case development check](evals/results/prose-repair/v9-restored-20/report.md) is **running** with a hard 100-call cap, cached baselines, and untouched fresh holdouts. Its checkpoint is incomplete; the results below concern the original frozen v9. Packaged and installed remain v4. [Rerun cost estimates](evals/rerun-cost-estimate.md) describe options without launching them.
 
 ## Latest economical cross-model check
 
