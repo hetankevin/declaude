@@ -1,5 +1,9 @@
 # Handoff
 
+## V9 safeguards restored; no evaluation launched
+
+User requested restoration of the six useful omissions while preserving argument/proof guidance, and asked for rerun costs. New candidate: evals/versions/v9-restored-dev/. Original v9-dev and all recorded results remain frozen. Only the new SKILL.md differs from original v9; all references and UI metadata are byte-identical. Restored concrete logical-force distinctions, personal research semicolon preference, internal-discussion exclusions, adverse-result protection, detailed fidelity/math checks, and the warning against cosmetic “so what” slogans. No generations, judges, installations, or holdout reads/runs. Packaged/installed remain v4. README clearly separates unevaluated restored candidate from tested v9. Cost estimates are in evals/rerun-cost-estimate.md; estimates are not authorization to launch.
+
 ## Economical cross-model check complete
 
 Latest user request: complete evaluations without burning too many credits. Completed the announced bounded extension: six v9 writing calls (same three selected development cases on Sol low and Sonnet high) and three batched Sol-high blind judge calls. Exactly NINE new calls,183,559 reported input/output+cache tokens, zero unknown usage, zero automatic retries. All6 drafts and12 new primary pairwise judgments are valid. No jobs remain running/queued. No broad matrix, subagents, skill edits, installations or holdout runs were added.
