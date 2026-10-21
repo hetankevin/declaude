@@ -1,0 +1,149 @@
+{
+  "candidate": "v12-dev",
+  "configs": {
+    "sonnet-high": [
+      "claude",
+      "claude-sonnet-5-5",
+      "high"
+    ]
+  },
+  "judge": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "jobs": [
+    {
+      "id": "large-dev-b-14--sonnet-high",
+      "stage": "generation",
+      "case": "large-dev-b-14",
+      "config": "sonnet-high"
+    },
+    {
+      "id": "large-dev-b-14--batch",
+      "stage": "judge",
+      "case": "large-dev-b-14",
+      "judge": "sol-high",
+      "order": "primary",
+      "pairs": [
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v12-dev",
+          "reference": "none",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P01",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v12-dev",
+          "reference": "v4",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P02",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v12-dev",
+          "reference": "v9-restored-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P03",
+          "a_side": "right"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v12-dev",
+          "reference": "v10-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P04",
+          "a_side": "left"
+        },
+        {
+          "case": "large-dev-b-14",
+          "config": "sonnet-high",
+          "candidate": "v12-dev",
+          "reference": "v11-dev",
+          "judge": "sol-high",
+          "order": "primary",
+          "label": "P05",
+          "a_side": "right"
+        }
+      ]
+    }
+  ],
+  "max_calls": 2,
+  "max_generations": 1,
+  "max_judges": 1,
+  "max_claude_calls": 1,
+  "max_workers": 1,
+  "retries": 0,
+  "token_guard": 65343,
+  "codex_credit_guard": 13.85643,
+  "writer_token_reservation": 30000,
+  "judge_token_reservation": 40000,
+  "credit_reservations": {
+    "sol-low": 3,
+    "sol-high": 6
+  },
+  "credit_rates": {
+    "astra-high": [
+      250,
+      25,
+      1250
+    ],
+    "sol-low": [
+      50,
+      2.5,
+      250
+    ],
+    "sol-high": [
+      50,
+      2.5,
+      250
+    ]
+  },
+  "selection": {
+    "sonnet-high": [
+      "large-dev-b-14"
+    ]
+  },
+  "selection_reason": "One additional Sonnet proof repair after generic core guidance failed. Sol v11 draft retained without regeneration. Combined token/credit guards across v11 and v12 remain160k/20. No claims about untested gains. Holdouts untouched.",
+  "validation": "Original strict evidence validator plus predeclared source-verified initial-case repair and optional source quote removal. Reasons/preferences unchanged. Qualified verdicts flagged and excluded in sensitivity. No retries.",
+  "packing": "Unchanged fully inlined generation format and frozen author-specific Sol-high judge. All three comparator arms reused, no extra order audits.",
+  "files": {
+    "historical-observations.json": "3346867ae0f5dea0a14ec40480a54c1c7b840209de9a65116d595a74054e5691",
+    "bundle.txt": "f99132c883cd19f9457323c2a8757ed78908ad12930fc6f36f84d7a52d73ae0f",
+    "baselines.json": "5a7b69b6dc0940f6502cbd0f0631ec8f31190e0bca15663907896de0e17aa6e6",
+    "cases.json": "aac8aaad604656b960433f13d42b2450d55007dfb75dad6521144ff4392a7d34",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427"
+  },
+  "scripts": {
+    "v12_check.py": "b1ecb54b88d6e5e107631b92ec94f78432d975bc2ca1f7e1eef375a7836fca35",
+    "restored_check.py": "f7c94bf15e2e29604506a58b311f3d33d2eed3533c00a582525f3780a3a6567b",
+    "bench.py": "c8d95a83d29e0194578089c9a5b7bfe741c81bf701fe933c88f5ee814f08fd20",
+    "grade_long_horizon.py": "f24aae797fe32953dfaa75ffe92c9746abb146ea52760809e8db06ad7c13c2d9",
+    "long_horizon.py": "563c11ff51e40a1fb0b7223fb0bc2e41b88d40f6fb60ed9de58d877a5d46e8e9",
+    "pairwise.py": "bb663a03d066aa76e8cb226faea970c495291c691bc1914a9e228c22ead39038",
+    "prose_repair.py": "cd7d6a118d155c43958eed107ed45a2218db37f354767d86e2ca435be7a62039",
+    "context_regrade.py": "3fce1e84d31aa0f45edd8f07dacb7ecdba9dee835ccb159bb68116d10e2419f4",
+    "cross_model_small.py": "2bd940498fb442a4d8b8630a051614d8ae1e7bd2799fadc1d4bfc62b61d0c22f",
+    "finalize_restored_results.py": "f4f98317b3d0c11f5d9eabf4005fadacfaa3c07dae0bf07b0ad943e80065485e",
+    "finish_restored_check.py": "e481a56608df7f64bf59e87d3eae46b45bbdbefd93feb8c1f93dbb7b208c176d",
+    "finalize_v10.py": "9dc3275a1f35ea9368983272229030f2bc58da86ad1dbe72fd29bf80b9747114"
+  },
+  "source_artifacts": {
+    "responses.json": "b941c16cf13f0cbd283d5d1f87241ae656ccf4acc9b68f45da159f0a7f8a2e74",
+    "observations.json": "3346867ae0f5dea0a14ec40480a54c1c7b840209de9a65116d595a74054e5691",
+    "cases.json": "c972800b7163cf384d0750d0afb3255973e2ed256b60a3cb82064fabf6890308",
+    "rubric.txt": "6807c34be4a9f521731e9e230c66a7c88144f85334ac5bf9a1a3cf89008c9427",
+    "usage.json": "043dfc71141a2cc1835d1c33dd410028edaa9481d4104e997da98b0a6aeffc5f"
+  },
+  "plan_sha256": "710da2478dabd22dfee3d96a0592e7a71cecafd51c7a53266ea0cc69e4dbe387"
+}

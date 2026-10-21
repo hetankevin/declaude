@@ -1,0 +1,84 @@
+{
+  "new_model_calls": 0,
+  "rule": "Post-freeze reporting repair: preserve both duplicate quotation lists, then validate every quotation against the supplied text. No selection of one list over another. Conflicting reasons, preferences, severity or other non-quotation values rejected. Original artifacts unchanged.",
+  "batches": [
+    {
+      "job": "large-dev-a-12--batch",
+      "raw_sha256": "81a8f62cd60e8b3f79e248088512e2020d89707eab2ba519ebca0f4138e789ba",
+      "normalized_sha256": "a55a7e56855cf8dd1d5e4b6dd9877fa4efa1b1c2c04196230ad05cd85de46e89",
+      "repairs": [
+        {
+          "path": [
+            "P03",
+            "material_errors",
+            "B",
+            "quotes",
+            "B"
+          ],
+          "kind": "preserve both quotation lists",
+          "before": [
+            "A table containing only excluded numeric values would miss those failures"
+          ],
+          "additional": [
+            "Recording whether a usable reading exists also ensures that failures with no numeric result appear in the report."
+          ]
+        },
+        {
+          "path": [
+            "P03",
+            "dimensions",
+            "progression",
+            "quotes",
+            "B"
+          ],
+          "kind": "preserve both quotation lists",
+          "before": [
+            "It should be labeled as a record of exclusions"
+          ],
+          "additional": [
+            "Clear labeling and keeping raw readings in the underlying record may help, but they do not eliminate that risk."
+          ]
+        },
+        {
+          "path": [
+            "P03",
+            "dimensions",
+            "voice",
+            "quotes",
+            "B"
+          ],
+          "kind": "preserve both quotation lists",
+          "before": [
+            "Raw readings would remain in the underlying record, available through the existing review process."
+          ],
+          "additional": [
+            "Clear labeling and keeping raw readings in the underlying record may help, but they do not eliminate that risk."
+          ]
+        },
+        {
+          "path": [
+            "P03",
+            "dimensions",
+            "overall",
+            "quotes",
+            "B"
+          ],
+          "kind": "preserve both quotation lists",
+          "before": [
+            "It should be labeled as a record of exclusions"
+          ],
+          "additional": [
+            "Showing excluded runs may invite readers to calculate a new mean from everything reported."
+          ]
+        }
+      ]
+    },
+    {
+      "job": "large-dev-b-14--batch",
+      "raw_sha256": "2db4f5d7a2b9da7feba0be1369225498766f17e5b9fe6141735bd3e80915c150",
+      "normalized_sha256": "e444044f2a1df48d72df9f10c4cf626ab50c14bf0edaf5a8db8967e3a53737e1",
+      "repairs": []
+    }
+  ],
+  "script_sha256": "bcdf7a0d139137299a57c1e4107e679148eddefedad8f835c05e177632cb3a08"
+}

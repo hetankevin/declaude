@@ -1,8 +1,10 @@
 # Handoff
 
-## V11 two-case dev repair running
+## V11/V12 focused dev repair in progress
 
-User requested only Sol excluded-runs and Sonnet dependence regression. Candidate evals/versions/v11-dev adds distinction between not requiring an assumption and negating it; informal proof claims checked against all allowed cases; one location for each reason/consequence and compromise with its cost. All v10 gains guidance and reference files preserved. tools/v11_check.py freezes2 drafts/2 blind Sol-high batches,8 comparisons against saved none/v4/restored-v9/v10. Hard4 calls,160k-token/20 estimated-Codex-credit guards,1 Claude call,2 workers,no retries. Run with authenticated network access to avoid prior sandbox failure. Holdouts untouched; no automatic installation. Sample1/model does not establish preservation of untested gains. Do not launch a duplicate.
+User asked only to fix Sol excluded-runs and Sonnet dependence. V11 added core safeguards and reran exactly those cases (4calls,94,657 tokens,6.14136 estimatedCodexcredits). Sol source-validated outcome vsnone win,v4 tie,restoredv9 win,v10 tie. Its judge duplicated quotation arrays; tools/review_v11_evidence.py preserves both lists and validates all quotes, with no reason/preference changes. Reviewed results in validated-observations.json; original frozen artifacts untouched.
+
+V11 Sonnet still asserts dependence falsely. V12 adds a symmetric independence/dependence warning in references/proofs.md, including constant-variable edge cases; all other files identical to v11. One additional Sonnet draft+judge allowed, same combined160k-token/20credit guard (6calls maximum across phases). tools/v12_check.py frozen before run, reuses none/v4/restoredv9/v10/v11, does not regenerate Sol. Thus final proof-only amendment is not rerun on Sol. Generation now omits false dependence claim; blind grade pending. No other cases, no holdout reads/runs, no installs. Do not duplicate active run.
 
 ## V10 targeted dev check finished; fidelity requirement FAILED
 
