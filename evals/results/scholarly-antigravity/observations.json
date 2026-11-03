@@ -3588,5 +3588,322 @@
     "prompt_sha256": "9981e050ba23bd1f59480f84a9754679c644cb51f3787f886806d9dabfe501a4",
     "raw_sha256": "a4117c44f2c7574a078144ff8fb6b8bd893d5a40698b6f315a53abdd328b3f28",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a research summary of a hypothetical study, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the study design, descriptive statistics, overlapping interview reports, limitations, and untested status of interruptibility. Its affirmative orientation framing is qualified by the reported perceptions that follow.",
+          "quotes": {
+            "source": [
+              "Nine participants said in the closing interview that the cue helped them feel oriented.",
+              "Four of those nine also described occasions when the cue interrupted speech they were still listening to."
+            ],
+            "A": [
+              "Nine participants reported in closing interviews that the cue helped them feel oriented.",
+              "Yet four of those nine also noted instances where the cue spoke over audio they were still listening to."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the evidence and its qualifications without claiming measured orientation improvement or established effectiveness. Its four-task wording is less explicit about tasks per version, but reasonably supports the intended design rather than clearly changing it.",
+          "quotes": {
+            "source": [
+              "Twelve experienced screen-reader users each completed four tasks with each version.",
+              "We did not implement or test that behavior in this study, so the present timings should not be presented as evidence for it."
+            ],
+            "A": [],
+            "B": [
+              "Twelve experienced screen-reader users each completed four tasks with both versions.",
+              "because we did not build or test that behavior here, the current timings cannot serve as evidence for it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the participant-level medians, individual timing breakdown, ordering controls, timed interval, interview overlap, and limits on inference. A states four tasks per version more explicitly; B's wording is ambiguous enough that it does not establish a material change.",
+          "quotes": {
+            "source": [
+              "Twelve experienced screen-reader users each completed four tasks with each version.",
+              "This is a difference between two medians, not the median of twelve within-person differences."
+            ],
+            "A": [
+              "Twelve experienced screen-reader users completed four tasks on each version.",
+              "That is a difference between two medians, not the median of twelve within-person differences."
+            ],
+            "B": [
+              "Twelve experienced screen-reader users each completed four tasks with both versions.",
+              "This compares two medians rather than calculating the median of within-person differences"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable, but expressions such as participants having 'posted' times and the closing slogan add a performative register. B uses more consistently conversational technical prose while explaining the same distinctions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "seven participants posted a lower personal mean time with the cue",
+              "The next test needs to follow the user's ear."
+            ],
+            "B": [
+              "Individually, seven participants had lower mean times with the cue",
+              "But extra audio can get in the way:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the return-to-table problem, describe the comparison, separate timing from reported orientation, and connect limitations to the next design possibility. A's question-led sections and B's connected paragraphs each provide a coherent route through the evidence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Did the cue save time?",
+              "Did it help users orient?",
+              "A logical next step is an interruptible cue."
+            ],
+            "B": [
+              "Across the twelve participants, the median of their personal mean completion times",
+              "In closing interviews, nine participants reported",
+              "A future version could make the cue interruptible"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B adopts the sample's questioning opening and then develops the explanation in connected prose. A repeatedly stages transitions as questions and echoes the sample's closing cadence, which fits the author's preferences less well than B's direct explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "What limits these results?",
+              "Where does this leave the product?",
+              "The next test needs to follow the user's ear."
+            ],
+            "B": [
+              "Does that help them return to the table?",
+              "These results make an orientation benefit plausible for some users under these tasks, but competing speech remains an open design problem even if the time difference holds up."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B better serves the author's priority of connected explanation: it carries the reported benefit and competing speech into a qualified design implication. A covers the evidence well, but its repeated rhetorical questions and closing slogan add packaging without developing the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Where does this leave the product?",
+              "The next test needs to follow the user's ear."
+            ],
+            "B": [
+              "These results make an orientation benefit plausible for some users under these tasks, but competing speech remains an open design problem even if the time difference holds up.",
+              "A future version could make the cue interruptible, but because we did not build or test that behavior here, the current timings cannot serve as evidence for it."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0f41b1dee9720bdf277113551074d2db931bf7f82b9d337797a9acc2e21505c8",
+    "prompt_sha256": "43a3a7f223095773ed983493cf1f0069efba9a545f99f77c803be6b74619e4d9",
+    "raw_sha256": "85dce0d0b74fa69345f8e7245e369855cee0cf5657c8da1a69c44c31caed8546",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a research summary of a hypothetical study, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, timing definition and statistics, interview findings, sample and table limits, possible learning carryover, and untested next-design proposal.",
+          "quotes": {
+            "source": [
+              "Seven participants had a lower personal mean time with the cue, three had a higher mean, and two had equal means at the recorded precision.",
+              "A next version could make the cue interruptible."
+            ],
+            "A": [
+              "Seven participants had a lower personal mean time with the cue, three had a higher mean, and two had equal means at the recorded precision.",
+              "A next version could make the cue interruptible."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B accurately preserves the study and distinguishes subjective orientation from measured timing. Extending the warning about untested interruptibility to interview responses is a supported caution, not a changed study finding.",
+          "quotes": {
+            "source": [
+              "Nine participants said in the closing interview that the cue helped them feel oriented.",
+              "We did not implement or test that behavior in this study"
+            ],
+            "A": [],
+            "B": [
+              "In closing interviews, nine of the twelve participants said the cue helped them feel oriented.",
+              "We did not build or evaluate interruptible behavior in this study"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both accurately retain the within-participant comparison and ordering controls, descriptive timing results, overlapping interview reports, absence of default-preference questions, and limits on generalization. Neither presents interruptibility as tested or the median difference as a reliable speed advantage.",
+          "quotes": {
+            "source": [
+              "We have not calculated a confidence interval or performed a significance test.",
+              "Participants were not asked to choose a default."
+            ],
+            "A": [
+              "We have not calculated a confidence interval or performed a significance test.",
+              "we did not ask participants to choose a default."
+            ],
+            "B": [
+              "We have not calculated a confidence interval or run a significance test",
+              "we did not ask participants to choose a default setting."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as a continuous technical explanation with direct, idiomatic qualifications. B is readable but repeatedly poses questions and immediately answers them, making routine caveats feel staged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The ordering scheme prevented complete alignment between version and practice, but it did not remove every possible learning effect.",
+              "Not asking for removal is not the same response as wanting the feature enabled by default"
+            ],
+            "B": [
+              "Did the counterbalancing eliminate practice effects? No.",
+              "but should we read silence as support for turning it on by default? No."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A moves from design through evidence and limitations to the design implication. B groups methodological limitations with the methods and uses sections to distinguish evidence types. Both orders are coherent and explain why interruptibility follows from competing speech.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These observations make an orientation benefit plausible for some users under these tasks, while also showing that added speech can compete with ongoing speech.",
+              "A next version could make the cue interruptible."
+            ],
+            "B": [
+              "These observations make an orientation benefit plausible for some experienced users on short tables, while exposing a direct tradeoff: added speech competes with ongoing speech.",
+              "One candidate for the next iteration is making the spoken cue interruptible."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A uses a purposeful opening question and then lets the evidence carry the argument, retaining useful explanation. B turns several qualifications into rhetorical exchanges and adds repeated defensive explanation, contrary to the author's preference for connected prose without repetitive packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Does a spoken location cue help users return to a table after opening a note?",
+              "That competition is a design question even if a time difference eventually proves reliable."
+            ],
+            "B": [
+              "What does that three-second gap actually represent?",
+              "Saying a cue feels orienting in an interview is self-reported perception, not measured navigation performance",
+              "Would an interruptible cue preserve the orientation cue without stepping on active audio?"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A better meets the author's request for a coherent explanation in their direct, questioning voice: it preserves the statistical and interpretive qualifications while making the competing-speech problem motivate the next design. B also explains the study fully, but repeated question-and-answer caveats add rhetorical repetition rather than useful reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That competition is a design question even if a time difference eventually proves reliable. A next version could make the cue interruptible.",
+              "We did not implement or test that behavior in this study, so the present timings should not be presented as evidence for it."
+            ],
+            "B": [
+              "Did the counterbalancing eliminate practice effects? No.",
+              "but should we read silence as support for turning it on by default? No.",
+              "Would an interruptible cue preserve the orientation cue without stepping on active audio? That requires its own test."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bd8979fafae7a767274473ff635b13e99d3a752380ae9a8975e20dc28fd36e0b",
+    "prompt_sha256": "43a3a7f223095773ed983493cf1f0069efba9a545f99f77c803be6b74619e4d9",
+    "raw_sha256": "85dce0d0b74fa69345f8e7245e369855cee0cf5657c8da1a69c44c31caed8546",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
