@@ -1,7 +1,7 @@
 <!-- active-eval-status:start -->
 ## Automated evaluation checkpoint
 
-State: running, 2026-11-03T18:30:14Z. Original matrix 79/800 candidate drafts and 133/1600 primary grades. Antigravity declaude 16/320 drafts and 12/320 primary grades. Fresh reserved holdouts remain sealed. See run-status.json and usage.json; missing grades are not ties. This publisher makes no model calls and cannot restart either runner.
+State: running, 2026-11-03T18:40:54Z. Original matrix 110/800 candidate drafts and 190/1600 primary grades. Antigravity declaude 29/320 drafts and 24/320 primary grades. Fresh reserved holdouts remain sealed. See run-status.json and usage.json; missing grades are not ties. This publisher makes no model calls and cannot restart either runner.
 <!-- active-eval-status:end -->
 
 # Handoff

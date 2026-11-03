@@ -1781,5 +1781,1812 @@
     "prompt_sha256": "434d008de7857b22bf7105b3e184bb43df91eb0ea94959b7e631b62cd243e913",
     "raw_sha256": "8430e8bd6a7465f9a29a90e08b4163fa41960afa953a6ec9404e4af6f4efd2b7",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a user-facing release announcement with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the option, default behavior, replay instructions, existing settings, platform limits, and independent speech sources. The phrase “in memory” adds unnecessary specificity, but in context communicates retention without materially changing the user's expectations.",
+          "quotes": {
+            "source": [
+              "speech stops without deleting the saved description"
+            ],
+            "A": [
+              "stopping speech preserves the generated description in memory without deleting it."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the update's scope and qualifications, including the distinction between stopping application descriptions and stopping other speech. Existing settings and reporting instructions remain intact.",
+          "quotes": {
+            "source": [
+              "Turning on this option will therefore not necessarily stop all speech when focus moves."
+            ],
+            "A": [],
+            "B": [
+              "Turning on Pause on Focus will therefore not necessarily stop all speech when focus moves"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact option and settings names, desktop-only scope, unchanged default, nonresuming playback, and restart command. Both also explain manual descriptions with automatic descriptions disabled and preserve the reporting qualifications.",
+          "quotes": {
+            "source": [
+              "A manually requested description can be paused by the new option as well, so the option can be useful with automatic descriptions disabled."
+            ],
+            "A": [
+              "Pause on Focus also applies to descriptions you request manually. Even if automatic descriptions are disabled, you can still take advantage of this feature."
+            ],
+            "B": [
+              "The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable, but its introductory guide language and repeated labels make an ordinary announcement sound more like a formal walkthrough. B uses direct, conversational sentences suited to a newsletter.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Here is a quick guide to how the new option works, how it interacts with your existing preferences, and what to expect."
+            ],
+            "B": [
+              "Pause on Focus provides an alternative if you prefer the description to stop when you move on."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A presents all the necessary information in sensible groups, but splits closely related explanations into multiple labeled fragments. B develops the use case, playback behavior, settings relationship, and limitations in connected paragraphs; its explanation of manual requests follows directly from the existing setting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "* **Automatic Descriptions Stay As You Left Them:**",
+              "* **Works with Manual Requests:**"
+            ],
+            "B": [
+              "If you previously turned off automatic image descriptions, they remain off after updating. The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the author's preference for explanation within the flow of the announcement. A's headings are usable, but its guide framing and separate naming bullet add packaging where B directly connects the potentially misleading name to playback behavior.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Key Details on How It Works:",
+              "**Why it’s called “Pause”:** We chose the name “pause”"
+            ],
+            "B": [
+              "The setting uses the word “pause” because speech stops without deleting the saved description, not because playback can resume at the word where it stopped."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error, and both give users actionable guidance. B better satisfies the decisive preference for connected explanation: it makes the relationship between disabled automatic descriptions and manual requests explicit without surrounding a short newsletter announcement with guide language and repeated structural labels.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Here is a quick guide to how the new option works, how it interacts with your existing preferences, and what to expect."
+            ],
+            "B": [
+              "The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e42c80a0d6a1ebe29fdd0dd312f5fe0aaaefbdabd7a6f5d366322c417c89b111",
+    "prompt_sha256": "86b5f01c1033112cdbc81ffe08282a8f352ef2842660d3daf9f9f6a7b79b0e6f",
+    "raw_sha256": "143f6a1d580aef5f273abead11a43f18001a0454c261eb2d3686bc14164fb168",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing a release announcement, not explaining a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the setting's exact name and location, platform scope, unchanged default, playback limitations, automatic and manual settings relationship, and reporting guidance.",
+          "quotes": {
+            "source": [
+              "Returning focus to the image does not resume it automatically. Use the existing Read Description command to hear it again from the beginning."
+            ],
+            "A": [
+              "returning focus to the image does not resume the description automatically. To hear it again from the beginning, use the existing Read Description command."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the same functional scope and qualifications. Its descriptions of stopping playback and retaining saved descriptions are consistent with the source, and it does not promise to silence other speech.",
+          "quotes": {
+            "source": [
+              "Turning on this option will therefore not necessarily stop all speech when focus moves."
+            ],
+            "A": [],
+            "B": [
+              "turning on this option will not necessarily stop all speech when focus moves."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete user-facing behavior and limitations, including the misleading pause terminology, retained automatic-description preferences, manual applicability, separate audio sources, and optional identification of the speech source when reporting.",
+          "quotes": {
+            "source": [
+              "You do not need to identify the source before reporting the issue."
+            ],
+            "A": [
+              "You do not need to identify the source before reporting the issue."
+            ],
+            "B": [
+              "you do not need to identify the source before submitting a report."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are idiomatic and understandable. A's sentences carry the explanation naturally, while B repeatedly introduces those explanations with headings and bold summaries that make the newsletter feel more procedural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The new option also pauses manually requested descriptions, so it can still be useful when automatic descriptions are disabled."
+            ],
+            "B": [
+              "* **Works with manual descriptions, too:** Because **Pause on Focus** also stops descriptions that you trigger manually, it is still useful even if you keep automatic descriptions disabled."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A groups behavior, replay semantics, existing settings, limitations, and reporting into a coherent sequence. B follows essentially the same sequence and more explicitly motivates the choice in its opening. Its headings support scanning, although they interrupt connections that A carries through paragraphs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When you navigate with a keyboard, an image description that has begun speaking continues by default when focus moves to another control, just as it did previously. With Pause on Focus enabled, moving keyboard focus to a different control pauses the current image description."
+            ],
+            "B": [
+              "That remains the default behavior after updating, but you can now choose to have descriptions stop as soon as you move on."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the requested connected technical prose while retaining the useful explanation. B's structure is legitimate for a notice, but repeated introductory labels and scope reminders add more packaging than this short announcement needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Pause on Focus applies to descriptions spoken by the application. Speech produced by a separate screen reader remains controlled by that reader, even when it is speaking about the same image."
+            ],
+            "B": [
+              "#### Current Scope and Limitations\nKeep these boundaries in mind, especially if you have more than one audio or speech source active at the same time:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation appears in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response introduces a material error. B is usable and gives the new choice a clear motivation, but A better meets this author's newsletter goal by preserving the explanations in connected paragraphs. In particular, its existing-settings paragraph resolves the manual-description case directly, without the repeated headings and labels used by B.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you already turned off automatic image descriptions, they remain off after updating, and Pause on Focus does not turn them on. The new option also pauses manually requested descriptions, so it can still be useful when automatic descriptions are disabled."
+            ],
+            "B": [
+              "#### How It Works with Your Existing Description Settings",
+              "* **Works with manual descriptions, too:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f58c8e854780ff7d9e7913120a4e037dc704028051cbcb6a22c97557defb68f1",
+    "prompt_sha256": "86b5f01c1033112cdbc81ffe08282a8f352ef2842660d3daf9f9f6a7b79b0e6f",
+    "raw_sha256": "143f6a1d580aef5f273abead11a43f18001a0454c261eb2d3686bc14164fb168",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a user-facing release announcement with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the default, replay behavior, existing automatic-description settings, manual applicability, desktop restriction, and separate audio controls. The memory wording does not materially change the explanation that the saved description remains available.",
+          "quotes": {
+            "source": [
+              "The name of the option uses “pause” because speech stops without deleting the saved description.",
+              "You do not need to identify the source before reporting the issue."
+            ],
+            "A": [
+              "stopping speech preserves the generated description in memory without deleting it.",
+              "You do not need to identify the exact source before submitting a report."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the option name and location, unchanged default, pause and replay behavior, settings interaction, desktop scope, independent audio sources, and reporting guidance.",
+          "quotes": {
+            "source": [
+              "A manually requested description can be paused by the new option as well, so the option can be useful with automatic descriptions disabled.",
+              "It is available on the desktop application only."
+            ],
+            "A": [],
+            "B": [
+              "The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled.",
+              "This release adds an option called **Pause on Focus** to **Reading settings** in the desktop application."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive behavior and qualifications, including the distinction between retaining a description and resuming playback. Neither promises that all speech stops.",
+          "quotes": {
+            "source": [
+              "Returning focus to the image does not resume it automatically.",
+              "Turning on this option will therefore not necessarily stop all speech when focus moves."
+            ],
+            "A": [
+              "Moving focus back to the image will not automatically resume playback.",
+              "turning on Pause on Focus will not necessarily silence all active speech on your system."
+            ],
+            "B": [
+              "Returning focus to the image does not resume speech automatically;",
+              "Turning on Pause on Focus will therefore not necessarily stop all speech when focus moves"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a direct announcement. A's introductory guide announcement and repeated labels give otherwise readable material an unnecessarily ceremonial delivery.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Here is a quick guide to how the new option works, how it interacts with your existing preferences, and what to expect.",
+              "#### Key Details on How It Works:"
+            ],
+            "B": [
+              "That behavior remains the default. Pause on Focus provides an alternative if you prefer the description to stop when you move on."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves directly from the existing behavior to the reason for the option, then explains replay, settings, limitations, and reporting. A uses a similar sound order but interrupts that development with an extra introduction and several layers of headings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This option gives keyboard users more control over spoken image descriptions as they navigate.",
+              "Here is a quick guide to how the new option works, how it interacts with your existing preferences, and what to expect."
+            ],
+            "B": [
+              "Pause on Focus provides an alternative if you prefer the description to stop when you move on.",
+              "The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected explanations without rhetorical repetition. Its settings paragraph explicitly resolves why the option remains useful when automatic descriptions are disabled; A explains this too, but surrounds it with more instructional packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### How It Fits with Your Existing Settings",
+              "* **Works with Manual Requests:** Pause on Focus also applies to descriptions you request manually. Even if automatic descriptions are disabled, you can still take advantage of this feature."
+            ],
+            "B": [
+              "If you previously turned off automatic image descriptions, they remain off after updating. The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material fidelity error. B better serves this user's newsletter goal by explaining the confusing terminology and settings relationship in the announcement's flow, without A's repeated guide framing and section machinery.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Key Details on How It Works:",
+              "* **Why it’s called “Pause”:**"
+            ],
+            "B": [
+              "The setting uses the word “pause” because speech stops without deleting the saved description, not because playback can resume at the word where it stopped.",
+              "The new option also applies to manually requested descriptions, so it is still useful with automatic descriptions disabled."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e42c80a0d6a1ebe29fdd0dd312f5fe0aaaefbdabd7a6f5d366322c417c89b111",
+    "prompt_sha256": "86b5f01c1033112cdbc81ffe08282a8f352ef2842660d3daf9f9f6a7b79b0e6f",
+    "raw_sha256": "e91ddd5433783d4fd5313e58e7c522444877036701561776e0bff191381902af",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a user-facing release announcement with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the exact option and settings location, desktop-only availability, default behavior, replay limitations, existing settings, independent audio controls, and reporting flexibility.",
+          "quotes": {
+            "source": [
+              "Pause on Focus does not turn automatic descriptions on.",
+              "Use the existing Read Description command to hear it again from the beginning."
+            ],
+            "A": [
+              "If you already turned off automatic image descriptions, they remain off after updating, and Pause on Focus does not turn them on.",
+              "To hear it again from the beginning, use the existing Read Description command."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all substantive behaviors and scope limits. Its reporting guidance remains usable without knowing the speech source and does not request image contents.",
+          "quotes": {
+            "source": [
+              "It is available on the desktop application only. The mobile version keeps its existing behavior.",
+              "You do not need to identify the source before reporting the issue."
+            ],
+            "A": [],
+            "B": [
+              "This option is available only in the desktop application. The mobile version keeps its existing behavior.",
+              "you do not need to identify the source before submitting a report."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full update scope and explain the two central qualifications: replay starts from the beginning, and manually requested descriptions remain covered when automatic descriptions are disabled.",
+          "quotes": {
+            "source": [
+              "It does not mean playback can resume at the word where it stopped.",
+              "A manually requested description can be paused by the new option as well"
+            ],
+            "A": [
+              "Playback cannot resume at the word where it stopped, however,",
+              "The new option also pauses manually requested descriptions"
+            ],
+            "B": [
+              "not because playback resumes from the exact word where it stopped.",
+              "**Pause on Focus** also stops descriptions that you trigger manually"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's ordinary sentences suit a newsletter and carry the explanations naturally. B is readable, but repeated descriptive labels and long headings make the delivery more cumbersome than the content requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The new option also pauses manually requested descriptions, so it can still be useful when automatic descriptions are disabled."
+            ],
+            "B": [
+              "#### How It Works with Your Existing Description Settings",
+              "* **Works with manual descriptions, too:**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow a coherent sequence from default behavior through replay and existing settings to limitations and reporting. Both explicitly connect manual applicability to the disabled-automatic-description use case; B's headings also provide usable grouping.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The new option also pauses manually requested descriptions, so it can still be useful when automatic descriptions are disabled."
+            ],
+            "B": [
+              "Because **Pause on Focus** also stops descriptions that you trigger manually, it is still useful even if you keep automatic descriptions disabled."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for connected technical prose while retaining useful explanation. It clarifies the misleading name within the narrative; B gives the same explanation but wraps the short announcement in a more elaborate help-page structure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The option uses the word “pause” because speech stops without deleting the saved description, and the setting does not change the descriptions themselves.",
+              "Playback cannot resume at the word where it stopped, however, and returning focus to the image does not resume the description automatically."
+            ],
+            "B": [
+              "#### How It Works",
+              "* **Your saved descriptions stay intact:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both explain the settings relationship adequately. A is the better fit for this user's general newsletter: it preserves the necessary explanations in connected paragraphs, while B adds repeated labels and section framing without adding substantive guidance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The new option also pauses manually requested descriptions, so it can still be useful when automatic descriptions are disabled.",
+              "You do not need to identify the source before reporting the issue."
+            ],
+            "B": [
+              "#### How It Works with Your Existing Description Settings",
+              "#### Current Scope and Limitations",
+              "#### Reporting an Issue"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f58c8e854780ff7d9e7913120a4e037dc704028051cbcb6a22c97557defb68f1",
+    "prompt_sha256": "86b5f01c1033112cdbc81ffe08282a8f352ef2842660d3daf9f9f6a7b79b0e6f",
+    "raw_sha256": "e91ddd5433783d4fd5313e58e7c522444877036701561776e0bff191381902af",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an empirical laboratory results passage, not a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the measurements, discrepancy, correction, and timing limits, but upgrades useful evidence of correct subtraction into confirmation. Its subsequent displayed-precision qualification limits the scope without restoring the source's evidential uncertainty.",
+          "quotes": {
+            "source": [
+              "The absence of remaining displayed differences after correction is useful evidence that the import applied the intended subtraction on these inputs."
+            ],
+            "A": [
+              "The complete alignment of values following entry correction confirms that the import algorithm accurately performed the intended background subtraction on these inputs."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the paired inputs, sample structure, lack of independent instrument repeats and reference material, initial versus corrected agreement, single copied error and its signed magnitude, and session-specific timing and inference limits.",
+          "quotes": {
+            "source": [
+              "The reported corrected values agreed to the instrument's displayed precision for 21 of the 24 aliquots.",
+              "This correction was performed after the initial comparison and is reported separately from it."
+            ],
+            "A": [],
+            "B": [
+              "Reported corrected values agreed to the instrument's displayed precision for 21 of the 24 aliquots.",
+              "This correction was performed after the initial comparison and is reported separately from it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive experimental details and limitations. B also preserves the source's calibrated evidential strength, whereas A claims confirmation of accurate subtraction.",
+          "quotes": {
+            "source": [
+              "is useful evidence that the import applied the intended subtraction on these inputs."
+            ],
+            "A": [
+              "confirms that the import algorithm accurately performed the intended background subtraction on these inputs."
+            ],
+            "B": [
+              "provides useful evidence that the import applied the intended subtraction on these inputs."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly wraps ordinary findings in administrative labels. B expresses the same investigation in idiomatic technical sentences that read naturally as a report passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "* **Root-Cause Analysis:** Cross-referencing the saved instrument log revealed",
+              "* **Post-Investigation Resolution:** Substituting the logged blank value"
+            ],
+            "B": [
+              "Inspection of the saved log showed that the copied entry was 0.2 fluorescence units higher",
+              "Replacing that entry with the logged blank brought the corrected values into agreement"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A supplies a navigable outline, but separates observations, timing, and interpretive qualifications into labeled blocks. B carries the reader through purpose, paired design, discrepancy investigation, interpretation, and timing, keeping each timing qualification with its result.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Processing Time",
+              "### Discussion and Scope of Conclusions"
+            ],
+            "B": [
+              "These initial differences are consistent with a transcription mechanism in this session",
+              "These timings describe this session, including its particular number of rows, and exclude both instrument operation and the later investigation of the discrepancy."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better meets the explicit preference for connected technical prose that introduces a workflow through its purpose. A turns a report passage into a heavily labeled outline and adds rhetorical packaging such as scope headings and verification labels.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Objective and Scope",
+              "* **Software Subtraction Verification:**"
+            ],
+            "B": [
+              "The current worksheet requires an operator to enter the blank reading separately for each sample, whereas the proposed worksheet imports the blank reading from the instrument log.",
+              "This import is intended to reduce transcription"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no identified material error; A mildly overstates what the comparison establishes. B also better fulfills the decisive writing priority: it develops the discrepancy investigation and its bounded implications in connected prose, rather than presenting a succession of labeled findings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The complete alignment of values following entry correction confirms",
+              "* **Data-Entry Error Characterization:**"
+            ],
+            "B": [
+              "The absence of remaining displayed differences after correction provides useful evidence that the import applied the intended subtraction on these inputs.",
+              "It does not establish agreement at greater precision or correct blank assignment in future instrument logs."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "dbceb0a2c805ecea9b670c76ba2853a0c005a521acdd27c7d2f70f3a7254d811",
+    "prompt_sha256": "c7fd5e20b2a54cc83c12231b9bf4f03f12424a4777bde178ead23aa5494171dc",
+    "raw_sha256": "3fa2781d5f61ff8588ae75a15ae930a75803bbeb7f4918c2c380ee7f47d5e3ee",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns explanatory order and calibrated interpretation of laboratory results, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the paired readings, sample structure and repeat limitations, absence of reference material, initial and corrected agreement, single copied error with its direction and magnitude, and restricted interpretation of the four- and eleven-minute timings.",
+          "quotes": {
+            "source": [
+              "The manual corrected values were therefore 0.2 units lower.",
+              "The imported worksheet took four minutes to produce, whereas manual entry and checking took eleven minutes."
+            ],
+            "A": [
+              "so the manual corrected values were 0.2 units lower.",
+              "The imported worksheet took four minutes to produce, whereas manual entry and checking took eleven minutes"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the principal results and calibrated conclusions, but invents that the session used standard logging conditions. The source does not characterize the logging conditions as standard, so readers could incorrectly treat the timing comparison as a benchmark under established normal conditions.",
+          "quotes": {
+            "source": [
+              "They describe this session, including its particular number of rows.",
+              "We have not measured whether the saved time persists when log formats change or when an operator must resolve a missing blank."
+            ],
+            "A": [],
+            "B": [
+              "These timings describe only this single 24-row session under standard logging conditions"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the core experimental facts, distinguish initial from corrected agreement, and retain the limits on accuracy, precision, error rates, and future reliability. A avoids B's unsupported characterization of the session's logging conditions.",
+          "quotes": {
+            "source": [
+              "They describe this session, including its particular number of rows."
+            ],
+            "A": [
+              "Those timings describe this session, including its particular number of rows"
+            ],
+            "B": [
+              "These timings describe only this single 24-row session under standard logging conditions"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are readable technical prose. A uses more direct sentences, while B adds abstract framing and heavier constructions that make the same explanation more formal without adding needed substance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "After the initial comparison, replacing the copied entry with the logged blank made the corrected values agree for all 24 aliquots at the displayed precision."
+            ],
+            "B": [
+              "In a separate post-hoc check performed after the initial comparison",
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A attaches the transcription inference and independence caveat directly to the copied-error finding, then connects correction to evidence of subtraction fidelity. B's organization is valid, but its conclusions revisit the correction first and then return to the initial discrepancy, producing a less direct explanatory sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These initial differences are consistent with a transcription mechanism in this session, but the three affected aliquots do not establish three independent transcription errors.",
+              "After the initial comparison, replacing the copied entry with the logged blank"
+            ],
+            "B": [
+              "First, the complete agreement across all 24 aliquots after correcting the single manual entry",
+              "Second, while the initial three-aliquot discrepancy is consistent with a manual transcription mechanism"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for purpose-led, conversational technical explanation with qualifications beside the relevant claims. B remains connected prose, but its generic heading and staged conclusions add packaging the author explicitly disfavors when it serves little reader purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We compared two ways of subtracting background from a fluorescence measurement because the current worksheet requires an operator to enter the blank reading separately for each sample."
+            ],
+            "B": [
+              "### Revised Laboratory Results",
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no identified material error; B introduces a minor unsupported claim about standard logging conditions. Beyond that difference, A better serves the user's central goal by placing the transcription interpretation beside the discrepancy and the subtraction conclusion beside the correction, with less generic framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The absence of remaining displayed differences after correction is useful evidence that the import applied the intended subtraction on these inputs, though it does not establish agreement at greater precision or correct blank assignment in future instrument logs."
+            ],
+            "B": [
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session.",
+              "under standard logging conditions"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4a08d107e4a89b94f99fd374716f49f3a83684967dbadcc5aa6602719abed2d0",
+    "prompt_sha256": "c7fd5e20b2a54cc83c12231b9bf4f03f12424a4777bde178ead23aa5494171dc",
+    "raw_sha256": "3fa2781d5f61ff8588ae75a15ae930a75803bbeb7f4918c2c380ee7f47d5e3ee",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of laboratory results and interpretation, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The numerical results, paired design, correction chronology, and timing limits are preserved. However, A upgrades useful evidence of correct subtraction into confirmation of algorithmic accuracy. The adjacent precision qualification limits this overstatement but does not remove the increased certainty.",
+          "quotes": {
+            "source": [
+              "The absence of remaining displayed differences after correction is useful evidence that the import applied the intended subtraction on these inputs."
+            ],
+            "A": [
+              "confirms that the import algorithm accurately performed the intended background subtraction on these inputs."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the shared readings, sampling and replication limits, initial and corrected agreement, single copied error and its direction, and session-specific timings. Its conclusions retain the source's evidential strength and exclusions.",
+          "quotes": {
+            "source": [
+              "The absence of remaining displayed differences after correction is useful evidence that the import applied the intended subtraction on these inputs."
+            ],
+            "A": [],
+            "B": [
+              "The absence of remaining displayed differences after correction provides useful evidence that the import applied the intended subtraction on these inputs."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive experimental details and distinguish initial agreement from agreement after correction. B also preserves the source's cautious inference about subtraction; A presents that inference as confirmation.",
+          "quotes": {
+            "source": [
+              "is useful evidence that the import applied the intended subtraction on these inputs."
+            ],
+            "A": [
+              "confirms that the import algorithm accurately performed the intended background subtraction on these inputs."
+            ],
+            "B": [
+              "provides useful evidence that the import applied the intended subtraction on these inputs."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the observations through readable sentences with direct causal connections. A's repeated labels and abstract formulations make the report read more like an evaluation checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Root-Cause Analysis:** Cross-referencing the saved instrument log revealed",
+              "**Data-Entry Error Characterization:**"
+            ],
+            "B": [
+              "Inspection of the saved log showed that the copied entry was 0.2 fluorescence units higher than the blank assigned to those rows in the log, making the manual corrected values 0.2 units lower."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B develops the purpose, paired comparison, discrepancy, correction, interpretation, and timing in connected paragraphs. A supplies a usable sequence, but its subdivision into labeled facts weakens the explanation of how the findings support the conclusions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Initial Results and Discrepancy Investigation",
+              "### Discussion and Scope of Conclusions"
+            ],
+            "B": [
+              "Replacing that entry with the logged blank brought the corrected values into agreement for all 24 aliquots at the displayed precision.",
+              "These initial differences are consistent with a transcription mechanism in this session"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B meets the author's preference for connected technical prose and introduces the import through its practical purpose. A's many headings, bold labels, and categorical verification language fit the requested voice less well.",
+          "quotes": {
+            "source": [
+              "They prefer connected technical prose that introduces an object with its purpose"
+            ],
+            "A": [
+              "**Software Subtraction Verification:**",
+              "### Objective and Scope"
+            ],
+            "B": [
+              "The current worksheet requires an operator to enter the blank reading separately for each sample, whereas the proposed worksheet imports the blank reading from the instrument log."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material fidelity error; A mildly overstates what the comparison establishes. B also better fulfills the decisive writing priority: explaining the experiment and its interpretation in connected prose, with the single copied error leading naturally to the session-specific conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "confirms that the import algorithm accurately performed the intended background subtraction on these inputs."
+            ],
+            "B": [
+              "These initial differences are consistent with a transcription mechanism in this session, and the three affected aliquots do not establish three independent transcription errors."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "dbceb0a2c805ecea9b670c76ba2853a0c005a521acdd27c7d2f70f3a7254d811",
+    "prompt_sha256": "c7fd5e20b2a54cc83c12231b9bf4f03f12424a4777bde178ead23aa5494171dc",
+    "raw_sha256": "d4daf90b0d489e9b1bc3efeed5bdfb2065a37abfcac65d3b2c75b7c3c1c23f3c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of laboratory results and interpretation, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the paired readings, 24 aliquots from eight solutions, lack of instrument repeats and reference material, initial versus corrected agreement, single copied error, numerical direction, and timing exclusions. Its conclusions remain limited to the supplied evidence.",
+          "quotes": {
+            "source": [
+              "They describe this session, including its particular number of rows.",
+              "Those timings excluded instrument operation and the later investigation of the discrepancy."
+            ],
+            "A": [
+              "Those timings describe this session, including its particular number of rows",
+              "excluding instrument operation and the later investigation of the discrepancy."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the substantive measurements and limitations but adds that the session used standard logging conditions. The source does not characterize the conditions as standard, so readers receive an unsupported factual premise about the timing benchmark. B's explicit refusal to extrapolate the saving limits the consequence.",
+          "quotes": {
+            "source": [
+              "They describe this session, including its particular number of rows."
+            ],
+            "A": [],
+            "B": [
+              "These timings describe only this single 24-row session under standard logging conditions"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the comparison, discrepancy mechanism, correction chronology, and appropriately bounded subtraction conclusion. A also preserves the timing scope without B's unsupported characterization of the logging conditions as standard.",
+          "quotes": {
+            "source": [
+              "They describe this session, including its particular number of rows."
+            ],
+            "A": [
+              "Those timings describe this session, including its particular number of rows"
+            ],
+            "B": [
+              "These timings describe only this single 24-row session under standard logging conditions"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct explanations and transitions suited to a technical report. B remains readable, but its announcement of bounded conclusions and subsequent numbering adds abstract framing around conclusions that could be stated directly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "After the initial comparison, replacing the copied entry with the logged blank made the corrected values agree for all 24 aliquots at the displayed precision."
+            ],
+            "B": [
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session. First,"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the purpose before the design and connect findings to their limits. A interprets the transcription discrepancy before discussing the correction; B completes the results first and then interprets them. Both orders are coherent for this report.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These initial differences are consistent with a transcription mechanism in this session",
+              "After the initial comparison, replacing the copied entry with the logged blank"
+            ],
+            "B": [
+              "In a separate post-hoc check performed after the initial comparison",
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the author's conversational technical voice: it explains the practical motivation and keeps qualifications beside the claims they limit. B also explains its reasoning, but its generic conclusion announcement adds rhetorical packaging the author prefers to remove.",
+          "quotes": {
+            "source": [
+              "Preserve precise scope and meaningful qualifications without repeated defensive commentary."
+            ],
+            "A": [
+              "The proposed worksheet imports the blank reading from the instrument log to reduce transcription.",
+              "though it does not establish agreement at greater precision or correct blank assignment in future instrument logs."
+            ],
+            "B": [
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A preserves the evidence without material additions; B introduces an unsupported, though narrowly consequential, claim that logging conditions were standard. A also better serves the author's preference for direct, connected explanation by stating the interpretation without an abstract announcement of bounded conclusions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The absence of remaining displayed differences after correction is useful evidence that the import applied the intended subtraction on these inputs"
+            ],
+            "B": [
+              "These findings support bounded conclusions regarding calculation fidelity and transcription errors in this session.",
+              "under standard logging conditions"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4a08d107e4a89b94f99fd374716f49f3a83684967dbadcc5aa6602719abed2d0",
+    "prompt_sha256": "c7fd5e20b2a54cc83c12231b9bf4f03f12424a4777bde178ead23aa5494171dc",
+    "raw_sha256": "d4daf90b0d489e9b1bc3efeed5bdfb2065a37abfcac65d3b2c75b7c3c1c23f3c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to rewrite descriptive pilot findings, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, nonrandom allocation, 48 observations, period-specific means, rainfall and cleaning uncertainties, and measurement boundaries. Its feasibility claim is contextualized by these recordings and explicitly separated from untested scorer agreement.",
+          "quotes": {
+            "source": [
+              "the comparison does not by itself identify a cover effect.",
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration."
+            ],
+            "A": [
+              "this comparison alone does not isolate a grate cover effect",
+              "It has not yet been evaluated whether independent scorers applying the criteria to the same video footage arrive at identical duration values."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the supplied design and numerical results, both competing explanations and their missing measurements, all outcome distinctions, and the limited prospective role of rotation. It does not turn observed improvement or scoring feasibility into a causal or reliability finding.",
+          "quotes": {
+            "source": [
+              "That would address some of the present ambiguities, although rotation alone would not make storms identical.",
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration."
+            ],
+            "A": [],
+            "B": [
+              "That would address some of the present ambiguities, although rotation alone would not make storms identical.",
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the observations and qualifications that govern their interpretation, including the greater lower-street reduction without identifying a cover effect. Neither recommends expansion or treats common cleaning as eliminating confounding.",
+          "quotes": {
+            "source": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more, because the initial quantity of leaves was not recorded.",
+              "It also cannot be dismissed as irrelevant merely because both streets were cleaned."
+            ],
+            "A": [
+              "The simultaneous cleaning cannot be dismissed as irrelevant simply because it occurred on both streets.",
+              "The cleaning cannot automatically explain why the lower street showed greater improvement, given the lack of baseline debris data."
+            ],
+            "B": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more, because the initial quantity of leaves was not recorded.",
+              "It also cannot be dismissed as irrelevant merely because both streets were cleaned."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic report prose. A remains readable, but phrases such as its observation-scope sentence and repeated administrative labels make straightforward facts more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Observations were conducted across six drains on two streets over eight storm events",
+              "To avoid misinterpreting the camera-based observations, the following distinctions must be maintained:"
+            ],
+            "B": [
+              "We observed six drains on two streets during four storms before a cover change and four storms afterward.",
+              "This should be distinguished from increased drainage capacity, which was not directly measured"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A supplies clear topical sections, but repeatedly separates definitions, scoring, and limitations into labeled items. B connects the observations to explanatory uncertainty and closes by moving from the recordings' present utility and unresolved agreement to the proposed study.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Scoring Feasibility:** Field and analysis staff confirmed that all 48 recordings could be scored.",
+              "**Scorer Reliability:** It has not yet been evaluated whether independent scorers applying the criteria to the same video footage arrive at identical duration values."
+            ],
+            "B": [
+              "The existing recordings remain useful for describing these eight storms and for testing whether the camera-based duration measure is practical.",
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration.",
+              "A later study could rotate covers among comparable drains and record local rainfall intensity and debris before cleaning."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected technical prose: it explains why the comparison matters and immediately limits the inference. A's extensive hierarchy and instructional framing make the section resemble a checklist of cautions, although its substantive explanations remain intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To avoid misinterpreting the camera-based observations, the following distinctions must be maintained:",
+              "However, analytical and procedural questions remain unresolved:"
+            ],
+            "B": [
+              "The reduction on the changed street was therefore greater, which may be useful when deciding what to study next, although the comparison does not by itself identify a cover effect."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither artifact has a material source error. B better serves this user's priority of connected explanation, especially by keeping scoring feasibility beside untested agreement and then introducing follow-up. A is usable and organized, but its many labeled subdivisions fragment a short findings account.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## 3. Boundaries of the Measurement",
+              "## 5. Methodological Assessment and Proposed Follow-Up"
+            ],
+            "B": [
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration.",
+              "A later study could rotate covers among comparable drains and record local rainfall intensity and debris before cleaning."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "65621bace1cc25049f48213bb042c1ed01c00b42b8c952abbd05a75b7f66bd37",
+    "prompt_sha256": "9981e050ba23bd1f59480f84a9754679c644cb51f3787f886806d9dabfe501a4",
+    "raw_sha256": "bcd8966942985bc8b175550c566e3f699b6572d7ecb32d64629f637de913ef4c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact reports descriptive pilot evidence and limitations; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the six-drain, two-street, eight-storm design, complaint-based allocation, all 48 observations, both streets' means, and the rainfall and cleaning qualifications. It also retains measurement boundaries and separates prospective follow-up from current evidence and untested scorer agreement.",
+          "quotes": {
+            "source": [
+              "The lower street was chosen because crews had received more complaints there, so cover allocation was not random.",
+              "That would address some of the present ambiguities, although rotation alone would not make storms identical."
+            ],
+            "A": [
+              "The lower street was chosen because crews had received more complaints there, so cover allocation was not random.",
+              "That would address some of the present ambiguities, although rotation alone would not make storms identical."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the design, counts, means, noncausal interpretation, environmental uncertainties, and unmeasured outcomes. Its feasibility statement is limited to these storms and distinguishes untested agreement. Added scoring and depth work is explicitly prospective, not asserted as completed evidence or a recommendation to expand the pilot.",
+          "quotes": {
+            "source": [
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration.",
+              "peak depth was not extracted from the images."
+            ],
+            "A": [],
+            "B": [
+              "establishing the practical feasibility of capturing the camera-based measure for these eight storms, though inter-scorer reliability (whether different raters assign identical durations) has not been tested.",
+              "extracting peak water depth from the imagery if depth is of analytical interest."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the essential evidence and its limits. B makes the per-period counts and arithmetic explicit and adds optional follow-up analyses, but does not claim those analyses were performed or that rotation resolves storm comparability.",
+          "quotes": {
+            "source": [
+              "The mean recorded duration across the twelve observations on the lower street fell from 18 minutes before the change to 10 minutes afterward.",
+              "On the upper street it fell from 9 minutes to 7 minutes.",
+              "although rotation alone would not make storms identical."
+            ],
+            "A": [
+              "The mean recorded duration across the twelve observations on the lower street fell from 18 minutes before the change to 10 minutes afterward.",
+              "On the upper street it fell from 9 minutes to 7 minutes."
+            ],
+            "B": [
+              "| **Lower Street (3 drains)** | Grate covers replaced; leaves cleared | 18 minutes | 10 minutes | −8 minutes |",
+              "| **Upper Street (3 drains)** | Existing covers retained; leaves cleared | 9 minutes | 7 minutes | −2 minutes |",
+              "recognizing that rotation alone will not make storm events identical."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A communicates the technical qualifications in direct sentences. B's table is useful, but administrative labels and phrases such as baseline logging and analytical interest give the surrounding prose a more formal, cumbersome rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A change in peak water depth could matter even if recorded duration did not change, but peak depth was not extracted from the images."
+            ],
+            "B": [
+              "**Local environmental and baseline logging:**",
+              "extracting peak water depth from the imagery if depth is of analytical interest."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A connects results directly to rainfall and cleaning explanations, but its ending moves from follow-up back to current recordings. B provides a useful design–results–explanations–follow-up sequence, yet repeats missing environmental measurements and scoring feasibility across sections. Neither has a decisive overall sequencing advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A later study could rotate covers among comparable drains and record local rainfall intensity and debris before cleaning.",
+              "The existing recordings remain useful for describing these eight storms and for testing whether the camera-based duration measure is practical."
+            ],
+            "B": [
+              "### 2. Observed Measurements and Scope Limitations",
+              "### 3. Unresolved Explanatory Factors",
+              "### 4. Utility of Current Records and Options for Follow-Up Study"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the author's conversational technical voice and keeps reasons beside claims without repeatedly cataloguing limitations. B explains the issues accurately, but its separate lists of missing measurements and confounders repeat material the user wants integrated into a continuous account.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more, because the initial quantity of leaves was not recorded.",
+              "It also cannot be dismissed as irrelevant merely because both streets were cleaned."
+            ],
+            "B": [
+              "**Local precipitation and debris:** Neither street had a local rain gauge, no within-storm rainfall intensity data were collected, and the volume of leaves removed during the maintenance clearing was not recorded.",
+              "Furthermore, the absence of street-level gauges and within-storm intensity data prevents accounting for localized rainfall variation."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither artifact has a material source error. A better meets the user's preference for connected explanation with qualifications beside their claims. B's comparison table helps, but repeated limitation lists and a broader follow-up menu make the short findings section more cumbersome. A's imperfect final ordering does not outweigh that difference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The reduction on the changed street was therefore greater, which may be useful when deciding what to study next, although the comparison does not by itself identify a cover effect."
+            ],
+            "B": [
+              "These measurements reflect only the duration of visible water above the painted reference line and must be distinguished from unmeasured outcomes and parameters:",
+              "Several confounding factors remain unresolved:",
+              "If a subsequent study is conducted to resolve the ambiguities in these findings, its design could incorporate:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "87c875288d0889016cd9b1dda73e88b5a134370bc2c49b812fe95f0ba37cedb6",
+    "prompt_sha256": "9981e050ba23bd1f59480f84a9754679c644cb51f3787f886806d9dabfe501a4",
+    "raw_sha256": "bcd8966942985bc8b175550c566e3f699b6572d7ecb32d64629f637de913ef4c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a findings-section rewrite, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the design, nonrandom allocation, observations, means, measurement limits, competing explanations, and conditional follow-up. Calling the observations planned adds an unsupported administrative detail, but does not materially change the evidence or conclusions.",
+          "quotes": {
+            "source": [
+              "All 48 drain-storm observations were available.",
+              "although the comparison does not by itself identify a cover effect."
+            ],
+            "A": [
+              "All 48 planned drain-storm observations",
+              "this comparison alone does not isolate a grate cover effect"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the six-drain, eight-storm design, all observations, correct means, nonrandom allocation, rainfall and cleaning uncertainties, measurement limits, and untested scorer agreement. Follow-up remains hypothetical and qualified.",
+          "quotes": {
+            "source": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more",
+              "although rotation alone would not make storms identical."
+            ],
+            "A": [],
+            "B": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more",
+              "although rotation alone would not make storms identical."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive evidence and its limits: the greater reduction does not identify a cover effect, cleaning remains a possible explanation, and scoring feasibility does not establish agreement. A's small elaborations do not materially strengthen the findings.",
+          "quotes": {
+            "source": [
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration."
+            ],
+            "A": [
+              "It has not yet been evaluated whether independent scorers applying the criteria to the same video footage arrive at identical duration values."
+            ],
+            "B": [
+              "Staff reported that all recordings could be scored, but we have not tested whether different scorers assign the same duration."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly shifts into administrative labels and formal instructions. B conveys the same qualifications in direct, connected sentences suited to a public report.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To avoid misinterpreting the camera-based observations, the following distinctions must be maintained:"
+            ],
+            "B": [
+              "The camera records show shorter durations above the line at both sets of drains in the later period."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the greater observed reduction directly to the unresolved cover effect, then supplies the rainfall and cleaning explanations. A's separate measurement-boundaries section interrupts that connection, and its nested lists fragment the account.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## 3. Boundaries of the Measurement",
+              "## 4. Explanations and Unresolved Variables"
+            ],
+            "B": [
+              "although the comparison does not by itself identify a cover effect.",
+              "The four later storms delivered less rain on average at the district gauge than the earlier storms."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the author's preference for explanation through connected prose. Its closing paragraph links the usefulness of existing records, the remaining reliability question, and the purpose and limits of follow-up. A presents these mostly as labeled items.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "* **Scorer Reliability:**",
+              "* **Future Study Design:**"
+            ],
+            "B": [
+              "The existing recordings remain useful for describing these eight storms and for testing whether the camera-based duration measure is practical.",
+              "That would address some of the present ambiguities, although rotation alone would not make storms identical."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B better meets the decisive priority: a coherent findings narrative that explains why the observed reduction leaves a causal question unresolved and what further study could address. A preserves the evidence but turns much of that argument into a checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## 5. Methodological Assessment and Proposed Follow-Up"
+            ],
+            "B": [
+              "The reduction on the changed street was therefore greater, which may be useful when deciding what to study next, although the comparison does not by itself identify a cover effect."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "65621bace1cc25049f48213bb042c1ed01c00b42b8c952abbd05a75b7f66bd37",
+    "prompt_sha256": "9981e050ba23bd1f59480f84a9754679c644cb51f3787f886806d9dabfe501a4",
+    "raw_sha256": "a4117c44f2c7574a078144ff8fb6b8bd893d5a40698b6f315a53abdd328b3f28",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns reporting observational findings and limitations, not presenting a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the design, allocation rationale, all observations, correct means and units, measurement distinctions, rainfall and debris uncertainties, and qualified follow-up. It keeps scorable recordings separate from untested scorer agreement.",
+          "quotes": {
+            "source": [
+              "The lower street was chosen because crews had received more complaints there, so cover allocation was not random.",
+              "although rotation alone would not make storms identical."
+            ],
+            "A": [
+              "The lower street was chosen because crews had received more complaints there, so cover allocation was not random.",
+              "although rotation alone would not make storms identical."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the observations, numerical results, allocation and measurement limitations, and unresolved causal explanations. Its additional suggestions for scoring validation and depth extraction are conditional proposals, not claims that these analyses were performed or are guaranteed feasible.",
+          "quotes": {
+            "source": [
+              "peak depth was not extracted from the images.",
+              "we have not tested whether different scorers assign the same duration."
+            ],
+            "A": [],
+            "B": [
+              "Peak depth was not extracted from the camera images",
+              "Testing whether independent scorers assign consistent durations to the existing or future recordings, and extracting peak water depth from the imagery if depth is of analytical interest."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the evidence and distinguish observed changes from causal attribution. B makes the per-period observation counts explicit and adds conditional follow-up options; neither changes the substantive findings or recommends expanding the pilot.",
+          "quotes": {
+            "source": [
+              "although the comparison does not by itself identify a cover effect.",
+              "All 48 drain-storm observations were available."
+            ],
+            "A": [
+              "All 48 drain-storm observations were available.",
+              "although the comparison does not by itself identify a cover effect."
+            ],
+            "B": [
+              "48 drain-storm observations (12 per street in each period)",
+              "this comparison does not isolate a causal effect of the replacement grate covers."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses straightforward sentences that explain the qualifications as part of the account. B is understandable, but formal labels and phrases such as its follow-up introduction make the prose more bureaucratic than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A later study could rotate covers among comparable drains and record local rainfall intensity and debris before cleaning."
+            ],
+            "B": [
+              "If a subsequent study is conducted to resolve the ambiguities in these findings, its design could incorporate:",
+              "**Local environmental and baseline logging:**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B provides a clearer overall sequence from design to results, explanatory uncertainty, and follow-up. A's final paragraph moves into a later study and then returns to the utility and reliability of the existing recordings. B does, however, repeat environmental limitations across sections.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A later study could rotate covers among comparable drains",
+              "The existing recordings remain useful for describing these eight storms"
+            ],
+            "B": [
+              "### 3. Unresolved Explanatory Factors",
+              "### 4. Utility of Current Records and Options for Follow-Up Study"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for connected explanation without repeated defensive commentary. Its cleaning discussion explains both limits together. B distributes related limitations across labeled lists and then repeats them, making the account feel more like a reporting template.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more, because the initial quantity of leaves was not recorded. It also cannot be dismissed as irrelevant merely because both streets were cleaned."
+            ],
+            "B": [
+              "**Local precipitation and debris:**",
+              "**Rainfall differences:**",
+              "**Concurrent leaf removal:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or mathematical derivation is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are substantively faithful, and B offers a useful results table and clearer section sequence. A is nevertheless the better fit for this author's central preference: connected reasoning that explains uncertainty without repeatedly recataloguing it. Its closing order could improve, but B's repeated limitations and expanded follow-up list create more unnecessary packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The simultaneous cleaning does not automatically explain why the lower street improved more, because the initial quantity of leaves was not recorded."
+            ],
+            "B": [
+              "**Local precipitation and debris:**",
+              "**Concurrent leaf removal:**",
+              "**Scoring validation and image extraction:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "87c875288d0889016cd9b1dda73e88b5a134370bc2c49b812fe95f0ba37cedb6",
+    "prompt_sha256": "9981e050ba23bd1f59480f84a9754679c644cb51f3787f886806d9dabfe501a4",
+    "raw_sha256": "a4117c44f2c7574a078144ff8fb6b8bd893d5a40698b6f315a53abdd328b3f28",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
