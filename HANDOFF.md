@@ -1,5 +1,15 @@
 # Handoff
 
+## Scholarly revision integration and reinstall complete
+
+User supplied scholarly-paper-revision and requested incorporation, credit to Gappy on X, and reinstallation for Codex, Claude and Antigravity. Adapted manuscript scope, source/notation verification, pedagogical sequence, independent review, and project-preserving LaTeX verification into skill/references/scholarly-revision.md. Expanded tells.md with contextual manuscript-wide patterns. Core routes to the new reference and carries attribution; README credits Gappy with the supplied X post. The post returned403, so do not claim its contents were verified. No social-media message was posted.
+
+Retained the current packaged base rather than promoting dev candidates. Existing proofs.md, paper-voice.md and translation.md are byte-identical. Did not import the supplied package's personal paths, macro snapshot, survey template or build wrapper; guidance uses the actual project's conventions. Historical eval snapshots and plots unchanged; README explicitly distinguishes evaluated v4 from these unbenchmarked additions. No model evals or holdout reads/runs.
+
+Installer now defaults to Claude, Codex and Antigravity, with --apps selection. Uses Antigravity's documented global .gemini/config/skills location; refreshes existing shared Codex and legacy Antigravity copies to avoid shadowing. Keeps backup behavior and private local reading lists; rejects destination symlinks before writing. Temporary-home checks verified three-app installs, shared-copy synchronization, backups, private-list preservation/non-propagation, and symlink refusal. Skill validator and reference-link checks passed.
+
+Reinstalled on the Mac and the previously configured Linux machine. Source bytes verified for all three applications, plus the Mac's existing shared Codex copy. Existing installs backed up. No global rules or hooks changed. New sessions can discover the updated skill; no application runtime response was benchmarked. Reproduce installation with python3 install.py; --personal explicitly includes the untracked reading list, otherwise existing personal files remain local.
+
 ## README visualization restored
 
 User wants neurotypical-style criterion-by-model/effort heatmaps, paired IS/OOS, and ONLY versus-no-skill comparisons displayed. Version comparisons belong in development reports, not README figures/tables. README now leads with installed-v4 category and dimension heatmaps from the existing author-specific retrospective regrade. Separate no-skill-only plots cover restored-v9's 20-case dev check and the latest one-case-per-model repairs; no mixed populations or invented OOS. Chronological results and all version comparisons remain in existing reports. Sources, install instructions and reproduction commands retained.

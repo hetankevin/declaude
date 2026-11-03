@@ -1,16 +1,16 @@
 # declaude
 
-A Claude Code and Codex skill for plain English, research exposition in the author's voice, and mathematical proofs with explicit displayed steps. It removes rhetorical repetition and unnecessary abstractions while preserving meaning, uncertainty, scientific qualifications, and the author's voice.
+A Claude Code, Codex, and Antigravity skill for plain English, research exposition in the author's voice, and mathematical proofs with explicit displayed steps. It removes rhetorical repetition and unnecessary abstractions while preserving meaning, uncertainty, scientific qualifications, and the author's voice.
 
 ## Results against no skill
 
-The broad evaluation finds gains on saved Claude writing and on Codex proof exposition. **Codex prose outside proofs is roughly neutral overall, with argument writing still a weakness.** The installed release is v4. Later development repairs are shown separately below, because they have much smaller coverage.
+The broad evaluation finds gains on saved Claude writing and on Codex proof exposition. **Codex prose outside proofs is roughly neutral overall, with argument writing still a weakness.** These plots evaluate v4, the base of the current package. The scholarly-revision additions credited below have not been benchmarked. Later development repairs are shown separately below, because they have much smaller coverage.
 
 The heatmaps follow the same layout throughout: columns identify the writing model and reasoning effort; paired rows compare development (IS) with the retrospective held-out subset (OOS). Blue means improvement, red means regression, and zero means wins and losses balance. Values are **win rate minus loss rate in percentage points**; ties contribute zero. Parentheses show distinct case counts. All displayed comparisons are against no skill.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="evals/results/context-regrade/v4-vs-none/plots/pairwise-categories-dark.svg">
-  <img src="evals/results/context-regrade/v4-vs-none/plots/pairwise-categories-light.svg" alt="Installed skill versus no skill by writing category, generation model and effort, with IS and retrospective OOS paired and pooled Claude, Codex and all-model columns.">
+  <img src="evals/results/context-regrade/v4-vs-none/plots/pairwise-categories-light.svg" alt="Evaluated v4 versus no skill by writing category, generation model and effort, with IS and retrospective OOS paired and pooled Claude, Codex and all-model columns.">
 </picture>
 
 On the 27-case retrospective held-out subset, the overall balance is **+33.1 pp** (95% case-bootstrap interval +23.1 to +43.0). Claude outputs show +46.0 pp and Codex +13.9 pp. Codex proof tasks account for much of its gain: +81.2 pp on four proof cases, compared with +2.2 pp [−12.5, +16.3] on the 23 other cases. These are improvements relative to each model's own baseline, not an absolute ranking of the models' writing.
@@ -19,7 +19,7 @@ The dimensions distinguish preserving meaning from improving the way an argument
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="evals/results/context-regrade/v4-vs-none/plots/pairwise-dimensions-dark.svg">
-  <img src="evals/results/context-regrade/v4-vs-none/plots/pairwise-dimensions-light.svg" alt="Installed skill versus no skill for meaning, naturalness, progression, author voice, proof exposition and overall preference, paired by IS and retrospective OOS across model and effort.">
+  <img src="evals/results/context-regrade/v4-vs-none/plots/pairwise-dimensions-light.svg" alt="Evaluated v4 versus no skill for meaning, naturalness, progression, author voice, proof exposition and overall preference, paired by IS and retrospective OOS across model and effort.">
 </picture>
 
 **How these results were measured.** Two blind Codex judges, Astra high and Sol high, regraded saved outputs against the author's stated writing preferences. Development has 40 cases and the retrospective holdout has 27 cases complete across ten generation configurations. This regrade changed the judging setup, not the writing. The evaluation's 2,706 primary judgments and 286 reversed-order checks cover both recorded skill versions. Judges agree on 81.1% of primary pairs, and reversed order preserves 79.0% of audited verdicts. These are fallible model judgments, not independent human labels. Uneven category coverage and retrospective grading limit generalization claims; the two newer fresh holdouts remain untouched.
@@ -60,7 +60,7 @@ The Sol draft reduces repetition in an excluded-runs argument. The Sonnet draft 
   <img src="docs/img/focused-dev-light.svg" alt="Latest focused development drafts against no skill, with dimension-level wins, ties and losses for Sol low's excluded-runs argument and Sonnet high's variance proof.">
 </picture>
 
-These columns use different cases and candidate versions: Sol was tested with v11; Sonnet with v12, which adds only a proof-reference safeguard to the same core. Proof exposition is not applicable to Sol's argument. This tiny check does not establish general improvement, and Sonnet can still make intermediate algebraic steps more explicit. The latest candidate remains development-only; the installed skill is unchanged.
+These columns use different cases and candidate versions: Sol was tested with v11; Sonnet with v12, which adds only a proof-reference safeguard to the same core. Proof exposition is not applicable to Sol's argument. This tiny check does not establish general improvement, and Sonnet can still make intermediate algebraic steps more explicit. Those repair candidates remain development-only. Their results do not evaluate the subsequent scholarly-revision additions.
 
 Six calls completed the repair check: three drafts and three judge batches, with all baselines reused. No new evaluation calls were made to produce these figures. The [focused report](evals/results/prose-repair/v12-targeted/focused-report.md) retains the full development comparisons, failure history, evidence-repair audit and usage. [Earlier evaluations and development records](evals/results/) remain available without crowding the main results page.
 
@@ -72,7 +72,7 @@ cd declaude
 python3 install.py
 ```
 
-The installer copies `skill/` into the current user's Claude and Codex skill directories and backs up existing copies. It does not change global instructions or hooks. Invoke `/declaude` in Claude Code or `$declaude` in Codex. Normal skill discovery is enabled; this is not an always-on injection.
+The installer backs up existing copies and installs `skill/` for the current user in `~/.claude/skills/declaude`, `~/.codex/skills/declaude`, and `~/.gemini/config/skills/declaude`. The last is Antigravity's [global skill location](https://antigravity.google/docs/skills). Existing shared Codex or legacy Antigravity copies are refreshed too, so they cannot shadow the update. Use `--apps claude codex` to select applications. Global instructions and hooks are unchanged. Invoke `/declaude` in Claude Code or Antigravity, or `$declaude` in Codex. Normal skill discovery is enabled; this is not an always-on injection.
 
 A private reading list can be placed in `skill/references/papers.local.md` and installed with `python3 install.py --personal`. That file is ignored by Git. The public skill works without it using writing samples and project notes supplied with the task.
 
@@ -88,6 +88,12 @@ MPLCONFIGDIR=/tmp/declaude-mpl .local/venv/bin/python tools/plot_readme.py
 ```
 
 The first command rebuilds the broad retrospective benchmark charts. The second renders only no-skill comparisons for the completed development checks from published aggregates and validated judgments. It does not merge different versions, judges or case populations into a single score. Full evaluation runners and frozen plans remain in `tools/` and `evals/results/`; running them consumes model usage.
+
+## Acknowledgments
+
+Thanks to **Gappy ([@__paleologo on X](https://x.com/__paleologo/status/2116602494428299632))** for the *scholarly-paper-revision* guidance incorporated into declaude. The adaptation adds manuscript-wide stylistic diagnostics, source-aware scholarly revision, teaching and independent-review practices, and LaTeX verification while retaining the author's existing prose and displayed-proof preferences.
+
+The adaptation is in [scholarly revision](skill/references/scholarly-revision.md) and [stylistic patterns](skill/references/tells.md). It uses generalized guidance rather than the supplied package's personal file paths, macro snapshot, or survey template. Existing projects keep their own build conventions. These additions have not been run through the historical benchmarks above.
 
 ## Sources and scope
 
