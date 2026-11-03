@@ -1,1 +1,1785 @@
-[]
+[
+  {
+    "case": "large-dev-a-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a practical notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the closure, normal opening schedule, shelter availability, route and surface details, assistance limitations, eligible returns, and rain contingency. It adds no promise of immediate assistance.",
+          "quotes": {
+            "source": [
+              "but a staff member may not be available immediately.",
+              "The Friday return arrangement will remain in place unless the updated notice announces a further extension."
+            ],
+            "A": [
+              "but a staff member may not be available immediately.",
+              "The Friday return arrangement will remain in place unless that updated notice announces a further extension."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all practical arrangements and qualifications, including the additional distance, mat, opening-hours restriction, lack of transport, return eligibility, and notice of any further extension.",
+          "quotes": {
+            "source": [
+              "This is available during library opening hours. We cannot provide transport around the building.",
+              "This extension applies to books due Monday through Thursday, including books borrowed from another branch."
+            ],
+            "A": [],
+            "B": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the west entrance, though we cannot provide transport around the building.",
+              "Books due Monday through Thursday, including books borrowed from another branch, may be returned on Friday without a late charge."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both explicitly identify the west entrance as the shelter route's destination, retain the approximate distance and mat qualification, and accurately preserve assistance and return arrangements.",
+          "quotes": {
+            "source": [
+              "People coming from the bus shelter should follow the signed path along the south side of the building to reach that same entrance.",
+              "It adds approximately 120 metres to the journey."
+            ],
+            "A": [
+              "Visitors coming from the bus shelter should instead follow the signed path along the south side of the building to reach the west entrance.",
+              "This route to the west entrance adds approximately 120 metres to the journey;"
+            ],
+            "B": [
+              "Visitors coming from the bus shelter should follow the signed path along the south side of the building to reach the west entrance.",
+              "This route to the west entrance adds approximately 120 metres to the journey"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable public-notice prose and direct instructions. Their differences in sentence length and phrasing do not materially change readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Call the library desk before setting out if you would like this assistance."
+            ],
+            "B": [
+              "If you would like this assistance, call the library desk before setting out."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B has a modest organizational advantage: it opens the route paragraph with the operating schedule and common destination, then gives directions by arrival point. A introduces that destination at the end of the closure paragraph before resuming it in the next paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The library itself will remain open on its usual schedule via the west entrance facing the playground.\n\nVisitors coming from the playground can use the west entrance as normal."
+            ],
+            "B": [
+              "The library itself will remain open on its usual schedule through the west entrance, which faces the playground. Visitors coming from the playground can use the west entrance as normal."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the requested notice form, keep useful explanation, and replace the source's defensive wheelchair clarification with a straightforward closure statement. Neither imposes research-style argumentation or decorative language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "will be closed to everyone, including wheelchair users, while the pavement immediately outside it is replaced."
+            ],
+            "B": [
+              "closing that entrance to everyone, including wheelchair users, during the work."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is whether visitors can identify their route and understand the help available; both name the west entrance, separate accompaniment from transport, and preserve possible waiting. B's slightly tighter route grouping does not create a substantial usability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "staff can meet visitors at the bus shelter and accompany them to the west entrance, although we cannot provide transport around the building.",
+              "but a staff member may not be available immediately."
+            ],
+            "B": [
+              "staff can meet visitors at the bus shelter and accompany them to the west entrance, though we cannot provide transport around the building.",
+              "but a staff member may not be available immediately."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c71de9116166e1628584470b5a6f02eab662d03f10b4889283bf6709c5b0e5bb",
+    "prompt_sha256": "cb4d4183c550879621e54ffc1bd3b0860441300517537cd3da42525993d2e7f0",
+    "raw_sha256": "f2e28a93defe3af652337ab26207fc584c027b7406ac7fcdaf6d4d86b01f652b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a resident notice without a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the arrangements and qualifications. Saying the east entrance is closed to everyone retains the wheelchair restriction without repeating that example. In context, 'items borrowed from another branch' remains within the sentence's category of books.",
+          "quotes": {
+            "source": [
+              "That entrance is closed to everyone during the work, and the mat is on the route to the west entrance.",
+              "This extension applies to books due Monday through Thursday, including books borrowed from another branch."
+            ],
+            "A": [
+              "The east entrance is closed to everyone during the work.",
+              "Books due Monday through Thursday—including items borrowed from another branch—may be returned on Friday without a late charge."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B accurately states the shared west-entrance destination and retains the route, assistance constraints, return eligibility, and rain contingency. Its instruction that all visitors use the west entrance reasonably consolidates the source's arrangements rather than introducing a new restriction.",
+          "quotes": {
+            "source": [
+              "For those coming from the playground, the west entrance will be available as normal.",
+              "That entrance is closed to everyone during the work, and the mat is on the route to the west entrance.",
+              "but a staff member may not be available immediately."
+            ],
+            "A": [],
+            "B": [
+              "To enter the library, all visitors must use the west entrance facing the playground.",
+              "though a staff member may not be available immediately."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the closure, schedule, shelter, detour details, qualified accompaniment, and return exception. A's 'open entrance' has a clear west-entrance antecedent; B makes the accompaniment route more explicit without changing the arrangement.",
+          "quotes": {
+            "source": [
+              "Staff can meet visitors at the bus shelter and accompany them to the open entrance.",
+              "This is available during library opening hours. We cannot provide transport around the building."
+            ],
+            "A": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the open entrance. We cannot provide transport around the building."
+            ],
+            "B": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them along the detour to the open entrance.",
+              "Please note that staff cannot provide transport around the building."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A delivers the practical directions with less verbal repetition. B repeatedly establishes the west entrance before giving the shelter route and adds the unnecessary announcement 'Please note'; both remain idiomatic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Visitors coming from the bus shelter should follow the signed path along the south side of the building to reach the west entrance.",
+              "We cannot provide transport around the building."
+            ],
+            "B": [
+              "Visitors coming from the bus shelter must also use the west entrance, as the east entrance is closed to everyone during the work, including wheelchair users. To reach the west entrance from the bus shelter, follow the signed detour along the south side of the building.",
+              "Please note that staff cannot provide transport around the building."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B establishes the common destination before distinguishing arrival points, giving the reader a useful organizing statement. A starts with the playground case and inserts the universal east-entrance closure between the two arrival cases. Both then group assistance and returns appropriately.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For visitors coming from the playground, the west entrance remains open as normal. The east entrance is closed to everyone during the work. Visitors coming from the bus shelter should follow the signed path"
+            ],
+            "B": [
+              "To enter the library, all visitors must use the west entrance facing the playground. Those arriving from the playground can use this entrance as normal."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both provide connected, practical prose with the purposeful details intact. A better avoids rhetorical repetition, while B better introduces the route's shared destination before the individual directions; neither advantage dominates the author's preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This detour adds approximately 120 metres and has no steps, though one section has a temporary firm mat over uneven ground."
+            ],
+            "B": [
+              "To enter the library, all visitors must use the west entrance facing the playground.",
+              "This route adds approximately 120 metres to the journey and has no steps, though a temporary firm mat has been laid over one section of uneven ground."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both satisfy the central requirement: visitors can identify the south-side route to the west entrance and request help without assuming immediate availability or transport. B's clearer common-destination opening is offset by repeated route setup; A is more direct but orders that setup less well. These are comparable completed notices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Visitors coming from the bus shelter should follow the signed path along the south side of the building to reach the west entrance.",
+              "You may also request help on arrival using the telephone number displayed at the shelter, though a staff member may not be available immediately."
+            ],
+            "B": [
+              "To reach the west entrance from the bus shelter, follow the signed detour along the south side of the building.",
+              "You may also request help upon arrival using the telephone number displayed at the bus shelter, though a staff member may not be available immediately."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91cd8e26b64c1864e7f1ac5f6935a3d72f34bc94e95b4d70f029b8fadaf19a0b",
+    "prompt_sha256": "cb4d4183c550879621e54ffc1bd3b0860441300517537cd3da42525993d2e7f0",
+    "raw_sha256": "f2e28a93defe3af652337ab26207fc584c027b7406ac7fcdaf6d4d86b01f652b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a practical notice; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the closure, opening schedule, shelter access, route and surface details, qualified accompaniment without transport, eligible Friday returns, and rain-update arrangements.",
+          "quotes": {
+            "source": [
+              "but a staff member may not be available immediately.",
+              "including books borrowed from another branch"
+            ],
+            "A": [
+              "but a staff member may not be available immediately.",
+              "including those borrowed from another branch"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the same arrangements, including staff availability limits and the restriction of the Friday exception to books due Monday through Thursday.",
+          "quotes": {
+            "source": [
+              "This extension applies to books due Monday through Thursday",
+              "The Friday return arrangement will remain in place unless the updated notice announces a further extension."
+            ],
+            "A": [],
+            "B": [
+              "Books due Monday through Thursday, including books borrowed from another branch, may be returned on Friday without a late charge.",
+              "the Friday return arrangement will remain in place unless that notice announces a further extension."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's practical facts and qualifications. Each explicitly identifies the west entrance as the destination and keeps the extra distance, step-free route, and mat together.",
+          "quotes": {
+            "source": [
+              "People coming from the bus shelter should follow the signed path along the south side of the building to reach that same entrance.",
+              "It adds approximately 120 metres to the journey."
+            ],
+            "A": [
+              "Visitors coming from the bus shelter should instead follow the signed path along the south side of the building to reach the west entrance.",
+              "This route to the west entrance adds approximately 120 metres to the journey"
+            ],
+            "B": [
+              "Visitors coming from the bus shelter should follow the signed path along the south side of the building to reach the west entrance.",
+              "This route to the west entrance adds approximately 120 metres to the journey"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable notice prose and direct instructions. Their small differences in sentence length and phrasing do not materially affect ease of reading.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Call the library desk before setting out if you would like this assistance."
+            ],
+            "B": [
+              "If you would like this assistance, call the library desk before setting out."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A announces the available entrance before detailing the routes; B introduces it with the route paragraph. Both then move coherently through assistance, returns, and the rain contingency.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The library itself will remain open on its usual schedule via the west entrance facing the playground.",
+              "During library opening hours, staff can meet visitors at the bus shelter"
+            ],
+            "B": [
+              "The library itself will remain open on its usual schedule through the west entrance, which faces the playground.",
+              "During library opening hours, staff can meet visitors at the bus shelter"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both fit the requested ordinary notice: connected prose, purposeful paragraph groups, explicit destinations, and useful explanation without imposing a research-style argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the returns slot beside the east entrance will also be inaccessible during the closure, books due from Monday through Thursday"
+            ],
+            "B": [
+              "The returns slot beside the east entrance will also be inaccessible during the closure. Books due Monday through Thursday"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: readers can identify the route and understand how to request accompaniment, including its limits. Their organizational differences offer no substantive advantage for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "staff can meet visitors at the bus shelter and accompany them to the west entrance, although we cannot provide transport around the building."
+            ],
+            "B": [
+              "staff can meet visitors at the bus shelter and accompany them to the west entrance, though we cannot provide transport around the building."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c71de9116166e1628584470b5a6f02eab662d03f10b4889283bf6709c5b0e5bb",
+    "prompt_sha256": "cb4d4183c550879621e54ffc1bd3b0860441300517537cd3da42525993d2e7f0",
+    "raw_sha256": "9326cd28f406760f767105b102ed4ed9d9ae745df8b09bad916dde6c15dcc322",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the organization and wording of a resident notice, with no mathematical argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the substantive arrangements. Saying the east entrance is closed to everyone retains the wheelchair restriction, and the preceding west-entrance directions resolve the assistance destination.",
+          "quotes": {
+            "source": [
+              "That entrance is closed to everyone during the work",
+              "Staff can meet visitors at the bus shelter and accompany them to the open entrance."
+            ],
+            "A": [
+              "The east entrance is closed to everyone during the work.",
+              "staff can meet visitors at the bus shelter and accompany them to the open entrance."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the route, assistance conditions, returns eligibility, and rain contingency. Its general west-entrance instruction reasonably consolidates the source's directions for both arrival points without establishing a materially different arrangement.",
+          "quotes": {
+            "source": [
+              "For those coming from the playground, the west entrance will be available as normal.",
+              "People coming from the bus shelter should follow the signed path along the south side of the building to reach that same entrance."
+            ],
+            "A": [],
+            "B": [
+              "To enter the library, all visitors must use the west entrance facing the playground.",
+              "follow the signed detour along the south side of the building."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the closure dates, usual hours, shelter availability, route details, qualified assistance without transport, and exact return-extension scope. B makes wheelchair exclusion explicit; A conveys it through everyone.",
+          "quotes": {
+            "source": [
+              "That entrance is closed to everyone during the work",
+              "This extension applies to books due Monday through Thursday, including books borrowed from another branch."
+            ],
+            "A": [
+              "The east entrance is closed to everyone during the work.",
+              "Books due Monday through Thursday—including items borrowed from another branch—may be returned on Friday without a late charge."
+            ],
+            "B": [
+              "the east entrance is closed to everyone during the work, including wheelchair users.",
+              "Any books due between Monday and Thursday—including items borrowed from another branch—may be returned on Friday without a late charge."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A gives the route and assistance instructions directly. B remains readable, but repeats the west-entrance instruction several times and adds formal notice language that makes the prose more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Visitors coming from the bus shelter should follow the signed path along the south side of the building to reach the west entrance.",
+              "We cannot provide transport around the building."
+            ],
+            "B": [
+              "Visitors coming from the bus shelter must also use the west entrance",
+              "To reach the west entrance from the bus shelter",
+              "Please note that staff cannot provide transport around the building."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B gives the general entry instruction before distinguishing arrival points. A interrupts its route paragraph with another closure statement between the playground and bus-shelter directions. Both otherwise group assistance and returns coherently.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For visitors coming from the playground, the west entrance remains open as normal. The east entrance is closed to everyone during the work. Visitors coming from the bus shelter should follow the signed path"
+            ],
+            "B": [
+              "To enter the library, all visitors must use the west entrance facing the playground. Those arriving from the playground can use this entrance as normal."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the preference for removing rhetorical repetition while retaining useful explanation. B's repeated entry instructions add little after the initial rule, although its practical paragraph structure remains appropriate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This detour adds approximately 120 metres and has no steps, though one section has a temporary firm mat over uneven ground."
+            ],
+            "B": [
+              "To enter the library, all visitors must use the west entrance",
+              "Visitors coming from the bus shelter must also use the west entrance"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither introduces a material error. A avoids repetitive instructions; B provides a clearer initial orientation to the available entrance. Both deliver the user's central practical outcome, with understandable routes, assistance limits, and return arrangements, so neither has a decisive overall advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them to the open entrance.",
+              "though a staff member may not be available immediately."
+            ],
+            "B": [
+              "During library opening hours, staff can meet visitors at the bus shelter and accompany them along the detour to the open entrance.",
+              "though a staff member may not be available immediately."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91cd8e26b64c1864e7f1ac5f6935a3d72f34bc94e95b4d70f029b8fadaf19a0b",
+    "prompt_sha256": "cb4d4183c550879621e54ffc1bd3b0860441300517537cd3da42525993d2e7f0",
+    "raw_sha256": "9326cd28f406760f767105b102ed4ed9d9ae745df8b09bad916dde6c15dcc322",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a classroom booklet rewrite with no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "Preserves the schedule, partnership, recording instructions, disagreement procedure, cloud limitations, and inconclusive outcome. However, the closing sentence turns a qualified comparison of usefulness into an unqualified judgment.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "A careful account of what could not be observed is more useful than a confident account of a patch nobody saw."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Preserves the schedule, partnership, recording instructions, disagreement procedure, cloud limitations, and inconclusive outcome. Like A, it strengthens the closing claim from possible greater usefulness to unqualified greater usefulness.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [],
+            "B": [
+              "A careful account of what could not be observed is more useful than a confident account of a patch nobody saw."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the operational requirements and uncertainty, including recording absence without treating it as a position measurement or copying yesterday's outline. Both make the same minor change to the final claim's modality.",
+          "quotes": {
+            "source": [
+              "This counts as an observation. It does not count as a measurement of the patch's position.",
+              "If too few patches were visible to establish a pattern, say so and explain which observations are missing."
+            ],
+            "A": [
+              "This counts as an observation. It does not count as a measurement of the patch’s position.",
+              "If too few patches were visible to establish a pattern, say so and explain which observations are missing."
+            ],
+            "B": [
+              "This counts as an observation. It does not count as a measurement of the patch's position.",
+              "If too few patches were visible to establish a pattern, say so and explain which observations are missing."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable classroom prose and concrete instructions. A takes slightly more space to explain repeated observation; B expresses the same purpose naturally and more compactly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "One drawing shows where the light falls at a single moment. It cannot show whether that position changes."
+            ],
+            "B": [
+              "One drawing does not show whether a position changes. We observe more than once to see if the light moves."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the purpose of repetition before giving recording instructions, then address missing observations and the final comparison. Each supplies enough connection for pupils to understand why the activity has several visits.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That is why we record the light more than once.",
+              "At the end, compare all six observation spaces with your partner."
+            ],
+            "B": [
+              "We observe more than once to see if the light moves.",
+              "At the end, compare all six observation spaces with your partner."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the concrete, reflective classroom register and the purposeful humor about the ruler. Neither imports the sample's activity or imposes an elaborate argument on the booklet.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You have a pencil and a ruler, but a ruler does not make a fuzzy edge less fuzzy."
+            ],
+            "B": [
+              "A pencil and ruler are provided, but the ruler does not make a fuzzy edge less fuzzy."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Both have the same minor modal strengthening and otherwise meet the user's practical priority: pupils can conduct the activity and report inconclusive evidence honestly. A's fuller opening and B's more compact explanation are comparably effective; neither creates a substantive usability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Write one sentence about a pattern you can support, and write one question that remains.",
+              "You are not required to discover a particular pattern."
+            ],
+            "B": [
+              "Write one sentence about a pattern you can support and one question that remains.",
+              "You are not required to discover a particular pattern."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d2b5bce388676b0ad937a2c884b789ca130c8f41f3400108b9e4ad2bc01ff5cb",
+    "prompt_sha256": "3d577d0f0bd78171c4195d69fcf3ea64da4c74bab67487d461b252c7ac5f857e",
+    "raw_sha256": "b47432408203fd42a84ed72a8eba1d7c93b5dcd789d3b4752b6b7abf7f75ba54",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a classroom booklet rewrite with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all activity requirements and qualifications: three days with the same partner, both daily times, outline and time recording, dotted fuzzy edges, comparison before correction, absence without a position measurement or reused outline, uncontrolled clouds, and a supported pattern plus remaining question. It also preserves permission to report insufficient observations and the qualified closing comparison.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Retains the activity requirements and uncertainty procedures, but replaces the qualified comparison with categorical claims that one account is useful and the other is not. The source establishes possible relative usefulness, not that an unsupported account has no usefulness.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [],
+            "B": [
+              "A careful account of what could not be observed is useful. A confident account of a patch nobody saw is not."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the schedule, observation procedures, cloud limitations, and permission for an inconclusive result. A also preserves the closing qualification; B introduces a categorical judgment of usefulness that the source does not establish.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "B": [
+              "A careful account of what could not be observed is useful. A confident account of a patch nobody saw is not."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's connected sentences explain the activity naturally. B remains readable, but phrases such as 'where the light is once' and the separate explanation of a ruler's ordinary function make its rhythm more labored.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We do this more than once because one drawing does not show whether a position changes.",
+              "A pencil and ruler are provided, but the ruler does not make a fuzzy edge less fuzzy."
+            ],
+            "B": [
+              "One drawing shows where the light is once.",
+              "A ruler is useful for drawing a straight line. It does not make a fuzzy edge less fuzzy."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the observation schedule and limits of a single drawing to recording, handling absence, and drawing a supported conclusion. A makes the reason for repetition more explicit; B's single-drawing-to-six-drawings sequence still makes the purpose and limits understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We do this more than once because one drawing does not show whether a position changes.",
+              "At the end, compare all six observation spaces with your partner."
+            ],
+            "B": [
+              "One drawing shows where the light is once. It does not show whether that position changes. Even six drawings only show the position of the light that could be seen.",
+              "At the end, compare all six observation spaces with your partner."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better balances the sample's plain classroom voice with the author's preference for connected explanation and preservation of effective passages. B adds an unnecessary explanation of a ruler and divides the closing reflection into a more categorical lesson.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A pencil and ruler are provided, but the ruler does not make a fuzzy edge less fuzzy."
+            ],
+            "B": [
+              "A pencil and a ruler are provided. A ruler is useful for drawing a straight line. It does not make a fuzzy edge less fuzzy."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B makes a minor unsupported categorical claim in its closing lesson. A also better serves the user's priority of explaining the activity in connected, reflective prose: its opening directly explains why observations repeat, while its conclusion retains the source's measured treatment of inconclusive evidence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We do this more than once because one drawing does not show whether a position changes.",
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "B": [
+              "A ruler is useful for drawing a straight line.",
+              "A careful account of what could not be observed is useful. A confident account of a patch nobody saw is not."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "119ff2cf8fe165c86a79adb5f41c291b63bd2f2d90500895aa7837809fd079c8",
+    "prompt_sha256": "3d577d0f0bd78171c4195d69fcf3ea64da4c74bab67487d461b252c7ac5f857e",
+    "raw_sha256": "b47432408203fd42a84ed72a8eba1d7c93b5dcd789d3b4752b6b7abf7f75ba54",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a classroom booklet introduction with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The activity requirements and observational limits remain intact, but the ending turns a possible comparison of usefulness into categorical judgments: the careful account is useful and the confident account is not.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "A careful account of what could not be observed is useful. A confident account of a patch nobody saw is not."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the schedule, partner, marking instructions, comparison before correction, missing-observation procedure, cloud limitations, and qualified final comparison.",
+          "quotes": {
+            "source": [
+              "This counts as an observation. It does not count as a measurement of the patch's position."
+            ],
+            "A": [],
+            "B": [
+              "This counts as an observation. It does not count as a measurement of the patch's position."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the practical activity and its uncertainty. B also preserves the qualified usefulness claim, whereas A makes that closing judgment categorical.",
+          "quotes": {
+            "source": [
+              "can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "A confident account of a patch nobody saw is not."
+            ],
+            "B": [
+              "can be more useful than a confident account of a patch nobody saw."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable, but its added explanation of what a ruler does interrupts an already clear instruction. B keeps the practical instruction and its limitation together.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A ruler is useful for drawing a straight line. It does not make a fuzzy edge less fuzzy."
+            ],
+            "B": [
+              "A pencil and ruler are provided, but the ruler does not make a fuzzy edge less fuzzy."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow a usable sequence from schedule to recording to missing observations to conclusions. B connects repetition directly to its purpose; A follows its equivalent explanation with an additional caution about six drawings, giving the opening a more defensive rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "One drawing shows where the light is once. It does not show whether that position changes. Even six drawings only show the position of the light that could be seen."
+            ],
+            "B": [
+              "We do this more than once because one drawing does not show whether a position changes."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both retain the sample's concrete classroom register. B better combines reflection with connected explanation, while A adds short corrective statements where the existing explanation already serves pupils.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A ruler is useful for drawing a straight line. It does not make a fuzzy edge less fuzzy."
+            ],
+            "B": [
+              "We do this more than once because one drawing does not show whether a position changes."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B preserves the source's qualified ending; A introduces a minor categorical claim about usefulness. B also better meets the user's priority of making the activity coherent for pupils: its opening explicitly explains why observations are repeated without accumulating extra corrective statements.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A careful account of what could not be observed is useful. A confident account of a patch nobody saw is not."
+            ],
+            "B": [
+              "We do this more than once because one drawing does not show whether a position changes.",
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "34c6677dfc1d5ad696883eb855de61c608445a6bf0a331052fe34499b86c95e5",
+    "prompt_sha256": "a8bdd20efb3a3cebd5fe3a4afd796c82f7e2f709a8ed227656ecda702a8a40c2",
+    "raw_sha256": "3b13eafaab642ceb4706eed68cb70913a55f91108e43b5bd4e251875e3c08589",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a classroom booklet introduction with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "Preserves the activity requirements and uncertainty, but changes the closing possibility into an unqualified comparative claim: the careful account is more useful, rather than potentially more useful.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "A careful account of what could not be observed is more useful than a confident account of a patch nobody saw."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Preserves the activity requirements and uncertainty, but makes the same categorical strengthening of the closing usefulness comparison as A.",
+          "quotes": {
+            "source": [
+              "A careful account of what could not be observed can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [],
+            "B": [
+              "A careful account of what could not be observed is more useful than a confident account of a patch nobody saw."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the schedule, recording rules, disagreement procedure, cloud limitations, and permission to report insufficient observations. Both introduce the same minor strengthening of the final comparison.",
+          "quotes": {
+            "source": [
+              "If too few patches were visible to establish a pattern, say so and explain which observations are missing.",
+              "can be more useful than a confident account of a patch nobody saw."
+            ],
+            "A": [
+              "If too few patches were visible to establish a pattern, say so and explain which observations are missing.",
+              "is more useful than a confident account of a patch nobody saw."
+            ],
+            "B": [
+              "If too few patches were visible to establish a pattern, say so and explain which observations are missing.",
+              "is more useful than a confident account of a patch nobody saw."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are accessible classroom prose. A's sentence about what drawings record is more direct and informative than B's slightly cumbersome statement about showing visible light.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The drawings record the position of the light we can see, not an answer to every question about why it is there."
+            ],
+            "B": [
+              "What our drawings show is the light that can be seen. They do not answer every question about why it is there."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain why repetition is needed before giving recording instructions, then address missing observations before the final comparison. B spells out the single-moment limitation; A connects it directly to observing movement. Both routes are sufficient for pupils.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "One drawing does not show whether a position changes. We observe more than once to see if the light moves."
+            ],
+            "B": [
+              "One drawing shows where the light falls at a single moment. It cannot show whether that position changes. That is why we record the light more than once."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both use concrete, reflective classroom language and explain the purpose of repeated observation. A is more connected in places; B's short explanatory steps also fit the sample. Neither imports the sample's activity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If two groups mark an edge differently, compare what you noticed before deciding whether either drawing needs to change."
+            ],
+            "B": [
+              "Two groups may mark the same edge differently. They should compare what they noticed before deciding whether either drawing needs to change."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Both make the same minor change to the final claim, with identical consequences. Both fulfill the central goal of explaining the activity and handling inconclusive observations. A's more direct wording and B's fuller single-moment explanation do not establish a substantive overall preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We observe more than once to see if the light moves.",
+              "This counts as an observation. It does not count as a measurement of the patch's position."
+            ],
+            "B": [
+              "One drawing shows where the light falls at a single moment. It cannot show whether that position changes.",
+              "This counts as an observation. It does not count as a measurement of the patch’s position."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4b96c776ab312ca5b486ca8b9a9a74514f24afc8e0226fe81d71c2bdefd75c0b",
+    "prompt_sha256": "a8bdd20efb3a3cebd5fe3a4afd796c82f7e2f709a8ed227656ecda702a8a40c2",
+    "raw_sha256": "3b13eafaab642ceb4706eed68cb70913a55f91108e43b5bd4e251875e3c08589",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a practical welcome message; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the bed identification, tool ownership qualification, watering exclusions, consent requirement, compost destinations, and steward availability. Its added compost explanation does not materially change the instructions.",
+          "quotes": {
+            "source": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "A": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all practical distinctions and instructions. Removing the reassurance about judging gardening does not omit a factual requirement or introduce blame.",
+          "quotes": {
+            "source": [
+              "That is a sorting precaution, not a judgment about anybody's gardening."
+            ],
+            "A": [],
+            "B": [
+              "If you are unsure whether a plant has set seed, leave it in the brown bin and ask at the next steward session."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's substantive requirements, including the easily missed exclusion of rota participants' individual beds.",
+          "quotes": {
+            "source": [
+              "It does not cover individual beds, including beds belonging to people who have signed up for the rota."
+            ],
+            "A": [
+              "The rota does not cover individual beds, even those belonging to gardeners who have signed up for rota shifts."
+            ],
+            "B": [
+              "It does not cover individual beds, including beds belonging to people who have signed up for the rota."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as practical prose. A uses longer connected sentences; B retains the source's direct rhythm. Neither becomes a checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When you need equipment, you will find the shed code on your membership card."
+            ],
+            "B": [
+              "The shed code is on your membership card."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both use the same useful reordering: introduce the collective strip, immediately explain its watering arrangements, then cover equipment, compost, and steward help.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That collective strip and the young fruit trees are cared for through the shared watering rota."
+            ],
+            "B": [
+              "The watering rota covers the collective strip and the young fruit trees."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the welcoming, practical register and the closing humor. A keeps more reassurance and conversational transitions; B preserves more already-effective wording. These are defensible alternatives within the author's preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We are glad you are here—and please remember that we would much rather answer a small question before you plant than help move a thriving crop out of somebody else's bed."
+            ],
+            "B": [
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The welcome message contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both meet the decisive priority: a usable, friendly notice that clearly separates collective responsibilities from individual arrangements and explains why consent matters. A's fuller connections and B's restrained editing offer comparable value.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "please add it to the noticeboard only after they have agreed—that way, an open request will not be mistaken for a job someone has already accepted."
+            ],
+            "B": [
+              "Add that arrangement to the noticeboard only with their agreement so that a request does not look like a job someone has accepted."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "247e7fdd55f31575a11e78e20dd50762c21433bf891f78533e6ec8d3c857ac0f",
+    "prompt_sha256": "e3ce9389dad1ebc25abf4c67d300940272fad6c80e1594e97f9058a9b9fcc7d0",
+    "raw_sha256": "7054805866b5254cbb533a1b9edda3ba28628b0808fb2af567fe09b88fcca43e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a practical welcome message; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the practical instructions and their qualifications, including uncertain tool ownership, rota exclusions, consent before posting, and separate compost destinations.",
+          "quotes": {
+            "source": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "A": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B turns possible private ownership into certain ownership of every tool without blue handles. Readers can now infer an ownership classification the source does not establish, although the sharing restriction remains. It also invents an open green bay and narrows the stated cancellation coverage to weather cancellations.",
+          "quotes": {
+            "source": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared.",
+              "You can put weeds without seed heads into the green compost bay.",
+              "The noticeboard lists the next session and any cancellation."
+            ],
+            "A": [],
+            "B": [
+              "Any tools without blue handles belong to individual gardeners and are not automatically shared.",
+              "the open green compost bay",
+              "any weather cancellations"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves the ownership qualification and full cancellation statement. B adds unsupported certainty about ownership and physical details, and reduces the stated scope of cancellation information.",
+          "quotes": {
+            "source": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "A": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "B": [
+              "Any tools without blue handles belong to individual gardeners and are not automatically shared."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's direct language fits an ordinary garden notice. B remains readable but adds stock introductory phrases and unnecessary elaboration, such as describing a return as a second visit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "even if you plan to return later that evening"
+            ],
+            "B": [
+              "even if you plan to return for a second visit later that evening"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both maintain sensible topic paragraphs and explain the practical reasons for closing the shed and confirming watering arrangements. B's relocation of the crop-moving observation makes it immediately relevant to bed identification; A's original placement provides a useful closing invitation to ask questions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ],
+            "B": [
+              "Please check with a steward before planting in a bed whose number you cannot clearly read; we would much rather answer a quick question before you start than have to help move a thriving crop out of someone else's plot later."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the source's understated welcome, useful reassurance, and humorous closing. B retains the humor earlier but adds repeated welcomes and a generic upbeat sign-off, making the notice less faithful to the established register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Welcome to the garden.",
+              "That is a sorting precaution, not a judgment about anybody's gardening."
+            ],
+            "B": [
+              "Welcome to the garden—we are so glad you’re here!",
+              "Welcome again, and happy growing!"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The welcome message contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B introduces minor factual changes, especially certainty about private tool ownership. A also better serves the user's preference for restrained editing of an already-effective practical notice, preserving its welcome and closing observation without generic embellishment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared.",
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ],
+            "B": [
+              "Any tools without blue handles belong to individual gardeners and are not automatically shared.",
+              "Welcome again, and happy growing!"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c179f1f2138d60e23dfca85c004c30a6665766460a5134fd715388736a825ad6",
+    "prompt_sha256": "e3ce9389dad1ebc25abf4c67d300940272fad6c80e1594e97f9058a9b9fcc7d0",
+    "raw_sha256": "7054805866b5254cbb533a1b9edda3ba28628b0808fb2af567fe09b88fcca43e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a practical welcome message; it contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A turns possible private ownership into definite ownership of every tool without blue handles. This changes what readers can believe about those tools, although it preserves the instruction that they are not automatically shared.",
+          "quotes": {
+            "source": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "A": [
+              "Any tools without blue handles belong to individual gardeners and are not automatically shared."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the operational distinctions and qualifications: assigned beds, the noticeboard fallback, collective planting, tool ownership and return, shed closure, rota coverage, agreed watering arrangements, and compost sorting.",
+          "quotes": {
+            "source": [
+              "Add that arrangement to the noticeboard only with their agreement so that a request does not look like a job someone has accepted."
+            ],
+            "A": [],
+            "B": [
+              "Add that arrangement to the noticeboard only with their agreement, so that a request does not look like a job someone has accepted."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the practical instructions, but B preserves the uncertainty about tools without blue handles. A makes their private ownership categorical without source support.",
+          "quotes": {
+            "source": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ],
+            "A": [
+              "Any tools without blue handles belong to individual gardeners and are not automatically shared."
+            ],
+            "B": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a direct, friendly garden notice. A is readable but repeatedly expands straightforward wording into more ceremonious transitions and assurances.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When it comes to equipment, tools with blue handles belong to our shared collection.",
+              "It is just a sorting precaution to keep the compost healthy, never a judgment on anyone’s gardening."
+            ],
+            "B": [
+              "Tools with a blue handle belong to the shared tool collection.",
+              "That is a sorting precaution, not a judgment about anybody's gardening."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both organize the notice into usable topic paragraphs and explain the reasons for consent and shed closure. A places the crop-moving observation beside the bed instructions; B retains its effective role as the closing invitation to ask questions. Both arrangements work.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please check with a steward before planting in a bed whose number you cannot clearly read; we would much rather answer a quick question before you start than have to help move a thriving crop out of someone else's plot later."
+            ],
+            "B": [
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the source's understated welcome, practical explanations, and humorous closing observation. A adds a more exuberant greeting and a generic closing, making a larger tonal intervention than the task needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Welcome to the garden—we are so glad you’re here!",
+              "Welcome again, and happy growing!"
+            ],
+            "B": [
+              "Welcome to the garden.",
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, while A introduces a minor unsupported ownership claim. B also better serves the requested light edit: it keeps the usable paragraph structure and the author's welcoming closing observation without adding unnecessary rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Any tools without blue handles belong to individual gardeners and are not automatically shared.",
+              "Welcome again, and happy growing!"
+            ],
+            "B": [
+              "Tools without a blue handle may belong to another gardener and are not automatically shared.",
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "57eeba0c76cf315c77a06f67fcfdcc4e51d1c009bacc5ff98d7dd7d79a8c6371",
+    "prompt_sha256": "434d008de7857b22bf7105b3e184bb43df91eb0ea94959b7e631b62cd243e913",
+    "raw_sha256": "8430e8bd6a7465f9a29a90e08b4163fa41960afa953a6ec9404e4af6f4efd2b7",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a practical welcome message; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the source's practical instructions and qualifications, including the distinction between rota duties and individual beds. Its removal of the nonjudgment reassurance affects tone rather than the operational meaning.",
+          "quotes": {
+            "source": [
+              "It does not cover individual beds, including beds belonging to people who have signed up for the rota.",
+              "That is a sorting precaution, not a judgment about anybody's gardening."
+            ],
+            "A": [
+              "It does not cover individual beds, including beds belonging to people who have signed up for the rota.",
+              "If you are unsure whether a plant has set seed, leave it in the brown bin and ask at the next steward session."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the bed identification and fallback, collective strip, qualified tool ownership, return and door instructions, limited rota coverage, prior consent, and separate compost destinations. Its explanation about protecting the compost is a harmless elaboration of the stated sorting precaution.",
+          "quotes": {
+            "source": [
+              "Add that arrangement to the noticeboard only with their agreement so that a request does not look like a job someone has accepted.",
+              "That is a sorting precaution, not a judgment about anybody's gardening."
+            ],
+            "A": [],
+            "B": [
+              "please add it to the noticeboard only after they have agreed",
+              "This is simply a sorting precaution to protect the shared compost, not a judgment on anybody's gardening."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the actionable content, qualifications, and distinction between shared resources and individual responsibilities. A drops a reassurance that B retains, but neither changes the practical scope or introduces a material error.",
+          "quotes": {
+            "source": [
+              "The watering rota covers the collective strip and the young fruit trees.",
+              "It does not cover individual beds, including beds belonging to people who have signed up for the rota."
+            ],
+            "A": [
+              "The watering rota covers the collective strip and the young fruit trees.",
+              "It does not cover individual beds, including beds belonging to people who have signed up for the rota."
+            ],
+            "B": [
+              "That collective strip and the young fruit trees are cared for through the shared watering rota.",
+              "The rota does not cover individual beds, even those belonging to gardeners who have signed up for rota shifts."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's direct sentences are idiomatic and easy to use. B's more connected phrasing is also conversational, though its longer sentences occasionally carry more connective wording than necessary. Neither has a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you will be away, you can make a separate arrangement with another gardener.",
+              "Return shared tools to the shed before you leave, even if you plan to return later that evening."
+            ],
+            "B": [
+              "If you will be away, you can make a separate watering arrangement with another gardener",
+              "When you need equipment, you will find the shed code on your membership card."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both sensibly move watering directly after the bed paragraph. B makes that relationship explicit by picking up the collective strip, then frames equipment and waste handling around garden activities. These connections help the notice read as continuous guidance rather than a succession of instructions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The watering rota covers the collective strip and the young fruit trees.",
+              "You can put weeds without seed heads into the green compost bay."
+            ],
+            "B": [
+              "That collective strip and the young fruit trees are cared for through the shared watering rota.",
+              "As you clear and tend your plot, weeds without seed heads can go into the green compost bay"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "A preserves much effective original wording and the closing humor. B does so while retaining the brief reassurance that uncertainty about seed heads is welcome. Together with its purposeful transitions, that better fits the requested connected, friendly prose without becoming a checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you are unsure whether a plant has set seed, leave it in the brown bin and ask at the next steward session.",
+              "We are glad you are here, and we would rather answer a small question before planting than help move a thriving crop out of somebody else's bed."
+            ],
+            "B": [
+              "This is simply a sorting precaution to protect the shared compost, not a judgment on anybody's gardening.",
+              "We are glad you are here—and please remember that we would much rather answer a small question before you plant than help move a thriving crop out of somebody else's bed."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error, and A is a usable, restrained edit. B has the stronger fit to this user's request for flow: its explicit link from the collective strip to the rota explains why the reordered paragraph belongs there, while its retained sorting reassurance supports the welcoming tone. The preference is modest.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The watering rota covers the collective strip and the young fruit trees.",
+              "If you are unsure whether a plant has set seed, leave it in the brown bin and ask at the next steward session."
+            ],
+            "B": [
+              "That collective strip and the young fruit trees are cared for through the shared watering rota.",
+              "This is simply a sorting precaution to protect the shared compost, not a judgment on anybody's gardening."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "568c14239459fd58af48912e03f076e80bcef7cbf0d3c828aa60759bac355749",
+    "prompt_sha256": "434d008de7857b22bf7105b3e184bb43df91eb0ea94959b7e631b62cd243e913",
+    "raw_sha256": "8430e8bd6a7465f9a29a90e08b4163fa41960afa953a6ec9404e4af6f4efd2b7",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  }
+]
