@@ -1,5 +1,11 @@
 # Handoff
 
+## Scholarly full suite authorized and frozen
+
+User selected full judging: 1,600-call, 50M-reported-token and557-Claude-writing-call limits. Frozen plan in evals/results/scholarly-full/plan.json; tools/scholarly_full.py owns the run. Planned1,377 calls:929 short writes (800candidate plus129missing baselines),416 judge batches (1,600primary plus168order-audit verdicts),24 persistent Astra-high dev turns,8 long-horizon judge batches. Reuse671 verified no-skill outputs. Both Astra-high and Sol-high judges use unchanged author-specific rubric. Original40-case holdout is retrospective; reserved30-case and2-trajectory holdouts remain sealed. Current installed skill frozen, no tuning or promotion.
+
+No calls at freeze. Run `python3 tools/scholarly_full.py smoke` first (ten actual candidate jobs, one per config), then `run` only if all ten succeed. One process owns the private runner lock. Budget reserves active calls and stops scheduling on unknown usage, failed transport or unavailable models. No retries or substitutions. Public results omit raw CLI envelopes. Twelve mocked budget/dependency/rollout-format checks passed. Long-horizon adapter accepts both verified user-message storage formats; the old pilot had no complete reusable trajectory. Do not launch a duplicate.
+
 ## Scholarly revision integration and reinstall complete
 
 User supplied scholarly-paper-revision and requested incorporation, credit to Gappy on X, and reinstallation for Codex, Claude and Antigravity. Adapted manuscript scope, source/notation verification, pedagogical sequence, independent review, and project-preserving LaTeX verification into skill/references/scholarly-revision.md. Expanded tells.md with contextual manuscript-wide patterns. Core routes to the new reference and carries attribution; README credits Gappy with the supplied X post. The post returned403, so do not claim its contents were verified. No social-media message was posted.
