@@ -1,5 +1,9 @@
 # Handoff
 
+## Scholarly full suite: local launch repair
+
+First six Claude configurations succeeded:6 candidate drafts,114,971 reported tokens. Seventh CLI attempt failed before Node started because the isolated PATH omitted the Node installation directory (exit127, empty stdout, env diagnostic). This is verified zero model tokens; the invocation still counts. No Codex model had run. Original failure and plan retained. Runtime-only amendment tools/scholarly_runtime.py and runtime-plan.json prepend the installed Node directory, preserve all six completed drafts, and replace only the failed local launch. Total planned CLI attempts1,378 within unchanged approval. Unknown real usage or any actual model failure still stops scheduling. Use scholarly_runtime.py smoke/run/report from now on, not the original runner. No candidate, grader, case or model changes.
+
 ## Scholarly full suite authorized and frozen
 
 User selected full judging: 1,600-call, 50M-reported-token and557-Claude-writing-call limits. Frozen plan in evals/results/scholarly-full/plan.json; tools/scholarly_full.py owns the run. Planned1,377 calls:929 short writes (800candidate plus129missing baselines),416 judge batches (1,600primary plus168order-audit verdicts),24 persistent Astra-high dev turns,8 long-horizon judge batches. Reuse671 verified no-skill outputs. Both Astra-high and Sol-high judges use unchanged author-specific rubric. Original40-case holdout is retrospective; reserved30-case and2-trajectory holdouts remain sealed. Current installed skill frozen, no tuning or promotion.
