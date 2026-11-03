@@ -1,5 +1,14 @@
 # Handoff
 
+## Version reconciliation complete; new-model extension awaiting budget
+
+Full matrix is NOT running. Ten actual candidate smoke drafts completed across all ten original configs, 197,313 reported tokens. Eleven CLI attempts include the verified zero-token Node-launch failure. Six Claude writing calls. All outputs retained and compatible with the reconciled candidate. User asked to reconcile Antigravity edits before continuing and add Argon4 plus Gemini3.8Flash via Antigravity to BOTH declaude and neurotypical evals.
+
+Verified portable hashes across repository, Antigravity checkout, four Mac discovery copies, and three Linux app installs: all equal the887595b skill. Antigravity's final cleanup restored the published version, so no skill merge/edit is needed. Its private writing guide and global hook changes stay outside the portable package. Neurotypical portable source also matches the four Mac installations (ignore bytecode caches). Public version-reconciliation.json records hashes without personal source paths. Benchmarks must exclude global writing/cue hooks to avoid contaminating no-skill arms.
+
+Asked user via pending question to raise combined budget to2,400calls/75Mreportedtokens, same557Claude-writing cap, for full new-model coverage in both suites; alternative keep original caps with smaller new-model tests. No answer yet. No further model calls since the ten-output smoke. Original reserved fresh holdouts remain sealed. Official Antigravity SDK installed only in private evaluation venv; CLI setup/model/isolation inspection ongoing. No global config or skill edits during reconciliation. Do not launch the old full matrix while the combined schedule is unresolved.
+
+
 ## Scholarly full suite: local launch repair
 
 First six Claude configurations succeeded:6 candidate drafts,114,971 reported tokens. Seventh CLI attempt failed before Node started because the isolated PATH omitted the Node installation directory (exit127, empty stdout, env diagnostic). This is verified zero model tokens; the invocation still counts. No Codex model had run. Original failure and plan retained. Runtime-only amendment tools/scholarly_runtime.py and runtime-plan.json prepend the installed Node directory, preserve all six completed drafts, and replace only the failed local launch. Total planned CLI attempts1,378 within unchanged approval. Unknown real usage or any actual model failure still stops scheduling. Use scholarly_runtime.py smoke/run/report from now on, not the original runner. No candidate, grader, case or model changes.

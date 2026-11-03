@@ -1,10 +1,10 @@
 {
-  "calls": 7,
+  "calls": 11,
   "max_calls": 1600,
   "claude_calls": 6,
   "max_claude_calls": 557,
-  "known_reported_tokens": 114971,
-  "charged_tokens": 114971,
+  "known_reported_tokens": 197313,
+  "charged_tokens": 197313,
   "token_guard": 50000000,
   "unknown_attempts": 0,
   "attempts": [
@@ -91,6 +91,54 @@
       "verified_pre_model_failure": true,
       "reported_tokens": 0,
       "charged_tokens": 0
+    },
+    {
+      "id": "large-dev-a-01--astra-high--scholarly-20261103",
+      "stage": "generation",
+      "claude": false,
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "failed": false,
+      "verified_pre_model_failure": false,
+      "reported_tokens": 20815,
+      "charged_tokens": 20815
+    },
+    {
+      "id": "large-dev-a-01--sol-low--scholarly-20261103",
+      "stage": "generation",
+      "claude": false,
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "failed": false,
+      "verified_pre_model_failure": false,
+      "reported_tokens": 20776,
+      "charged_tokens": 20776
+    },
+    {
+      "id": "large-dev-a-01--luna-medium--scholarly-20261103",
+      "stage": "generation",
+      "claude": false,
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "failed": false,
+      "verified_pre_model_failure": false,
+      "reported_tokens": 20056,
+      "charged_tokens": 20056
+    },
+    {
+      "id": "large-dev-a-01--astra-medium--scholarly-20261103--node-path-repair",
+      "stage": "generation",
+      "claude": false,
+      "finished": true,
+      "known": true,
+      "completed": true,
+      "failed": false,
+      "verified_pre_model_failure": false,
+      "reported_tokens": 20695,
+      "charged_tokens": 20695
     }
   ]
 }

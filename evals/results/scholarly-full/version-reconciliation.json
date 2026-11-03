@@ -1,0 +1,26 @@
+{
+  "source_commit": "887595b",
+  "portable_files": {
+    "SKILL.md": "2251e573c3b2da57e2c070213f655d44517c5bf2e4016656718a1d7b7940feee",
+    "references/translation.md": "da8b62c4c791552561baca12401591728e6542a508db9fc5d150481eb7a5fc91",
+    "references/proofs.md": "b75b106358b8caa4283db9022c46632a9379c0bb7773db1b716cc2c7c2450acc",
+    "references/paper-voice.md": "8c8e3ffb038e435ad5eea0edc6ecb4c3d65b365eac17078caa137305720d476d",
+    "references/scholarly-revision.md": "fd7892a172be067b8de3e4851ade40157223464ed39cc2488aff55928eaecca6",
+    "references/tells.md": "d15a355f5a523f7fe5369ccaf6ef87e6ffe7a06d42339b29fe89e53e46cea54f",
+    "agents/openai.yaml": "24536f697a84fe6b10a559c8ace5e1223040e95d2226935c2576a6a82c98757a"
+  },
+  "verified_local_copies": {
+    "mac-claude": "exact match",
+    "mac-codex": "exact match",
+    "mac-shared": "exact match",
+    "mac-antigravity": "exact match",
+    "antigravity-checkout": "exact match"
+  },
+  "linux_installations": "Claude, Codex and Antigravity portable hashes all match (read-only SSH verification).",
+  "reconciliation": "Antigravity final cleanup restored the published skill. Its separate personal writing guide and hook changes were not merged into the portable skill. No skill edit necessary.",
+  "eval_isolation": "Disable global/custom hooks and skill discovery for both arms. No personal overlays enter benchmarks.",
+  "retained_probe_outputs": 10,
+  "reported_tokens": 197313,
+  "full_matrix_started": false,
+  "latest_request": "Also test Argon 4 and Gemini 3.8 Flash through Antigravity on both skill suites. Expanded budget clarification pending."
+}
