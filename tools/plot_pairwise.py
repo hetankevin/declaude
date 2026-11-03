@@ -99,7 +99,7 @@ def _category_label(rows, metric, label):
     return f'{label} ({counts[0]})' if len(set(counts)) == 1 else label
 
 
-def plot_pairwise(summary, out, show_counts=False):
+def plot_pairwise(summary, out, show_counts=False, figsize=(16.5, 8.2)):
     """Write both themes/formats for category and dimension heatmaps; return paths."""
     if isinstance(summary, (str, Path)):
         summary = json.loads(Path(summary).read_text(encoding='utf-8'))
@@ -144,7 +144,7 @@ def plot_pairwise(summary, out, show_counts=False):
                  'figure.facecolor': bg, 'axes.facecolor': bg}
         for section, metrics in (('categories', CATEGORIES), ('dimensions', DIMENSIONS)):
             with plt.rc_context(style):
-                fig = plt.figure(figsize=(16.5, 8.2))
+                fig = plt.figure(figsize=figsize)
                 try:
                     ax = fig.add_axes([.18, .17, .80, .69])
                     yticks, ylabels = [], []

@@ -1,0 +1,1651 @@
+{
+  "complete_primary_matrix": false,
+  "expected_primary_judgments": 1920,
+  "valid_primary_judgments": 40,
+  "paired_primary_judgments": 40,
+  "summary": {
+    "development": {
+      "haiku": {
+        "overall": {
+          "net_pp": -25.0,
+          "net_ci95_pp": [
+            -50.0,
+            0
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 0,
+          "ties": 3,
+          "losses": 1
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": -50.0,
+            "net_ci95_pp": [
+              -50.0,
+              -50.0
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 1,
+            "losses": 1
+          },
+          "research": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 2,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 3,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": -75.0,
+            "net_ci95_pp": [
+              -100,
+              -50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 1,
+            "losses": 3
+          },
+          "progression": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "voice": {
+            "net_pp": -50.0,
+            "net_ci95_pp": [
+              -100,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 2,
+            "losses": 2
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "sonnet-low": {
+        "overall": {
+          "net_pp": 100,
+          "net_ci95_pp": [
+            100,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 3,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 75.0,
+            "net_ci95_pp": [
+              50.0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 3,
+            "ties": 1,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              50.0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "voice": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 4,
+            "ties": 0,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "sonnet-high": {
+        "overall": {
+          "net_pp": 100,
+          "net_ci95_pp": [
+            100,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 75.0,
+            "net_ci95_pp": [
+              50.0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 3,
+            "ties": 1,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 75.0,
+            "net_ci95_pp": [
+              50.0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 3,
+            "ties": 1,
+            "losses": 0
+          },
+          "voice": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 4,
+            "ties": 0,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "opus-low": {
+        "overall": {
+          "net_pp": 50.0,
+          "net_ci95_pp": [
+            0,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 2,
+          "ties": 2,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 2,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              -50.0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 1,
+            "losses": 1
+          },
+          "voice": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "opus-xhigh": {
+        "overall": {
+          "net_pp": 0,
+          "net_ci95_pp": [
+            -100,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 2,
+          "ties": 0,
+          "losses": 2
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": -100,
+            "net_ci95_pp": [
+              -100,
+              -100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 0,
+            "losses": 2
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 0.0,
+            "net_ci95_pp": [
+              -50.0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 2,
+            "losses": 1
+          },
+          "progression": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              -100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 0,
+            "losses": 2
+          },
+          "voice": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              -100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 0,
+            "losses": 2
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 2
+        }
+      },
+      "fable": {
+        "overall": {
+          "net_pp": 100,
+          "net_ci95_pp": [
+            100,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 3,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              50.0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              50.0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "voice": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 4,
+            "ties": 0,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "astra-medium": {
+        "overall": {
+          "net_pp": 100,
+          "net_ci95_pp": [
+            100,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 3,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 4,
+            "ties": 0,
+            "losses": 0
+          },
+          "voice": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 4,
+            "ties": 0,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "astra-high": {
+        "overall": {
+          "net_pp": 0,
+          "net_ci95_pp": [
+            0,
+            0
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 0,
+          "ties": 4,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 2,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 2,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 3,
+            "losses": 0
+          },
+          "voice": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "sol-low": {
+        "overall": {
+          "net_pp": 50.0,
+          "net_ci95_pp": [
+            0,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 2,
+          "ties": 2,
+          "losses": 0
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 2,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 3,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 4,
+            "losses": 0
+          },
+          "progression": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              -50.0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 1,
+            "losses": 1
+          },
+          "voice": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 2,
+            "losses": 0
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "luna-medium": {
+        "overall": {
+          "net_pp": 0,
+          "net_ci95_pp": [
+            -100,
+            100
+          ],
+          "cases": 2,
+          "judgments": 4,
+          "wins": 2,
+          "ties": 0,
+          "losses": 2
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 100,
+            "net_ci95_pp": [
+              100,
+              100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 2,
+            "ties": 0,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": -100,
+            "net_ci95_pp": [
+              -100,
+              -100
+            ],
+            "cases": 1,
+            "judgments": 2,
+            "wins": 0,
+            "ties": 0,
+            "losses": 2
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": -25.0,
+            "net_ci95_pp": [
+              -50.0,
+              0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 0,
+            "ties": 3,
+            "losses": 1
+          },
+          "naturalness": {
+            "net_pp": 0.0,
+            "net_ci95_pp": [
+              -50.0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 1,
+            "ties": 2,
+            "losses": 1
+          },
+          "progression": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              -50.0,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 1,
+            "losses": 1
+          },
+          "voice": {
+            "net_pp": 0,
+            "net_ci95_pp": [
+              -100,
+              100
+            ],
+            "cases": 2,
+            "judgments": 4,
+            "wins": 2,
+            "ties": 0,
+            "losses": 2
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "argon-high": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "flash-high": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "claude-all": {
+        "overall": {
+          "net_pp": 54.16666666666667,
+          "net_ci95_pp": [
+            25.0,
+            83.33333333333334
+          ],
+          "cases": 2,
+          "judgments": 24,
+          "wins": 16,
+          "ties": 5,
+          "losses": 3
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              25.0,
+              25.0
+            ],
+            "cases": 1,
+            "judgments": 12,
+            "wins": 6,
+            "ties": 3,
+            "losses": 3
+          },
+          "research": {
+            "net_pp": 83.33333333333334,
+            "net_ci95_pp": [
+              83.33333333333334,
+              83.33333333333334
+            ],
+            "cases": 1,
+            "judgments": 12,
+            "wins": 10,
+            "ties": 2,
+            "losses": 0
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 20.833333333333332,
+            "net_ci95_pp": [
+              16.666666666666664,
+              25.0
+            ],
+            "cases": 2,
+            "judgments": 24,
+            "wins": 5,
+            "ties": 19,
+            "losses": 0
+          },
+          "naturalness": {
+            "net_pp": 20.833333333333332,
+            "net_ci95_pp": [
+              8.333333333333332,
+              33.33333333333333
+            ],
+            "cases": 2,
+            "judgments": 24,
+            "wins": 9,
+            "ties": 11,
+            "losses": 4
+          },
+          "progression": {
+            "net_pp": 33.33333333333333,
+            "net_ci95_pp": [
+              0,
+              66.66666666666666
+            ],
+            "cases": 2,
+            "judgments": 24,
+            "wins": 11,
+            "ties": 10,
+            "losses": 3
+          },
+          "voice": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              16.666666666666664,
+              83.33333333333334
+            ],
+            "cases": 2,
+            "judgments": 24,
+            "wins": 16,
+            "ties": 4,
+            "losses": 4
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 2
+        }
+      },
+      "codex-all": {
+        "overall": {
+          "net_pp": 37.5,
+          "net_ci95_pp": [
+            25.0,
+            50.0
+          ],
+          "cases": 2,
+          "judgments": 16,
+          "wins": 8,
+          "ties": 6,
+          "losses": 2
+        },
+        "categories": {
+          "ordinary": {
+            "net_pp": 50.0,
+            "net_ci95_pp": [
+              50.0,
+              50.0
+            ],
+            "cases": 1,
+            "judgments": 8,
+            "wins": 4,
+            "ties": 4,
+            "losses": 0
+          },
+          "research": {
+            "net_pp": 25.0,
+            "net_ci95_pp": [
+              25.0,
+              25.0
+            ],
+            "cases": 1,
+            "judgments": 8,
+            "wins": 4,
+            "ties": 2,
+            "losses": 2
+          },
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": {
+            "net_pp": 6.25,
+            "net_ci95_pp": [
+              0,
+              12.5
+            ],
+            "cases": 2,
+            "judgments": 16,
+            "wins": 2,
+            "ties": 13,
+            "losses": 1
+          },
+          "naturalness": {
+            "net_pp": 12.5,
+            "net_ci95_pp": [
+              -12.5,
+              37.5
+            ],
+            "cases": 2,
+            "judgments": 16,
+            "wins": 3,
+            "ties": 12,
+            "losses": 1
+          },
+          "progression": {
+            "net_pp": 43.75,
+            "net_ci95_pp": [
+              37.5,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 16,
+            "wins": 9,
+            "ties": 5,
+            "losses": 2
+          },
+          "voice": {
+            "net_pp": 37.5,
+            "net_ci95_pp": [
+              25.0,
+              50.0
+            ],
+            "cases": 2,
+            "judgments": 16,
+            "wins": 8,
+            "ties": 6,
+            "losses": 2
+          },
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "antigravity-all": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "all": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      }
+    },
+    "holdout": {
+      "haiku": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "sonnet-low": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "sonnet-high": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "opus-low": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "opus-xhigh": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "fable": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "astra-medium": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "astra-high": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "sol-low": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "luna-medium": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "argon-high": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "flash-high": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "claude-all": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "codex-all": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "antigravity-all": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      },
+      "all": {
+        "overall": null,
+        "categories": {
+          "ordinary": null,
+          "research": null,
+          "argument": null,
+          "proof": null,
+          "control": null
+        },
+        "dimensions": {
+          "meaning": null,
+          "naturalness": null,
+          "progression": null,
+          "voice": null,
+          "proof": null
+        },
+        "material_error_flags": {
+          "candidate": 0,
+          "reference": 0
+        }
+      }
+    }
+  },
+  "agreement": {
+    "cross_judge": {
+      "pairs": 20,
+      "cases": 2,
+      "same": 19,
+      "opposite": 0
+    },
+    "order": {
+      "pairs": 8,
+      "cases": 2,
+      "same": 8,
+      "opposite": 0
+    },
+    "order_by_judge": {
+      "astra-high": {
+        "pairs": 4,
+        "cases": 2,
+        "same": 4,
+        "opposite": 0
+      },
+      "sol-high": {
+        "pairs": 4,
+        "cases": 2,
+        "same": 4,
+        "opposite": 0
+      }
+    }
+  },
+  "usage": {
+    "calls": 53,
+    "max_calls": 2400,
+    "known_reported_tokens": 993732,
+    "charged_tokens": 1393732,
+    "token_guard": 75000000,
+    "claude_writing_calls": 20,
+    "max_claude_writing_calls": 557,
+    "unknown_attempts": 0
+  },
+  "long_horizon": {
+    "1": null,
+    "6": null
+  },
+  "notes": "Only pairs with both judges enter metrics. Pooled groups require the same cases for every constituent configuration. Ties contribute zero. 3000 case-level bootstrap replicates. Existing OOS is retrospective; fresh holdouts sealed. No inference from incomplete cells."
+}
