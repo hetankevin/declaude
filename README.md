@@ -6,7 +6,7 @@ A Claude Code, Codex, and Antigravity skill for plain English, research expositi
 
 The reconciled scholarly-revision package is now being evaluated on all 80 existing cases and the two long-horizon development trajectories. The original ten writing configurations reuse 671 verified no-skill drafts. Argon 4 high and Gemini 3.8 Flash high are added through isolated Antigravity sessions with fresh paired baselines. Both blind judges use the existing author-specific rubric. Reserved fresh holdouts remain sealed.
 
-**Running; no full-suite conclusion yet.** [Coverage and budget](evals/results/scholarly-full/report.md) · [Paired progress table](evals/results/scholarly-full/summary-current.md) · [Antigravity coverage](evals/results/scholarly-antigravity/report.md). The figures below remain the completed historical evaluation, rather than treating missing new results as ties.
+**Run stopped with incomplete coverage; see the saved results and missing-grade counts.** [Coverage and budget](evals/results/scholarly-full/report.md) · [Paired progress table](evals/results/scholarly-full/summary-current.md) · [Antigravity coverage](evals/results/scholarly-antigravity/report.md). The figures below remain the completed historical evaluation, rather than treating missing new results as ties.
 
 ## Results against no skill
 

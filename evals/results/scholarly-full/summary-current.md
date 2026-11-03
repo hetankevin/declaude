@@ -35,6 +35,6 @@ Valid paired primary judgments: 224/1920. Both judges must be present for a case
 | holdout | claude-all | 3 | +38.9 | [+25.0, +50.0] |
 | holdout | codex-all | 3 | -33.3 | [-50.0, -25.0] |
 
-Combined spend so far: 237/2400 attempts, 4,854,797 known reported tokens, 72/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 237/2400 attempts, 4,918,011 known reported tokens, 72/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.
