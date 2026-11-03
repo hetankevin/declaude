@@ -1,0 +1,24 @@
+{
+  "parent_runtime_plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611",
+  "authorization": "User approved 2,400 combined calls / 75M reported tokens, with 557 Claude writing calls unchanged, covering both skills and both added Antigravity models.",
+  "combined": {
+    "max_calls": 2400,
+    "token_guard": 75000000,
+    "max_claude_writing_calls": 557
+  },
+  "allocations": {
+    "original": {
+      "max_calls": 1450,
+      "token_guard": 45000000,
+      "max_claude_writing_calls": 557
+    },
+    "antigravity_extension": {
+      "max_calls": 950,
+      "token_guard": 30000000,
+      "max_claude_writing_calls": 0
+    }
+  },
+  "accounting": "Original allocation includes all prior attempts and tokens. Independent allocations sum to combined limits; tokens reserve in-flight calls but a response can exceed its reservation. No reset, automatic retry or fresh-holdout access.",
+  "script_sha256": "4b6a72cb10d5694e1d26b7ffa23b0d147c26a189c07cc951734412f9f5c3f561",
+  "sha256": "2a0cf878667fc8b6abb2043131ab44838609a160a7ad6a81937a3279d4196bb6"
+}
