@@ -4,6 +4,6 @@ Argon 4 high and Gemini 3.8 Flash high, current skill versus no skill. Existing 
 
 Coverage: 318/320 outputs, 314/320 primary grades.
 
-Extension usage across both skills: 586/950 calls, 11,552,461 known reported tokens of a30M allocation, 1 unknown attempts. Original matrix has a separate1,450-call/45M allocation within the combined2,400-call/75M ceiling.
+Extension usage across both skills: 613/950 calls, 12,036,815 known reported tokens of a30M allocation, 1 unknown attempts. Original matrix has a separate1,450-call/45M allocation within the combined2,400-call/75M ceiling.
 
 INCOMPLETE unless all expected outputs and grades are present. No missing grade is a tie.
