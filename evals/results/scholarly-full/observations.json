@@ -127359,5 +127359,1754 @@
     "prompt_sha256": "6c1f3c55de008f597d0c6ef052055ad8f21ce10e50b02681032f0d65b18613f5",
     "raw_sha256": "b573a2406b088fd9487d0d98ab1a7ec9a4f2233267aaad7912f716c116e9be13",
     "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "astra-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a survey-methods rewrite, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all counts, percentages and denominators, the stopping rule, selection limitations, common question and reference month, unassigned mode, and absence of weighting or imputation. It adds no unsupported population inference.",
+          "quotes": {
+            "source": [
+              "294 reports of library use among 450 responding households, or approximately 65.3 percent.",
+              "a claim that the remaining nonresponse has been corrected would require assumptions not evaluated here."
+            ],
+            "A": [
+              "294 reports of library use among 450 responding households, or approximately 65.3 percent.",
+              "Describing the follow-up as correcting the remaining nonresponse would require assumptions that this study did not evaluate."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all study quantities and methodological qualifications. Its explanation of selection and mode follows the source, and it correctly limits the combined percentage to respondents.",
+          "quotes": {
+            "source": [
+              "Interviewers worked through contact attempts and stopped once 90 interviews were complete.",
+              "Nor does it isolate a telephone-mode effect from a difference in the people reached."
+            ],
+            "A": [],
+            "B": [
+              "The budget covered 90 completed interviews, and interviewers stopped once they reached that total.",
+              "We therefore cannot separate differences between the people reached from any effect of the survey mode on their answers."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully distinguish expanded observation from correction of remaining nonresponse. Neither loses a material qualification or attributes the difference solely to mode or respondent composition.",
+          "quotes": {
+            "source": [
+              "In the descriptive sense it broadens the observed group.",
+              "No weights or imputed responses were used."
+            ],
+            "A": [
+              "The follow-up broadened the observed group, but it did not establish the prevalence of library use among all 600 invitees.",
+              "No weights or imputed responses were used."
+            ],
+            "B": [
+              "The follow-up broadens the group we observed, but it does not establish the percentage using libraries among all 600 invited households.",
+              "No weights or imputed responses were used."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable, but B makes the observed group difference and mode limitation more conversational and immediately accessible to nonspecialists. A's corresponding phrasing is somewhat more abstract.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It also establishes that the initial respondents and the households reached in the follow-up differed in their reports.",
+              "The difference therefore cannot be attributed separately to the interview mode or to differences between the people who answered at each stage."
+            ],
+            "B": [
+              "The households reached in the follow-up reported less library use than the initial respondents.",
+              "We therefore cannot separate differences between the people reached from any effect of the survey mode on their answers."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the original denominator problem, explain how the follow-up group formed, interpret the combined result, and then connect remaining uncertainty to reporting. Their ordering supplies reasons rather than merely listing mechanisms.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It described the households that answered, although later discussion sometimes treated it as a result for all 600 invited households.",
+              "The decline from 70 to 65.3 percent shows how the descriptive result changed when more households answered."
+            ],
+            "B": [
+              "The preliminary note reported this percentage for respondents, but subsequent discussion sometimes treated it as the percentage for all invited households.",
+              "The decrease from 70 to 65.3 percent shows how the descriptive result changed when we included another group of respondents."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both use connected explanatory prose and keep qualifications beside the claims they limit. A gives a more concrete closing account of the contribution; B uses a more conversational register and avoids repeating that account in its closing. These are comparable fits to the stated preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up’s concrete contribution is that it added 90 households and revealed how much their inclusion changed the observed percentage."
+            ],
+            "B": [
+              "Alongside that figure, it should explain both what the follow-up added and what remains unknown about the households that did not respond."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The percentages support a descriptive methodological explanation; no proof is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: explaining what the added responses establish while keeping the 150 missing households visible. B's slightly more accessible wording and A's more concrete closing contribution do not establish a substantive overall advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Another 150 households supplied no response, and we do not know whether their library use resembles that of either responding group.",
+              "The follow-up’s concrete contribution is that it added 90 households and revealed how much their inclusion changed the observed percentage."
+            ],
+            "B": [
+              "We still have no responses from 150 households and do not know whether they resemble either responding group.",
+              "The decrease from 70 to 65.3 percent shows how the descriptive result changed when we included another group of respondents."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d945650bda4583e15f62fc6837db355a81bbdbb086a9904dc167667e2541afe0",
+    "prompt_sha256": "483723153c888cddd37989e3ac9ed38921ebc74b9703d937e6b9bf60d006c8ba",
+    "raw_sha256": "89bc469cd8dff6754643e354cae7681404aa9f414a6f99b86afdc49b69defd34",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "astra-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves all counts and percentage denominators, the budget stopping rule, selection through contact and agreement, the unchanged question and month, unassigned mode, and absence of weighting or imputation. Its conclusions retain the source’s limits.",
+          "quotes": {
+            "source": [
+              "294 reports of library use among 450 responding households, or approximately 65.3 percent.",
+              "reaching a household and obtaining agreement both determined who entered it."
+            ],
+            "A": [
+              "294 reports of library use among 450 responding households, or approximately 65.3 percent.",
+              "participation depended on both reaching a household and obtaining its agreement."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all counts and percentage denominators, the budget stopping rule, nonrandom follow-up selection, the same question and month, unassigned mode, and absence of weighting or imputation. It adds no unsupported population or causal conclusion.",
+          "quotes": {
+            "source": [
+              "Interviewers worked through contact attempts and stopped once 90 interviews were complete.",
+              "No weights or imputed responses were used."
+            ],
+            "A": [],
+            "B": [
+              "The budget covered 90 completed interviews, and interviewers stopped once they reached that total.",
+              "No weights or imputed responses were used."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both accurately distinguish the expanded respondent description from prevalence among all invitees and preserve the inability to separate mode effects from respondent differences.",
+          "quotes": {
+            "source": [
+              "Nor does it isolate a telephone-mode effect from a difference in the people reached."
+            ],
+            "A": [
+              "The difference therefore cannot be attributed separately to the interview mode or to differences between the people who answered at each stage."
+            ],
+            "B": [
+              "We therefore cannot separate differences between the people reached from any effect of the survey mode on their answers."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable prose suited to readers familiar with percentages. A explains selection through participation; B uses similarly accessible language about inclusion. Neither requires specialist missing-data vocabulary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Interviewers continued contact attempts until the budgeted 90 interviews were complete, so participation depended on both reaching a household and obtaining its agreement."
+            ],
+            "B": [
+              "These 90 households were not a simple random sample of the initial nonrespondents: inclusion depended on both successful contact and agreement to an interview."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each establishes the preliminary percentage’s mistaken interpretation, follows the study stages, and then explains what the combined result supports. Their transitions make the calculation’s purpose clear before addressing the remaining uncertainty.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The decline from 70 to 65.3 percent shows how the descriptive result changed when more households answered."
+            ],
+            "B": [
+              "The decrease from 70 to 65.3 percent shows how the descriptive result changed when we included another group of respondents."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both develop the central distinction in connected technical prose and keep qualifications beside their claims. They explain the descriptive benefit and statistical obstacle without importing a model or surrounding every number with warnings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up broadened the observed group, but it did not establish the prevalence of library use among all 600 invitees."
+            ],
+            "B": [
+              "The follow-up broadens the group we observed, but it does not establish the percentage using libraries among all 600 invited households."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no proof or derivation requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both meet the decisive priority: explaining why follow-up adds useful observations without resolving the missing-household problem. A closes with a more concrete restatement of the contribution; B already supplies that explanation earlier and closes more compactly. Neither difference establishes a substantive advantage for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The follow-up’s concrete contribution is that it added 90 households and revealed how much their inclusion changed the observed percentage."
+            ],
+            "B": [
+              "The decrease from 70 to 65.3 percent shows how the descriptive result changed when we included another group of respondents.",
+              "Alongside that figure, it should explain both what the follow-up added and what remains unknown about the households that did not respond."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d945650bda4583e15f62fc6837db355a81bbdbb086a9904dc167667e2541afe0",
+    "prompt_sha256": "483723153c888cddd37989e3ac9ed38921ebc74b9703d937e6b9bf60d006c8ba",
+    "raw_sha256": "f07316cf715c9ed1177a6f2d3ddd3add13a76c4a2d9c73193b8ccca536c0e872",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-02",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit a family notice about reading scores; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the scoring distinctions, cross-year comparison warning, both band-change possibilities, interruption marker, unchanged scores, classroom evidence, meeting arrangements, and home-reading guidance. No material inference changes.",
+          "quotes": {
+            "source": [
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "A": [
+              "We have not adjusted these scores. Before deciding whether a further check would be useful, we will consider the interruption alongside what we see in classroom reading."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all substantive information and qualifications. Its caution about neither score nor band telling the whole story reasonably covers the preceding two situations without implying a definitive change in reading ability.",
+          "quotes": {
+            "source": [
+              "A change of band is also possible after a small change near a boundary. Neither situation tells the whole story by itself."
+            ],
+            "A": [],
+            "B": [
+              "A small change in score can also move them into a different band if they are near the boundary. Neither the score nor the band tells the whole story on its own."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both distinguish a raw score out of 20 from a reporting band and a term grade, retain the cross-year warning, and preserve the practical arrangements. A ties the caution directly to the two score-change outcomes; B expresses the same interpretive restraint more generally. Neither materially alters the source.",
+          "quotes": {
+            "source": [
+              "It is not a grade for this term.",
+              "The raw score is the number of questions answered correctly out of 20.",
+              "Neither situation tells the whole story by itself."
+            ],
+            "A": [
+              "It is not a grade for this term.",
+              "The raw score is the number of questions answered correctly out of 20.",
+              "Neither result tells the whole story on its own."
+            ],
+            "B": [
+              "It is not a grade for this term.",
+              "The raw score is the number of questions answered correctly out of 20.",
+              "Neither the score nor the band tells the whole story on its own."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic, accessible language suitable for families. A's fuller description of classroom observation and B's more compact phrasing are equally readable; neither sacrifices explanation for brevity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we will consider the interruption alongside what we see in classroom reading."
+            ],
+            "B": [
+              "We will consider the interruption alongside classroom reading before deciding whether a further check would be useful."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from what the check measures to how scores and bands work, then explains the interruption and closes with family actions. Both explain why bands are used before describing their consequences, so the definitions serve a clear purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The band groups nearby scores to help us discuss support without placing too much weight on a one-question difference. Your child’s raw score may improve while their band stays the same."
+            ],
+            "B": [
+              "The band groups nearby scores to help us discuss support without placing too much weight on a one-question difference. Your child’s raw score can improve while their band stays the same."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the requested reassuring but candid register and retain effective sentences instead of imposing a new structure. A's semicolon and B's separate closing sentences provide equally appropriate rhythms for this notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Children can continue their usual reading at home; we are not asking families to rehearse the questions."
+            ],
+            "B": [
+              "Children can continue their usual reading at home. We are not asking families to rehearse the questions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is helping families interpret the results and respond appropriately without losing the measured reassurance. Both explain the scoring limitations and give the same usable guidance about meetings and concrete home-reading observations. Their small wording differences do not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrange another meeting simply because your child’s band has stayed the same.",
+              "Examples of what feels easier or harder are more useful than extra practice-test scores."
+            ],
+            "B": [
+              "You do not need to arrange another meeting simply because your child’s band has stayed the same.",
+              "Examples of what feels easier or harder are more useful than extra practice-test scores."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "592c14bd5a8c2587c1ce4989ad15ac6237703ea1a9994ed5e9efed95b3122e5b",
+    "prompt_sha256": "1e005c99582a30d3b85fa51e05a9cf59650cfc0394a75596dbae3be6d1a4688e",
+    "raw_sha256": "ac1bfcc70987d9f6e11aa1b47189825fa9afd6ca7fa5d423ab0ee1f7a721a8b1",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-02",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit an explanation for families; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the scoring distinctions, cross-year comparison warning, interruption marker, unchanged scores, classroom evidence, meeting arrangements, and home-reading guidance. No material inference changes.",
+          "quotes": {
+            "source": [
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "A": [
+              "We have not adjusted these scores. Before deciding whether a further check would be useful, we will consider the interruption alongside what we see in classroom reading."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the scoring distinctions, cross-year comparison warning, interruption marker, unchanged scores, classroom evidence, meeting arrangements, and home-reading guidance. Its broader reminder about interpreting scores and bands is supported by the source's qualifications.",
+          "quotes": {
+            "source": [
+              "Neither situation tells the whole story by itself.",
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "A": [],
+            "B": [
+              "Neither the score nor the band tells the whole story on its own.",
+              "We have not adjusted these scores. We will consider the interruption alongside classroom reading before deciding whether a further check would be useful."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both distinguish the raw score out of 20, reporting band, and term grade; retain the warning against cross-year comparisons; and explain both band scenarios without claiming a definitive change in reading ability. Both preserve all practical arrangements and qualifications.",
+          "quotes": {
+            "source": [
+              "It is not a grade for this term.",
+              "It is possible for a child's raw score to improve while the band stays the same. A change of band is also possible after a small change near a boundary."
+            ],
+            "A": [
+              "Your child’s raw score may improve while their band stays the same. A small change in score near a band boundary may also move them into a different band. Neither result tells the whole story on its own."
+            ],
+            "B": [
+              "Your child’s raw score can improve while their band stays the same. A small change in score can also move them into a different band if they are near the boundary. Neither the score nor the band tells the whole story on its own."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use accessible, idiomatic language suited to families. A's joined closing sentence and B's two sentences are equally readable; neither creates a meaningful advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Children can continue their usual reading at home; we are not asking families to rehearse the questions."
+            ],
+            "B": [
+              "Children can continue their usual reading at home. We are not asking families to rehearse the questions."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each first establishes what the check measures, then explains why bands are used and how to interpret changes, before addressing the interruption and family actions. Both retain useful explanation and coherent paragraph groups.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The band groups nearby scores to help us discuss support without placing too much weight on a one-question difference.",
+              "Teachers will discuss the results at the scheduled meetings next month."
+            ],
+            "B": [
+              "The band groups nearby scores to help us discuss support without placing too much weight on a one-question difference.",
+              "Teachers will discuss the results at the scheduled meetings next month."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the measured reassurance, candid limitations, and practical register. They retain effective source wording and explain the scoring distinctions without imposing unnecessary research-style architecture.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrange another meeting simply because your child’s band has stayed the same.",
+              "Examples of what feels easier or harder are more useful than extra practice-test scores."
+            ],
+            "B": [
+              "You do not need to arrange another meeting simply because your child’s band has stayed the same.",
+              "Examples of what feels easier or harder are more useful than extra practice-test scores."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both meet the decisive priority: families can understand the limits of the results and know what to do next. A's closer reference to the two band scenarios and B's broader interpretive reminder are both effective; their small wording differences do not justify a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Neither result tells the whole story on its own.",
+              "If the results do not match what you see when your child reads at home, please send the class teacher a short note."
+            ],
+            "B": [
+              "Neither the score nor the band tells the whole story on its own.",
+              "If the sheet does not match what you see when your child reads at home, please send the class teacher a short note."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "592c14bd5a8c2587c1ce4989ad15ac6237703ea1a9994ed5e9efed95b3122e5b",
+    "prompt_sha256": "1e005c99582a30d3b85fa51e05a9cf59650cfc0394a75596dbae3be6d1a4688e",
+    "raw_sha256": "1f0a97aef3dd53894c7ef50920a775edb4359e31ba85bed90f83924f808e5896",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "luna-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a committee proposal revision, with no mathematical proof or derivation to assess.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocations, eligibility, equal setup charge, destructive procedure, pilot limitations, nonrandom selection, and conditional further submission. Checking identifiers preserves the substance of reviewing the identifier check.",
+          "quotes": {
+            "source": [
+              "The remaining fragments should stay intact until the committee reviews the returned measurements and the identifier check."
+            ],
+            "A": [
+              "The remaining fragments should stay intact until the committee reviews the returned measurements and checks the identifiers."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the laboratory and collection premises, selection restrictions, and limited pilot purpose. The temporary hold neither promises future analytical benefits nor commits to another batch.",
+          "quotes": {
+            "source": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [],
+            "B": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain all substantive premises and qualifications, including the exact allocations, loss of physical surfaces, sampling limits, and distinction between usable linked measurements and box representativeness.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "A successful return would support planning a larger comparison, but would not show that one fragment represents its box."
+            ],
+            "B": [
+              "A successful return would support planning a larger comparison; it would not establish that one fragment represents its box."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable committee prose with straightforward explanations. Their small differences in sentence rhythm and phrasing do not produce a substantive readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The photographs would record its visible surface before grinding, but would not preserve a surface for a later investigator to examine with a different instrument."
+            ],
+            "B": [
+              "The photographs would document the visible surface before grinding, but they would not preserve a surface for later examination with a different instrument."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from allocation and irreversible cost to the scientific objection, bounded pilot purpose, selection limits, and review. Both explain why a successful pilot leaves the substantive comparison unresolved.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This pilot would leave that question unresolved. Its limited purpose is to check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved. The first batch would instead test whether the laboratory can return a usable measurement unambiguously linked to each submitted identifier."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both suit the author's preference for candid, connected explanations of real tradeoffs. Neither substitutes a slogan or stronger scientific promise for the limited recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This would leave the more visibly decorated surfaces intact for now, but could select a different kind of material."
+            ],
+            "B": [
+              "This would protect the more visibly decorated surfaces for now, while potentially selecting a different kind of material."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: making the smaller submission's limited usefulness and scientific cost understandable while preserving a later committee decision. Their organizational and explanatory differences are too slight to justify a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The analysis team’s objection is substantial: two fragments from each box would allow them to look for differences within a box, while one fragment cannot."
+            ],
+            "B": [
+              "The analysis team’s objection is substantial: two fragments from each box would allow them to look for differences within a box, while one cannot."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "82018e825b01ab577817516cf28019d57107d0d605c8d8e286b76330cb287767",
+    "prompt_sha256": "3bd4c49f6a16e5fa73d3ab759b17e7e83901612b363a88a240d5cb15b58e9d39",
+    "raw_sha256": "2970a00ba870dd3c7860c3772ec79fbdbd0f3f3763dbfdfce8c9678963f5be1e",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns persuasive committee prose, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the exact allocation, laboratory premises, destructive cost, selection restrictions, and temporary hold. Restricting approval to the workflow check restates the pilot's supplied limited purpose rather than introducing a new scientific condition.",
+          "quotes": {
+            "source": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "A": [
+              "The committee should approve the smaller batch only for this limited workflow check."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the allocation and all substantive qualifications. The larger batch retains its within-box advantage, while the pilot establishes neither representativeness nor permission to consume another batch.",
+          "quotes": {
+            "source": [
+              "Two fragments from each box would let them look for differences within a box, whereas one cannot.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [],
+            "B": [
+              "The analysis team’s strongest objection is that two fragments from each box would allow them to look for differences within a box, whereas one cannot.",
+              "After review, the team could request a second batch to address a question that justifies consuming more material."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the full factual and inferential scope: twelve versus twenty-four submissions, eligibility and equal charges, complete grinding, photographic limitations, nonrandom selection, and conditional future work.",
+          "quotes": {
+            "source": [
+              "Each box contains three fragments, so the proposed pilot would leave twenty-four intact. The larger submission would take two from each box and leave twelve."
+            ],
+            "A": [
+              "Each box contains three fragments, so this allocation would leave twenty-four intact; submitting two from each box would leave twelve."
+            ],
+            "B": [
+              "Each box contains three fragments, so this pilot would leave twenty-four intact. The larger submission would take two from each box and leave twelve."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B states the objection directly and connects destruction to the allocation choice in ordinary language. A remains readable, but phrases such as calling the strongest objection substantial add emphasis without explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The analysis team’s strongest objection is substantial:",
+              "The case for limiting the first submission rests on its purpose and the irreversible cost of the procedure."
+            ],
+            "B": [
+              "The analysis team’s strongest objection is that two fragments from each box would allow them to look for differences within a box, whereas one cannot.",
+              "That choice matters because each submitted fragment would be photographed, assigned its existing catalogue identifier, and then ground completely."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both improve the argumentative order by bringing irreversible loss and the pilot's purpose together before addressing the scientific objection. Each then explains selection limits and the review needed before further consumption.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Consuming twelve fragments would allow us to check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier while retaining more material for a subsequent decision."
+            ],
+            "B": [
+              "A twelve-fragment pilot would test whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier while leaving more fragments intact for the committee’s next decision."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more closely fits the requested conversational argument: its closing recommendation explains the sequence through the committee's actual decision. A adds a repeated approval restriction and more abstract packaging after already explaining the limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The committee should approve the smaller batch only for this limited workflow check.",
+              "This sequence gives the first submission a necessary, bounded task"
+            ],
+            "B": [
+              "I favour this sequence because it tests a necessary part of the workflow before the committee decides whether to commit further fragments to a larger comparison."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material error, and both build a sound argument. B has a modest advantage for this user's explicit preference for explanation without repeated defensive packaging: it directly connects the allocation to complete destruction and ends with the concrete decision the pilot enables. A explains those same reasons but adds another approval restriction after establishing the limited purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposed pilot deliberately leaves that scientific question unresolved.",
+              "The committee should approve the smaller batch only for this limited workflow check."
+            ],
+            "B": [
+              "That choice matters because each submitted fragment would be photographed, assigned its existing catalogue identifier, and then ground completely.",
+              "I favour this sequence because it tests a necessary part of the workflow before the committee decides whether to commit further fragments to a larger comparison."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "403a6cf3364dec2f54b73ee1773fa2b6dad904e746d20410b02997aa63319863",
+    "prompt_sha256": "3bd4c49f6a16e5fa73d3ab759b17e7e83901612b363a88a240d5cb15b58e9d39",
+    "raw_sha256": "2970a00ba870dd3c7860c3772ec79fbdbd0f3f3763dbfdfce8c9678963f5be1e",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "luna-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns revising a committee proposal, not explaining a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocations, laboratory conditions, destructive procedure, selection restrictions, limited pilot purpose, and review before a possible further request.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "A successful return would support planning a larger comparison; it would not establish that one fragment represents its box."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's facts and qualifications, including the scientific objection, nonrandom selection, temporary hold, and absence of commissioned surface analysis.",
+          "quotes": {
+            "source": [
+              "This is a temporary hold, not a promise that later surface analysis will be more informative.",
+              "No such analysis has been commissioned."
+            ],
+            "A": [],
+            "B": [
+              "This temporary hold does not promise that later surface analysis will be more informative; no such analysis has been commissioned."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact allocation and distinguish a usable, correctly identified measurement from evidence of box representativeness. Both retain the equal charge, physical loss, selection bias, and conditional next step.",
+          "quotes": {
+            "source": [
+              "Each box contains three fragments, so the proposed pilot would leave twenty-four intact.",
+              "The larger submission would take two from each box and leave twelve."
+            ],
+            "A": [
+              "Each box contains three fragments, so the smaller submission would leave twenty-four intact; the larger would leave twelve."
+            ],
+            "B": [
+              "The smaller batch would leave twenty-four fragments intact; the larger batch, with two from each box, would leave twelve."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable committee-facing prose. B makes a few phrases more direct, but A is equally idiomatic and the differences do not materially affect readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The smaller batch therefore does not save on that charge."
+            ],
+            "B": [
+              "The smaller batch therefore does not save on that charge."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from allocation and irreversible cost to the scientific objection, limited workflow check, selection restrictions, and review. Both explain what the pilot enables and what it leaves unresolved.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that question unresolved. The first batch would instead test whether the laboratory can return a usable measurement unambiguously linked to each submitted identifier."
+            ],
+            "B": [
+              "This pilot would leave that question unresolved. Its limited purpose is to check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both maintain the author's candid recommendation and explain its scientific cost without promising future benefits. Their small differences in emphasis remain compatible with the requested conversational technical register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The analysis team’s objection is substantial: two fragments from each box would allow them to look for differences within a box, while one cannot."
+            ],
+            "B": [
+              "The analysis team’s objection is substantial: two fragments from each box would allow them to look for differences within a box, while one fragment cannot."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither contains a material error. Both meet the decisive priority: making the smaller submission's purpose and costs understandable while preserving a real committee decision after review. Their wording differences do not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "B": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ac2e88fcd782a294cedcce680811e4954c00662fdfbd15ed3c202793d370c3f3",
+    "prompt_sha256": "9b7466cc2dd430765edfa20cdf6319bc603c7e1ce387fd2f263c777d8bb3cd18",
+    "raw_sha256": "2ad9af67a139a9eed7258ed6f6ac73c869b61d34660e03806dc0bdcfe352d442",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a persuasive committee proposal, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all material premises and limitations. Its instruction to approve the batch only for the workflow check restates the pilot's supplied limited purpose without changing the proposed allocation or authorizing further consumption.",
+          "quotes": {
+            "source": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "A": [
+              "The committee should approve the smaller batch only for this limited workflow check."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the allocation, equal charge, destructive procedure, within-box objection, nonrandom selection, and review requirement. It neither promises future analytical benefits nor commits to a second batch.",
+          "quotes": {
+            "source": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [],
+            "B": [
+              "After review, the team could request a second batch to address a question that justifies consuming more material."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully preserve the complete proposal and its strongest objection. Each clearly separates checking the measurement workflow from establishing that a fragment represents its box.",
+          "quotes": {
+            "source": [
+              "Two fragments from each box would let them look for differences within a box, whereas one cannot.",
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "two fragments from each box would allow them to look for differences within a box, whereas one cannot.",
+              "it would not establish that any submitted fragment represents its box."
+            ],
+            "B": [
+              "two fragments from each box would allow them to look for differences within a box, whereas one cannot.",
+              "it would not establish that one fragment represents its box."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable, but B states the objection directly. A's pairing of 'strongest' and 'substantial' adds redundant evaluation, contributing to its somewhat heavier explanatory framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The analysis team’s strongest objection is substantial:"
+            ],
+            "B": [
+              "The analysis team’s strongest objection is that two fragments from each box would allow them to look for differences within a box, whereas one cannot."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build the argument in a useful order and connect irreversible consumption to the pilot's limited purpose before confronting the scientific objection. Both then explain selection and the decision after review.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Consuming twelve fragments would allow us to check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier while retaining more material for a subsequent decision."
+            ],
+            "B": [
+              "A twelve-fragment pilot would test whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier while leaving more fragments intact for the committee’s next decision."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the preference for connected explanation without repeated defensive framing. A reiterates the limited purpose through an additional approval instruction; B retains that limitation and closes with the concrete decision about consuming further fragments.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The committee should approve the smaller batch only for this limited workflow check.",
+              "This sequence gives the first submission a necessary, bounded task and preserves a meaningful decision for the committee"
+            ],
+            "B": [
+              "Its purpose is limited to checking the measurements and their links to the submitted identifiers.",
+              "I favour this sequence because it tests a necessary part of the workflow before the committee decides whether to commit further fragments to a larger comparison."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both explain the tradeoff successfully. B has a modest advantage for this user's stated priority: it connects the allocation directly to irreversible consumption and the later committee decision while avoiding A's repeated framing of the pilot as limited and bounded.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The case for limiting the first submission rests on its purpose and the irreversible cost of the procedure.",
+              "This sequence gives the first submission a necessary, bounded task"
+            ],
+            "B": [
+              "That choice matters because each submitted fragment would be photographed, assigned its existing catalogue identifier, and then ground completely.",
+              "before the committee decides whether to commit further fragments to a larger comparison."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "403a6cf3364dec2f54b73ee1773fa2b6dad904e746d20410b02997aa63319863",
+    "prompt_sha256": "9b7466cc2dd430765edfa20cdf6319bc603c7e1ce387fd2f263c777d8bb3cd18",
+    "raw_sha256": "2ad9af67a139a9eed7258ed6f6ac73c869b61d34660e03806dc0bdcfe352d442",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-18",
+    "config": "luna-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns wording in an audio-engineering explanation, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the dialogue-bus side chain, music ducking, pre-fader detector behavior, timing distinctions, and controlled release comparison. No misleading wording requires correction within the stated setup.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "A": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, retaining all routing facts, causal qualifications, and review limits. Its explanation remains accurate within the configured session and introduces no unsupported inference.",
+          "quotes": {
+            "source": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "A": [],
+            "B": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete source verbatim, including detection versus audible mixing, gain-envelope behavior versus timeline placement, and release comparison versus routing comparison. Neither broadens a claim or drops a qualification.",
+          "quotes": {
+            "source": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ],
+            "A": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ],
+            "B": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical passages use readable technical prose suited to experienced editors. Both retain precise terminology and connect it naturally to practical listening decisions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ],
+            "B": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each passage explains the routing and its purpose, then timing behavior, then the consequence of the detector feed, before defining the review. This gives the reader the reasons needed to understand the final instructions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present.",
+              "We are choosing which recovery sounds less distracting between phrases."
+            ],
+            "B": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present.",
+              "We are choosing which recovery sounds less distracting between phrases."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrowly bounded editing request by preserving effective prose. Their shared wording keeps useful explanation and substantive contrasts without adding polish, jargon, or defensive commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ],
+            "B": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both meet the decisive priority: preserve an already accurate, approved explanation unless wording actually misleads. They retain the concrete review instructions and their rationale, so there is no substantive basis to prefer either.",
+          "quotes": {
+            "source": [
+              "Return the passage unchanged if it is already accurate and clear within its stated setting."
+            ],
+            "A": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "B": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91b76c1eacb0cd5689197bb26c3f8f230b5fbcc75b6008b2bb8e93d6d7b49a0b",
+    "prompt_sha256": "9cb39c8c17db68b3a14364d56df9a5ec41f63bccca80337926392c58816a2905",
+    "raw_sha256": "48048ebfd9008e3e9edbf7314d1886935a4a1714bae286baae178ea7b6143c8a",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-test-b-18",
+    "config": "luna-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns wording in an audio-engineering explanation and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the configured routing, pre-fader detector behavior, timing distinctions, and limited review scope.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "A": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving the configured routing, pre-fader detector behavior, timing distinctions, and limited review scope.",
+          "quotes": {
+            "source": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "A": [],
+            "B": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both exactly preserve the source. Neither changes the separation of detector and audible signals, the dialogue-bus source, the pre-fader consequence, or what the release comparison can establish.",
+          "quotes": {
+            "source": [
+              "In this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output."
+            ],
+            "A": [
+              "In this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output."
+            ],
+            "B": [
+              "In this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical prose is idiomatic and appropriate for experienced editors, retaining useful technical terminology alongside direct explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The attack and release settings shape how quickly gain reduction begins and recovers."
+            ],
+            "B": [
+              "The attack and release settings shape how quickly gain reduction begins and recovers."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the routing and its purpose, then envelope timing, then the pre-fader consequence, before specifying the review. Each consequence follows clearly from the preceding setup.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present."
+            ],
+            "B": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrow editing request by preserving already-effective writing. They retain conversational explanations, substantive contrasts, and qualifications without adding rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ],
+            "B": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither artifact contains a material error, and the responses are identical. Both satisfy the decisive priority: preserve an approved, contextually clear passage unless a necessary correction exists, including its explicit limit on the review's conclusions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ],
+            "B": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91b76c1eacb0cd5689197bb26c3f8f230b5fbcc75b6008b2bb8e93d6d7b49a0b",
+    "prompt_sha256": "9cb39c8c17db68b3a14364d56df9a5ec41f63bccca80337926392c58816a2905",
+    "raw_sha256": "dab1c1ee9f74cc2b49d2becb1cf6aa85a39af5b1387445cf35b964cb0c4cd3d5",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-19",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is prose editing of an ecological field note, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the counts, counting rationale, visibility confound, limited photographic evidence, and planned measurements. Its revised closing caveat still leaves unobserved stems unresolved.",
+          "quotes": {
+            "source": [
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "A": [
+              "uncertainty about unobserved stems will remain."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source faithfully, including the distinction between observed flowering counts and visibility, without asserting population decline or generalizing the three photographed transitions.",
+          "quotes": {
+            "source": [
+              "we have not assumed that every stem missing from the second count had set seed."
+            ],
+            "A": [],
+            "B": [
+              "we have not assumed that every stem missing from the second count had set seed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain all substantive facts and qualifications, including why a fixed strip does not control detection. A's closing paraphrase preserves the limitation and reporting condition; B retains them verbatim.",
+          "quotes": {
+            "source": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ],
+            "A": [
+              "Keeping the strip fixed controls where we looked. It does not ensure that we saw the same fraction of what was there."
+            ],
+            "B": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as restrained field prose. A makes the reporting requirement more direct; B's conversational phrasing remains clear and idiomatic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "provided that summaries also report the change in visibility."
+            ],
+            "B": [
+              "provided that the change in visibility stays with them when they are summarized."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from the count and its unit to the visibility obstacle, the limited photographic evidence, and the next visit's additions. Both explain why location control is insufficient before discussing further observations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ],
+            "B": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "B preserves an effective concrete caveat exactly. A substitutes a restrained, slightly more abstract formulation but keeps its scientific function and the surrounding field voice. Neither expands the note or adds editorial theater.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These additions will make the conditions easier to describe, but uncertainty about unobserved stems will remain."
+            ],
+            "B": [
+              "These additions will make the conditions easier to describe. They will not turn an unobserved stem into an observed one."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is preserving an already effective field note and its scientifically useful caveats. B does so verbatim; A makes only modest changes that preserve the explanation and scope. B's concrete closing limitation and A's more direct reporting condition offer no decisive difference in usefulness for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The counts will remain useful as records of what we saw, provided that summaries also report the change in visibility."
+            ],
+            "B": [
+              "The counts will remain useful as records of what we saw, provided that the change in visibility stays with them when they are summarized."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2fb3eb9ad8377de7d8daab5d31513395debcf332a092d0e9a93872e6771f4b38",
+    "prompt_sha256": "d5faa1671c9ac35128a8a285e04002d362173d9b503a5bfb71a6753f44ffc783",
+    "raw_sha256": "fcee1852baeab6defce03835270735822013ad9bc5430f5794e990fb2d2546fe",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-19",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing an ecological field note and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the counts, counting rationale, visibility confound, limited photographic evidence, and planned measurements. Its broader wording about unobserved stems preserves uncertainty without claiming that the additions resolve detection.",
+          "quotes": {
+            "source": [
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "A": [
+              "These additions will make the conditions easier to describe, but uncertainty about unobserved stems will remain."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source faithfully, retaining all observations, qualifications, and planned additions without introducing unsupported conclusions.",
+          "quotes": {
+            "source": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ],
+            "A": [],
+            "B": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the distinction between controlling observation location and controlling detection, and neither treats fewer observed flowering stems as a demonstrated population decline. A's closing rephrasing preserves the substantive caveats.",
+          "quotes": {
+            "source": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ],
+            "A": [
+              "Keeping the strip fixed controls where we looked. It does not ensure that we saw the same fraction of what was there."
+            ],
+            "B": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as restrained field reporting. A's more conventional closing wording and B's conversational wording are both idiomatic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "provided that summaries also report the change in visibility."
+            ],
+            "B": [
+              "provided that the change in visibility stays with them when they are summarized."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both develop the same clear sequence: observed difference, visibility limitation, bounded evidence of stage changes, and future documentation. Each explains why the fixed strip alone cannot settle the interpretation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ],
+            "B": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the source's effective, concrete explanation of what the additions cannot accomplish. A replaces it with a more abstract uncertainty statement, an unnecessary change under the author's explicit preference for preserving established voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "but uncertainty about unobserved stems will remain."
+            ],
+            "B": [
+              "They will not turn an unobserved stem into an observed one."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error, and both are usable. B better serves the task's narrow editing scope by retaining an already-effective explanation that distinguishes documenting conditions from observing missed stems. A's abstract replacement offers no clear improvement and slightly weakens the established field voice.",
+          "quotes": {
+            "source": [
+              "do not expand it into a methods section or change wording solely for novelty."
+            ],
+            "A": [
+              "These additions will make the conditions easier to describe, but uncertainty about unobserved stems will remain."
+            ],
+            "B": [
+              "These additions will make the conditions easier to describe. They will not turn an unobserved stem into an observed one."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2fb3eb9ad8377de7d8daab5d31513395debcf332a092d0e9a93872e6771f4b38",
+    "prompt_sha256": "d5faa1671c9ac35128a8a285e04002d362173d9b503a5bfb71a6753f44ffc783",
+    "raw_sha256": "f50396006e9878787efb7ffc2042cbe258a935d5f8bd285d6bb2180165b951c4",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
   }
 ]

@@ -50074,5 +50074,1169 @@
     "prompt_sha256": "2de9eb1d1dc7c5f54568c1bac5038ca8ea67c0a538395ca964709e1c566247a9",
     "raw_sha256": "b497119054897d815c089012fd1209e0de88fb484abbb315bb642f3fdc0265f1",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copy editing practical field-note guidance; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source unchanged: page/bag matching, sketch orientation, dated reinterpretations, relevant observations and interpretations, contextual uncertainty, and readable end-of-day backup photographs checked before deleting blurred attempts.",
+          "quotes": {
+            "source": [
+              "Both belong in the notebook when relevant, but they do different jobs."
+            ],
+            "A": [
+              "Both belong in the notebook when relevant, but they do different jobs."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source unchanged, including all recording checks, permission to record relevant interpretations, uncertainty tied to viewing conditions, and the timing, backup status, and readability checks for photographs.",
+          "quotes": {
+            "source": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ],
+            "A": [],
+            "B": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain every substantive instruction and qualification. Neither changes the distinction between observation and interpretation or weakens the photographic backup procedure.",
+          "quotes": {
+            "source": [
+              "The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts."
+            ],
+            "A": [
+              "The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts."
+            ],
+            "B": [
+              "The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Each reads as direct, conversational guidance with concrete examples and idiomatic humor. Their identical prose contains no grammatical defect or ambiguity requiring intervention.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A question mark without a clear subject is rarely much help."
+            ],
+            "B": [
+              "A question mark without a clear subject is rarely much help."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from legible records and immediate checks to observation versus interpretation, documenting uncertainty, and end-of-day preservation. The uncertainty transition explains the intended qualification without adding unnecessary structure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This does not mean every sentence needs a warning label. Write what you saw, say where you are uncertain, and give enough context for someone else to understand the uncertainty."
+            ],
+            "B": [
+              "This does not mean every sentence needs a warning label. Write what you saw, say where you are uncertain, and give enough context for someone else to understand the uncertainty."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved dry jokes, direct address, and useful explanation. Returning the effective passage unchanged fits the author's explicitly limited editing scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ],
+            "B": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is restraint: correct only genuine defects while preserving approved prose. Both deliver the same unchanged, usable introduction, so there is no substantive basis for preferring either.",
+          "quotes": {
+            "source": [
+              "Correct only genuine grammatical errors or ambiguities that obstruct understanding; if none are present, return it unchanged."
+            ],
+            "A": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ],
+            "B": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "cd816760695b8c594a6086d29fd869e525108a266175c8b124f4fca795832827",
+    "prompt_sha256": "6032f251112713f0d8460cde0e74bf650df354402716c6149a617babad864751",
+    "raw_sha256": "783fa90d16c1131c891c8fe16cbfc12efc24ffd9bde9f4afc42bbdab1d0c3587",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copy editing practical field-note guidance; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source unchanged: page/bag matching, sketch orientation, dated reinterpretations, relevant observations and interpretations, contextual uncertainty, and readable end-of-day backup photographs checked before deleting blurred attempts.",
+          "quotes": {
+            "source": [
+              "Both belong in the notebook when relevant, but they do different jobs."
+            ],
+            "A": [
+              "Both belong in the notebook when relevant, but they do different jobs."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source unchanged, including all recording checks, permission to record relevant interpretations, uncertainty tied to viewing conditions, and the timing, backup status, and readability checks for photographs.",
+          "quotes": {
+            "source": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ],
+            "A": [],
+            "B": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain every substantive instruction and qualification. Neither changes the distinction between observation and interpretation or weakens the photographic backup procedure.",
+          "quotes": {
+            "source": [
+              "The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts."
+            ],
+            "A": [
+              "The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts."
+            ],
+            "B": [
+              "The photographs are a backup, not a replacement for the notebook. Check that they are readable before deleting any blurred attempts."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Each reads as direct, conversational guidance with concrete examples and idiomatic humor. Their identical prose contains no grammatical defect or ambiguity requiring intervention.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A question mark without a clear subject is rarely much help."
+            ],
+            "B": [
+              "A question mark without a clear subject is rarely much help."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from legible records and immediate checks to observation versus interpretation, documenting uncertainty, and end-of-day preservation. The uncertainty transition explains the intended qualification without adding unnecessary structure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This does not mean every sentence needs a warning label. Write what you saw, say where you are uncertain, and give enough context for someone else to understand the uncertainty."
+            ],
+            "B": [
+              "This does not mean every sentence needs a warning label. Write what you saw, say where you are uncertain, and give enough context for someone else to understand the uncertainty."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved dry jokes, direct address, and useful explanation. Returning the effective passage unchanged fits the author's explicitly limited editing scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ],
+            "B": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is restraint: correct only genuine defects while preserving approved prose. Both deliver the same unchanged, usable introduction, so there is no substantive basis for preferring either.",
+          "quotes": {
+            "source": [
+              "Correct only genuine grammatical errors or ambiguities that obstruct understanding; if none are present, return it unchanged."
+            ],
+            "A": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ],
+            "B": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "cd816760695b8c594a6086d29fd869e525108a266175c8b124f4fca795832827",
+    "prompt_sha256": "6032f251112713f0d8460cde0e74bf650df354402716c6149a617babad864751",
+    "raw_sha256": "783fa90d16c1131c891c8fe16cbfc12efc24ffd9bde9f4afc42bbdab1d0c3587",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copy editing a practical introduction, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source unchanged, including number and orientation checks, relevant interpretations, dated revisions, uncertainty and viewing conditions, and readable backup photographs before departure and deletion.",
+          "quotes": {
+            "source": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ],
+            "A": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source unchanged, including number and orientation checks, relevant interpretations, dated revisions, uncertainty and viewing conditions, and readable backup photographs before departure and deletion.",
+          "quotes": {
+            "source": [
+              "Check that they are readable before deleting any blurred attempts."
+            ],
+            "A": [],
+            "B": [
+              "Check that they are readable before deleting any blurred attempts."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both reproduce the source, retaining all practical requirements and qualifications. Neither restricts recording interpretations nor turns uncertainty into a requirement to hedge every sentence.",
+          "quotes": {
+            "source": [
+              "Both belong in the notebook when relevant, but they do different jobs.",
+              "This does not mean every sentence needs a warning label."
+            ],
+            "A": [
+              "Both belong in the notebook when relevant, but they do different jobs.",
+              "This does not mean every sentence needs a warning label."
+            ],
+            "B": [
+              "Both belong in the notebook when relevant, but they do different jobs.",
+              "This does not mean every sentence needs a warning label."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical texts retain idiomatic, direct instructions and conversational explanations appropriate to a field-note introduction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A question mark without a clear subject is rarely much help."
+            ],
+            "B": [
+              "A question mark without a clear subject is rarely much help."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each retains the effective sequence from legible records through observations, interpretations, and uncertainty to end-of-day preservation. The explanations establish why the instructions belong.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The photographs are a backup, not a replacement for the notebook."
+            ],
+            "B": [
+              "The photographs are a backup, not a replacement for the notebook."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrow copy-editing scope and preserve the approved dry humor, direct address, and useful explanations without unnecessary polishing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ],
+            "B": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both deliver the same unchanged passage, fulfilling the decisive instruction to preserve already-approved prose when no grammatical error or blocking ambiguity requires correction.",
+          "quotes": {
+            "source": [
+              "Correct only genuine grammatical errors or ambiguities that obstruct understanding; if none are present, return it unchanged."
+            ],
+            "A": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ],
+            "B": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "cd816760695b8c594a6086d29fd869e525108a266175c8b124f4fca795832827",
+    "prompt_sha256": "6032f251112713f0d8460cde0e74bf650df354402716c6149a617babad864751",
+    "raw_sha256": "1b671775a998f5ca1e5d1a719e35216910649452c7548e8c9a2c18b7b015b849",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copy editing a practical introduction, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source unchanged, including number and orientation checks, relevant interpretations, dated revisions, uncertainty and viewing conditions, and readable backup photographs before departure and deletion.",
+          "quotes": {
+            "source": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ],
+            "A": [
+              "If rain or poor light limited what you could see, record that condition alongside the observation it affected."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source unchanged, including number and orientation checks, relevant interpretations, dated revisions, uncertainty and viewing conditions, and readable backup photographs before departure and deletion.",
+          "quotes": {
+            "source": [
+              "Check that they are readable before deleting any blurred attempts."
+            ],
+            "A": [],
+            "B": [
+              "Check that they are readable before deleting any blurred attempts."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both reproduce the source, retaining all practical requirements and qualifications. Neither restricts recording interpretations nor turns uncertainty into a requirement to hedge every sentence.",
+          "quotes": {
+            "source": [
+              "Both belong in the notebook when relevant, but they do different jobs.",
+              "This does not mean every sentence needs a warning label."
+            ],
+            "A": [
+              "Both belong in the notebook when relevant, but they do different jobs.",
+              "This does not mean every sentence needs a warning label."
+            ],
+            "B": [
+              "Both belong in the notebook when relevant, but they do different jobs.",
+              "This does not mean every sentence needs a warning label."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical texts retain idiomatic, direct instructions and conversational explanations appropriate to a field-note introduction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A question mark without a clear subject is rarely much help."
+            ],
+            "B": [
+              "A question mark without a clear subject is rarely much help."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each retains the effective sequence from legible records through observations, interpretations, and uncertainty to end-of-day preservation. The explanations establish why the instructions belong.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The photographs are a backup, not a replacement for the notebook."
+            ],
+            "B": [
+              "The photographs are a backup, not a replacement for the notebook."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrow copy-editing scope and preserve the approved dry humor, direct address, and useful explanations without unnecessary polishing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ],
+            "B": [
+              "Your future self may remember the trench perfectly. The rest of us have not been issued that future self."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both deliver the same unchanged passage, fulfilling the decisive instruction to preserve already-approved prose when no grammatical error or blocking ambiguity requires correction.",
+          "quotes": {
+            "source": [
+              "Correct only genuine grammatical errors or ambiguities that obstruct understanding; if none are present, return it unchanged."
+            ],
+            "A": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ],
+            "B": [
+              "We are trying to preserve a record of the trench, not a small private exhibition of your thumb."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "cd816760695b8c594a6086d29fd869e525108a266175c8b124f4fca795832827",
+    "prompt_sha256": "6032f251112713f0d8460cde0e74bf650df354402716c6149a617babad864751",
+    "raw_sha256": "1b671775a998f5ca1e5d1a719e35216910649452c7548e8c9a2c18b7b015b849",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task checks an audio-engineering explanation; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the configured routing, pre-fader detector behavior, timing qualifications, and limited release comparison.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "A": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving the configured routing, pre-fader detector behavior, timing qualifications, and limited release comparison.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "A": [],
+            "B": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain every source claim and qualification: side-chain detection remains separate from the audible mix, attack and release affect gain rather than timeline placement, and the review compares only the saved release settings.",
+          "quotes": {
+            "source": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "A": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "B": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use identical, readable technical prose suited to experienced editors. Established terminology and practical listening guidance remain clear without unnecessary elaboration.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ],
+            "B": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each passage explains the side chain's purpose, then gain timing, then the pre-fader consequence, before specifying the review. The identical causal transitions make clear why each step belongs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": [
+              "The detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrow editing scope and preserve the approved voice, useful explanation, and substantive contrasts. Neither manufactures revisions to already-effective prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ],
+            "B": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the decisive priority: preserve an accurate approved passage unless correction is necessary, including the explicit limit on what the review establishes.",
+          "quotes": {
+            "source": [
+              "Return the passage unchanged if it is already accurate and clear within its stated setting."
+            ],
+            "A": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ],
+            "B": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "77e284cd0dc01c6e6e059a06777b14cd2f02e851a4a8ab96ac1c14a89511520c",
+    "prompt_sha256": "eb1f5e749258270aadc486c136eb41656bd496cebd87b9ab524792dd2e42afbc",
+    "raw_sha256": "9d618a09ee5481e245f24ef86ae1d59027533a29efbb1cc98980d3202aa58470",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task checks an audio-engineering explanation; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the configured routing, pre-fader detector behavior, timing qualifications, and limited release comparison.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "A": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving the configured routing, pre-fader detector behavior, timing qualifications, and limited release comparison.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "A": [],
+            "B": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain every source claim and qualification: side-chain detection remains separate from the audible mix, attack and release affect gain rather than timeline placement, and the review compares only the saved release settings.",
+          "quotes": {
+            "source": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "A": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "B": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use identical, readable technical prose suited to experienced editors. Established terminology and practical listening guidance remain clear without unnecessary elaboration.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ],
+            "B": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each passage explains the side chain's purpose, then gain timing, then the pre-fader consequence, before specifying the review. The identical causal transitions make clear why each step belongs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": [
+              "The detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrow editing scope and preserve the approved voice, useful explanation, and substantive contrasts. Neither manufactures revisions to already-effective prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ],
+            "B": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the decisive priority: preserve an accurate approved passage unless correction is necessary, including the explicit limit on what the review establishes.",
+          "quotes": {
+            "source": [
+              "Return the passage unchanged if it is already accurate and clear within its stated setting."
+            ],
+            "A": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ],
+            "B": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "77e284cd0dc01c6e6e059a06777b14cd2f02e851a4a8ab96ac1c14a89511520c",
+    "prompt_sha256": "eb1f5e749258270aadc486c136eb41656bd496cebd87b9ab524792dd2e42afbc",
+    "raw_sha256": "9d618a09ee5481e245f24ef86ae1d59027533a29efbb1cc98980d3202aa58470",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task checks wording in an audio-engineering explanation; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source unchanged, including the configured routing, pre-fader detector feed, qualified attack behavior, and controlled release comparison.",
+          "quotes": {
+            "source": [
+              "The detector in this setup is fed before the dialogue fader.",
+              "compare the two saved release settings at the same listening level"
+            ],
+            "A": [
+              "The detector in this setup is fed before the dialogue fader.",
+              "compare the two saved release settings at the same listening level"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source unchanged, including the configured routing, pre-fader detector feed, qualified attack behavior, and controlled release comparison.",
+          "quotes": {
+            "source": [
+              "The detector in this setup is fed before the dialogue fader.",
+              "compare the two saved release settings at the same listening level"
+            ],
+            "A": [],
+            "B": [
+              "The detector in this setup is fed before the dialogue fader.",
+              "compare the two saved release settings at the same listening level"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain every substantive claim and qualification. The detection-versus-output distinction remains explicitly bounded to this session, and neither broadens the review into a routing test.",
+          "quotes": {
+            "source": [
+              "In this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output.",
+              "This comparison does not test whether a different side-chain source would work better"
+            ],
+            "A": [
+              "In this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output.",
+              "This comparison does not test whether a different side-chain source would work better"
+            ],
+            "B": [
+              "In this session, the side-chain signal tells the compressor when to reduce gain; it is not itself mixed into the output.",
+              "This comparison does not test whether a different side-chain source would work better"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical passages use readable technical prose suited to experienced editors. Both retain precise terminology and connect it to practical listening decisions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ],
+            "B": [
+              "Whether that is useful depends on what we want the music to do around the speech, so audition the transition rather than judging the setting from its number alone."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the routing and its purpose, distinguish envelope timing from timeline placement, explain the fader consequence, and finish with the bounded review. Each step supplies context for the next.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present.",
+              "For the current review, leave the routing as it is"
+            ],
+            "B": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present.",
+              "For the current review, leave the routing as it is"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the narrow editing request by preserving effective prose. They retain useful explanation, conversational technical language, and substantive contrasts without adding editorial packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ],
+            "B": [
+              "Moving the dialogue into the music bus would change the mix, not merely change what the compressor listens to."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both meet the decisive priority: preserve the approved explanation when its wording is clear within the stated setup, including the limits of the release comparison.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ],
+            "B": [
+              "This comparison does not test whether a different side-chain source would work better, and it should not be reported as such."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "77e284cd0dc01c6e6e059a06777b14cd2f02e851a4a8ab96ac1c14a89511520c",
+    "prompt_sha256": "eb1f5e749258270aadc486c136eb41656bd496cebd87b9ab524792dd2e42afbc",
+    "raw_sha256": "9cdc1288e5d1ee7b9424a6091d62bbb514ae0fcdd717ee8cd0f35a4e5ad7f005",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task checks wording in an audio-engineering explanation; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A returns the source unchanged. It preserves the side-chain source and music ducking, detector independence from the dialogue fader, and the review's fixed routing and listening level.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed.",
+              "leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "A": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed.",
+              "leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B returns the source unchanged. It preserves the side-chain source and music ducking, detector independence from the dialogue fader, and the review's fixed routing and listening level.",
+          "quotes": {
+            "source": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed.",
+              "leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "A": [],
+            "B": [
+              "Lowering that fader therefore changes the audible dialogue level without changing this detector feed.",
+              "leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source exactly, including its legitimate distinctions and conditional claims. Neither converts possible attack behavior into a guarantee or treats apparent over-ducking as proof of malfunction.",
+          "quotes": {
+            "source": [
+              "A slow attack may let the beginning of a sound pass before substantial reduction occurs.",
+              "It does not by itself show that the compressor has stopped responding correctly."
+            ],
+            "A": [
+              "A slow attack may let the beginning of a sound pass before substantial reduction occurs.",
+              "It does not by itself show that the compressor has stopped responding correctly."
+            ],
+            "B": [
+              "A slow attack may let the beginning of a sound pass before substantial reduction occurs.",
+              "It does not by itself show that the compressor has stopped responding correctly."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use the same idiomatic explanation, with established technical terms and clear causal connections appropriate to experienced editors.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ],
+            "B": [
+              "The detector in this setup is fed before the dialogue fader. Lowering that fader therefore changes the audible dialogue level without changing this detector feed."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "The identical ordering develops the setup before explaining controls and their consequences, then identifies what the review can establish. The final listening criterion gives the comparison a clear purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present.",
+              "We are choosing which recovery sounds less distracting between phrases."
+            ],
+            "B": [
+              "We feed that side chain from the dialogue bus so the music can duck when speech is present.",
+              "We are choosing which recovery sounds less distracting between phrases."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved voice and useful explanatory contrasts, as requested. Neither compresses away the practical reasoning or manufactures a need for revision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The attack and release settings shape how quickly gain reduction begins and recovers. They do not move the spoken words earlier or later on the timeline."
+            ],
+            "B": [
+              "The attack and release settings shape how quickly gain reduction begins and recovers. They do not move the spoken words earlier or later on the timeline."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Both are materially faithful and identical. The user's priority is necessary correction only; preserving this contextually clear passage fulfills that request while retaining the practical rationale and controlled comparison.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ],
+            "B": [
+              "For the current review, leave the routing as it is and compare the two saved release settings at the same listening level."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "77e284cd0dc01c6e6e059a06777b14cd2f02e851a4a8ab96ac1c14a89511520c",
+    "prompt_sha256": "eb1f5e749258270aadc486c136eb41656bd496cebd87b9ab524792dd2e42afbc",
+    "raw_sha256": "9cdc1288e5d1ee7b9424a6091d62bbb514ae0fcdd717ee8cd0f35a4e5ad7f005",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]

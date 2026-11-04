@@ -2,9 +2,9 @@
 
 Frozen current portable skill versus no skill. Forty development cases and forty retrospective original holdout cases, ten writer configurations. Both Astra-high and Sol-high author-specific blind judges. Reserved fresh holdouts remain sealed.
 
-Coverage: 428/800 candidate drafts, 671/800 baseline drafts, 768/1600 primary grades, 103/168 reversed-order grades. Long-horizon dev: 0/24 turns, 0/12 checkpoint grades.
+Coverage: 529/800 candidate drafts, 707/800 baseline drafts, 768/1600 primary grades, 115/168 reversed-order grades. Long-horizon dev: 0/24 turns, 0/12 checkpoint grades.
 
-Usage: 655/1450 allocated calls, 249/557 Claude writing calls, 14,035,783 known reported tokens (cached included), 4 unknown attempts. Token scheduling guard: 45M with active-call reservations. This is not a subscription percentage or measured bill.
+Usage: 802/1450 allocated calls, 249/557 Claude writing calls, 16,742,446 known reported tokens (cached included), 4 unknown attempts. Token scheduling guard: 45M with active-call reservations. This is not a subscription percentage or measured bill.
 
 INCOMPLETE. No new headline performance claim. Missing and invalid grades are not ties.
 
