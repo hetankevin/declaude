@@ -19,7 +19,7 @@ Both runners restarted under caffeinate -i to prevent idle sleep while they exec
 <!-- active-eval-status:start -->
 ## Automated evaluation checkpoint
 
-State: running, 2026-11-04T07:41:30Z. Original matrix 412/800 candidate drafts and 768/1600 primary grades. Antigravity declaude 181/320 drafts and 176/320 primary grades. Fresh reserved holdouts remain sealed. See run-status.json and usage.json; missing grades are not ties. This publisher makes no model calls and cannot restart either runner.
+State: running, 2026-11-04T07:51:41Z. Original matrix 412/800 candidate drafts and 768/1600 primary grades. Antigravity declaude 189/320 drafts and 184/320 primary grades. Fresh reserved holdouts remain sealed. See run-status.json and usage.json; missing grades are not ties. This publisher makes no model calls and cannot restart either runner.
 <!-- active-eval-status:end -->
 
 # Handoff

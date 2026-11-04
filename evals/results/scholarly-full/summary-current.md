@@ -2,7 +2,7 @@
 
 INCOMPLETE: results below are a progress checkpoint, not a full-suite headline.
 
-Valid paired primary judgments: 890/1920. Both judges must be present for a case/model pair to enter the table.
+Valid paired primary judgments: 898/1920. Both judges must be present for a case/model pair to enter the table.
 
 | Split | Model / effort | Cases | Win − loss (pp) | 95% case-bootstrap interval |
 |---|---|---:|---:|---:|
@@ -32,13 +32,13 @@ Valid paired primary judgments: 890/1920. Both judges must be present for a case
 | holdout | astra-high | 17 | +20.6 | [-11.8, +50.0] |
 | holdout | sol-low | 18 | +8.3 | [-19.4, +38.9] |
 | holdout | luna-medium | 17 | -11.8 | [-41.2, +17.6] |
-| holdout | argon-high | 4 | -25.0 | [-100.0, +50.0] |
-| holdout | flash-high | 3 | +83.3 | [+50.0, +100.0] |
+| holdout | argon-high | 6 | +0.0 | [-66.7, +66.7] |
+| holdout | flash-high | 5 | +90.0 | [+70.0, +100.0] |
 | holdout | claude-all | 14 | +32.7 | [+11.9, +51.8] |
 | holdout | codex-all | 14 | -1.8 | [-25.9, +24.1] |
-| holdout | antigravity-all | 3 | +41.7 | [-25.0, +100.0] |
-| holdout | all | 1 | +0.0 | [+0.0, +0.0] |
+| holdout | antigravity-all | 5 | +55.0 | [+15.0, +90.0] |
+| holdout | all | 3 | +26.4 | [+0.0, +54.2] |
 
-Combined spend so far: 924/2400 attempts, 19,452,209 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 936/2400 attempts, 19,718,372 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.

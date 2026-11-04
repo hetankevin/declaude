@@ -29972,5 +29972,1509 @@
     "prompt_sha256": "8a751e1123b2cde53a02496be43894d7c43892c7f3010555516fe5129010da8f",
     "raw_sha256": "7b281f7e2b5fad8bd980ce91802a8e200a0655a0603fd31844c934a4ef0176fa",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a findings passage with supplied arithmetic summaries, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the cohort counts, unequal follow-up, accumulated waiting, conditional lower bound, deadline outcomes, and analytical limits. Following the four unresolved cases to the deadline can determine their deadline outcomes without determining all completion times.",
+          "quotes": {
+            "source": [
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days",
+              "Only four deadline outcomes remained unresolved."
+            ],
+            "A": [
+              "provided that all 40 jobs eventually finish.",
+              "continued tracking will not necessarily resolve every pending job or establish a finite overall mean turnaround time."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all supplied numerical summaries and definitions. Keeps seven days conditional on completion, 9.4 days conditional as an eventual-mean lower bound, and the deadline interval deterministic; follow-up remains proposed.",
+          "quotes": {
+            "source": [
+              "This is a lower bound, not an estimate that their eventual mean will equal 9.4.",
+              "We have not compared repair types or estimated a parts-supply effect."
+            ],
+            "A": [],
+            "B": [
+              "This value is an arithmetic lower bound, not an estimate that the eventual mean will equal 9.4 days.",
+              "We have not compared repair types or estimated a parts-supply effect."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive distinctions and qualifications. A makes the arithmetic status more explicit, but B's necessary bounds also communicate deterministic limits without suggesting confidence intervals.",
+          "quotes": {
+            "source": [
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%"
+            ],
+            "A": [
+              "This range is an exact arithmetic bound determined by the four open cases, not a statistical confidence interval."
+            ],
+            "B": [
+              "the final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic research prose. A's administrative phrasing and emphatic mathematical labels make otherwise straightforward findings more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Future reporting should follow several methodological principles:",
+              "This figure is a deterministic mathematical floor"
+            ],
+            "B": [
+              "The report should retain the seven-day mean for completed jobs alongside its denominator",
+              "Because finishing the pending jobs cannot undo elapsed time"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the customer question, incomplete follow-up, accumulated waiting, and deadline outcomes in a continuous discussion. A has a sensible order, but its numbered sections and repeated lists fragment that same argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 3. Elapsed Waiting and the Arithmetic Lower Bound on Mean Turnaround",
+              "Across the full cohort of 40 arrivals:"
+            ],
+            "B": [
+              "Excluding them because their final durations were unknown also excluded waiting time that had already occurred.",
+              "Summing the two totals gives the waiting time already accumulated across the cohort"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the conversational technical voice and useful explanation. A recasts the passage as a formal outline and adds repeated emphatic qualifications where a connected explanation suffices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 1. Background and Operational Definitions",
+              "**Preserve Metric Distinctions:**"
+            ],
+            "B": [
+              "While that figure was calculated correctly for completed jobs, it answered a narrower question than customers were asking",
+              "The accumulated-wait bound and the deadline interval answer distinct questions and should retain their separate definitions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested; the arithmetic supports a findings discussion.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets the user's decisive preference for connected explanatory prose: its opening makes the customer question and missing waiting time motivate the cohort summary. A preserves the substance but turns the passage into a heavily segmented outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 5. Reporting Recommendations and Analytical Scope"
+            ],
+            "B": [
+              "Excluding them because their final durations were unknown also excluded waiting time that had already occurred."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91b50228ab4bececf251cb9ba70f84e53c1ab9c6c947613a15c916c92a49d4e5",
+    "prompt_sha256": "11e00e341244f718f0c9f7f24445f904194a2b9ce00655d7e37ea4642ecbcf4a",
+    "raw_sha256": "577a321944f697d657f832bc7f6616b871b7eed481dffdedb329445142b2b74f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a findings discussion, with numerical summaries already supplied.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the cohort data, common audit date with unequal follow-up, completed-job mean, conditional accumulated-wait lower bound, deadline counts and interval, and limits on inference. No outcomes or effects are invented.",
+          "quotes": {
+            "source": [
+              "We audited every job at the same closing date, so later arrivals had shorter follow-up.",
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days"
+            ],
+            "A": [
+              "We audited every job at the same closing date, so later arrivals had shorter follow-up.",
+              "If all forty eventually finish, their mean final turnaround cannot be below 9.4 days"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all supplied quantities and distinguishes elapsed waiting from completed turnaround. The explicit deadline follow-up describes how outcomes could become known without asserting that they have occurred or guaranteeing completion of every job.",
+          "quotes": {
+            "source": [
+              "We did not treat the unfinished jobs as completed at their current ages.",
+              "Continuing the record until the remaining deadline outcomes are known would narrow the deadline interval"
+            ],
+            "A": [],
+            "B": [
+              "treating those pending jobs as if they had finished at their audit-date ages would conflate elapsed waiting time with completed turnaround.",
+              "Extending follow-up until the 4 pending jobs under 10 days old either finish or pass the 10-day mark would narrow the deadline range"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the numerical results, conditional claims, and analytical scope. B expands the explanation of the two summaries without changing what the audit establishes.",
+          "quotes": {
+            "source": [
+              "The accumulated-wait bound and deadline interval answer different questions and should retain their definitions."
+            ],
+            "A": [
+              "The accumulated-wait bound and the deadline interval answer different questions and should retain their definitions."
+            ],
+            "B": [
+              "The 9.4-day accumulated-wait lower bound and the 45%–55% (18/40 to 22/40) 10-day completion range answer different questions"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A is more conversational and direct at sentence level. B remains readable, but occasionally uses abstract framing where A moves directly into the explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We did not treat the unfinished jobs as completed at their current ages, but the two totals can be added to summarize waiting already accumulated."
+            ],
+            "B": [
+              "Preserving the distinction between elapsed waiting and completed turnaround clarifies what the audit data can and cannot establish about average duration."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A effectively establishes the customer problem first. B more fully explains why the complementary deadline summary belongs after the unbounded completion-time discussion: fixing a threshold confines uncertainty to four outcomes.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The service also reports completion within ten calendar days of intake."
+            ],
+            "B": [
+              "By contrast, evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both use connected technical prose. B better fulfills the author's preference to explain what a construction enables before presenting its mechanics, particularly when introducing the deadline calculation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The service also reports completion within ten calendar days of intake. Eighteen of the twenty-four completed jobs met that deadline and six did not."
+            ],
+            "B": [
+              "evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact is a findings passage, not a mathematical proof.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and A has the more conversational sentence style. B has a substantive advantage on the user's central priority: it explains why deadline outcomes remain tightly bounded despite unbounded completion times, making the two summaries function as a connected argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The service also reports completion within ten calendar days of intake."
+            ],
+            "B": [
+              "By contrast, evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a7846be9447e05aa90f2759ef8e7b526bbe53748216bcee70922bd8bd76ffaec",
+    "prompt_sha256": "11e00e341244f718f0c9f7f24445f904194a2b9ce00655d7e37ea4642ecbcf4a",
+    "raw_sha256": "577a321944f697d657f832bc7f6616b871b7eed481dffdedb329445142b2b74f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a findings passage with supplied arithmetic summaries, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the numerical summaries, unequal follow-up, distinction between elapsed and completed time, conditional lower bound, deadline outcomes, and analytical limits.",
+          "quotes": {
+            "source": [
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days",
+              "Only four deadline outcomes remained unresolved."
+            ],
+            "A": [
+              "the mean final turnaround cannot fall below 9.4 days if all 40 jobs eventually finish.",
+              "leaving only 4 deadline outcomes unresolved."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the supplied quantities and substantive qualifications. Reaching ten days is ambiguous as a deadline-resolution stopping rule, since the exact boundary may still permit timely completion; this ambiguity does not establish a material error.",
+          "quotes": {
+            "source": [
+              "Continuing the record until the remaining deadline outcomes are known would narrow the deadline interval"
+            ],
+            "A": [],
+            "B": [
+              "Tracking the cohort until the four unresolved pending jobs reach 10 days of age will promptly narrow the deadline compliance rate to a single exact percentage."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the cohort accounting, conditional duration bound, deadline interval, and limits on inference. B's stopping-rule wording is less precise, but its boundary ambiguity does not support a decisive fidelity difference.",
+          "quotes": {
+            "source": [
+              "This is a lower bound, not an estimate that their eventual mean will equal 9.4.",
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%"
+            ],
+            "A": [
+              "This value is an arithmetic lower bound, not an estimate that the eventual mean will equal 9.4 days.",
+              "the final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%."
+            ],
+            "B": [
+              "provided that all 40 jobs eventually finish.",
+              "This range is an exact arithmetic bound determined by the four open cases, not a statistical confidence interval."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the same technical distinctions in conversational research prose. B repeatedly uses inflated formulations and administrative labels that make a short findings passage feel procedural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because finishing the pending jobs cannot undo elapsed time",
+              "The service also tracks completion within ten calendar days of intake."
+            ],
+            "B": [
+              "Because subsequent repair activity cannot undo or reduce elapsed calendar time",
+              "Future reporting should follow several methodological principles:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves continuously from the misleading completed-job summary through the audit accounting to the two complementary bounds. B retains that sequence, but fragments it into headings, repeated tallies, and a concluding recommendations list.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Excluding them because their final durations were unknown also excluded waiting time that had already occurred.",
+              "Summing the two totals gives the waiting time already accumulated across the cohort"
+            ],
+            "B": [
+              "#### 2. Cohort Follow-Up and Audit Structure",
+              "Across the full cohort of 40 arrivals:",
+              "#### 5. Reporting Recommendations and Analytical Scope"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the problem-led explanation and places qualifications beside the relevant claims. B's repeated labels and assurances add rhetorical packaging without developing the reasoning further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it answered a narrower question than customers were asking",
+              "The accumulated-wait bound and the deadline interval answer distinct questions and should retain their separate definitions."
+            ],
+            "B": [
+              "an absolute arithmetic lower bound",
+              "a deterministic mathematical floor",
+              "**Preserve Metric Distinctions:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact is a findings passage, not a proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has an established material error. A better meets the decisive preference for connected explanation: the exclusion of observed waiting motivates the accumulated-wait calculation directly. B conveys the substance but turns the passage into a segmented methodological checklist with repeated qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Excluding them because their final durations were unknown also excluded waiting time that had already occurred.",
+              "Summing the two totals gives the waiting time already accumulated across the cohort"
+            ],
+            "B": [
+              "#### 3. Elapsed Waiting and the Arithmetic Lower Bound on Mean Turnaround",
+              "Future reporting should follow several methodological principles:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "faea0f4eb00f9ace46b2e19dfe6a99ed9470732d21792d6e2fde0aa6c640f30f",
+    "prompt_sha256": "8a751e1123b2cde53a02496be43894d7c43892c7f3010555516fe5129010da8f",
+    "raw_sha256": "2e076e61f45ace710f632276638ebba025f1828243b5158fb1d7538acdcacbe8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a findings passage using supplied summaries, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all counts and totals, the common audit date with unequal follow-up, the conditional duration bound, the deterministic deadline range, and the proposed scope of follow-up.",
+          "quotes": {
+            "source": [
+              "We did not treat the unfinished jobs as completed at their current ages.",
+              "If some never finish, a finite mean completion time for all forty is not established at all."
+            ],
+            "A": [
+              "treating those pending jobs as if they had finished at their audit-date ages would conflate elapsed waiting time with completed turnaround.",
+              "if any job never finishes, a finite mean completion time for all 40 arrivals is not established at all."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the complete numerical accounting, conditional lower bound, absence of a finite upper bound, bounded deadline outcome, and limits on follow-up and causal interpretation.",
+          "quotes": {
+            "source": [
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days",
+              "We have not compared repair types or estimated a parts-supply effect."
+            ],
+            "A": [],
+            "B": [
+              "If all forty eventually finish, their mean final turnaround cannot be below 9.4 days",
+              "We have not compared repair types or estimated a parts-supply effect."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully distinguish observed waiting from completed turnaround, retain all numerical summaries and conditions, and avoid modeled estimates or invented outcomes.",
+          "quotes": {
+            "source": [
+              "The forty jobs had accumulated 376 days, or 9.4 days per job.",
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%"
+            ],
+            "A": [
+              "376 calendar days of waiting already accumulated across the cohort, or 9.4 days per job.",
+              "the cohort’s final 10-day completion rate must fall between 18/40 and 22/40 (45% to 55%)"
+            ],
+            "B": [
+              "Together, the forty jobs had accumulated 376 days of waiting, or 9.4 days per job.",
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B has a more conversational rhythm and less abstract connective language. A remains readable but occasionally describes what its explanation accomplishes instead of simply giving that explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Preserving the distinction between elapsed waiting and completed turnaround clarifies what the audit data can and cannot establish about average duration."
+            ],
+            "B": [
+              "We did not treat the unfinished jobs as completed at their current ages, but the two totals can be added to summarize waiting already accumulated."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "B introduces the misleading initial mean earlier, which helps its opening. A nevertheless develops the central analytical transition more explicitly: after establishing unbounded duration uncertainty, it explains why a fixed deadline leaves only four outcomes unresolved.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the audit provides no finite upper bound on how much longer the 16 pending jobs may take",
+              "By contrast, evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ],
+            "B": [
+              "The available information gives no finite upper bound on how long the pending jobs might still take",
+              "The service also reports completion within ten calendar days of intake."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more fully satisfies the author's preference to explain why a construction belongs before presenting its mechanics. Its deadline transition supplies the purpose of the second summary, and its count decomposition makes the bound easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty",
+              "18 (6 completed plus 12 still pending past day 10) had already missed it"
+            ],
+            "B": [
+              "The service also reports completion within ten calendar days of intake.",
+              "Thus eighteen jobs were known to have met the deadline and eighteen were known to have missed it"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task is prose revision of a findings discussion, not proof exposition.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are faithful and usable, with no material errors. B has the easier sentence rhythm, but A better serves the user's decisive priority of explaining why each summary is needed: its transition from unbounded completion times to a fixed deadline makes the complementary role of the two bounds explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "By contrast, evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ],
+            "B": [
+              "The service also reports completion within ten calendar days of intake."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c134bb594cd38940f8dc070a5089b41a1b6336d6339a473ac0af472414ba7be6",
+    "prompt_sha256": "8a751e1123b2cde53a02496be43894d7c43892c7f3010555516fe5129010da8f",
+    "raw_sha256": "2e076e61f45ace710f632276638ebba025f1828243b5158fb1d7538acdcacbe8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for manuscript exposition and interpretation of reported observations, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the randomized paired design, planting and outcome counts, unknown outcomes in inaccessible plots, accessible-sample contrast, survivor-only browsing measurements, and the limits of the proposed protocol.",
+          "quotes": {
+            "source": [
+              "The eight-percentage-point difference refers to the accessible plots.",
+              "They cannot tell us how much of the survival difference was mediated by browsing, because damage to plants that died was not measured."
+            ],
+            "A": [
+              "This eight-percentage-point difference describes only the inspected plots.",
+              "these survivor-conditioned counts cannot establish how much of the survival difference was mediated by browsing."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all numerical information and distinguishes plot assignment, incomplete paired follow-up, unavailable plot counts, and survivor-only damage assessment. It retains flood damage as the cause of lost access without treating unknown outcomes as deaths.",
+          "quotes": {
+            "source": [
+              "At the final visit, flood damage made one enclosed plot and two open plots inaccessible.",
+              "Among the plots we could inspect, 55 of 110 enclosed seedlings and 42 of 100 open seedlings survived."
+            ],
+            "A": [],
+            "B": [
+              "At the final visit, flood damage made one enclosed plot and two open plots inaccessible, so we could not determine whether the seedlings in those plots were alive.",
+              "Among the plots we could inspect, 55 of 110 enclosed seedlings and 42 of 100 open seedlings survived"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive results and their qualifications. Each explains why pooled seedling totals cannot recover paired uncertainty and why original randomization does not resolve missing follow-up.",
+          "quotes": {
+            "source": [
+              "The final plot-by-plot counts are not available for this passage, so a paired uncertainty estimate cannot be reconstructed from the totals alone."
+            ],
+            "A": [
+              "Because plot-by-plot survival counts are unavailable, plot-level variability and a paired uncertainty estimate cannot be reconstructed from the aggregate totals alone."
+            ],
+            "B": [
+              "Without the final plot-by-plot counts, we cannot determine how consistent the survival difference was across the original pairs or reconstruct a paired uncertainty estimate from the pooled totals alone."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly shifts into abstract commentary about what the measurements can demonstrate. B states the same restrictions in more direct, conversational technical prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Combining the survival contrast and the survivor-damage counts into a single causal narrative would overstep what measurements restricted to living plants can demonstrate."
+            ],
+            "B": [
+              "Because damage to plants that died was not measured, the survivor counts do not establish a causal link or show how much of the survival difference was mediated by browsing."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A follows a coherent design-to-result sequence, but develops statistical cautions before presenting the result and revisits them at the end. B first establishes the experiment and observed contrast, then introduces the assignment unit precisely when explaining how much certainty that contrast supports.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Seedlings within a plot are clustered observations rather than independent replicates—a distinction that governs how much statistical certainty the pooled seedling totals can support."
+            ],
+            "B": [
+              "The enclosed plots may therefore have benefited from protection, but the available totals limit how much certainty the comparison can support.",
+              "Because treatments were assigned to plots within pairs rather than to individual seedlings, the seedlings are not independent experimental units."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better meets the author's request to remove repeated defensive commentary while preserving useful explanation. A's closing catalogue repeats limitations already explained; B ends with the specific qualification belonging to the follow-up proposal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "provided they are not asked to resolve questions about pair-level consistency, missing-data mechanisms, or causal mediation that the available observations cannot support."
+            ],
+            "B": [
+              "This protocol is a practical improvement for follow-up monitoring, not evidence that flooding explains either the missing seedlings or the observed survival difference between treatments."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response introduces a material error. B would better satisfy this user's priority of connected explanation without repeated warnings: it motivates the statistical limitations from the observed comparison and combines the browsing qualification into one explanatory conclusion. A adds a second causal warning and a closing inventory of limitations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Combining the survival contrast and the survivor-damage counts into a single causal narrative would overstep what measurements restricted to living plants can demonstrate."
+            ],
+            "B": [
+              "Because damage to plants that died was not measured, the survivor counts do not establish a causal link or show how much of the survival difference was mediated by browsing."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "695a1a7fc5cc5b79337a137dcbca4adae06d79353934b51c5c12256426c06b55",
+    "prompt_sha256": "cf1a2842a0ee246825ddf5ed5b7bf35ed0666a9bdcac0b4c4f4168c9215eb33f",
+    "raw_sha256": "d4f857b17f834d16d76c8c33fdd912a308c550fa6830336c19f68bd083dac4e8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns exposition and inferential qualifications of reported study results, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, all counts and percentages, unknown survival in inaccessible plots, the distinct inferential limitations, and the prospective status of the flood and marker protocol.",
+          "quotes": {
+            "source": [
+              "The eight-percentage-point difference refers to the accessible plots.",
+              "Random assignment is a property of the original study and does not, by itself, settle the possible consequences of the missing final observations."
+            ],
+            "A": [
+              "This eight-percentage-point difference refers strictly to the accessible plots.",
+              "In addition, initial random assignment does not by itself settle the possible consequences of the missing final observations."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B retains the central results and their restricted scope, but categorically says conditioning on survival introduces bias. The source establishes that these measurements cannot identify mediation, not that bias has necessarily occurred. Its statement that randomization ensures baseline comparability also risks implying guaranteed realized balance, although design-level comparability is a reasonable alternative reading and is not independently treated as an error.",
+          "quotes": {
+            "source": [
+              "They cannot tell us how much of the survival difference was mediated by browsing, because damage to plants that died was not measured.",
+              "Random assignment is a property of the original study and does not, by itself, settle the possible consequences of the missing final observations."
+            ],
+            "A": [],
+            "B": [
+              "Conditioning on survival introduces survivorship bias, precluding the use of this secondary measurement as a verified causal mechanism for the primary survival contrast.",
+              "Initial random assignment ensures baseline comparability between treatment arms"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the numerical findings and accessible-sample restriction. A faithfully states the identification limit on browsing mediation; B adds a categorical diagnosis of survivorship bias that the source does not establish.",
+          "quotes": {
+            "source": [
+              "It would be easy to merge the two results into one explanation, but the second measurement does not supply that causal link."
+            ],
+            "A": [
+              "these data cannot determine how much of the survival difference was mediated by browsing, nor do they supply a causal link between the two outcomes."
+            ],
+            "B": [
+              "Conditioning on survival introduces survivorship bias"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct technical prose with clear causal connections. B's added abstractions and emphatic modifiers make ordinary inferential points more cumbersome without explaining them further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Seedlings are therefore not independent experimental units, which limits how much certainty the aggregate totals can support."
+            ],
+            "B": [
+              "this distinction fundamentally governs the degree of inferential certainty that aggregate totals can support."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both coherently proceed from the experiment and assignment unit to accessible outcomes, limitations of the paired comparison, survivor damage, and future follow-up. Each places the unavailable plot counts beside the uncertainty claim they constrain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because final plot-by-plot counts are not available for this passage, a paired uncertainty estimate cannot be reconstructed from the totals alone."
+            ],
+            "B": [
+              "because plot-by-plot counts are unavailable in this passage, paired variance and associated uncertainty cannot be reconstructed from summary totals alone."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A stays close to the author's conversational explanation and avoids inflating the contribution. B adds generic manuscript packaging and a promotional, defensive closing sentence instead of letting the specific qualifications carry the interpretation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The present result remains useful without having to answer those additional questions."
+            ],
+            "B": [
+              "Within these defined methodological boundaries, the observed survival outcomes provide a clear, informative descriptive benchmark without overextending the conclusions that aggregate data and survivorship-conditioned measures can justify."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage contains no proof or derivation requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds an unsupported categorical bias claim, a minor overstatement that leaves the central descriptive result intact. A also better serves the decisive writing priority: it explains why each qualification belongs without adding B's emphatic methodological language and closing self-assessment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because damage to seedlings that died was not measured, these data cannot determine how much of the survival difference was mediated by browsing, nor do they supply a causal link between the two outcomes."
+            ],
+            "B": [
+              "Conditioning on survival introduces survivorship bias, precluding the use of this secondary measurement as a verified causal mechanism for the primary survival contrast."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8e232ebc514fafac720cd68ff57d2d6bb62f400f6556e1ca5576dc5103a9512a",
+    "prompt_sha256": "cf1a2842a0ee246825ddf5ed5b7bf35ed0666a9bdcac0b4c4f4168c9215eb33f",
+    "raw_sha256": "d4f857b17f834d16d76c8c33fdd912a308c550fa6830336c19f68bd083dac4e8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for manuscript exposition and interpretation, not a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the design, numerical results, unknown outcomes, and survivor-only damage measurements. However, it diagnoses survivorship bias categorically. The source establishes that these measurements cannot identify mediation, not that bias has necessarily occurred.",
+          "quotes": {
+            "source": [
+              "They cannot tell us how much of the survival difference was mediated by browsing, because damage to plants that died was not measured."
+            ],
+            "A": [
+              "Conditioning on survival introduces survivorship bias"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves twelve randomized plot pairs, ten seedlings per plot, all survival and browsing counts, and the restriction to accessible plots. Missing outcomes remain unknown, and neither mediation nor an adjusted survival estimate is claimed.",
+          "quotes": {
+            "source": [
+              "The eight-percentage-point difference refers to the accessible plots.",
+              "Eight of the 55 surviving enclosed seedlings and 16 of the 42 surviving open seedlings had damaged shoots."
+            ],
+            "A": [],
+            "B": [
+              "This eight-percentage-point difference refers strictly to the accessible plots.",
+              "Eight of the 55 surviving enclosed seedlings and 16 of the 42 surviving open seedlings had damaged shoots."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B retains the source's precise limits on inference. A adds a definite bias diagnosis. Its baseline-comparability language could mean design-based comparability or guaranteed realized balance; that ambiguity does not independently establish an error. Its closing reference to missing plots is also imprecise, although the earlier flood-access explanation remains explicit.",
+          "quotes": {
+            "source": [
+              "This gives a reason to compare treatments",
+              "damage was assessed only in plants that remained alive.",
+              "not evidence that flooding explains the missing seedlings or the treatment contrast."
+            ],
+            "A": [
+              "Initial random assignment ensures baseline comparability between treatment arms",
+              "Conditioning on survival introduces survivorship bias",
+              "not retrospective evidence that flooding explains the missing plots"
+            ],
+            "B": [
+              "initial random assignment does not by itself settle the possible consequences of the missing final observations.",
+              "these data cannot determine how much of the survival difference was mediated by browsing",
+              "not evidence that flooding explains the missing seedlings or the treatment contrast."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic technical prose. A repeatedly wraps straightforward points in abstract formulations, making the same message more laborious to read.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "this distinction fundamentally governs the degree of inferential certainty that aggregate totals can support.",
+              "Within these defined methodological boundaries"
+            ],
+            "B": [
+              "which limits how much certainty the aggregate totals can support.",
+              "The present result remains useful without having to answer those additional questions."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both provide a coherent sequence from randomized design to accessible-sample results, paired uncertainty, survivor damage, and future monitoring. Both explain why plot assignment and unavailable counts matter; neither has a substantive organizational advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because seedlings are nested within plots rather than independently allocated",
+              "aggregate counts cannot establish how consistently this advantage occurred across the original pairs."
+            ],
+            "B": [
+              "treatments were assigned to plots within pairs rather than to individual seedlings.",
+              "the available totals do not establish how consistent the difference was across the original pairs"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves connected explanation without repeated defensive packaging. A's added causal-warning sentence and concluding methodological disclaimer repeat limits already explained, contrary to the author's preference for removing rhetorical repetition while retaining useful reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "precluding the use of this secondary measurement as a verified causal mechanism for the primary survival contrast.",
+              "without overextending the conclusions that aggregate data and survivorship-conditioned measures can justify."
+            ],
+            "B": [
+              "Because damage to seedlings that died was not measured",
+              "This is a proposed improvement in follow-up"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A's unsupported categorical bias diagnosis is a minor material overstatement; B preserves the source's narrower inference. B also better meets the author's central goal: it explains why the measurements cannot establish mediation and then moves on, without adding repeated methodological declarations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Conditioning on survival introduces survivorship bias",
+              "Within these defined methodological boundaries"
+            ],
+            "B": [
+              "Because damage to seedlings that died was not measured, these data cannot determine how much of the survival difference was mediated by browsing",
+              "The present result remains useful without having to answer those additional questions."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "64df56b45b7babee2961e6f1d33faa143fd4fd8894fc9342eab531f89793e04d",
+    "prompt_sha256": "ee62aad08963b556a235fbd033f4160a0db9bde86b3164de70566670157dfa0b",
+    "raw_sha256": "b0f8314b209f77e3ca8fdee0a428771f8a55a44aba2c82e2b1b5859c962aa673",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for manuscript exposition and interpretation, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the randomized paired design, planting numbers, three inaccessible plots with unknown outcomes, accessible-sample survival contrast, and survivor-only browsing counts. It neither reconstructs unavailable uncertainty nor claims mediation or flood-related seedling mortality.",
+          "quotes": {
+            "source": [
+              "The eight-percentage-point difference refers to the accessible plots.",
+              "We could not determine whether the seedlings in those plots were alive."
+            ],
+            "A": [
+              "This eight-percentage-point difference applies only to the accessible plots.",
+              "we could not determine whether the seedlings in those plots were alive."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the design, all numerical information, and the distinction between documented loss of access and unknown seedling fate. Its discussion of variability, possible missing-data bias, and causal mediation stays within the source's inferential limits.",
+          "quotes": {
+            "source": [
+              "The final plot-by-plot counts are not available for this passage, so a paired uncertainty estimate cannot be reconstructed from the totals alone.",
+              "damage was assessed only in plants that remained alive."
+            ],
+            "A": [],
+            "B": [
+              "plot-level variability and a paired uncertainty estimate cannot be reconstructed from the aggregate totals alone.",
+              "damage was evaluated exclusively in seedlings that remained alive."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the fixed counts, plot-level assignment, incomplete follow-up, and limitations of pooled and survivor-only measurements. Both keep the proposed flood protocol separate from explanations of seedling fate or the treatment contrast.",
+          "quotes": {
+            "source": [
+              "The assignment happened to plots within pairs.",
+              "This is a proposed improvement in follow-up, not evidence that flooding explains the missing seedlings or the treatment contrast."
+            ],
+            "A": [
+              "treatments were assigned to plots within pairs rather than to individual seedlings",
+              "not evidence that flooding explains either the missing seedlings or the observed survival difference between treatments."
+            ],
+            "B": [
+              "the plot is the experimental unit.",
+              "rather than evidence that flooding explains either the fate of the missing seedlings or the observed treatment contrast."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A states the technical reasoning in conversational manuscript prose. B is readable but adds abstract terminology and longer formulations where A communicates the same limitation directly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The enclosed plots may therefore have benefited from protection, but the available totals limit how much certainty the comparison can support.",
+              "the survivor counts do not establish a causal link"
+            ],
+            "B": [
+              "a distinction that governs how much statistical certainty the pooled seedling totals can support.",
+              "these survivor-conditioned counts cannot establish how much of the survival difference was mediated by browsing."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A first establishes the design and observed result, then introduces the assignment-unit distinction to answer how much certainty that result supports. B's ordering is coherent, but its early technical explanation and closing catalogue of limitations give the reader more repeated framing without advancing the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the available totals limit how much certainty the comparison can support. Because treatments were assigned to plots within pairs rather than to individual seedlings",
+              "Without the final plot-by-plot counts, we cannot determine how consistent the survival difference was"
+            ],
+            "B": [
+              "Seedlings within a plot are clustered observations rather than independent replicates",
+              "provided they are not asked to resolve questions about pair-level consistency, missing-data mechanisms, or causal mediation"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better follows the author's preference for explaining each obstacle once, where it becomes relevant. B retains useful qualifications but repeats the survivor restriction and adds a concluding warning after those limitations have already been developed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because damage to plants that died was not measured, the survivor counts do not establish a causal link or show how much of the survival difference was mediated by browsing.",
+              "This protocol is a practical improvement for follow-up monitoring"
+            ],
+            "B": [
+              "but only among surviving plants",
+              "damage was evaluated exclusively in seedlings that remained alive.",
+              "Combining the survival contrast and the survivor-damage counts into a single causal narrative would overstep"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material fidelity error. A better serves the decisive preference for purposeful explanation: it reports the accessible-sample result, explains why plot assignment and missing paired counts limit interpretation, and keeps each qualification beside its claim. B adds repeated cautions and a closing recap that the argument no longer needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the available totals limit how much certainty the comparison can support. Because treatments were assigned to plots within pairs rather than to individual seedlings",
+              "This protocol is a practical improvement for follow-up monitoring"
+            ],
+            "B": [
+              "Combining the survival contrast and the survivor-damage counts into a single causal narrative would overstep",
+              "provided they are not asked to resolve questions about pair-level consistency, missing-data mechanisms, or causal mediation"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3d2df572a2a621ade3b1574e285fc837eff65e80061f2159157bf710192132d3",
+    "prompt_sha256": "ee62aad08963b556a235fbd033f4160a0db9bde86b3164de70566670157dfa0b",
+    "raw_sha256": "b0f8314b209f77e3ca8fdee0a428771f8a55a44aba2c82e2b1b5859c962aa673",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an equipment-study revision with measurements and interpretation, not a mathematical proof.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "Despite acknowledging the fixed-order limitation earlier, A ends by claiming confirmed causal thermal suppression. The source establishes a contrast between conditions while withholding that causal conclusion. This changes the study's central inference.",
+          "quotes": {
+            "source": [
+              "assigning all of it to temperature requires more than the design provides."
+            ],
+            "A": [
+              "The laboratory data confirm that cooling suppresses thermal accumulation in 30-second dark exposures"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the acquisition conditions, numerical results, separate background and read-noise measurements, raw-stack threshold, and defect qualification. It also retains the attribution limit and presents further testing as prospective.",
+          "quotes": {
+            "source": [
+              "Repeating the sequence in both orders would help evaluate whether that matters."
+            ],
+            "A": [],
+            "B": [
+              "repeating the sequence in both orders would help evaluate whether elapsed time contributed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the main measurements and distinctions, but A's concluding confirmation exceeds the source's causal evidence. B consistently restricts the finding to the recorded conditions.",
+          "quotes": {
+            "source": [
+              "The cooler condition therefore had a lower measured dark-frame background and fewer threshold exceedances in this run."
+            ],
+            "A": [
+              "The laboratory data confirm that cooling suppresses thermal accumulation"
+            ],
+            "B": [
+              "In this run, the cooler condition produced a lower measured dark-frame background and fewer threshold exceedances."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic technical prose. A repeatedly substitutes formal administrative phrasing for straightforward explanations, making the short study sound unnecessarily bureaucratic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These are cataloged strictly as statistical threshold exceedances",
+              "these findings must not be conflated with verified operational advantages"
+            ],
+            "B": [
+              "The test does not establish whether each of these pixels is a permanent detector defect.",
+              "Reporting improved stellar detection or field endurance would be premature, as neither outcome was tested."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B develops the practical question, measurements, attribution obstacle, and proposed field comparison in connected steps. A separates the sequence limitation from its interpretation and then revisits attribution and field restrictions, repeatedly restarting the discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Sequence Limitation:**",
+              "#### 4. Synthesis and Operational Limits",
+              "1. **Attribution:**"
+            ],
+            "B": [
+              "Because the order was fixed from warm to cold, however, temperature and elapsed time were not varied independently.",
+              "Addressing the original practical concern—which this bench result narrows without settling—requires field trials"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B fits the requested connected technical explanation and keeps the practical motivation visible. A's expanded report apparatus and repeated defensive announcements work against the author's preference for integrating qualifications without rhetorical repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Crucially, while field battery transport provided the rationale for the test",
+              "However, these findings must not be conflated with verified operational advantages:"
+            ],
+            "B": [
+              "To evaluate whether cooling the camera improves long exposures enough to justify carrying a cooling battery into the field, we compared dark frames on the bench.",
+              "Although the contrast between the two recorded conditions is real, attributing all of it to temperature requires more than this design provides"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "The decisive priority is preserving the boundary between measured performance and proposed benefit. A's final causal confirmation materially crosses that boundary despite its earlier caveat. B preserves it and gives the user a connected explanation from field motivation through bench evidence to further testing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The laboratory data confirm that cooling suppresses thermal accumulation in 30-second dark exposures"
+            ],
+            "B": [
+              "attributing all of it to temperature requires more than this design provides",
+              "Reporting improved stellar detection or field endurance would be premature, as neither outcome was tested."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "316846b083b09fdd32a0e5ff3a76f237b6f3b405452c82d8c617b8611dfdd054",
+    "prompt_sha256": "93bde83f7151de7226cc9faf25a40c06d9423a6866b877f205fe5c6dc1abb1fd",
+    "raw_sha256": "882fd7a8bd0dbe99a1337b2f0acac241a3427002d808e64e67c1723758c518a3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an equipment-study revision, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the camera, sequence, exposures, temperatures, numerical measurements, raw-stack threshold, and separate read-noise estimate. It retains the limits on causal attribution, permanent-defect identification, and practical benefits.",
+          "quotes": {
+            "source": [
+              "The present result is still a real contrast between the two recorded conditions, even though assigning all of it to temperature requires more than the design provides."
+            ],
+            "A": [
+              "The result is still a real contrast between the two recorded conditions, even though attributing all of it to temperature requires more than this design provides."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the measurements and substantive limitations. Its wording about repeating the sequence is more prescriptive than the source, but in context describes further investigation rather than guaranteeing that repetition eliminates drift. The initial reduction claim is immediately qualified by the fixed-order limitation.",
+          "quotes": {
+            "source": [
+              "Repeating the sequence in both orders would help evaluate whether that matters."
+            ],
+            "A": [],
+            "B": [
+              "attributing the entire reduction strictly to temperature would require repeating the sequence in both orders to rule out time-dependent drift."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the substantive evidence and its limits. A more precisely retains the exploratory status of the proposed sequence test; B's language about requiring repetition to rule out drift is stronger, though it does not clearly promise a conclusive result.",
+          "quotes": {
+            "source": [
+              "Repeating the sequence in both orders would help evaluate whether that matters."
+            ],
+            "A": [
+              "Repeating the sequence in both orders would help evaluate whether the order matters."
+            ],
+            "B": [
+              "would require repeating the sequence in both orders to rule out time-dependent drift."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable and use legitimate imaging terminology appropriately. A's paragraph form and B's labeled measurements are both idiomatic ways to present this material.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "At each temperature we formed a median stack of the ten frames."
+            ],
+            "B": [
+              "At each temperature, the ten exposures were combined into a median stack:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the measurement distinctions to their interpretation without repeating the numerical inventory. B's interpretation repeats the background values, pixel-count reduction, and read noise already listed, slowing the movement toward the attribution problem and field question.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In this run, the cooler condition therefore had a lower measured dark-frame background and fewer threshold-exceeding pixels.",
+              "Because the warm-then-cold order was fixed, temperature and time in the run were not varied independently."
+            ],
+            "B": [
+              "Within this run, operating at 5 °C reduced the bias-subtracted median dark background from 18 ADU to 4 ADU and cut the count of pixels exceeding 250 ADU by two-thirds, while read noise remained unchanged at 3.1 $\\text{e}^-$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for connected explanation: it directly relates the background summaries to the separate read-noise estimate and carries the practical question through the ending. B's measurement list is useful, but its repeated numerical summary adds packaging without developing the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "While the stack medians summarize background signal rather than read noise, separate pairs of zero-exposure frames gave the same read-noise estimate of 3.1 electrons at both temperatures.",
+              "The bench result narrows the original practical concern without settling it"
+            ],
+            "B": [
+              "**Read noise:** Evaluated separately from pairs of zero-exposure frames",
+              "while read noise remained unchanged at 3.1 $\\text{e}^-$."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The excerpt contains no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the user's decisive preference for connected reasoning without repetitive packaging: it explains the measurement distinctions, then the attribution obstacle, then the separate purpose of field testing. It also preserves the tentative wording of the proposed tests more closely.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Repeating the sequence in both orders would help evaluate whether the order matters.",
+              "a field comparison could examine detection at matched exposure settings while logging battery use."
+            ],
+            "B": [
+              "would require repeating the sequence in both orders to rule out time-dependent drift.",
+              "Evaluating the practical trade-off will require an on-sky comparison at matched exposure settings"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7dc707167d21be53a662006ad7253ac319d20f1f1754b3a377e964e864f19dc1",
+    "prompt_sha256": "93bde83f7151de7226cc9faf25a40c06d9423a6866b877f205fe5c6dc1abb1fd",
+    "raw_sha256": "882fd7a8bd0dbe99a1337b2f0acac241a3427002d808e64e67c1723758c518a3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
