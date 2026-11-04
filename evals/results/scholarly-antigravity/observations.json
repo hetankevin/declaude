@@ -8464,5 +8464,1926 @@
     "prompt_sha256": "d67ee6437dbd3910721ec3992ac65e5ca81f47cdca9ff0283212554837a4203b",
     "raw_sha256": "083f5dc51d0ab4685871bdb1622b2e19f84db006312fb099458a5b2539c6b652",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requires repairing a finite-space proof, including the cross term and exact equality condition.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The main proof preserves the claim and handles null cells correctly. However, the added laboratory example incorrectly infers correlation of absolute residuals with M from differing cell variances. Differing variances need not imply differing mean absolute residuals, and distinct cells can have the same M. This introduces a false auxiliary inference without invalidating the repaired identity.",
+          "quotes": {
+            "source": [
+              "conditional mean zero does not imply independence."
+            ],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the finite-space setup, cell means, null-cell convention, arbitrary real c, identity, inequality, and almost-sure equality condition. The weighted residual calculation supplies the conditional-mean argument without independence.",
+          "quotes": {
+            "source": [
+              "Set mu_j = 0 when p_j = 0.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [],
+            "B": [
+              "Set $\\mu_j = 0$ when $p_j = 0$.",
+              "which is the condition that $M = c$ with probability one."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the target theorem and its qualifications. B stays within the supported repair, whereas A adds an incorrect correlation inference and laboratory claims absent from the source.",
+          "quotes": {
+            "source": [
+              "replace that step using only the given finite-space hypotheses."
+            ],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": [
+              "In both cases the inner sum is zero, so each cell contributes zero:"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses readable technical prose to connect each calculation to its purpose. A's repeated labels, emphatic warnings, and supplemental lecture material make the otherwise readable proof cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Pedagogical Remark: The Independence Flaw in the Draft Proof",
+              "#### Step 3: Derivation of the Minimizing Bound and Equality Condition"
+            ],
+            "B": [
+              "The identity follows if the cross term $\\mathbb{E}[(X - M)(M - c)]$ is zero.",
+              "Now consider the two cases for $p_j = P(G_j)$:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B first exposes the cross term through expansion, then explains constancy, residual cancellation, and equality in order. A's substantial discussion of the draft and laboratory behavior delays the calculation that explains why these facts matter.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Pedagogical Remark: The Independence Flaw in the Draft Proof",
+              "### 3. Repaired and Complete Proof"
+            ],
+            "B": [
+              "The identity follows if the cross term $\\mathbb{E}[(X - M)(M - c)]$ is zero.",
+              "To evaluate this cross term without assuming independence, group the sum defining the expectation over the partition cells"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B delivers the requested repair with displayed steps and useful explanation. A retains extensive revision commentary and adds application sections, departing from the author's preference for a focused contribution without repeated defensive packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "> **Caution for Students:** Conditional mean zero does **not** imply statistical independence.",
+              "### 4. Summary for Laboratory Applications"
+            ],
+            "B": [
+              "Substituting this into the expanded square gives",
+              "Cells with $p_j = 0$ contribute zero to the expectation."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both main derivations explicitly factor out the cell constant, prove weighted residual cancellation, handle null cells, and derive the exact equality case. B is preferable because A's supplemental purported counterexample contains an invalid inference about absolute-residual correlation.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells.",
+              "conditional mean zero does not imply independence."
+            ],
+            "A": [
+              "S_j = \\sum_{\\omega \\in G_j} P(\\{\\omega\\}) X(\\omega) - \\mu_j p_j = p_j \\mu_j - p_j \\mu_j = 0",
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": [
+              "&= p_j \\mu_j - \\mu_j p_j",
+              "For cells with $p_j > 0$, each term $p_j (\\mu_j - c)^2$ is strictly positive unless $\\mu_j = c$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A introduces a false auxiliary inference despite a correct main proof. B also better meets the decisive priority: a complete, readable repair whose expansion motivates the cellwise calculation, with null cells and almost-sure equality explained where needed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": [
+              "The identity follows if the cross term $\\mathbb{E}[(X - M)(M - c)]$ is zero.",
+              "In both cases the inner sum is zero, so each cell contributes zero:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "229e384f5183e930a3fd36d39890e45d8f9c66867f6221ed4b98bfc08eb9d314",
+    "prompt_sha256": "77d979b1dc1848b26adf8ada4e343daafb7cb2e01107d968abe28a29b191575f",
+    "raw_sha256": "7ed5ab3efa938cc6c7950bf12e7717e2f28193a5a5cd23b8421d6ae01e29a689",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task explicitly asks for a repaired proof of the squared-error identity and its equality condition.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all hypotheses, the null-cell convention, arbitrary real c, and conclusions. Conditional expectations are used only on positive-probability cells, and equality is correctly characterized almost surely.",
+          "quotes": {
+            "source": [
+              "Set mu_j = 0 when p_j = 0.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [
+              "and set $\\mu_j = 0$ when $p_j = 0$.",
+              "exactly when $M = c$ with probability one."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the setup and conclusions, uses a valid conditional-mean calculation, and explicitly removes null-cell contributions without imposing equality on their outcomes.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [],
+            "B": [
+              "Multiplying by $p_j$ gives",
+              "where cells with $p_j = 0$ again contribute zero.",
+              "Thus, equality holds if and only if $P(M = c) = 1$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the finite-space assumptions, cell means and null-cell convention, universal real c, identity, inequality, and exact almost-sure equality condition. Neither adds independence or unsupported substantive claims.",
+          "quotes": {
+            "source": [
+              "Then for every real constant c,",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [
+              "Then for every real constant $c$,",
+              "with equality exactly when $M = c$ with probability one."
+            ],
+            "B": [
+              "Then for every real constant $c$,",
+              "with equality if and only if $M = c$ with probability one."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic technical prose and readable displays. A's continuous exposition and B's explicit two-case organization are both suitable for a teaching note; B's isolated capitalization slip does not create a substantive readability difference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate the cross term $E[(X - M)(M - c)]$, break the expectation across the partition",
+              "Finally, expand $E[(M - c)^2]$ over the partition and drop the zero-probability cells:"
+            ],
+            "B": [
+              "We evaluate the inner sum for each cell",
+              "Finally, Partitioning $E[(M - c)^2]$ across the cells gives"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both let the expansion identify the obstacle and then resolve it cellwise before deriving the inequality and equality case. A establishes conditional cancellation before factoring; B factors first and then evaluates the residual sum. Both orders explain why the steps belong.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since $M(\\omega) = \\mu_j$ on $G_j$, the residual $X - M$ has conditional mean zero on every positive-probability cell:",
+              "Restricting the outer sum to the index set $\\{j : p_j > 0\\}$ gives"
+            ],
+            "B": [
+              "On each batch cell $G_j$, the random variable $M$ takes the constant value $\\mu_j$",
+              "Combining both cases, every cell $G_j$ contributes zero to the sum:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the author's preference for explained, displayed derivations and a focused proof. A offers more explicit finite-sum algebra, while B's case structure gives comparable teaching support without concealing a nontrivial step.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the probability space is finite, all expectations are finite sums, and linearity of expectation yields",
+              "This probability is zero if and only if $\\mu_j = c$ whenever $p_j > 0$"
+            ],
+            "B": [
+              "Because $M = \\mu_j$ is constant on $G_j$, the residual $X - M$ has conditional mean zero on $G_j$:",
+              "Multiplying by $p_j$ gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both provide correct and sufficiently explained conditional-mean proofs: null cells contribute zero, the constant factor leaves the inner sum, residual means vanish, and nonnegative terms yield precisely almost-sure equality. A expands more algebra, but B explicitly supplies the same necessary links.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells.",
+              "the repaired proof should show where that observation is used."
+            ],
+            "A": [
+              "&= \\sum_{j : p_j > 0} p_j (\\mu_j - c) E[X - M \\mid G_j]",
+              "Cells with $p_j = 0$ therefore contribute zero to the sum regardless of the value assigned to $\\mu_j$."
+            ],
+            "B": [
+              "E[X - M \\mid G_j] = E[X \\mid G_j] - \\mu_j = \\mu_j - \\mu_j = 0.",
+              "Multiplying by $p_j$ gives"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither contains a material error. Both satisfy the decisive priority of a complete conditional-mean repair with displayed reasoning, explicit null-cell handling, and exact equality. A's fuller algebra and B's case-based explanation are comparably useful alternatives for this teaching note.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Substituting $E[(X - M)(M - c)] = 0$ into the expanded square yields",
+              "This probability is zero if and only if $\\mu_j = c$ whenever $p_j > 0$"
+            ],
+            "B": [
+              "Combining both cases, every cell $G_j$ contributes zero to the sum:",
+              "Thus, equality holds if and only if $P(M = c) = 1$."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "tie",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d4f91923056213786940260cbd5e9ef3dbc1728a94b94d2fa1cac977dcd65277",
+    "prompt_sha256": "77d979b1dc1848b26adf8ada4e343daafb7cb2e01107d968abe28a29b191575f",
+    "raw_sha256": "7ed5ab3efa938cc6c7950bf12e7717e2f28193a5a5cd23b8421d6ae01e29a689",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a repaired proof of a squared-error identity and its exact equality condition.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The core proof is valid, but the added laboratory example incorrectly infers correlation between absolute residuals and M from variation in batch variances. Different batches can even have the same mean, making M constant. This adds a misleading statistical lesson without invalidating the identity.",
+          "quotes": {
+            "source": [
+              "using only the given finite-space hypotheses.",
+              "conditional mean zero does not imply independence."
+            ],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the finite-space assumptions, cell means, arbitrary real c, identity, and almost-sure equality condition. Its weighted residual calculation implements the conditional-mean method and handles null cells without division.",
+          "quotes": {
+            "source": [
+              "Set mu_j = 0 when p_j = 0.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [],
+            "B": [
+              "Set $\\mu_j = 0$ when $p_j = 0$.",
+              "which is the condition that $M = c$ with probability one."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the claim and supply a valid repair. B stays within the supported argument; A adds an unjustified correlation claim and laboratory generalizations beyond the requested proof.",
+          "quotes": {
+            "source": [
+              "replace that step using only the given finite-space hypotheses."
+            ],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": [
+              "the definition of $\\mu_j$ gives $\\sum_{\\omega \\in G_j} P(\\{\\omega\\})X(\\omega) = p_j \\mu_j$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the calculation in direct, readable mathematical prose. A's repeated instructional labels and inflated descriptions make an elementary argument feel more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Step 3: Derivation of the Minimizing Bound and Equality Condition",
+              "Taking mathematical expectations of both sides using linearity:"
+            ],
+            "B": [
+              "Taking expectations of both sides yields",
+              "Because $(M - c)^2 \\ge 0$, its expectation is nonnegative:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B identifies the cross term as the obstacle immediately after expansion, then explains constancy, cancellation, and equality in order. A interrupts that route with a substantial discussion of the draft and ends with additional applications outside the repair.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Pedagogical Remark: The Independence Flaw in the Draft Proof",
+              "### 4. Summary for Laboratory Applications"
+            ],
+            "B": [
+              "The identity follows if the cross term $\\mathbb{E}[(X - M)(M - c)]$ is zero.",
+              "On each cell $G_j$, the variable $M(\\omega)$ is the constant $\\mu_j$"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B matches the author's preference for an integrated repair with reasons beside the operations. A's extended warning, revision framing, and appended applications add packaging without improving the requested derivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Caution for Students:** Conditional mean zero does **not** imply statistical independence.",
+              "### 3. Repaired and Complete Proof"
+            ],
+            "B": [
+              "To evaluate this cross term without assuming independence, group the sum defining the expectation over the partition cells"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both core derivations correctly factor the cellwise constant, prove weighted residual cancellation, handle null cells, and derive the exact equality condition. B is mathematically preferable because A's additional purported counterexample makes a false correlation inference.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells."
+            ],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence",
+              "The cell contributes zero regardless of the numerical convention assigned to $\\mu_j$."
+            ],
+            "B": [
+              "&= p_j \\mu_j - \\mu_j p_j",
+              "Every term in the sum over $G_j$ is zero, so the sum vanishes."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, whereas A adds a misleading statistical claim despite a correct central proof. B also better fulfills the decisive writing priority: it makes the cross-term obstacle and its cellwise resolution readable without surrounding the repair with draft commentary and extra applications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In that case, $|X - M|$ correlates with $M$, disproving independence"
+            ],
+            "B": [
+              "In both cases the inner sum is zero, so each cell contributes zero:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "229e384f5183e930a3fd36d39890e45d8f9c66867f6221ed4b98bfc08eb9d314",
+    "prompt_sha256": "77d979b1dc1848b26adf8ada4e343daafb7cb2e01107d968abe28a29b191575f",
+    "raw_sha256": "eb2dba6e4952eb51ec73258d7aaa056e177216509769be1f3c073e170eea5c23",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a repaired finite-space proof, including the cross-term calculation and almost-sure equality case.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the assumptions, zero-cell convention, arbitrary real constant, identity, and exact almost-sure equality condition. All conditioning and division are restricted to positive-probability cells.",
+          "quotes": {
+            "source": [
+              "Set mu_j = 0 when p_j = 0.",
+              "Then for every real constant c,"
+            ],
+            "A": [
+              "and set $\\mu_j = 0$ when $p_j = 0$.",
+              "Then for every real constant $c$,"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the claim and required method. Null cells contribute zero, positive cells give conditional residual mean zero, and equality is correctly required only almost surely.",
+          "quotes": {
+            "source": [
+              "Keep the conditional-mean method and account for zero-probability cells.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [],
+            "B": [
+              "Multiplying by $p_j$ gives",
+              "Thus, equality holds if and only if $P(M = c) = 1$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full claim, use conditional means rather than independence, and correctly exclude null cells from restrictions on the equality case. Neither adds an unsupported substantive claim.",
+          "quotes": {
+            "source": [
+              "Do not add an independence assumption.",
+              "with equality exactly when M=c with probability one."
+            ],
+            "A": [
+              "so equality holds in $E[(X - c)^2] \\ge E[(X - M)^2]$ exactly when $M = c$ with probability one."
+            ],
+            "B": [
+              "Thus, equality holds if and only if $P(M = c) = 1$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable teaching prose and explain operations in familiar mathematical language. A's continuous paragraphs and B's two-case list are both suitable for this argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate the cross term $E[(X - M)(M - c)]$, break the expectation across the partition"
+            ],
+            "B": [
+              "We evaluate the inner sum for each cell $G_j$ by considering two cases"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from expansion to the cross-term obstacle, cellwise cancellation, and the equality condition. A handles null cells before introducing conditional expectations; B factors first and then separates the cases. Both orders explain why the steps belong.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Cells with $p_j = 0$ therefore contribute zero to the sum regardless of the value assigned to $\\mu_j$.",
+              "On each cell $G_j$ with $p_j > 0$, the conditional mean of $X$ given $G_j$ is"
+            ],
+            "B": [
+              "so $M(\\omega) - c = \\mu_j - c$ factors out of the inner sum:",
+              "We evaluate the inner sum for each cell $G_j$ by considering two cases"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the explicit preference for laying out intermediate calculations in displays. It expands the conditional residual calculation and displays the probability bridge to almost-sure equality; B explains these correctly but puts more of the final reasoning inline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\mu_j - \\mu_j \\frac{p_j}{p_j}",
+              "P(M \\ne c) = \\sum_{j : \\mu_j \\ne c} p_j"
+            ],
+            "B": [
+              "E[X - M \\mid G_j] = E[X \\mid G_j] - \\mu_j = \\mu_j - \\mu_j = 0.",
+              "Because each term $P(\\{\\omega\\})(M(\\omega) - c)^2$ is nonnegative"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both proofs are correct and sufficiently explain the repair: constancy permits factoring, conditional residual means give zero weighted sums, null cells vanish, and nonnegativity yields the exact equality case. A supplies additional intermediate algebra, but B leaves no essential argument unjustified.",
+          "quotes": {
+            "source": [
+              "the repaired proof should show where that observation is used."
+            ],
+            "A": [
+              "&= \\sum_{j : p_j > 0} p_j (\\mu_j - c) E[X - M \\mid G_j]",
+              "Cells with $p_j = 0$ therefore contribute zero to the sum regardless of the value assigned to $\\mu_j$."
+            ],
+            "B": [
+              "\\sum_{\\omega \\in G_j} P(\\{\\omega\\})\\bigl(X(\\omega) - \\mu_j\\bigr) = p_j E[X - M \\mid G_j] = 0.",
+              "Every summand is zero"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both deliver a complete repair. A is a modestly better fit for this user's explicit exposition preference: its displayed conditional-mean algebra and null-event probability calculation make the intermediate reasoning easier to inspect, while preserving a connected proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "P(M \\ne c) = \\sum_{j : \\mu_j \\ne c} p_j",
+              "This probability is zero if and only if $\\mu_j = c$ whenever $p_j > 0$"
+            ],
+            "B": [
+              "the sum $E[(M - c)^2]$ equals zero if and only if $M(\\omega) = c$ for every $\\omega \\in \\Omega$ with $P(\\{\\omega\\}) > 0$"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d4f91923056213786940260cbd5e9ef3dbc1728a94b94d2fa1cac977dcd65277",
+    "prompt_sha256": "77d979b1dc1848b26adf8ada4e343daafb7cb2e01107d968abe28a29b191575f",
+    "raw_sha256": "eb2dba6e4952eb51ec73258d7aaa056e177216509769be1f3c073e170eea5c23",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an explained double-counting proof, including the gap correspondence and algebraic simplification.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the labeled cyclic setting, parameter range, empty case, counting formula, and admissible boundary. The reconstruction and factorial calculations support the conclusion.",
+          "quotes": {
+            "source": [
+              "At k=n/2 for even n, every gap is one, which is allowed."
+            ],
+            "A": [
+              "namely $(1, 1, \\dots, 1)$, where every gap has size $1$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's assumptions, formula, empty case, and boundary cases. Both counts and the divisions are justified. In context, the rotation discussion explains counting labeled subsets without quotienting.",
+          "quotes": {
+            "source": [
+              "For k=1 this means all the other plots before returning to the start."
+            ],
+            "A": [],
+            "B": [
+              "When $k = 1$, the single gap $g_1$ counts all $n - 1$ unselected plots encountered when moving clockwise from $s_1$ around the circle back to $s_1$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain all substantive source claims and expand the required explanations without changing the count or its scope.",
+          "quotes": {
+            "source": [
+              "There are k A(n,k) such pairs."
+            ],
+            "A": [
+              "Each valid selection $S$ therefore generates exactly $k$ distinct marked selections $(S, s_1)$"
+            ],
+            "B": [
+              "Every valid selection $S$ therefore belongs to $k$ pairs in $\\mathcal{M}$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the same objects in connected sentences. A's repeated instructional labels and nested lists interrupt otherwise readable explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "* **What is being counted:** We are counting $0$-element subsets of the $n$ circular plots that contain no pair of adjacent plots."
+            ],
+            "B": [
+              "First consider the empty selection $k = 0$. There is $1$ way to select no plots"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B motivates marking, establishes the correspondence, and then counts its gap tuples. A also organizes around two counts, but counts the tuples before verifying reconstruction and repeatedly revisits the justification for division.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "3. **Count the valid gap tuples $(g_1, g_2, \\dots, g_k)$:**",
+              "4. **Verify the one-to-one correspondence (bijection):**"
+            ],
+            "B": [
+              "Hence marked selections $(S, s_1)$ are in bijection with pairs consisting of a starting label $s_1$ and an ordered $k$-tuple of positive integers $(g_1, \\dots, g_k)$ summing to $n - k$.",
+              "To count the ordered $k$-tuples of positive integers"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for explaining a construction's purpose through connected technical prose. A supplies useful detail but surrounds it with repeated bookkeeping and more instructional scaffolding than the argument needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "##### Why the Divisions are Legitimate",
+              "* *Combinatorially:* When we formed $\\mathcal{M}$, we did not overcount different selections $S$ at different rates."
+            ],
+            "B": [
+              "Because a circle has no first position, we count marked selections",
+              "We count $\\mathcal{M}$ in two ways."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain the uniform marking count, reconstruction including the single-selection case, separator count, and all-unit-gap boundary. Both lay out valid factorial calculations and justify nonzero divisors; A additionally displays the circuit-length calculation.",
+          "quotes": {
+            "source": [
+              "No new counting formula may be invoked without enough explanation for this argument."
+            ],
+            "A": [
+              "we insert $k - 1$ separator bars into those $n - k - 1$ internal spaces—at most one bar per space, and none outside the ends of the row"
+            ],
+            "B": [
+              "each such tuple arises from a unique choice of $k - 1$ internal spaces"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both provide the requested mathematical explanation. B is preferable because it preserves that explanation while letting the two counts carry the argument in connected prose. A's repeated labels and renewed division discussion add repetition rather than useful reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Stage 3: Dividing and Rewriting the Binomial Coefficient",
+              "##### Why the Divisions are Legitimate"
+            ],
+            "B": [
+              "First, we group the pairs in $\\mathcal{M}$ by the underlying selection $S$.",
+              "Second, we construct a marked selection $(S, s_1)$ from its starting plot $s_1$ and the clockwise gaps"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "412b7a066202dc578460cef97445f93ff69b4f60bb1f6df3376789e77ea0a138",
+    "prompt_sha256": "9a30b50b90e2cf12bfc08a422b1c184bf8c1e6a68eb64de5010a81814646a428",
+    "raw_sha256": "affd006df03e8194acc4d28e64396b07f44d7f2177826237d7d6e9752b848949",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a combinatorial proof whose counting correspondence, divisions, and algebra require explanation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the cyclic labeled count, formula, empty selection, and even boundary. It leaves the single-gap convention implicit and asserts reconstruction without demonstrating it; these are exposition shortcomings rather than a changed count or invalid argument.",
+          "quotes": {
+            "source": [
+              "For k=1 this means all the other plots before returning to the start."
+            ],
+            "A": [
+              "with $v_{k+1} = v_1 = s$",
+              "Each choice of starting plot $s$ and gap sequence $(g_1, \\dots, g_k)$ uniquely determines a marked selection $(S, s)$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the assumptions, formula, empty case, and maximum-size selections. Like A, it leaves the single-selection gap and reconstruction underexplained, but the clockwise convention supports the intended count and the algebra is valid.",
+          "quotes": {
+            "source": [
+              "For k=1 this means all the other plots before returning to the start."
+            ],
+            "A": [],
+            "B": [
+              "with indices wrapping around so that $p_{k+1} = p_1$",
+              "conversely every marked selection uniquely produces a start plot and a gap tuple"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's substantive mathematical content and handle zero separately. Both lose its explicit single-selection explanation. B's additional alternating-selection calculation follows from the source and does not broaden the result.",
+          "quotes": {
+            "source": [
+              "At k=n/2 for even n, every gap is one, which is allowed."
+            ],
+            "A": [
+              "this corresponds to selecting alternating plots and is valid."
+            ],
+            "B": [
+              "forces $g_1 = g_2 = \\dots = g_m = 1$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's direct prose and limited list make the argument readable. B repeatedly restates operations through headings and bulky terminology, including a redundant description of construction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Second, we construct the pairs directly by choosing the starting plot and the spacing between subsequent selections:"
+            ],
+            "B": [
+              "Now we construct the pairs $(S, p) \\in \\mathcal{M}$ constructively from scratch:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A keeps the boundary case and rotation explanation beside the relevant gap count. B postpones these qualifications to discussion notes after the proof, fragmenting the reader's understanding of what the count includes.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the plots have distinct labels, there is no rotational symmetry to divide out.",
+              "(When $n$ is even and $k = n/2$"
+            ],
+            "B": [
+              "### Enrichment Notes & Discussion",
+              "1. **Why is there no quotient for rotation?**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the author's preference for connected explanation and established mathematical objects without unnecessary terminology. Worksheet headings are appropriate, but B's fiber terminology and elaborate division commentary do not improve the explanation for this task.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Every valid selection therefore appears in exactly $k$ pairs"
+            ],
+            "B": [
+              "#### 3. Method 1: Counting by Selections (Fiber Count)",
+              "groups them into disjoint, equal-sized equivalence classes of size $k$, without fractional remainders or overcounting."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly explain the marking multiplicity, separators, and divisions, with displayed factorial steps. Both merely assert the inverse correspondence and omit the source's explicit k=1 convention, so neither fully supplies the requested explanation at that point.",
+          "quotes": {
+            "source": [
+              "For k=1 this means all the other plots before returning to the start.",
+              "A start and tuple uniquely give a marked selection, and conversely."
+            ],
+            "A": [
+              "Each choice of starting plot $s$ and gap sequence $(g_1, \\dots, g_k)$ uniquely determines a marked selection $(S, s)$"
+            ],
+            "B": [
+              "Because the choice of start plot $p$ ($n$ possibilities) and the choice of clockwise gaps $\\binom{n - k - 1}{k - 1}$ uniquely determine the marked selection $(S, p)$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither changes the mathematical conclusion, and both share an explanatory gap in reconstruction. A would better serve this user because its two-count argument keeps qualifications near the claims and lays out the algebra without B's repeated scaffolding and deferred discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Equating the two counts of pairs yields",
+              "The second line uses $k \\cdot (k-1)! = k!$."
+            ],
+            "B": [
+              "#### 5. Equating the Counts and Justifying Division",
+              "##### Why division by $k$ is legitimate:",
+              "### Enrichment Notes & Discussion"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3983536cd1ce36b87c6e52baf0ecbb7587370d5366bde8184e84e0a781102d02",
+    "prompt_sha256": "9a30b50b90e2cf12bfc08a422b1c184bf8c1e6a68eb64de5010a81814646a428",
+    "raw_sha256": "affd006df03e8194acc4d28e64396b07f44d7f2177826237d7d6e9752b848949",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded combinatorial double-counting proof with justified divisions and algebra.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the labeled cyclic problem, parameter range, formula, empty case, and admissible unit gaps. The additional explanations introduce no material mathematical change.",
+          "quotes": {
+            "source": [
+              "At k=n/2 for even n, every gap is one, which is allowed."
+            ],
+            "A": [
+              "forces $g_1 = g_2 = \\dots = g_m = 1$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's assumptions, cyclic exclusion, counting identity, and conclusion. It handles zero separately and retains the upper boundary case.",
+          "quotes": {
+            "source": [
+              "If k=0 there is one empty selection, and the formula gives one."
+            ],
+            "A": [],
+            "B": [
+              "If $k = 0$, we select zero plots.",
+              "which forces $g_i = 1$ for every gap"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the same counting problem and proof strategy, explain the positive-composition count, and justify removing the mark. Neither explicitly repeats the source's single-selection gap convention, but both gap definitions accommodate it.",
+          "quotes": {
+            "source": [
+              "For k=1 this means all the other plots before returning to the start.",
+              "There is no rotation quotient because plots have distinct fixed labels."
+            ],
+            "A": [
+              "with indices wrapping around so that $p_{k+1} = p_1$",
+              "We are counting distinct subsets of fixed positions, not unlabelled rotational equivalence classes (necklaces)."
+            ],
+            "B": [
+              "with $v_{k+1} = v_1 = s$",
+              "Because the plots have distinct labels, there is no rotational symmetry to divide out."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is understandable but repeatedly announces routine operations and uses awkward phrasing. B explains the same operations in more idiomatic, connected sentences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Now we construct the pairs $(S, p) \\in \\mathcal{M}$ constructively from scratch:",
+              "Why division by $k$ is legitimate:"
+            ],
+            "B": [
+              "Second, we construct the pairs directly by choosing the starting plot and the spacing between subsequent selections:",
+              "The second line uses $k \\cdot (k-1)! = k!$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B keeps the two counts and their comparison together, placing the alternating boundary case beside the gap constraints. A's many separate sections and appended discussion interrupt that explanatory sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 3. Method 1: Counting by Selections (Fiber Count)",
+              "### Enrichment Notes & Discussion"
+            ],
+            "B": [
+              "First, we group the pairs by the selection $S$.",
+              "Equating the two counts of pairs yields"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the author's preference for connected technical explanation without repeated defensive commentary. A's explanations are useful, but its repeated division checks and formal subsection labels overpackage this worksheet proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 5. Equating the Counts and Justifying Division",
+              "without fractional remainders or overcounting."
+            ],
+            "B": [
+              "Every valid selection therefore appears in exactly $k$ pairs, yielding a total of",
+              "The third line multiplies and divides by $n - k$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly explain the uniform multiplicity, separator count, boundary case, and factorial simplification with displayed calculations. Both assert the start-and-gap bijection rather than explicitly walking through its inverse, and neither separately explains the single-selection convention.",
+          "quotes": {
+            "source": [
+              "A start and tuple uniquely give a marked selection, and conversely.",
+              "The last equality follows by expanding the factorials."
+            ],
+            "A": [
+              "each selection $S$ generates exactly $k$ distinct pairs",
+              "and conversely every marked selection uniquely produces a start plot and a gap tuple"
+            ],
+            "B": [
+              "Choosing $k - 1$ of these spaces to place separators",
+              "Each choice of starting plot $s$ and gap sequence $(g_1, \\dots, g_k)$ uniquely determines a marked selection $(S, s)$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. A supplies a correct, detailed worksheet proof, but its repeated checks and appended explanations fragment the argument. B would better serve this author's priority of readable reasoning in order: it develops the two counts continuously and explains the displayed algebra without excessive scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 6. Algebraic Transformation to the Target Formula",
+              "### Enrichment Notes & Discussion"
+            ],
+            "B": [
+              "We count in two ways the set of pairs $(S, s)$",
+              "To express this in the claimed form, expand the binomial coefficient into factorials:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7371152c0768ebbfded6e5af7ef1bbc25b4a144e4e497807efa2399a6e35be11",
+    "prompt_sha256": "1f907ab1352419853e629079edb8319374e774c166244a06b9f95724c250daad",
+    "raw_sha256": "a5a8a61095d998f53b06d7d0a5edfd204686a226c8c61acb10b353874d339b66",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a combinatorial proof whose counting correspondence, divisions, and algebra require explanation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the source's assumptions and conclusion, explicitly handles the single-selection convention and empty case, and retains the all-unit-gap boundary. Its rotation discussion reasonably explains why labeled subsets are not identified.",
+          "quotes": {
+            "source": [
+              "For k=1 this means all the other plots before returning to the start.",
+              "At k=n/2 for even n, every gap is one, which is allowed."
+            ],
+            "A": [
+              "When $k = 1$, the single gap $g_1$ counts all $n - 1$ unselected plots",
+              "tuple $(1, 1, \\dots, 1)$ in which every gap is $1$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the counting problem, hypotheses, and formula with all required cases. The reconstruction's closing sentence abbreviates the final step back to the start, but its displayed step total makes the intended construction clear.",
+          "quotes": {
+            "source": [
+              "A start and tuple uniquely give a marked selection, and conversely."
+            ],
+            "A": [],
+            "B": [
+              "any tuple $(g_1, \\dots, g_k)$ of positive integers summing to $n - k$ reconstructs a unique marked selection",
+              "skipping $g_k$ unselected plots clockwise after $s_k$ lands back on $s_1$ after one exact revolution around the circle."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully expand the required proof, including the empty selection, labeled counting, single-selection gap, positive compositions, and maximal boundary case. Neither changes the result or its scope.",
+          "quotes": {
+            "source": [
+              "Count a valid selection together with one of its selected plots marked as a start.",
+              "Such ordered tuples are counted by binom(n-k-1,k-1): place k-1 separators in the n-k-1 internal spaces of a row of n-k objects."
+            ],
+            "A": [
+              "Every valid selection $S$ therefore belongs to $k$ pairs",
+              "each such tuple arises from a unique choice of $k - 1$ internal spaces."
+            ],
+            "B": [
+              "Each valid selection $S$ therefore generates exactly $k$ distinct marked selections",
+              "there are $(n - k) - 1 = n - k - 1$ internal spaces."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's paragraphs are sometimes long but read as a sustained explanation. B's repeated instructional labels and nested lists make straightforward reasoning cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Second, we construct a marked selection $(S, s_1)$ from its starting plot $s_1$ and the clockwise gaps",
+              "Reading the numbers of markers in the $k$ blocks from left to right"
+            ],
+            "B": [
+              "*What is being counted:* The label of the marked starting plot",
+              "*Algebraically:* Because we handled $k = 0$ separately in Stage 1"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A motivates the mark, derives the gap constraints, establishes reconstruction, and then counts the tuples. B has a sound overall sequence, but its preliminary denominator check and repeated sublabels distract from the two-count argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because a circle has no first position, we count marked selections",
+              "Conversely, given any starting label $s_1$",
+              "To count the ordered $k$-tuples"
+            ],
+            "B": [
+              "Also note that because $n \\ge 3$",
+              "#### Stage 3: Dividing and Rewriting the Binomial Coefficient"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A introduces the auxiliary object with its purpose and preserves substantive explanation in conversational prose. B supplies the requested detail but repeatedly packages it as procedural checkpoints, contrary to the author's preference against rhetorical repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because a circle has no first position, we count marked selections",
+              "Hence marked selections $(S, s_1)$ are in bijection"
+            ],
+            "B": [
+              "**What is being counted:**",
+              "##### Why the Divisions are Legitimate",
+              "Notice again that there is no division by $n$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both fully explain the two counts, the inverse construction including the single-selection case, separator positions, legitimate divisions, and factorial identities. B displays the closure calculation separately; A also supplies the total-length argument and a complete displayed simplification.",
+          "quotes": {
+            "source": [
+              "Explain what is being counted at each stage and why the division is legitimate.",
+              "No new counting formula may be invoked without enough explanation for this argument."
+            ],
+            "A": [
+              "Because $k + (g_1 + \\dots + g_k) = n$",
+              "Expanding the binomial coefficient into factorials and multiplying the numerator and denominator by $n - k > 0$ gives"
+            ],
+            "B": [
+              "Because the total number of clockwise steps around the circle is",
+              "Hence the map $(S, s_1) \\mapsto S$ is an exact $k$-to-$1$ correspondence"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both provide the requested mathematical detail. A better meets the decisive preference for motivated, connected exposition: its explanation of why marking is needed leads directly into the two counts and reconstruction. B's repeated counting labels and division commentary add substantial scaffolding without a corresponding explanatory gain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because a circle has no first position, we count marked selections",
+              "We count $\\mathcal{M}$ in two ways."
+            ],
+            "B": [
+              "#### Stage 2: Double-Counting Marked Selections",
+              "*What is being counted:* Ordered $k$-tuples of positive integers",
+              "##### Why the Divisions are Legitimate"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "64121a7e1e3a2a1cbe561bbb3d80d66e82df810c5b453919477b018fab00678b",
+    "prompt_sha256": "1f907ab1352419853e629079edb8319374e774c166244a06b9f95724c250daad",
+    "raw_sha256": "a5a8a61095d998f53b06d7d0a5edfd204686a226c8c61acb10b353874d339b66",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-16",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requires rewriting a mathematical proof, including the decomposition, hypothesis use, attainment, and uniqueness.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The theorem and derivation preserve the real symmetric idempotent matrix, arbitrary x, range-defined S, squared Euclidean distance, exact identity, and unique minimizer. The boundary discussion includes both zero and identity matrices without imposing rank or invertibility requirements.",
+          "quotes": {
+            "source": [
+              "No invertibility of P has been used",
+              "When P=0, S consists only of zero and the identity still holds."
+            ],
+            "A": [
+              "The proof never requires $P^{-1}$ to exist",
+              "the only element of $S$ is $y = 0$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The response preserves all hypotheses, quantifiers, the exact identity, and the unique minimizer. It explicitly covers the zero-dimensional case and retains the limitation to this fixed S.",
+          "quotes": {
+            "source": [
+              "the conclusion concerns the squared distance to this fixed S, not every possible layout constraint."
+            ],
+            "A": [],
+            "B": [
+              "The conclusion applies to the squared Euclidean distance $\\|x - y\\|^2$ to this fixed set $S$, not to every possible layout constraint."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the complete mathematical claim and its scope. A adds extensive application framing and boundary commentary, but neither changes the optimization domain, metric, hypotheses, or conclusion.",
+          "quotes": {
+            "source": [
+              "For every x in R^d, the unique y in S minimizing ||x-y||^2 is Px."
+            ],
+            "A": [
+              "The vector $Px$ belongs to $S$ and is the unique element $y \\in S$ that minimizes $\\|x - y\\|^2$."
+            ],
+            "B": [
+              "For every $x \\in \\mathbb{R}^d$, the unique $y \\in S$ minimizing $\\|x - y\\|^2$ is $Px$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B gives readable explanations alongside the calculations without repeatedly announcing their instructional roles. A's nested labels, table, and annotations for elementary operations make the document more cumbersome for the specified audience.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before stepping through the proof, note what each assumption contributes—and what is *not* assumed:",
+              "\\text{(by definition of } P^2\\text{)}"
+            ],
+            "B": [
+              "First, use the idempotence hypothesis $P^2 = P$ to evaluate $P$ on $Px$, on $y$, and on the residual $x - Px$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves directly from the minimization claim through invariance, residual annihilation, orthogonality, expansion, and uniqueness. A follows the same sound proof route, but previews it in a substantial hypothesis table and later repeats scope information, interrupting that progression.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## Role of Each Hypothesis",
+              "## Scope and Boundary Cases for Layout Constraints"
+            ],
+            "B": [
+              "Now split $x - y$ by subtracting and adding $Px$:",
+              "In this decomposition, the first term $\\|x - Px\\|^2$ does not depend on $y$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the preference for connected technical prose that preserves useful explanation while removing repetition. A's repeated hypothesis labels, separate reference table, and extensive packaging exceed what is needed to explain this proof to the stated reader.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Step 3: Orthogonality of $x - Px$ and $Px - y$ (Role of $P^T = P$ and $P^2 = P$)"
+            ],
+            "B": [
+              "The second term $\\|Px - y\\|^2 = (Px - y)^T(Px - y)$ is a sum of squares of real entries"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly establish range invariance and residual annihilation, identify the symmetry substitution, expand both cross terms, and use the squared norm's zero condition for uniqueness. Both provide sufficient displayed calculations and cover P=0 and P=I; A's additional elementary annotations do not supply an otherwise missing argument.",
+          "quotes": {
+            "source": [
+              "Make the role of each hypothesis and each equality clear to a reader familiar with matrix multiplication and Euclidean norms."
+            ],
+            "A": [
+              "\\text{(using the symmetry hypothesis } P = P^T\\text{)}",
+              "\\|v\\|^2 = v^T v = \\sum_{i=1}^d v_i^2 \\ge 0"
+            ],
+            "B": [
+              "\\text{(by symmetry, } P^T = P\\text{)}",
+              "Taking the transpose of the scalar $(x - Px)^T(Px - y) = 0$ also gives $(Px - y)^T(x - Px) = 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material mathematical or scope error. B better serves the decisive priority: a fully explained proof whose calculations lead continuously to the minimization result. Its explanation of the constant term and sum of squares supplies the reason the decomposition matters, while A repeats much of its explanation across a table, annotated steps, and closing sections.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## Role of Each Hypothesis",
+              "### Step 5: Existence and uniqueness of the minimizer $y = Px$"
+            ],
+            "B": [
+              "In this decomposition, the first term $\\|x - Px\\|^2$ does not depend on $y$.",
+              "which forces $Px - y = 0$ and therefore $y = Px$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "952251e6f01de93dbd982887c5261c9a1c275cdb5e6e24ee0d03d1b03639e41c",
+    "prompt_sha256": "a7a5f07119a4d6f17eb615c7cd601bf88c4041a22da5d055f612d6fa995a2954",
+    "raw_sha256": "41ae4d3b579bbbbaf35e7f3ada9aad6590366b1e38a7176683f00feab2c2c8ff",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-16",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is an explanatory rewrite of a linear algebra proof, so correctness and the exposition of its derivation both apply.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the hypotheses, arbitrary displacement, range-defined domain, exact decomposition, and unique minimizer. It neither assumes an inverse nor excludes any rank, and it explicitly addresses the zero and identity cases.",
+          "quotes": {
+            "source": [
+              "Keep the theorem's full scope, including a zero-dimensional permitted subspace."
+            ],
+            "A": [
+              "This identity and uniqueness result require no invertibility or rank assumptions on $P$:",
+              "the permitted subspace $S$ is the zero-dimensional space $\\{0\\}$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B's formal theorem and proof preserve the mathematical claim and all ranks, including zero. Its broad phrase about constraint configurations is qualified by the immediately preceding rank discussion and the defined linear subspace; it does not establish a material claim about arbitrary non-linear constraints.",
+          "quotes": {
+            "source": [
+              "the conclusion concerns the squared distance to this fixed S, not every possible layout constraint."
+            ],
+            "A": [],
+            "B": [
+              "restrict permissible displacements to a linear subspace $S \\subseteq \\mathbb{R}^d$",
+              "The proof makes no assumptions regarding the rank of $P$ and remains valid across the entire spectrum of constraint configurations:"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve symmetry, idempotence, the Euclidean squared norm, the exact identity for every permitted y, and minimization for arbitrary x. A states the fixed-subspace limitation more explicitly; B retains it through its formal definition and hypotheses. B's additional application framing is unnecessary but does not change the formal guarantee.",
+          "quotes": {
+            "source": [
+              "More precisely, for all y in S,",
+              "||x-y||^2 = ||x-Px||^2 + ||Px-y||^2."
+            ],
+            "A": [
+              "For every layout displacement $x \\in \\mathbb{R}^d$ and every permitted displacement $y \\in S$,"
+            ],
+            "B": [
+              "For every proposed displacement $x \\in \\mathbb{R}^d$:",
+              "For all permitted displacements $y \\in S$, the generalized Pythagorean identity holds:"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's explanatory sentences and displayed equations read naturally as mathematical documentation. B repeatedly layers labels and emphatic phrasing onto already clear statements; wording such as 'strictly unique' adds emphasis without precision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Next, we evaluate the action of $P$ on the residual vector $x - Px$. Using idempotence once more,"
+            ],
+            "B": [
+              "#### Justification for each equality:",
+              "the strictly unique minimizer in $S$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces the claim and then develops the required algebra in dependency order, ending with why the identity gives a unique minimum. B's overview helps establish the application goal, but its separate specification, theorem, hypothesis table, proof, and expanded boundary treatment repeatedly revisit the same facts.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We now show that the residual $x - Px$ is orthogonal to $Px - y$.",
+              "For a fixed $x$, the term $\\|x - Px\\|^2$ does not depend on $y$."
+            ],
+            "B": [
+              "## Formal Specification",
+              "## Role of the Hypotheses",
+              "## Step-by-Step Proof"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's preferred displayed derivation and explains the substantive transitions in connected prose. B's repeated scope assurances, elaborate scaffolding, and application slogans make the artifact resemble generic expanded documentation rather than the requested focused proof rewrite.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $Px \\in S$, choosing $y = Px$ achieves the minimum value $\\|x - Px\\|^2$."
+            ],
+            "B": [
+              "remaining robust for singular projection matrices.",
+              "Accessibility Engine Impact"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly derive invariance, annihilation, and orthogonality, explicitly locate symmetry in the transpose calculation, and display the norm expansion. Both use nonnegativity and the zero condition to prove attainment and uniqueness across all ranks. Their use of twice the cross term is a valid standard Euclidean expansion, not a missing hypothesis or invalid step.",
+          "quotes": {
+            "source": [
+              "where the middle equality uses symmetry.",
+              "If any y in S attains that same value, then ||Px-y||^2=0, giving y=Px and uniqueness."
+            ],
+            "A": [
+              "\\text{by symmetry, } P^T = P",
+              "If any other $y \\in S$ achieves that same value, then $\\|Px - y\\|^2 = 0$, forcing $y = Px$."
+            ],
+            "B": [
+              "**(g)** Uses the **symmetry hypothesis** ($P^T = P$).",
+              "By the positive-definiteness of the Euclidean metric, $\\|v\\|^2 = 0 \\iff v = 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are mathematically sound without material errors. A better meets the user's priority of retaining explanation while removing rhetorical repetition: it shows the transpose operation and symmetry where they are used, then connects the decomposition directly to minimization. B supplies that reasoning too, but surrounds it with repeated hypothesis explanations and extensive packaging that the proof does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Substituting $Px - y = P(Px - y)$ into the inner product yields:",
+              "For a fixed $x$, the term $\\|x - Px\\|^2$ does not depend on $y$."
+            ],
+            "B": [
+              "## Role of the Hypotheses",
+              "#### Justification for each equality:",
+              "## Boundary Cases & Domain Scope"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "89fdf07da66ed7ba74b1b4df1e4190deffdf10b5498525b56001d2f2dc29f1f5",
+    "prompt_sha256": "a7a5f07119a4d6f17eb615c7cd601bf88c4041a22da5d055f612d6fa995a2954",
+    "raw_sha256": "41ae4d3b579bbbbaf35e7f3ada9aad6590366b1e38a7176683f00feab2c2c8ff",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-16",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a rewritten proof of the norm decomposition and unique minimizer.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the hypotheses, range definition, arbitrary inputs, exact identity, and unique minimizer. Its additional scope discussion imposes no restriction and includes both boundary cases.",
+          "quotes": {
+            "source": [
+              "When P=0, S consists only of zero and the identity still holds."
+            ],
+            "A": [
+              "For every $x \\in \\mathbb{R}^d$, $Px = 0$ and the only element of $S$ is $y = 0$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the full theorem and proof strategy, including symmetry's role, attainment, uniqueness, both boundary cases, and the limitation to the fixed permitted set.",
+          "quotes": {
+            "source": [
+              "No invertibility of P has been used, and the conclusion concerns the squared distance to this fixed S, not every possible layout constraint."
+            ],
+            "A": [],
+            "B": [
+              "No invertibility assumption on $P$ has been used.",
+              "The conclusion applies to the squared Euclidean distance $\\|x - y\\|^2$ to this fixed set $S$, not to every possible layout constraint."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact decomposition and unique minimizer for every input, without adding rank or invertibility requirements. A's additional contextual explanation does not materially change the theorem.",
+          "quotes": {
+            "source": [
+              "For every x in R^d, the unique y in S minimizing ||x-y||^2 is Px."
+            ],
+            "A": [
+              "The vector $Px$ belongs to $S$ and is the unique element $y \\in S$ that minimizes $\\|x - y\\|^2$."
+            ],
+            "B": [
+              "For every $x \\in \\mathbb{R}^d$, the unique $y \\in S$ minimizing $\\|x - y\\|^2$ is $Px$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the algebra in readable technical prose. A repeatedly annotates routine operations and introduces cumbersome labels, making an otherwise straightforward proof feel mechanical.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the rejected residual $x - Px$ is orthogonal to the permitted deviation $Px - y$",
+              "by definition of } P^2"
+            ],
+            "B": [
+              "Now split $x - y$ by subtracting and adding $Px$:",
+              "In this decomposition, the first term $\\|x - Px\\|^2$ does not depend on $y$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves continuously from the stated minimization goal through invariance, the vanishing cross term, the norm identity, and uniqueness. A introduces the goal well but interrupts that route with a substantial hypothesis table and repeated section breaks.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## Role of Each Hypothesis",
+              "Before stepping through the proof, note what each assumption contributes—and what is *not* assumed:"
+            ],
+            "B": [
+              "First, use the idempotence hypothesis $P^2 = P$",
+              "Next, compute the inner product of $x - Px$ and $Px - y$:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected explanation without rhetorical repetition. It keeps useful mathematical detail while A explains the same hypothesis roles in the table, step headings, calculations, and boundary discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Step 2: $P$ annihilates the residual $x - Px$ (Role of $P^2 = P$)",
+              "### Step 3: Orthogonality of $x - Px$ and $Px - y$ (Role of $P^T = P$ and $P^2 = P$)"
+            ],
+            "B": [
+              "By distributivity of matrix multiplication over subtraction, $P$ fixes $Px - y$ and maps $x - Px$ to the zero vector:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both proofs are correct and sufficiently explicit for the audience. Each derives invariance and residual annihilation, identifies the symmetry substitution, expands both cross terms, and uses nonnegativity and its equality condition to establish attainment and uniqueness.",
+          "quotes": {
+            "source": [
+              "Make the role of each hypothesis and each equality clear to a reader familiar with matrix multiplication and Euclidean norms."
+            ],
+            "A": [
+              "using the symmetry hypothesis } P = P^T",
+              "By positive definiteness of the Euclidean norm"
+            ],
+            "B": [
+              "by symmetry, } P^T = P",
+              "is a sum of squares of real entries"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material mathematical or scope error. B is the more useful completed artifact for this user because it preserves the requested displayed derivation while explaining the route to minimization in connected prose. A's repeated hypothesis explanations and elementary annotations burden that route without supplying a missing argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## Role of Each Hypothesis",
+              "## Scope and Boundary Cases for Layout Constraints"
+            ],
+            "B": [
+              "In this decomposition, the first term $\\|x - Px\\|^2$ does not depend on $y$.",
+              "Since $Px \\in S$ and setting $y = Px$ makes $\\|Px - y\\|^2 = \\|0\\|^2 = 0$"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "952251e6f01de93dbd982887c5261c9a1c275cdb5e6e24ee0d03d1b03639e41c",
+    "prompt_sha256": "a7a5f07119a4d6f17eb615c7cd601bf88c4041a22da5d055f612d6fa995a2954",
+    "raw_sha256": "31f995dc3641e9ad8412f902c7db9986e883a1c23148c0ee02089a602969ba78",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-16",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a rewritten mathematical proof, including the decomposition, minimization, and uniqueness arguments.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all hypotheses, quantifiers, the squared Euclidean objective, the decomposition, and uniqueness. It explicitly retains zero and identity projections and the fixed-subspace scope.",
+          "quotes": {
+            "source": [
+              "When P=0, S consists only of zero and the identity still holds."
+            ],
+            "A": [
+              "When $P = 0$, the permitted subspace $S$ is the zero-dimensional space $\\{0\\}$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The theorem and derivation retain the source's assumptions and conclusions, including rank-zero projections. The added layout examples and terminology enlarge the exposition but do not materially alter the formal guarantee, which remains minimization over the defined range.",
+          "quotes": {
+            "source": [
+              "Let S={Pz:z in R^d}, the set of permitted layout displacements.",
+              "No invertibility of P has been used"
+            ],
+            "A": [],
+            "B": [
+              "$S = \\{ Pz : z \\in \\mathbb{R}^d \\} \\subseteq \\mathbb{R}^d$ is the set of all allowable layout displacement vectors",
+              "The derivation never invokes an inverse $P^{-1}$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the full mathematical result without requiring invertibility or positive rank. A states the fixed-subspace limitation more directly; B still confines its formal theorem to the defined range and verifies both extreme cases.",
+          "quotes": {
+            "source": [
+              "More precisely, for all y in S,",
+              "||x-y||^2 = ||x-Px||^2 + ||Px-y||^2."
+            ],
+            "A": [
+              "This guarantee applies specifically to the linear subspace $S = \\{ Pz : z \\in \\mathbb{R}^d \\}$ defined by $P$, rather than to arbitrary layout constraints."
+            ],
+            "B": [
+              "For all permitted displacements $y \\in S$, the generalized Pythagorean identity holds:"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct sentences that explain the operations. B's inflated labels and expressions such as 'strictly unique' make the documentation less natural, despite its readable mathematical displays.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Next, we evaluate the action of $P$ on the residual vector $x - Px$.",
+              "For a fixed $x$, the term $\\|x - Px\\|^2$ does not depend on $y$."
+            ],
+            "B": [
+              "remains valid across the entire spectrum of constraint configurations",
+              "the strictly unique minimizer in $S$"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A develops the proof in one continuous sequence and closes with the scope and boundary cases. B provides a useful initial minimization goal, but repeats the setup through an overview, specification, theorem, and hypothesis table before reaching the derivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We first verify that $Px \\in S$ and that $P$ fixes every element of $S$.",
+              "We now show that the residual $x - Px$ is orthogonal to $Px - y$."
+            ],
+            "B": [
+              "## Overview & Layout Context",
+              "## Formal Specification",
+              "## Role of the Hypotheses",
+              "## Step-by-Step Proof"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better follows the author's preference for connected technical prose and explanation without repetition. B's table, numbered justifications, repeated scope notes, and extensive boundary taxonomy turn a focused proof into a much larger document without a corresponding explanatory need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because both $Px$ and $y$ belong to $S$, we have $P(Px) = Px$ and $Py = y$.",
+              "Because $Px \\in S$, choosing $y = Px$ achieves the minimum value $\\|x - Px\\|^2$."
+            ],
+            "B": [
+              "#### Justification for each equality:",
+              "## Boundary Cases & Domain Scope",
+              "### 3. Intermediate Dimensions ($1 \\le \\mathrm{rank}(P) < d$)"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly show the projection's action on its range and residual, explain the transpose and symmetry steps, derive the norm identity, and establish existence and uniqueness. Their standard expansion into twice the cross term is appropriate for the stated audience. B's additional annotations do not fill a substantive gap in A.",
+          "quotes": {
+            "source": [
+              "Their recurring directions are to keep the big picture, explain why each construction is needed, and make the reasoning readable in order.",
+              "Make the role of each hypothesis and each equality clear to a reader familiar with matrix multiplication and Euclidean norms."
+            ],
+            "A": [
+              "by the product transpose property, } u^T P = (P^T u)^T",
+              "by symmetry, } P^T = P",
+              "If any other $y \\in S$ achieves that same value, then $\\|Px - y\\|^2 = 0$, forcing $y = Px$."
+            ],
+            "B": [
+              "Transpose identity for matrix-vector products: $u^T P = (P^T u)^T$.",
+              "Uses the **symmetry hypothesis** ($P^T = P$).",
+              "By the positive-definiteness of the Euclidean metric, $\\|v\\|^2 = 0 \\iff v = 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material mathematical error. A better meets the user's actual goal: its displayed calculations expose the required steps, and its final paragraph connects the identity to attainment and uniqueness. B repeats that explanation across several organizational layers, contrary to the author's preference for retaining explanation while removing rhetorical repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For a fixed $x$, the term $\\|x - Px\\|^2$ does not depend on $y$.",
+              "If any other $y \\in S$ achieves that same value, then $\\|Px - y\\|^2 = 0$, forcing $y = Px$."
+            ],
+            "B": [
+              "## Role of the Hypotheses",
+              "#### Justification for each equality:",
+              "## Boundary Cases & Domain Scope"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "89fdf07da66ed7ba74b1b4df1e4190deffdf10b5498525b56001d2f2dc29f1f5",
+    "prompt_sha256": "a7a5f07119a4d6f17eb615c7cd601bf88c4041a22da5d055f612d6fa995a2954",
+    "raw_sha256": "31f995dc3641e9ad8412f902c7db9986e883a1c23148c0ee02089a602969ba78",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
