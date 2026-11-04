@@ -38534,5 +38534,905 @@
     "prompt_sha256": "020c6c43923b952e240252575de769bc7db38ce6dbbcc0986a0bf00da208ed7c",
     "raw_sha256": "2eb7cdd6d394fbc402c0e5a3c6bdd16043d0ce07a40b74fcff8fef99ba8f9760",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a readability edit of a field report, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the track-based activity definition, breeding uncertainty, unobserved northern section, differing survey footprints, unresolved entrance status and chronology, and photographic limits. The added editorial commentary introduces no material factual change.",
+          "quotes": {
+            "source": [
+              "Each had fresh tracks at its entrance on both survey mornings.",
+              "The two maps have different observation footprints.",
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland."
+            ],
+            "A": [
+              "Each had fresh tracks at its entrance on both survey mornings.",
+              "The two maps have different observation footprints.",
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all substantive cautions about activity, breeding, coverage, chronology, the covered entrance, and photographs. In context, maps covering different areas reasonably describes their differing observation footprints; it does not imply zero burrows in the closed section.",
+          "quotes": {
+            "source": [
+              "The two maps have different observation footprints.",
+              "They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ],
+            "A": [],
+            "B": [
+              "The survey made before the storm covered the full dune, so the two maps cover different areas.",
+              "They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the observations and their limits without adding evidence or recommendations. A retains the original coverage explanation more explicitly; B's shorter explanation still establishes why the maps are not directly comparable across the full dune.",
+          "quotes": {
+            "source": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune."
+            ],
+            "A": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune."
+            ],
+            "B": [
+              "The survey made before the storm covered the full dune, so the two maps cover different areas."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both passages use readable, idiomatic field-report prose. B simplifies a few phrases, but neither passage has a substantial sentence-level readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Photographs were taken from the same marked viewpoints where they remained accessible."
+            ],
+            "B": [
+              "Photographs were taken from the same marked viewpoints where they remained accessible."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the coherent movement from observed activity to coverage, the matched-area change, and photographic evidence. Each explains the coverage limitation before discussing the entrance observed on both surveys.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The two maps have different observation footprints.",
+              "Within the area covered on both occasions, one previously recorded entrance was no longer visible."
+            ],
+            "B": [
+              "The survey made before the storm covered the full dune, so the two maps cover different areas.",
+              "Within the area covered on both occasions, one previously recorded entrance was no longer visible."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both retain the report's measured voice and distinct cautions. B better respects the requested artifact form by delivering the passage directly; A adds a lengthy account of minor punctuation and cadence changes that the author did not request.",
+          "quotes": {
+            "source": [
+              "Return the full passage; unchanged prose is acceptable where it is already clear."
+            ],
+            "A": [
+              "Here is the reviewed and edited field-report passage, followed by the specific justifications for the minor changes made.",
+              "### Summary of Edits and Justifications"
+            ],
+            "B": [
+              "We found three active burrows along the accessible section of the dune after the storm."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both preserve the separate scientific cautions. B is the more useful completed artifact for this bounded editing request: it supplies the full report with sufficient explanation, while A surrounds an equally faithful passage with an unnecessary editorial audit.",
+          "quotes": {
+            "source": [
+              "Check this field-report passage for readability and make only edits you can justify from the text.",
+              "Return the full passage; unchanged prose is acceptable where it is already clear."
+            ],
+            "A": [
+              "### Summary of Edits and Justifications",
+              "All team cautions, negative findings, mapping distinctions, and photo limitations were preserved in their exact substance without adding outside evidence or management recommendations."
+            ],
+            "B": [
+              "The survey made before the storm covered the full dune, so the two maps cover different areas.",
+              "The photographs support the descriptions of visible surface conditions."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5bdc151a1413e03a93a25cf9f780d23bb4fb6bf73834527c24ca9c630c74105a",
+    "prompt_sha256": "9faf57df9d0183bbc6ba46b4a1f812a5ea7c8e33aa60dac8ced132fe82c19b67",
+    "raw_sha256": "93f9100adceaa4070d2e2c745c6f5e1555484df829514664fb39b92cb7bce014",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a readability edit of a field report, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Returns the source unchanged, preserving the activity definition, breeding uncertainty, coverage distinctions, unresolved entrance status, chronology, and photographic limitations. Unchanged prose is expressly permitted.",
+          "quotes": {
+            "source": [
+              "Return the full passage; unchanged prose is acceptable where it is already clear.",
+              "We use active here to describe that observed sign.",
+              "The two maps have different observation footprints."
+            ],
+            "A": [
+              "We use active here to describe that observed sign.",
+              "The two maps have different observation footprints."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains every substantive observation and caution. Linking the entrance's invisibility to sand covering its mapped location is a reasonable surface-level explanation supported by the source, not a claim of destruction or storm-caused departure; the following sentences retain those uncertainties.",
+          "quotes": {
+            "source": [
+              "one previously recorded entrance was no longer visible. Sand covered its mapped location.",
+              "it does not identify when an animal left or what caused it to leave."
+            ],
+            "A": [],
+            "B": [
+              "one previously recorded entrance was no longer visible because sand covered its mapped location.",
+              "it does not identify when an animal left or what caused it to leave."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "A preserves the source verbatim; B changes sentence connections while retaining the track criterion, breeding limitation, unobserved area, differing footprints, entrance alternatives, chronology, and photographic comparability. Neither changes the report's substantive conclusions.",
+          "quotes": {
+            "source": [
+              "We cannot determine from the surface record whether the burrow was destroyed, remained occupied beneath the deposit, or had been abandoned before the storm."
+            ],
+            "A": [
+              "We cannot determine from the surface record whether the burrow was destroyed, remained occupied beneath the deposit, or had been abandoned before the storm."
+            ],
+            "B": [
+              "We cannot determine from the surface record whether the burrow was destroyed, remained occupied beneath the deposit, or had been abandoned before the storm."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's short sentences are clear and measured. B's joins are also idiomatic and make some connections explicit, but the longer sentences do not deliver a substantial readability improvement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The northern section was closed because the access path had collapsed. It was not surveyed from another route."
+            ],
+            "B": [
+              "The northern section was closed because the access path had collapsed, and it was not surveyed from another route."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the source's effective order and explain why coverage differences matter before discussing the matched-area observation. B's semicolon changes rhythm without adding or removing a reasoning step.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune. The two maps have different observation footprints."
+            ],
+            "B": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune; the two maps have different observation footprints."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A respects the explicit acceptance of already-clear prose. B makes modest, text-supported adjustments while retaining the author's explanatory caution and full passage format. Neither replaces useful explanation with a generic disclaimer.",
+          "quotes": {
+            "source": [
+              "Changing good writing merely to demonstrate effort is not a benefit."
+            ],
+            "A": [
+              "The photographs support the descriptions of visible surface conditions. They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ],
+            "B": [
+              "The photographs support the descriptions of visible surface conditions, but they do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both deliver the requested full passage and preserve the distinct cautions that are decisive for this user. A appropriately accepts the existing clear prose; B's restrained sentence joins are defensible but do not create a substantive advantage.",
+          "quotes": {
+            "source": [
+              "Its cautions have been reviewed by the field team and should retain their substance.",
+              "Return the full passage; unchanged prose is acceptable where it is already clear."
+            ],
+            "A": [
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland. Its caption records that change."
+            ],
+            "B": [
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland, as noted in its caption."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8c919d1808ab2f6f8b12e73516d1ef5ca2fabf0c336bd1c8ebc9428da0e9d99a",
+    "prompt_sha256": "9faf57df9d0183bbc6ba46b4a1f812a5ea7c8e33aa60dac8ced132fe82c19b67",
+    "raw_sha256": "93f9100adceaa4070d2e2c745c6f5e1555484df829514664fb39b92cb7bce014",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a readability edit of a field report and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The passage preserves the activity criterion, survey coverage, unresolved entrance status, chronology limits, and photographic qualifications. The added editorial commentary introduces no material factual change.",
+          "quotes": {
+            "source": [
+              "Each had fresh tracks at its entrance on both survey mornings.",
+              "They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ],
+            "A": [
+              "Each had fresh tracks at its entrance on both survey mornings.",
+              "They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "All substantive findings and limitations remain. In context, maps covering different areas reasonably describes the differing survey footprints; it does not erase the closed section's unobserved status.",
+          "quotes": {
+            "source": [
+              "The two maps have different observation footprints.",
+              "The map therefore marks that section as unobserved, rather than showing it with zero burrows."
+            ],
+            "A": [],
+            "B": [
+              "The survey made before the storm covered the full dune, so the two maps cover different areas.",
+              "The map therefore marks that section as unobserved rather than showing zero burrows."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain three burrows defined by observed activity, the unobserved northern section, uncertainty about the covered entrance, and the limits of the photographs. B's shorter coverage explanation preserves the substantive distinction in context.",
+          "quotes": {
+            "source": [
+              "We did not enter the burrows or confirm the presence of young, so the count should not be read as a count of breeding pairs."
+            ],
+            "A": [
+              "We did not enter the burrows or confirm the presence of young, so the count should not be read as a count of breeding pairs."
+            ],
+            "B": [
+              "We did not enter the burrows or confirm the presence of young, so the count should not be read as a count of breeding pairs."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both passages read naturally, but B delivers the report directly. A surrounds comparable prose with an elaborate account of punctuation and sentence-level edits that makes the completed response unnecessarily cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Here is the reviewed and edited field-report passage, followed by the specific justifications for the minor changes made.",
+              "Eliminates choppy sentence cadence for two directly related logistical facts."
+            ],
+            "B": [
+              "We found three active burrows along the accessible section of the dune after the storm.",
+              "Two images therefore provide a direct comparison, while the third post-storm image was taken farther inland."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both passages preserve the useful progression from activity evidence to spatial coverage, the covered entrance, and photographic limits. A explicitly explains the map comparison; B connects the same facts adequately in one sentence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune. The two maps have different observation footprints."
+            ],
+            "B": [
+              "The survey made before the storm covered the full dune, so the two maps cover different areas."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better respects the requested artifact and restrained editing scope while retaining distinct cautions. A's unsolicited edit inventory and closing assurance add editorial packaging without helping the field report's reader.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Summary of Edits and Justifications",
+              "All team cautions, negative findings, mapping distinctions, and photo limitations were preserved in their exact substance without adding outside evidence or management recommendations."
+            ],
+            "B": [
+              "The timing of the surveys places the change between visits; it does not identify when an animal left or what caused it to leave.",
+              "The photographs support the descriptions of visible surface conditions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B is the more usable completed artifact: it returns the full report with its specific cautions intact. A's lengthy justification of minor edits adds work for a user who requested a bounded readability edit, without a compensating improvement to the passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Summary of Edits and Justifications",
+              "Quotation marks around `\"active\"` (Paragraph 1):"
+            ],
+            "B": [
+              "We use 'active' here to describe that observed sign.",
+              "They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5bdc151a1413e03a93a25cf9f780d23bb4fb6bf73834527c24ca9c630c74105a",
+    "prompt_sha256": "9faf57df9d0183bbc6ba46b4a1f812a5ea7c8e33aa60dac8ced132fe82c19b67",
+    "raw_sha256": "3456dcbb891f4b4b8236c7e79a376143dde60614c11cee6e064e781f20ee1275",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a readability edit of a field report and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source passage and preserves all findings, qualifications, and limitations. Leaving clear prose unchanged is expressly permitted.",
+          "quotes": {
+            "source": [
+              "Return the full passage; unchanged prose is acceptable where it is already clear.",
+              "We cannot determine from the surface record whether the burrow was destroyed, remained occupied beneath the deposit, or had been abandoned before the storm."
+            ],
+            "A": [
+              "We cannot determine from the surface record whether the burrow was destroyed, remained occupied beneath the deposit, or had been abandoned before the storm."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the substantive cautions and observation limits. Connecting invisibility to the sand covering the mapped location is supported by the adjacent source statements and does not attribute destruction, abandonment, or departure to the storm.",
+          "quotes": {
+            "source": [
+              "one previously recorded entrance was no longer visible. Sand covered its mapped location.",
+              "it does not identify when an animal left or what caused it to leave."
+            ],
+            "A": [],
+            "B": [
+              "one previously recorded entrance was no longer visible because sand covered its mapped location.",
+              "it does not identify when an animal left or what caused it to leave."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "A preserves the source verbatim; B's punctuation changes and sentence combinations preserve the same evidence, scope, and uncertainty. Neither equates activity with breeding or uses photographs to resolve unobserved conditions.",
+          "quotes": {
+            "source": [
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland. Its caption records that change."
+            ],
+            "A": [
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland. Its caption records that change."
+            ],
+            "B": [
+              "Two images therefore provide a direct view comparison, while the third post-storm image was taken farther inland, as noted in its caption."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's short sentences are clear and idiomatic. B's combinations also read naturally and slightly reduce fragmentation, but neither rhythm creates a substantive readability advantage throughout the passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The northern section was closed because the access path had collapsed. It was not surveyed from another route."
+            ],
+            "B": [
+              "The northern section was closed because the access path had collapsed, and it was not surveyed from another route."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the source's coherent ordering and explain why differing survey coverage matters before discussing the entrance observed on both visits. B joins existing connections without supplying a missing argumentative step.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune. The two maps have different observation footprints."
+            ],
+            "B": [
+              "This distinction matters when comparing the map with the survey made before the storm, which covered the full dune; the two maps have different observation footprints."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A appropriately accepts already-effective prose. B makes modest, defensible adjustments while preserving the explanatory sequence and distinct cautions. Neither imposes generic editorial packaging or compresses the qualifications into a general disclaimer.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The photographs support the descriptions of visible surface conditions. They do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ],
+            "B": [
+              "The photographs support the descriptions of visible surface conditions, but they do not extend the burrow count into the closed section or resolve the status of the covered entrance."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both provide the requested full passage with its reviewed cautions intact. A's restraint and B's modest sentence connections are comparably suitable; the user explicitly permits unchanged prose, so making more edits is not itself a benefit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Within the area covered on both occasions, one previously recorded entrance was no longer visible. Sand covered its mapped location."
+            ],
+            "B": [
+              "Within the area covered on both occasions, one previously recorded entrance was no longer visible because sand covered its mapped location."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8c919d1808ab2f6f8b12e73516d1ef5ca2fabf0c336bd1c8ebc9428da0e9d99a",
+    "prompt_sha256": "9faf57df9d0183bbc6ba46b4a1f812a5ea7c8e33aa60dac8ced132fe82c19b67",
+    "raw_sha256": "3456dcbb891f4b4b8236c7e79a376143dde60614c11cee6e064e781f20ee1275",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a limited clarification of an appliance-service note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the three protected paragraphs verbatim, correctly identifies the components, and retains the repair sequence, findings, and qualifications without adding a diagnosis or guarantee.",
+          "quotes": {
+            "source": [
+              "The cracked item was the old cover; the intact item was the replacement lamp.",
+              "Here the item being fitted was the replacement lamp, and the contacts belonged to the socket."
+            ],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact.",
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the three protected paragraphs verbatim, correctly identifies the components, and retains the repair sequence, findings, and qualifications without adding a diagnosis or guarantee.",
+          "quotes": {
+            "source": [
+              "The cracked item was the old cover; the intact item was the replacement lamp.",
+              "Here the item being fitted was the replacement lamp, and the contacts belonged to the socket."
+            ],
+            "A": [],
+            "B": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact.",
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical. Both integrate the source's explicit referent clarifications, preserve successful lighting and the cover order, and leave all surrounding qualifications intact.",
+          "quotes": {
+            "source": [
+              "It then lit when the door switch was released. The cracked cover was kept off the appliance, and a new cover was ordered."
+            ],
+            "A": [
+              "The replacement lamp then lit when the door switch was released. The cracked cover was kept off the appliance, and a new cover was ordered."
+            ],
+            "B": [
+              "The replacement lamp then lit when the door switch was released. The cracked cover was kept off the appliance, and a new cover was ordered."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both turn the contradictory pronouns and editorial explanations into the same readable service account. Explicit component names make the findings clear without awkward commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ],
+            "B": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the practical sequence from removal and inspection through fitting, testing, and ordering the cover. The temporal transition clearly places socket work before fitting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the narrow scope and plain service-note voice, retaining the already-clear opening sentence while replacing ambiguous references and removing redundant editorial explanation.",
+          "quotes": {
+            "source": [
+              "Changing good writing merely to demonstrate effort is not a benefit."
+            ],
+            "A": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both meet the decisive priority: clarify component references within the second paragraph while preserving the full note and its limited factual claims.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "19cb99b2d437e940870ab57e54751662e67a1873a77ff1f9b9ae69fd1c1cd126",
+    "prompt_sha256": "9b4dbf95f875b04f0eadd5db72cb3030f189de997605d5f60d57bede1665aa79",
+    "raw_sha256": "3c7525ecf6b75c7741f85ec88e716e485c9cedf5d9bcd55ff1fd0020fbd258ca",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a limited clarification of an appliance-service note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the protected paragraphs verbatim and all findings and sequencing. The retained first-sentence 'it' clearly refers to the removed cover; the ambiguous later references are resolved accurately.",
+          "quotes": {
+            "source": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp.",
+              "Here the item being fitted was the replacement lamp, and the contacts belonged to the socket."
+            ],
+            "A": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp.",
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the protected paragraphs verbatim and all findings and sequencing. Repeating 'lamp cover' makes an already-clear reference explicit without changing the facts or exceeding the permitted paragraph.",
+          "quotes": {
+            "source": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp.",
+              "The cracked item was the old cover; the intact item was the replacement lamp."
+            ],
+            "A": [],
+            "B": [
+              "The technician removed the lamp cover and placed the lamp cover beside the replacement lamp.",
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both correctly identify the cracked cover, intact replacement lamp, fitted component, and socket contacts. Both retain the successful test, cover order, and surrounding qualifications. Their sole difference changes no reasonable inference.",
+          "quotes": {
+            "source": [
+              "The cracked item was the old cover; the intact item was the replacement lamp.",
+              "Here the item being fitted was the replacement lamp, and the contacts belonged to the socket."
+            ],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact.",
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact.",
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's first-sentence pronoun has a clear antecedent and reads naturally. B's immediate repetition of 'lamp cover' is slightly cumbersome without providing useful additional clarity. The rest is identical.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed the lamp cover beside the replacement lamp."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both present the same coherent service sequence and integrate the clarifications at the steps where they matter. The extra noun phrase in B does not alter the ordering or transitions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts. The replacement lamp then lit when the door switch was released."
+            ],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts. The replacement lamp then lit when the door switch was released."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the explicit preference to preserve already-effective wording: it retains a clear pronoun while fixing the genuinely ambiguous ones. B remains within scope, but its additional repetition gives the opening a slightly mechanical rhythm.",
+          "quotes": {
+            "source": [
+              "Changing good writing merely to demonstrate effort is not a benefit."
+            ],
+            "A": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed the lamp cover beside the replacement lamp."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both fulfill the factual and formatting requirements. A has a small, concrete advantage under this user's preference for preserving effective prose: it leaves the clear opening reference intact while making every necessary clarification. B adds repetition without improving the reader's understanding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed the lamp cover beside the replacement lamp."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "76c47c4b27e334b7a5008829ebfcf76ee4133525739b6be026858664a3fb92f8",
+    "prompt_sha256": "9b4dbf95f875b04f0eadd5db72cb3030f189de997605d5f60d57bede1665aa79",
+    "raw_sha256": "3c7525ecf6b75c7741f85ec88e716e485c9cedf5d9bcd55ff1fd0020fbd258ca",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
