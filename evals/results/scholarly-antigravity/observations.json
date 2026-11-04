@@ -36078,5 +36078,2461 @@
     "prompt_sha256": "d465703fe239746954d2b67edc9bff66fe15b8b884690c404fba6e23b1abdd95",
     "raw_sha256": "1c8d6d6f623e5a69e71fb980ac9bcd96828f1b6070638db25a0ec27254ab2d36",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a self-contained counting proof explaining consistency and bijectivity.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves labeled binary arrays, arbitrary prescribed parities, both counting cases, and all positive dimensions. Its completion, last-column verification, and inverse-map argument are valid.",
+          "quotes": {
+            "source": [
+              "We count labeled arrays, so permuting rows or columns generally changes the array.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [
+              "where array indices are labeled (distinguishable).",
+              "choice for the empty block."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the hypotheses and both counts. Its indexed array space retains labeled positions, and its separate boundary discussion correctly covers empty blocks and the single-entry case. The shorter bijection argument still establishes both directions.",
+          "quotes": {
+            "source": [
+              "We count labeled arrays, so permuting rows or columns generally changes the array.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [],
+            "B": [
+              "X = (x_{i,j}) \\in \\{0, 1\\}^{r \\times c}",
+              "The $(r-1) \\times (c-1)$ block is empty, representing a single choice of entries."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the theorem and requested construction: incompatible totals give zero arrays, compatible totals give the stated power of two, and every positive dimension is covered. Neither introduces an unsupported mathematical claim.",
+          "quotes": {
+            "source": [
+              "Every freely chosen block therefore has exactly one valid completion."
+            ],
+            "A": [
+              "each valid array corresponds to exactly one block $B \\in \\mathcal{B}$ and is counted exactly once:"
+            ],
+            "B": [
+              "each block extends to exactly one valid array $X \\in \\mathcal{A}$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose, though both surround a short argument with substantial headings and enumeration. B trims some formal repetition; A's extra sentences remain intelligible and useful enough that neither has a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It remains to verify that column $c$ is consistent with the required parity $b_c$."
+            ],
+            "B": [
+              "Only $x_{r,c}$ remains.",
+              "The completed array is therefore valid."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each proceeds coherently from necessity to completion, the outstanding column constraint, bijectivity, and boundary cases. Both explain what remains to be checked before deriving it; neither substantially improves the other's argumentative order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It remains to verify that column $c$ is consistent with the required parity $b_c$.",
+              "We verify that $\\Phi$ and $\\Psi$ are two-sided inverses:"
+            ],
+            "B": [
+              "We must verify that column $c$ also satisfies",
+              "The completion procedure defines an inverse map:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both meet the author's demand for visible calculations and explained completion steps, but both lean toward a segmented textbook presentation rather than connected conversational prose. A's explicit inverse identities and B's somewhat lighter presentation offer comparable benefits.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because these entries are uniquely forced, the border entries of $X$ must coincide exactly with those generated by $\\Psi(\\Phi(X))$."
+            ],
+            "B": [
+              "for every block in $\\{0, 1\\}^{(r-1) \\times (c-1)}$, the entries outside the block are forced uniquely in $\\{0, 1\\}$ by the parity equations."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly count the total sum in two orders, force disjoint border portions and the corner, derive the final column parity, and justify the bijection and boundary cases. A expands the inverse-map verification; B explicitly displays the subtraction identity. Neither skips a necessary inference.",
+          "quotes": {
+            "source": [
+              "Subtracting their contribution modulo two and using equality of the prescribed totals shows that the last column has parity b_c."
+            ],
+            "A": [
+              "Equating the two expressions for $S$ modulo $2$:",
+              "Applying the compatibility hypothesis"
+            ],
+            "B": [
+              "Decomposing the total sum of all entries in the array gives",
+              "reduction modulo 2 yields"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both deliver the requested appendix statement and proof, making consistency checkable and explaining why arrays are counted exactly once. A's more explicit two-sided inverse argument and B's more economical treatment are comparably useful for this user's priorities; their shared oversegmentation does not distinguish them decisively.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We verify that $\\Phi$ and $\\Psi$ are two-sided inverses:",
+              "Because these entries are uniquely forced"
+            ],
+            "B": [
+              "each block extends to exactly one valid array $X \\in \\mathcal{A}$, and restricting any valid array $X$ to that block recovers the initial choice."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "tie",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "11b2e7f325206e5b781dbdba32f37953a73d31a89d8414e8cf2a8bd581efeb02",
+    "prompt_sha256": "49b2e65f884944bf539bcddef5270f33f021bdc4fab2136a0f5f95088d6e24fb",
+    "raw_sha256": "4d5d5ab69cf16c631fa5ea3fa6012b52efea194536beffc18e8df67448799139",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task explicitly requests an edited counting proof with explanations of consistency and exact counting.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains labeled binary arrays, arbitrary binary parity targets, the compatibility condition, both counts, and all positive dimensions. Its construction and mutual-inverse argument are correct, including the single empty-block choice.",
+          "quotes": {
+            "source": [
+              "We count labeled arrays, so permuting rows or columns generally changes the array.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [
+              "so permuting rows or columns generally changes the array.",
+              "$\\mathcal{B}$ consists of a single empty block."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the full theorem and supplies valid completion, consistency, and bijection arguments. Its boundary formulas remain under the compatibility assumption, and it explicitly restores the zero-count alternative at the end.",
+          "quotes": {
+            "source": [
+              "Suppose the parity totals agree.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [],
+            "B": [
+              "Assume henceforth that the prescribed parity totals agree:",
+              "the unique empty block completes to the unique valid array when the parity totals agree, and no valid array exists otherwise."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the hypotheses, zero-count case, compatible count, labeled positions, and degenerate dimensions. Their added explanations unpack the source's proof rather than alter its scope or conclusions.",
+          "quotes": {
+            "source": [
+              "Conversely, restricting any valid array to that block recovers its free choice, and the same parity requirements force its border."
+            ],
+            "A": [
+              "the border entries of $X$ are forced to coincide with those of $\\Phi(B)$"
+            ],
+            "B": [
+              "every border entry of $X$ is uniquely determined by $U = \\Psi(X)$ via the exact rules defining $\\Phi$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A more often connects an operation directly to its purpose in ordinary technical prose. B is readable, but its nested checklists, repeated labels, and restatement of the border formulas in the surjectivity discussion make the explanation more cumbersome. A's long bijection paragraph remains a modest weakness.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Only the bottom-right entry $x_{r,c}$ remains unassigned.",
+              "To see why the procedure counts each valid array"
+            ],
+            "B": [
+              "we check two aspects of consistency:",
+              "No valid array is counted more than once (Injectivity of $\\Phi$):"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A explains disjointness alongside the assignments and then identifies the exact obstacle: choosing the corner leaves no freedom to repair the final column. B follows a valid order but postpones the disjointness explanation to a separate consistency checklist, adding an interruption before the central parity argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These first two steps assign disjoint parts of the border:",
+              "leaving no further freedom to adjust column $c$."
+            ],
+            "B": [
+              "Disjointness of assignments:",
+              "Satisfaction of the last column parity:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the preference for connected explanation and clearly laid-out derivations: it motivates the final-column check and annotates the lines of its displayed calculation. B provides substantive explanation too, but its nested enumeration and repeated congruences make the artifact feel more like an expanded checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Subtracting the first $c-1$ column sums from the total entry sum gives",
+              "where the second line substitutes the row parities"
+            ],
+            "B": [
+              "we check two aspects of consistency:",
+              "Because $X$ satisfies all row and column parity constraints and each entry lies in $\\{0,1\\}$:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are mathematically correct and establish consistency, both directions of the bijection, and every boundary case. A better satisfies the requested exposition by placing the subtraction identity and successive parity substitutions on separate aligned lines, then explaining those transitions. B includes the same reasoning but puts the decisive calculation into one long displayed chain.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "&\\equiv \\sum_{i=1}^r a_i - \\sum_{j=1}^{c-1} b_j \\pmod 2 \\\\\n&\\equiv \\sum_{j=1}^c b_j - \\sum_{j=1}^{c-1} b_j \\pmod 2",
+              "and the third line uses the hypothesis"
+            ],
+            "B": [
+              "\\equiv \\sum_{i=1}^{r} a_i - \\sum_{j=1}^{c-1} b_j \\equiv \\sum_{j=1}^{c} b_j - \\sum_{j=1}^{c-1} b_j = b_c \\pmod{2}."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both fully prove the requested result. A better serves the decisive priority of explaining the construction in order: its corner discussion states why a consistency check is necessary, and its aligned calculation makes that check easy to follow. B's correct but heavily subdivided treatment and long central equation make the reader do more work to follow the same argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "leaving no further freedom to adjust column $c$.",
+              "where the second line substitutes the row parities"
+            ],
+            "B": [
+              "we check two aspects of consistency:",
+              "\\equiv \\sum_{i=1}^{r} a_i - \\sum_{j=1}^{c-1} b_j \\equiv \\sum_{j=1}^{c} b_j - \\sum_{j=1}^{c-1} b_j = b_c \\pmod{2}."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2bd18190b28db8b536333af962722c5f2ae42747cd4283c2a0248516a295cfb4",
+    "prompt_sha256": "49b2e65f884944bf539bcddef5270f33f021bdc4fab2136a0f5f95088d6e24fb",
+    "raw_sha256": "4d5d5ab69cf16c631fa5ea3fa6012b52efea194536beffc18e8df67448799139",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a counting proposition and a proof explaining consistency and bijectivity.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves labeled binary arrays, arbitrary parity targets, the compatibility condition, both counts, and all positive dimensions. The completion and inverse arguments are valid.",
+          "quotes": {
+            "source": [
+              "We count labeled arrays, so permuting rows or columns generally changes the array.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [
+              "where array indices are labeled (distinguishable).",
+              "choice for the empty block."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the hypotheses, compatibility condition, counts, and boundary cases. Indexed arrays retain the labeled interpretation even without explicitly repeating that word.",
+          "quotes": {
+            "source": [
+              "We count labeled arrays, so permuting rows or columns generally changes the array.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [],
+            "B": [
+              "X = (x_{i,j}) \\in \\{0, 1\\}^{r \\times c}",
+              "The $(r-1) \\times (c-1)$ block is empty, representing a single choice of entries."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full counting claim and required construction, prove the remaining column condition, and account for empty blocks correctly.",
+          "quotes": {
+            "source": [
+              "Every freely chosen block therefore has exactly one valid completion.",
+              "and otherwise is 2^((r−1)(c−1))."
+            ],
+            "A": [
+              "2^{(r-1)(c-1)}",
+              "Thus, the parity constraint for column $c$ is automatically satisfied, establishing that every completed array is valid."
+            ],
+            "B": [
+              "2^{(r-1)(c-1)}",
+              "Therefore, each block extends to exactly one valid array"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B more often states the mathematical action directly. A's repeated procedural announcements make otherwise readable prose somewhat more formal and repetitive.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Evaluating $S$ by summing across rows modulo $2$:",
+              "Equating both expressions modulo $2$ yields the necessary compatibility condition:"
+            ],
+            "B": [
+              "Summing all entries of an array $X \\in \\mathcal{A}$ row by row gives",
+              "Summing the same entries column by column gives"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow necessity, free choice, forced completion, last-column verification, bijection, and boundary cases. Each identifies the outstanding constraint before resolving it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It remains to verify that column $c$ is consistent with the required parity $b_c$.",
+              "We verify that $\\Phi$ and $\\Psi$ are two-sided inverses:"
+            ],
+            "B": [
+              "We must verify that column $c$ also satisfies",
+              "The completion procedure defines an inverse map:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both provide the requested explanatory mathematics rather than merely announcing the count. A gives a fuller converse argument; B maintains sufficient explanation with less repetition. Both are more segmented than the author's preferred connected prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because these entries are uniquely forced, the border entries of $X$ must coincide exactly with those generated by $\\Psi(\\Phi(X))$."
+            ],
+            "B": [
+              "for every block in $\\{0, 1\\}^{(r-1) \\times (c-1)}$, the entries outside the block are forced uniquely in $\\{0, 1\\}$ by the parity equations."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly count the total twice, force disjoint border portions and the corner, derive the final column parity from compatibility, establish the bijection, and handle all boundary dimensions. A spells out both inverse identities more fully; B's uniqueness argument also establishes the converse.",
+          "quotes": {
+            "source": [
+              "Conversely, restricting any valid array to that block recovers its free choice, and the same parity requirements force its border."
+            ],
+            "A": [
+              "Restricting the completed array $\\Psi(B)$ to its upper-left $(r-1) \\times (c-1)$ coordinates leaves the chosen block $B$ unchanged.",
+              "Similarly, $x_{r,j}$ for $j < c$ is uniquely determined by column $j$, and $x_{r,c}$ is uniquely determined by row $r$."
+            ],
+            "B": [
+              "Decomposing the total sum of all entries in the array gives",
+              "Therefore, each block extends to exactly one valid array $X \\in \\mathcal{A}$, and restricting any valid array $X$ to that block recovers the initial choice."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is a checkable explanation of consistency and exact counting, which both supply. A's more explicit inverse verification and B's more direct prose offer comparable benefits; neither leaves a substantive gap requiring further editing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We verify that $\\Phi$ and $\\Psi$ are two-sided inverses:",
+              "Applying the compatibility hypothesis"
+            ],
+            "B": [
+              "the entries outside the block are forced uniquely in $\\{0, 1\\}$ by the parity equations.",
+              "Applying the assumption"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "tie",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "11b2e7f325206e5b781dbdba32f37953a73d31a89d8414e8cf2a8bd581efeb02",
+    "prompt_sha256": "49b2e65f884944bf539bcddef5270f33f021bdc4fab2136a0f5f95088d6e24fb",
+    "raw_sha256": "09f6bb5e95cb45e859ab70d56f74f99127f2693582be3e920d22f086eb392e80",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task explicitly requests a self-contained counting statement and proof using the completion strategy.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves labeled arrays, arbitrary binary targets, both counts, and every positive dimension. The last-column calculation and mutual-inverse argument support the claimed count.",
+          "quotes": {
+            "source": [
+              "Prescribe row parities a_1,...,a_r and column parities b_1,...,b_c, each also zero or one.",
+              "If r=1 or c=1, the free block has no entries and one choice."
+            ],
+            "A": [
+              "fix prescribed row parities $a_1, \\dots, a_r \\in \\{0,1\\}$ and column parities $b_1, \\dots, b_c \\in \\{0,1\\}$.",
+              "$\\mathcal{B}$ consists of a single empty block."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the full scope and counting formula. The construction, consistency calculation, inverse identities, and degenerate cases are mathematically sound.",
+          "quotes": {
+            "source": [
+              "We count labeled arrays, so permuting rows or columns generally changes the array.",
+              "The border argument still works with empty sums interpreted as zero, including r=c=1."
+            ],
+            "A": [],
+            "B": [
+              "where permuting rows or columns yields a distinct array whenever any entry changes.",
+              "The statement and bijection hold without modification when $r = 1$ or $c = 1$ (including $r = c = 1$)"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all assumptions and conclusions, including zero for incompatible totals and one empty-block choice in boundary dimensions. Neither adds an unsupported mathematical claim.",
+          "quotes": {
+            "source": [
+              "Every freely chosen block therefore has exactly one valid completion.",
+              "and otherwise is 2^((r−1)(c−1))."
+            ],
+            "A": [
+              "2^{(r-1)(c-1)}",
+              "the completed array $\\Phi(B)$ belongs to $\\mathcal{A}$."
+            ],
+            "B": [
+              "2^{(r-1)(c-1)}",
+              "Every free block $U \\in \\mathcal{U}$ therefore extends to a valid array"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the outstanding issue in direct, connected prose. B's repeated labels and nested verification structure make the same argument read more like a formal checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To see that this completion procedure is consistent, observe that $x_{r,c}$ was chosen to give row $r$ parity $a_r$, leaving no further freedom to adjust column $c$."
+            ],
+            "B": [
+              "To verify that $\\Phi(U)$ is always a well-defined valid array in $\\mathcal{V}$, we check two aspects of consistency:",
+              "**No valid array is counted more than once (Injectivity of $\\Phi$):**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces the empty-block convention when defining the free choices, then moves directly from completion to its unresolved constraint and exact counting. B's order is valid but repeatedly restarts the argument through headings and nested lists.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Throughout the argument, an empty index range gives an empty sum equal to $0$.",
+              "To see why the procedure counts each valid array in $\\mathcal{A}$ exactly once"
+            ],
+            "B": [
+              "#### 3. Consistency of the Completion Procedure",
+              "#### 4. Why the Procedure Counts Each Valid Array Exactly Once",
+              "#### 5. Degenerate Dimensions"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better combines purpose with mechanism: it explains why the corner creates an obligation to check the last column, then explains the calculation's transitions. B includes useful motivation but surrounds it with repeated formal packaging and restated border formulas.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "leaving no further freedom to adjust column $c$.",
+              "where the second line substitutes the row parities"
+            ],
+            "B": [
+              "we check two aspects of consistency:",
+              "via the exact rules defining $\\Phi$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are correct and establish both directions of the bijection. A better meets the explicit exposition requirement by laying the final-column calculation out in aligned steps and explaining each substitution. B puts the corresponding calculation in one long display and repeats several equations inline in the converse.",
+          "quotes": {
+            "source": [
+              "use displaystyle mathematics with the steps laid out cleanly, without skipping steps.",
+              "Subtracting their contribution modulo two and using equality of the prescribed totals shows that the last column has parity b_c."
+            ],
+            "A": [
+              "\\begin{aligned}\n\\sum_{i=1}^r x_{i,c}",
+              "where the second line substitutes the row parities",
+              "the third line uses the hypothesis"
+            ],
+            "B": [
+              "Isolating the sum of the $c$-th column by subtracting the first $c-1$ columns from the total array sum modulo $2$",
+              "uniquely forces $x_{i,c} \\equiv a_i - \\sum_{j=1}^{c-1} x_{i,j} \\pmod{2}$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the user's decisive priority: readable mathematical reasoning with the construction's purpose and intermediate steps exposed. Its explanation of the corner's remaining obligation, aligned consistency calculation, and connected bijection argument make it more ready for the appendix; B requires more pruning and equation layout work.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "leaving no further freedom to adjust column $c$.",
+              "where the second line substitutes the row parities",
+              "shows that no valid array is omitted."
+            ],
+            "B": [
+              "we check two aspects of consistency:",
+              "**Every valid array is counted at least once (Surjectivity of $\\Phi$):**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2bd18190b28db8b536333af962722c5f2ae42747cd4283c2a0248516a295cfb4",
+    "prompt_sha256": "49b2e65f884944bf539bcddef5270f33f021bdc4fab2136a0f5f95088d6e24fb",
+    "raw_sha256": "09f6bb5e95cb45e859ab70d56f74f99127f2693582be3e920d22f086eb392e80",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-16",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a repaired matrix-perturbation proof, including invertibility, two estimates, and attainment.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the hypotheses, constants, factor order, fixed right-hand side, and boundary cases. It proves invertibility before using the inverse and correctly verifies attainment.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [
+              "In finite dimensions, an injective linear map from $\\mathbb{R}^d$ to itself is surjective (by the rank–nullity theorem) and therefore invertible."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves both quantitative bounds and all required assumptions without adding symmetry or commutativity. Its inverse construction, norm estimates, zero cases, and attainment argument are valid.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [],
+            "B": [
+              "Because an injective linear map from a finite-dimensional vector space to itself is surjective, $I + E$ is invertible."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the induced Euclidean norm, arbitrary perturbation, threshold, both coefficients, and deterministic comparison with the same right-hand side. Neither changes the result's scope.",
+          "quotes": {
+            "source": [
+              "The statements concern a change in the matrix with the same right-hand side."
+            ],
+            "A": [
+              "For any measurement vector $b \\in \\mathbb{R}^d$, let $x = A^{-1}b$ be the nominal reconstruction and $\\tilde{x} = B^{-1}b$ be the perturbed reconstruction."
+            ],
+            "B": [
+              "These bounds describe a deterministic perturbation of the system matrix with a fixed right-hand side, without assuming an underlying signal model or an empirical error distribution."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the operations in direct mathematical prose. A is readable but repeatedly announces rigor and correctness, adding editorial language around an otherwise straightforward proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To establish the invertibility of $I + E$ without circularity, we first verify that $I + E$ is injective on $\\mathbb{R}^d$."
+            ],
+            "B": [
+              "To bound $\\|(I + E)^{-1}\\|$, let $w \\in \\mathbb{R}^d$ and set $v = (I + E)^{-1}w$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces the factorization before proving the auxiliary result and explicitly explains why invertibility of I+E is the obstacle. B's sequence is sound, but postpones that connection until after proving the inverse norm bound.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since $A$ is invertible, $B$ is invertible if and only if $I + E$ is invertible."
+            ],
+            "B": [
+              "We first establish that $I + E$ is invertible and bound the operator norm of its inverse.",
+              "We now establish the invertibility of $B$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the requested connected technical prose: it explains each operation without A's self-description, repeated defensive qualifications, and extensive sectional packaging. Its compactness retains the substantive derivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This appendix provides a rigorous, self-contained perturbation analysis for linear forward models subject to operator uncertainty under an identical measurement vector.",
+              "Neither symmetry nor commutativity between $A$ and $H$ is assumed, and no smaller perturbation bound than $\\delta < 1$ is required."
+            ],
+            "B": [
+              "Multiplying on the right by $A^{-1}$ yields",
+              "Subtracting $x$ leads to"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both supply the missing lower-bound argument, finite-dimensional invertibility, and noncircular inverse estimate. Both justify the ordered identities and derive the estimates in displays. A expands attainment further; B's shorter verification remains sufficient.",
+          "quotes": {
+            "source": [
+              "The missing step must establish invertibility and justify the quantitative estimate ||(I+E)^(−1)|| ≤ 1/(1−δ)."
+            ],
+            "A": [
+              "\\|(I + E)v\\| \\ge \\|v\\| - \\delta \\|v\\| = (1 - \\delta) \\|v\\|.",
+              "With existence established, let $w \\in \\mathbb{R}^d$ be arbitrary, and let $v = (I + E)^{-1}w$."
+            ],
+            "B": [
+              "which implies $\\|v\\| = 0$ and hence $v = 0$.",
+              "\\|(I + E)^{-1}w\\| \\le \\frac{1}{1 - \\delta} \\|w\\|."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B is the better completed appendix proof because it retains the full repair and displayed calculations in connected prose without repeated assurances about rigor or assumptions. A better motivates the initial reduction, but B's transitions still explain the operations adequately; its advantage is removing rhetorical repetition while preserving explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This appendix provides a rigorous, self-contained perturbation analysis for linear forward models subject to operator uncertainty under an identical measurement vector.",
+              "To establish the invertibility of $I + E$ without circularity"
+            ],
+            "B": [
+              "Taking the induced operator norm and applying submultiplicativity gives",
+              "Substituting $B^{-1} = (I + E)^{-1}A^{-1}$ and using $x = A^{-1}b$ gives"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [
+      {
+        "path": [
+          "dimensions",
+          "proof",
+          "quotes",
+          "B",
+          0
+        ],
+        "old": "which implies $\\|v\\| = 0$ and hence $v = 0.",
+        "new": "which implies $\\|v\\| = 0$ and hence $v = 0$.",
+        "operation": "restore one source-verified math delimiter"
+      }
+    ],
+    "json_syntax_repairs": [],
+    "source_sha256": "ad0267cfe7dbb58e0ee5e350638f97bcb9987b0e3db9ac1c0cb4364dd55a32a7",
+    "prompt_sha256": "bd9fa7daf671b2af0427ceb9c62b983c54f6df810284e7d7065bcc99d1971bfa",
+    "raw_sha256": "a59a0a89002cb96e8a0cc22b63561a2556fbd07a5f3bb6bfc1dc64507f80f2c2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-16",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a self-contained statement and repaired proof of matrix and solution perturbation bounds.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the arbitrary real matrices, induced norm, threshold, both bounds, and same-right-hand-side scope. It establishes inverse existence first and correctly handles zero cases and the attainment example.",
+          "quotes": {
+            "source": [
+              "You may use the fact that an injective linear map from R^d to itself is surjective."
+            ],
+            "A": [
+              "Because $\\mathbb{R}^d$ is finite-dimensional, every injective linear map from $\\mathbb{R}^d$ to itself is also surjective, so $I + E$ is invertible."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the hypotheses, constants, matrix order, and scope. Its lower bound proves invertibility without circularity, both estimates follow validly, and the boundary and sharpness remarks are correct.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [],
+            "B": [
+              "Consequently, the inverse matrix $(I + E)^{-1}$ exists.",
+              "Now that $(I + E)^{-1}$ is known to exist"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully preserve the mathematical claims and their qualifications, including the coefficient in each bound and attainment for positive delta and nonzero b. Neither assumes additional matrix structure or empirical evidence.",
+          "quotes": {
+            "source": [
+              "The coefficient δ/(1−δ) in the solution bound is attained when H=−δA with 0<δ<1 and b is nonzero."
+            ],
+            "A": [
+              "Finally, the coefficient $\\delta/(1 - \\delta)$ in the solution bound is attained when $H = -\\delta A$ with $0 < \\delta < 1$ and $b \\ne 0$."
+            ],
+            "B": [
+              "For any $\\delta \\in (0, 1)$ and any vector $b \\neq 0$ (so that $x = A^{-1}b \\neq 0$), choose $H = -\\delta A$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are idiomatic, but A uses more direct prose to explain the algebra. B's repeated labels and phrases such as 'Respecting the order' make comparable explanations more ceremonial.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Taking the inverse reverses the order of the factors:",
+              "For the solution bound, let $b \\in \\mathbb{R}^d$ and $x = A^{-1}b$."
+            ],
+            "B": [
+              "Respecting the order of the noncommuting factors, the inverse of $B$ is",
+              "#### 4. Solution Perturbation Bound"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both begin with the factorization, establish the required auxiliary inverse and its bound, then derive the matrix and solution estimates before treating edge cases. A connects these stages through paragraphs; B's numbered sections retain the same logical motivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $A$ is invertible and $E = A^{-1}H$, we can write $H = AE$ and factor $B$ as",
+              "We first show that $I + E$ is invertible."
+            ],
+            "B": [
+              "To show that $B$ is invertible, we first prove from the norm hypothesis $\\delta = \\|E\\| < 1$ that $I + E$ is invertible."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A matches the preference for connected explanation while retaining the full mathematics. It integrates the scope qualification and proof transitions into the text; B presents the qualification as a parenthetical note and repeatedly divides the argument into labeled units.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These statements compare the inverses and solutions when the matrix $A$ is perturbed by $H$ with the right-hand side $b$ held fixed.",
+              "Using $(I + E)^{-1} - I = -(I + E)^{-1}E$ once more, we find"
+            ],
+            "B": [
+              "*(Note: These deterministic bounds compare two linear systems sharing the same right-hand side $b$; they do not assume an underlying true signal or an empirical error distribution.)*",
+              "#### 2. Operator Norm Bound for $(I + E)^{-1}$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly and explicitly repair the invalid inference, establish the inverse norm estimate, preserve factor order, and derive both inequalities without division by the solution norm. A's aligned calculations are easier to scan, but B also supplies the necessary steps and explanations.",
+          "quotes": {
+            "source": [
+              "The second identity follows from (I+E)^(−1)−I=−(I+E)^(−1)E. Applying submultiplicativity gives the first bound."
+            ],
+            "A": [
+              "From the identity $(I + E)^{-1}(I + E) = I$, we have",
+              "Multiplying on the right by $A^{-1}$ gives"
+            ],
+            "B": [
+              "Furthermore, factoring $(I + E)^{-1}$ on the left gives the algebraic identity",
+              "Multiplying $(4)$ on the right by $A^{-1}$ and using $(3)$, we obtain"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both complete the mathematical repair. A better serves this user's preference for connected proof exposition: it explains the factorization and reversed inverse order directly, then lays out the estimates in aligned steps. It removes sectional and parenthetical packaging without compressing the substantive argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $A$ is invertible and $E = A^{-1}H$, we can write $H = AE$ and factor $B$ as",
+              "Taking the inverse reverses the order of the factors:"
+            ],
+            "B": [
+              "#### 3. Invertibility of $B$ and the Matrix Perturbation Bound",
+              "Respecting the order of the noncommuting factors, the inverse of $B$ is"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "978ce017dab69ba052486bbd37d70d88dd4843842d295e5cbbdb8683ed5db00a",
+    "prompt_sha256": "bd9fa7daf671b2af0427ceb9c62b983c54f6df810284e7d7065bcc99d1971bfa",
+    "raw_sha256": "a59a0a89002cb96e8a0cc22b63561a2556fbd07a5f3bb6bfc1dc64507f80f2c2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-16",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a repaired matrix-perturbation proof with two quantitative bounds.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the assumptions, factor order, both bounds, and fixed right-hand side. It establishes invertibility before using the inverse and correctly handles the zero cases and attainment example.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [
+              "Thus, $(I + E)^{-1}$ exists."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the hypotheses and both estimates without adding symmetry or commutativity. Its injectivity argument, inverse bound, solution identity, boundary cases, and sharpness example are valid.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [],
+            "B": [
+              "Because an injective linear map from a finite-dimensional vector space to itself is surjective, $I + E$ is invertible."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full mathematical contribution and its deterministic, fixed-right-hand-side scope. Neither changes the hypotheses, constants, or conclusions.",
+          "quotes": {
+            "source": [
+              "The statements concern a change in the matrix with the same right-hand side."
+            ],
+            "A": [
+              "under an identical measurement vector."
+            ],
+            "B": [
+              "These bounds describe a deterministic perturbation of the system matrix with a fixed right-hand side"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads more naturally as an appendix proposition and proof. A adds ceremonial framing and editorial commentary around otherwise readable mathematics.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This appendix provides a rigorous, self-contained perturbation analysis",
+              "To establish the invertibility of $I + E$ without circularity,"
+            ],
+            "B": [
+              "To bound the difference $B^{-1} - A^{-1}$, observe the identity"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces the factorization before proving the auxiliary matrix invertible, immediately explaining why that construction matters. B establishes the auxiliary result before revealing its connection to B.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since $A$ is invertible, $B$ is invertible if and only if $I + E$ is invertible."
+            ],
+            "B": [
+              "We first establish that $I + E$ is invertible and bound the operator norm of its inverse.",
+              "We now establish the invertibility of $B$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected technical prose without repeated defensive framing. A's early motivation is useful, but its extra assurances, section breaks, and editorial aside make the proof feel more packaged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "no smaller perturbation bound than $\\delta < 1$ is required.",
+              "*(Note that the order of factors is essential because $A$ and $I + E$ generally do not commute.)*"
+            ],
+            "B": [
+              "Multiplying on the right by $A^{-1}$ yields",
+              "Subtracting $x$ leads to"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both supply the missing lower bound, infer injectivity and finite-dimensional surjectivity, and only then bound the inverse. Both justify the ordered identities and derive both estimates, including the zero cases and attainment example. Their displayed steps provide sufficient explanation.",
+          "quotes": {
+            "source": [
+              "The missing step must establish invertibility and justify the quantitative estimate ||(I+E)^(−1)|| ≤ 1/(1−δ)."
+            ],
+            "A": [
+              "With existence established, let $w \\in \\mathbb{R}^d$ be arbitrary, and let $v = (I + E)^{-1}w$."
+            ],
+            "B": [
+              "To bound $\\|(I + E)^{-1}\\|$, let $w \\in \\mathbb{R}^d$ and set $v = (I + E)^{-1}w$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better delivers the requested complete appendix proof in connected prose, with displayed derivations and explicit reasons for the operations. A explains the initial factorization earlier, but surrounds the same sound argument with repeated assurances and more scaffolding than this artifact needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This appendix provides a rigorous, self-contained perturbation analysis",
+              "### Remarks on Boundary Cases and Sharpness"
+            ],
+            "B": [
+              "Substituting $B^{-1} = (I + E)^{-1}A^{-1}$ and using $x = A^{-1}b$ gives",
+              "Taking Euclidean vector norms and applying submultiplicativity,"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ad0267cfe7dbb58e0ee5e350638f97bcb9987b0e3db9ac1c0cb4364dd55a32a7",
+    "prompt_sha256": "bd9fa7daf671b2af0427ceb9c62b983c54f6df810284e7d7065bcc99d1971bfa",
+    "raw_sha256": "bd9770d9d460c9e02d9ab7a6be69f1f3dc10603c426fa0369456597b6256f2b8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-16",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a self-contained statement and repaired mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the arbitrary real perturbation, induced Euclidean norm, original threshold, both bounds, and fixed right-hand side. The invertibility repair, ordered algebra, zero cases, and attainment calculation are correct.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [
+              "Now that $(I + E)^{-1}$ exists,"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the assumptions, constants, and conclusions. It proves invertibility before using the inverse, respects multiplication order, and correctly derives the estimates and special cases.",
+          "quotes": {
+            "source": [
+              "No inverse of I+E may be used before its existence is proved."
+            ],
+            "A": [],
+            "B": [
+              "Consequently, the inverse matrix $(I + E)^{-1}$ exists."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully preserve the theorem and its scope, including the same right-hand side and absence of empirical signal assumptions. Neither strengthens the conclusion or restricts the perturbations.",
+          "quotes": {
+            "source": [
+              "They do not assume a measured true signal or an empirical error distribution."
+            ],
+            "A": [
+              "They do not assume a measured true signal or an empirical error distribution."
+            ],
+            "B": [
+              "they do not assume an underlying true signal or an empirical error distribution."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A integrates the scope qualification and proof transitions into ordinary technical prose. B remains readable, but its parenthetical note, numerous headings, and repeated labels make the presentation more formalized than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These statements compare the inverses and solutions when the matrix $A$ is perturbed by $H$ with the right-hand side $b$ held fixed."
+            ],
+            "B": [
+              "*(Note: These deterministic bounds compare two linear systems sharing the same right-hand side $b$;",
+              "### Remarks on Degenerate Cases and Sharpness"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both introduce the factorization for a clear purpose and follow the correct dependency order. A connects these dependencies more continuously, carrying the established inverse estimate into the algebra and then the solution bound without repeatedly restarting under headings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $A$ is invertible and $E = A^{-1}H$, we can write $H = AE$ and factor $B$ as",
+              "Using $(I + E)^{-1} - I = -(I + E)^{-1}E$ once more, we find"
+            ],
+            "B": [
+              "To show that $B$ is invertible, we first prove from the norm hypothesis",
+              "#### 4. Solution Perturbation Bound"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better combines the author's two priorities: explaining why operations follow and laying out calculations cleanly. Its aligned estimates expose the intermediate steps while its prose connects them. B supplies the reasoning too, but often stretches those calculations into long single-line displays.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "Taking the inverse reverses the order of the factors:",
+              "\\begin{aligned}\n\\|\\tilde{x} - x\\|"
+            ],
+            "B": [
+              "Respecting the order of the noncommuting factors,",
+              "\\|\\tilde{x} - x\\| = \\|-(I + E)^{-1}Ex\\| \\le \\|(I + E)^{-1}\\|\\,\\|Ex\\|"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both provide a valid, sufficiently explained elementary repair: the lower bound proves injectivity, finite dimensionality supplies invertibility, and substitution gives the inverse norm estimate. Both justify the subsequent identities and norm inequalities, avoid division by zero, and verify attainment. A's layout advantage does not reflect a missing mathematical argument in B.",
+          "quotes": {
+            "source": [
+              "You may use the fact that an injective linear map from R^d to itself is surjective."
+            ],
+            "A": [
+              "Because $\\mathbb{R}^d$ is finite-dimensional, every injective linear map from $\\mathbb{R}^d$ to itself is also surjective, so $I + E$ is invertible."
+            ],
+            "B": [
+              "any injective linear map from $\\mathbb{R}^d$ to itself is also surjective (by the rank–nullity theorem) and hence bijective."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both complete the requested repair. A better satisfies this user's decisive exposition preference: it motivates the factorization, explains the dependencies in connected prose, and lays out the norm estimates across aligned steps. B's heavier sectional structure and long equation chains make the same argument less comfortable to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Now that $(I + E)^{-1}$ exists,",
+              "Applying submultiplicativity of the operator norm together with"
+            ],
+            "B": [
+              "#### 2. Operator Norm Bound for $(I + E)^{-1}$",
+              "\\|B^{-1} - A^{-1}\\| = \\|-(I + E)^{-1}EA^{-1}\\| \\le"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "978ce017dab69ba052486bbd37d70d88dd4843842d295e5cbbdb8683ed5db00a",
+    "prompt_sha256": "bd9fa7daf671b2af0427ceb9c62b983c54f6df810284e7d7065bcc99d1971bfa",
+    "raw_sha256": "bd9770d9d460c9e02d9ab7a6be69f1f3dc10603c426fa0369456597b6256f2b8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light copyedit of an archive guide and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Checked against the source: A preserves physical arrangement versus catalogue chronology, inscription versus estimated date, both image types and their evidentiary limits, and condition-based access with no guarantee that copies answer physical questions. Adding “The” changes no inference.",
+          "quotes": {
+            "source": [
+              "Absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "A": [
+              "The absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source passage, preserving every distinction about arrangement, date provenance, image coverage, and access restrictions, including the limits of access copies.",
+          "quotes": {
+            "source": [
+              "They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph."
+            ],
+            "A": [],
+            "B": [
+              "They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both return the full passage with all facts and qualifications intact. Neither resolves disagreement between recorded inscriptions and later estimates by declaring a field erroneous.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic professional prose. A's added article is a reasonable local variation, but B's abstract formulation is equally readable in this guide.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The absence of an annotation from an individual-image view"
+            ],
+            "B": [
+              "Absence of an annotation from an individual-image view"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from arrangement and its purpose to interpreting descriptions, interpreting images, and consulting originals. Both retain the explanations that make the practical distinctions useful.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This arrangement preserves evidence about how the collection was assembled, even where the date of an individual photograph is uncertain."
+            ],
+            "B": [
+              "This arrangement preserves evidence about how the collection was assembled, even where the date of an individual photograph is uncertain."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the established professional voice, archival terminology, and substantive contrasts. A's single article addition and B's unchanged text demonstrate comparable restraint.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Digitisation has made more of the collection visible, but it has not made every album safe to open."
+            ],
+            "B": [
+              "Digitisation has made more of the collection visible, but it has not made every album safe to open."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is present in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is restrained copyediting that preserves a sound guide and its technical distinctions. Both satisfy it; the sole article variation provides no substantive basis for preferring either completed artifact.",
+          "quotes": {
+            "source": [
+              "Change wording only where there is a concrete readability or correctness gain; returning sound passages unchanged is welcome."
+            ],
+            "A": [
+              "The absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "B": [
+              "Absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "9e9a8845c1ee299c1d2bfefba366b28dbadc95ed95c6ded3f04ad3745fa07baf",
+    "prompt_sha256": "a6dd8396ec26e1555fb390384fedc47629e5faee5037c29e88206a883ca04524",
+    "raw_sha256": "fdef4fd2e2d08e751430086e6ae6cb216a802e542cc92fbab51a213aac1aec6d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light copyedit of an archive guide and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source passage. Physical order remains distinct from chronological searching, inscriptions from estimates, and full-page views from individual images. All qualifications about annotations, condition-based access, and copies' limitations remain.",
+          "quotes": {
+            "source": [
+              "A chronological search view is available through the catalogue, but it does not change the physical order of the albums."
+            ],
+            "A": [
+              "A chronological search view is available through the catalogue, but it does not change the physical order of the albums."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Checked against the source: B preserves all arrangement, dating, image-coverage, and access qualifications. Removing the repeated noun “field” leaves “either” clearly referring to the two fields and changes no claim about their possible disagreement.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "A": [],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete passage's factual content and scope. B's pronoun retains the same referents and the same distinction between disagreement and incorrect recording.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "B slightly reduces repetition, while A's repeated noun remains natural and explicit. Neither formulation creates a meaningful readability advantage across the passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "without either having been recorded incorrectly."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the same useful sequence: explain arrangement, distinguish sources of descriptive information, establish what online images show, then explain access. The dating paragraph connects its distinction to the reader's interpretation in both.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Readers should use the source of each statement when deciding what weight to give it."
+            ],
+            "B": [
+              "Readers should use the source of each statement when deciding what weight to give it."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrow editing scope and preserve the guide's measured, explanatory voice. B removes one redundant noun without compressing useful explanation; A reasonably retains already-effective wording.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A date proposed by the cataloguer appears in the estimated-date field, together with the basis for the estimate."
+            ],
+            "B": [
+              "A date proposed by the cataloguer appears in the estimated-date field, together with the basis for the estimate."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is present in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both meet the user's main priority of preserving an already reviewed passage with minimal intervention. B's small reduction in repetition is acceptable, but A's unchanged sentence is equally usable; the difference does not support a substantive preference.",
+          "quotes": {
+            "source": [
+              "Change wording only where there is a concrete readability or correctness gain; returning sound passages unchanged is welcome."
+            ],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ef22410a3b42b9aa55c1a5056a62d36428e52d9c9105808d6220f15d8c282b36",
+    "prompt_sha256": "a6dd8396ec26e1555fb390384fedc47629e5faee5037c29e88206a883ca04524",
+    "raw_sha256": "fdef4fd2e2d08e751430086e6ae6cb216a802e542cc92fbab51a213aac1aec6d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light copyedit of an archive guide; no proof or derivation is present.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Against the source, A preserves physical versus catalogue order, the distinction between date fields, image-view limitations, condition-based access, and uncertainty about access copies. Adding the article changes no inference.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly.",
+              "Absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly.",
+              "The absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source passage unchanged, retaining every archival distinction and access qualification.",
+          "quotes": {
+            "source": [
+              "A chronological search view is available through the catalogue, but it does not change the physical order of the albums.",
+              "They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph."
+            ],
+            "A": [],
+            "B": [
+              "A chronological search view is available through the catalogue, but it does not change the physical order of the albums.",
+              "They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all source claims and qualifications. The sole difference, adding “The,” leaves the limit on inferring absent annotations intact.",
+          "quotes": {
+            "source": [
+              "Absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "A": [
+              "The absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "B": [
+              "Absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both article choices are idiomatic in this professional guide. Neither creates a meaningful readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The absence of an annotation from an individual-image view"
+            ],
+            "B": [
+              "Absence of an annotation from an individual-image view"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the coherent movement from arrangement to descriptive evidence, image limitations, and access. Each explains the purpose of preserving the arrangement before discussing catalogue searches.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This arrangement preserves evidence about how the collection was assembled, even where the date of an individual photograph is uncertain."
+            ],
+            "B": [
+              "This arrangement preserves evidence about how the collection was assembled, even where the date of an individual photograph is uncertain."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the established professional voice, useful terminology, and substantive contrasts. A's optional article is unobtrusive; B's unchanged wording follows the express permission to retain sound prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Digitisation has made more of the collection visible, but it has not made every album safe to open."
+            ],
+            "B": [
+              "Digitisation has made more of the collection visible, but it has not made every album safe to open."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is restrained copyediting that preserves the guide's distinctions and explanations; both meet it. The optional article does not substantively improve or diminish the completed artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ],
+            "B": [
+              "Absence of an annotation from an individual-image view does not establish that the album page carries no annotation."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "9e9a8845c1ee299c1d2bfefba366b28dbadc95ed95c6ded3f04ad3745fa07baf",
+    "prompt_sha256": "a6dd8396ec26e1555fb390384fedc47629e5faee5037c29e88206a883ca04524",
+    "raw_sha256": "5ef9031a26129ca37a57a83649ff7b471f2a39f2178150e85c30a7bbc76d63cf",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light copyedit of an archive guide; no proof or derivation is present.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged. It preserves arrangement versus search order, both date fields and their possible disagreement, image-view limitations, and all access qualifications.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly.",
+              "Requests to consult the originals are assessed by condition."
+            ],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly.",
+              "Requests to consult the originals are assessed by condition."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves every source distinction and qualification. Removing the repeated noun leaves “either” clearly referring to the two fields and does not imply that disagreement establishes an error.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly.",
+              "They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph."
+            ],
+            "A": [],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly.",
+              "They cannot promise that an existing copy will answer a question about the paper, mounting method, or reverse of the photograph."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full passage's claims and limitations. B's omission of the second “field” changes neither the referent nor the distinction between disagreement and incorrect recording.",
+          "quotes": {
+            "source": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's explicit repetition and B's grammatical ellipsis both read naturally. B trims a small redundancy, but A's wording is already clear and unlaboured.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the two date fields before addressing disagreement and advising readers how to weigh statements. The single deletion leaves this reasoning and the wider paragraph order unchanged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Readers should use the source of each statement when deciding what weight to give it."
+            ],
+            "B": [
+              "Readers should use the source of each statement when deciding what weight to give it."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A accepts the already-effective wording; B makes a restrained removal of repetition without compressing explanation. Both fit the requested professional voice and limited editing scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the user's priority of preserving sound prose and technical distinctions under a light copyedit. B's small reduction in repetition is acceptable but does not establish a substantive advantage over A's expressly permitted unchanged passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These fields can disagree without either field having been recorded incorrectly."
+            ],
+            "B": [
+              "These fields can disagree without either having been recorded incorrectly."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ef22410a3b42b9aa55c1a5056a62d36428e52d9c9105808d6220f15d8c282b36",
+    "prompt_sha256": "a6dd8396ec26e1555fb390384fedc47629e5faee5037c29e88206a883ca04524",
+    "raw_sha256": "5ef9031a26129ca37a57a83649ff7b471f2a39f2178150e85c30a7bbc76d63cf",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light edit of a personal equipment column, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the easier lifting, counterweight, two trips, soft-ground limitation, personal controller preference, and five light-wind evenings. It retains the distinction between increased use and untested comparative performance.",
+          "quotes": {
+            "source": [
+              "I have used the smaller one on five evenings, all in light wind."
+            ],
+            "A": [
+              "I have used the smaller one on five evenings, all in light wind."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source, preserving all practical details, personal preferences, observational limits, and unanswered performance questions.",
+          "quotes": {
+            "source": [
+              "These are observations from my own setup, not a comparison test between mounts."
+            ],
+            "A": [],
+            "B": [
+              "These are observations from my own setup, not a comparison test between mounts."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every substantive claim and qualification. A's added comma and transition do not change the source's meaning.",
+          "quotes": {
+            "source": [
+              "The new mount is easier to lift, but its counterweight still has to come along."
+            ],
+            "A": [
+              "The new mount is easier to lift, but its counterweight still has to come along."
+            ],
+            "B": [
+              "The new mount is easier to lift, but its counterweight still has to come along."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read as idiomatic club-column prose. The comma after 'Apparently' in A creates a slightly different pause without materially improving or impairing the joke.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Apparently, gravity declined my request for a luggage allowance."
+            ],
+            "B": [
+              "Apparently gravity declined my request for a luggage allowance."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move clearly from the motivation for portability to practical limitations, controller familiarity, and the limits of the observations. A's 'Still' makes an already clear transition explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Still, it has not made the equipment suitable for every surface."
+            ],
+            "B": [
+              "It has not made the equipment suitable for every surface."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain the approved humor, personal explanations, and understated asides. B's restraint is appropriate, while A's two small edits remain within the requested light-editing scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I can set the tripod down before bringing out the telescope, and I am less tempted to balance everything against the doorframe."
+            ],
+            "B": [
+              "I can set the tripod down before bringing out the telescope, and I am less tempted to balance everything against the doorframe."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The column contains no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority of preserving an already effective personal column, including its humor and careful limits on performance claims. A's punctuation and transition changes provide no substantive basis for preferring either artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The useful result so far is that I have gone outside more often."
+            ],
+            "B": [
+              "The useful result so far is that I have gone outside more often."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7036dbfad260ec6af09deeb5e7cd3767a3298d9b97521586d0e52aa6d8e4ce93",
+    "prompt_sha256": "0bd183bab551d67157eac9773a7e659c17fe1eef4ba905416721cc33d430874e",
+    "raw_sha256": "e08e067b70e3d585062f49c16c488ec535d8a56838b4ac573f82624f6d4b73df",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light edit of a personal equipment column, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the practical facts, personal controller preference, five light-wind evenings, and absence of comparative testing. Its deletions reduce explicit explanation, but the soft-ground example still distinguishes portability from stability, and heavier-load and stronger-wind performance remain unanswered. No concrete changed factual inference is established.",
+          "quotes": {
+            "source": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "remains a question for another session, with the appropriate equipment and conditions."
+            ],
+            "A": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad.",
+              "Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all source facts and qualifications, including the counterweight and two trips, soft-ground limitation, personal interface preference, limited observations, and unresolved performance questions. Adding 'however' changes no claim.",
+          "quotes": {
+            "source": [
+              "Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session, with the appropriate equipment and conditions."
+            ],
+            "A": [],
+            "B": [
+              "Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session, with the appropriate equipment and conditions."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the factual account and its observational limits. B more fully preserves the requested scope by retaining the explicit portability–stability distinction and the qualification about suitable equipment and conditions; A leaves the former implicit and drops the latter.",
+          "quotes": {
+            "source": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "with the appropriate equipment and conditions."
+            ],
+            "A": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad.",
+              "Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session."
+            ],
+            "B": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session, with the appropriate equipment and conditions."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable, conversational columns with intact humor and personal explanations. A's shorter passages and B's slightly more explicit transition are both idiomatic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It has not made the equipment suitable for every surface."
+            ],
+            "B": [
+              "It has not, however, made the equipment suitable for every surface."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both retain the coherent overall sequence. B also keeps the sentence that explains what the soft-ground observation establishes, connecting the practical example to the broader distinction between carrying equipment and supporting it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad."
+            ],
+            "B": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad. Portability and stability are related decisions, but they are not interchangeable measurements."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both preserve the approved joke and conversational asides. B better follows the author's specific preference for retaining useful explanation and already-effective passages: A removes a substantive distinction without a clear clarity benefit.",
+          "quotes": {
+            "source": [
+              "They distinguish removing rhetorical repetition from compressing useful explanation."
+            ],
+            "A": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad."
+            ],
+            "B": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The column contains no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither introduces a material error, and both preserve the personal account and its limits. B better meets the decisive light-editing priority: it retains the useful portability–stability explanation and the final testing qualification. A's deletions offer little clarity benefit and leave the reader with less of the author's intended explanation.",
+          "quotes": {
+            "source": [
+              "There is no requirement to change a passage that already reads well."
+            ],
+            "A": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad."
+            ],
+            "B": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3f904fa33012511d73f0763f4ca3c200db3491ebbd6895c64b7ef7c87b0722f6",
+    "prompt_sha256": "0bd183bab551d67157eac9773a7e659c17fe1eef4ba905416721cc33d430874e",
+    "raw_sha256": "e08e067b70e3d585062f49c16c488ec535d8a56838b4ac573f82624f6d4b73df",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light edit of a personal equipment column and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the lifting benefit, counterweight, two trips, ground limitation, personal controller preference, and five-evening evidentiary limit. Adding “however” changes no claim.",
+          "quotes": {
+            "source": [
+              "The new mount is easier to lift, but its counterweight still has to come along.",
+              "I have used the smaller one on five evenings, all in light wind."
+            ],
+            "A": [
+              "The new mount is easier to lift, but its counterweight still has to come along.",
+              "I have used the smaller one on five evenings, all in light wind."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the practical facts and limits on performance conclusions. Its deletions reduce explicit explanation, but the retained ground example still distinguishes portability from stability, and the ending still leaves tracking performance unresolved.",
+          "quotes": {
+            "source": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "remains a question for another session, with the appropriate equipment and conditions."
+            ],
+            "A": [],
+            "B": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad.",
+              "Whether it tracks as well under a heavier telescope or in stronger wind remains a question for another session."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the equipment facts, personal preferences, and limited observational basis. A more completely preserves the explicit portability/stability distinction and the qualification about suitable future testing conditions; B leaves these partly implicit without asserting a contrary result.",
+          "quotes": {
+            "source": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "with the appropriate equipment and conditions."
+            ],
+            "A": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "with the appropriate equipment and conditions."
+            ],
+            "B": [
+              "It has not made the equipment suitable for every surface.",
+              "remains a question for another session."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read as idiomatic personal columns and retain the dry humor and conversational rhythm. A's added transition and B's shorter passages do not establish a substantial readability difference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Apparently gravity declined my request for a luggage allowance.",
+              "It has not, however, made the equipment suitable for every surface."
+            ],
+            "B": [
+              "Apparently gravity declined my request for a luggage allowance.",
+              "It has not made the equipment suitable for every surface."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both move coherently from carrying equipment to ground stability, controller familiarity, and observational limits. A retains the sentence that explains what the ground example establishes, making that paragraph's reasoning more explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad. Portability and stability are related decisions, but they are not interchangeable measurements."
+            ],
+            "B": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Both preserve the approved joke and personal asides. A better follows the instruction to retain already-effective explanation: the portability/stability sentence supplies a substantive distinction rather than repetitive packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "A phone interface might suit someone else."
+            ],
+            "B": [
+              "It has not made the equipment suitable for every surface.",
+              "A phone interface might suit someone else."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves this restrained editing request by preserving the useful explanation of portability versus stability and the complete future-testing qualification. B's cuts offer no clear clarity benefit sufficient to justify removing them.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Portability and stability are related decisions, but they are not interchangeable measurements.",
+              "remains a question for another session, with the appropriate equipment and conditions."
+            ],
+            "B": [
+              "On the soft ground behind the shed, a tripod foot still settles if I do not give it a firm pad.",
+              "remains a question for another session."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8b94027364944a98f16b3c56a5c9f56cc0489a01d8f75bbe9907eefcbc0e7d75",
+    "prompt_sha256": "020c6c43923b952e240252575de769bc7db38ce6dbbcc0986a0bf00da208ed7c",
+    "raw_sha256": "2eb7cdd6d394fbc402c0e5a3c6bdd16043d0ce07a40b74fcff8fef99ba8f9760",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light edit of a personal equipment column and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source, including the carrying arrangement, stability limitation, personal interface preference, five light-wind evenings, and unresolved tracking questions.",
+          "quotes": {
+            "source": [
+              "I now carry the weight in a separate bag and make two trips from the door.",
+              "These are observations from my own setup, not a comparison test between mounts."
+            ],
+            "A": [
+              "I now carry the weight in a separate bag and make two trips from the door.",
+              "These are observations from my own setup, not a comparison test between mounts."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B's comma and added transition do not change the facts or scope. All practical qualifications, personal preferences, and limits on performance conclusions remain intact.",
+          "quotes": {
+            "source": [
+              "It has not made the equipment suitable for every surface.",
+              "I have used the smaller one on five evenings, all in light wind."
+            ],
+            "A": [],
+            "B": [
+              "Still, it has not made the equipment suitable for every surface.",
+              "I have used the smaller one on five evenings, all in light wind."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every substantive claim and qualification, including the distinction between increased personal use and comparative mount performance. B's two small edits have no semantic consequence.",
+          "quotes": {
+            "source": [
+              "These are observations from my own setup, not a comparison test between mounts.",
+              "The useful result so far is that I have gone outside more often."
+            ],
+            "A": [
+              "These are observations from my own setup, not a comparison test between mounts.",
+              "The useful result so far is that I have gone outside more often."
+            ],
+            "B": [
+              "These are observations from my own setup, not a comparison test between mounts.",
+              "The useful result so far is that I have gone outside more often."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain readable, conversational prose. The optional comma after “Apparently” and the added “Still” are ordinary stylistic variants, with no meaningful advantage in fluency.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Apparently gravity declined my request for a luggage allowance.",
+              "It has not made the equipment suitable for every surface."
+            ],
+            "B": [
+              "Apparently, gravity declined my request for a luggage allowance.",
+              "Still, it has not made the equipment suitable for every surface."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the same clear progression through carrying, stability, controller familiarity, and limited experience. B makes the transition to surface limitations slightly more explicit, but A's connection is already clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It has not made the equipment suitable for every surface.",
+              "Portability and stability are related decisions, but they are not interchangeable measurements."
+            ],
+            "B": [
+              "Still, it has not made the equipment suitable for every surface.",
+              "Portability and stability are related decisions, but they are not interchangeable measurements."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved humor, understated personal observations, and useful explanation. A's restraint fully satisfies the request; B's minimal changes remain compatible with the same voice and do not materially improve or diminish it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "carrying the larger one felt like a separate hobby.",
+              "A phone interface might suit someone else."
+            ],
+            "B": [
+              "carrying the larger one felt like a separate hobby.",
+              "A phone interface might suit someone else."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both deliver the complete column with its voice and qualifications intact. The decisive priority is restrained editing of already-effective prose; the tiny punctuation and transition differences do not justify a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Apparently gravity declined my request for a luggage allowance.",
+              "It has not made the equipment suitable for every surface."
+            ],
+            "B": [
+              "Apparently, gravity declined my request for a luggage allowance.",
+              "Still, it has not made the equipment suitable for every surface."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1c5193f8e5ebd5e1728a2df4c9d85d17e1fe86f3926f3a17a44b843bb13e9008",
+    "prompt_sha256": "020c6c43923b952e240252575de769bc7db38ce6dbbcc0986a0bf00da208ed7c",
+    "raw_sha256": "2eb7cdd6d394fbc402c0e5a3c6bdd16043d0ce07a40b74fcff8fef99ba8f9760",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
