@@ -31184,6 +31184,300 @@
   },
   {
     "case": "large-test-a-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an equipment-study revision, with no mathematical proof or derivation to assess.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the acquisition conditions, numerical results, units, raw-stack threshold, and distinction between exceedances and defects. Its causal-sounding summary is qualified immediately by the fixed-order limitation; it does not establish temperature causation or field benefits.",
+          "quotes": {
+            "source": [
+              "The fixed order means that temperature and time in the run were not independently varied."
+            ],
+            "A": [
+              "However, because the warm-then-cold order was fixed, detector temperature and elapsed run time were not varied independently."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the single-camera protocol, temperatures, frame counts and duration, background and read-noise distinction, raw threshold, and all numerical results. It retains both attribution uncertainty and the proposed status of field testing.",
+          "quotes": {
+            "source": [
+              "The cooler condition therefore had a lower measured dark-frame background and fewer threshold exceedances in this run."
+            ],
+            "A": [],
+            "B": [
+              "In this run, the cooler condition therefore had a lower measured dark-frame background and fewer threshold-exceeding pixels."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the evidence and its substantive limits. A frames follow-up testing more prescriptively, but neither claims successful stellar detection, battery endurance, permanent defects, or an isolated temperature effect.",
+          "quotes": {
+            "source": [
+              "The threshold was applied to the raw stack values, before bias subtraction."
+            ],
+            "A": [
+              "Applying a 250 ADU cutoff directly to the raw (unsubtracted) median stacks"
+            ],
+            "B": [
+              "Applying a 250 ADU threshold to the raw median stacks before bias subtraction"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic technical sentences. A remains readable, but formal introductory phrasing and emphatic measurement labels make this short excerpt feel more like a formatted report.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This bench test was motivated by a practical field question:"
+            ],
+            "B": [
+              "The practical question was whether cooling the camera would improve long exposures enough to justify carrying the cooling battery to the field."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both explain the practical motivation before the measurements. B connects the measurement distinctions within the narrative and moves directly from the result to the ordering obstacle and the two follow-up purposes. A's labeled blocks interrupt that continuity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "At each temperature, the ten exposures were combined into a median stack:",
+              "#### Interpretation and Scope"
+            ],
+            "B": [
+              "While the stack medians summarize background signal rather than read noise, separate pairs of zero-exposure frames gave the same read-noise estimate of 3.1 electrons at both temperatures."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected, conversational technical prose while retaining useful explanations. A's repeated scope statements and emphatic presentation add defensive packaging without developing the argument further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We refer to these strictly as threshold-exceeding pixels",
+              "Finally, these bench measurements narrow the original field question without settling it."
+            ],
+            "B": [
+              "We call these threshold-exceeding pixels because the test does not establish that each one is a permanent detector defect.",
+              "Repeating the sequence in both orders would help evaluate whether the order matters."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The supplied task contains no proof requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves this user's priority of explaining the argument in connected prose: its fixed-order discussion makes the obstacle and purpose of reordered runs clear, then distinguishes the field comparison. A conveys the same evidence but adds unnecessary report scaffolding and repeated qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Interpretation and Scope",
+              "attributing the entire reduction strictly to temperature would require repeating the sequence in both orders to rule out time-dependent drift."
+            ],
+            "B": [
+              "The result is still a real contrast between the two recorded conditions, even though attributing all of it to temperature requires more than this design provides.",
+              "Repeating the sequence in both orders would help evaluate whether the order matters."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "47fd7950a1aed76030c3dfe5af7dc39993303926daecfe7b30a82006c24c5f15",
+    "prompt_sha256": "398e307c6a4455e26d119ceaff09b069e7bc7354630b3419a887cb9950da8bf7",
+    "raw_sha256": "85cbbabba8823108494c8fd1728350bb6f29d564e1cecaa218ef1ecfbda9e8df",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of an empirical equipment-study excerpt, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the protocol, numerical measurements, units, threshold application, defect qualification, and fixed-order limitation. Its stronger recommendation for field trials does not claim those trials occurred or that practical benefits were demonstrated.",
+          "quotes": {
+            "source": [
+              "The present result is still a real contrast between the two recorded conditions, even though assigning all of it to temperature requires more than the design provides."
+            ],
+            "A": [
+              "Although the contrast between the two recorded conditions is real, attributing all of it to temperature requires more than this design provides"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "The conclusion converts a fixed-order association into confirmation that cooling suppresses thermal accumulation, supplying causal and mechanistic certainty the source withholds. Its earlier attribution caveat conflicts with this conclusion rather than supporting it. The added claim that cold acquisition followed immediately also invents protocol timing.",
+          "quotes": {
+            "source": [
+              "assigning all of it to temperature requires more than the design provides.",
+              "followed by ten at 5 degrees Celsius."
+            ],
+            "A": [],
+            "B": [
+              "The laboratory data confirm that cooling suppresses thermal accumulation in 30-second dark exposures",
+              "10 frames acquired immediately following at 5°C."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves the observational conclusion and its attribution limit. B retains the numerical evidence but ends with an unsupported causal confirmation, despite acknowledging the confounding earlier, and adds unsupported immediacy to the acquisition sequence.",
+          "quotes": {
+            "source": [
+              "The cooler condition therefore had a lower measured dark-frame background and fewer threshold exceedances in this run.",
+              "assigning all of it to temperature requires more than the design provides."
+            ],
+            "A": [
+              "attributing all of it to temperature requires more than this design provides"
+            ],
+            "B": [
+              "The laboratory data confirm that cooling suppresses thermal accumulation in 30-second dark exposures"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the measurements in idiomatic technical prose. B's inflated diction and dense nominal phrases make familiar limitations harder to read without adding precision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The test does not establish whether each of these pixels is a permanent detector defect."
+            ],
+            "B": [
+              "These are cataloged strictly as statistical threshold exceedances; this protocol does not establish whether these instances correspond to permanent detector defects."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A proceeds from the practical question through protocol and results to the attribution obstacle and separate follow-up tests. B places a lengthy attribution discussion inside the protocol before presenting results, then restarts that discussion in the synthesis.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In this run, the cooler condition produced a lower measured dark-frame background and fewer threshold exceedances.",
+              "Because the order was fixed from warm to cold, however, temperature and elapsed time were not varied independently."
+            ],
+            "B": [
+              "**Sequence Limitation:**",
+              "**Attribution:** While a clear contrast exists between the two recorded conditions"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A fits the author's preference for connected explanation with qualifications beside the claims. B substitutes numbered report sections, repeated cautionary framing, and grander terminology for the requested excerpt's straightforward argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate whether cooling the camera improves long exposures enough to justify carrying a cooling battery into the field, we compared dark frames on the bench."
+            ],
+            "B": [
+              "### Equipment Evaluation: Bench Dark-Current and Thermal Baseline Assessment",
+              "However, these findings must not be conflated with verified operational advantages:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof is part of this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B's major error changes what the reader can conclude about temperature causation, defeating the user's explicit requirement to preserve the evidence's scope. A also better develops the practical motivation, measurements, attribution obstacle, and proposed field test in connected prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Although the contrast between the two recorded conditions is real, attributing all of it to temperature requires more than this design provides",
+              "Reporting improved stellar detection or field endurance would be premature, as neither outcome was tested."
+            ],
+            "B": [
+              "The laboratory data confirm that cooling suppresses thermal accumulation in 30-second dark exposures"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7710eb79031c9ffd260baa6561f249cfc2999cd2f30dc1ed49884db0b5d34748",
+    "prompt_sha256": "398e307c6a4455e26d119ceaff09b069e7bc7354630b3419a887cb9950da8bf7",
+    "raw_sha256": "85cbbabba8823108494c8fd1728350bb6f29d564e1cecaa218ef1ecfbda9e8df",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-07",
     "config": "flash-high",
     "candidate": "scholarly-20261103",
     "reference": "none",
@@ -31475,6 +31769,929 @@
     "source_sha256": "7dc707167d21be53a662006ad7253ac319d20f1f1754b3a377e964e864f19dc1",
     "prompt_sha256": "93bde83f7151de7226cc9faf25a40c06d9423a6866b877f205fe5c6dc1abb1fd",
     "raw_sha256": "882fd7a8bd0dbe99a1337b2f0acac241a3427002d808e64e67c1723758c518a3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a discussion of supplied descriptive results, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the routing process, counts, deadline definition and follow-up, rates, hypothetical weighting, causal limitations, and handling-time scope. It also keeps requests distinct from people and quality assessment separate from deadline measurement.",
+          "quotes": {
+            "source": [
+              "It does not establish what would happen if requests were reassigned",
+              "The recorded averages describe the two actual workloads."
+            ],
+            "A": [
+              "it still does not tell us what would happen if requests were reassigned between routes.",
+              "on the bundle of work actually routed to each branch"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's numerical results and substantive qualifications, including complete follow-up, nonrandom routing, unmeasured difficulty, hypothetical standardization, actual-workload costs, and proposed future evaluation.",
+          "quotes": {
+            "source": [
+              "Those figures are calculated summaries for a hypothetical half-routine, half-complex mixture.",
+              "For the next evaluation we propose recording handling time by complexity and examining reply quality separately."
+            ],
+            "A": [],
+            "B": [
+              "Those figures are calculated summaries for a hypothetical half-routine, half-complex mixture.",
+              "For the next evaluation, we propose recording handling time by complexity and examining reply quality separately."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the observations and their limits. Neither treats the pooled ranking as erroneous, the equal-weight calculation as observed or causal, or the handling-time difference as a comparison of equivalent requests.",
+          "quotes": {
+            "source": [
+              "The pooled fractions use different weights:",
+              "or claim that B requires three extra minutes for an otherwise identical request."
+            ],
+            "A": [
+              "Recombining those category rates with two very different workload mixtures reverses the overall ranking without any contradiction.",
+              "the logs cannot answer whether Method B requires three extra minutes to handle an otherwise comparable request"
+            ],
+            "B": [
+              "Combining the two category fractions using those different mixtures can reverse their overall ordering.",
+              "or claim that Method B requires three extra minutes for an otherwise identical request."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable, but B generally integrates qualifications without A's repeated interpretive slogans and restatements. Its closing paragraph is particularly economical without losing the measured-versus-unmeasured distinction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The comparisons appear to conflict only when we ask one figure to answer another figure's question.",
+              "A deadline log is not a quality review."
+            ],
+            "B": [
+              "Meeting the two-day deadline is a service outcome, but no one independently assessed whether the substantive replies were correct or sufficient for the requester."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more fully builds the explanation from the apparent reversal to its mechanism: routine requests have higher success rates, and the methods receive different shares of them. It then introduces equal weighting as a way to isolate that arithmetic effect. B gives the necessary facts but compresses their connection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Under both methods, routine requests met the deadline far more often than complex ones.",
+              "We can isolate the arithmetic effect of the workload mix by applying equal weights to the routine and complex fractions"
+            ],
+            "B": [
+              "The pooled result favors Method A on this descriptive measure while Method B has the higher fraction in each recorded category because the two comparisons answer different questions using different weights."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better satisfies this author's preference for explaining why a comparison belongs before giving its implications. Its explicit operational questions provide useful explanation, although some surrounding commentary could be trimmed. B is direct but gives less space to developing those questions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "what share of the workload actually sent through each branch received a timely substantive reply?",
+              "how much staff time was spent per request on the bundle of work actually routed to each branch?"
+            ],
+            "B": [
+              "The handling-time records likewise describe the two actual workloads rather than a comparison of identical requests."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact is an interpretive discussion, with supplied arithmetic rather than a proof requiring exposition.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A wins on the decisive priority of developing the argument: it explicitly connects higher routine success rates to unequal workload weights and explains what standardization enables. B is less repetitive, but A's additional explanation serves this user's stated goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Under both methods, routine requests met the deadline far more often than complex ones.",
+              "Holding the category weights fixed shows how the pooled total depends on the mix of labels"
+            ],
+            "B": [
+              "the pooled fractions weight the categories by each method's actual workload",
+              "Combining the two category fractions using those different mixtures can reverse their overall ordering."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c485b08e37aaf28196636264739cde18c63045427222effba60903fcdae73324",
+    "prompt_sha256": "17a25142ba97030cba8d694f29ee7b109b0e85123dc17a56afe261f64f9ff51f",
+    "raw_sha256": "52af2e5e1fff20e971f26f69f451a0ac23a4c186ece7381268b3b8858b2b83a9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a revised discussion explaining supplied comparisons, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the counts, rates, deadline outcome, routing chronology, hypothetical mixture, causal limits, and actual-workload time averages. The added maxim about useful replies echoes the tone sample but does not assert new study evidence.",
+          "quotes": {
+            "source": [
+              "We have no finer difficulty scores",
+              "The recorded averages describe the two actual workloads.",
+              "A fast reply is useful when it reaches the question that was asked."
+            ],
+            "A": [
+              "We have no finer difficulty scores",
+              "these averages describe only the two actual workloads.",
+              "a fast reply is useful only if it addresses the question asked."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the observations, arithmetic, and central limitations. It leaves the absence of finer scores and category-specific cost pairing less explicit, but retains unrecorded within-category difficulty and the lack of complexity-specific time data. Its overhead discussion does not claim an identified mechanism or measured cost.",
+          "quotes": {
+            "source": [
+              "unrecorded difficulty may still differ within the categories.",
+              "It was not broken down by complexity.",
+              "We therefore cannot combine category-specific deadline rates with category-specific costs"
+            ],
+            "A": [],
+            "B": [
+              "unrecorded differences in difficulty may persist within categories.",
+              "Because handling time was not logged separately by complexity, we cannot separate intake overhead from the labor demanded by complex inquiries."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the numerical comparisons and their descriptive scope. A states some data limitations more explicitly; B more explicitly ties its hypothetical calculation to the observed category rates. Neither establishes a causal routing advantage or new empirical result.",
+          "quotes": {
+            "source": [
+              "As an illustration, applying equal weights to the routine and complex fractions gives 55% for A and 65% for B.",
+              "It does not establish what would happen if requests were reassigned"
+            ],
+            "A": [
+              "If we assign equal weight to the routine and complex fractions, the summary rate becomes 55% for Method A and 65% for Method B.",
+              "this calculation cannot establish what would happen if requests were reassigned between methods."
+            ],
+            "B": [
+              "Applying an even 50/50 split to the observed category rates yields an illustrative figure of 55% for Method A",
+              "it cannot predict what would happen if requests were reassigned."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sustains connected explanatory prose. B is readable, but repeatedly shifts into italicized questions and answers, making the discussion more staged than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The pooled comparison asks what fraction of all assigned requests met the deadline under the actual operating conditions of that month.",
+              "An illustrative calculation shows the effect of holding the workload mixture fixed."
+            ],
+            "B": [
+              "*What fraction of all requests handled by each method received a timely reply?*",
+              "This calculation answers an arithmetic question: *How would the methods compare if their observed category rates were applied to an evenly balanced caseload?*"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the practical question, introduce the observational assignment and categories, explain the reversal through workload composition, and motivate equal weighting before discussing its limits. Both then extend the distinction between questions to staff effort and quality.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These results do not conflict, because they answer different questions about the service.",
+              "Routine work had much higher success rates under both methods"
+            ],
+            "B": [
+              "This is not an arithmetic contradiction; the two comparisons simply answer different questions.",
+              "Because routine requests met the deadline far more often under both methods"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A offers the more continuous, direct discussion but unnecessarily echoes the voice sample's maxim. B avoids that borrowing and carefully states the purpose of each comparison, though its repeated explicit questions make the delivery more formalized. Both substantially meet the author's preference for motivated explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a fast reply is useful only if it addresses the question asked.",
+              "They answer how much time was spent on the requests each method received"
+            ],
+            "B": [
+              "To see how the workload mixture shapes the aggregate figure, one can calculate the consequence of holding that mixture fixed.",
+              "These averages answer: *How much logged staff time was spent per request across the actual caseload each method handled?*"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof is requested; the numerical calculations support a prose discussion of the evaluation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both meet the decisive priority of explaining why valid comparisons answer different questions. A has more continuous prose and more explicit data limitations; B explains the observed-rate standardization more concretely and avoids borrowing the sample's maxim. These differences do not establish a substantive overall winner.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Combining the category rates using those different workload mixtures reverses their overall order.",
+              "We cannot determine whether Method B requires three extra minutes on an identical request"
+            ],
+            "B": [
+              "Neither comparison is an error, and neither should be discarded to force the evaluation into a single summary.",
+              "half of 80% plus half of 30%"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "08e43740a9d881cfa75d5615f2a4b63d3bd95a3252daf25cf8524f4312ea5dc8",
+    "prompt_sha256": "17a25142ba97030cba8d694f29ee7b109b0e85123dc17a56afe261f64f9ff51f",
+    "raw_sha256": "52af2e5e1fff20e971f26f69f451a0ac23a4c186ece7381268b3b8858b2b83a9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a revised evaluation discussion, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves routing, classification timing, complete follow-up, counts, rates, handling-time definitions, and measurement limits. Equal weighting remains hypothetical, and the additional evaluation remains future work.",
+          "quotes": {
+            "source": [
+              "Those figures are calculated summaries for a hypothetical half-routine, half-complex mixture.",
+              "The recorded averages describe the two actual workloads."
+            ],
+            "A": [
+              "Those percentages are not outcomes observed in two new groups of requests",
+              "Staff logged 48 hours of handling time across Method A's 160 requests and 35 hours across Method B's 100 requests, or 18 and 21 minutes per request."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the supplied observations and calculations, supervisor-selected routing, unmeasured difficulty, and the distinctions between deadline success, quality, requests, and people. It adds no causal result or completed evaluation.",
+          "quotes": {
+            "source": [
+              "It does not establish what would happen if requests were reassigned",
+              "For the next evaluation we propose recording handling time by complexity and examining reply quality separately."
+            ],
+            "A": [],
+            "B": [
+              "it does not establish what would happen if requests were reassigned between the methods.",
+              "For the next evaluation, we propose recording handling time by complexity and examining reply quality separately."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the numerical results and their scope: workload weights explain the descriptive reversal, while selection and unrecorded difficulty prevent a causal interpretation.",
+          "quotes": {
+            "source": [
+              "Combining the two category fractions using those different mixtures can reverse their overall ordering."
+            ],
+            "A": [
+              "Recombining those category rates with two very different workload mixtures reverses the overall ranking without any contradiction."
+            ],
+            "B": [
+              "Combining the two category fractions using those different mixtures can reverse their overall ordering."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B expresses the distinctions in direct, idiomatic prose. A is readable but sometimes repeats its interpretive explanation in more cumbersome language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those averages answer a question about the total workload each method carried: how much staff time was spent per request on the bundle of work actually routed to each branch?"
+            ],
+            "B": [
+              "The handling-time records likewise describe the two actual workloads rather than a comparison of identical requests."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both develop the weighting argument coherently. B connects the observed reversal directly to its explanation, then carries the same distinction into standardized summaries and handling time with less repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both the pooled comparison and the category comparisons are arithmetic facts, and both are correct because they describe different things."
+            ],
+            "B": [
+              "The pooled result favors Method A on this descriptive measure while Method B has the higher fraction in each recorded category because the two comparisons answer different questions using different weights.",
+              "To see the consequence of holding the category mixture fixed"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B fits the preference for connected explanation that introduces each calculation through its purpose. A also explains the argument, but repeatedly restates that the comparisons are valid and should coexist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Neither view should be silently discarded to make the report tell a simpler story.",
+              "Each comparison is sound for the question it asks"
+            ],
+            "B": [
+              "While the calculation compares the category rates at a common mixture, it does not establish what would happen if requests were reassigned between the methods."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The arithmetic supports a discussion; no proof exposition is requested.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets the user's passage-level goal by explaining the reversal through actual workload weights, then extending that reasoning to the hypothetical mixture and staff effort without A's repeated validity commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both the pooled comparison and the category comparisons are arithmetic facts, and both are correct because they describe different things."
+            ],
+            "B": [
+              "The category fractions compare requests with the same complexity label, whereas the pooled fractions weight the categories by each method's actual workload",
+              "The handling-time records likewise describe the two actual workloads rather than a comparison of identical requests."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c485b08e37aaf28196636264739cde18c63045427222effba60903fcdae73324",
+    "prompt_sha256": "17a25142ba97030cba8d694f29ee7b109b0e85123dc17a56afe261f64f9ff51f",
+    "raw_sha256": "342f56461c6dc62d29dc8a381039d4e91c520ebbde3d06717ab82e35d51a5bb3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory discussion of supplied evaluation results, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all supplied counts, rates, follow-up, routing and measurement qualifications, and hypothetical weighting. The echoed maxim about useful replies adds no study finding, although it is unnecessary use of the tone sample's content.",
+          "quotes": {
+            "source": [
+              "No one independently assessed whether the substantive replies were correct or sufficient for the requester.",
+              "Use the synthetic voice sample only as a guide to tone."
+            ],
+            "A": [
+              "No one independently assessed whether the substantive replies were correct or sufficient for the requester",
+              "a fast reply is useful only if it addresses the question asked."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the observations, arithmetic, hypothetical status, selection caveats, and future evaluation. Its additional statement about separating overhead expresses a limitation of the aggregate logs, not a measured mechanism or cost estimate.",
+          "quotes": {
+            "source": [
+              "Handling time includes intake and desk work but excludes time waiting for a reply from the requester. It was not broken down by complexity.",
+              "The recorded averages describe the two actual workloads."
+            ],
+            "A": [],
+            "B": [
+              "Because handling time was not logged separately by complexity, we cannot separate intake overhead from the labor demanded by complex inquiries.",
+              "Method B’s higher average may simply reflect that four-fifths of its requests were complex."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the substantive conclusions without material error. A more explicitly retains the absence of finer difficulty scores and the precise limitation on combining category-specific rates with costs; B leaves these less explicit and shifts the cost discussion toward overhead.",
+          "quotes": {
+            "source": [
+              "We have no finer difficulty scores",
+              "We therefore cannot combine category-specific deadline rates with category-specific costs"
+            ],
+            "A": [
+              "We have no finer difficulty scores",
+              "nor can we combine category-specific deadline rates with category-specific staff costs."
+            ],
+            "B": [
+              "These broad labels do not capture every nuance of difficulty",
+              "we cannot separate intake overhead from the labor demanded by complex inquiries."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the comparisons in conversational declarative prose. B remains readable, but its repeated italicized question-and-answer presentations make the discussion feel more staged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The pooled comparison asks what fraction of all assigned requests met the deadline under the actual operating conditions of that month."
+            ],
+            "B": [
+              "The pooled total answers a descriptive question about the service as run: *What fraction of all requests handled by each method received a timely reply?*"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the practical question and observational assignment, present the reversal, explain its weights, introduce equal weighting for a stated purpose, and then discuss effort and measurement limits.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "An illustrative calculation shows the effect of holding the workload mixture fixed."
+            ],
+            "B": [
+              "To see how the workload mixture shapes the aggregate figure, one can calculate the consequence of holding that mixture fixed."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A generally better fits the author's direct, connected explanation and keeps the operational limitations concrete. Its echo of the tone sample is a local weakness; B's repeated staged questions and contrasts affect more of the passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These results do not conflict, because they answer different questions about the service.",
+              "a fast reply is useful only if it addresses the question asked."
+            ],
+            "B": [
+              "This calculation answers an arithmetic question: *How would the methods compare if their observed category rates were applied to an evenly balanced caseload?* It does not answer an empirical one."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact contains explanatory arithmetic but no proof requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the requested discussion by explaining the workload reversal directly and retaining the exact operational limits on interpreting staff costs. B's explicit questions are useful, but their repeated presentation adds packaging without resolving an explanation A lacks.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Routine work had much higher success rates under both methods",
+              "We cannot determine whether Method B requires three extra minutes on an identical request, nor can we combine category-specific deadline rates with category-specific staff costs."
+            ],
+            "B": [
+              "These averages answer: *How much logged staff time was spent per request across the actual caseload each method handled?*",
+              "we cannot separate intake overhead from the labor demanded by complex inquiries."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "08e43740a9d881cfa75d5615f2a4b63d3bd95a3252daf25cf8524f4312ea5dc8",
+    "prompt_sha256": "17a25142ba97030cba8d694f29ee7b109b0e85123dc17a56afe261f64f9ff51f",
+    "raw_sha256": "342f56461c6dc62d29dc8a381039d4e91c520ebbde3d06717ab82e35d51a5bb3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a committee recommendation, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the recommendation, estimate exclusions, and sample limitation, but promises preparation-time data from conservator referrals and an accurate, complete estimate. The source establishes referrals and a later revised estimate, not that these steps will resolve all preparation costs.",
+          "quotes": {
+            "source": [
+              "referring the most fragile sheets to the conservator",
+              "I propose that the committee ask for a revised full-project estimate after the sample and the condition review."
+            ],
+            "A": [
+              "that data will come from the conservator referrals made during rehousing.",
+              "produces the accurate, complete estimate"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the immediate allocation, both estimates’ distinct exclusions, the sample’s inability to measure fragile-sheet preparation, uncertain demand, and the open later decision. It adds no material guarantee.",
+          "quotes": {
+            "source": [
+              "It would not estimate the preparation time for the most fragile sheets, because those would be excluded.",
+              "This leaves the eventual digitisation decision open."
+            ],
+            "A": [],
+            "B": [
+              "Because the most fragile sheets would be excluded from that sample, it would not estimate the time needed to prepare them.",
+              "leaving the eventual digitisation decision open."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the decision and acknowledge discoverability as a possible explanation for low use. B also retains the source’s modest informational outcome; A strengthens it into an assurance of complete costing.",
+          "quotes": {
+            "source": [
+              "obtain better information about the larger project."
+            ],
+            "A": [
+              "a realistic measure of preparation costs",
+              "produces the accurate, complete estimate"
+            ],
+            "B": [
+              "provides better information about the larger project."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses conversational committee prose with direct explanations. A is readable, but its abstract labels and emphatic framing make the recommendation sound more packaged than the source’s candid register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That physical reality exposes a critical gap in our project figures:",
+              "Safe physical stabilisation and condition scoping:"
+            ],
+            "B": [
+              "Even so, the sequence of work matters because safe imaging depends on physical preparation that has not yet been done."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the recommendation to the physical obstacle, explains the access uncertainty, and then gives the sample’s purpose, limitation, and decision point. A has a defensible order but repeats the same rationale through estimate bullets, numbered benefits, and a concluding promise.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Pairing rehousing with a targeted pilot sample uses this quarter’s allocation to advance both preservation and access while closing the gaps in our planning:",
+              "We should be clear about what each step will tell us."
+            ],
+            "B": [
+              "A sample made from sheets cleared for imaging would let us test descriptions and image presentation while rehousing proceeds.",
+              "I propose that the committee ask for a revised full-project estimate after the sample and the condition review are complete"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B develops the substantive access objection without treating hidden demand as established, and keeps the candid calendar concession. A also addresses those concerns, but its repeated benefit framing and confident resolution weaken the author’s preference for connected reasoning with real limitations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the intervening work is not a detour.",
+              "decide on full digitisation with confidence."
+            ],
+            "B": [
+              "we cannot tell from the request count alone whether a full scanning programme would be little used.",
+              "Although this postpones a decision on full scanning in calendar terms"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A introduces a minor but consequential assurance about resolving preparation costs. B better meets the decisive priority: a continuous, convincing recommendation that explains why preparation and a limited sample belong before the larger decision while keeping uncertainty visible.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "that data will come from the conservator referrals made during rehousing."
+            ],
+            "B": [
+              "Because the most fragile sheets would be excluded from that sample, it would not estimate the time needed to prepare them.",
+              "leaving the eventual digitisation decision open."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4d4096eaa7855bfd2e0f84a095bda7342ed0384a38d49f573793dc0e190aa480",
+    "prompt_sha256": "9d273464487787c3d616282d238916c9ed869349e3a40f873c299b9646aff511",
+    "raw_sha256": "35a768931dbb432a10ba45fb4c6831c287e4ecf0d0e520445a99e1109ef245b6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns an archival funding recommendation, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposed allocation, distinct estimate omissions, demand uncertainty, sample limitation, and deferred decision. Its reference to excluded fragile sheets reasonably summarizes the most fragile sheets discussed immediately beforehand. It loses an explicit calendar concession, but does not deny the delay or materially change the decision.",
+          "quotes": {
+            "source": [
+              "The rehousing estimate includes sorting out the wrappers and referring the most fragile sheets to the conservator; it does not include treatment of every fragile sheet.",
+              "This leaves the eventual digitisation decision open."
+            ],
+            "A": [
+              "the rehousing estimate covers replacing wrappers and referring the most fragile sheets to the conservator, but does not cover treating every fragile item.",
+              "This leaves the final digitisation decision open."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B turns possible discoverability effects into near certainty, adds active tearing and degraded wrappers, and guarantees significant vendor overruns without evidence. It also expands rehousing into flattening and bulk stabilization and promises exact conservation assessments. These changes materially inflate both the danger of immediate scanning and what the proposed allocation will deliver; the later acknowledgment of hypothetical demand does not resolve the earlier overstatement.",
+          "quotes": {
+            "source": [
+              "Low recorded use may partly reflect difficulty finding material",
+              "folded sheets whose edges are catching on the existing wrappers.",
+              "The rehousing estimate includes sorting out the wrappers and referring the most fragile sheets to the conservator"
+            ],
+            "A": [],
+            "B": [
+              "low demand is almost certainly a symptom of poor discoverability",
+              "actively catching and tearing on degraded wrappers.",
+              "will result in significant, unbudgeted delays and cost overruns.",
+              "flattening accessible material",
+              "A completed conservation inventory detailing the exact condition and treatment requirements of the fragile sheets;"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A keeps the stated uncertainties and limited scope of the estimates. B retains the broad recommendation but changes its evidentiary basis through unsupported condition claims, near-certain demand attribution, and expanded preparation deliverables.",
+          "quotes": {
+            "source": [
+              "Low recorded use may partly reflect difficulty finding material",
+              "We should not let either estimate imply that the difficult preparation is free."
+            ],
+            "A": [
+              "limited requests may reflect poor discoverability rather than a lack of interest.",
+              "Neither estimate accounts for the full preparation required."
+            ],
+            "B": [
+              "low demand is almost certainly a symptom of poor discoverability",
+              "This phased approach ensures immediate physical stabilization"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A generally reads as a direct recommendation to colleagues. B’s administrative scaffolding and repeated promotional abstractions make a short recommendation cumbersome. A’s plain explanations are more appropriate to the supplied register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because fragile sheets will be excluded, the sample will not measure the preparation time those items need."
+            ],
+            "B": [
+              "### 3. Estimate Discrepancies and Conservation Dependencies",
+              "building a sustainable, fully costed foundation for their digital future."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the decision through preparation constraints and access uncertainty to the sample and later estimate. Its claim that low use does not justify bypassing preparation is a misdirected transition, but the overall argument remains connected. B repeatedly restarts the case through sections and benefit lists rather than developing it continuously.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Low recorded use does not justify bypassing this groundwork.",
+              "I propose that the committee request a revised full-project estimate once the sample and condition review are complete."
+            ],
+            "B": [
+              "### 2. Addressing the Case for Immediate Digitisation",
+              "### 4. Proposed Phased Approach: A Targeted Sample and Pilot",
+              "### 5. Conclusion and Next Steps"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better respects the author’s preference for restrained, connected technical reasoning. It does omit the explicit acknowledgment of calendar delay and the invisibility of rehousing, which B retains. Those omissions are a real weakness, but B’s slogans and inflated promises depart more substantially from the requested voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "potential demand is not yet a measured queue of users waiting for every sheet",
+              "The committee has good reason to prioritize improvements that the public can use"
+            ],
+            "B": [
+              "Deferring a decision on the entire collection is a calendar delay, but it is not lost time.",
+              "It replaces speculative assumptions with solid data."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The recommendation contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error, whereas B materially strengthens the evidence and promises work beyond the stated estimates. The decisive priority is a convincing recommendation built from the actual uncertainties. A largely achieves that, despite a weak transition and missing calendar concession; B’s more elaborate presentation depends on unsupported assurances.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A public online sample could reveal demand we have not yet captured.",
+              "This leaves the final digitisation decision open."
+            ],
+            "B": [
+              "low demand is almost certainly a symptom of poor discoverability",
+              "the condition review undertaken during rehousing will provide an exact count and assessment of those fragile sheets."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "056a20e8c07306c72e3c8a33dca42bfcb65cbe16f962f40e47750d647d98f219",
+    "prompt_sha256": "9d273464487787c3d616282d238916c9ed869349e3a40f873c299b9646aff511",
+    "raw_sha256": "35a768931dbb432a10ba45fb4c6831c287e4ecf0d0e520445a99e1109ef245b6",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
