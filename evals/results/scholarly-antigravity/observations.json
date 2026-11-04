@@ -43936,5 +43936,1167 @@
     "prompt_sha256": "afd8ef019dc97c93eac769b36c24c15d5ec9202ea9c54361e69ef9b272aed3d6",
     "raw_sha256": "3b9befbe45678832ff6acdf36e4a8cdbe600ee437b02925966b6db154f4deee6",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an archaeological discussion rewrite, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the numerical results, sequential design, interpretive uncertainty, and proposed continuation. However, it adds that the timing of assistance was not logged. The source establishes only that the assisting person's identity was not recorded; A additionally rules out timing information that the source leaves unspecified.",
+          "quotes": {
+            "source": [
+              "We did not record which person supplied that help."
+            ],
+            "A": [
+              "without logging when or by whom assistance was provided"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the ordered groups of 18, depth difference, shared recorders and unrecorded helper identity, all counts and medians, exclusion of correction time, optional notes, and limits on causal and archival conclusions. It clearly labels the continuation as an unevaluated proposal.",
+          "quotes": {
+            "source": [
+              "That proposal is not an evaluated improvement."
+            ],
+            "A": [],
+            "B": [
+              "This proposal is not an evaluated improvement."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive findings and uncertainty. B is more faithful about assistance documentation: A introduces an unsupported statement about missing timing records.",
+          "quotes": {
+            "source": [
+              "We did not record which person supplied that help."
+            ],
+            "A": [
+              "without logging when or by whom assistance was provided"
+            ],
+            "B": [
+              "we did not record who provided assistance"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses readable, direct technical prose. A's abstract introductions and elaborate labels make a straightforward discussion sound like a formal assessment report.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Evaluating these outcomes reveals significant analytical tension:"
+            ],
+            "B": [
+              "The photo-led records were more complete by the mandatory-field measure, but that measure does not capture whether a record is adequate for later analysis."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A has a coherent outline and a useful results table, but its headings and separate lists repeatedly interrupt the explanation. B connects the backlog, measurement limits, design constraints, observations, and interpretive tradeoff in a continuous argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Synthesis and Critical Uncertainties",
+              "The Metric vs. The Archive:"
+            ],
+            "B": [
+              "Because we had no independent inventory of relationships against which to check the records, we cannot tell whether fewer relationships were visible in the later contexts, whether the photo-led form elicited less description, or both."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the requested connected, conversational technical discussion. It explains the practical stakes without A's staged contrasts and heightened evaluative language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Immediate vs. Deferred Costs:",
+              "the very observations that facilitate stratigraphic interpretation"
+            ],
+            "B": [
+              "If the drop in relationship notes reflects lost interpretive information, however, that cost will appear only during post-excavation work."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A has a minor unsupported addition about assistance timing; B has no material error. Independently, B better meets the decisive preference for an explanatory discussion: its conditional account of later interpretive costs connects the immediate backlog benefit to the reason for caution, while A packages that argument into report labels and lists.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Evaluating these outcomes reveals significant analytical tension:",
+              "without logging when or by whom assistance was provided"
+            ],
+            "B": [
+              "Saving five minutes per context provided an immediate benefit during a backlog.",
+              "If the drop in relationship notes reflects lost interpretive information, however, that cost will appear only during post-excavation work."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4430af429c09263beb294d8976e5c076785a9adda9d45c8c6edb69fa9caa00b5",
+    "prompt_sha256": "aad9d02119192879bbee08abc506be430e0061266bb0b2c3cb7bb59e049caa23",
+    "raw_sha256": "a0b53dfc5db37fe36c78ee91b428a3269597f5ae558fd738c8fc157a762ea9b3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an archaeological discussion rewrite, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the forms' stated requirements, optional notes, consecutive groups and depth difference, shared assistance, all numerical observations, exclusion of correction time, competing explanations for fewer notes, and the unevaluated recommendation.",
+          "quotes": {
+            "source": [
+              "These times include the initial record and exclude later corrections.",
+              "That proposal is not an evaluated improvement."
+            ],
+            "A": [
+              "Median recording times for the initial record were 11 and 16 minutes, respectively, excluding later corrections.",
+              "this modified procedure has not yet been evaluated as an improvement"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the observations and principal qualifications, but asserts that replacing the plan with a photograph is the forms' only difference. The source identifies shared fields and different visual records without establishing that the forms are otherwise identical. B therefore excludes other possible differences in form design without support.",
+          "quotes": {
+            "source": [
+              "The photo-led form requires a scaled overview and four mandatory fields. The drawing-led form uses the same four fields and a hand-drawn plan."
+            ],
+            "A": [],
+            "B": [
+              "they differ only in replacing the drawing-led form's hand-drawn plan with a scaled overview photograph"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the counts, timing qualification, uncertainty about optional notes, and limits of the trial. A accurately describes the stated form requirements; B adds an unsupported exclusivity claim about their differences.",
+          "quotes": {
+            "source": [
+              "The photo-led form requires a scaled overview and four mandatory fields. The drawing-led form uses the same four fields and a hand-drawn plan."
+            ],
+            "A": [
+              "The photo-led form requires a scaled overview and four mandatory fields, while the drawing-led form uses the same four fields and a hand-drawn plan."
+            ],
+            "B": [
+              "they differ only in replacing the drawing-led form's hand-drawn plan with a scaled overview photograph"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A is idiomatic and direct while retaining the explanation. B is readable but adds abstract and promotional phrasing around an otherwise straightforward proposal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore propose continuing the photo-led form on a limited set of contexts while adding an explicit relationship prompt and tracking correction time"
+            ],
+            "B": [
+              "This proposal is a targeted adjustment to test the workflow's blind spots, not an evaluated improvement."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build a coherent sequence from backlog and recording requirements through design, observations, interpretive limits, and continuation. B explains the completeness check's limitation earlier; A gives the recommendation a clear transition from the concluding limits. Neither leaves a substantive reasoning gap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Overall, the trial shows an association with faster initial recording and fewer omitted mandatory fields in these consecutive groups, but it does not isolate the effect of the form or show that the resulting archive retains every relationship needed for interpretation.",
+              "We therefore propose continuing"
+            ],
+            "B": [
+              "which limits what that check can tell us about whether a record preserves the information needed for later interpretation",
+              "The structure of the trial further restricts what can be inferred from its results."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A retains the source's conversational explanatory rhythm and substantive qualifications without much rhetorical packaging. B develops the argument too, but additions about an unproven method and workflow blind spots introduce the defensive commentary and decorative framing this author asks to remove.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Mandatory-field completeness alone does not show that the records are more complete overall, and a lower count of optional notes does not show that they are poorer records."
+            ],
+            "B": [
+              "To address these specific uncertainties without overextending an unproven method",
+              "a targeted adjustment to test the workflow's blind spots"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B's minor exclusivity claim makes the form comparison more controlled in description than the source establishes, although B still rejects a causal conclusion. A also better serves this user's preference for connected explanation without added rhetorical framing: it preserves why neither completeness metric establishes archival quality and then motivates the limited continuation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The backlog made this distinction easy to overlook because saving five minutes was immediately useful, whereas missing interpretive information, if any was missing, would become costly only later."
+            ],
+            "B": [
+              "they differ only in replacing the drawing-led form's hand-drawn plan with a scaled overview photograph",
+              "This proposal is a targeted adjustment to test the workflow's blind spots, not an evaluated improvement."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e0f6b2647a806ca780201a91d9b4c98da71d505fdd87d43716efef6058a7cb15",
+    "prompt_sha256": "aad9d02119192879bbee08abc506be430e0061266bb0b2c3cb7bb59e049caa23",
+    "raw_sha256": "a0b53dfc5db37fe36c78ee91b428a3269597f5ae558fd738c8fc157a762ea9b3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an archaeological discussion rewrite, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the consecutive groups, depth difference, shared assistance, numerical results, timing exclusion, interpretive uncertainty, and untested proposal.",
+          "quotes": {
+            "source": [
+              "That proposal is not an evaluated improvement."
+            ],
+            "A": [
+              "This proposal is a targeted adjustment to test the workflow's blind spots, not an evaluated improvement."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the trial design and exact observations, distinguishes mandatory completeness from interpretive adequacy, and retains the recommendation's untested status.",
+          "quotes": {
+            "source": [
+              "These times include the initial record and exclude later corrections."
+            ],
+            "A": [],
+            "B": [
+              "Median recording times for the initial record were 11 and 16 minutes, respectively, excluding later corrections."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the numerical findings and explain why fewer optional notes establish neither information loss nor overall inferiority. Both also preserve the limits on causal inference.",
+          "quotes": {
+            "source": [
+              "A lower count of such notes could mean that fewer relationships were visible, that the form elicited less description, or both."
+            ],
+            "A": [
+              "fewer relationships may have been visible in the shallower contexts, the photo-led form may have elicited less description, or both factors may have contributed."
+            ],
+            "B": [
+              "the lower count of relationship notes in the photo-led group could mean that fewer relationships were visible, that the form elicited less description, or both."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, conversational technical prose. A remains readable but adds cumbersome framing around points whose significance is already clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To address these specific uncertainties without overextending an unproven method"
+            ],
+            "B": [
+              "We therefore propose continuing the photo-led form on a limited set of contexts"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the backlog and interpretability problem, explain the design limitations, present the observations, and connect the uncertainty to the recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The structure of the trial further restricts what can be inferred from its results."
+            ],
+            "B": [
+              "Because the recorders worked together on consecutive groups of contexts, the trial is not a balanced comparison of independent individual performance."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves useful explanation while avoiding A's repeated cautionary framing. Its direct distinction between the measure and the archive better matches the author's preference for connected reasoning without defensive repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Consequently, neither metric can be equated with the quality of the archive."
+            ],
+            "B": [
+              "Mandatory-field completeness alone does not show that the records are more complete overall, and a lower count of optional notes does not show that they are poorer records."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better delivers the requested connected argument: it explains the immediate saving and uncertain later cost, then makes the limited recommendation follow from those constraints. A supplies comparable reasoning with additional cautionary packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This proposal is a targeted adjustment to test the workflow's blind spots, not an evaluated improvement."
+            ],
+            "B": [
+              "The backlog made this distinction easy to overlook because saving five minutes was immediately useful, whereas missing interpretive information, if any was missing, would become costly only later."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "69dae442f30aa95fe150431bb190d45e9369f5539b2086bdb4d93e702b22a9e5",
+    "prompt_sha256": "c42116730d7e046cb1f620fc8974a2037fefce40f4bc46297c23df94f62481a0",
+    "raw_sha256": "50a55dbe2c1fb98c08aeb5150285fdb97a7369cf98592b2aae3253c4a7f0c09d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the exposition of observational findings and a recommendation, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, exact counts and medians, exclusion of correction time, alternative explanations for fewer notes, and proposed rather than demonstrated improvement.",
+          "quotes": {
+            "source": [
+              "We did not record which person supplied that help."
+            ],
+            "A": [
+              "Either recorder could ask the other for help throughout, but we did not record who provided assistance."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B adds that assistance timing was not logged. The source establishes only that the helper's identity was not recorded, leaving timing records unspecified. This adds an unsupported measurement limitation, although the central results and conclusions remain intact.",
+          "quotes": {
+            "source": [
+              "We did not record which person supplied that help."
+            ],
+            "A": [],
+            "B": [
+              "without logging when or by whom assistance was provided."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the numerical results, optional status of relationship notes, interpretive uncertainty, and limited proposal. A accurately preserves the assistance-recording limitation; B expands it to missing timing information.",
+          "quotes": {
+            "source": [
+              "We did not record which person supplied that help."
+            ],
+            "A": [
+              "but we did not record who provided assistance."
+            ],
+            "B": [
+              "without logging when or by whom assistance was provided."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's direct sentences read naturally as a discussion. B repeatedly uses administrative abstractions and staged announcements that make the same reasoning more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We tested a new recording form to reduce a backlog, aiming to record contexts faster without producing records that could not be interpreted later."
+            ],
+            "B": [
+              "The trial of a photo-led recording form was initiated to address an active recording backlog, with increased speed as the primary objective."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A connects the note counts immediately to the missing comparison inventory, then explains the practical tradeoff and recommendation. B's table is useful, but its subsequent labeled subdivisions interrupt the connected argument the user requested.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because we had no independent inventory of relationships against which to check the records, we cannot tell whether fewer relationships were visible in the later contexts, whether the photo-led form elicited less description, or both."
+            ],
+            "B": [
+              "Evaluating these outcomes reveals significant analytical tension:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A develops the problem and its consequences in connected prose. B's generic section labels and announced analytical tension add rhetorical packaging rather than explanation, despite retaining the substantive distinctions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the drop in relationship notes reflects lost interpretive information, however, that cost will appear only during post-excavation work."
+            ],
+            "B": [
+              "### Synthesis and Critical Uncertainties"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds a minor unsupported claim about missing assistance times. A also better meets the decisive writing priority by connecting the narrow completeness measure, uncertain interpretive cost, and limited recommendation without fragmenting the discussion into a report outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The photo-led records were more complete by the mandatory-field measure, but that measure does not capture whether a record is adequate for later analysis."
+            ],
+            "B": [
+              "without logging when or by whom assistance was provided."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e50177e5378a2a0c977abb8f76ae2b5232476624dfca0af055161b1305296f0c",
+    "prompt_sha256": "c42116730d7e046cb1f620fc8974a2037fefce40f4bc46297c23df94f62481a0",
+    "raw_sha256": "50a55dbe2c1fb98c08aeb5150285fdb97a7369cf98592b2aae3253c4a7f0c09d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a committee statement, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the policy, operational safeguards, observations, and pilot, but strengthens the volunteers' reported difficulty into impossibility. This overstates the evidence supporting the proposal without changing the proposal itself.",
+          "quotes": {
+            "source": [
+              "Five volunteers have told us that variable work shifts make that difficult."
+            ],
+            "A": [
+              "five volunteers have directly told us that variable work shifts make booking that far ahead impossible."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the evidence's limits, one reserved place, release timing, induction, documented supervisor exception, coordinator ownership, noon deadline, and six-Saturday operational pilot. No material change is established.",
+          "quotes": {
+            "source": [
+              "If the person had not confirmed by noon the following day, the place would go to the waiting list."
+            ],
+            "A": [],
+            "B": [
+              "If the person has not confirmed by noon the following day, the place goes to the waiting list."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive arrangement and its limitations, but B accurately retains reported difficulty where A attributes a stronger report of impossibility to the five volunteers.",
+          "quotes": {
+            "source": [
+              "Five volunteers have told us that variable work shifts make that difficult."
+            ],
+            "A": [
+              "five volunteers have directly told us that variable work shifts make booking that far ahead impossible."
+            ],
+            "B": [
+              "Five volunteers have told us that variable work shifts make that difficult."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a practical committee statement. A repeatedly shifts into speechmaking and elaborate defensive phrasing, making otherwise straightforward points sound rehearsed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I will not inflate those five messages into a sweeping census of everyone shut out, nor should we dismiss them as negligible."
+            ],
+            "B": [
+              "those five messages simply confirm that the problem exists for those volunteers, not the total number affected."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both offer an intelligible argument rather than a catalogue. A moves from the tradeoff to the skills objection and execution; B establishes the problem before proposing the change, then explains confirmation and skills safeguards. Neither ordering leaves a consequential reasoning gap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I believe we can, provided we protect team operations.",
+              "A viable policy also requires tight execution."
+            ],
+            "B": [
+              "To address this, I propose that we reserve one place on each Saturday repair team for someone who cannot book a month in advance.",
+              "To ensure the place is actually used rather than left as an empty chair that everyone assumes is filled"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B sustains the speaker's practical advocacy while explaining the safeguards. A multiplies defensive commentary and staged contrasts, departing from the author's preference for a limited affirmative case without rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before making the case, let me be clear about what this is not:",
+              "Rather than debating abstract principles, let us test this on the floor for six Saturdays."
+            ],
+            "B": [
+              "Accepting slightly less certainty on one spot is a reasonable compromise to let volunteers with shifting schedules participate.",
+              "I suggest testing this arrangement for six Saturdays."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no identified material error; A slightly overstates the reported booking barrier. Beyond fidelity, B better meets the decisive preference for practical, connected advocacy: it explains why confirmation is needed without A's repeated declarations about how the case should be judged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "variable work shifts make booking that far ahead impossible.",
+              "Rather than exaggerating or minimizing that fact, we ought to address it."
+            ],
+            "B": [
+              "variable work shifts make that difficult.",
+              "To ensure the place is actually used rather than left as an empty chair that everyone assumes is filled, the coordinator will contact the selected volunteer two days before the session."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4c1aa03bfeaf7e38ab1096736059a9171342cf878e4cbc3a463745d56fc6e749",
+    "prompt_sha256": "8c0a79a06573bee4d78b00f84af4bb8009dc7d240d1a9c69c77602f156f19905",
+    "raw_sha256": "aac6679a1eff63c61e5da0a7fa167874bd95b46d0ae2f8f5f0de379551e63c59",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns persuasive committee prose, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the policy's timing and eligibility, documented supervisor exception, confirmation ownership and deadline, bounded evidence, early-booker tradeoff, and six-Saturday operational evaluation.",
+          "quotes": {
+            "source": [
+              "If a particular Saturday requires that place for a supervisor and no other supervisor is booked, the table lead should be able to release it early for that role, recording the reason."
+            ],
+            "A": [
+              "If a particular Saturday requires that place for a supervisor and no other supervisor is booked, the table lead should be able to release it early for that role and record the reason"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the same policy, evidence qualifications, tradeoff, safeguards, and limited pilot. Its explicit connections between safeguards explain their purpose without promising to remove all scheduling uncertainty.",
+          "quotes": {
+            "source": [
+              "The same confirmation deadline would apply to anyone taking a newly offered place at that stage."
+            ],
+            "A": [],
+            "B": [
+              "the exact same confirmation deadline would apply to anyone taking a newly offered place at that stage."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the proposal and its qualifications, including the narrow interpretation of the five reports and the distinction between operational evaluation and a general verdict on fairness.",
+          "quotes": {
+            "source": [
+              "They are not a count of everyone excluded by the current arrangement.",
+              "They should tell us whether this limited change can operate without leaving the teams short."
+            ],
+            "A": [
+              "those five messages are not a count of everyone excluded by the current arrangement.",
+              "they should tell us whether this limited change can operate without leaving the teams short."
+            ],
+            "B": [
+              "Those five messages are not a count of everyone excluded by the current arrangement",
+              "What they should tell us is whether this limited change can operate without leaving the teams short."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A generally uses more direct sentence construction. B's opening nests a justification inside a contrast, and some later transitions sound more staged, although both remain readable committee prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I want us to keep one place on each Saturday team available for someone who cannot book a month ahead",
+              "I suggest trying this arrangement for six Saturdays"
+            ],
+            "B": [
+              "not as a remedy for every kind of unfairness in the rota, because this is only a small change to one part of it, but as a practical response to a clear barrier.",
+              "Rather than leaving this as a theoretical debate"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A provides reasons for each safeguard, but introduces the skills machinery before framing the central tradeoff. B first states why accepting less certainty could be worthwhile, names the two conditions that make it acceptable, and then develops each condition in order. That makes the construction's purpose easier to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The table leads have raised a sensible objection to holding a place back",
+              "Some people have also said that this change will punish the volunteers who reliably book early."
+            ],
+            "B": [
+              "I think we can—provided we protect the skill mix on the team and make sure any late booking is confirmed rather than merely hoped for.",
+              "The table leads have raised a sensible objection on that first point",
+              "Just as the role exception protects the skill mix, a clear confirmation step is needed"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain first-person judgment, substantive objections, and useful explanation. A better restrains rhetorical commentary; B better realizes the author's preference for explaining the argument's structure before developing its mechanisms. These are competing strengths within the supplied voice preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I think we can, provided the role exception is real and the late booking is confirmed rather than left to chance."
+            ],
+            "B": [
+              "I think we can—provided we protect the skill mix on the team and make sure any late booking is confirmed rather than merely hoped for.",
+              "Confirmation needs an owner."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The statement contains no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has an identified material error. B has a modest substantive advantage on the user's central priority of argument development: its acceptance of the tradeoff explicitly introduces skill mix and confirmation as conditions, then explains both. A's more direct phrasing is valuable, but its organizing rationale arrives after the first safeguard has already been developed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I think we can, provided the role exception is real and the late booking is confirmed rather than left to chance."
+            ],
+            "B": [
+              "I think we can—provided we protect the skill mix on the team and make sure any late booking is confirmed rather than merely hoped for.",
+              "The table leads have raised a sensible objection on that first point",
+              "Just as the role exception protects the skill mix, a clear confirmation step is needed"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "27f914561aca1ca5fe8ef50912d121cdcec5136a59d372d4de105c644ecb39cb",
+    "prompt_sha256": "8c0a79a06573bee4d78b00f84af4bb8009dc7d240d1a9c69c77602f156f19905",
+    "raw_sha256": "aac6679a1eff63c61e5da0a7fa167874bd95b46d0ae2f8f5f0de379551e63c59",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a committee statement, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the reserved place, release rule, induction, recorded supervisor exception, confirmation deadline, evidence limits, and six-Saturday operational pilot.",
+          "quotes": {
+            "source": [
+              "If the person had not confirmed by noon the following day, the place would go to the waiting list."
+            ],
+            "A": [
+              "if that person had not confirmed by noon the following day, the place would go to the waiting list."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the policy mechanics and qualifications, including equal confirmation requirements and the limited purpose of the pilot.",
+          "quotes": {
+            "source": [
+              "The same confirmation deadline would apply to anyone taking a newly offered place at that stage."
+            ],
+            "A": [],
+            "B": [
+              "The same confirmation deadline would apply to anyone taking a newly offered place at that stage"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the complete proposal and distinguish evidence of difficulty for five volunteers from a count of everyone excluded.",
+          "quotes": {
+            "source": [
+              "The five messages are enough to show that the problem exists for those people.",
+              "They are not a count of everyone excluded by the current arrangement."
+            ],
+            "A": [
+              "Those five messages are not a count of everyone excluded by the current arrangement",
+              "Even so, they are enough to show that the problem is real for those people."
+            ],
+            "B": [
+              "those five messages are not a count of everyone excluded by the current arrangement.",
+              "five messages are enough to show that the problem exists for those volunteers."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's opening establishes the practical situation directly. A makes its opening sentence carry the proposal, disclaimer, explanation of the disclaimer, and affirmative justification at once.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "not as a remedy for every kind of unfairness in the rota, because this is only a small change to one part of it, but as a practical response to a clear barrier."
+            ],
+            "B": [
+              "The current booking system opens all places on each Saturday repair team four weeks ahead, and on six of the last eight Saturdays the rota was full within a day."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both turn the material into a connected argument. A announces two operational conditions and develops each; B establishes skill coverage first, then connects the early-booking tradeoff to confirmation. Both explain why the safeguards belong.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Just as the role exception protects the skill mix, a clear confirmation step is needed"
+            ],
+            "B": [
+              "I think we can, provided the role exception is real and the late booking is confirmed rather than left to chance."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the speaker's practical judgment, acknowledge the cost to early bookers, and explain the proposal's conditions without becoming neutral options papers.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I think we can—provided we protect the skill mix on the team and make sure any late booking is confirmed rather than merely hoped for."
+            ],
+            "B": [
+              "Their early commitments help us plan, and they would have one fewer place to choose from during most of the booking window."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: an affirmative argument explaining the tradeoff, operational safeguards, and limited pilot. A's explicit connections and B's more direct opening offer comparable benefits.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "What they should tell us is whether this limited change can operate without leaving the teams short."
+            ],
+            "B": [
+              "Those records will not tell us whether every volunteer feels included or settle broader questions of fairness in the rota"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d7687c266b3ec9e5269013f34a616122b4c698c08ff90d435b2cfd5e1373454a",
+    "prompt_sha256": "352f37515b14d7db24534701660341b9f54dcefca85657d06076ba6256ba0151",
+    "raw_sha256": "7aa166768079dd998d06e71749b86ce716be3834e750532b8878c63bfe8527c0",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns persuasive committee prose, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "Calling early commitments essential makes planning depend on them; the source says only that they help. This strengthens a secondary premise. The policy mechanics and central evidence limits otherwise remain intact.",
+          "quotes": {
+            "source": [
+              "Their early commitments help us plan."
+            ],
+            "A": [
+              "Their early commitments are essential to our planning"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B changes the five volunteers' reported difficulty into reported impossibility. This makes inability to book an established fact and materially strengthens the central evidence whose limits the task expressly requires preserving.",
+          "quotes": {
+            "source": [
+              "Five volunteers have told us that variable work shifts make that difficult."
+            ],
+            "A": [],
+            "B": [
+              "five volunteers have directly told us that variable work shifts make booking that far ahead impossible."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the limited claim supported by the five reports, though it overstates the planning benefit of early commitments. B's difficulty-to-impossibility change is more consequential because it alters the proposal's central evidential basis.",
+          "quotes": {
+            "source": [
+              "Five volunteers have told us that variable work shifts make that difficult."
+            ],
+            "A": [
+              "Five volunteers have told us that variable work shifts make that difficult."
+            ],
+            "B": [
+              "five volunteers have directly told us that variable work shifts make booking that far ahead impossible."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A generally uses direct committee language. B accumulates dramatic expressions about locks, benches, backdoors, and testing on the floor, making the practical explanation sound more performed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "filling a place late does not help if essential capabilities are missing."
+            ],
+            "B": [
+              "an eleventh-hour name does not help if the bench lacks qualified coverage.",
+              "a quiet backdoor back to the old status quo."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B gives the operational safeguards a clearer advance purpose: it accepts the tradeoff conditionally, then develops skill coverage and confirmation. A introduces confirmation machinery before presenting the leads' objection and the early-booking tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposal holds that single place until two days before the session.",
+              "The table leads raise a sensible objection"
+            ],
+            "B": [
+              "I believe we can, provided we protect team operations.",
+              "A viable policy also requires tight execution."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the practical, measured first-person register. B adds staged disclaimers and emphatic rhetoric where the author wants a proportionate argument with real limitations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I suggest testing this arrangement for six Saturdays."
+            ],
+            "B": [
+              "Before making the case, let me be clear about what this is not",
+              "Rather than debating abstract principles, let us test this on the floor for six Saturdays."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A's minor overstatement about planning is less consequential than B's major strengthening of the reported evidence. Although B organizes the safeguards well, A better meets the user's decisive requirement for a persuasive case that retains evidential restraint and a practical voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "those five messages simply confirm that the problem exists for those volunteers, not the total number affected."
+            ],
+            "B": [
+              "five volunteers have directly told us that variable work shifts make booking that far ahead impossible."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8271acd09b05a7defa4f0a17c6d85a20f2c758dff7f4d0ab207c0b47dad556c9",
+    "prompt_sha256": "352f37515b14d7db24534701660341b9f54dcefca85657d06076ba6256ba0151",
+    "raw_sha256": "7aa166768079dd998d06e71749b86ce716be3834e750532b8878c63bfe8527c0",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
