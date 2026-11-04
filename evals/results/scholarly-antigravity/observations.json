@@ -7220,5 +7220,1249 @@
     "prompt_sha256": "b5369678320acb14838f85411ad58388b24bd51edb7f3ef7f2a795bbbf590e0c",
     "raw_sha256": "43a669fd4c7c02af72c2f0f2637de3b06e1a22b51394ec5a5e8c9913fc107a64",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task revises a laboratory policy argument and contains no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A assigns the controller-failure example a definite absence of readings. The source establishes that the run stopped, but leaves reading availability to be recorded separately. A stopped run could have a reading that is excluded.",
+          "quotes": {
+            "source": [
+              "A run stopped because the temperature controller failed is different from a completed run with a result that looks unusual.",
+              "I propose listing run identifier, completion status, reason, and whether a usable reading exists."
+            ],
+            "A": [
+              "an indicator that no reading exists."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the existing exclusion distinction, proposed fields, underlying-record access, attempted and retained counts, coverage of runs without readings, grouped explanations, and limitations on transparency.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [],
+            "B": [
+              "an unusual reading alone does not prove conditions failed and is retained unless a separately recorded equipment or handling fault justifies exclusion."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve most of the proposal, but B keeps reading availability conditional. A's controller example supplies an unsupported answer to a field that the source deliberately requires analysts to record.",
+          "quotes": {
+            "source": [
+              "I propose listing run identifier, completion status, reason, and whether a usable reading exists."
+            ],
+            "A": [
+              "an indicator that no reading exists."
+            ],
+            "B": [
+              "an indication of whether a usable reading exists"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses readable technical prose close to the source's register. A's bureaucratic labels and inflated descriptions make a practical proposal sound more ceremonial than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it introduces a significant transparency blind spot",
+              "**Segregation of Raw Data:**"
+            ],
+            "B": [
+              "with the exclusions table accounting for the difference.",
+              "Documenting every exclusion takes time, particularly when a single malfunction affects several runs."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the missing batch history to the counts, distinguishes the existing rule from its examples, and then explains the fields through the reporting objections. A has useful sections, but separates related explanations and repeatedly restates the distinction between documenting and deciding exclusions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 3. Distinguishing the Reporting Policy from Exclusion Criteria",
+              "In short, the proposed policy does not change our criteria for what belongs in the mean; it ensures that the application of those criteria is open to review."
+            ],
+            "B": [
+              "Under this proposal, the summary would report both the number of runs attempted and the number retained beside the mean, with the exclusions table accounting for the difference.",
+              "To address the concern that listing failed runs might encourage readers to recalculate the mean from all available numbers"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better meets the preference for connected reasons and candid limitations. A's repeated contrast labels and significance statements turn some of that argument into a catalogue, although its explicit policy section is useful.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Administrative Burden vs. Batch History:**",
+              "**Auditability vs. Integrity of Judgment:**",
+              "transparency facilitates oversight, but it does not replace critical scrutiny."
+            ],
+            "B": [
+              "As a compromise, we could permit a shared explanation for a group of runs affected by the same fault, provided each run is still listed so the batch tally remains verifiable.",
+              "Even so, a fuller table cannot guarantee honest reporting or clarify an ambiguous rule"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B avoids A's minor unsupported assumption about the controller run's reading availability. It also better serves the decisive priority: explaining why the proposed accounting is needed while keeping the existing rule, examples, and unresolved burden understandable in connected prose. A is reviewable but substantially overpackages the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "an indicator that no reading exists.",
+              "#### 5. Unresolved Tradeoffs and Implementation Considerations"
+            ],
+            "B": [
+              "The proposed table documents how our existing exclusion rule is applied, rather than changing the rule itself.",
+              "This proposal involves an unresolved tradeoff between transparency and reporting effort."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "277af0890b6959796975ad6897bb8a1c30b7d665156aedde128856391e281a44",
+    "prompt_sha256": "67b975d75fb5f8713a6b5c60c75aea6c2062353c816516264341ffa50d49746d",
+    "raw_sha256": "156c6a7d7d34c81663d8adc51f87bd45965638a25d367f25f05934bd089499a5",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of a laboratory policy argument, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposed status, exclusion distinction, four fields, raw-record access, accounting for runs without readings, grouped explanations, and unresolved limitations. Its general reference to failed measurement conditions is reasonably read with the immediately adjacent equipment-or-handling qualification and examples.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion.",
+              "Raw readings would remain in the underlying record, available through the existing review process."
+            ],
+            "A": [
+              "retains a completed run with an unusual result unless a separately recorded equipment or handling fault justifies exclusion.",
+              "Raw readings for excluded runs would stay out of this table and remain in the underlying record, available through the existing review process."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the substantive proposal and its qualifications, including individual run accounting and continued reviewer judgment. Requiring individual entries is a compatible organizational choice. Calling recalculation 'Unauthorized' adds unnecessary framing, but does not establish a new operative prohibition in context.",
+          "quotes": {
+            "source": [
+              "We could permit a shared explanation for that group, but each affected run should still appear.",
+              "A fuller table cannot guarantee honest recording or repair an ambiguous rule."
+            ],
+            "A": [],
+            "B": [
+              "the table could permit a single shared explanation for that group so long as each affected run is still listed individually.",
+              "a fuller table cannot guarantee honest recording or fix an ambiguous rule."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the policy's substantive requirements and limits. Each keeps excluded readings out of the mean and table, preserves access to the underlying record, accounts for all excluded runs, and acknowledges reporting effort and the need for judgment.",
+          "quotes": {
+            "source": [
+              "The summary should report the number attempted and the number retained beside the mean, with the exclusions table accounting for the difference."
+            ],
+            "A": [
+              "I propose that the summary report the number of runs attempted and the number retained beside the mean, and that the template include a separate exclusions table accounting for the difference."
+            ],
+            "B": [
+              "accounts for the exact difference between the number of runs attempted and the number retained."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A maintains the source's direct, conversational technical register. B is readable, but its stacked headings, bold directives, and abstract contrast labels make the same practical reasoning more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "There is a concern that showing failed runs will invite readers to calculate a new mean from everything in sight. It might.",
+              "The additional reporting also takes time, especially when the same fault affects several runs."
+            ],
+            "B": [
+              "**Accounting for Non-Numeric Failures Without Distorting Batch Outcomes**",
+              "**Inspectability vs. Substantive Judgment:**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the reporting gap to the proposal, the unchanged rule, and the reasons for recording status and counts before addressing misuse and burden. B makes policy and examples especially easy to locate, but repeatedly revisits counts, rule preservation, and grouped explanations across separate sections.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Recording completion status and whether a usable reading exists also matters when a run has no usable reading at all.",
+              "The proposed summary counts and exclusions table account for those failures without treating them as measured outcomes."
+            ],
+            "B": [
+              "#### 2. Proposed Policy",
+              "#### 3. Rationale and Supporting Examples",
+              "Reporting the number attempted and the number retained beside the mean, while listing all excluded runs (with or without usable readings) in the exclusions table"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves useful explanation and the source's restrained rhythm while making the accounting proposal explicit. B's section architecture helps scanning, but its slogan-like contrasts and stronger rhetorical labels fit the author's stated preferences less well.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On the other hand, counting all stopped runs as if they were measured outcomes would create a different distortion.",
+              "That compromise would reduce repeated prose while keeping the batch's history countable."
+            ],
+            "B": [
+              "**Permit Grouped Explanations, Not Grouped Rows:**",
+              "**Transparency vs. Risk of Unauthorized Recalculation:**",
+              "captures the full operational history of the batch"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the source nor the requested edit contains a mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. B's explicit separation of policy and examples is useful, but A achieves that distinction through paragraph structure while better satisfying the decisive preference for reasons and objections that form a readable argument. Its explanation of why status and counts are needed is concrete, and its closing compromise preserves the unresolved reporting cost without repeated formal packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A table containing only excluded numeric values would miss those failures, which could make a difficult batch look cleaner than it was.",
+              "We could permit a shared explanation for that group, but each affected run should still appear in the table."
+            ],
+            "B": [
+              "**Accounting for Non-Numeric Failures Without Distorting Batch Outcomes**",
+              "**Added Reporting Time vs. Countable Batch History:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "75d0a0f9f0e045170bd0515b64c3a631516c6e8547c7091dcb26ab8da7ec10b6",
+    "prompt_sha256": "67b975d75fb5f8713a6b5c60c75aea6c2062353c816516264341ffa50d49746d",
+    "raw_sha256": "156c6a7d7d34c81663d8adc51f87bd45965638a25d367f25f05934bd089499a5",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a laboratory policy argument, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A broadens the stated exclusion grounds by adding environmental faults and replacing the equipment-or-handling qualification with a general technical-fault exception. This could justify excluding an unusual completed result on grounds the source does not establish.",
+          "quotes": {
+            "source": [
+              "retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [
+              "a documented equipment, environmental, or handling fault.",
+              "unless a distinct, recorded technical fault is identified."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the exclusion rule, proposed status, table fields, raw-record access, complete run accounting, shared explanations, and unresolved limitations.",
+          "quotes": {
+            "source": [
+              "Raw readings would remain in the underlying record, available through the existing review process.",
+              "unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [],
+            "B": [
+              "Raw readings should remain in the underlying record, accessible through our existing review process",
+              "unless a separately recorded equipment or handling fault justifies exclusion."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the reporting proposal and its limitations, but B preserves the specific equipment-or-handling qualification. A's broader technical-fault exception weakens fidelity to the unchanged rule.",
+          "quotes": {
+            "source": [
+              "Our existing rule excludes controller failures and retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion."
+            ],
+            "A": [
+              "unless a distinct, recorded technical fault is identified."
+            ],
+            "B": [
+              "unless a separately recorded equipment or handling fault justifies exclusion."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a direct argument for colleagues. A's administrative labels and abstract phrasing make a straightforward proposal sound more cumbersome, although its individual requirements remain readable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Dual Summary Metrics:**",
+              "**Segregation of Raw Data:**",
+              "By omitting the attrition history"
+            ],
+            "B": [
+              "Currently, the summary lists only the runs used to calculate the mean.",
+              "As a compromise, we could permit a shared explanation"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the reporting gap to the proposed counts, explains the unchanged rule, then develops safeguards and costs. A clearly labels policy and examples, but repeatedly restates the distinction and separates related accounting explanations across sections.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This proposal governs **how we document exclusions**, not **how we decide to exclude runs**.",
+              "In short, the proposed policy does not change our criteria for what belongs in the mean"
+            ],
+            "B": [
+              "with the exclusions table accounting for the difference.",
+              "The proposed table documents how our existing exclusion rule is applied, rather than changing the rule itself."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B supplies reasons in connected prose and keeps the proposal's limits visible. A adds administrative packaging and inflated characterizations that work against the author's preference for a conversational argument without rhetorical repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a significant transparency blind spot",
+              "**Auditability vs. Integrity of Judgment:**"
+            ],
+            "B": [
+              "This proposal involves an unresolved tradeoff between transparency and reporting effort.",
+              "Even so, a fuller table cannot guarantee honest reporting or clarify an ambiguous rule"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, whereas A modestly broadens the exclusion grounds. B also better meets the decisive writing priority: it explains why the accounting construction is needed while preserving the rule and unresolved reporting burden in a connected meeting argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "unless a distinct, recorded technical fault is identified.",
+              "**Administrative Burden vs. Batch History:**"
+            ],
+            "B": [
+              "This change does not alter which runs enter the calculation",
+              "provided each run is still listed so the batch tally remains verifiable."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "277af0890b6959796975ad6897bb8a1c30b7d665156aedde128856391e281a44",
+    "prompt_sha256": "67b975d75fb5f8713a6b5c60c75aea6c2062353c816516264341ffa50d49746d",
+    "raw_sha256": "8e42847eba760d9a92c8007169c92fdef86ef4929d39d2b2ea7aeec680055089",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of a policy argument, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposed policy, exclusion qualification, table contents, raw-record access, attempted and retained counts, shared explanations, and limits of transparency.",
+          "quotes": {
+            "source": [
+              "retains unusual completed results unless a separately recorded equipment or handling fault justifies exclusion.",
+              "We could permit a shared explanation for that group, but each affected run should still appear."
+            ],
+            "A": [
+              "retains a completed run with an unusual result unless a separately recorded equipment or handling fault justifies exclusion.",
+              "We could permit a shared explanation for that group, but each affected run should still appear in the table."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the substantive requirements and qualifications. Its individual-entry formulation makes the accounting more explicit without materially changing the requirement that each affected run appear.",
+          "quotes": {
+            "source": [
+              "I propose listing run identifier, completion status, reason, and whether a usable reading exists.",
+              "We could permit a shared explanation for that group, but each affected run should still appear."
+            ],
+            "A": [],
+            "B": [
+              "Run identifier\n  2. Completion status\n  3. Reason for exclusion\n  4. Whether a usable reading exists",
+              "a single shared explanation for that group so long as each affected run is still listed individually."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the unchanged exclusion rule, complete run accounting, underlying raw readings, grouped explanations, and unresolved burden. B's label 'Unauthorized Recalculation' adds an unsupported administrative connotation, but its operative proposal does not impose a new prohibition.",
+          "quotes": {
+            "source": [
+              "The proposed table would expose how that rule was applied. It would not change the rule.",
+              "There is a concern that showing failed runs will invite readers to calculate a new mean from everything in sight. It might."
+            ],
+            "A": [
+              "the proposed table would expose how our existing exclusion rule was applied rather than change that rule.",
+              "It might."
+            ],
+            "B": [
+              "The proposed exclusions table would not alter this rule",
+              "Transparency vs. Risk of Unauthorized Recalculation:"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, idiomatic prose with varied sentence lengths. B remains readable, but its repeated labels and expanded formulations make the same argument more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Recording completion status and whether a usable reading exists also matters when a run has no usable reading at all.",
+              "There is a concern that showing failed runs will invite readers to calculate a new mean from everything in sight. It might."
+            ],
+            "B": [
+              "**Accounting for Non-Numeric Failures Without Distorting Batch Outcomes**",
+              "Adopting this template revision involves practical tradeoffs that the laboratory should weigh openly:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A develops a coherent sequence from the reporting gap through policy, examples, accounting, and objections. B makes the policy/example distinction especially explicit through sections, but repeats requirements in its rationale. Both let the meeting reader follow the proposal and its reasons.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I propose that the summary report the number of runs attempted and the number retained beside the mean",
+              "For example, a run stopped because the temperature controller failed"
+            ],
+            "B": [
+              "#### 2. Proposed Policy",
+              "#### 3. Rationale and Supporting Examples"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A retains the author's conversational register and develops the reasons without compressing useful explanation. B's repeated contrasts and administrative captions make the argument feel more packaged than the supplied preferences call for.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On the other hand, counting all stopped runs as if they were measured outcomes would create a different distortion.",
+              "That compromise would reduce repeated prose while keeping the batch's history countable."
+            ],
+            "B": [
+              "**Permit Grouped Explanations, Not Grouped Rows:**",
+              "**Inspectability vs. Substantive Judgment:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the author's decisive preference for connected reasoning: it explains why runs without readings must remain countable and keeps the burden unresolved without repeating the proposal in several formats. B's explicit separation of policy and examples is useful, but does not outweigh its repetition and administrative packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposed summary counts and exclusions table account for those failures without treating them as measured outcomes.",
+              "The additional reporting also takes time, especially when the same fault affects several runs."
+            ],
+            "B": [
+              "**Report Attempted and Retained Counts:**",
+              "Reporting the number attempted and the number retained beside the mean",
+              "**Added Reporting Time vs. Countable Batch History:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "75d0a0f9f0e045170bd0515b64c3a631516c6e8547c7091dcb26ab8da7ec10b6",
+    "prompt_sha256": "67b975d75fb5f8713a6b5c60c75aea6c2062353c816516264341ffa50d49746d",
+    "raw_sha256": "8e42847eba760d9a92c8007169c92fdef86ef4929d39d2b2ea7aeec680055089",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded elementary proof of convergence, the exact tail identity, and the epsilon bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the assumptions, indices, exact sum and tail, and both edge cases. Its finite cancellations and subsequent limits are valid, and its epsilon choice gives a strict bound.",
+          "quotes": {
+            "source": [
+              "For fixed N the second identity tends to a_(N+1) as M tends to infinity."
+            ],
+            "A": [
+              "With $N$ held fixed, $a_{N+1}$ is a constant as $M$ varies."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the theorem and all qualifications. It establishes both infinite sums through finite sums, keeps the tail index fixed during the limit, and handles equality and the zero sequence correctly.",
+          "quotes": {
+            "source": [
+              "If consecutive terms are equal, the corresponding d_n is zero, so no strict decrease was used."
+            ],
+            "A": [],
+            "B": [
+              "If consecutive terms are equal ($a_n = a_{n+1}$), then $d_n = 0$, so the argument does not require $(a_n)$ to be strictly decreasing."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the nonnegative, nonincreasing sequence with limit zero, the original starting indices, exact sum and tail, and strict epsilon conclusion. Neither strengthens the assumptions or changes the strategy.",
+          "quotes": {
+            "source": [
+              "the series sum from n = 1 to infinity of d_n converges to a_1"
+            ],
+            "A": [
+              "The infinite series $\\sum_{n=1}^{\\infty} d_n$ converges to $a_1$."
+            ],
+            "B": [
+              "Thus $\\sum_{n=1}^{\\infty} d_n$ converges to $a_1$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly announces and subdivides elementary operations. B uses connected explanations and transitions while retaining the mathematical detail; its separate one-term cases add some formality without dominating the prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Step 4: Making the Tail Smaller Than $\\varepsilon$",
+              "Taking the maximum with $1$ ensures that $N \\ge 1$ is a valid positive integer, while also ensuring $N \\ge K$."
+            ],
+            "B": [
+              "We compute the tail after $N$ terms in the same way.",
+              "Finally, let $\\varepsilon > 0$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both explain why partial sums are evaluated before taking limits and distinguish the fixed tail index from the later epsilon choice. B makes that sequence read as one developing argument; A's repeated rules and step headings interrupt the connections more than this proof needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Step 3: Evaluating the Tail After $N$ Terms",
+              "By Step 3, the tail after $N$ terms equals $a_{N+1}$, so it suffices to find $N \\ge 1$ such that $a_{N+1} < \\varepsilon$."
+            ],
+            "B": [
+              "To show that $\\sum_{n=1}^{\\infty} d_n$ converges to $a_1$, we evaluate its partial sums directly from the definition of series convergence.",
+              "We compute the tail after $N$ terms in the same way."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the request for connected technical prose and visibly laid-out derivations: its aligned calculations separate the limit operations, and its prose supplies their purpose. A supplies useful explanation too, but its elaborate scaffolding and numbered epsilon commentary make the handout less conversational.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Step 2: Convergence of the Series $\\sum_{n=1}^{\\infty} d_n$ to $a_1$",
+              "3. Because $N \\ge K$, the index $k = N + 1$ satisfies $N + 1 > N \\ge K$, so $a_{N+1} < \\varepsilon$."
+            ],
+            "B": [
+              "Holding $N$ fixed and letting $M \\to \\infty$, we use $\\lim_{M \\to \\infty} a_{M+1} = 0$ to obtain the infinite tail:",
+              "Substituting the tail identity gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain cancellation in each finite identity, identify infinite sums with limits of finite sums, and justify the shifted limits. Both keep N fixed while M tends to infinity and subsequently choose N using convergence, without assuming strict decrease. Neither leaves a substantive proof gap.",
+          "quotes": {
+            "source": [
+              "Make the convergence and tail bound understandable without citing an external convergence theorem."
+            ],
+            "A": [
+              "Here every intermediate term $a_{N+2}, a_{N+3}, \\dots, a_M$ cancels in pairs, leaving only the first term $a_{N+1}$ and the last term $-a_{M+1}$.",
+              "By definition, this tail is the limit as $M \\to \\infty$ of the finite sums from $n = N+1$ to $n = M$ (where $M > N$)."
+            ],
+            "B": [
+              "For any integer $M > N + 1$, the intermediate terms $a_{N+2}, \\dots, a_M$ again cancel in pairs:",
+              "Then $N \\ge 1$ is a positive integer and $N + 1 > N \\ge K$, so the index $k = N + 1$ satisfies $a_{N+1} < \\varepsilon$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both provide a complete classroom proof. B better serves this user's decisive preference for connected explanation with visible calculations: it introduces partial sums by their purpose and carries the reader into the tail calculation without A's repeated sectional scaffolding. The advantage is organization and mathematical presentation, not merely brevity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Step 3: Evaluating the Tail After $N$ Terms",
+              "#### Step 4: Making the Tail Smaller Than $\\varepsilon$"
+            ],
+            "B": [
+              "To show that $\\sum_{n=1}^{\\infty} d_n$ converges to $a_1$, we evaluate its partial sums directly from the definition of series convergence.",
+              "We compute the tail after $N$ terms in the same way."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "98d8b3294b3135d16527205a4e4c03053af0f1c6ee3bbe18f7e9996382e06393",
+    "prompt_sha256": "324b4bbff78bf4afc2f41ae985a7021a6bb392c210ebceb789ed5c2e4fb08294",
+    "raw_sha256": "d4584ff47727ef5d72e94ec5d3252a57e5b46dc8fde25d877de4a2beba211453",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested handout contains a mathematical derivation of the series sum, exact tail, and epsilon bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves all assumptions and conclusions and gives valid finite-sum and limit arguments. It omits the explicit edge-case commentary, but its nonstrict assumptions and calculations still cover equal consecutive terms and the identically zero sequence. Choosing N = K with K at least 1 is valid.",
+          "quotes": {
+            "source": [
+              "If a_1 = 0, all a_n are zero and the same identities apply. If consecutive terms are equal, the corresponding d_n is zero, so no strict decrease was used."
+            ],
+            "A": [
+              "Because the sequence $(a_n)_{n=1}^\\infty$ is nonincreasing, $a_n \\ge a_{n+1}$ for every $n \\ge 1$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the theorem, exact identities, indexing, and edge cases. Its definitions are followed by direct proofs that the relevant limits exist, and its epsilon argument is valid. The extra consistency check is a correct consequence, not an unsupported claim.",
+          "quotes": {
+            "source": [
+              "Given epsilon > 0, choose K such that a_k < epsilon whenever k >= K, and take N = max(1,K)."
+            ],
+            "A": [],
+            "B": [
+              "N = \\max(1, K).",
+              "Because $N \\ge K$, the index of the next term satisfies $N + 1 > K$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the mathematical scope and conclusions. B more fully retains the source's explicit explanations of equality and the zero sequence. A still allows both cases, so this is a modest completeness advantage rather than a changed mathematical inference.",
+          "quotes": {
+            "source": [
+              "If a_1 = 0, all a_n are zero and the same identities apply.",
+              "If consecutive terms are equal, the corresponding d_n is zero, so no strict decrease was used."
+            ],
+            "A": [
+              "Let $(a_n)_{n=1}^\\infty$ be a sequence of nonnegative real numbers that is nonincreasing and satisfies $\\lim_{n \\to \\infty} a_n = 0$."
+            ],
+            "B": [
+              "If $a_1 = 0$, the conditions $0 \\le a_n \\le a_1$ force $a_n = 0$ for every $n \\ge 1$.",
+              "If consecutive terms are equal ($a_n = a_{n+1}$), then $d_n = 0$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as an explanatory classroom proof with direct transitions. B is understandable but repeatedly labels, reassures, and restates results; phrases about validity and seamlessness add commentary without helping the reader follow the calculation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To establish convergence of the series, consider the $N$-th partial sum",
+              "Holding $N$ fixed and letting $M \\to \\infty$, the term $a_{M+1}$ tends to zero."
+            ],
+            "B": [
+              "which is completely valid.",
+              "The identities hold seamlessly."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A states the claim, introduces partial sums to establish convergence, then uses the same cancellation to evaluate and bound the tail. B's preliminary definitions, theorem, five separated steps, consistency check, and closing remarks make the reader revisit material rather than follow an equally direct development.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To establish convergence of the series, consider the $N$-th partial sum",
+              "Now fix an integer $N \\ge 1$ and consider the tail of the series after $N$ terms."
+            ],
+            "B": [
+              "### **Overview & Definitions**",
+              "### **Remarks on Assumptions and Edge Cases**",
+              "perfectly matching our direct calculation."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A removes rhetorical repetition while preserving the explanation of cancellation and the limit operations. That fits the author's distinction between concision and compression. B's extra definitions can help a beginner, but repeating the weak-decrease reassurance and adding a celebratory consistency check exceed what this focused proof needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Every intermediate term $a_2, a_3, \\dots, a_N$ appears twice with opposite signs—first with a minus sign in one bracket, then with a plus sign in the next—leaving only the initial term $a_1$ and the subtracted boundary term $a_{N+1}$."
+            ],
+            "B": [
+              "We only require $a_n \\ge a_{n+1}$, not strict inequality.",
+              "The theorem does not require strict decrease ($a_n > a_{n+1}$)."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly display the finite identities, explain cancellation before taking limits, and construct the series and tail through those limits. A's reference to the same cancellation adequately carries its detailed first explanation into the tail. B expands this further, but neither omits a necessary mathematical transition or relies on an external convergence theorem.",
+          "quotes": {
+            "source": [
+              "For fixed N the second identity tends to a_(N+1) as M tends to infinity. These limits give the series and its tail."
+            ],
+            "A": [
+              "By definition, the infinite series $\\sum_{n=1}^\\infty d_n$ converges if the sequence of partial sums $(S_N)_{N=1}^\\infty$ converges to a finite limit.",
+              "For any integer $M > N$, the finite sum from $n = N+1$ to $M$ telescopes in the same way:"
+            ],
+            "B": [
+              "All intermediate terms from $a_{N+2}$ through $a_M$ cancel, leaving:",
+              "Now keep $N$ fixed and let the upper index $M \\to \\infty$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. B preserves the explicit edge-case remarks more fully, but A retains their mathematical scope and delivers the requested explanation. A better meets the decisive preference for a connected, mathematically focused handout: its cancellation explanation supports the subsequent tail calculation, whereas B repeatedly restates definitions, conclusions, and reassurances without adding necessary reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Expanding the sum displays the telescoping cancellation:",
+              "Holding $N$ fixed and letting $M \\to \\infty$, the term $a_{M+1}$ tends to zero."
+            ],
+            "B": [
+              "### **Detailed Step-by-Step Proof**",
+              "perfectly matching our direct calculation.",
+              "Adding zero terms neither disrupts telescoping cancellation nor affects the value of limits."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "605de1848f7e7d4ae3c5588495cc0f29b9511838879334f73d778aa0885f4b4b",
+    "prompt_sha256": "324b4bbff78bf4afc2f41ae985a7021a6bb392c210ebceb789ed5c2e4fb08294",
+    "raw_sha256": "d4584ff47727ef5d72e94ec5d3252a57e5b46dc8fde25d877de4a2beba211453",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for an expanded elementary proof of convergence, the exact tail identity, and the epsilon bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the hypotheses, indices, exact sum and tail, and both edge cases. The finite cancellations, limits, and strict epsilon bound are valid.",
+          "quotes": {
+            "source": [
+              "for every integer N >= 1 its tail after N terms equals a_(N+1)."
+            ],
+            "A": [
+              "For every integer $N \\ge 1$, the tail after $N$ terms equals $a_{N+1}$:"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the hypotheses and conclusions and gives valid limit and epsilon arguments. Equal consecutive terms and the identically zero sequence remain allowed, although their explicit remarks are omitted.",
+          "quotes": {
+            "source": [
+              "If consecutive terms are equal, the corresponding d_n is zero, so no strict decrease was used."
+            ],
+            "A": [],
+            "B": [
+              "a sequence of nonnegative real numbers that is nonincreasing and satisfies $\\lim_{n \\to \\infty} a_n = 0$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact theorem and elementary strategy. A explicitly discusses the edge cases; B includes them through its unchanged weak inequalities and valid general argument.",
+          "quotes": {
+            "source": [
+              "the series sum from n = 1 to infinity of d_n converges to a_1"
+            ],
+            "A": [
+              "The series $\\sum_{n=1}^\\infty d_n$ converges, and its sum is exactly $a_1$:"
+            ],
+            "B": [
+              "the series $\\sum_{n=1}^\\infty d_n$ converges to $a_1$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly announces and checks its explanations. B connects the computations in ordinary mathematical prose without the extra instructional packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "perfectly matching our direct calculation.",
+              "The identities hold seamlessly."
+            ],
+            "B": [
+              "To establish convergence of the series, consider the $N$-th partial sum",
+              "Now fix an integer $N \\ge 1$ and consider the tail of the series after $N$ terms."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B introduces partial sums when convergence requires them and then adapts the computation to the tail. A's preliminary definitions, repeated conclusions, and consistency check interrupt an otherwise sound sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### **Overview & Definitions**",
+              "*(Consistency check: Subtracting the partial sum from the total sum"
+            ],
+            "B": [
+              "By definition, the infinite series",
+              "the finite sum from $n = N+1$ to $M$ telescopes in the same way:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected technical explanation: it explains the cancellation and the purpose of taking limits without repeatedly framing the proof. A's repeated edge-case commentary adds repetition rather than mathematical understanding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### **Detailed Step-by-Step Proof**",
+              "### **Remarks on Assumptions and Edge Cases**"
+            ],
+            "B": [
+              "Every intermediate term $a_2, a_3, \\dots, a_N$ appears twice with opposite signs"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain finite cancellation before taking limits, define the series and tail through partial sums, hold N fixed for the tail limit, and make a valid strict epsilon choice. B's reference to the same cancellation is supported by its preceding explanation.",
+          "quotes": {
+            "source": [
+              "For fixed N the second identity tends to a_(N+1) as M tends to infinity."
+            ],
+            "A": [
+              "Now keep $N$ fixed and let the upper index $M \\to \\infty$.",
+              "N = \\max(1, K)."
+            ],
+            "B": [
+              "Holding $N$ fixed and letting $M \\to \\infty$, the term $a_{M+1}$ tends to zero.",
+              "Setting $N = K$, we have $N + 1 > K$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves the author's priority of readable reasoning in order: its partial-sum paragraph explains the cancellation and immediately connects it to the definition of convergence. A supplies the same mathematics but repeats definitions, conclusions, and edge-case reassurance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We will evaluate both the total sum and the tail directly",
+              "*(Consistency check: Subtracting the partial sum from the total sum"
+            ],
+            "B": [
+              "By definition, the infinite series $\\sum_{n=1}^\\infty d_n$ converges if the sequence of partial sums $(S_N)_{N=1}^\\infty$ converges to a finite limit."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "585e9a38a34610a23182ce70266d7c38cb020e17ea4aea9208f48768da0a7a21",
+    "prompt_sha256": "d67ee6437dbd3910721ec3992ac65e5ca81f47cdca9ff0283212554837a4203b",
+    "raw_sha256": "083f5dc51d0ab4685871bdb1622b2e19f84db006312fb099458a5b2539c6b652",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for an expanded elementary proof of convergence, the exact tail identity, and the epsilon bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the assumptions, starting indices, exact conclusions, and edge cases. Both finite identities precede their limits, and the epsilon choice is valid.",
+          "quotes": {
+            "source": [
+              "If a_1 = 0, all a_n are zero and the same identities apply."
+            ],
+            "A": [
+              "if $a_1 = 0$ then $a_n = 0$ and $d_n = 0$ for every $n \\ge 1$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the theorem and edge cases and proves the exact sum and tail through finite telescoping sums. It neither strengthens monotonicity nor relies on an external convergence theorem.",
+          "quotes": {
+            "source": [
+              "If consecutive terms are equal, the corresponding d_n is zero, so no strict decrease was used."
+            ],
+            "A": [],
+            "B": [
+              "Strict decrease ($a_n > a_{n+1}$) is not required."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain nonnegativity, weak monotonicity, limit zero, the exact sum and tail, and the strict epsilon conclusion. Their added explanations stay within the source argument.",
+          "quotes": {
+            "source": [
+              "for every integer N >= 1 its tail after N terms equals a_(N+1)."
+            ],
+            "A": [
+              "for every integer $N \\ge 1$ its tail after $N$ terms satisfies"
+            ],
+            "B": [
+              "For every integer $N \\ge 1$, the tail of the series after $N$ terms converges and satisfies"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A generally carries the explanation through connected paragraphs. B's numbered epsilon procedure and repeated announcements make that straightforward final step more cumbersome, although its prose remains clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Finally, let $\\varepsilon > 0$.",
+              "Substituting the tail identity gives"
+            ],
+            "B": [
+              "We wish to find an integer $N \\ge 1$",
+              "Taking the maximum with $1$ ensures that $N \\ge 1$ is a valid positive integer"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from signs to finite sums, convergence, the fixed-index tail, and the epsilon choice. B explicitly explains why the tail identity reduces the final problem; A supplies clear purpose statements before each calculation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To show that $\\sum_{n=1}^{\\infty} d_n$ converges to $a_1$, we evaluate its partial sums directly",
+              "We compute the tail after $N$ terms in the same way."
+            ],
+            "B": [
+              "By Step 3, the tail after $N$ terms equals $a_{N+1}$, so it suffices to find $N \\ge 1$ such that $a_{N+1} < \\varepsilon$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the specific preference for calculations laid out cleanly: its limit derivations put successive transformations on separate aligned lines while retaining explanations. B explains the same operations but chains the tail calculation into one long display and adds more procedural framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Taking the limit of the partial sums as $N \\to \\infty$ gives",
+              "we use $\\lim_{M \\to \\infty} a_{M+1} = 0$ to obtain the infinite tail:"
+            ],
+            "B": [
+              "\\sum_{n=N+1}^{\\infty} d_n = \\lim_{M \\to \\infty} \\sum_{n=N+1}^{M} d_n = \\lim_{M \\to \\infty} (a_{N+1} - a_{M+1}) = a_{N+1} - \\lim_{M \\to \\infty} a_{M+1} = a_{N+1} - 0 = a_{N+1}."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both are correct and sufficiently explanatory. A explicitly handles the single-term finite sums and displays the limit steps vertically; B states the convergence definitions and explains why the lower endpoint remains constant. Neither skips a necessary argument.",
+          "quotes": {
+            "source": [
+              "These limits give the series and its tail."
+            ],
+            "A": [
+              "each intermediate term $-a_k$ cancels with $+a_k$ from the next summand for $2 \\le k \\le N$",
+              "Holding $N$ fixed and letting $M \\to \\infty$"
+            ],
+            "B": [
+              "By definition, this tail is the limit as $M \\to \\infty$ of the finite sums",
+              "With $N$ held fixed, $a_{N+1}$ is a constant as $M$ varies."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both explain the proof adequately. A has the stronger fit to this author's explicit presentation priority: the convergence and tail limits unfold in aligned steps, supported by connecting prose. B's long chained displays and subdivided epsilon procedure make the same reasoning less convenient to read.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We compute the tail after $N$ terms in the same way.",
+              "Taking the limit of the partial sums as $N \\to \\infty$ gives"
+            ],
+            "B": [
+              "#### Step 4: Making the Tail Smaller Than $\\varepsilon$",
+              "Combining this inequality with the tail formula from Step 3 gives"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0613843538a1ad8e779f2da894e3f3fc1815143aff993c055ffe1dd7ecaac523",
+    "prompt_sha256": "d67ee6437dbd3910721ec3992ac65e5ca81f47cdca9ff0283212554837a4203b",
+    "raw_sha256": "083f5dc51d0ab4685871bdb1622b2e19f84db006312fb099458a5b2539c6b652",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
