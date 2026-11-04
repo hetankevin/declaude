@@ -19185,6 +19185,305 @@
   },
   {
     "case": "large-dev-b-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a public advisory argument, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the twenty-collection proposal, unchanged inventories, three descriptive elements, display arrangement, interpretation standard, unreviewed drafts, and unevaluated trial checking successful and failed searches.",
+          "quotes": {
+            "source": [
+              "The scanned inventories would remain available exactly as they are.",
+              "followed by checks of both successful searches and failed searches"
+            ],
+            "A": [
+              "they will remain available exactly as they are, with none of their wording removed",
+              "followed by checks of both successful and failed searches"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the proposal and its qualifications, including quotation-based access, the visibility tradeoff, the absence of review or retrieval evidence, and the restriction on expansion before evaluation.",
+          "quotes": {
+            "source": [
+              "they have not yet been reviewed by readers or subject specialists",
+              "We have no evidence yet that the trial will improve retrieval."
+            ],
+            "A": [],
+            "B": [
+              "they have not yet been reviewed by readers or subject specialists",
+              "We have no evidence yet that the trial will improve retrieval."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive distinction between records and discovery labels, the competing retrieval needs, and the proposal's limits. Neither turns unavoidable interpretation into permission for arbitrary replacements.",
+          "quotes": {
+            "source": [
+              "That agreement is not a reason to treat every replacement as equally good."
+            ],
+            "A": [
+              "Recognizing that interpretation is unavoidable on either approach is not a reason to treat every replacement as equally good."
+            ],
+            "B": [
+              "Recognizing that both choices involve interpretation is not a reason to treat every replacement as equally good."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B generally uses more direct, conversational sentences. A remains readable but adds heavier argumentative signposting and occasionally restates a rationale already established.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the proposal balances competing needs rather than eliminating the tension between them—and because our drafted labels have not yet been reviewed by readers or subject specialists—its practical effects cannot be assumed in advance."
+            ],
+            "B": [
+              "We have drafted labels for the twenty collections, but they have not yet been reviewed by readers or subject specialists."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more explicitly makes each objection arise from the preceding proposal: the need to show the historical relationship leads to the scanning objection, and the remaining tradeoff leads to evaluation. B preserves the sequence but leaves more of those connections implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That commitment to making the historical relationship visible leads to a second objection: adding explanatory notes makes a short catalogue harder to scan."
+            ],
+            "B": [
+              "A related objection is that adding notes makes a short catalogue harder to scan."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better satisfies the author's priority of explaining why each construction and subsequent step belongs. Its explicit connection between unresolved needs, uncertainty, and the limited trial outweighs some redundant framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "its practical effects cannot be assumed in advance",
+              "We therefore recommend a limited trial with these twenty collections"
+            ],
+            "B": [
+              "We recommend a limited trial with those twenty collections, followed by checks of both successful and failed searches."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the source nor the requested revision contains a mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A has a modest advantage on the decisive request: making reasons and objections build on one another. Its transition from historical visibility to scanning costs makes the objection a consequence of the concrete proposal, while its final paragraph explains why unresolved effects warrant a trial. B is more economical and natural, but those argumentative links are less developed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That commitment to making the historical relationship visible leads to a second objection",
+              "its practical effects cannot be assumed in advance"
+            ],
+            "B": [
+              "A related objection is that adding notes makes a short catalogue harder to scan.",
+              "We recommend a limited trial with those twenty collections"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ab0b27f2577549c2680b6be83496d7c5eb710e014a0f26eb6054c3f8939f1578",
+    "prompt_sha256": "3d66640abf9350e9a78c32471e3c82d31d3a60aed912fffac1d61d6d06f4394f",
+    "raw_sha256": "12ddc7e72b49577ac3c4df1e74eb2247142efbae88541aceb736d73c68f2c4da",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the exposition of an archive access-policy argument, not a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the substantive proposal and evaluation limits, but turns a possible delay in seeing historical wording into a categorical restriction: readers cannot see it until opening the record. The source establishes where the note appears but qualifies the broader visibility consequence with 'may not'.",
+          "quotes": {
+            "source": [
+              "a search-results reader may not see the historical wording immediately"
+            ],
+            "A": [
+              "a reader will not see the historical wording until opening the record"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B invents mandatory formal review before implementation, converting the source's report of unreviewed drafts into a new policy prerequisite despite the explicit prohibition on new machinery. It also turns the possibility of misleading readers into a categorical outcome. The review requirement materially changes what the archive is instructed to do.",
+          "quotes": {
+            "source": [
+              "No new policy machinery or legal claims should be invented.",
+              "they have not yet been reviewed by readers or subject specialists",
+              "Repetition of the heading can therefore be faithful to one route through the material while misleading on another."
+            ],
+            "A": [],
+            "B": [
+              "they must undergo formal review by readers and subject specialists before implementation",
+              "fidelity to one research pathway produces distortion along the other"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the scope, unchanged inventories, three elements, interpretation standard, unreviewed status, and trial limits, with a minor overstatement about visibility. B adds an unsupported implementation gate and strengthens contingent representational concerns into asserted distortion.",
+          "quotes": {
+            "source": [
+              "We have drafted labels for the twenty collections, but they have not yet been reviewed by readers or subject specialists."
+            ],
+            "A": [
+              "We have drafted replacement labels for the twenty collections, though readers and subject specialists have not yet reviewed them."
+            ],
+            "B": [
+              "Draft labels have been prepared for the twenty collections; they must undergo formal review by readers and subject specialists before implementation."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses accessible technical prose and a short list whose items directly explain the proposal. B's abstract section titles, formal labels, and inflated terminology make a relatively straightforward advisory argument sound bureaucratic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To address both retrieval needs without modifying the underlying documents, we propose three linked elements for each collection:"
+            ],
+            "B": [
+              "To resolve this tension without suppressing historical evidence or misrepresenting archival holdings, we propose a tripartite structure for each of the twenty collections:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces what labels do, explains the competing reader needs, and presents the construction as a response before testing it against objections. B has a recognizable outline, but its separate scope, framework, and counter-argument blocks repeatedly restart the explanation and announce resolution before acknowledging the remaining tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This repetition creates competing retrieval demands:",
+              "To address both retrieval needs without modifying the underlying documents"
+            ],
+            "B": [
+              "### 3. Proposed Three-Part Framework",
+              "To resolve this tension",
+              "### 4. Analysis of Objections"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A is closer to the requested restrained argument: it connects interpretation to a concrete standard and retains an unresolved cost. B adds staged counter-arguments, emphatic institutional language, and unsupported rigor, conflicting with the preference against stronger claims and generic polished framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That fact does not make every replacement equally sound: a new label must describe the contents at the level the collection supports"
+            ],
+            "B": [
+              "*Counter-argument:*",
+              "A replacement label must be held to a rigorous standard:",
+              "Passive repetition interprets just as actively as revision."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains policy reasoning but no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A's minor visibility overstatement is substantially less consequential than B's invented mandatory review process, which changes the proposal's implementation requirements. A also better meets the user's central writing goal by explaining the reader needs before introducing the three elements and then examining their costs. B's elaborate structure and stronger claims do not compensate for its altered policy.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This repetition creates competing retrieval demands:",
+              "We recommend a limited trial with these twenty collections, followed by an evaluation of both successful and failed searches."
+            ],
+            "B": [
+              "they must undergo formal review by readers and subject specialists before implementation",
+              "To resolve this tension without suppressing historical evidence or misrepresenting archival holdings"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "415f896d3f32eafaabf9121273656892f861a60fe191afd6974f6203a5ce30f7",
+    "prompt_sha256": "3d66640abf9350e9a78c32471e3c82d31d3a60aed912fffac1d61d6d06f4394f",
+    "raw_sha256": "12ddc7e72b49577ac3c4df1e74eb2247142efbae88541aceb736d73c68f2c4da",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-11",
     "config": "flash-high",
     "candidate": "scholarly-20261103",
     "reference": "none",
@@ -19490,6 +19789,1245 @@
     "source_sha256": "224727814ebe70df3c70cc8a47a257d19a108f5e29e6bae47fea84087eb30db3",
     "prompt_sha256": "ab09729f6bb81686b3e6033e179106b96a61b6dd17970dbabbe674809336ec45",
     "raw_sha256": "0a978489ef9fbb8b972ed627388ea465e2e8d68d5f498edd545638b4bd002d8d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a light revision of a practical recommendation, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the dashboard proposal, timing, procedural safeguards, unestimated route effect, and uncertain benefits. The revised evaluation question reasonably clarifies the source's awkward wording.",
+          "quotes": {
+            "source": [
+              "Rotation may spread difficult routes over a longer period without making any particular week's assignments comparable."
+            ],
+            "A": [
+              "Monthly rotation may spread difficult routes over a longer period without making any single week's assignments comparable, though we have not estimated how large that difference is."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the recommendation and its qualifications, including monthly rotation versus weekly rankings, the four-week trial, supervisory judgment, and unestablished response-rate improvement.",
+          "quotes": {
+            "source": [
+              "we cannot claim that it will improve response rates before trying it."
+            ],
+            "A": [],
+            "B": [
+              "we cannot claim that it will improve response rates before trying it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive proposal and limitations. A's evaluation wording is a reasonable clarification of an ambiguous source sentence, rather than a material change in scope.",
+          "quotes": {
+            "source": [
+              "the dashboard should show completed interviews, attempts, and route assignments together"
+            ],
+            "A": [
+              "the dashboard should show completed interviews, attempts, and route assignments together"
+            ],
+            "B": [
+              "the dashboard should show completed interviews, attempts, and route assignments together"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are readable and collegial, but A repairs the awkward evaluation question that B retains: readers can readily understand what it means for context to usefully inform decisions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "whether the added context usefully informed supervisory decisions"
+            ],
+            "B": [
+              "whether the added context changed useful supervisory decisions"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the count's limitations, develop route and noncompletion concerns, reject untested weights, and introduce the trial before discussing its burden and evaluation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have no tested weights, and a score could conceal the same judgment inside a formula. Instead, for the next four weeks,"
+            ],
+            "B": [
+              "since we have no tested weights and a score could conceal the same judgment inside a formula. Instead, for the next four weeks,"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the practical, modest recommendation and explain why contextual judgment remains necessary. Neither intensifies criticism or replaces useful explanation with slogans.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Including those activities in the discussion would not mean treating every attempt as equally useful; supervisors would still need to look at what happened"
+            ],
+            "B": [
+              "Including those activities in the discussion would not mean treating every attempt as equally useful, because supervisors would still need to look at what happened"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error, and both preserve the argument and practical scope. A has a modest but concrete advantage for this light-editing request: it clarifies the steering group's closing evaluation question, whereas B leaves the source's awkward 'changed useful supervisory decisions' intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the steering group should assess whether the added context usefully informed supervisory decisions and whether the burden was manageable."
+            ],
+            "B": [
+              "the steering group should ask whether the added context changed useful supervisory decisions and whether the burden was manageable."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "902b29f06886d214353e7c6b05fbe92969aafba632ddb1d25ba13057fd7eb3a0",
+    "prompt_sha256": "86339570d5232cbd62958010e5717ebf7d3b4159415062e469e38ff9924057ab",
+    "raw_sha256": "2b34a41b1d24c5ec7acd6d121eaff487a1d743cf63c6a3ce29138e36e735b266",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns prose editing of a survey recommendation, not a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "Changes the qualified possibility that monthly rotation leaves weekly assignments incomparable into a categorical assertion that it does not make them comparable. The subsequent admission that the difference is unestimated does not restore the original modality. The remaining proposal and safeguards are preserved.",
+          "quotes": {
+            "source": [
+              "Rotation may spread difficult routes over a longer period without making any particular week's assignments comparable."
+            ],
+            "A": [
+              "Rotation may spread difficult routes over a longer period, but it does not make any particular week's assignments comparable."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Makes the same local strengthening: the source describes what rotation may do without establishing weekly comparability, while B asserts that rotation does not make weekly assignments comparable. This strengthens the criticism beyond the source; the rest of the recommendation remains intact.",
+          "quotes": {
+            "source": [
+              "Rotation may spread difficult routes over a longer period without making any particular week's assignments comparable."
+            ],
+            "A": [],
+            "B": [
+              "monthly rotation may spread difficult routes over a longer period, but it does not make any particular week's assignments comparable."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both make the same minor strengthening of the rotation claim. Otherwise both preserve the trial, displayed measures, procedural checks, rejection of untested weights, burden, and uncertainty about response rates.",
+          "quotes": {
+            "source": [
+              "Rotation may spread difficult routes over a longer period without making any particular week's assignments comparable."
+            ],
+            "A": [
+              "but it does not make any particular week's assignments comparable."
+            ],
+            "B": [
+              "but it does not make any particular week's assignments comparable."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both offer idiomatic repairs to the awkward closing question. A emphasizes useful changes and B useful information; both are readily understandable in context, with no substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "whether the added context changed supervisory decisions in useful ways"
+            ],
+            "B": [
+              "whether the added context informed supervisory decisions in useful ways"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the source's effective argument and explicitly connect rejection of a weighted score to the contextual dashboard proposal. Their different sentence grouping does not materially change how well the reasoning develops.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have no tested weights, and a score could conceal the same judgment inside a formula. Instead, for the next four weeks,"
+            ],
+            "B": [
+              "We have no tested weights, and a score could conceal the same judgment inside a formula. Instead, for the next four weeks,"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Apart from their shared strengthening of the route claim, both maintain the author's practical register, retain substantive explanations, and acknowledge the recommendation's cost without elaborate policy additions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This arrangement will take more attention than reading a league table, and that cost is part of the recommendation."
+            ],
+            "B": [
+              "This arrangement will take more attention than reading a league table, and that cost is an acknowledged part of the recommendation."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Both introduce the same minor categorical strengthening, with equal consequences for the instruction not to intensify criticism. Otherwise both deliver comparable light revisions: they preserve the practical argument and clarify the closing evaluation question. Their wording differences do not establish a substantive user-specific preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the steering group should ask whether the added context changed supervisory decisions in useful ways and whether the burden was manageable."
+            ],
+            "B": [
+              "the steering group should assess whether the added context informed supervisory decisions in useful ways and whether the burden was manageable."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "877f1f23eeda84d29bf75de563e3814936438d55f6c2a775e95a8cd6efecf92f",
+    "prompt_sha256": "86339570d5232cbd62958010e5717ebf7d3b4159415062e469e38ff9924057ab",
+    "raw_sha256": "2b34a41b1d24c5ec7acd6d121eaff487a1d743cf63c6a3ce29138e36e735b266",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a light revision of a practical recommendation and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the recommendation, route uncertainty, procedural safeguards, four-week trial, supervisory explanations, and unestablished response-rate benefit. The revised evaluation question reasonably clarifies the source's awkward wording.",
+          "quotes": {
+            "source": [
+              "We have not estimated how large that difference is.",
+              "whether the added context changed useful supervisory decisions"
+            ],
+            "A": [
+              "though we have not estimated how large that difference is.",
+              "whether the added context usefully informed supervisory decisions"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the substantive proposal and its limitations, including monthly rotation versus weekly rankings, the need to examine contact procedures, and the absence of tested weights or an established response-rate benefit.",
+          "quotes": {
+            "source": [
+              "Assignments rotate each month, but the dashboard ranks interviewers each week.",
+              "we cannot claim that it will improve response rates before trying it."
+            ],
+            "A": [],
+            "B": [
+              "Assignments rotate each month, but the dashboard ranks interviewers each week",
+              "we cannot claim that it will improve response rates before trying it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the count while ending count-only rankings and preserve the proposed trial, safeguards, uncertainty, and costs. A's wording about informing decisions is a reasonable clarification of the ambiguous source question, rather than a material change to the trial.",
+          "quotes": {
+            "source": [
+              "keeping completed interviews in the weekly dashboard while ending the practice of ranking interviewers by that number alone.",
+              "whether the added context changed useful supervisory decisions"
+            ],
+            "A": [
+              "keeping completed interviews in the weekly dashboard while ending the practice of ranking interviewers by that number alone.",
+              "whether the added context usefully informed supervisory decisions"
+            ],
+            "B": [
+              "keeping completed interviews in the weekly dashboard while ending the practice of ranking interviewers by that number alone.",
+              "whether the added context changed useful supervisory decisions"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are readable, but A resolves the awkward phrase about changing useful decisions. Its formulation clearly connects the added context to the quality of supervision; B leaves the source's awkward attachment intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the steering group should assess whether the added context usefully informed supervisory decisions"
+            ],
+            "B": [
+              "the steering group should ask whether the added context changed useful supervisory decisions"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both develop the same practical argument: limitations of the count, route differences, omitted work, rejection of an untested score, and a bounded trial with acknowledged costs. Their transitions make the proposal's purpose clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The ranking also leaves out work that does not produce a completed interview.",
+              "Instead, for the next four weeks, the dashboard should show completed interviews, attempts, and route assignments together"
+            ],
+            "B": [
+              "The ranking also leaves out work that does not produce a completed interview.",
+              "Instead, for the next four weeks, the dashboard should show completed interviews, attempts, and route assignments together"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain the collegial recommendation and explain why context matters without excusing departures from procedure or intensifying criticism. Both keep the real burden and uncertainty beside the proposal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "supervisors would still need to look at what happened and whether the agreed contact procedure was followed.",
+              "a cost that is part of the recommendation."
+            ],
+            "B": [
+              "supervisors would still need to look at what happened and whether the agreed contact procedure was followed.",
+              "that cost is part of the recommendation."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error, and both preserve the practical argument. A has a modest advantage for this light editing task because it turns the awkward closing evaluation question into a clear account of what the steering group should assess; B retains that local obstacle.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "whether the added context usefully informed supervisory decisions and whether the burden was manageable."
+            ],
+            "B": [
+              "whether the added context changed useful supervisory decisions and whether the burden was manageable."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "902b29f06886d214353e7c6b05fbe92969aafba632ddb1d25ba13057fd7eb3a0",
+    "prompt_sha256": "86339570d5232cbd62958010e5717ebf7d3b4159415062e469e38ff9924057ab",
+    "raw_sha256": "6d90ea34d54a932644ee607d731d32c126b7dd557ee3a0167c3612577e011f65",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing a steering-group recommendation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the proposal, qualifications, procedural safeguards, and trial conditions. The rotation sentence reasonably preserves the source's warning about weekly comparability, and the revised evaluation question clarifies its awkward phrasing.",
+          "quotes": {
+            "source": [
+              "Rotation may spread difficult routes over a longer period without making any particular week's assignments comparable.",
+              "whether the added context changed useful supervisory decisions"
+            ],
+            "A": [
+              "Rotation may spread difficult routes over a longer period, but it does not make any particular week's assignments comparable.",
+              "whether the added context changed supervisory decisions in useful ways"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the substantive recommendation, route-effect uncertainty, safeguards, trial, and limitations. Describing the review in terms of usefully informing decisions is a reasonable clarification of the source's ambiguous evaluation wording.",
+          "quotes": {
+            "source": [
+              "We have not estimated how large that difference is.",
+              "whether the added context changed useful supervisory decisions"
+            ],
+            "A": [],
+            "B": [
+              "We have not estimated how large that difference is.",
+              "whether the added context informed supervisory decisions in useful ways"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the count, end count-only rankings, reject an untested weighted score, and retain all three dashboard elements and brief supervisory explanations. Their differently worded evaluation questions both reasonably clarify the source.",
+          "quotes": {
+            "source": [
+              "For the next four weeks, the dashboard should show completed interviews, attempts, and route assignments together, with supervisors adding a brief explanation when discussing unusual totals."
+            ],
+            "A": [
+              "for the next four weeks, the dashboard should show completed interviews, attempts, and route assignments together, with supervisors adding a brief explanation when discussing unusual totals."
+            ],
+            "B": [
+              "for the next four weeks, the dashboard should show completed interviews, attempts, and route assignments together, with supervisors adding a brief explanation when discussing unusual totals."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses shorter sentences for the route argument; B combines the timing contrast into a longer but readable sentence. Both make the closing evaluation question idiomatic, and neither has a consequential readability disadvantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Assignments rotate each month, but the dashboard ranks interviewers each week.",
+              "changed supervisory decisions in useful ways"
+            ],
+            "B": [
+              "Although assignments rotate each month, the dashboard ranks interviewers weekly;",
+              "informed supervisory decisions in useful ways"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain why route context and noncompletion work matter before introducing the trial. Both connect rejection of the weighted score to the concrete alternative, then explain its burden and evaluation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We do not propose replacing the ranking with a single weighted score.",
+              "Instead, for the next four weeks"
+            ],
+            "B": [
+              "Nor do we propose replacing the ranking with a single weighted score.",
+              "Instead, for the next four weeks"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both fit the requested collegial, practical register and preserve useful explanation. Neither strengthens the criticism, treats all attempts as equally useful, or promises an improvement in response rates.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Including those activities in the discussion would not mean treating every attempt as equally useful",
+              "we cannot claim that it will improve response rates before trying it."
+            ],
+            "B": [
+              "Including those activities in the discussion would not mean treating every attempt as equally useful",
+              "we cannot claim that it will improve response rates before trying it."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The recommendation contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both provide the requested modest revision, preserving the reasons for the proposal, its safeguards, and its costs while clarifying the closing evaluation question. Their differences in sentence grouping and connective wording do not establish a substantive advantage for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "whether the added context changed supervisory decisions in useful ways and whether the burden was manageable."
+            ],
+            "B": [
+              "whether the added context informed supervisory decisions in useful ways and whether the burden was manageable."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "877f1f23eeda84d29bf75de563e3814936438d55f6c2a775e95a8cd6efecf92f",
+    "prompt_sha256": "86339570d5232cbd62958010e5717ebf7d3b4159415062e469e38ff9924057ab",
+    "raw_sha256": "6d90ea34d54a932644ee607d731d32c126b7dd557ee3a0167c3612577e011f65",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an explanatory rewrite of a convergence proof and its quantitative tail bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the signed real corrections, exact hypothesis, initial-value convention, finite limit, and bound for every nonnegative integer m. Its proof includes the zero case and requires no monotonicity.",
+          "quotes": {
+            "source": [
+              "Corrections can have either sign.",
+              "If A = 0, every correction vanishes and the conclusion includes c = c_0."
+            ],
+            "A": [
+              "If $A = 0$, the decay condition forces $\\delta_k = 0$ for all $k \\ge 0$.",
+              "Neither the corrections $\\delta_k$ nor the cumulative readings $c_n$ are assumed to be monotone."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all hypotheses and conclusions, including n = 0 and A = 0. Its telescoping estimate, Cauchy argument, and fixed-m limit passage are valid.",
+          "quotes": {
+            "source": [
+              "with the empty sum giving c_0 at n = 0.",
+              "Continuity of absolute value gives the claimed error bound."
+            ],
+            "A": [],
+            "B": [
+              "where the empty sum at $n = 0$ leaves $c_0$.",
+              "Letting $n \\to \\infty$ and using the continuity of the absolute value function, we obtain"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the precise denominator, signed corrections, finite real limit, and full range of the error bound. A's additional application framing does not change the mathematical result.",
+          "quotes": {
+            "source": [
+              "|δ_k| ≤ A/((k+1)(k+2)).",
+              "for every integer m ≥ 0."
+            ],
+            "A": [
+              "|\\delta_k| \\le \\frac{A}{(k+1)(k+2)}",
+              "for every integer $m \\ge 0$"
+            ],
+            "B": [
+              "|\\delta_k| \\le \\frac{A}{(k+1)(k+2)}.",
+              "for every integer $m \\ge 0$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct mathematical prose while retaining explanations. A's elaborate labels and phrases such as 'maximum possible excursion' make this elementary argument sound more ceremonious than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Estimate $(1)$ shows that the maximum possible excursion after step $m$ is controlled solely by",
+              "Derivation of the Quantitative Truncation Bound"
+            ],
+            "B": [
+              "To verify that $(c_n)_{n \\ge 0}$ is Cauchy",
+              "To obtain the truncation bound, fix an integer $m \\ge 0$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow the correct tail-estimate, Cauchy, and limit sequence. B connects the sign issue directly to the choice of proof, then proceeds through that plan without A's repeated introductory and closing discussion of nonmonotonicity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the resulting sequence of calibrated readings need not be monotone.",
+              "Sign Indifference and Non-Monotonicity"
+            ],
+            "B": [
+              "We instead control the absolute tails of the sum to show that $(c_n)_{n \\ge 0}$ is a Cauchy sequence in $\\mathbb{R}$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the preference for explaining why a construction is needed in connected technical prose. A supplies useful detail but surrounds it with redundant scope remarks and multiple layers of headings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Remarks on Scope and Interpretation",
+              "Even if the sensor corrections oscillate in sign from step to step"
+            ],
+            "B": [
+              "Because the corrections $\\delta_k$ may take either sign",
+              "We instead control the absolute tails of the sum"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly evaluate the reciprocal tail with endpoints m+1 and n+1, explain all index cases in the Cauchy argument, invoke completeness afterward, and justify the limit for fixed m. A expands cancellation further, but B's displayed chain and explanation are sufficient.",
+          "quotes": {
+            "source": [
+              "= A(1/(m+1)-1/(n+1))",
+              "Fix m and let n tend to infinity in the estimate before its final inequality."
+            ],
+            "A": [
+              "adjacent interior terms cancel",
+              "Passing to the limit preserves weak inequalities"
+            ],
+            "B": [
+              "The resulting sum telescopes from $k = m$ to $k = n - 1$:",
+              "For every integer $n > m$, the telescoping step above gives"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material mathematical error. B better serves this user's central preference: it explains why signed corrections call for absolute-tail control and preserves the detailed proof without A's repeated framing and scope commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The following proposition establishes",
+              "Remarks on Scope and Interpretation"
+            ],
+            "B": [
+              "We instead control the absolute tails of the sum to show that $(c_n)_{n \\ge 0}$ is a Cauchy sequence in $\\mathbb{R}$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ef00600377941d4e2199f5da2343c45223c7d26c8eabe0c58e1703ffbc26d9de",
+    "prompt_sha256": "b671436f7d859eb3ea888577d36bf9d131c1581e6d6745191934f0a25972f1f1",
+    "raw_sha256": "a9fff899f016c0e674532d6782e20f09e7653cee729950dc0fe3807cd7b7a698",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is an appendix proof establishing convergence and a quantitative truncation bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the hypotheses and conclusions and gives a valid proof. Symmetry, equal indices, and the A = 0 specialization are left implicit, but the estimates cover them without division by A or any monotonicity assumption.",
+          "quotes": {
+            "source": [
+              "Equal indices contribute zero.",
+              "If A = 0, every correction vanishes and the conclusion includes c = c_0."
+            ],
+            "A": [
+              "Let $A \\ge 0$",
+              "Then for all integers $n > m \\ge M$",
+              "|c_n - c_m| \\le \\frac{A}{m+1} \\le \\frac{A}{M+1} < \\varepsilon."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the exact correction bound, initial-value convention, finite limit, and error bound. The expanded cancellation, complete Cauchy argument, fixed-m limit, and zero case are mathematically sound.",
+          "quotes": {
+            "source": [
+              "No monotonicity of the corrections or of the partial sums has been assumed; the estimate controls their absolute tails."
+            ],
+            "A": [],
+            "B": [
+              "No assumption is made regarding the sign or monotonicity of the corrections $\\delta_k$.",
+              "the convergence and the resulting error bound depend solely on controlling the absolute tail of the corrections."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the same theorem and valid proof strategy. B explicitly restates the zero case and sign independence; A incorporates them through its real-valued hypotheses and estimates rather than discussing them separately.",
+          "quotes": {
+            "source": [
+              "Let A be a nonnegative real number",
+              "|c-c_m| ≤ A/(m+1)",
+              "Corrections can have either sign."
+            ],
+            "A": [
+              "let $\\delta_k \\in \\mathbb{R}$ be a sensor correction for each integer $k \\ge 0$.",
+              "|c - c_m| \\le \\frac{A}{m+1}."
+            ],
+            "B": [
+              "a sequence of real-valued corrections",
+              "|c - c_m| \\le \\frac{A}{m+1}."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's explanatory sentences flow naturally around its equations. B repeatedly adds formal labels, separators, and inflated phrases that make a short appendix proof feel more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Taking absolute values and applying the triangle inequality together with the bound on $|\\delta_k|$ yields",
+              "To establish the error bound, fix $m \\ge 0$"
+            ],
+            "B": [
+              "the explicit intermediate inequality",
+              "every correction vanishes identically",
+              "In this scenario"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both organize the argument coherently from finite tails to convergence to the error bound. A maintains continuity through prose; B exposes more intermediate structure but fragments the Cauchy argument into nested bullets.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This estimate shows that $(c_n)_{n \\ge 0}$ is a Cauchy sequence.",
+              "To establish the error bound"
+            ],
+            "B": [
+              "To establish convergence, we verify the Cauchy criterion directly:",
+              "Holding $m$ fixed and taking the limit as $n \\to \\infty$ on both sides"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A better matches the requested connected prose and restrained presentation, while B better matches the insistence on retaining explanatory steps. Neither fully combines those priorities: A compresses elementary transitions, and B adds unnecessary scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The third line uses the partial fraction decomposition of each summand",
+              "Then for all integers $n > m \\ge M$"
+            ],
+            "B": [
+              "All adjacent interior terms cancel, leaving only the boundary terms:",
+              "#### 2. Cauchy Sequence and Existence of the Limit"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both proofs are correct. B better fulfills the explicit request not to skip steps: it expands the cancellation, addresses reversed and equal indices, and explains A = 0. A leaves those elementary cases implicit; this is an exposition limitation, not invalid reasoning. B's inline Cauchy calculations are a presentation weakness.",
+          "quotes": {
+            "source": [
+              "reversing the indices gives the same conclusion. Equal indices contribute zero.",
+              "If A = 0, every correction vanishes and the conclusion includes c = c_0."
+            ],
+            "A": [
+              "the fourth line evaluates the telescoping sum where intermediate terms cancel",
+              "Then for all integers $n > m \\ge M$"
+            ],
+            "B": [
+              "If $m > n \\ge M$, reversing the roles of indices",
+              "If $n = m$, $|c_n - c_m| = 0 < \\varepsilon$.",
+              "If $A = 0$, every correction vanishes identically"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a narrow advantage because the user's specific priority is a proof with the steps retained and explained: its cancellation and explicit treatment of all Cauchy index cases and A = 0 make the artifact more complete. A is more natural and better connected, but achieves some of that economy by leaving source explanations implicit. B's excessive headings and list structure remain drawbacks.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Then for all integers $n > m \\ge M$",
+              "the fourth line evaluates the telescoping sum where intermediate terms cancel"
+            ],
+            "B": [
+              "All adjacent interior terms cancel, leaving only the boundary terms:",
+              "If $n = m$, $|c_n - c_m| = 0 < \\varepsilon$.",
+              "the limit is $c = c_0$"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "559653882d690e4404b1b7a87d0cc1d604bd2c7b321d5d9521356dce30653a3d",
+    "prompt_sha256": "b671436f7d859eb3ea888577d36bf9d131c1581e6d6745191934f0a25972f1f1",
+    "raw_sha256": "a9fff899f016c0e674532d6782e20f09e7653cee729950dc0fe3807cd7b7a698",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an explanatory rewrite of a convergence proof with a quantitative error bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the hypotheses, signed corrections, empty-sum convention, finite limit, and bound for every nonnegative integer m. Its Cauchy and limiting arguments are valid, including when A = 0.",
+          "quotes": {
+            "source": [
+              "|c-c_m| ≤ A/(m+1)",
+              "Corrections can have either sign."
+            ],
+            "A": [
+              "$$|c - c_m| \\le \\frac{A}{m+1}.$$",
+              "the individual corrections $\\delta_k$ may be positive, negative, or zero"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the exact denominator, all index ranges, the empty-sum convention, and both conclusions. It establishes Cauchy convergence before passing to the limit and explicitly covers A = 0.",
+          "quotes": {
+            "source": [
+              "Suppose\n|δ_k| ≤ A/((k+1)(k+2)).",
+              "If A = 0, every correction vanishes and the conclusion includes c = c_0."
+            ],
+            "A": [],
+            "B": [
+              "|\\delta_k| \\le \\frac{A}{(k+1)(k+2)}.",
+              "In the special case $A = 0$, the bound $|\\delta_k| \\le 0$ implies $\\delta_k = 0$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's assumptions, conclusions, and proof strategy without strengthening the guarantee or assuming monotonicity.",
+          "quotes": {
+            "source": [
+              "No monotonicity of the corrections or of the partial sums has been assumed; the estimate controls their absolute tails."
+            ],
+            "A": [
+              "Neither the corrections $\\delta_k$ nor the cumulative readings $c_n$ are assumed to be monotone."
+            ],
+            "B": [
+              "We instead control the absolute tails of the sum to show that $(c_n)_{n \\ge 0}$ is a Cauchy sequence in $\\mathbb{R}$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the operations directly in connected mathematical prose. A is readable but repeatedly announces and labels steps that its prose already explains.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "##### 3. Derivation of the Quantitative Truncation Bound",
+              "To bound the error committed by stopping at step $m$"
+            ],
+            "B": [
+              "To obtain the truncation bound, fix an integer $m \\ge 0$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B identifies the obstacle posed by signed corrections and immediately explains why absolute-tail control is needed. It then carries that estimate through convergence and the error bound without A's repeated scope commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Remarks on Scope and Interpretation",
+              "**Sign Indifference and Non-Monotonicity:**"
+            ],
+            "B": [
+              "Because the corrections $\\delta_k$ may take either sign",
+              "We instead control the absolute tails of the sum to show that $(c_n)_{n \\ge 0}$ is a Cauchy sequence in $\\mathbb{R}$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the author's preference for explaining why a construction belongs while removing repetitive packaging. A supplies useful explanation but surrounds it with an introductory preview, numbered proof headings, and repeated interpretive remarks.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The following proposition establishes that",
+              "#### Remarks on Scope and Interpretation"
+            ],
+            "B": [
+              "We instead control the absolute tails of the sum",
+              "To verify that $(c_n)_{n \\ge 0}$ is Cauchy"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly derive the telescoping endpoints, establish the Cauchy property for all index orders, invoke completeness, and justify the fixed-m limit by continuity. A expands the cancellation more fully; B's displayed chain and explanations adequately show the same argument.",
+          "quotes": {
+            "source": [
+              "Fix m and let n tend to infinity in the estimate before its final inequality. Continuity of absolute value gives the claimed error bound."
+            ],
+            "A": [
+              "we can rewrite the right-hand sum as a telescoping series in which adjacent interior terms cancel:",
+              "Passing to the limit preserves weak inequalities"
+            ],
+            "B": [
+              "The resulting sum telescopes from $k = m$ to $k = n - 1$:",
+              "Letting $n \\to \\infty$ and using the continuity of the absolute value function"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both supply a complete proof. B better serves the decisive preference for connected explanation: its opening proof paragraph links signed corrections to absolute-tail control, then develops that argument with sufficient displayed detail and less repetitive framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "##### 1. Bounding the Cumulative Drift Between Two Steps",
+              "#### Remarks on Scope and Interpretation"
+            ],
+            "B": [
+              "We instead control the absolute tails of the sum to show that $(c_n)_{n \\ge 0}$ is a Cauchy sequence in $\\mathbb{R}$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ef00600377941d4e2199f5da2343c45223c7d26c8eabe0c58e1703ffbc26d9de",
+    "prompt_sha256": "b671436f7d859eb3ea888577d36bf9d131c1581e6d6745191934f0a25972f1f1",
+    "raw_sha256": "a7931d15cdc36928173c1c43d2a4a70969b06daef684c2dd0bbc69e7117a9c70",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a mathematical proof rewrite, including the telescoping calculation, Cauchy argument, and limiting error estimate.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the assumptions, exact bound, index ranges, and finite-limit conclusion. The reverse-index and equal-index cases are implicit rather than invalidly excluded. Its estimates also work for A = 0, although it does not state the resulting constant sequence explicitly.",
+          "quotes": {
+            "source": [
+              "For n > m ≥ M the displayed estimate is less than ε, and reversing the indices gives the same conclusion. Equal indices contribute zero.",
+              "If A = 0, every correction vanishes and the conclusion includes c = c_0."
+            ],
+            "A": [
+              "Then for all integers $n > m \\ge M$",
+              "choose an integer $M$ such that $A / (M + 1) < \\varepsilon$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the exact hypotheses and conclusions, explicitly handles signed corrections and A = 0, and gives a valid telescoping, Cauchy, and fixed-index limit argument.",
+          "quotes": {
+            "source": [
+              "|δ_k| ≤ A/((k+1)(k+2)).",
+              "for every integer m ≥ 0. Corrections can have either sign."
+            ],
+            "A": [],
+            "B": [
+              "|\\delta_k| \\le \\frac{A}{(k+1)(k+2)} \\quad \\text{for all } k \\ge 0.",
+              "No assumption is made regarding the sign or monotonicity of the corrections $\\delta_k$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the mathematical claim and its scope. B explicitly restates the zero case and absence of monotonicity assumptions; A leaves those consequences implicit, but its argument still accommodates them.",
+          "quotes": {
+            "source": [
+              "If A = 0, every correction vanishes and the conclusion includes c = c_0."
+            ],
+            "A": [
+              "Let $A \\ge 0$, let $c_0 \\in \\mathbb{R}$, and let $\\delta_k \\in \\mathbb{R}$",
+              "|c - c_m| \\le \\frac{A}{m+1}."
+            ],
+            "B": [
+              "If $A = 0$, every correction vanishes identically",
+              "the limit is $c = c_0$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as continuous mathematical exposition, with prose connecting the displays. B's nested procedural list and repeated section introductions make an otherwise clear argument feel more like an instructional outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Taking absolute values and applying the triangle inequality together with the bound on $|\\delta_k|$ yields",
+              "To establish the error bound, fix $m \\ge 0$"
+            ],
+            "B": [
+              "To establish convergence, we verify the Cauchy criterion directly:",
+              "- Let $\\varepsilon > 0$ be given."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow the necessary dependency order: isolate a tail, bound it by telescoping, obtain convergence through completeness, and then take a fixed-index limit. A connects these stages through prose; B makes them explicit through sectioning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This estimate shows that $(c_n)_{n \\ge 0}$ is a Cauchy sequence.",
+              "To establish the error bound"
+            ],
+            "B": [
+              "Consequently, for any $n > m \\ge 0$",
+              "Holding $m$ fixed and taking the limit as $n \\to \\infty$"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the preference for connected prose without unnecessary scaffolding. B adds useful explanation, but its generic introductory claims, nested commands, and repeated labels are less aligned with the author's requested rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The third line uses the partial fraction decomposition of each summand",
+              "By the completeness of the real numbers"
+            ],
+            "B": [
+              "This appendix formalizes that result from first principles.",
+              "we have the explicit intermediate inequality"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both arguments are mathematically sound. B better satisfies the explicit request to lay out steps: it expands the cancellation before extracting the endpoints, checks both index orders and equality, and states the zero case. A compresses these routine but requested explanations.",
+          "quotes": {
+            "source": [
+              "subtract the sums, take absolute values, and telescope:",
+              "and reversing the indices gives the same conclusion. Equal indices contribute zero."
+            ],
+            "A": [
+              "the fourth line evaluates the telescoping sum where intermediate terms cancel",
+              "Then for all integers $n > m \\ge M$"
+            ],
+            "B": [
+              "All adjacent interior terms cancel, leaving only the boundary terms:",
+              "If $m > n \\ge M$, reversing the roles of indices gives"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material error. A has the more natural prose, but B more fully delivers the task-specific demand for an exposed derivation: its expanded telescoping cancellation and complete Cauchy verification supply useful intermediate reasoning. That advantage narrowly outweighs its excessive sectioning and procedural presentation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the fourth line evaluates the telescoping sum where intermediate terms cancel"
+            ],
+            "B": [
+              "Substituting this identity into the sum produces a telescoping cancellation across intermediate indices:",
+              "All adjacent interior terms cancel, leaving only the boundary terms:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "559653882d690e4404b1b7a87d0cc1d604bd2c7b321d5d9521356dce30653a3d",
+    "prompt_sha256": "b671436f7d859eb3ea888577d36bf9d131c1581e6d6745191934f0a25972f1f1",
+    "raw_sha256": "a7931d15cdc36928173c1c43d2a4a70969b06daef684c2dd0bbc69e7117a9c70",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
