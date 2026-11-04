@@ -18141,5 +18141,1355 @@
     "prompt_sha256": "0ef36fd68874b1cfb2b288d54d5342cbe50a564c3a52fbe7a2e5ec69bc9f6ffd",
     "raw_sha256": "47300960c1611d15b405cf3eea9433c98d80cec6bba919ecf7ab4646d49683a6",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a committee recommendation; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the seasonal recommendation, both prices and their components, budget feasibility, incomplete staff-time accounting, handling constraint, historical value, repair alternative, and unrun trial. Its more emphatic wording does not clearly change the decision or establish a new factual claim in context.",
+          "quotes": {
+            "source": [
+              "Those are quoted costs, not a complete estimate of staff time. Both options fit the allocated budget.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [
+              "While these figures exclude full staff time, both options fit within the allocated budget.",
+              "this recommendation cannot claim that physical handling has already demonstrated improved understanding."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the options, quoted costs and inclusions, budget and staff-time qualifications, existing interpretive question, original's correction and historical value, repair alternative, and need for an unrun visitor trial. The photograph and explicit authorization consequence also remain.",
+          "quotes": {
+            "source": [
+              "The exhibit asks visitors to work out how a reading changes when an instrument is tilted, and visitors cannot tilt the original.",
+              "The proposed activity therefore still needs a trial with visitors."
+            ],
+            "A": [],
+            "B": [
+              "The exhibit asks visitors to work out how a reading changes when an instrument is tilted, and visitors cannot tilt the original.",
+              "The proposed activity therefore still needs a trial with visitors."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both ground the recommendation in the existing exhibit's purpose, give the original substantive historical value, retain the feasible repair alternative, and preserve uncertainty about learning benefits. Neither materially changes the stated options or constraints.",
+          "quotes": {
+            "source": [
+              "A maker's correction remains visible on its scale.",
+              "We could redesign it around repair, but that would be a different use of the season's remaining preparation time."
+            ],
+            "A": [
+              "A maker’s correction remains visible on its scale",
+              "Redesigning the interpretive narrative around the maker's adjustments is possible"
+            ],
+            "B": [
+              "A maker's correction remains visible on its scale",
+              "Redesigning it around repair is possible, but that would be a different use of the season's remaining preparation time."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the practical obstacle and learning limitation in ordinary committee prose. A remains readable but repeatedly substitutes more formal abstractions for the source's direct language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "an investigation that cannot take place if the instrument cannot be moved.",
+              "a replica is not an inherently effective teaching object."
+            ],
+            "B": [
+              "visitors cannot tilt the original.",
+              "A replica is not automatically a good teaching object."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish exhibit fit, remove affordability as the deciding issue, consider the original's value and redesign implications, qualify the replica's educational promise, and finish with an actionable decision. Their argument structures are substantially equivalent.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Cost does not force this decision.",
+              "If the committee prefers to make the original instrument’s history and repair the central focus, it should explicitly authorize that change"
+            ],
+            "B": [
+              "Because both options fit the budget, affordability is not the deciding issue",
+              "If the committee instead wants the original's history to be the central question, it should explicitly authorize that change"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's conversational technical register and restrained treatment of tradeoffs. A adds editorial emphasis such as 'compelling' and 'substantial' where the source's concrete explanation already supplies the reason to weigh redesign carefully.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a compelling account of repair and adaptation",
+              "a substantial redirection of the season’s remaining preparation time."
+            ],
+            "B": [
+              "an account of repair and adaptation",
+              "a different use of the season's remaining preparation time."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both provide a complete, connected recommendation. B has the edge for this author's requested voice: it states the precise visitor constraint directly and lets the repair tradeoff carry its own weight, while A adds abstraction and evaluative emphasis without developing the argument further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "an investigation that cannot take place if the instrument cannot be moved.",
+              "a substantial redirection of the season’s remaining preparation time."
+            ],
+            "B": [
+              "visitors cannot tilt the original.",
+              "a different use of the season's remaining preparation time."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7140cba6361e14589b68ba792f01428251c2d0cbac03296a078d9103100fd722",
+    "prompt_sha256": "84bbd47519ce13aeb82ff80e66de8e559ce18c685a2ddb7ef705d8c59afe17a0",
+    "raw_sha256": "292830deee633217df2e9725ccbcb3a7bfd3029a9b2f03c7cfb5d7561bebadc3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a museum recommendation; it contains no proof or mathematical derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the options, costs, historical value, and unrun trial, but calls redesign a substantial redirection of preparation time. This adds an unsupported magnitude to the preparation burden, making the alternative appear more costly than the source establishes.",
+          "quotes": {
+            "source": [
+              "We could redesign it around repair, but that would be a different use of the season's remaining preparation time."
+            ],
+            "A": [
+              "Redesigning the interpretive narrative around the maker's adjustments is possible, but it would represent a substantial redirection of the season’s remaining preparation time."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains both budget-compatible options, their quoted costs and components, the staff-time qualification, the handling constraint, the original's historical value, and the need for an unrun visitor trial. It grounds the recommendation in the existing exhibit question.",
+          "quotes": {
+            "source": [
+              "Both options fit the allocated budget.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [],
+            "B": [
+              "Both options fit the allocated budget.",
+              "That trial has not yet happened, and we should not claim that handling has already improved understanding."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive recommendation and its limitations. B also preserves the unquantified preparation tradeoff, whereas A strengthens it into a substantial burden.",
+          "quotes": {
+            "source": [
+              "We could redesign it around repair, but that would be a different use of the season's remaining preparation time."
+            ],
+            "A": [
+              "it would represent a substantial redirection of the season’s remaining preparation time."
+            ],
+            "B": [
+              "that would be a different use of the season's remaining preparation time."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly replaces direct language with more formal abstractions. B explains the same limitations in idiomatic prose suited to the committee.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "At the same time, a replica is not an inherently effective teaching object."
+            ],
+            "B": [
+              "A replica is not automatically a good teaching object."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the handling question, explain why affordability does not decide the choice, consider the original's distinct value, and qualify the replica recommendation before stating the decision consequence. Their underlying argumentative order is essentially the same.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Cost does not force this decision.",
+              "If the committee prefers to make the original instrument’s history and repair the central focus, it should explicitly authorize that change in the exhibit's interpretive direction."
+            ],
+            "B": [
+              "Because both options fit the budget, affordability is not the deciding issue; the choice depends on what visitors are permitted to do.",
+              "If the committee instead wants the original's history to be the central question, it should explicitly authorize that change in the exhibit's direction."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's conversational technical register while retaining useful explanation. A adds inflated evaluative language where the author wants the actual tradeoff stated plainly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a detail that could anchor a compelling account of repair and adaptation",
+              "Redesigning the interpretive narrative around the maker's adjustments"
+            ],
+            "B": [
+              "a detail that could support an account of repair and adaptation",
+              "Redesigning it around repair is possible"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A mildly strengthens the preparation burden of choosing the original. Both deliver a connected recommendation, but B more faithfully serves the decisive priority: explaining why the replica fits the existing question without overstating the case against the alternative.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a substantial redirection of the season’s remaining preparation time."
+            ],
+            "B": [
+              "Choosing the replica now matches the object to the existing question while leaving resources to test the activity."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7140cba6361e14589b68ba792f01428251c2d0cbac03296a078d9103100fd722",
+    "prompt_sha256": "84bbd47519ce13aeb82ff80e66de8e559ce18c685a2ddb7ef705d8c59afe17a0",
+    "raw_sha256": "a871b7eec791657850dc83d11e90e0fceb93fbf7aeec1bfcabfea7ff493ff325",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the argument and wording of a museum recommendation, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the seasonal recommendation, quoted costs and included components, incomplete staff-time estimate, budget feasibility, handling constraint, historical alternative, photograph, and unrun trial. It adds no unsupported learning claim.",
+          "quotes": {
+            "source": [
+              "Both options fit the allocated budget.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [
+              "Both options fit the allocated budget, so the case for the replica rests on what visitors would be permitted to do rather than on affordability.",
+              "Because that trial has not happened yet, we cannot claim that handling has already improved understanding."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the factual constraints, quoted costs and components, budget and staff-time qualifications, historical value, and unrun trial. Its conditional opening makes the source's alternative exhibit direction explicit without adding a guarantee of learning.",
+          "quotes": {
+            "source": [
+              "If the committee instead wants the original's history to be the central question, it should explicitly authorize that change in the exhibit's direction.",
+              "Those are quoted costs, not a complete estimate of staff time."
+            ],
+            "A": [],
+            "B": [
+              "Unless the committee wishes to change the focus of this season’s navigation exhibit, we recommend acquiring the handling replica rather than borrowing the original instrument.",
+              "Neither figure accounts for full staff time, and both options fit within the allocated budget."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the recommendation's scope and evidence limits, give the original substantive historical value, and preserve an explicitly authorized change of direction as the alternative. Neither claims that handling has demonstrated learning gains.",
+          "quotes": {
+            "source": [
+              "The proposed activity therefore still needs a trial with visitors.",
+              "That trial has not happened, and the recommendation should not claim that handling has already improved understanding."
+            ],
+            "A": [
+              "The proposed activity therefore still needs a trial with visitors.",
+              "Because that trial has not happened yet, we cannot claim that handling has already improved understanding."
+            ],
+            "B": [
+              "choosing the replica only makes the planned activity possible; it does not guarantee that the activity will succeed as a teaching tool.",
+              "Because we have not yet conducted a visitor trial, we cannot claim that handling the instrument improves understanding."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, conversational sentences throughout. B remains readable but sometimes expresses the same practical consequence in heavier administrative language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We could redesign it around repair, but that would be a different use of the season's remaining preparation time."
+            ],
+            "B": [
+              "it should explicitly authorize that shift in direction and the corresponding reallocation of preparation time."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A improves local transitions while largely retaining the source's sequence. B first identifies the governing decision, then considers the replica's function and the original's historical alternative together before addressing cost and testing. This makes the reasons form a clearer decision argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both options fit the allocated budget, so the case for the replica rests on what visitors would be permitted to do rather than on affordability.",
+              "The original does offer something the replica cannot: a material connection to the instrument's working history."
+            ],
+            "B": [
+              "The choice ultimately turns on whether we want to preserve the exhibit’s current inquiry or redirect our remaining preparation time toward a different question.",
+              "The original instrument offers a different kind of value—a material connection to its working history"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A better preserves the source's conversational rhythm. B more explicitly develops why choosing the replica is necessary for the planned activity yet insufficient to establish teaching success. These are competing strengths under the author's stated preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Even with the current design, a replica is not automatically a good teaching object.",
+              "The proposed activity therefore still needs a trial with visitors."
+            ],
+            "B": [
+              "Even so, choosing the replica only makes the planned activity possible; it does not guarantee that the activity will succeed as a teaching tool."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The recommendation contains no proof or mathematical derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. A is a faithful, natural revision, but B better satisfies the task's decisive priority of strengthening progression: it frames the choice around the exhibit's purpose, considers the historical alternative within that frame, and explains why enabling handling still requires visitor testing. Its occasional formality is a smaller drawback.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Choosing the replica now would match the object to the existing question while leaving resources for testing the activity."
+            ],
+            "B": [
+              "The choice ultimately turns on whether we want to preserve the exhibit’s current inquiry or redirect our remaining preparation time toward a different question.",
+              "Even so, choosing the replica only makes the planned activity possible; it does not guarantee that the activity will succeed as a teaching tool."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "867e551bca4f6185255a76c6df519c439b34aca7b5ffb6642e4b0e56f376942b",
+    "prompt_sha256": "84bbd47519ce13aeb82ff80e66de8e559ce18c685a2ddb7ef705d8c59afe17a0",
+    "raw_sha256": "a871b7eec791657850dc83d11e90e0fceb93fbf7aeec1bfcabfea7ff493ff325",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns an ecological monitoring position statement, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A overstates the evidential limitation: the source says the difference cannot directly measure population change, whereas A says the lower count is not itself evidence of any actual change. That can lead readers to dismiss its evidential value rather than qualify its interpretation.",
+          "quotes": {
+            "source": [
+              "the size of a population change cannot be read straight from the difference between the totals."
+            ],
+            "A": [
+              "it is not, by itself, evidence of an actual population change."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the eight ponds, visit schedules, lower total, three-pond proposal, unstarted drainage, meeting timing, repeat protocol, limitations, and fallback. Its statement about comparability is somewhat stronger than the source's wording, but the adjoining weather and detectability qualifications prevent it from reasonably promising complete comparability.",
+          "quotes": {
+            "source": [
+              "Matching those features would make the new observations more comparable with last year's, though weather and detectability would still vary."
+            ],
+            "A": [],
+            "B": [
+              "Matching the timing, effort, and recording protocol will make the new observations comparable with last year's.",
+              "This will not eliminate variations in weather and detectability"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the concrete survey facts and recommended action. B more faithfully distinguishes an observed difference from a measure of population change; A's categorical denial of evidence goes beyond that distinction.",
+          "quotes": {
+            "source": [
+              "A lower count is therefore an observation, but the size of a population change cannot be read straight from the difference between the totals."
+            ],
+            "A": [
+              "it is not, by itself, evidence of an actual population change."
+            ],
+            "B": [
+              "the difference between the two years cannot be read directly as a measure of population change."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses readable, connected prose suited to the original statement. A's repeated labeled contrasts and administrative phrasing make a short argument feel like a presentation outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Decision Context: Relevance vs. Causality",
+              "**Relevance:** The impending decision makes the current ecological condition of the ponds highly pertinent to the committee."
+            ],
+            "B": [
+              "It does, however, make the condition of the ponds relevant to an imminent decision"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow a sensible sequence from recommendation through methodological problem, decision context, remedy, and fallback. B better connects those stages as an argument: the pending decision explains the need for information while leaving the methodological obstacle intact. A repeatedly divides those relationships into labeled claims.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "* **Causality:**",
+              "* **Relevance:**",
+              "* **Timing:**"
+            ],
+            "B": [
+              "It does, however, make the condition of the ponds relevant to an imminent decision, even though the urgency of that decision does nothing to make the two surveys comparable."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "The author explicitly wants reasons to form a connected argument rather than a catalogue. B preserves that prose form and keeps the limitations beside the proposal. A's executive summary, numbered sections, and repeated staged contrasts depart from the supplied register without improving the explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Executive Recommendation",
+              "* **What the survey achieves:**",
+              "* **What the survey does not achieve:**"
+            ],
+            "B": [
+              "This will not eliminate variations in weather and detectability, isolate the potential effects of drainage, or produce a full census, but it will remove an avoidable ambiguity before the meeting."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, whereas A mildly overstates what the methodological mismatch establishes about evidential value. B also better meets the decisive writing priority: it explains why an imminent decision warrants a repeat without making urgency establish causation or comparability. Its connected paragraphs are closer to the requested position statement than A's catalogue of labeled contrasts.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it is not, by itself, evidence of an actual population change.",
+              "### 2. Decision Context: Relevance vs. Causality"
+            ],
+            "B": [
+              "Because drainage has not begun, the proposal cannot explain why the count was lower.",
+              "It does, however, make the condition of the ponds relevant to an imminent decision"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7f59a8342d749dfe76be52c2326168cff9d624550b1c33a2cf646603ee4c27f5",
+    "prompt_sha256": "d8b4f6262887e84d497ad75581c17e5613fc0fbe94c395a685a7957dbb06d3fb",
+    "raw_sha256": "8a049de576bc46f18bf12edc1bed448d23714830955b4b095c4d4cb0d09b69e2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for clearer reasoning in an ecological monitoring statement, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the survey facts, proposal scope and timing, uncertainty about population change, repeat protocol, residual variation, and fallback. Its changes primarily connect the source's existing reasoning.",
+          "quotes": {
+            "source": [
+              "Matching those features would make the new observations more comparable with last year's, though weather and detectability would still vary."
+            ],
+            "A": [
+              "Matching those features would make the new observations more comparable with last year's, though weather and detectability would still vary."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the substantive facts and limitations, including the distinction between monitoring and causal inference. The unexplained 'Phoebe/' insertion is an editorial defect, but it does not establish a different ecological claim or recommendation.",
+          "quotes": {
+            "source": [
+              "The proposal does not prove why the count was lower, especially since the drainage has not begun."
+            ],
+            "A": [],
+            "B": [
+              "The proposal does not explain why this year’s count was lower—especially since drainage has not begun—Phoebe/causal claims must be kept separate from the reason to monitor."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the concrete observations, the methodological obstacle, the urgency supplied by the proposal, and the limited purpose of the repeat. Neither promises a census or an estimate of drainage effects.",
+          "quotes": {
+            "source": [
+              "It would not isolate the effect of drainage, and it would not create a population census."
+            ],
+            "A": [
+              "A repeat survey would not isolate the effect of drainage or create a population census"
+            ],
+            "B": [
+              "the count will not constitute a full population census, and it will not isolate the effects of drainage."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as complete, idiomatic prose. B is generally readable, but the unexplained name and slash interrupt a central sentence and make the artifact visibly unfinished.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposal does not prove why the count was lower, especially since the drainage has not begun, but it does make the condition of the ponds relevant to a decision that will be made soon."
+            ],
+            "B": [
+              "—Phoebe/causal claims must be kept separate from the reason to monitor."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both develop the recommendation in a logical order, and B usefully introduces the methodological problem before listing the visits. A nevertheless handles the crucial transition from causal uncertainty to decision relevance more successfully; B interrupts that transition with an unexplained insertion and an abstract instruction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The timing creates a need for information, even though it does not repair the comparability of the two surveys."
+            ],
+            "B": [
+              "—Phoebe/causal claims must be kept separate from the reason to monitor. Rather, the pending decision makes the current condition of the ponds immediately relevant."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A retains the author's measured, conversational register while joining reasons and qualifications. B adds useful explanation in places, but its explicit instruction about separating causal claims and its more emphatic framing are less well integrated into the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These recommendations have sometimes been heard as opposites, since asking for another survey can sound like asking everyone to wait, but a repeat survey is an action we can take while the existing count remains difficult to interpret."
+            ],
+            "B": [
+              "the two recommendations work together: repeating the survey now is a practical step we can take immediately",
+              "—Phoebe/causal claims must be kept separate from the reason to monitor."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response materially changes the source's claims. A is the more usable completed statement because it carries the reader directly from uncertain causation to the practical reason for monitoring. B's unexplained 'Phoebe/' fragment breaks precisely that central transition and would require correction before circulation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposal does not prove why the count was lower, especially since the drainage has not begun, but it does make the condition of the ponds relevant to a decision that will be made soon."
+            ],
+            "B": [
+              "The proposal does not explain why this year’s count was lower—especially since drainage has not begun—Phoebe/causal claims must be kept separate from the reason to monitor."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a8aef70ac0f1bba1affd7488de977e44946e090ec43d8a6d208ad4843e524730",
+    "prompt_sha256": "d8b4f6262887e84d497ad75581c17e5613fc0fbe94c395a685a7957dbb06d3fb",
+    "raw_sha256": "8a049de576bc46f18bf12edc1bed448d23714830955b4b095c4d4cb0d09b69e2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits a monitoring position statement and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the survey history, proposal scope, timing, limitations, and fallback. The stray editorial text disrupts the prose without changing a substantive inference.",
+          "quotes": {
+            "source": [
+              "Last year's team visited each of eight ponds twice at dusk.",
+              "though weather and detectability would still vary."
+            ],
+            "A": [
+              "Last year’s team visited each of the eight ponds twice at dusk",
+              "weather and animal detectability will still vary"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the facts and qualifications, including the distinction between decision urgency and evidence of population change or drainage effects.",
+          "quotes": {
+            "source": [
+              "A drainage proposal concerns three of the surveyed ponds, and the advisory meeting is next month.",
+              "It would not isolate the effect of drainage"
+            ],
+            "A": [],
+            "B": [
+              "a drainage proposal concerns three of the surveyed ponds and the advisory meeting is next month.",
+              "A repeat survey would not isolate the effect of drainage"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive argument: the changed methods limit interpretation, the pending proposal creates urgency, and the repeat improves evidence without settling population size or causation.",
+          "quotes": {
+            "source": [
+              "The timing creates a need for information; it does not repair the comparability of the two surveys."
+            ],
+            "A": [
+              "The approaching meeting creates a need for better information, but urgency alone does not make the two existing surveys comparable."
+            ],
+            "B": [
+              "The timing creates a need for information, even though it does not repair the comparability of the two surveys."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as finished, idiomatic prose. A contains an unexplained name and slash construction in the middle of its causal qualification, interrupting an otherwise readable passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "—Phoebe/causal claims must be kept separate from the reason to monitor."
+            ],
+            "B": [
+              "The proposal does not prove why the count was lower, especially since the drainage has not begun"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow a coherent recommendation–problem–urgency–remedy–fallback sequence. B carries the crucial transition from causal uncertainty to decision relevance without A's editorial interruption.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "—Phoebe/causal claims must be kept separate from the reason to monitor. Rather, the pending decision makes the current condition of the ponds immediately relevant."
+            ],
+            "B": [
+              "but it does make the condition of the ponds relevant to a decision that will be made soon."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B maintains the source's conversational explanation and measured recommendation. A adds unnecessary metacommentary about how causal claims must be handled, including an unfinished editorial fragment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Phoebe/causal claims must be kept separate from the reason to monitor."
+            ],
+            "B": [
+              "A repeat survey would not isolate the effect of drainage or create a population census, but its immediate purpose is to reduce one avoidable ambiguity in the evidence available to the meeting."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material factual error. B better meets the user's goal of a completed, connected argument: it explains why the proposal matters without confusing urgency with causal evidence. A leaves an editorial fragment at that decisive transition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "—Phoebe/causal claims must be kept separate from the reason to monitor."
+            ],
+            "B": [
+              "The proposal does not prove why the count was lower, especially since the drainage has not begun, but it does make the condition of the ponds relevant to a decision that will be made soon."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b3b1225166c427070b85387bb4f84fa1969bd31457ec98b8e1e9137cab8f5001",
+    "prompt_sha256": "57f61b6749db10e2cb70cfed4a307072a3878688920309fc3fcc84f5d308ef80",
+    "raw_sha256": "ae1692543b121ae75a0cc0402747b3d4d33861f84ea46d5d11651f5742e0516c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an ecological monitoring argument, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the survey facts, proposal scope, limitations, and fallback. Saying the observations will be comparable is stronger than the source's comparative wording, but the immediate weather and detectability qualification keeps this from promising complete comparability.",
+          "quotes": {
+            "source": [
+              "Matching those features would make the new observations more comparable with last year's, though weather and detectability would still vary."
+            ],
+            "A": [
+              "Matching the timing, effort, and recording protocol will make the new observations comparable with last year's.",
+              "This will not eliminate variations in weather and detectability"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the facts and survey limitations. The assertion that the count is not evidence by itself could dismiss its evidentiary value more broadly than the source does; however, the surrounding discussion of direct measurement supports a reading about insufficient evidence. That ambiguity does not establish a material error.",
+          "quotes": {
+            "source": [
+              "A lower count is therefore an observation, but the size of a population change cannot be read straight from the difference between the totals."
+            ],
+            "A": [],
+            "B": [
+              "this raw observation cannot be treated as a direct measure of population decline",
+              "it is not, by itself, evidence of an actual population change."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the factual constraints, limited survey purpose, and fallback. A slightly strengthens the comparability wording; B risks overstating the count's lack of evidentiary value. Their surrounding qualifications preserve the central distinction between monitoring and ecological conclusions.",
+          "quotes": {
+            "source": [
+              "Matching those features would make the new observations more comparable with last year's, though weather and detectability would still vary.",
+              "Neither a confident decline estimate nor a confident assurance of stability follows from the current record."
+            ],
+            "A": [
+              "This will not eliminate variations in weather and detectability, isolate the potential effects of drainage, or produce a full census",
+              "From the current record, one can neither reliably estimate a decline nor assume the population is stable."
+            ],
+            "B": [
+              "improves comparability with last year's baseline.",
+              "The existing record justifies neither a confident claim of population decline nor an assurance of stability."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct sentences suited to the advisory audience. B is readable but repeatedly substitutes administrative phrasing and abstract labels for the source's conversational register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does, however, make the condition of the ponds relevant to an imminent decision"
+            ],
+            "B": [
+              "The impending decision makes the current ecological condition of the ponds highly pertinent to the committee."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A connects the problem, urgency, proposed remedy, and fallback through explanatory paragraphs. B has a logical section order, but its repeated labeled bullets fragment the reasons and objections into the catalogue the user wanted to avoid.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because drainage has not begun, the proposal cannot explain why the count was lower. It does, however, make the condition of the ponds relevant to an imminent decision"
+            ],
+            "B": [
+              "* **Causality:**",
+              "* **Relevance:**",
+              "* **Timing:**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the position statement's connected, measured prose while retaining useful explanation. B's executive framing, numbered headings, and repeated classification of claims impose a generic report structure that fits the author's stated preferences less well.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The count warrants attention because three of the surveyed ponds are involved in a drainage proposal scheduled for next month's advisory meeting."
+            ],
+            "B": [
+              "### Executive Recommendation",
+              "### 2. Decision Context: Relevance vs. Causality"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither establishes a material error when its qualifications are read in context. A better serves the decisive preference for reasons that form a connected argument: it explains why the pending decision warrants action despite the survey mismatch. B preserves the main substance but turns much of that argument into labeled categories.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does, however, make the condition of the ponds relevant to an imminent decision, even though the urgency of that decision does nothing to make the two surveys comparable."
+            ],
+            "B": [
+              "### 2. Decision Context: Relevance vs. Causality",
+              "* **Timing:** An urgent timeline creates a need for reliable information, but urgency alone does not make two fundamentally different survey protocols comparable."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0381d4f5ddd80c4dd55ec4fe44c25ace72f0960bafa681b6dce103b2140ac3ed",
+    "prompt_sha256": "57f61b6749db10e2cb70cfed4a307072a3878688920309fc3fcc84f5d308ef80",
+    "raw_sha256": "ae1692543b121ae75a0cc0402747b3d4d33861f84ea46d5d11651f5742e0516c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of a public advisory argument, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A turns the drafts' unreviewed status into a mandatory formal review prerequisite, adding policy machinery. It also converts a possible misleading interpretation into a categorical outcome.",
+          "quotes": {
+            "source": [
+              "they have not yet been reviewed by readers or subject specialists.",
+              "Repetition of the heading can therefore be faithful to one route through the material while misleading on another."
+            ],
+            "A": [
+              "they must undergo formal review by readers and subject specialists before implementation.",
+              "misleads the researcher seeking an accurate description of the holdings."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the twenty-collection scope, unchanged inventories, three-part proposal, display arrangement, interpretation standard, unreviewed drafts, and unevaluated trial checking successful and failed searches.",
+          "quotes": {
+            "source": [
+              "The scanned inventories would remain available exactly as they are.",
+              "followed by checks of both successful searches and failed searches."
+            ],
+            "A": [],
+            "B": [
+              "the scanned inventories will remain available exactly as they are.",
+              "followed by an evaluation of both successful and failed searches."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B retains the source's provisional status and possibility of misreading. A adds a formal implementation condition and states the misleading effect more strongly than the source supports.",
+          "quotes": {
+            "source": [
+              "a reader who has not seen the inventory may understand the discovery label as the archive's present description.",
+              "they have not yet been reviewed by readers or subject specialists."
+            ],
+            "A": [
+              "they must undergo formal review by readers and subject specialists before implementation.",
+              "misleads the researcher seeking an accurate description of the holdings."
+            ],
+            "B": [
+              "readers who have not seen the inventory may understand the label as the archive's present description.",
+              "readers and subject specialists have not yet reviewed them."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, connected public-facing prose. A's administrative labels and inflated terminology make the same proposal sound more procedural and abstract.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we propose a tripartite structure",
+              "Autonomous Discovery and Accurate Representation:"
+            ],
+            "B": [
+              "we propose three linked elements for each collection:",
+              "The proposal addresses this concern by keeping the note inside the individual record rather than in search results."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B establishes the competing retrieval needs before introducing the construction, then connects each objection to its design and limits. A has a logical outline, but its separately labeled framework, counterarguments, and status report interrupt the sustained argument the user requested.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 3. Proposed Three-Part Framework",
+              "### 4. Analysis of Objections",
+              "*Current Status:*"
+            ],
+            "B": [
+              "To address both retrieval needs without modifying the underlying documents, we propose three linked elements for each collection:",
+              "This accepts a real tradeoff:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested conversational technical argument: it explains why the construction is needed and keeps the unresolved tradeoff beside the display choice. A substitutes a heavily segmented advisory template and more emphatic institutional language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Objection A: Replacement Labels Impose Subjective Interpretation",
+              "*Counter-argument:* Any descriptive label interprets the material it summarizes."
+            ],
+            "B": [
+              "That fact does not make every replacement equally sound:",
+              "search listings remain concise, but a reader will not see the historical wording until opening the record."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A adds a formal review requirement and overstates the misleading effect. B also better fulfills the decisive writing priority: the retrieval problem motivates the proposal, and the objections expose its standards and remaining tradeoff within a sustained argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "they must undergo formal review by readers and subject specialists before implementation.",
+              "### 4. Analysis of Objections"
+            ],
+            "B": [
+              "To address both retrieval needs without modifying the underlying documents, we propose three linked elements for each collection:",
+              "This accepts a real tradeoff:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5de966be41f2dc637860a5e3667afd83bb0bdd46c9dffc8bbd837dc65393a5cc",
+    "prompt_sha256": "ab09729f6bb81686b3e6033e179106b96a61b6dd17970dbabbe674809336ec45",
+    "raw_sha256": "0a978489ef9fbb8b972ed627388ea465e2e8d68d5f498edd545638b4bd002d8d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the exposition of an archive access-policy argument, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source's scope, qualified retrieval claims, unchanged inventories, proposed metadata and display arrangement, unreviewed drafts, and limited trial with both search outcomes checked.",
+          "quotes": {
+            "source": [
+              "Some labels repeat terms from old inventory headings",
+              "We have no evidence yet that the trial will improve retrieval."
+            ],
+            "A": [
+              "Some labels repeat terms from old inventory headings",
+              "We have no evidence yet that the trial will improve retrieval."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The opening presents repeated historical headings as a property of the full twenty-collection set, whereas the source establishes this for some labels. B also claims the drafts were prepared with the stated standard in mind, adding an unsupported account of the authors' intentions. The central proposal and its limits remain intact.",
+          "quotes": {
+            "source": [
+              "Some labels repeat terms from old inventory headings",
+              "We have drafted labels for the twenty collections, but they have not yet been reviewed by readers or subject specialists."
+            ],
+            "A": [],
+            "B": [
+              "twenty digitized collections where current labels repeat terms from old inventory headings",
+              "We have drafted labels for the twenty collections with this standard in mind"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the source's subset qualification and reports the drafts' status without asserting how they were prepared. B strengthens the opening's scope claim and supplies an unsupported drafting intention, although it preserves the substantive proposal and evaluation limits.",
+          "quotes": {
+            "source": [
+              "Some labels repeat terms from old inventory headings",
+              "We have drafted labels for the twenty collections, but they have not yet been reviewed by readers or subject specialists."
+            ],
+            "A": [
+              "Some labels repeat terms from old inventory headings",
+              "We have drafted labels for the twenty collections, but they have not yet been reviewed by readers or subject specialists."
+            ],
+            "B": [
+              "twenty digitized collections where current labels repeat terms from old inventory headings",
+              "We have drafted labels for the twenty collections with this standard in mind"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic prose suitable for a public advisory paper. A is more compact and conversational; B gives its transitions more space. Neither difference alone establishes a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That is true, but choosing an inventory heading as the main label also interprets the collection, even if it looks like copying."
+            ],
+            "B": [
+              "We agree, but the existing act of choosing an inventory heading as the main catalogue label also interprets the collection, even if it looks like simple copying."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B develops the problem across distinct connected paragraphs and explicitly derives the trial's caution from the remaining tension. A contains the necessary reasoning, but packs the initial problem into one paragraph and gives the transition to evaluation less development.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We recommend a limited trial with those twenty collections, followed by checks of both successful and failed searches."
+            ],
+            "B": [
+              "Because the proposal balances competing needs rather than eliminating the tension between them",
+              "We therefore recommend a limited trial with these twenty collections"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more fully realizes the author's preference for explaining why each step belongs: the visibility commitment leads into the scanning objection, and the unresolved tension motivates evaluation. A is faithful and readable but leaves more of those connections implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A related objection is that adding notes makes a short catalogue harder to scan."
+            ],
+            "B": [
+              "That commitment to making the historical relationship visible leads to a second objection:",
+              "its practical effects cannot be assumed in advance."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A's fidelity is decisive: B introduces minor unsupported claims about the affected labels and the drafts' preparation, while A preserves those qualifications. B develops the transitions more explicitly, but A already explains the construction's purpose and retains the unresolved visibility tradeoff, so its accurate argument is the better completed artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Some labels repeat terms from old inventory headings",
+              "this arrangement is a tradeoff rather than a complete solution to competing needs."
+            ],
+            "B": [
+              "twenty digitized collections where current labels repeat terms from old inventory headings",
+              "We have drafted labels for the twenty collections with this standard in mind"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "224727814ebe70df3c70cc8a47a257d19a108f5e29e6bae47fea84087eb30db3",
+    "prompt_sha256": "ab09729f6bb81686b3e6033e179106b96a61b6dd17970dbabbe674809336ec45",
+    "raw_sha256": "0a978489ef9fbb8b972ed627388ea465e2e8d68d5f498edd545638b4bd002d8d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
