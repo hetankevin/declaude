@@ -1,3 +1,9 @@
+## User-authorized continuation after transport outage
+
+The user said continue after the network stop. Resume adapter tools/resume_antigravity_eval.py is in the parent private repository. Frozen continuation-20261103.json preserves all completed output hashes and the four failed attempts. Two original judges, one extension judge, and one interrupted Flash draft get separate replacement directories. Prior unknown usage keeps300,000tokens reserved; Flash's63,214reported tokens also remain charged. Planned total2,276attempts, within unchanged2,400calls/75Mtokens/557Claude-writingcalls, with original1,450/45M and extension950/30M allocations. No successful outputs are regenerated. New failures still stop scheduling.
+
+Both runners restarted under caffeinate -i to prevent idle sleep while they execute. The resumed publisher imports the continuation adapter, so retries and historical failures both count. Use the adapter's original, extension, report, or publish actions; do not run the superseded entry points directly. Same frozen candidate, cases, judges, and prompts. Fresh holdouts stay sealed. No duplicate runners.
+
 <!-- active-eval-status:start -->
 ## Automated evaluation checkpoint
 
