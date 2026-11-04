@@ -2,7 +2,7 @@
 
 INCOMPLETE: results below are a progress checkpoint, not a full-suite headline.
 
-Valid paired primary judgments: 872/1920. Both judges must be present for a case/model pair to enter the table.
+Valid paired primary judgments: 884/1920. Both judges must be present for a case/model pair to enter the table.
 
 | Split | Model / effort | Cases | Win − loss (pp) | 95% case-bootstrap interval |
 |---|---|---:|---:|---:|
@@ -16,11 +16,11 @@ Valid paired primary judgments: 872/1920. Both judges must be present for a case
 | development | astra-high | 17 | +0.0 | [-17.6, +17.6] |
 | development | sol-low | 16 | +31.2 | [+6.2, +56.2] |
 | development | luna-medium | 18 | -2.8 | [-44.4, +36.1] |
-| development | argon-high | 38 | +39.5 | [+14.5, +61.8] |
-| development | flash-high | 39 | +66.7 | [+48.7, +84.6] |
+| development | argon-high | 39 | +38.5 | [+15.4, +60.3] |
+| development | flash-high | 40 | +67.5 | [+50.0, +82.5] |
 | development | claude-all | 14 | +49.4 | [+29.2, +69.0] |
 | development | codex-all | 14 | +6.2 | [-14.3, +28.6] |
-| development | antigravity-all | 38 | +52.6 | [+35.5, +67.8] |
+| development | antigravity-all | 39 | +52.6 | [+36.5, +67.3] |
 | development | all | 13 | +30.4 | [+14.4, +46.5] |
 | holdout | haiku | 17 | +26.5 | [-14.7, +64.7] |
 | holdout | sonnet-low | 16 | +18.8 | [-18.8, +59.4] |
@@ -32,9 +32,13 @@ Valid paired primary judgments: 872/1920. Both judges must be present for a case
 | holdout | astra-high | 17 | +20.6 | [-11.8, +50.0] |
 | holdout | sol-low | 18 | +8.3 | [-19.4, +38.9] |
 | holdout | luna-medium | 17 | -11.8 | [-41.2, +17.6] |
+| holdout | argon-high | 2 | +0.0 | [-100.0, +100.0] |
+| holdout | flash-high | 2 | +75.0 | [+50.0, +100.0] |
 | holdout | claude-all | 14 | +32.7 | [+11.9, +51.8] |
 | holdout | codex-all | 14 | -1.8 | [-25.9, +24.1] |
+| holdout | antigravity-all | 2 | +37.5 | [-25.0, +100.0] |
+| holdout | all | 1 | +0.0 | [+0.0, +0.0] |
 
-Combined spend so far: 893/2400 attempts, 18,840,335 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 909/2400 attempts, 19,159,241 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.

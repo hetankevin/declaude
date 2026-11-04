@@ -26221,5 +26221,2091 @@
     "prompt_sha256": "c575e585f79009c738c294a4b5445b6391f0d0989791fff35eb9125c44fd8b93",
     "raw_sha256": "dc4d8c9cafcb83ceefe8f1209af72d3f8d11fae2e9e6a7da648021bd760e4303",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task updates an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the approved paragraphs, required repeat and logging, conditional escalation, offset prohibition, and recalibration limitation. The required repeat does not prohibit further checks requested by the lead.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [
+              "Record both readings in the shift log.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the approved paragraphs and all substantive update conditions, including the limited call exemption and unchanged routine check. It retains the operator restrictions and does not prohibit lead-requested checks.",
+          "quotes": {
+            "source": [
+              "If the repeat is within the band, no call is required by this rule.",
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "A": [],
+            "B": [
+              "if the repeat reading is within the band, no call is required by this rule.",
+              "This rest period applies only before the repeat reading; the start-of-shift check and the acceptance band remain unchanged."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both implement the same repeat-and-escalate procedure, retain the operator restrictions, and leave all other paragraphs unchanged. Both preserve first readings as chart inputs rather than replacing them with successful repeats.",
+          "quotes": {
+            "source": [
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "A": [
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "B": [
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses short, direct conditional instructions; B joins the alternatives into a longer but readable sentence. Both suit a practical notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat reading is also outside the band, call the shift lead. If the repeat reading is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "Use the repeat reading to determine whether to escalate: if the repeat reading is also outside the band, call the shift lead, but if the repeat reading is within the band, no call is required by this rule."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A keeps the repeat, logging, and call decisions together before clarifying timing. B places the timing qualification immediately after the repeat instruction and explicitly introduces its escalation purpose. Both orders are easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Record both readings in the shift log. If the repeat reading is also outside the band, call the shift lead."
+            ],
+            "B": [
+              "This rest period applies only before the repeat reading; the start-of-shift check and the acceptance band remain unchanged.",
+              "Use the repeat reading to determine whether to escalate:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the bounded edit and preserve the note's direct instructions and useful qualifications. B's explicit purpose statement and A's simpler conditional sequence are comparably appropriate to this artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ],
+            "B": [
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The user's decisive priorities are a narrowly scoped operational update and preservation of the first-reading/repeat distinction; both meet them. Their local ordering differences do not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the weekly trend chart, use the first reading from each shift, including first readings outside the acceptance band."
+            ],
+            "B": [
+              "For the weekly trend chart, use the first reading from each shift, including first readings outside the acceptance band."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b2022002f442e60ff36432236c2b7ad61c4a438236d6dc8742a78fe634cec220",
+    "prompt_sha256": "113058f1181063cfe1f8735f51000571649ac6f356b1bb68f9f4c5bee852acd5",
+    "raw_sha256": "68aa754e3d56c866a947af26f80f3ed1932031fac490584583814808beac2162",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task updates an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "Copies the update into paragraph two but drops both the explicit offset prohibition and the clarification that the trial grants no operator recalibration permission. The completed procedure therefore loses a substantive restriction on operators' response to an abnormal reading. The update does not authorize removing that restriction.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check.",
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ],
+            "A": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the operative offset prohibition, required repeat, logging, and unchanged approved paragraphs. It omits the explanatory recalibration sentence without granting recalibration authority. The shorter call exemption can reasonably be read within this trial rule; its scope is less explicit, but a broader exemption is not established.",
+          "quotes": {
+            "source": [
+              "If the repeat is within the band, no call is required by this rule.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [],
+            "B": [
+              "if it is within the band, no call is required.",
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the approved paragraphs and the distinction between chart inputs and escalation evidence. A preserves the update's qualifications more explicitly but removes the substantive operator restriction. B retains that restriction; its abbreviated call exemption is reasonably scoped by the surrounding trial procedure.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check.",
+              "If the repeat is within the band, no call is required by this rule."
+            ],
+            "A": [
+              "If the repeat is within the band, no call is required by this rule. Both readings must be logged."
+            ],
+            "B": [
+              "if it is within the band, no call is required.",
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's declarative requirements and B's imperatives are both idiomatic and readily understandable. B is more direct, but A's passive phrasing is ordinary for a procedural notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both readings must be logged."
+            ],
+            "B": [
+              "Log both readings."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both present the trigger, required repeat, escalation outcomes, logging, and timing clarification in a usable sequence. Neither needs a more elaborate argument for this practical update.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat is also outside the band, the operator calls the shift lead. If the repeat is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead; if it is within the band, no call is required."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the note's established imperative voice and an already-effective operational instruction. A reads as a pasted update and discards a meaningful qualification despite the user's preference for preserving such content.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a first reference-block reading outside the acceptance band must be repeated once"
+            ],
+            "B": [
+              "if the first reference-block reading is outside the acceptance band, repeat the check once",
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A's major omission removes the explicit restriction on operator offset changes. B retains that restriction and completes the requested procedural update, with no clear material error. Preserving the practical limits of the procedure is decisive for this user's narrowly scoped edit, despite B's less explicit call qualification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": [
+              "The rest period applies only before the repeat reading. Do not change the probe's offset in response to this check."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ee0835d4b8a09ac09677d51a8d3b4539e53d3d0c50f081f9ef5f3c936b8d3da1",
+    "prompt_sha256": "113058f1181063cfe1f8735f51000571649ac6f356b1bb68f9f4c5bee852acd5",
+    "raw_sha256": "68aa754e3d56c866a947af26f80f3ed1932031fac490584583814808beac2162",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "A omits both the prohibition on changing the offset and the qualification that the trial grants no recalibration permission. Operators consequently lose explicit restrictions on instrument adjustment. It also omits the lead's responsibility for deciding further checks.",
+          "quotes": {
+            "source": [
+              "The lead will decide whether a further check is needed.",
+              "Do not change the probe's offset in response to this check. The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ],
+            "A": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the offset prohibition but omits the explicit assignment of further-check decisions to the lead. This loses a procedural responsibility without affirmatively revoking the lead's authority. The no-call clause reasonably remains scoped to the trial rule.",
+          "quotes": {
+            "source": [
+              "The lead will decide whether a further check is needed.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead; if it is within the band, no call is required.",
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both implement the repeat, rest, escalation and logging update, preserve the other paragraphs, and retain first readings for the chart. B additionally preserves the explicit offset prohibition that A drops. Both omit the lead's further-check responsibility.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "A": [
+              "Both readings must be logged.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "B": [
+              "Do not change the probe's offset in response to this check.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable operational prose. A's declarative requirements and B's direct commands are idiomatic choices for this notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat is also outside the band, the operator calls the shift lead."
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead; if it is within the band, no call is required."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the triggering first reading through the repeat and escalation decision to logging and rest timing. The unchanged chart paragraph then explains the separate use of first readings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat is within the band, no call is required by this rule. Both readings must be logged."
+            ],
+            "B": [
+              "Log both readings. The rest period applies only before the repeat reading."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved prose and integrate the update into one practical paragraph without headings, commentary or an unnecessary research-style argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": [
+              "The rest period applies only before the repeat reading."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B's minor omission of the lead's further-check responsibility is less consequential than A's additional loss of the explicit instrument-adjustment restrictions. Preserving operational constraints is decisive for this tightly bounded edit; both otherwise present the update clearly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": [
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ee0835d4b8a09ac09677d51a8d3b4539e53d3d0c50f081f9ef5f3c936b8d3da1",
+    "prompt_sha256": "fee2eff41c519d32e64e187f6effb854ee3512d58bacdf2b7bd45d4dd97403d6",
+    "raw_sha256": "5b599b7ba591b95c1d105371e42d2873d4055d5e016b95c9a1d4ba3ebe0224a7",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the update and instrument-adjustment restrictions but omits the explicit assignment of further-check decisions to the shift lead. The reader loses that procedural responsibility; A does not affirmatively prohibit additional checks.",
+          "quotes": {
+            "source": [
+              "The lead will decide whether a further check is needed."
+            ],
+            "A": [
+              "If the repeat reading is also outside the band, call the shift lead. If the repeat reading is within the band, no call is required by this rule."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the update and instrument-adjustment restrictions but likewise omits the lead's responsibility for deciding further checks. This is a missing procedural assignment, not an explicit revocation of authority.",
+          "quotes": {
+            "source": [
+              "The lead will decide whether a further check is needed."
+            ],
+            "A": [],
+            "B": [
+              "Use the repeat reading to determine whether to escalate: if the repeat reading is also outside the band, call the shift lead, but if the repeat reading is within the band, no call is required by this rule."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the approved paragraphs, implement all stated update conditions, retain the adjustment restrictions, and distinguish chart inputs from escalation evidence. Both share the same omission of the lead's further-check responsibility.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "A": [
+              "Record both readings in the shift log.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "B": [
+              "Record both the first reading and the repeat reading in the shift log.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses shorter conditional instructions; B joins the alternatives with an explicit explanation of their purpose. Both are readable and appropriate for operators.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat reading is also outside the band, call the shift lead."
+            ],
+            "B": [
+              "Use the repeat reading to determine whether to escalate:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A proceeds directly through logging and the escalation decision before clarifying timing. B places the timing qualification beside the repeat instruction and explicitly introduces the decision. Both orders make the procedure easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Record both readings in the shift log. If the repeat reading is also outside the band, call the shift lead."
+            ],
+            "B": [
+              "This rest period applies only before the repeat reading; the start-of-shift check and the acceptance band remain unchanged."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the bounded paragraph edit and retain useful qualifications without adding rhetorical packaging. A's direct sequence and B's modest explanatory transition both fit the author's practical prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The rest period applies only before the repeat reading, and the start-of-shift check and acceptance band are unchanged."
+            ],
+            "B": [
+              "Use the repeat reading to determine whether to escalate:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Both have the same minor procedural omission and otherwise deliver comparably usable notes. A's shorter instructions and B's explicit escalation transition are valid alternatives; neither provides a decisive advantage for the user's bounded editing goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat reading is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "if the repeat reading is within the band, no call is required by this rule."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b2022002f442e60ff36432236c2b7ad61c4a438236d6dc8742a78fe634cec220",
+    "prompt_sha256": "fee2eff41c519d32e64e187f6effb854ee3512d58bacdf2b7bd45d4dd97403d6",
+    "raw_sha256": "5b599b7ba591b95c1d105371e42d2873d4055d5e016b95c9a1d4ba3ebe0224a7",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the repeat procedure, logging, offset prohibition, and approved paragraphs. In context, its no-call statement applies to the trial rule. Requiring one routine repeat does not prohibit further checks requested by the lead.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check.",
+              "If the repeat is within the band, no call is required by this rule."
+            ],
+            "A": [
+              "Do not change the probe's offset in response to this check.",
+              "if it is within the band, no call is required."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B omits the explicit prohibition on operator offset changes, a consequential operational restriction that the update does not supersede. It does not expressly authorize recalibration, but the completed note loses the instruction preventing operators from adjusting the offset in response to this check.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [],
+            "B": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both implement the updated escalation and retain the first-reading chart rule and approved paragraphs. A additionally preserves the operative offset prohibition; B drops it. A's omission of the separate recalibration explanation does not remove that prohibition.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [
+              "Do not change the probe's offset in response to this check."
+            ],
+            "B": [
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A maintains the note's direct instructions to the operator. B is readable, but its passive requirement and third-person description introduce a less consistent instructional rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "repeat the check once after the probe has rested in the fixture for ten minutes.",
+              "Log both readings."
+            ],
+            "B": [
+              "a first reference-block reading outside the acceptance band must be repeated once",
+              "the operator calls the shift lead."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both give the triggering observation, required repeat, escalation outcomes, logging requirement, and rest-period scope in an understandable sequence suited to a practical notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat reading is also outside the band, call the shift lead; if it is within the band, no call is required. Log both readings."
+            ],
+            "B": [
+              "If the repeat is also outside the band, the operator calls the shift lead. If the repeat is within the band, no call is required by this rule. Both readings must be logged."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better satisfies the preference for a bounded practical edit that preserves meaningful qualifications and the established direct voice. B reproduces the update fluently but fails to integrate the existing operator restriction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The rest period applies only before the repeat reading. Do not change the probe's offset in response to this check."
+            ],
+            "B": [
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B loses an explicit operational prohibition. Preserving that restriction is decisive for this user's narrowly scoped update. A also retains the note's direct instructional voice while correctly separating repeat-based escalation from first-reading trend comparison.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Do not change the probe's offset in response to this check."
+            ],
+            "B": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e527eae9b1297aec7f5c98dc60fa699df4ed629dc1baf1ea8f71c772493b03ac",
+    "prompt_sha256": "fc9de30fe0419b71e19287c14064c6435596ad171d16e1d7e38e15d78e661d62",
+    "raw_sha256": "5fb593011791f1fea5e38d6adf81718cf0967d70706943a0edf9892f09bcd505",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an operational maintenance note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A changes only paragraph two, incorporates the required repeat and escalation conditions, preserves logging and operator restrictions, and leaves the first-reading chart rule unchanged. The routine repeat requirement does not exclude further lead-directed checks.",
+          "quotes": {
+            "source": [
+              "Both readings must be logged.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [
+              "Record both the first reading and the repeat reading in the shift log.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B changes only paragraph two and preserves the updated conditions, logging, operator restrictions, and all approved paragraphs. It neither delays the first check nor substitutes the repeat into the chart or precludes further lead-directed checks.",
+          "quotes": {
+            "source": [
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [],
+            "B": [
+              "The rest period applies only before the repeat reading, and the start-of-shift check and acceptance band are unchanged.",
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete procedure and its limits. A explicitly names the repeat's escalation purpose; B communicates the same distinction through its conditions and the unchanged chart paragraph.",
+          "quotes": {
+            "source": [
+              "Preserve the distinction between the first reading used for trend comparison and any repeat reading used to decide an escalation."
+            ],
+            "A": [
+              "Use the repeat reading to determine whether to escalate:",
+              "For the weekly trend chart, use the first reading from each shift, including first readings outside the acceptance band."
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead.",
+              "For the weekly trend chart, use the first reading from each shift, including first readings outside the acceptance band."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read as ordinary technical instructions. A uses a longer explanatory sentence, while B divides the conditional outcomes into separate sentences; neither choice creates a substantive readability problem.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Use the repeat reading to determine whether to escalate: if the repeat reading is also outside the band, call the shift lead, but if the repeat reading is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead. If the repeat reading is within the band, no call is required by this rule."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A places the rest-period qualification beside the repeat instruction, then explains logging and escalation. B keeps the operational steps together before clarifying the rest period. Both sequences make the procedure easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This rest period applies only before the repeat reading; the start-of-shift check and the acceptance band remain unchanged. Record both the first reading and the repeat reading in the shift log."
+            ],
+            "B": [
+              "Record both readings in the shift log. If the repeat reading is also outside the band, call the shift lead."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the bounded editing scope, preserve the established imperative voice and useful qualifications, and avoid imposing research-style argument architecture on a practical notice. A's extra explanation is relevant; B's direct conditions are sufficient.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Use the repeat reading to determine whether to escalate:",
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ],
+            "B": [
+              "If the repeat reading is within the band, no call is required by this rule.",
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both deliver the complete, narrowly updated note with the operational restrictions intact. A's explicit explanation of escalation and B's direct conditional instructions are comparably useful ways to meet this user's goal; their organizational differences do not justify a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Use the repeat reading to determine whether to escalate:"
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead. If the repeat reading is within the band, no call is required by this rule."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b137defa071ffa862cbbdc1167d4c7d00a3267534610540251fcde47ae0c710",
+    "prompt_sha256": "fc9de30fe0419b71e19287c14064c6435596ad171d16e1d7e38e15d78e661d62",
+    "raw_sha256": "5fb593011791f1fea5e38d6adf81718cf0967d70706943a0edf9892f09bcd505",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a household water-service notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the estimated schedule, continued well supply, possible pressure loss and interruption, and the completion-notice condition. It also distinguishes last week's tests from conditions at individual taps and retains the required reporting advice.",
+          "quotes": {
+            "source": [
+              "The announced end time is an estimate.",
+              "Last week's tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "A": [
+              "The 13:00 end time is an estimate",
+              "Last week's water-quality tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the operational details and qualifications, including optional postponement of washing, continued essential use, and the sprinkler request lasting until the notice. Its cloudiness advice preserves the source's distinction without adding a clearing procedure or present-safety assurance.",
+          "quotes": {
+            "source": [
+              "Until that notice appears, the request about sprinklers still applies.",
+              "If it does not clear, or if the water is discoloured, stop using that tap for drinking and call the service desk."
+            ],
+            "A": [],
+            "B": [
+              "The request not to run sprinklers applies until that notice appears.",
+              "If the water does not clear, or if it is discoloured, stop using that tap for drinking and call the service desk."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's actionable information and distinguish the jug's purpose from demand reduction. Both keep the historical test results separate from post-repair tap conditions. A explicitly repeats the bottom-up clearing pattern in its reporting condition; B follows the source's contextual reference to water that does not clear. Neither difference establishes a material fidelity advantage.",
+          "quotes": {
+            "source": [
+              "Air introduced during the work can cause cloudiness that clears in a glass from the bottom upward.",
+              "If it does not clear, or if the water is discoloured"
+            ],
+            "A": [
+              "If cloudy water does **not** clear from the bottom upward in a glass, or if your water is discoloured"
+            ],
+            "B": [
+              "Air introduced during the work can cause cloudiness that clears in a glass from the bottom upward.",
+              "If the water does not clear, or if it is discoloured"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable, but its recurring Action/Reason labels make ordinary service explanations feel formulaic. B expresses those same causal relationships in conversational sentences appropriate to residents.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "* **Action:** Please fill a jug before 09:00 if you will need drinking water during the work period.",
+              "* **Reason:** We do not expect you to be without water for the entire four-hour window, but a brief interruption is possible when the connections are switched."
+            ],
+            "B": [
+              "Because of that possible interruption, please fill a jug before 09:00 if you need drinking water during that period."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A supplies a usable timeline, but separates the demand request from a second stage restating when the sprinkler request ends. B keeps demand reduction, the estimated finish, and the completion notice together, making the duration of the request easier to understand without revisiting it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 2. From 09:00 until completion: Limit heavy water use",
+              "#### 3. Checking for completion: Wait for the community board notice"
+            ],
+            "B": [
+              "Because the 13:00 finish time is an estimate, a completion notice will be posted on the community board when the tank is in service again. The request not to run sprinklers applies until that notice appears."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected, practical prose: it explains the reason within each request and preserves the source's gentle distinction between postponing washing and continuing essential use. A's repeated instructional scaffolding is more elaborate than this notice needs, although its headings are useful.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### What to Do at Each Stage",
+              "* **Reason:** Pausing high-volume water use keeps overall demand manageable while the two wells are supplying the network directly without the storage tank."
+            ],
+            "B": [
+              "To keep demand manageable while the wells supply the network directly, please avoid running sprinklers until the tank is back in service.",
+              "It would also help if washing machines could wait, though essential household use can continue"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B better fulfills this user's priority of consolidating repetition while keeping useful explanations: it connects the possible interruption directly to storing a jug and explains the sprinkler request's duration within the demand paragraph. A remains usable, but its repeated Action/Reason framework and separate completion stage make the same message more fragmented.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 2. From 09:00 until completion: Limit heavy water use",
+              "#### 3. Checking for completion: Wait for the community board notice"
+            ],
+            "B": [
+              "Because of that possible interruption, please fill a jug before 09:00 if you need drinking water during that period.",
+              "The request not to run sprinklers applies until that notice appears."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7a1d98c0251fafcceb0d95763ea767309d852c090946b4ffe87abb9c13b57019",
+    "prompt_sha256": "464897bf1af7e4d391e12bb2cad6e03cec783b60749c41151f44b688eda4b656",
+    "raw_sha256": "23b6080c0945eeb6a22c67f41605244c063e008e96ffa8a6b7221d03c05c533f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a practical maintenance notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the schedule and its estimated status, the wells' continued supply, possible service changes, and the distinct reasons for storing water and reducing demand. It retains the post-repair reporting instructions and the limitation of last week's tests.",
+          "quotes": {
+            "source": [
+              "a brief interruption is possible when the connections are switched",
+              "The announced end time is an estimate."
+            ],
+            "A": [
+              "A brief interruption is possible when connections are switched",
+              "The announced end time is an estimate"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B adds that the connection switching occurs at the start of the work. The source gives no such timing. This supplies residents with an unsupported expectation about when the possible interruption will occur, although the advice to prepare before 09:00 remains intact. The other core service and water-quality qualifications are substantially preserved.",
+          "quotes": {
+            "source": [
+              "a brief interruption is possible when the connections are switched"
+            ],
+            "A": [],
+            "B": [
+              "A brief interruption to supply is possible when switching the connections at the start of the work."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the source's unspecified switching time. B introduces an unsupported start-of-work timing detail, changing what residents may expect about the interruption. Both otherwise preserve the main schedule, supply qualifications, completion-notice condition, and distinction between historical tests and individual tap conditions.",
+          "quotes": {
+            "source": [
+              "a brief interruption is possible when the connections are switched"
+            ],
+            "A": [
+              "A brief interruption is possible when connections are switched"
+            ],
+            "B": [
+              "A brief interruption to supply is possible when switching the connections at the start of the work."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable service notices. A uses ordinary connected paragraphs; B uses intelligible headings and bullets that suit a practical notice. Neither format alone establishes a substantial advantage in idiomatic readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It would help if washing machines could wait, too, but essential household use can continue."
+            ],
+            "B": [
+              "Please do not run sprinklers, and postpone using washing machines if possible."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both make the sequence usable and explain the principal requests. A moves from the repair and supply expectations through preparation and demand reduction to completion and tap checks. B's timeline provides another effective route through those stages. Both explicitly connect the sprinkler request's end to the completion notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A completion notice will be posted on the community board when the tank is in service again. The announced end time is an estimate, and until that notice appears, the request about sprinklers still applies."
+            ],
+            "B": [
+              "The 13:00 finish time is an estimate. A notice will be posted on the community board once the tank is fully back in service. Please continue to avoid using sprinklers until that notice is posted."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the source's calm, conditional service voice while explaining why residents should act. B makes filling a jug a general instruction and adds immediate urgency to reporting. These choices make its tone more directive than the supplied notice requires; the issue is the phrasing, not the use of headings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please fill a jug before 09:00 if you need drinking water during that period.",
+              "stop using that tap for drinking and call the service desk."
+            ],
+            "B": [
+              "**Fill a drinking water jug:**",
+              "stop using that tap for drinking and call the service desk immediately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds a minor unsupported claim that switching occurs at the start of the work. A therefore better satisfies the explicit requirement to use only supplied information. It also delivers the requested sequence and reasons in calm, connected prose, preserving conditional preparation advice. B's useful timeline does not outweigh its added timing claim and more directive wording.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please fill a jug before 09:00 if you need drinking water during that period.",
+              "A brief interruption is possible when connections are switched"
+            ],
+            "B": [
+              "A brief interruption to supply is possible when switching the connections at the start of the work.",
+              "**Fill a drinking water jug:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bdc546e27a4c9917c21046719545a21496562f7900cfe7a58973c73ed2f011cc",
+    "prompt_sha256": "464897bf1af7e4d391e12bb2cad6e03cec783b60749c41151f44b688eda4b656",
+    "raw_sha256": "23b6080c0945eeb6a22c67f41605244c063e008e96ffa8a6b7221d03c05c533f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a household maintenance notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the estimated schedule, continued well supply, possible pressure loss and interruption, completion condition, and water-quality distinctions. The added switching timing is unsupported specificity, but does not establish that interruptions are possible only then.",
+          "quotes": {
+            "source": [
+              "a brief interruption is possible when the connections are switched",
+              "Last week's tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "A": [
+              "A brief interruption to supply is possible when switching the connections at the start of the work.",
+              "Last week’s tests reflect baseline water quality, not individual tap conditions following a repair"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the operational facts, conditional preparation advice, optional washing postponement, completion-dependent sprinkler request, and distinction between last week's tests and conditions at individual taps.",
+          "quotes": {
+            "source": [
+              "Until that notice appears, the request about sprinklers still applies.",
+              "If it does not clear, or if the water is discoloured, stop using that tap for drinking and call the service desk."
+            ],
+            "A": [],
+            "B": [
+              "until that notice appears, the request about sprinklers still applies.",
+              "If it does not clear, or if the water is discoloured, stop using that tap for drinking and call the service desk."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive operating and water-quality advice. B follows the supplied scope more closely: A adds start-of-work timing and immediate reporting language that the source does not specify.",
+          "quotes": {
+            "source": [
+              "a brief interruption is possible when the connections are switched",
+              "call the service desk."
+            ],
+            "A": [
+              "when switching the connections at the start of the work.",
+              "call the service desk immediately."
+            ],
+            "B": [
+              "A brief interruption is possible when connections are switched",
+              "call the service desk."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's requests and explanations read as direct communication with residents. A remains readable, but its introductory scaffolding and diagnostic labels make the notice more procedural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please follow the timeline and instructions below:",
+              "Check for air/cloudiness at the tap:"
+            ],
+            "B": [
+              "Please fill a jug before 09:00 if you need drinking water during that period.",
+              "It would help if washing machines could wait, too, but essential household use can continue."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the repair and expected supply, then guide residents through preparation, reduced demand, completion, and tap conditions. A's stage headings and B's paragraph groups both make the sequence usable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Before 09:00",
+              "### During the Work (09:00 until completion)",
+              "### After the Work and Reconnection"
+            ],
+            "B": [
+              "Please fill a jug before 09:00",
+              "A completion notice will be posted on the community board when the tank is in service again.",
+              "After the valve is opened, some taps may briefly run cloudy."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested calm, connected service voice, retaining the distinction between optional postponement and essential use. A's emphatic commands and added urgency make its register firmer than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Do not leave taps running:**",
+              "call the service desk immediately."
+            ],
+            "B": [
+              "Residents do not need to keep a tap running while they wait for the work to finish.",
+              "It would help if washing machines could wait, too, but essential household use can continue."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is part of the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets this user's goal by connecting each practical request to its reason in calm prose, while keeping the completion notice decisive. A is usable, but adds unsupported timing, urgency, and procedural packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please follow the timeline and instructions below:",
+              "call the service desk immediately."
+            ],
+            "B": [
+              "Please also avoid running sprinklers until the tank is back in service, to keep demand manageable while the wells are supplying the network directly.",
+              "The announced end time is an estimate, and until that notice appears, the request about sprinklers still applies."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bc050145cafdab8d853343b9f2b26482c276dfaeaecc258f9f33932a9df3176c",
+    "prompt_sha256": "187944261cb31e19643f860befd785859261d4691b41260c5b60b88bfec1e6a8",
+    "raw_sha256": "271f9ccbf69490e50b9abef251294bd2fad2e4ff5267477502f7ee1a8a40a7d1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a household maintenance notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves Tuesday's estimated work window, continued well supply, possible pressure loss and interruption, conditional jug advice, optional washing postponement, completion-dependent sprinkler request, and tap-specific reporting conditions.",
+          "quotes": {
+            "source": [
+              "The announced end time is an estimate.",
+              "Until that notice appears, the request about sprinklers still applies.",
+              "Last week's tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "A": [
+              "between 09:00 and an estimated 13:00",
+              "The request not to run sprinklers applies until that notice appears.",
+              "Last week's tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the schedule, supply expectations, preparation rationale, optional washing postponement, and water-quality precautions. Although 'demand restrictions' is broader wording, its immediate action explicitly concerns sprinklers; it does not clearly make washing postponement mandatory.",
+          "quotes": {
+            "source": [
+              "It would help if washing machines could wait, too, but essential household use can continue.",
+              "Until that notice appears, the request about sprinklers still applies."
+            ],
+            "A": [],
+            "B": [
+              "hold off on using washing machines if possible.",
+              "Continue to keep sprinklers off until a completion notice is posted",
+              "demand restrictions still apply until the tank is confirmed to be back online."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the consequential facts and qualifications, including why a jug is suggested, why demand should fall, and why last week's tests do not settle post-repair tap conditions.",
+          "quotes": {
+            "source": [
+              "We are making this suggestion because a brief interruption is possible when the connections are switched",
+              "Last week's tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "A": [
+              "Because of that possible interruption, please fill a jug before 09:00 if you need drinking water during that period.",
+              "Last week's tests do not tell us what is coming from an individual tap after the repair"
+            ],
+            "B": [
+              "a brief interruption is possible when the connections are switched.",
+              "Last week's water-quality tests do not tell us what is coming from an individual tap after the repair"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A incorporates reasons naturally into resident-facing sentences. B is understandable, but the repeated Action/Reason labels give ordinary advice a more mechanical rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because of that possible interruption, please fill a jug before 09:00 if you need drinking water during that period.",
+              "To keep demand manageable while the wells supply the network directly, please avoid running sprinklers until the tank is back in service."
+            ],
+            "B": [
+              "* **Action:** Please fill a jug before 09:00 if you will need drinking water during the work period.",
+              "* **Reason:** We do not expect you to be without water for the entire four-hour window"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both make preparation, the work period, completion, and subsequent tap checks easy to follow. A uses causal transitions; B uses explicit stages. Neither leaves a significant step unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "During the work, the two wells will continue feeding the network directly",
+              "Because the 13:00 finish time is an estimate",
+              "After the valve is opened, some taps may briefly run cloudy."
+            ],
+            "B": [
+              "#### 1. Before 09:00: Set aside drinking water",
+              "#### 3. Checking for completion: Wait for the community board notice",
+              "#### 4. After the valve is reopened: Check cloudy or discoloured water"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the preference for connected technical prose that explains instructions without repetitive packaging. B's headings are useful, but the repeated labels and more administrative phrasing add formality to a simple household notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It would also help if washing machines could wait, though essential household use can continue",
+              "The request not to run sprinklers applies until that notice appears."
+            ],
+            "B": [
+              "### What to Do at Each Stage",
+              "* **Reason:** The 13:00 end time is an estimate, so demand restrictions still apply until the tank is confirmed to be back online."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is part of the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both explain the sequence. A better serves this user's preference for connected explanations: it ties the jug to the possible interruption and sprinklers to demand directly, without B's repeated Action/Reason scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because of that possible interruption, please fill a jug before 09:00 if you need drinking water during that period.",
+              "To keep demand manageable while the wells supply the network directly, please avoid running sprinklers until the tank is back in service."
+            ],
+            "B": [
+              "* **Action:** Please fill a jug before 09:00 if you will need drinking water during the work period.",
+              "* **Reason:** Pausing high-volume water use keeps overall demand manageable"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8fe6024418516961e8e0904453ef3ab651dcafc7719c5468a8efcb812189f394",
+    "prompt_sha256": "187944261cb31e19643f860befd785859261d4691b41260c5b60b88bfec1e6a8",
+    "raw_sha256": "271f9ccbf69490e50b9abef251294bd2fad2e4ff5267477502f7ee1a8a40a7d1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a volunteer newsletter rewrite with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the forty-minute delay, the first morning’s different checking conditions, uncertain explanations for the lower count, and the two subsequent shaded checks. The first observation remains qualified, and no later counts are invented.",
+          "quotes": {
+            "source": [
+              "It would not be accurate to say the route change reduced the count, even though it certainly made us late.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "A": [
+              "The route change certainly made us late, though we cannot say it reduced the count.",
+              "the first observation stays in the notebook with its warning attached."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Faithfully retains the observations, possible timing and exposure explanations, and limits of the later visits. Its changes remove packaging and activate the bootlace sentence without changing the evidence.",
+          "quotes": {
+            "source": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation.",
+              "Those mornings do not repair the first count; they give us two mornings with matching timing."
+            ],
+            "A": [],
+            "B": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation.",
+              "Those mornings do not repair the first count; they give us two mornings with matching timing."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve why the delay mattered, which sheet was late, the uncertainty about the lower count, and the limited benefit of earlier departures. Neither supplies unsupported results or treats the first observation as repaired.",
+          "quotes": {
+            "source": [
+              "The next two mornings we used the longer route and left earlier. All three sheets were checked in shade."
+            ],
+            "A": [
+              "The next two mornings we took the longer route and left earlier. All three sheets were checked in shade."
+            ],
+            "B": [
+              "The next two mornings we used the longer route and left earlier. All three sheets were checked in shade."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both are readable newsletter prose. A gives the annotation a more direct explanation; B’s appended “recorded so that” clause and trailing qualification make the same point more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The notes for the eastern sheet now say *late check*, so no one takes that count as directly comparable with the two checked on time."
+            ],
+            "B": [
+              "The notes for that sheet now say late check, recorded so that the count does not look directly comparable with the others, which were checked on time."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each establishes the route problem and checking deadline before interpreting the count, then explains the changed procedure and practical needs. Both make the causal and procedural connections available where the reader needs them.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The replacement route took forty minutes longer, which mattered because the moth sheets have to be checked before the sun reaches the clearing."
+            ],
+            "B": [
+              "The replacement route took forty minutes longer, and that mattered because the moth sheets had to be checked before the sun reached the clearing."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Both retain concrete field details and modest humor. A better follows the request to reduce repetitive uncertainty language: it connects the alternatives to the evidential limit and states the causal caution directly, while B retains more of the draft’s defensive phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The late visit could explain that, but the sheet also sits nearer the exposed edge of the clearing; one morning is not enough to choose between those explanations or rule out another.",
+              "The route change certainly made us late, though we cannot say it reduced the count."
+            ],
+            "B": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation.",
+              "It would not be accurate to say the route change reduced the count, even though it certainly made us late."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both would work as newsletter updates. A better meets the decisive preference for removing repetitive caution without removing explanation: its account of the possible causes remains qualified but reads as connected field reporting. B is faithful and usable but leaves more of the draft’s defensive commentary intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The route change certainly made us late, though we cannot say it reduced the count."
+            ],
+            "B": [
+              "It would not be accurate to say the route change reduced the count, even though it certainly made us late."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b5ca9c27d31373bfa0942654821b678bb66f2fb650ddd6250639d17918a68314",
+    "prompt_sha256": "8895f16a1a172677560b6d878c7e35c8e3251fbf2dacbb9bcbda7e6a9fce65df",
+    "raw_sha256": "e81f7410b76a3b01662d23ca6ae1795f0bb6fdaaa67834749869a9fb822f0199",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns observational field reporting for a newsletter, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the first morning’s delay and exposure difference, treats the lower count’s explanation as uncertain, and preserves the subsequent shaded checks and the original warning. No later counts or causal findings are added.",
+          "quotes": {
+            "source": [
+              "That may have something to do with the late visit, but the sheet is also nearer the exposed edge of the clearing.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "A": [
+              "That may have been the late visit, but the sheet is also nearer the exposed edge of the clearing, and one morning is not enough to decide between those explanations or rule out others.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the observations and their limitations. In context, “those two reasons” refers to possible explanations: the preceding “might” and subsequent causal caution prevent it from establishing either cause. Later visits do not repair the first count.",
+          "quotes": {
+            "source": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation.",
+              "Those mornings do not repair the first count; they give us two mornings with matching timing."
+            ],
+            "A": [],
+            "B": [
+              "The delay might explain that, but the sheet also sits nearer the exposed edge of the clearing. One morning is not enough to decide between those two reasons, or to rule out a third.",
+              "Those mornings do not repair the first count; they give us two with matching timing."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the forty-minute route penalty, the eastern sheet’s late check, the other sheets’ shade, and the uncertainty surrounding the lower count. Both preserve the two later mornings’ improved timing without claiming new count results.",
+          "quotes": {
+            "source": [
+              "We got there after it had reached the eastern sheet, although the other two were still in shade."
+            ],
+            "A": [
+              "By the time we arrived, the sun had reached the eastern sheet, though the other two were still in shade."
+            ],
+            "B": [
+              "By the time we got there, sunlight had hit the eastern sheet, though the other two were still in shade."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses flowing sentences; B uses a more clipped, conversational rhythm. Both are idiomatic and suitable for volunteers, and neither rhythm alone establishes a substantive advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It was a frustrating start, but everyone kept the labels with the samples, which sounds like a small victory until a damp paper bag has lost its pencil mark."
+            ],
+            "B": [
+              "It was a frustrating start, though everyone kept the labels with the samples. That sounds like a small victory until a damp paper bag has lost its pencil mark."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the checking deadline immediately after the route delay, then move through observation, interpretation, and the adjusted procedure. A connects some steps within sentences, but B’s explicit links preserve the same understandable sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The replacement route took forty minutes longer, which mattered because the moth sheets had to be checked before the sun reached the clearing."
+            ],
+            "B": [
+              "The detour cost us forty minutes. That mattered, because the moth sheets have to be checked before the sun reaches the clearing."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Both preserve practical details and dry humor without importing the sample’s anecdote. A more fully addresses the preference to reduce repeated uncertainty language while retaining its substance; B keeps the draft’s more formal disclaimer.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The route change certainly made us late, but we cannot say it reduced the count."
+            ],
+            "B": [
+              "The route change certainly made us late, but it would not be accurate to say it reduced the count."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The update contains no proof or mathematical derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both preserve an effective newsletter structure. A has a modest but concrete advantage for this user: it integrates the competing explanations and the one-morning limitation, then shortens the causal disclaimer without weakening it. B remains usable but does less to remove the repetitive caution specifically targeted by the request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That may have been the late visit, but the sheet is also nearer the exposed edge of the clearing, and one morning is not enough to decide between those explanations or rule out others."
+            ],
+            "B": [
+              "The delay might explain that, but the sheet also sits nearer the exposed edge of the clearing.",
+              "The route change certainly made us late, but it would not be accurate to say it reduced the count."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8ff67c416343587b03b346cc9b06129ed65d1923221fdec6a71309d868c9f422",
+    "prompt_sha256": "8895f16a1a172677560b6d878c7e35c8e3251fbf2dacbb9bcbda7e6a9fce65df",
+    "raw_sha256": "e81f7410b76a3b01662d23ca6ae1795f0bb6fdaaa67834749869a9fb822f0199",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a newsletter rewrite with observational qualifications, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the late eastern-sheet check, the later shaded checks, causal uncertainty, and the retained warning. No later counts or established causes are added.",
+          "quotes": {
+            "source": [
+              "All three sheets were checked in shade.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "A": [
+              "All three sheets were checked in shade.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the timing and exposure qualifications, both later mornings, and retention of the first observation. It does not claim that later visits repaired the first count.",
+          "quotes": {
+            "source": [
+              "Those mornings do not repair the first count; they give us two mornings with matching timing."
+            ],
+            "A": [],
+            "B": [
+              "The next two mornings we used the longer route and left earlier, checking all three sheets in shade.",
+              "That does not fix the first count, but it gives us two mornings with matching timing."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the observations and distinguish the certain delay from its uncertain effect on moth numbers. Neither imports evidence from the voice sample.",
+          "quotes": {
+            "source": [
+              "It would not be accurate to say the route change reduced the count, even though it certainly made us late."
+            ],
+            "A": [
+              "The route change certainly made us late, but it would not be accurate to say it reduced the count."
+            ],
+            "B": [
+              "The route change certainly made us late, but we cannot say it reduced the count."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as a volunteer update. A uses shorter sentences around the sample-label joke; B keeps the original conversational connection. Neither choice materially improves readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It was a frustrating start, though everyone kept the labels with the samples. That sounds like a small victory until a damp paper bag has lost its pencil mark."
+            ],
+            "B": [
+              "It was a frustrating start, but everyone kept the labels with the samples, which sounds like a small victory until a damp paper bag has lost its pencil mark."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each explains why the detour mattered before describing the compromised check, then connects earlier departures to the later procedure. Both finish with usable requests.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The detour cost us forty minutes. That mattered, because the moth sheets have to be checked before the sun reaches the clearing."
+            ],
+            "B": [
+              "The replacement route took forty minutes longer, which mattered because the moth sheets had to be checked before the sun reached the clearing."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the concrete collective field voice and modest humor while retaining useful explanation. Their differences in sentence rhythm offer no clear advantage for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Spare bootlaces held down a loose sheet corner, and the repair lasted."
+            ],
+            "B": [
+              "We used spare bootlaces to secure a loose sheet corner, and the repair lasted."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: an understandable field account that preserves uncertainty and explains the changed procedure. Their small wording differences do not establish which artifact this user would prefer.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those mornings do not repair the first count; they give us two with matching timing.",
+              "For the next visit we will need another route sheet with the longer walk marked on it."
+            ],
+            "B": [
+              "That does not fix the first count, but it gives us two mornings with matching timing.",
+              "For the next visit we need another route sheet with the longer walk marked on it."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a702223c8fbb22bd5760010039ee19abadbe06ba926c392eeeceef1ce1c6477c",
+    "prompt_sha256": "978567627fed0103f1bb54ba5550c712a423afc266c407380fedb03d7ce9632d",
+    "raw_sha256": "b792ccbb932c0362d168d507046147c8383bc2bc81cd799b02d0e2d3812db358",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a newsletter rewrite with observational qualifications, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the first morning's late eastern-sheet check, both later shaded mornings, the unresolved explanations, and the first observation with its warning.",
+          "quotes": {
+            "source": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "A": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation.",
+              "We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the observed timing, possible explanations, later shaded checks, and limits of comparison. The revised practical requests and humor add no field evidence or causal claim.",
+          "quotes": {
+            "source": [
+              "Those mornings do not repair the first count; they give us two mornings with matching timing.",
+              "All three sheets were checked in shade."
+            ],
+            "A": [],
+            "B": [
+              "Those mornings do not repair the first count; they simply give us two mornings with matching timing, while the first observation stays in the notebook with its warning attached.",
+              "All three sheets were checked in shade."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all substantive observations and qualifications, including exposure as an alternative explanation and the possibility of another explanation. Neither establishes a cause or invents later counts.",
+          "quotes": {
+            "source": [
+              "That may have something to do with the late visit, but the sheet is also nearer the exposed edge of the clearing.",
+              "We cannot decide between those explanations from one morning, or rule out another explanation."
+            ],
+            "A": [
+              "That may have something to do with the late visit, but the sheet is also nearer the exposed edge of the clearing.",
+              "We cannot decide between those explanations from one morning, or rule out another explanation."
+            ],
+            "B": [
+              "The late visit could explain that, but the sheet also sits nearer the exposed edge of the clearing; one morning is not enough to choose between those explanations or rule out another."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B makes the warning easier to read by naming its subject and stating its purpose directly. A's attachment of 'recorded' to 'say late check' is understandable but cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The notes for that sheet now say late check, recorded so that the count does not look directly comparable with the others, which were checked on time."
+            ],
+            "B": [
+              "The notes for the eastern sheet now say *late check*, so no one takes that count as directly comparable with the two checked on time."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the timing requirement before the late arrival and follow the uncertainty discussion with the procedural response. B connects the retained warning more tightly to the later mornings, but A's separate sentence is equally clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those mornings do not repair the first count; they give us two mornings with matching timing. We are leaving the first observation in the notebook with its warning attached."
+            ],
+            "B": [
+              "Those mornings do not repair the first count; they simply give us two mornings with matching timing, while the first observation stays in the notebook with its warning attached."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B reduces repetitive uncertainty phrasing while keeping the alternative explanation and evidential limit together. Its direct wording better fits the requested conversational field voice; A retains more of the draft's explanatory scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We cannot decide between those explanations from one morning, or rule out another explanation. It would not be accurate to say the route change reduced the count, even though it certainly made us late."
+            ],
+            "B": [
+              "one morning is not enough to choose between those explanations or rule out another.",
+              "The route change certainly made us late, though we cannot say it reduced the count."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better fulfills the requested editing purpose by reducing repetitive caution and making the late-check warning direct, while preserving the explanation, practical details, and dry humor. A is faithful and usable but leaves more of the draft's cumbersome phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "recorded so that the count does not look directly comparable with the others, which were checked on time.",
+              "It would not be accurate to say the route change reduced the count, even though it certainly made us late."
+            ],
+            "B": [
+              "so no one takes that count as directly comparable with the two checked on time.",
+              "The route change certainly made us late, though we cannot say it reduced the count."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5c24ef420547bd4eddac01e836148a5d4d3ab5c2a81a9d4d65f9873bf65c0784",
+    "prompt_sha256": "978567627fed0103f1bb54ba5550c712a423afc266c407380fedb03d7ce9632d",
+    "raw_sha256": "b792ccbb932c0362d168d507046147c8383bc2bc81cd799b02d0e2d3812db358",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
