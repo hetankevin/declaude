@@ -45098,5 +45098,1508 @@
     "prompt_sha256": "352f37515b14d7db24534701660341b9f54dcefca85657d06076ba6256ba0151",
     "raw_sha256": "7aa166768079dd998d06e71749b86ce716be3834e750532b8878c63bfe8527c0",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a persuasive committee proposal, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocations, eligibility, equal setup charge, destructive procedure, scientific objection, selection limitations, and temporary hold. Operational confidence remains distinct from evidence of box representativeness, and another batch still requires a request.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "A successful pilot will provide the operational confidence needed to plan a larger comparison, without pretending to show that a single fragment represents its box."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the numerical and procedural premises, the lost within-box comparison, both levels of nonrandom selection, and the reporting restriction. The hold remains temporary, with neither future surface benefits nor a second submission promised.",
+          "quotes": {
+            "source": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [],
+            "B": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete decision and its limitations: twelve versus twenty-four submitted, unchanged setup charge, irreversible surface loss, the scientific cost of one per box, and a pilot limited to usable, correctly linked measurements.",
+          "quotes": {
+            "source": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "A": [
+              "we should verify that the laboratory can return a usable measurement linked unambiguously to each submitted catalogue identifier."
+            ],
+            "B": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, conversational technical prose. A is readable but repeatedly adds institutional framing and abstract labels where the concrete decision already supplies the connection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Matching our selection and reporting rules to this limited purpose will keep the pilot's boundaries clear."
+            ],
+            "B": [
+              "Selection also needs to be visible."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build a coherent sequence from allocation and destruction through the strongest objection, the operational purpose, sampling limitations, and the committee's next decision. A makes the priority explicit; B gives the same transition more directly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that intra-box question unresolved in order to address a prior operational requirement."
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved. The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the source's candid register and effective passages while connecting reasons without compressing the substantive explanation. A's added framing makes the proposal sound more ceremonious than this author requested.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the procedure is destructive, we must weigh the analysis team’s strongest scientific objection against the immediate needs of the project."
+            ],
+            "B": [
+              "The analysis team's objection is substantial."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material source error. B better meets the author's priority of connected, candid reasoning while preserving effective prose: its transition from the conceded scientific limitation to the operational check explains the choice without A's additional rhetorical scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that intra-box question unresolved in order to address a prior operational requirement."
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved. The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b1ae5303d105d8e5f95cb0d9ea7bc2277e8a377a617b2f6ff43332519fe4beee",
+    "prompt_sha256": "1dd9c97c277cf7dda22885326343d7a95cd66b3836622696a46091a9a6a981f5",
+    "raw_sha256": "6a9914b14c36b4ba87b165415284d47aef01d85d1d5ce95e7dc5a4ef3946c1d9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the argument and wording of a collections proposal, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocation, laboratory premises, sampling restrictions, scientific objection, and conditional next request. Saying the workflow functions reliably is stronger than needed, but the surrounding passage confines the finding to the pilot's operational check rather than promising future analytical performance.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "A successful pilot will establish that the tracking and analytical workflow functions reliably",
+              "without claiming that a single fragment represents its entire box."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the substantive premises, limitations, and review sequence. The statement that material is permanently exhausted is ambiguous: beside the discussion of physical surfaces, it can reasonably describe loss of the intact fragment. The source does not resolve a broader reading about remaining powder, so this imprecision does not establish a material error.",
+          "quotes": {
+            "source": [
+              "They would not preserve a surface that a later investigator could examine with a different instrument."
+            ],
+            "A": [],
+            "B": [
+              "it cannot preserve a physical surface that a subsequent investigator could examine with a different instrument.",
+              "Once pulverized, that material is permanently exhausted."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the required facts and limits. A stays closer to the source's modest operational rationale, although its reliability wording could be narrower. B adds more categorical interpretations, including permanent exhaustion and a non-negotiable stage, that make the intended scope less precise without clearly establishing a different factual conclusion.",
+          "quotes": {
+            "source": [
+              "the first submission can test a necessary part of the workflow"
+            ],
+            "A": [
+              "Beginning with twelve fragments tests a necessary part of the workflow"
+            ],
+            "B": [
+              "Proceeding in this sequence tests a critical, non-negotiable stage of the laboratory workflow"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A is formal enough for the committee while remaining readable. B repeatedly replaces ordinary actions with elaborate institutional phrasing, making the same explanation harder to absorb.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "select the fragment with the least visible decoration, and record that choice before shipment."
+            ],
+            "B": [
+              "select the fragment exhibiting the least visible decoration in each box, recording that determination prior to dispatch."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves clearly from the scientific objection to the limited question the pilot can answer. B follows a similar useful order, but repeats its acknowledgment of the objection and inserts a declaration about necessary scope before explaining the operational purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that question unresolved. Instead, this initial batch should verify whether the laboratory can return usable measurements linked unambiguously to our catalogue identifiers."
+            ],
+            "B": [
+              "This proposal deliberately leaves that question unresolved because addressing intra-box variation exceeds the necessary scope of an initial pilot."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A explains the tradeoff with relatively restrained language. B adds slogans and emphatic institutional claims that conflict with the author's preference for substantive reasons over rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "while preserving the committee's options for subsequent sampling decisions."
+            ],
+            "B": [
+              "Rather, it ensures that any further destruction is earned by demonstrated performance.",
+              "while preserving substantial material and genuine decision-making authority for the committee."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or mathematical derivation is part of the requested artifact.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a clearly established material error, though both use stronger operational language than necessary. A better serves the decisive priority: explaining the real tradeoff without strengthening the story through rhetoric. Its closing ties the limited workflow test to a later sampling decision; B recasts that rationale as earned destruction and protected authority.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Beginning with twelve fragments tests a necessary part of the workflow while preserving the committee's options for subsequent sampling decisions."
+            ],
+            "B": [
+              "Rather, it ensures that any further destruction is earned by demonstrated performance.",
+              "Proceeding in this sequence tests a critical, non-negotiable stage of the laboratory workflow while preserving substantial material and genuine decision-making authority for the committee."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2d1cf398b8ab672c3f1598b483c8cc052b8142c0b6928bbef1427894bf166118",
+    "prompt_sha256": "1dd9c97c277cf7dda22885326343d7a95cd66b3836622696a46091a9a6a981f5",
+    "raw_sha256": "6a9914b14c36b4ba87b165415284d47aef01d85d1d5ce95e7dc5a4ef3946c1d9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a persuasive committee proposal, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the allocations, eligibility, equal setup charge, destructive procedure, scientific objection, selection bias, reporting restriction, and temporary hold. It keeps a usable identifier-linked measurement distinct from evidence of box representativeness.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "A successful return would support planning a larger comparison, but it would not show that one fragment represents its box."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the substantive premises and limitations, including both allocations and the unapproved status of a second batch. In context, its financial-saving language refers to the stated setup charge, and operational confidence concerns planning rather than proving representativeness.",
+          "quotes": {
+            "source": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [],
+            "B": [
+              "the analysis team will be free to request a second batch supported by a research question that justifies consuming additional material."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact allocation and the strongest objection while explicitly limiting what pilot success establishes. Neither promises future surface analysis or authorizes another batch.",
+          "quotes": {
+            "source": [
+              "Two fragments from each box would let them look for differences within a box, whereas one cannot.",
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "A": [
+              "Two fragments from each box would let them look for differences within a box, whereas one cannot",
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "B": [
+              "taking two fragments per box would allow them to test for variation within each box, whereas taking one cannot.",
+              "we should verify that the laboratory can return a usable measurement linked unambiguously to each submitted catalogue identifier."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, conversational technical prose. B remains readable but repeatedly introduces plain decisions through abstract administrative phrasing, making the proposal feel more ceremonious.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Selection also needs to be visible.",
+              "My proposal deliberately leaves that question unresolved."
+            ],
+            "B": [
+              "Matching our selection and reporting rules to this limited purpose will keep the pilot's boundaries clear.",
+              "My proposal deliberately leaves that intra-box question unresolved in order to address a prior operational requirement."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both have a coherent recommendation-to-review sequence. B more explicitly explains why the workflow check should precede the larger comparison, connecting its purpose to the amount of material consumed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that question unresolved. The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "B": [
+              "Before we consume two-thirds of the selected material to investigate compositional variation, we should verify that the laboratory can return a usable measurement linked unambiguously to each submitted catalogue identifier."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the author's candid acknowledgment of the unresolved science and personal, affirmative recommendation. B supplies useful connections but wraps them in more procedural abstraction and defensive phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I favour this sequence because the first submission can test a necessary part of the workflow while leaving us something real to decide about afterward."
+            ],
+            "B": [
+              "A successful pilot will provide the operational confidence needed to plan a larger comparison, without pretending to show that a single fragment represents its box.",
+              "preserving intact material—and a substantive decision—for afterward."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The proposal contains allocation arithmetic but no proof or derivation requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. B makes the sequencing rationale somewhat more explicit, but A already explains the destructive tradeoff, admits the scientific question left unresolved, and connects the pilot to a later decision. Its candid explanation better meets this user's preference for connected argument without generic procedural packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that question unresolved.",
+              "I favour this sequence because the first submission can test a necessary part of the workflow while leaving us something real to decide about afterward."
+            ],
+            "B": [
+              "My proposal deliberately leaves that intra-box question unresolved in order to address a prior operational requirement.",
+              "Proceeding in this sequence allows us to test an essential part of the workflow first while preserving intact material—and a substantive decision—for afterward."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3c3b1b17841a11ae9f26ce5d1c6a3e51d49506640ab91dbf733a4228e1e45d02",
+    "prompt_sha256": "32f41f7ec68143f397b71e3c5c0c9378cd1c5f337fec2f343287e2fef06cf452",
+    "raw_sha256": "ab94a139b78915b1c36631c452a7bc5864d047ba2b96ff3fcff8374196ae6496",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an argumentative proposal to a collections committee, not a proof.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the core facts and scientific limitations, but turns a temporary hold pending review into an assurance that all further destruction will be conditioned on demonstrated performance. The source establishes review and a justified subsequent request, not that guaranteed performance gate.",
+          "quotes": {
+            "source": [
+              "The remaining fragments should stay intact until the committee reviews the returned measurements and the identifier check.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [
+              "Rather, it ensures that any further destruction is earned by demonstrated performance."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the allocation, procedure, objection, sampling limitations, and review process. However, it promotes a successful return of usable, correctly linked measurements into establishing that the analytical and tracking workflow functions reliably. That broader reliability conclusion exceeds the pilot's stated evidentiary purpose.",
+          "quotes": {
+            "source": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier.",
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [],
+            "B": [
+              "A successful pilot will establish that the tracking and analytical workflow functions reliably"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the essential facts and explicitly reject box representativeness. Their localized overstatements have different consequences: A promises a performance condition on subsequent destruction, while B gives pilot success excessive evidentiary force about workflow reliability. Neither is sufficiently less consequential to establish a fidelity winner.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [
+              "it will not, and cannot, prove that a single fragment is representative of its parent box.",
+              "Rather, it ensures that any further destruction is earned by demonstrated performance."
+            ],
+            "B": [
+              "A successful pilot will establish that the tracking and analytical workflow functions reliably",
+              "without claiming that a single fragment represents its entire box."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the choices in more idiomatic prose. A repeatedly expands simple facts into formal abstractions and redundant formulations; this adds verbal weight without making the tradeoffs easier to understand.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Across the selected project assemblage",
+              "The selection procedure must also remain visible and methodologically transparent.",
+              "recording that determination prior to dispatch."
+            ],
+            "B": [
+              "Each box contains three fragments",
+              "The selection procedure must also be documented clearly.",
+              "record that choice before shipment."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both move coherently from allocation through destruction, objection, selection, and review. B gives each stage a clearer role without repeatedly announcing its importance. A's repeated endorsement of the objection and emphatic framing interrupt an otherwise sound argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I recognize the strength of the analysis team’s primary scientific objection",
+              "That objection is substantial.",
+              "The primary objective of the first submission should be strictly operational"
+            ],
+            "B": [
+              "The analysis team raises a substantial objection:",
+              "My proposal deliberately leaves that question unresolved. Instead, this initial batch should verify whether the laboratory can return usable measurements linked unambiguously to our catalogue identifiers."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the author's preference for candid explanations of real costs and limitations. A adds emphatic stewardship rhetoric and declarations of necessity where the source uses a measured recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The issue is fundamentally one of material stewardship",
+              "a critical, non-negotiable stage of the laboratory workflow",
+              "genuine decision-making authority for the committee."
+            ],
+            "B": [
+              "choosing the smaller batch is simply a decision to limit how much material we consume now.",
+              "Beginning with twelve fragments tests a necessary part of the workflow while preserving the committee's options for subsequent sampling decisions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is requested; the fragment counts are factual constraints on the proposal.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both have a minor overstatement: A guarantees a performance gate beyond review, and B overclaims the reliability established by pilot success. These are comparable localized departures, with the allocations and scientific limitation intact. B better delivers the requested connected, candid argument; A's repeated declarations and emphatic administrative language obscure rather than develop the reasons.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Rather, it ensures that any further destruction is earned by demonstrated performance.",
+              "Proceeding in this sequence tests a critical, non-negotiable stage of the laboratory workflow while preserving substantial material and genuine decision-making authority for the committee."
+            ],
+            "B": [
+              "A successful pilot will establish that the tracking and analytical workflow functions reliably",
+              "Beginning with twelve fragments tests a necessary part of the workflow while preserving the committee's options for subsequent sampling decisions."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "67baf82c27bd121e63754f7f813ff98e2147c0d781ad086d3cda4edcefb58d47",
+    "prompt_sha256": "32f41f7ec68143f397b71e3c5c0c9378cd1c5f337fec2f343287e2fef06cf452",
+    "raw_sha256": "ab94a139b78915b1c36631c452a7bc5864d047ba2b96ff3fcff8374196ae6496",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a committee proposal, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocations, laboratory premises, destructive procedure, sampling limitations, and review requirement. Its stronger rhetoric does not change the proposed authorization or promise future findings.",
+          "quotes": {
+            "source": [
+              "The remaining fragments should stay intact until the committee reviews the returned measurements and the identifier check.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [
+              "The remaining twenty-four fragments should remain intact until the committee has reviewed the returned measurements and verified the integrity of the catalogue identifier links.",
+              "the analysis team may submit a request for a second batch"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the factual premises and limits of the proposal. The reliability wording is more categorical than the source, but reasonably describes successful pilot operation in context, without guaranteeing future performance or representativeness.",
+          "quotes": {
+            "source": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier.",
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [],
+            "B": [
+              "this initial batch should verify whether the laboratory can return usable measurements linked unambiguously to our catalogue identifiers.",
+              "without claiming that a single fragment represents its entire box."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact allocation, equal setup charge, complete grinding, nonrandom selection, reporting restriction, and temporary hold. Both distinguish the pilot's operational purpose from the within-box comparison it sacrifices.",
+          "quotes": {
+            "source": [
+              "Two fragments from each box would let them look for differences within a box, whereas one cannot.",
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "submitting two fragments per box would allow the team to evaluate compositional variation within a box, whereas analyzing one fragment cannot.",
+              "it will not, and cannot, prove that a single fragment is representative of its parent box."
+            ],
+            "B": [
+              "submitting two fragments from each box would allow them to test for compositional differences within a box, whereas a single fragment cannot.",
+              "without claiming that a single fragment represents its entire box."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B expresses the decision and its consequences in direct, conversational technical prose. A is readable but repeatedly replaces straightforward explanations with ceremonial or abstract language.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The issue is fundamentally one of material stewardship:",
+              "This conservative allocation is warranted by the irreversible nature of the laboratory procedure."
+            ],
+            "B": [
+              "choosing the smaller batch is simply a decision to limit how much material we consume now.",
+              "The testing procedure itself is entirely destructive:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow a coherent sequence from allocation and destruction through the scientific objection, limited pilot purpose, selection restrictions, and committee review. Their substantive ordering is largely the same.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In recommending a single fragment per box, I recognize the strength of the analysis team’s primary scientific objection:",
+              "The selection procedure must also remain visible and methodologically transparent."
+            ],
+            "B": [
+              "The analysis team raises a substantial objection:",
+              "The selection procedure must also be documented clearly."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B keeps the recommendation affirmative while acknowledging its scientific cost plainly. A adds scope defenses and emphatic institutional rhetoric that the author's preferences specifically discourage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "because addressing intra-box variation exceeds the necessary scope of an initial pilot.",
+              "any further destruction is earned by demonstrated performance.",
+              "a critical, non-negotiable stage of the laboratory workflow"
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved.",
+              "Beginning with twelve fragments tests a necessary part of the workflow while preserving the committee's options for subsequent sampling decisions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material error. B better fits the requested candid argument: it explains the unresolved scientific question and the narrower operational purpose without A's added scope declarations and emphatic packaging. The preference rests on how the tradeoff is presented, not merely on length.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "because addressing intra-box variation exceeds the necessary scope of an initial pilot.",
+              "a critical, non-negotiable stage of the laboratory workflow"
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved. Instead, this initial batch should verify whether the laboratory can return usable measurements linked unambiguously to our catalogue identifiers."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "67baf82c27bd121e63754f7f813ff98e2147c0d781ad086d3cda4edcefb58d47",
+    "prompt_sha256": "9e9a1f892b4b10b3a7cb1a4fad1a0786522ee93c969ecb8e0f8df41d746002be",
+    "raw_sha256": "c5d1ae40b3538f2046bda3c11629c33d356eb54ae1f42433363a28c6fb5848c1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a persuasive prose revision, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Closely preserves all numerical allocations, laboratory conditions, scientific limitations, selection rules, and the conditional possibility of a later request.",
+          "quotes": {
+            "source": [
+              "The larger submission would take two from each box and leave twelve.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [
+              "the larger submission would take two from each box and leave twelve.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the allocation, destruction, limited pilot purpose, sampling restrictions, and review before another request. 'Financial saving' is broader wording than the source's setup-charge qualification, but its immediate setup-charge context supports the narrower reading; this ambiguity does not establish a material error.",
+          "quotes": {
+            "source": [
+              "We should not sell the smaller batch as a saving on that charge.",
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [],
+            "B": [
+              "its setup charge is identical for either submission.",
+              "We should therefore not frame the smaller batch as a financial saving",
+              "the analysis team will be free to request a second batch supported by a research question that justifies consuming additional material."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the substantive proposal, but A maintains the source's precise qualifications. B's references to financial savings and broad conclusions are less exact than the source's restrictions on setup-charge savings and collection-wide composition, although their surrounding context prevents a clear material-error finding.",
+          "quotes": {
+            "source": [
+              "We should not sell the smaller batch as a saving on that charge.",
+              "The report should describe the submitted material without estimating the composition of the whole collection."
+            ],
+            "A": [
+              "we should not sell the smaller batch as a saving on that charge.",
+              "the report should describe the submitted material without estimating the composition of the whole collection."
+            ],
+            "B": [
+              "We should therefore not frame the smaller batch as a financial saving",
+              "this selection method means the pilot cannot support broad conclusions."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A retains the source's candid cadence and uses unobtrusive connections. B remains readable, but its denser opening and abstract transition language make it sound more formally manufactured.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Selection also needs to be visible.",
+              "while leaving us something real to decide about afterward."
+            ],
+            "B": [
+              "Matching our selection and reporting rules to this limited purpose will keep the pilot's boundaries clear.",
+              "while preserving intact material—and a substantive decision—for afterward."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B makes the decisive sequencing argument explicit: destruction makes the within-box comparison costly, so the smaller submission first checks an operational requirement. A states the alternative purpose clearly but leaves more of the reason for giving it priority implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that question unresolved. The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "B": [
+              "Before we consume two-thirds of the selected material to investigate compositional variation, we should verify that the laboratory can return a usable measurement linked unambiguously to each submitted catalogue identifier."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A better preserves the author's conversational rhythm and restrained qualifications. B better fulfills the equally explicit preference to explain why each step is needed, particularly why an operational pilot precedes the larger scientific comparison.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I favour this sequence because the first submission can test a necessary part of the workflow while leaving us something real to decide about afterward."
+            ],
+            "B": [
+              "My proposal deliberately leaves that intra-box question unresolved in order to address a prior operational requirement."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. A is more precise and conversational, but B better serves the central request to build a persuasive argument: its explanation of checking the workflow before consuming two-thirds of the material gives the limited pilot a concrete reason to take priority over the acknowledged scientific benefit of two fragments per box.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ],
+            "B": [
+              "Before we consume two-thirds of the selected material to investigate compositional variation, we should verify that the laboratory can return a usable measurement linked unambiguously to each submitted catalogue identifier."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3c3b1b17841a11ae9f26ce5d1c6a3e51d49506640ab91dbf733a4228e1e45d02",
+    "prompt_sha256": "9e9a1f892b4b10b3a7cb1a4fad1a0786522ee93c969ecb8e0f8df41d746002be",
+    "raw_sha256": "c5d1ae40b3538f2046bda3c11629c33d356eb54ae1f42433363a28c6fb5848c1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a persuasive committee proposal, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocations, laboratory premises, scientific objection, sampling limitations, and review before any further request. Workflow success remains distinct from representativeness.",
+          "quotes": {
+            "source": [
+              "A successful return would support planning a larger comparison; it would not show that one fragment represents its box."
+            ],
+            "A": [
+              "without claiming that a single fragment represents its entire box."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the substantive premises and restrictions. 'Permanently exhausted' is imprecise, but its immediate discussion of physical surfaces permits that contextual reading; it does not unambiguously rule out further use of the powder.",
+          "quotes": {
+            "source": [
+              "They would not preserve a surface that a later investigator could examine with a different instrument."
+            ],
+            "A": [],
+            "B": [
+              "it cannot preserve a physical surface that a subsequent investigator could examine with a different instrument.",
+              "Once pulverized, that material is permanently exhausted."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact allocation and laboratory constraints, acknowledge the lost within-box comparison, and limit the pilot to usable, correctly identified measurements. Neither promises future surface benefits or approves a second submission.",
+          "quotes": {
+            "source": [
+              "After review, the team could request a second batch with a question that justifies consuming more material."
+            ],
+            "A": [
+              "the analysis team can submit a second request with a specific question that justifies destroying additional fragments."
+            ],
+            "B": [
+              "the analysis team may submit a request for a second batch, framed around specific scientific questions that justify the consumption of additional material."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, readable committee prose. B repeatedly expands straightforward points into abstract or emphatic formulations, making the proposal sound more ceremonial.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "choosing the smaller batch is simply a decision to limit how much material we consume now."
+            ],
+            "B": [
+              "The issue is fundamentally one of material stewardship:",
+              "preserving substantial material and genuine decision-making authority for the committee."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from allocation and irreversible loss to the scientific objection, operational pilot, selection restrictions, and review. B adds connective explanation, but does not materially improve this shared argumentative sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that question unresolved. Instead, this initial batch should verify whether the laboratory can return usable measurements linked unambiguously to our catalogue identifiers."
+            ],
+            "B": [
+              "This proposal deliberately leaves that question unresolved because addressing intra-box variation exceeds the necessary scope of an initial pilot."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A acknowledges the real scientific sacrifice in candid language. B adds repeated emphasis and staged formulations about earned destruction and non-negotiable stages, contrary to the author's preference for substantive explanation without rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The analysis team raises a substantial objection:",
+              "My proposal deliberately leaves that question unresolved."
+            ],
+            "B": [
+              "That objection is substantial.",
+              "any further destruction is earned by demonstrated performance.",
+              "a critical, non-negotiable stage of the laboratory workflow"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a clear material error, and both explain the proposal's tradeoff. A better fits this user's request for candid, connected persuasion: it states the unresolved scientific question directly and preserves the temporary hold without B's repeated declarations of importance and authority.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This retention is a temporary hold, not an assurance that future surface analyses will prove more informative, as no such work has been commissioned."
+            ],
+            "B": [
+              "Rather, it ensures that any further destruction is earned by demonstrated performance.",
+              "a critical, non-negotiable stage of the laboratory workflow"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2d1cf398b8ab672c3f1598b483c8cc052b8142c0b6928bbef1427894bf166118",
+    "prompt_sha256": "e4c6412ce6ba866a7adc334a0ee368ae0515140a4312564540c0cc064d3f761f",
+    "raw_sha256": "f2057d1470707668f05dbf93e1516dbdbdde22db5d847a378d37c9f8fd8cf99d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and prose of a committee proposal, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocation, objection, operational purpose, sampling limits, and conditional further request. 'Financial saving' is broader wording than the source, but the immediately preceding setup-charge premise supports a narrow reading; it does not clearly assert equal total costs.",
+          "quotes": {
+            "source": [
+              "We should not sell the smaller batch as a saving on that charge."
+            ],
+            "A": [
+              "its setup charge is identical for either submission.",
+              "We should therefore not frame the smaller batch as a financial saving or a filter for unusable material."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Faithfully retains the collection and laboratory premises, scientific limitation, nonrandom selection, temporary hold, and possibility of requesting another batch after review.",
+          "quotes": {
+            "source": [
+              "The remaining fragments should stay intact until the committee reviews the returned measurements and the identifier check."
+            ],
+            "A": [],
+            "B": [
+              "The remaining fragments should stay intact until the committee reviews the returned measurements and the identifier check."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive proposal. B more precisely confines the financial qualification to the setup charge, whereas A's general wording introduces avoidable ambiguity about other costs.",
+          "quotes": {
+            "source": [
+              "We should not sell the smaller batch as a saving on that charge."
+            ],
+            "A": [
+              "We should therefore not frame the smaller batch as a financial saving"
+            ],
+            "B": [
+              "we should not sell the smaller batch as a saving on that charge."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B keeps the source's conversational, concrete register. A remains readable but sometimes replaces direct language with more abstract phrasing and a less natural closing formulation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Matching our selection and reporting rules to this limited purpose will keep the pilot's boundaries clear.",
+              "preserving intact material—and a substantive decision—for afterward."
+            ],
+            "B": [
+              "Selection also needs to be visible.",
+              "leaving us something real to decide about afterward."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A explicitly connects irreversible consumption to the ordering of the work: establish usable, correctly linked measurements before spending more material on variation. B preserves the sequence but largely leaves the rationale for that priority implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before we consume two-thirds of the selected material to investigate compositional variation, we should verify that the laboratory can return a usable measurement linked unambiguously to each submitted catalogue identifier."
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved. The first batch should instead check whether the laboratory can return a usable measurement linked unambiguously to each submitted identifier."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A better develops why the pilot precedes the larger comparison; B better preserves the supplied candid register and effective closing. These serve different explicit author priorities, with neither uniformly stronger on voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "My proposal deliberately leaves that intra-box question unresolved in order to address a prior operational requirement."
+            ],
+            "B": [
+              "I favour this sequence because the first submission can test a necessary part of the workflow while leaving us something real to decide about afterward."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a definite material error. B is more precise about costs and more conversational, but A better fulfills the decisive request to develop a persuasive argument: its explanation of verification before further consumption makes the proposed sequence understandable rather than merely stated.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before we consume two-thirds of the selected material to investigate compositional variation, we should verify"
+            ],
+            "B": [
+              "My proposal deliberately leaves that question unresolved. The first batch should instead check"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b1ae5303d105d8e5f95cb0d9ea7bc2277e8a377a617b2f6ff43332519fe4beee",
+    "prompt_sha256": "e4c6412ce6ba866a7adc334a0ee368ae0515140a4312564540c0cc064d3f761f",
+    "raw_sha256": "f2057d1470707668f05dbf93e1516dbdbdde22db5d847a378d37c9f8fd8cf99d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a position statement, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the quiz composition, specific coverage gap, proposed assessment arrangements, unresolved weights, workload tradeoff, and review after one unit. The added explanation of comparability makes the existing rationale explicit without strengthening it materially.",
+          "quotes": {
+            "source": [
+              "Teachers would bring two anonymized examples and explain how they applied the shared criteria.",
+              "That change will not eliminate the work, but it redirects some existing time"
+            ],
+            "A": [
+              "each teacher would bring two anonymized examples to the meeting to explain how they applied our shared criteria.",
+              "That substitution will not eliminate the review work"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's limited claims and all substantive proposal details, including the ten-question composition, ordinary-lesson task, anonymized examples, shared criteria, absence of a weighting formula, meeting substitution, and one-unit review.",
+          "quotes": {
+            "source": [
+              "I am not proposing a numerical formula for combining the task and quiz, because we have not agreed what the weights would mean.",
+              "After one unit, we should check whether the examples helped us make judgments and whether the meeting remained manageable."
+            ],
+            "A": [],
+            "B": [
+              "I am not proposing a numerical formula for combining the task and the quiz, because we have not agreed what the weights would mean.",
+              "After one unit, we should check whether the examples helped us make judgments and whether the meeting remained manageable."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the distinction between this quiz's specific omission and general claims about question length. Both retain the proposed policy and acknowledge that reallocating meeting time leaves review work.",
+          "quotes": {
+            "source": [
+              "Neither of the explanation questions requires that comparison.",
+              "It does not show that short questions are incapable of assessing reasoning, or that every longer assignment would assess it well."
+            ],
+            "A": [
+              "neither explanation question requires that comparison.",
+              "it does not imply that short questions are incapable of assessing reasoning, or that every longer assignment would assess it well."
+            ],
+            "B": [
+              "neither of the explanation questions requires that comparison.",
+              "it does not show that short questions are incapable of assessing reasoning or that every longer assignment would assess it well."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A gives the comparability explanation a more readable sentence structure. B's stacked 'whereas when' construction is awkward, although the rest of both statements is readable professional prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "when classes use entirely different tasks, it is harder to know whether a difference in scores reflects pupil performance or simply the different work pupils were asked to do."
+            ],
+            "B": [
+              "whereas when classes use entirely different tasks, it is harder to know whether a difference in scores reflects the work pupils were asked to do."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more explicitly develops the requested argument: the unit goal identifies the missing evidence, that specific gap motivates a targeted task, and the addition introduces a concrete workload objection. B supplies useful connections but relies more on a general compatibility statement to introduce the recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the gap in our current evidence is specific, our response can be equally targeted.",
+              "Even a targeted addition raises a fair objection about workload"
+            ],
+            "B": [
+              "Keeping a common reference point and broadening the evidence can be compatible if we are specific about the work each is meant to do.",
+              "My proposal is therefore to keep the quiz as our shared set of questions"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the speaker's firm stance and practical, qualified argument. A offers more explicit explanatory transitions but adds some rhetorical packaging; B stays closer to the original register while still explaining the workload limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Pointing out this gap is strictly an observation about the alignment between our current questions and our unit goals",
+              "That substitution will not eliminate the review work"
+            ],
+            "B": [
+              "This is an observation about the current questions and our stated unit goals",
+              "That change will not eliminate the work, but it redirects some existing time"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the source nor the requested revision contains a mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material fidelity error. A has a modest substantive advantage on the user's central request: it makes the recommendation follow directly from the specific evidence gap and makes the workload discussion follow from the proposed addition. Those connections help the working group understand why each step belongs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the gap in our current evidence is specific, our response can be equally targeted.",
+              "Even a targeted addition raises a fair objection about workload"
+            ],
+            "B": [
+              "My proposal is therefore to keep the quiz as our shared set of questions and add one classroom comparison task",
+              "Completing the comparison task during an ordinary lesson does not remove the concern about workload"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0e0dc6d27d3bc68a8eadc6390dcfc26fed420b93af3a622a187e005bba6221fe",
+    "prompt_sha256": "94dc959d4b2d645c712b40c85e1edb41a959a6c531f0a2eef72583e32451e9eb",
+    "raw_sha256": "8c2ffdac89ff43ea5597daa876bd7eaee23879a8eea7875340888116c662c96e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and wording of a teacher working-group statement, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the substantive policy, qualifications, workload limitation, and review. Its statement that the quiz does not assess the comparison reasonably summarizes the identified coverage gap in context; the source does not establish a contrary reading that warrants a material-error finding.",
+          "quotes": {
+            "source": [
+              "Neither of the explanation questions requires that comparison.",
+              "toward evidence the quiz does not currently provide."
+            ],
+            "A": [
+              "neither explanation question requires that comparison.",
+              "Because the quiz does not assess that comparison"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "Strengthens the central limited rationale from difficulty interpreting scores to an inability to distinguish learning from task differences, and calls the common quiz necessary. It also turns discussing applications of shared criteria into a guarantee of consistent standards. These additions materially change what the group could rely on when accepting the proposal.",
+          "quotes": {
+            "source": [
+              "it is harder to know whether a difference in scores reflects the work pupils were asked to do.",
+              "A common quiz gives us a shared set of questions to discuss.",
+              "Teachers would bring two anonymized examples and explain how they applied the shared criteria."
+            ],
+            "A": [],
+            "B": [
+              "A common quiz provides a necessary shared benchmark",
+              "we cannot tell whether score differences reflect pupil learning or variations in the assignments themselves.",
+              "ensuring consistent standards across classes."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the source's uncertainty and procedural proposal. B preserves many concrete details but introduces necessity, impossibility, and a consistency guarantee unsupported by the source, contrary to the instruction to preserve the deliberately limited claim.",
+          "quotes": {
+            "source": [
+              "it is harder to know whether a difference in scores reflects the work pupils were asked to do.",
+              "explain how they applied the shared criteria."
+            ],
+            "A": [
+              "it is harder to know whether a difference in scores reflects the work pupils were asked to do.",
+              "explain how they applied the shared criteria."
+            ],
+            "B": [
+              "we cannot tell whether score differences reflect pupil learning or variations in the assignments themselves.",
+              "ensuring consistent standards across classes."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, idiomatic language suited to a working-group statement. B remains readable but repeatedly adds formal emphasis and heavier phrasing that make the speaker sound more rehearsed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Reviewing an embedded lesson task and discussing examples at the meeting will take time.",
+              "I am not proposing a numerical formula"
+            ],
+            "B": [
+              "My proposal directly addresses this gap while preserving the comparability we value",
+              "I am deliberately not proposing a numerical formula"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A connects the coverage gap directly to the added task, then addresses its time cost. B also has a clear overall sequence, but its claim that assessing a particular objective explains why the task belongs in an ordinary lesson introduces a causal link it does not explain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the quiz does not assess that comparison, I propose keeping the quiz and adding one classroom comparison task",
+              "Reviewing an embedded lesson task and discussing examples at the meeting will take time."
+            ],
+            "B": [
+              "My proposal directly addresses this gap while preserving the comparability we value",
+              "Because this task evaluates the comparison-and-defense objective, it should be completed during an ordinary lesson."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's clear stance and restrained explanation without stripping out the tradeoff. B repeats emphatic interpretations of the gap and promotes the proposal's benefits more strongly, conflicting with the preference against strengthening claims to produce a more satisfying argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is an observation about our current questions and stated unit goals",
+              "That change will not eliminate the work"
+            ],
+            "B": [
+              "It simply demonstrates that our primary assessment leaves a stated unit expectation unexamined.",
+              "Keeping a common reference point and broadening our evidence are entirely compatible"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact contains no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B materially strengthens the rationale and promises consistency the source does not establish. Preserving the deliberately limited claim is decisive here. A also makes the missing comparison evidence motivate the additional task while keeping the workload tradeoff explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the quiz does not assess that comparison, I propose keeping the quiz and adding one classroom comparison task",
+              "That change will not eliminate the work"
+            ],
+            "B": [
+              "A common quiz provides a necessary shared benchmark",
+              "ensuring consistent standards across classes."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b01af3ad20690bc71a943f49c1cce99c6839a4c33aa75b2aaa8cbcbcd4a6ecf",
+    "prompt_sha256": "94dc959d4b2d645c712b40c85e1edb41a959a6c531f0a2eef72583e32451e9eb",
+    "raw_sha256": "8c2ffdac89ff43ea5597daa876bd7eaee23879a8eea7875340888116c662c96e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
