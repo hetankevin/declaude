@@ -40926,5 +40926,1826 @@
     "prompt_sha256": "eb7bf19ce8784232bb04d19b4618d5694ef627c67d610a2771c800c031ffce4a",
     "raw_sha256": "f1932e09f5c8a7f74e6f683899ce06ec5119ed8c371ce3d838c8ae0b52df5c74",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a studio handover note, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the original take, room assignments, audible transition, distinct denoiser states, outdated preview, repair sequence, and incomplete delivery status. Its more emphatic wording does not materially change those instructions.",
+          "quotes": {
+            "source": [
+              "The flags mark edits made after the print, not necessarily faults in those edits.",
+              "The delivery mix is not ready yet, even though the rough mix has the requested duration."
+            ],
+            "A": [
+              "blue flags, which indicate post-print edits rather than technical faults.",
+              "although the rough mix currently hits the requested running time, the delivery mix is not finished."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the substantive cautions and their sequence without adding settings or troubleshooting. The flags passage explains what the markers signify; it does not guarantee that the edits are fault-free.",
+          "quotes": {
+            "source": [
+              "The flags mark edits made after the print, not necessarily faults in those edits.",
+              "Please audition the low-level answer on headphones before adjusting the gate."
+            ],
+            "A": [],
+            "B": [
+              "blue flags, which indicate post-print changes rather than known faults.",
+              "Please audition the low-level answer on headphones before adjusting the gate."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the semantic reason against substitution and the operational constraints. A's added description of the preview as useful for pacing is reasonably contextual shorthand for evaluating pauses, rather than a materially different authorization.",
+          "quotes": {
+            "source": [
+              "The noise is therefore a reason to treat that section carefully, rather than a reason to swap it.",
+              "Its printed preview is useful for judging pauses"
+            ],
+            "A": [
+              "careful cleanup rather than a take swap",
+              "reliable for evaluating pacing and pauses"
+            ],
+            "B": [
+              "treat that section carefully rather than swapping it.",
+              "Its printed preview is useful for judging pauses"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads like a direct handover between editors. A introduces stiff administrative phrasing, especially when describing ordinary edits and introducing the workflow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "three edits were executed after that print was made.",
+              "Please proceed using the following sequence of cautions:"
+            ],
+            "B": [
+              "three edits were made after it was printed.",
+              "After that, check the room transition in context and make a fresh dialogue print."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the take choice, room-tone distinction, and preview limitation before giving the dependent workflow. A's numbered sequence and B's connected paragraph both make the operational order understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Review the room transition in context** once the gate and repair are sorted.",
+              "**Pull a fresh dialogue print**"
+            ],
+            "B": [
+              "that repair is still outstanding. After that, check the room transition in context and make a fresh dialogue print."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fulfills the explicit request for connected prose while retaining the practical studio register and explanations. A turns the closing paragraph into a formal checklist and adds emphatic packaging that this ordinary handover does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Two separate room-tone beds are established and must not be homogenized.",
+              "Please proceed using the following sequence of cautions:"
+            ],
+            "B": [
+              "There are two room-tone beds:",
+              "Using the quieter bed throughout sounds more even, but it erases the move between rooms."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material factual error. B better meets the decisive request for a usable handover in connected prose: it keeps the consonant problem, headphone audition, transition check, and new print together with their reasons. A preserves the workflow but unnecessarily recasts it as a formal numbered set of cautions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please proceed using the following sequence of cautions:"
+            ],
+            "B": [
+              "On monitors, the first consonant can sound like chair noise, and the current gate already clips part of it; that repair is still outstanding. After that, check the room transition in context and make a fresh dialogue print."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b33412d18d8e053c855cf3ece0697edfce73e19f41a4f27c1f9f116a7356afac",
+    "prompt_sha256": "f15415c9bd3f3e617ea68f45714d12ed02929bb5132166e52c278465119bc7da",
+    "raw_sha256": "1eab9e890aa072a786cf04f47e8ef3598493c9f3583e24fec934374b34e7cbd6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a studio handover note, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Faithfully preserves the take-selection rationale, both room-tone assignments, processing states, three post-print edits, pending repair, ordered checks, and unfinished delivery status.",
+          "quotes": {
+            "source": [
+              "The transition itself can be softened; the fact that there is a transition should remain audible.",
+              "The flags mark edits made after the print, not necessarily faults in those edits."
+            ],
+            "A": [
+              "The transition itself can be softened, but the fact that there is a transition should remain audible.",
+              "The blue flags mark those post-print edits, not necessarily faults in those edits."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's substantive distinctions and sequence without inventing processing settings. Its stronger wording about the flags describes their intended significance, rather than asserting that the edits contain no faults.",
+          "quotes": {
+            "source": [
+              "The flags mark edits made after the print, not necessarily faults in those edits.",
+              "The repair is still outstanding. After that, check the room transition in context and make a fresh dialogue print."
+            ],
+            "A": [],
+            "B": [
+              "blue flags strictly to indicate post-print edits, not to suggest faults in the edits themselves.",
+              "After completing that repair, check the room transition in context and make a fresh dialogue print"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the tentative answer, location-specific beds, audible move, active versus bypassed processing, outdated preview, outstanding work, and restriction against inferring readiness from duration. Neither authorizes the cleaner alternate take or recommends changing the music balance.",
+          "quotes": {
+            "source": [
+              "changes the speaker's answer from a tentative agreement to an unqualified one.",
+              "There is no need to change the music balance on the basis of this note."
+            ],
+            "A": [
+              "changes the speaker's answer from a tentative agreement to an unqualified one.",
+              "there is no need to change the music balance on the basis of this note."
+            ],
+            "B": [
+              "changes the speaker's response from a tentative agreement to an unqualified one.",
+              "there is no need to adjust the music balance on the basis of this note."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, conversational sentences suited to an experienced colleague. B remains readable but adds unnecessary introductory framing and clause-heavy sentences around information that A states plainly.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both takes are marked in the session.",
+              "Of the two room-tone beds, the one labelled corridor belongs under the first exchange only"
+            ],
+            "B": [
+              "Although both takes are marked in the session and the alternate take is cleaner, I left the original in place because",
+              "For the background ambiences, there are two room-tone beds:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both organize the note by the editor's decisions and explain the relevant reasons before the final workflow. B makes completion of the repair particularly explicit; A's preceding repair sentence adequately establishes the same sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The repair is still outstanding. After that, check the room transition in context and make a fresh dialogue print."
+            ],
+            "B": [
+              "After completing that repair, check the room transition in context and make a fresh dialogue print"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves already-effective language and supplies the connective explanation the user requested. B adds generic transitions and parenthetical framing without adding useful reasoning, making the ordinary handover more ceremonious.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please audition the low-level answer on headphones before adjusting the gate, because on the monitors the first consonant can sound like chair noise",
+              "The existing preview has been left available for comparison."
+            ],
+            "B": [
+              "On the processing side,",
+              "using the existing preview—which has been left available in the session—for comparison.",
+              "Finally, note that"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error, and both are usable. A has a modest but defensible advantage for this user's preference to preserve effective prose and connect actions with reasons: its headphone instruction immediately explains the consonant problem. B conveys the same workflow but surrounds it with unnecessary framing and parenthetical detail.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please audition the low-level answer on headphones before adjusting the gate, because on the monitors the first consonant can sound like chair noise and the current gate already clips part of it."
+            ],
+            "B": [
+              "When addressing the outstanding repair on the low-level answer, please audition it on headphones before adjusting the gate;",
+              "using the existing preview—which has been left available in the session—for comparison."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "65e87057c2cbd839800f97b61a1933a6e29716b20709a348906b245b12279f59",
+    "prompt_sha256": "f15415c9bd3f3e617ea68f45714d12ed02929bb5132166e52c278465119bc7da",
+    "raw_sha256": "1eab9e890aa072a786cf04f47e8ef3598493c9f3583e24fec934374b34e7cbd6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a studio handover note; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the take choice, room assignments, processing status, repair sequence, and incomplete delivery status. Its flags wording describes what the markers signify, without asserting that the edits are faultless.",
+          "quotes": {
+            "source": [
+              "The flags mark edits made after the print, not necessarily faults in those edits."
+            ],
+            "A": [
+              "Those changes are marked with blue flags strictly to indicate post-print edits, not to suggest faults in the edits themselves."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source's substantive instructions and qualifications, including the distinction between post-print markers and faults. It adds no processing settings or delivery authorization.",
+          "quotes": {
+            "source": [
+              "The flags mark edits made after the print, not necessarily faults in those edits."
+            ],
+            "A": [],
+            "B": [
+              "The blue flags mark those post-print edits, not necessarily faults in those edits."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the tentative answer, preserve the audible room change, distinguish the denoisers and outdated print, and keep delivery unfinished without recommending a music adjustment.",
+          "quotes": {
+            "source": [
+              "The transition itself can be softened; the fact that there is a transition should remain audible."
+            ],
+            "A": [
+              "The transition itself can be softened, provided the fact that a transition occurs remains audible."
+            ],
+            "B": [
+              "The transition itself can be softened, but the fact that there is a transition should remain audible."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B maintains a conversational studio register with direct sentences. A remains readable but adds introductory scaffolding and somewhat heavier phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the background ambiences, there are two room-tone beds:",
+              "On the processing side, I have bypassed the broadband denoiser"
+            ],
+            "B": [
+              "Of the two room-tone beds,",
+              "I have bypassed the broadband denoiser on the music bus,"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both organize the handover usefully, but A explicitly makes completion of the consonant repair precede the contextual transition check and fresh print. B's 'After that' leaves that dependency slightly less explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "After completing that repair, check the room transition in context and make a fresh dialogue print,"
+            ],
+            "B": [
+              "The repair is still outstanding. After that, check the room transition in context and make a fresh dialogue print."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve connected technical prose and explain why the cleaner take and more uniform ambience are unsuitable. B is more conversational; A supplies useful explicit sequencing without changing the artifact's form.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Although both takes are marked in the session and the alternate take is cleaner, I left the original in place because the alternate changes the speaker's response from a tentative agreement to an unqualified one."
+            ],
+            "B": [
+              "I left it that way because the alternate take is cleaner but changes the speaker's answer from a tentative agreement to an unqualified one."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both deliver a usable connected handover. A's clearer repair dependency and preview referent balance B's more direct conversational phrasing; neither has a decisive advantage for this user's practical goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The current printed preview is useful for judging pauses,",
+              "After completing that repair, check the room transition in context"
+            ],
+            "B": [
+              "Its printed preview is useful for judging pauses",
+              "Please audition the low-level answer on headphones before adjusting the gate,"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "29efe7514c6c892777084ce224ebbdaa69ee5a9c9dabd67a460cf5969a3745c0",
+    "prompt_sha256": "640f5d589aced9e44fffa87b7eb5c6b55cb539779a6766fdedf49046f172fad5",
+    "raw_sha256": "e8c8675619772bf6dc9e7b1be48cb45c0cd948a2ae36ae80e877399532013ef8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns prose editing of an audio handover, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the original take and its semantic justification, the room-tone assignments, processing distinctions, post-print edits, ordered cautions, and unfinished delivery status without adding settings.",
+          "quotes": {
+            "source": [
+              "On the monitors, the first consonant can sound like chair noise, and the current gate already clips part of it."
+            ],
+            "A": [
+              "On monitors, the first consonant can sound like chair noise, and the current gate already clips part of it; that repair is still outstanding."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B specifically attributes the clipping to the gate threshold, whereas the source identifies only the gate. That added diagnosis could steer the editor toward a particular parameter without source support, exceeding the instruction against added settings. The main handover constraints remain intact.",
+          "quotes": {
+            "source": [
+              "Do not add troubleshooting steps or settings.",
+              "the current gate already clips part of it."
+            ],
+            "A": [],
+            "B": [
+              "the current gate threshold is already clipping part of it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves the source's level of technical specificity. B adds the unsupported threshold diagnosis and strengthens a preview described as useful for pauses into one described as reliable for pacing and pauses.",
+          "quotes": {
+            "source": [
+              "Its printed preview is useful for judging pauses",
+              "the current gate already clips part of it."
+            ],
+            "A": [
+              "Its printed preview is useful for judging pauses,",
+              "the current gate already clips part of it;"
+            ],
+            "B": [
+              "is reliable for evaluating pacing and pauses,",
+              "the current gate threshold is already clipping part of it."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sounds like a clear working note between experienced editors. B's administrative phrasing and inflated descriptions make an ordinary handover more ceremonious than the task requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Using the quieter bed throughout sounds more even, but it erases the move between rooms."
+            ],
+            "B": [
+              "Two separate room-tone beds are established and must not be homogenized.",
+              "Please proceed using the following sequence of cautions:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the take decision and room-tone purpose before moving to processing and the ordered repair workflow. B makes the final sequence easier to scan, while A integrates it adequately into the requested prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please audition the low-level answer on headphones before adjusting the gate.",
+              "After that, check the room transition in context and make a fresh dialogue print."
+            ],
+            "B": [
+              "**Audition the low-level answer on headphones before adjusting the gate.**",
+              "**Review the room transition in context** once the gate and repair are sorted.",
+              "**Pull a fresh dialogue print**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A retains connected, purposeful studio prose and explains the relevant choices without decorative framing. B's title, bold numbered instructions, and formalized vocabulary move away from the requested connected prose and the author's ordinary-document register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "There are two room-tone beds:",
+              "The transition itself can be softened, but the change between rooms should remain audible."
+            ],
+            "B": [
+              "### Studio Handover Note: Dialogue Pass & Mix Status",
+              "Laying the quieter tone across the entire sequence produces an artificially even bed that eliminates the acoustic movement between spaces."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation appears in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds a minor unsupported parameter diagnosis. A also better fulfills the decisive request for connected prose that preserves useful explanation and studio terminology. B's scannable sequence does not outweigh its added specificity and more generic formal packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On monitors, the first consonant can sound like chair noise, and the current gate already clips part of it; that repair is still outstanding."
+            ],
+            "B": [
+              "the current gate threshold is already clipping part of it.",
+              "Please proceed using the following sequence of cautions:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "940539e03ab78d4cc3db4e7be473afe9f36ef08c34bf045148ec5499c7f90046",
+    "prompt_sha256": "640f5d589aced9e44fffa87b7eb5c6b55cb539779a6766fdedf49046f172fad5",
+    "raw_sha256": "e8c8675619772bf6dc9e7b1be48cb45c0cd948a2ae36ae80e877399532013ef8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to rewrite a practical volunteer notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the arrival times and safety rationale, preference versus reservation distinction, separate access arrangements and confirmation, safe apron rotation, kettle relocation, and scheduled packing before the noon finish. Its use of returning volunteers follows the source's own terminology.",
+          "quotes": {
+            "source": [
+              "Returning volunteers can help by not arriving early to be helpful",
+              "We can rotate the two jobs that do not need aprons."
+            ],
+            "A": [
+              "returning volunteers should arrive at 09:15.",
+              "Two of the jobs don’t need aprons, so we will rotate those."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the practical arrangements and their qualifications, including prior access confirmation, no need to purchase an apron, safe rotation, and optional staying afterwards. Its explicit explanation of apron availability is supported by the source's numbers and rotation proposal.",
+          "quotes": {
+            "source": [
+              "We have six aprons and expect eight people.",
+              "The jobs needing aprons should still have them"
+            ],
+            "A": [],
+            "B": [
+              "We have six aprons and expect eight people.",
+              "that way everyone who needs an apron has one"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the actionable details and the distinction between a repair preference and confirmed access arrangements. Neither imports facts from the voice sample or changes the scope materially.",
+          "quotes": {
+            "source": [
+              "If your preference is tied to an access need, reply to this message rather than relying on the form alone.",
+              "We will confirm arrangements with you before the morning."
+            ],
+            "A": [
+              "If your preference is tied to an access need, reply directly to this message rather than relying on the form alone.",
+              "We will confirm arrangements with you before the morning."
+            ],
+            "B": [
+              "If your preference is tied to an access need, please reply directly to this message rather than relying on the form alone.",
+              "We will confirm arrangements with you before the morning."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both sound like readable, informal coordinator messages. A's shorter sentences and B's more connected sentences are equally idiomatic; neither makes the notice unnecessarily formal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Bring an apron if you already have one, but please don’t buy one for this."
+            ],
+            "B": [
+              "Bring an apron if you have one, but please do not buy one for this."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both group the arrangements sensibly. B gives the apron paragraph a clearer causal finish: rotation ensures that everyone doing a job requiring an apron has one. A instead reiterates that these jobs really need aprons before explaining the choice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The jobs needing aprons genuinely need them; taking turns makes more sense than deciding two people can just go without."
+            ],
+            "B": [
+              "Two of the jobs do not need aprons, so we will rotate them—that way everyone who needs an apron has one, rather than two people having to go without."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both retain the source's useful mild humor. B better meets the specific request to reduce circular explanation: its apron explanation states the practical benefit instead of repeating the requirement for emphasis.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The jobs needing aprons genuinely need them"
+            ],
+            "B": [
+              "that way everyone who needs an apron has one"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both are usable notices. B has a modest substantive advantage on the user's explicit priority of reducing circularity while preserving reasons: its apron paragraph explains directly how rotation keeps the arrangement safe. It retains the warmth and practical detail elsewhere.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The jobs needing aprons genuinely need them; taking turns makes more sense than deciding two people can just go without."
+            ],
+            "B": [
+              "Two of the jobs do not need aprons, so we will rotate them—that way everyone who needs an apron has one, rather than two people having to go without."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "99b95e72f7046f13388b3426101837e4c35a4a4540c587cf507f644e4a04343a",
+    "prompt_sha256": "dec18524feae06498d33d24bdac966bfd038c32d617bba0c77487450141050d1",
+    "raw_sha256": "c3172cd05ea7b898be6cdcb1db80ecb82cd907b5f7d3060800a258fb7f336ea1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the wording and organization of a volunteer notice, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the induction schedule and safety reason, booking limitation and access process, apron quantities and safe rotation, kettle location and drying purpose, noon finish, optional staying, and scheduled packing. Its compressed apron explanation remains faithful.",
+          "quotes": {
+            "source": [
+              "We can rotate the two jobs that do not need aprons.",
+              "The jobs needing aprons should still have them"
+            ],
+            "A": [
+              "We can rotate the two jobs that do not need aprons.",
+              "The jobs that need aprons should still have them, rather than two people going without."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the arrangements, restrictions, and access confirmation. Its explicit role swapping explains the proposed rotation, and its joke about packing does not change the scheduled finish or optional staying. The quoted booking labels reasonably summarize the source's wording change.",
+          "quotes": {
+            "source": [
+              "Last month we called it a choice",
+              "packing up will be part of the scheduled morning"
+            ],
+            "A": [],
+            "B": [
+              "we have changed \"repair choice\" to \"repair preference.\"",
+              "We finish at noon, with packing up built into the scheduled morning."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's facts and actionable qualifications. B makes the rotation mechanism more explicit, but A also clearly retains the requirement that apron-requiring jobs have aprons.",
+          "quotes": {
+            "source": [
+              "You may bring an apron if you have one, but please do not buy one for this.",
+              "The jobs needing aprons should still have them"
+            ],
+            "A": [
+              "You may bring an apron if you have one, but please do not buy one for this.",
+              "The jobs that need aprons should still have them, rather than two people going without."
+            ],
+            "B": [
+              "Bring an apron if you already own one, but please do not buy one for this.",
+              "The jobs that need aprons will still have them; we will swap roles rather than leave two people working without one."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's account of the booking misunderstanding is more idiomatic. B's wording makes reasonable describe the wording's act of convincing, rather than the volunteers' interpretation; the meaning is clear, but the sentence is less natural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When we called it a choice last month, several people reasonably thought that meant the table had been reserved."
+            ],
+            "B": [
+              "Last month's wording reasonably convinced several people that their table was reserved"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently through arrival, booking, equipment, and closing arrangements, keeping reasons beside instructions. A explains the booking change through the earlier misunderstanding; B states the change and then explains that misunderstanding. Both routes work for this notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The booking form now asks for a repair preference rather than a choice.",
+              "A preference does not guarantee assignment to that table."
+            ],
+            "B": [
+              "On the booking form, we have changed \"repair choice\" to \"repair preference.\"",
+              "the new wording is there because the form cannot guarantee a specific table."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more distinctly carries the sample's lightly amused practical voice into the notice. Its packing joke develops the source's existing humor and remains attached to a clear instruction; A preserves that humor more quietly. B also explains role swapping in conversational terms.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "packing up will be part of the scheduled morning rather than something that only the people who can stay get to do."
+            ],
+            "B": [
+              "Staying afterwards is optional, and the pack-up should not be a treat reserved for the people who can stay late."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both satisfy the notice's practical purpose. B offers more explicit role swapping and a more audible amused voice; A gives the booking explanation more naturally and already preserves the source's gentle humor. These are comparable ways to meet the user's goal, without a decisive overall advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When we called it a choice last month, several people reasonably thought that meant the table had been reserved.",
+              "We can rotate the two jobs that do not need aprons."
+            ],
+            "B": [
+              "Last month's wording reasonably convinced several people that their table was reserved",
+              "The jobs that need aprons will still have them; we will swap roles rather than leave two people working without one."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "eebba00650e14031e59dee62b300dc900603c7707f200e03b7f1639a2363ffa8",
+    "prompt_sha256": "dec18524feae06498d33d24bdac966bfd038c32d617bba0c77487450141050d1",
+    "raw_sha256": "c3172cd05ea7b898be6cdcb1db80ecb82cd907b5f7d3060800a258fb7f336ea1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a practical volunteer notice with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the arrival times, safety explanation, booking limitation, separate access arrangements, safe apron rotation, kettle relocation, and scheduled finish and packing up.",
+          "quotes": {
+            "source": [
+              "We will confirm arrangements with you before the morning.",
+              "We can rotate the two jobs that do not need aprons."
+            ],
+            "A": [
+              "We will confirm arrangements with you before the morning.",
+              "we will swap roles rather than leave two people working without one."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all practical arrangements and qualifications, including prior access confirmation and apron provision through rotation. Its wording does not authorize apron-requiring work without an apron.",
+          "quotes": {
+            "source": [
+              "We will confirm arrangements with you before the morning.",
+              "The jobs needing aprons should still have them"
+            ],
+            "A": [],
+            "B": [
+              "we will confirm arrangements with you before the morning.",
+              "The jobs that need aprons should still have them, rather than two people going without."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the notice's facts, restrictions, reasons, and optional staying afterwards. A's more explicit role swapping clarifies the supplied arrangement without changing it.",
+          "quotes": {
+            "source": [
+              "Staying afterwards is optional, and packing up will be part of the scheduled morning"
+            ],
+            "A": [
+              "We finish at noon, with packing up built into the scheduled morning. Staying afterwards is optional"
+            ],
+            "B": [
+              "We finish at noon. Staying afterwards is optional, and packing up will be part of the scheduled morning"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read as approachable coordinator messages. A is slightly more playful; B uses plainer conversational phrasing. Neither difference establishes a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Returning volunteers can help by resisting the urge to arrive early and be useful"
+            ],
+            "B": [
+              "Returning volunteers can help by not arriving early to be helpful"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both group the arrangements coherently and explain their purposes. A gives the apron paragraph a clearer practical conclusion by explicitly connecting rotation to swapping roles; B leaves that connection more implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Two of the jobs do not require an apron, so we will rotate those. The jobs that need aprons will still have them; we will swap roles rather than leave two people working without one."
+            ],
+            "B": [
+              "We can rotate the two jobs that do not need aprons. The jobs that need aprons should still have them, rather than two people going without."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more fully achieves the requested lightly amused voice while keeping the practical explanation connected. Its small jokes concern the actual arrangements and import no sample facts. B is warm but retains more of the draft's explanatory phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The earlier alarm is not a penalty for being new.",
+              "the pack-up should not be a treat reserved for the people who can stay late."
+            ],
+            "B": [
+              "The earlier alarm is not meant as a punishment for being new.",
+              "rather than something that only the people who can stay get to do."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A has a modest advantage for this user's goal: it makes the apron arrangement explicitly actionable and carries the requested restrained humor through the notice without sacrificing reasons or details.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we will swap roles rather than leave two people working without one.",
+              "the pack-up should not be a treat reserved for the people who can stay late."
+            ],
+            "B": [
+              "The jobs that need aprons should still have them, rather than two people going without.",
+              "packing up will be part of the scheduled morning rather than something that only the people who can stay get to do."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0cbe4769173500a2edccdf90f0562c1b40ed894f9fea7a8a9c01bfee2cbdca75",
+    "prompt_sha256": "adf95e993162d4d0d524006ca74f3e2f368aaef881fabf6c4dacf791b300a46e",
+    "raw_sha256": "dc1d722e555be99936a74862b6bdb42aa41a031a3a32c9f8af719418b6eab850",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a volunteer notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the induction schedule and safety reason, preference versus reservation, separate access contact and confirmation, safe apron rotation, kettle arrangement, noon finish, and scheduled packing up.",
+          "quotes": {
+            "source": [
+              "This is a preference and does not guarantee assignment to that table.",
+              "We can rotate the two jobs that do not need aprons."
+            ],
+            "A": [
+              "it is only a preference and does not guarantee an assignment to that table.",
+              "Two of the jobs do not need aprons, so we will rotate them"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all substantive arrangements and qualifications. In context, 'returning volunteers' follows the source's own shorthand for volunteers who have completed induction; it does not establish a different arrival rule.",
+          "quotes": {
+            "source": [
+              "people who have already done an induction should arrive at 09:15",
+              "Returning volunteers can help by not arriving early to be helpful"
+            ],
+            "A": [],
+            "B": [
+              "returning volunteers should arrive at 09:15.",
+              "Returning volunteers can help most by not arriving early to be helpful"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the practical content and its limits, including access confirmation before the morning, no apron purchase, safe rotation, and optional staying after the scheduled work.",
+          "quotes": {
+            "source": [
+              "If your preference is tied to an access need, reply to this message rather than relying on the form alone.",
+              "We will confirm arrangements with you before the morning."
+            ],
+            "A": [
+              "If your preference is tied to an access need, please reply directly to this message rather than relying on the form alone. We will confirm arrangements with you before the morning."
+            ],
+            "B": [
+              "If your preference is tied to an access need, reply directly to this message rather than relying on the form alone. We will confirm arrangements with you before the morning."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A connects its explanations in conversational sentences. B remains readable, but its booking paragraph has a more clipped rhythm, and the earlier-alarm disclaimer sounds more staged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The earlier alarm is not a penalty for being new; we just need fifteen quiet minutes",
+              "so we changed the wording."
+            ],
+            "B": [
+              "Setting an earlier alarm sounds like a punishment for being new, but it isn’t.",
+              "We changed the wording."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both supply the reasons readers need. A more clearly joins arrangements to consequences, particularly rotation to apron availability and scheduled packing up to optional staying. B presents these connections in a more segmented sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Two of the jobs do not need aprons, so we will rotate them—that way everyone who needs an apron has one",
+              "Packing up will be part of the scheduled morning rather than a chore left only to people who can stick around, so staying afterwards is completely optional."
+            ],
+            "B": [
+              "Two of the jobs don’t need aprons, so we will rotate those. The jobs needing aprons genuinely need them",
+              "Staying afterwards is entirely optional; packing up is part of the scheduled morning"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better balances the author's preference for connected explanation with the sample's direct, lightly amused register. B preserves the humor but retains more repeated insistence and standalone commentary than the task needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we just need fifteen quiet minutes to show new people the shutoff switches before the room fills up.",
+              "even if the old one feels like where tea belongs."
+            ],
+            "B": [
+              "The booking form asks for a repair preference. It is only a preference, not a guaranteed table.",
+              "The jobs needing aprons genuinely need them"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are faithful and usable, with no material errors. A better fulfills the decisive request to reduce circular explanation while preserving reasons: its rotation sentence explains the outcome directly, whereas B repeats that apron-requiring jobs require aprons.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Two of the jobs do not need aprons, so we will rotate them—that way everyone who needs an apron has one, rather than two people having to go without."
+            ],
+            "B": [
+              "Two of the jobs don’t need aprons, so we will rotate those. The jobs needing aprons genuinely need them; taking turns makes more sense than deciding two people can just go without."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7fdf253e71f25872317a580e1b08cf5c60c4299c2e75a9c28e048d368be78e25",
+    "prompt_sha256": "adf95e993162d4d0d524006ca74f3e2f368aaef881fabf6c4dacf791b300a46e",
+    "raw_sha256": "dc1d722e555be99936a74862b6bdb42aa41a031a3a32c9f8af719418b6eab850",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an empirical results-and-interpretation passage; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the sequential single-depot design, sample sizes, daily-volume range, both statistical summaries, closure imbalance and retention, unmeasured downstream outcome, anecdotal feedback, and proposed follow-up. Its stronger rhetoric does not clearly assert a new empirical result or guarantee.",
+          "quotes": {
+            "source": [
+              "the reported condition summary is the median of those 12 daily medians",
+              "The lower waiting times are compatible with a benefit from reservation and with differences between the periods."
+            ],
+            "A": [
+              "the overall condition summary was calculated as the median of those 12 daily medians",
+              "it is consistent with an operational benefit from bay reservation, but equally compatible with differences between the two testing periods."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the design, exact observations, distinct aggregation methods, road-closure qualification, and absence of downstream lateness measurements. It retains the volunteered status of the dispatcher comment and presents alternating days and measuring subsequent-round lateness as future work.",
+          "quotes": {
+            "source": [
+              "31 of 360 under ordinary allocation and 19 of 348 under the reserved-bay rule",
+              "The next test should alternate the rule across comparable days and record departure lateness on subsequent rounds."
+            ],
+            "A": [],
+            "B": [
+              "31 of 360 under ordinary allocation and 19 of 348 under the reserved-bay rule",
+              "The results do support a follow-up test that alternates the rule across comparable days and records departure lateness on subsequent rounds."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive observations and limits of inference. A's “equally compatible” is stronger phrasing, but reasonably communicates unresolved explanations rather than quantified equal probabilities. Its practical-utility language remains qualified by the comment's volunteered, unscored status.",
+          "quotes": {
+            "source": [
+              "This comment was volunteered in the final debrief and was not a scored usability measure."
+            ],
+            "A": [
+              "Because this observation was volunteered rather than derived from a scored usability instrument"
+            ],
+            "B": [
+              "This was a volunteered comment rather than a scored usability measure."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic report prose. A repeatedly substitutes abstract administrative language for ordinary descriptions, making otherwise clear findings harder to read.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "From an administrative perspective, a dispatcher noted during the final debrief",
+              "To prevent this skew, each depot-day was characterized by its median waiting time"
+            ],
+            "B": [
+              "In the final debrief, a dispatcher recorded",
+              "Each depot-day therefore contributed its median waiting time"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both explain the reliability problem before the measurements and connect variable daily volume to the aggregation method. B closes more effectively by stating the unresolved reliability claim before proposing the test that addresses it; A announces a definitive trial and then returns to the limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A definitive follow-up trial should alternate the rule across comparable days and directly measure departure lateness on subsequent rounds.",
+              "the current data do not confirm the reliability improvement that originally motivated the study."
+            ],
+            "B": [
+              "At present, the data do not establish the reliability improvement that motivated the trial",
+              "The results do support a follow-up test that alternates the rule across comparable days"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected technical voice while retaining useful explanations. A adds ceremonial framing and evaluative emphasis, including “definitive” and “sound empirical basis,” where the author prefers precise scope without rhetorical promotion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A definitive follow-up trial",
+              "the findings provide a sound empirical basis for conducting that trial"
+            ],
+            "B": [
+              "We include it because an explainable rule is useful in practice",
+              "The results do support a follow-up test"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The statistical summaries are reported observations, not a proof or derivation requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material fidelity error. B better serves the author's central priority: explaining how the measured waits relate to the reliability goal and why another test is needed. Its closing limitation leads directly to the proposed evaluation, with less promotional and administrative wording than A.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "At present, the findings provide a sound empirical basis for conducting that trial; however"
+            ],
+            "B": [
+              "At present, the data do not establish the reliability improvement that motivated the trial",
+              "The results do support a follow-up test that alternates the rule across comparable days and records departure lateness on subsequent rounds."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b7b6c4b14a5857673ccc288c0c53b5945d4ce0135b70a8892c7cf9e590829e0b",
+    "prompt_sha256": "b71fda340f56d38c67e942d77f60265e39604ca3a7d79dc033a584591a985c29",
+    "raw_sha256": "d977cffd48d5cdc7bd68200a9e1375fcdf5002c6fb7d54b1fce08c248e66033e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns exposition of observational results and operational interpretation, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A accurately retains the single-depot sequential periods, 24 days split evenly, delivery range, daily-median summary, exact pooled tail counts, road-closure imbalance and retention, and unmeasured reliability outcome. The dispatcher comment remains anecdotal, and the proposed evaluation remains future work.",
+          "quotes": {
+            "source": [
+              "the reported condition summary is the median of those 12 daily medians",
+              "These are related operational concerns, but the second was not measured."
+            ],
+            "A": [
+              "the reported condition summary is the median of those 12 daily medians",
+              "These are related operational concerns, but the second was not measured."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the design, numerical observations, aggregation distinctions, closure qualification, and downstream measurement gap. Its causal-inference explanation follows from the supplied sequential design. The practical feedback remains explicitly volunteered and unscored, so the later reference to explainability does not establish an independent usability finding.",
+          "quotes": {
+            "source": [
+              "The lower waiting times are compatible with a benefit from reservation and with differences between the periods.",
+              "This comment was volunteered in the final debrief and was not a scored usability measure."
+            ],
+            "A": [],
+            "B": [
+              "the lower waiting times under the reserved-bay rule are compatible both with a benefit from reservation and with broader differences between the two periods.",
+              "a comment volunteered in the debrief rather than captured as a scored usability measure"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact results and their scope. B makes the distinction between directly measured waits and unestablished reliability more explicit, but does not change the conclusion or add evidence.",
+          "quotes": {
+            "source": [
+              "They do not establish the reliability improvement that motivated the trial, even though the measured waiting times moved in the intended direction."
+            ],
+            "A": [
+              "Even though the measured waiting times moved in the intended direction, the data do not establish the reliability improvement that motivated the trial."
+            ],
+            "B": [
+              "they do not establish the reliability improvement that motivated the trial."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A has a more unforced sentence rhythm. B remains readable, but its long opening sentence for the results paragraph and repeated framing phrases make the prose more cumbersome than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The study comprised 24 depot-days at one depot: 12 under the ordinary allocation in the first two weeks and 12 under the reserved-bay rule in the next two."
+            ],
+            "B": [
+              "Within that narrower scope, measured waiting times moved in the intended direction across a 24-depot-day trial at one depot, comprising 12 days under ordinary allocation in the first two weeks followed by 12 days under the reserved-bay rule in the next two."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A presents the facts in a sensible order. B more clearly distinguishes the measurement gap from the causal obstacle, then explains what role the operational feedback can play. These transitions develop the argument across paragraphs rather than merely placing related facts together.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Two days in the first condition included a road closure, whereas no days in the second condition did.",
+              "A dispatcher also recorded in the final debrief that the rule was easier to explain to drivers."
+            ],
+            "B": [
+              "Even for pre-loading waiting times, however, the sequential two-week design limits causal inference.",
+              "Operational feedback from the final debrief adds a practical consideration without resolving that ambiguity."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Despite some excess signposting, B better fulfills the author's preference for explaining why each part belongs. It explicitly connects the measurement choice to the permissible conclusion and gives the dispatcher feedback a defined role in the argument. A is faithful and conversational but leaves more of those connections implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These are related operational concerns, but the second was not measured.",
+              "A dispatcher also recorded in the final debrief"
+            ],
+            "B": [
+              "the results below speak directly to pre-loading waits rather than to the downstream reliability problem that motivated the trial.",
+              "Operational feedback from the final debrief adds a practical consideration without resolving that ambiguity."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested revision.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both are materially faithful, and A has the more natural rhythm. B nevertheless better meets the specific request to improve the argument across paragraphs: its transition beginning “Even for pre-loading waiting times” separates the causal limitation from the missing reliability measurement, making clearer why the favorable observations support further testing but not the motivating claim.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Two days in the first condition included a road closure, whereas no days in the second condition did.",
+              "At present, they support trying a next test"
+            ],
+            "B": [
+              "Even for pre-loading waiting times, however, the sequential two-week design limits causal inference.",
+              "To test that outcome credibly, the next trial should both alternate the rule across comparable days and record departure lateness on subsequent rounds."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8792eb4aa35a61b0d7067d59b77420eae33f3b8fb01842ab317dbd0279c34fcd",
+    "prompt_sha256": "b71fda340f56d38c67e942d77f60265e39604ca3a7d79dc033a584591a985c29",
+    "raw_sha256": "d977cffd48d5cdc7bd68200a9e1375fcdf5002c6fb7d54b1fce08c248e66033e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of an observational results-and-interpretation passage, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the sequential one-depot design, 12 days per condition, delivery range, daily-median summaries, exact pooled tail counts, closure imbalance and retention, unmeasured downstream lateness, and proposed follow-up. In context, 'equally compatible' can reasonably mean both explanations remain possible rather than asserting equal probabilities. The utility language remains qualified by the comment's volunteered, unscored status.",
+          "quotes": {
+            "source": [
+              "The lower waiting times are compatible with a benefit from reservation and with differences between the periods.",
+              "This comment was volunteered in the final debrief and was not a scored usability measure."
+            ],
+            "A": [
+              "it is consistent with an operational benefit from bay reservation, but equally compatible with differences between the two testing periods.",
+              "Because this observation was volunteered rather than derived from a scored usability instrument"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the design, exact numerical observations, distinction between daily-median and pooled summaries, closure imbalance and retention, and unmeasured subsequent-round lateness. It retains the limits on causal and usability inference and presents the alternating-day evaluation as future work.",
+          "quotes": {
+            "source": [
+              "The next test should alternate the rule across comparable days and record departure lateness on subsequent rounds.",
+              "They do not establish the reliability improvement that motivated the trial"
+            ],
+            "A": [],
+            "B": [
+              "At present, the data do not establish the reliability improvement that motivated the trial",
+              "The results do support a follow-up test that alternates the rule across comparable days and records departure lateness on subsequent rounds."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact observations and substantive qualifications. A uses stronger rhetorical descriptions of the evidence, but its explicit limitations prevent a clear material change in what the study establishes.",
+          "quotes": {
+            "source": [
+              "The fraction of deliveries waiting more than 20 minutes, pooled within each condition, was 31 of 360 under ordinary allocation and 19 of 348 under the reserved-bay rule."
+            ],
+            "A": [
+              "the pooled proportion of deliveries waiting more than 20 minutes was 31 of 360 under ordinary allocation compared with 19 of 348 under the reserved-bay rule.",
+              "the current data do not confirm the reliability improvement that originally motivated the study."
+            ],
+            "B": [
+              "The fraction of deliveries waiting more than 20 minutes, pooled within each condition, was 31 of 360 under ordinary allocation and 19 of 348 under the reserved-bay rule.",
+              "At present, the data do not establish the reliability improvement that motivated the trial"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the operations problem in direct, idiomatic language. A's nominal phrases and administrative framing make comparable explanations more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "erode the buffer recovery time budgeted for subsequent delivery rounds",
+              "From an administrative perspective"
+            ],
+            "B": [
+              "consume the recovery time built into the next round",
+              "In the final debrief, a dispatcher recorded that the rule was easier to explain to drivers."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both explain the measurement choice before reporting results. B gives the ending a clearer dependency: the reliability outcome remains unestablished, so a follow-up must measure it. A proposes the follow-up and then returns to the current study's limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A definitive follow-up trial should alternate the rule across comparable days and directly measure departure lateness on subsequent rounds.",
+              "At present, the findings provide a sound empirical basis for conducting that trial; however"
+            ],
+            "B": [
+              "At present, the data do not establish the reliability improvement that motivated the trial, even though measured waiting times moved in the intended direction.",
+              "The results do support a follow-up test"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B fits the author's connected, conversational technical prose and restrained interpretation. A adds promotional and administrative packaging where the source's practical explanation already suffices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "evidence of practical operational utility",
+              "a sound empirical basis"
+            ],
+            "B": [
+              "We include it because an explainable rule is useful in practice, not because the remark independently verifies the waiting-time findings.",
+              "Because daily volume ranged from 18 to 43 deliveries, pooling all deliveries would give busy days more weight."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a clear material error. B better meets the decisive priority of developing a proportionate argument: its closing limitation directly motivates the next evaluation, and it explains the dispatcher comment's relevance without A's inflated evidentiary packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the findings provide a sound empirical basis for conducting that trial",
+              "evidence of practical operational utility"
+            ],
+            "B": [
+              "At present, the data do not establish the reliability improvement that motivated the trial",
+              "The results do support a follow-up test that alternates the rule across comparable days and records departure lateness on subsequent rounds."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b7b6c4b14a5857673ccc288c0c53b5945d4ce0135b70a8892c7cf9e590829e0b",
+    "prompt_sha256": "b71fda340f56d38c67e942d77f60265e39604ca3a7d79dc033a584591a985c29",
+    "raw_sha256": "94ee8dc88b934f0af0e5ba113c065fdb5e78c255267d507ce8a209646da1ba4f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the exposition and interpretation of observational results, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the one-depot sequential periods, 24 days split evenly, delivery range, 9- versus 6-minute daily-median summaries, exact pooled tail counts, closure imbalance and retention, unmeasured subsequent-round lateness, and proposed future evaluation. The dispatcher comment remains volunteered and unscored.",
+          "quotes": {
+            "source": [
+              "Each depot-day contributed its median waiting time, and the reported condition summary is the median of those 12 daily medians.",
+              "This comment was volunteered in the final debrief and was not a scored usability measure."
+            ],
+            "A": [
+              "the reported condition summary is the median of those 12 daily medians rather than a median pooled across all deliveries.",
+              "This comment was volunteered rather than a scored usability measure, and it does not independently verify the waiting-time result"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the design, exact observations, distinct aggregation methods, road-closure imbalance and retention, and measurement limitations. It does not turn the sequential differences into causal findings or the volunteered comment into measured usability evidence. The final trial remains a proposal, without claiming that its design guarantees a reliability benefit.",
+          "quotes": {
+            "source": [
+              "The lower waiting times are compatible with a benefit from reservation and with differences between the periods.",
+              "The next test should alternate the rule across comparable days and record departure lateness on subsequent rounds."
+            ],
+            "A": [],
+            "B": [
+              "the lower waiting times under the reserved-bay rule are compatible both with a benefit from reservation and with broader differences between the two periods.",
+              "the next trial should both alternate the rule across comparable days and record departure lateness on subsequent rounds."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the numerical evidence, study design, measurement scope, alternative explanations, and future-work status. B's additional interpretive links explain implications already supported by the source.",
+          "quotes": {
+            "source": [
+              "These are related operational concerns, but the second was not measured.",
+              "It was 9 minutes under ordinary allocation and 6 minutes under the reserved-bay rule."
+            ],
+            "A": [
+              "These are related operational concerns, but the second was not measured.",
+              "This summary was 9 minutes under ordinary allocation and 6 minutes under the reserved-bay rule."
+            ],
+            "B": [
+              "only the first was measured",
+              "each condition was summarized by the median of its 12 daily medians: 9 minutes under ordinary allocation and 6 minutes under the reserved-bay rule."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable technical prose. A is more conversational in places but ends with the awkward 'trying a next test'; B uses longer framing sentences that remain clear. Neither has a substantial overall fluency advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the number of deliveries per day ranged from 18 to 43, a summary pooled across all deliveries would give busy days more weight.",
+              "At present, they support trying a next test"
+            ],
+            "B": [
+              "Because daily volume ranged from 18 to 43 deliveries, a median pooled across all deliveries would give busy days more weight.",
+              "Operational feedback from the final debrief adds a practical consideration without resolving that ambiguity."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B makes the argument's levels explicit: the measurements address waiting time, even that narrower finding has causal limitations, and practical feedback does not resolve them. A preserves a sensible order but leaves more of those relationships implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The study comprised 24 depot-days at one depot",
+              "Two days in the first condition included a road closure",
+              "A dispatcher also recorded in the final debrief"
+            ],
+            "B": [
+              "Within that narrower scope",
+              "Even for pre-loading waiting times, however, the sequential two-week design limits causal inference.",
+              "Operational feedback from the final debrief adds a practical consideration without resolving that ambiguity."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more fully meets the author's request to explain why each part belongs. Its transitions connect measurement scope, the obstacle to causal inference, and the purpose of the next trial, while retaining useful explanation rather than merely rearranging observations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These are related operational concerns, but the second was not measured.",
+              "The lower waiting times are therefore compatible both with a benefit from reservation and with differences between the periods."
+            ],
+            "B": [
+              "the results below speak directly to pre-loading waits rather than to the downstream reliability problem that motivated the trial.",
+              "To test that outcome credibly, the next trial should both alternate the rule across comparable days and record departure lateness on subsequent rounds."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both preserve the evidence without material error. B better fulfills the central request to improve the argument across paragraphs: it distinguishes the unmeasured reliability outcome from the measured waiting-time findings, then explains why those findings still face a separate causal obstacle. That development gives the proposed trial a clearer purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These are related operational concerns, but the second was not measured.",
+              "Two days in the first condition included a road closure"
+            ],
+            "B": [
+              "the results below speak directly to pre-loading waits rather than to the downstream reliability problem that motivated the trial.",
+              "Even for pre-loading waiting times, however, the sequential two-week design limits causal inference."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8792eb4aa35a61b0d7067d59b77420eae33f3b8fb01842ab317dbd0279c34fcd",
+    "prompt_sha256": "b71fda340f56d38c67e942d77f60265e39604ca3a7d79dc033a584591a985c29",
+    "raw_sha256": "94ee8dc88b934f0af0e5ba113c065fdb5e78c255267d507ce8a209646da1ba4f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
