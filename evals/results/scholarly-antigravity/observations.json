@@ -5417,5 +5417,1808 @@
     "prompt_sha256": "438d08a039be20c90dd1eafdaf10a6b4b41a184db0027945eb07120462e09feb",
     "raw_sha256": "1652f5883716235042dbf463d12c333f208a65f81608fc01ed6631189b387c0a",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a meeting position statement, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A changes the qualified warning against automatic substitution into a categorical claim of functional non-substitutability. The proposed reservation and access assessment remain intact, limiting the consequence.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "A": [
+              "standard ground is not a functional substitute for an accessible bed"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B replaces the concession that protecting planting can actually protect an established advantage with a statement about appearances. That weakens an objection the task expressly requires preserving, although B still rejects permanent entitlement.",
+          "quotes": {
+            "source": [
+              "Some people have suggested that established planting is simply another word for an established advantage. Sometimes it may be."
+            ],
+            "A": [],
+            "B": [
+              "Protecting established planting can look like protecting an established advantage"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the allocation, conditional shortfall, reservations, notice requirements, and route checks. A overstates non-substitutability; B weakens the substantive incumbency concession. Neither has an unqualified fidelity advantage.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed",
+              "Sometimes it may be."
+            ],
+            "A": [
+              "standard ground is not a functional substitute for an accessible bed",
+              "In some cases, it can."
+            ],
+            "B": [
+              "A standard half bed is not automatically a substitute for a raised bed",
+              "Protecting established planting can look like protecting an established advantage"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct language suited to a community meeting. A repeatedly raises the rhetorical temperature and makes straightforward consequences sound more elaborate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we will have inflicted that same uncertainty on a smaller parcel of ground",
+              "substantial immediate entry"
+            ],
+            "B": [
+              "we will simply repeat the same uncertainty on a smaller plot",
+              "provide a substantial number of offers"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build the same intelligible sequence: competing allocation concerns, the numerical proposal, transition and notice, accessibility and location, then waiting-list fairness. Both explain why incoming members also need advance notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Predictable timing is just as essential for incoming members."
+            ],
+            "B": [
+              "That timing matters for new members as well."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B more consistently preserves the source's measured, conversational advocacy. A adds heightened descriptions and calls the competing process arbitrary, making the discussion of objections more dismissive than the author requests.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "would introduce an arbitrary, contested process",
+              "it carries an undeniable cost"
+            ],
+            "B": [
+              "would introduce another contested decision",
+              "This proposal involves an explicit trade-off"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both have minor fidelity losses: A overstates the access conclusion, while B weakens the incumbency concession. B partly retains the concession's force by explicitly rejecting permanent claims and new entitlement. Its more measured treatment of contested decisions and direct explanation of the transition make it the better meeting statement, despite that omission.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "standard ground is not a functional substitute for an accessible bed",
+              "an arbitrary, contested process"
+            ],
+            "B": [
+              "planting a perennial cannot give anyone a permanent claim to shared land",
+              "My proposal asks for a transition, not a new entitlement."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5a82472831a53efbaba9bf57430756bea58484a0d31008af1178dfb69a84fe7c",
+    "prompt_sha256": "15dc53a92cc23f3c507fc132a7867b6a7adb1aa4d70cb3d8b9b0ed1815608b90",
+    "raw_sha256": "04eedc6b6c813e25ff4947604aba438e477bc869eabb32a7326e4721e14dfdf0",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a meeting position statement, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposed allocation, acceptance condition, one-season transition, access qualifications, waiting-list order, and conceded objections. Its revisions do not materially change the source's claims.",
+          "quotes": {
+            "source": [
+              "Eight offers would leave two households on the current waiting list without a bed, assuming every offer is accepted."
+            ],
+            "A": [
+              "Assuming every offer is accepted, eight offers would still leave two households on the current waiting list without a bed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B turns qualified non-equivalence into categorical functional non-substitutability. The source does not establish that a standard half bed can never serve as a substitute; it says substitution is not automatic. The reservation and assessment remain unchanged.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "A": [],
+            "B": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the core proposal and its limitations, but A preserves the source's access qualification exactly where B strengthens it into a categorical conclusion.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "A": [
+              "a standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "B": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sounds like a considered statement delivered to fellow gardeners. B's extended analogies and abstract framing sometimes make the meeting prose feel staged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Starting with the current vacancies also raises a practical objection on the site"
+            ],
+            "B": [
+              "Treating beds as real physical spaces rather than interchangeable squares on a map also requires confronting a practical drawback"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow a coherent sequence, but B more explicitly connects seasonal renewal to the rationale for notice and then carries that rationale into the waiting-list discussion. Those connections strengthen the argument, even though some other transitions are overworked.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "changing the order during this allocation would introduce another contested decision without giving households notice"
+            ],
+            "B": [
+              "Because obligations in this garden are seasonal, however, major rule changes should align with the seasonal cycle",
+              "the very problem a transition is meant to avoid"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's restrained concessions and uses transitions that identify concrete reasons. B sometimes substitutes decorative parallels for those direct connections, contrary to the preference against staged contrasts.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We should also keep the raised beds separate from the general bed count."
+            ],
+            "B": [
+              "Just as our timeline should distinguish between an abrupt change and a planned transition, our bed count must distinguish between standard plots and accessible ones."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material fidelity error; B makes the access claim categorical. B does add a useful connection between notice and the transition, but A better satisfies the decisive priority of developing the position without strengthening its claims. It also retains the author's conversational register without elaborate transitional framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because a standard half bed is not automatically a substitute for a raised bed",
+              "I am asking for a transition, not a new entitlement"
+            ],
+            "B": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed",
+              "Just as our timeline should distinguish between an abrupt change and a planned transition"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "fc099d2048285e8627a42b36c69aac0a9aafe224bd30d3c667d3886068c236d1",
+    "prompt_sha256": "15dc53a92cc23f3c507fc132a7867b6a7adb1aa4d70cb3d8b9b0ed1815608b90",
+    "raw_sha256": "04eedc6b6c813e25ff4947604aba438e477bc869eabb32a7326e4721e14dfdf0",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a meeting position statement, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the allocation, conditional shortfall, reservation, access assessment, and notice requirements. It softens the established-advantage concession into a concern about appearances, but retains the substantive rejection of permanent entitlement.",
+          "quotes": {
+            "source": [
+              "Sometimes it may be.",
+              "I am asking for a transition, not a new entitlement."
+            ],
+            "A": [
+              "Protecting established planting can look like protecting an established advantage",
+              "My proposal asks for a transition, not a new entitlement."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the operative proposal and its limitations. The categorical substitution wording is less qualified, but in context reasonably explains the reserved beds' purpose while leaving assessment unchanged; it does not clearly establish a different eligibility rule.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed",
+              "leaves the existing access assessment unchanged."
+            ],
+            "A": [],
+            "B": [
+              "standard ground is not a functional substitute for an accessible bed",
+              "leaves our existing accessibility criteria unchanged."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the figures, acceptance condition, temporary retention, accessibility provisions, and future notice. A weakens the concession about established advantage; B retains that concession but adds the unsupported evaluative label 'arbitrary' to changing the queue. Neither clearly changes the operative proposal.",
+          "quotes": {
+            "source": [
+              "Sometimes it may be.",
+              "Changing the order during this allocation would introduce another contested decision"
+            ],
+            "A": [
+              "Protecting established planting can look like protecting an established advantage",
+              "would introduce another contested decision"
+            ],
+            "B": [
+              "In some cases, it can.",
+              "would introduce an arbitrary, contested process"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sounds like an accessible statement delivered to fellow gardeners. B repeatedly intensifies ordinary points with promotional or administrative phrasing, making the speaker sound more formal than the occasion requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "provide a substantial number of offers",
+              "report any access problem it cannot resolve."
+            ],
+            "B": [
+              "substantial immediate entry—accommodating eighty percent of the current waitlist",
+              "formally report any access constraints it cannot resolve."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build the same coherent sequence: fairness and cultivation, available capacity, the temporary transition, predictable future rules, practical access, and queue fairness. Both explain why advance publication matters to incoming members.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That timing matters for new members as well.",
+              "The published rule should therefore cover both current and new members."
+            ],
+            "B": [
+              "Predictable timing is just as essential for incoming members.",
+              "A published rule must provide stability for returning and new members alike."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A generally preserves the author's conversational reasoning and restrained treatment of tradeoffs. B's emphatic packaging and description of a competing process as arbitrary fit less well with the request to retain real concessions without strengthening the story.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That shortfall is real, and this proposal will not clear the waiting list.",
+              "The meeting should choose with both costs in view"
+            ],
+            "B": [
+              "This proposal is intentionally limited, and it carries an undeniable cost",
+              "an arbitrary, contested process"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or requested derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a clear material error. A better serves this author's meeting statement by explaining the capacity limit and transition in direct, connected language. Its softened advantage concession is a weakness, but B's promotional emphasis and dismissal of queue changes as arbitrary more noticeably undermine the requested restrained argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does, however, provide a substantial number of offers without requiring every returning gardener to remove established plantings at once."
+            ],
+            "B": [
+              "substantial immediate entry—accommodating eighty percent of the current waitlist",
+              "an arbitrary, contested process"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f0a2cd77c326d73e58cecc59c2205fe1254cd4d367747aab3a93e602dddf57a5",
+    "prompt_sha256": "4113520ae9762992f95c634f3afcd66d32eac11e673a8053a95548601f135717",
+    "raw_sha256": "a64cd10f4a86c0b346df15818ea29083074ef4046f4baa6b18121e3080d82eae",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a community garden position statement; its arithmetic does not constitute a proof task.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the proposal, inventory, conditional shortfall, temporary retention, and notice provisions. Its categorical substitution wording is less careful than the source, but the retained reservation and unchanged assessment support reading it as an explanation of the reservation rather than a new eligibility restriction.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed",
+              "leaves the existing access assessment unchanged."
+            ],
+            "A": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed",
+              "leaving both the reservation and the existing access assessment unchanged."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Closely preserves the source's facts and qualifications, including acceptance-dependent arithmetic, the one-season transition, and access checks that do not depend on voluntary exchanges.",
+          "quotes": {
+            "source": [
+              "Eight offers would leave two households on the current waiting list without a bed, assuming every offer is accepted.",
+              "I do not want to count voluntary exchanges as a guaranteed part of the proposal."
+            ],
+            "A": [],
+            "B": [
+              "Assuming every offer is accepted, eight offers would still leave two households on the current waiting list without a bed.",
+              "I do not want to count voluntary exchanges as a guaranteed part of the proposal"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive concessions and allocation rules. B more precisely preserves the source's qualifications about raised-bed substitution and the possible capacity benefit of dividing occupied beds. A's stronger wording does not clearly change the policy, but is less faithful to the author's caution.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed",
+              "An immediate division of every occupied bed might create more places"
+            ],
+            "A": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed",
+              "Immediately halving every occupied bed would create more places today"
+            ],
+            "B": [
+              "a standard half bed is not automatically a substitute for a raised bed",
+              "An immediate division of every occupied bed might create more places"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B maintains a conversational meeting register. A is readable, but occasionally strains its phrasing and builds elaborate transitions around straightforward points.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "As our waiting list has grown to ten households across a garden of twenty full beds",
+              "Just as our timeline should distinguish between an abrupt change and a planned transition"
+            ],
+            "B": [
+              "there are twenty full beds and ten households waiting",
+              "We should also keep the raised beds separate from the general bed count."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A usefully states a seasonal rationale for giving notice, while B makes the relationship between functional access and the reservation particularly direct. Both sustain the argument and connect the spatial objection to practical route checks. A's timeline-to-bed-count analogy adds structure without establishing a necessary logical connection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because obligations in this garden are seasonal, however, major rule changes should align with the seasonal cycle",
+              "Treating beds as real physical spaces rather than interchangeable squares on a map also requires confronting a practical drawback"
+            ],
+            "B": [
+              "Because a standard half bed is not automatically a substitute for a raised bed",
+              "Starting with the current vacancies also raises a practical objection on the site"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B retains the author's plain explanations and candid uncertainty while connecting related claims. A supplies useful reasoning, but its staged parallel between timelines and bed categories feels imposed rather than arising from the garden's practical problem.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Just as our timeline should distinguish between an abrupt change and a planned transition, our bed count must distinguish between standard plots and accessible ones."
+            ],
+            "B": [
+              "I do not yet have a preferred permanent bed size, but we can decide on this transition without pretending that the permanent question has already been settled."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or mathematical exposition is requested.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a clear material error. B better combines the author's qualified claims with connected, conversational reasons: it directly explains why functional access requires preserving the reservation and then addresses the location objection. A's added seasonal rationale helps, but its elaborate analogy between timing and bed categories adds less useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Just as our timeline should distinguish between an abrupt change and a planned transition, our bed count must distinguish between standard plots and accessible ones."
+            ],
+            "B": [
+              "Because a standard half bed is not automatically a substitute for a raised bed",
+              "Starting with the current vacancies also raises a practical objection on the site"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "656571c70fe66ef5b1e689f5b9aaec998f8755f63633233726ad0be4f1f513d6",
+    "prompt_sha256": "4113520ae9762992f95c634f3afcd66d32eac11e673a8053a95548601f135717",
+    "raw_sha256": "a64cd10f4a86c0b346df15818ea29083074ef4046f4baa6b18121e3080d82eae",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an infrastructure recommendation, with no mathematical proof or derivation to assess.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the conditional recommendation, separate installation estimates, unknown harm reductions, equipment limitations, and unresolved drainage option. In context, budgeting staff time reasonably conveys the source's unresolved allocation rather than a new financial estimate.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "A reporting requirement cannot guarantee construction"
+            ],
+            "A": [
+              "allocate the necessary staff time, which has not yet been budgeted.",
+              "requiring an explicit status update in the next infrastructure report cannot guarantee that the pipe will be built"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the recommendation and its operational conditions, both installation estimates and their qualifications, failure and compliance risks, unallocated staff time, and the separate drainage project's reporting requirement without promising construction.",
+          "quotes": {
+            "source": [
+              "Neither estimate includes annual maintenance.",
+              "I support purchasing the signs only if the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure when the system is unavailable."
+            ],
+            "A": [],
+            "B": [
+              "Neither estimate includes annual maintenance",
+              "I support purchasing the signs only if the same decision names a team responsible for monthly sensor checks and provides a manual closure procedure for when the system is unavailable."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive recommendation and distinguish warning from drainage work without inventing comparative harm-reduction estimates. Both also retain residual unsafe entry and the possibility that drainage work loses momentum.",
+          "quotes": {
+            "source": [
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ],
+            "A": [
+              "there is no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ],
+            "B": [
+              "we have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable as a structured briefing, but its capitalized labels and abstract phrasing make ordinary operational points sound administrative. B expresses the same points in idiomatic prose close to the source's register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Assigned Maintenance Responsibility:",
+              "Preserving Decision Clarity on Drainage Replacement"
+            ],
+            "B": [
+              "Staff time for those checks has not yet been allocated",
+              "There is a reasonable concern that a visible new device will reduce pressure to address the drainage itself."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A usefully puts the decision conditions first, but then revisits them through several labeled categories. B develops a connected rationale: the closure gap motivates signs, the cost comparison limits the claim, failures explain safeguards, and the final paragraph addresses drainage momentum.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "subject to three explicit conditions",
+              "its operational limits explain why approval must be conditional:"
+            ],
+            "B": [
+              "The price difference makes the signs a smaller initial purchase, not a measured substitute for pipe replacement",
+              "The proposal therefore includes a permanent notice"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better meets the author's preference for connected technical prose that explains objections and preserves limitations. A's nested headings, repeated conditions, and emphasized slogan interrupt that conversational argument, although its structure remains usable for a briefing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**public warning is not physical protection**",
+              "#### 2. Managing System Limitations"
+            ],
+            "B": [
+              "This notice does not solve the problem of drivers overlooking or disregarding warnings",
+              "We can answer part of that concern by requiring the next infrastructure report to state the pipe project's status explicitly"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material fidelity error. B better satisfies the decisive preference for reasons and objections forming a readable argument: it connects lower initial cost to the limits of the comparison and connects equipment failure to safeguards. A makes the recommendation easy to scan, but its repeated distinctions and categorical structure are less aligned with this author's requested prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 1. Addressing Delayed Warnings vs. Resolving Flooding",
+              "Installing signs completes a warning project, not the flood-mitigation work:"
+            ],
+            "B": [
+              "The price difference makes the signs a smaller initial purchase, not a measured substitute for pipe replacement, so the proposal should be assessed as a response to delayed warnings rather than as a cheaper way to achieve the same outcome."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f2e3c1d4c0c7d6b449a153383800df623ff036821b9c40e771500d3aa76df9a9",
+    "prompt_sha256": "6347309d4132e257411e82345aea828c8f341cc8c9f6a94780825cba8d1aa8e6",
+    "raw_sha256": "49694b8216cb3e5b82f8bbe34ad18cb98b7ff511b5a43888dbce3ba6a2b89a90",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an edited public infrastructure recommendation, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves both estimates, the maintenance exclusion and unmeasured harm reduction, sensor and power limitations, the permanent notice, operational approval conditions, unallocated staff time, and separate drainage reporting. Its shorter opening removes rhetorical repetition without losing the warning-versus-protection distinction.",
+          "quotes": {
+            "source": [
+              "The drainage project would still be unresolved.",
+              "Staff time for those checks has not yet been allocated."
+            ],
+            "A": [
+              "The signs provide warning; they do not keep water out or resolve the drainage problem.",
+              "Staff time for those checks has not yet been allocated"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B presents pipe replacement as necessary to eliminate standing water, whereas the source establishes it only as an option requiring design work. It also turns unknown comparative harm reduction into a categorical claim of different outcomes. These changes could mislead the infrastructure decision. Separately, B makes sensor failure deterministically produce darkness and omits the existing lack of allocated staff time.",
+          "quotes": {
+            "source": [
+              "Pipe replacement remains a separate option requiring design work.",
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage.",
+              "The sensor can fail, and the signs need power.",
+              "Staff time for those checks has not yet been allocated."
+            ],
+            "A": [],
+            "B": [
+              "Eliminating the standing water requires physical remediation—specifically replacing the drainage pipe",
+              "Because there are no agreed estimates for how much either option reduces vehicle damage or injuries, the two projects do not produce identical outcomes",
+              "If the sensor fails or power is cut, the signs will remain dark.",
+              "allocate the required staff time before procurement."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the source's uncertainty and treats pipe replacement as a separate option. B's later acknowledgment that design remains necessary does not undo its earlier assertion that replacement is required. Likewise, different physical functions do not establish different injury or damage outcomes, as B's cost paragraph claims.",
+          "quotes": {
+            "source": [
+              "Pipe replacement remains a separate option requiring design work.",
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ],
+            "A": [
+              "Replacing the drainage pipe remains a separate option requiring design work",
+              "Because we have no agreed estimate of how much either option would reduce injuries or vehicle damage"
+            ],
+            "B": [
+              "Eliminating the standing water requires physical remediation—specifically replacing the drainage pipe",
+              "the two projects do not produce identical outcomes"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, readable sentences suitable for a public briefing. B remains understandable, but administrative labels and impersonal formulations add ceremony without helping explain the decision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The underpass sometimes floods before a maintenance crew can close the road.",
+              "I support purchasing the signs only if the approving decision explicitly names a team"
+            ],
+            "B": [
+              "**Decision Type:** Conditional Recommendation",
+              "It is recommended that the purchase and installation",
+              "Ongoing Governance of Drainage Remediation"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the delayed closure problem to the limited purpose and cost of signs, then explains failure risks, approval conditions, and the remaining drainage concern. B puts the decision prominently first, but develops much of its rationale as a catalogue and repeats the reporting requirement rather than building the argument through it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because sensors can fail and signs require power, an unlit sign does not mean the road is clear.",
+              "To address concerns that visible warning signs will reduce pressure to fix the drainage itself"
+            ],
+            "B": [
+              "**Mandatory Drainage Status Tracking:**",
+              "**System Failure Modes:**",
+              "**Evaluation Standard:**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the source's conversational recommendation and substantive qualifications while removing repeated defensive framing. B's institutional template and categorical language fit the author's stated preferences less well, particularly the instruction to retain real limitations rather than strengthen the story.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "However, the equipment should not be rejected merely because it cannot prevent every unsafe entry.",
+              "though a reporting requirement cannot guarantee construction."
+            ],
+            "B": [
+              "A clear operational distinction must be maintained",
+              "conversely, it cannot be deployed responsibly without human safeguards"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The briefing contains policy reasoning but no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B materially strengthens what is known about the necessary drainage intervention and comparative outcomes. Those changes outweigh B's convenient opening checklist. A also better meets the user's writing goal by presenting the warning proposal, its limits, its conditions, and the unresolved drainage concern as connected prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposal should be evaluated as a response to delayed warnings, not as a cheaper way to achieve the same outcome.",
+              "Replacing the drainage pipe remains a separate option requiring design work"
+            ],
+            "B": [
+              "Eliminating the standing water requires physical remediation—specifically replacing the drainage pipe",
+              "the two projects do not produce identical outcomes"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0d60a3f38482197c2e4f947c613e09ac5808cd7521f93825f69426529ddb1494",
+    "prompt_sha256": "6347309d4132e257411e82345aea828c8f341cc8c9f6a94780825cba8d1aa8e6",
+    "raw_sha256": "49694b8216cb3e5b82f8bbe34ad18cb98b7ff511b5a43888dbce3ba6a2b89a90",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an edited infrastructure recommendation, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A makes pipe replacement the necessary engineering remedy for eliminating standing water. The source presents replacement as an option requiring design work, without establishing that it is necessary or sufficient.",
+          "quotes": {
+            "source": [
+              "Pipe replacement remains a separate option requiring design work."
+            ],
+            "A": [
+              "Eliminating the standing water requires physical remediation—specifically replacing the drainage pipe, which remains an unresolved engineering proposal."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the conditional purchase, separate installation estimates, unknown harm reduction, failure limitations, unallocated staff time, and qualified reporting requirement.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "A reporting requirement cannot guarantee construction, and I am not claiming that it can."
+            ],
+            "A": [],
+            "B": [
+              "Staff time for those checks has not yet been allocated, and that condition must be settled before approval.",
+              "though a reporting requirement cannot guarantee construction."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B retains replacement as an unresolved option. A strengthens that option into the required remedy and does not explicitly preserve the current lack of allocated staff time.",
+          "quotes": {
+            "source": [
+              "Pipe replacement remains a separate option requiring design work.",
+              "Staff time for those checks has not yet been allocated."
+            ],
+            "A": [
+              "Eliminating the standing water requires physical remediation—specifically replacing the drainage pipe",
+              "allocate the required staff time before procurement."
+            ],
+            "B": [
+              "Replacing the drainage pipe remains a separate option requiring design work",
+              "Staff time for those checks has not yet been allocated"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, readable technical prose. A's repeated administrative labels and impersonal formulations make the same recommendation more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A clear operational distinction must be maintained between alerting road users and preventing flooding:",
+              "**Mandatory Drainage Status Tracking:**"
+            ],
+            "B": [
+              "The signs provide warning; they do not keep water out or resolve the drainage problem."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B develops the warning gap, explains the cost comparison, and then connects operational limits to approval conditions. A makes its recommendation easy to locate, but distributes the reasons for its conditions across separate categories.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 1. Executive Recommendation",
+              "### 3. Operational Limits and System Vulnerabilities"
+            ],
+            "B": [
+              "The proposal should be evaluated as a response to delayed warnings, not as a cheaper way to achieve the same outcome.",
+              "I support purchasing the signs only if the approving decision explicitly names a team"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected argument: it explains why the distinctions matter and retains the author's direct conditional support. A turns much of that argument into an administrative catalogue.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Evaluation Standard:** Equipment should not be dismissed simply because it cannot prevent every unsafe entry",
+              "### 4. Ongoing Governance of Drainage Remediation"
+            ],
+            "B": [
+              "Because we have no agreed estimate of how much either option would reduce injuries or vehicle damage, the signs are a smaller initial purchase rather than a substitute for pipe replacement."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, whereas A overstates what is established about pipe replacement. B also better serves the user's decisive priority: an intelligible argument connecting the warning intervention, its limitations, and its approval conditions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Eliminating the standing water requires physical remediation—specifically replacing the drainage pipe",
+              "### 2. Distinction Between Warning and Physical Protection"
+            ],
+            "B": [
+              "The proposal should be evaluated as a response to delayed warnings, not as a cheaper way to achieve the same outcome.",
+              "I support purchasing the signs only if the approving decision explicitly names a team responsible for monthly sensor checks"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3ab5abefe2f69e07046b571200cc51f3630fac73270288e6c5bb17cdd5516d48",
+    "prompt_sha256": "b6838c1ef3ab9fe08202ff87650038b59547b3b4bbc2655fe1aede23bfa893ee",
+    "raw_sha256": "fddcf9d7326b9bc7953897e03b497bcbf28bb6bc9f0db155d0da09cb39d6c77b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an edited infrastructure recommendation, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the costs, uncertainty, approval conditions, failure modes, residual unsafe entry, and limited role of reporting without adding guarantees.",
+          "quotes": {
+            "source": [
+              "The difference makes signs a smaller initial purchase, not a measured substitute for pipe replacement.",
+              "We can answer part of that concern by requiring the next infrastructure report to state the pipe project's status explicitly."
+            ],
+            "A": [
+              "The price difference makes the signs a smaller initial purchase, not a measured substitute for pipe replacement",
+              "We can answer part of that concern by requiring the next infrastructure report to state the pipe project's status explicitly"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the substantive conditions and limitations. Its claim about reducing risk reasonably describes the warning intervention's purpose without estimating benefits. 'Budgeted' is less exact than 'allocated,' but refers here to staff time and does not clearly introduce a separate funding claim.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "We have no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ],
+            "A": [],
+            "B": [
+              "allocate the necessary staff time, which has not yet been budgeted.",
+              "there is no agreed estimate of how much either option would reduce injuries or vehicle damage."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the substantive recommendation. A more precisely retains unallocated staff time and the modest claim that reporting answers only part of the concern; B's prevention language and budget wording are less exact, without establishing a material contradiction in context.",
+          "quotes": {
+            "source": [
+              "Staff time for those checks has not yet been allocated.",
+              "We can answer part of that concern"
+            ],
+            "A": [
+              "Staff time for those checks has not yet been allocated",
+              "We can answer part of that concern"
+            ],
+            "B": [
+              "which has not yet been budgeted.",
+              "To prevent a visible warning device from reducing momentum on physical flood mitigation"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as connected public-facing technical prose. B is understandable, but its repeated labels and emphatic formulations give the explanation a more schematic rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The price difference makes the signs a smaller initial purchase, not a measured substitute for pipe replacement",
+              "There is a reasonable concern that a visible new device will reduce pressure to address the drainage itself."
+            ],
+            "B": [
+              "However, **public warning is not physical protection**.",
+              "#### 3. Preserving Decision Clarity on Drainage Replacement"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the flooding problem to the limits of the proposed response, then explains why maintenance and reporting conditions belong. B's opening checklist is usable, but separates those conditions from their explanations and repeats the warning-versus-drainage distinction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the sensor can fail and the signs need power",
+              "I support purchasing the signs only if the same decision names a team responsible for monthly sensor checks"
+            ],
+            "B": [
+              "**subject to three explicit conditions**:",
+              "At the same time, its operational limits explain why approval must be conditional:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's conversational reasoning and measured response to objections. B's briefing structure is permissible, but its catalogue and emphatic headings fit the explicit preference for an integrated argument less well.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This notice does not solve the problem of drivers overlooking or disregarding warnings",
+              "We can answer part of that concern"
+            ],
+            "B": [
+              "#### 1. Addressing Delayed Warnings vs. Resolving Flooding",
+              "**Power and Sensor Failures:**",
+              "**Driver Compliance:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A better fulfills the user's priority of making reasons and objections form a connected argument: its treatment of residual unsafe entry and drainage pressure preserves the tradeoffs while explaining the conditions. B offers a usable recommendation checklist but develops those connections less naturally.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This notice does not solve the problem of drivers overlooking or disregarding warnings, though warning equipment should not be rejected merely because it cannot prevent every unsafe entry.",
+              "We can answer part of that concern by requiring the next infrastructure report to state the pipe project's status explicitly"
+            ],
+            "B": [
+              "**subject to three explicit conditions**:",
+              "#### 2. Managing System Limitations"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c72736974b675884e487de83ccf140cf18ebdf1bc67c0731999a83b67b5fe7b8",
+    "prompt_sha256": "b6838c1ef3ab9fe08202ff87650038b59547b3b4bbc2655fe1aede23bfa893ee",
+    "raw_sha256": "fddcf9d7326b9bc7953897e03b497bcbf28bb6bc9f0db155d0da09cb39d6c77b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a reflective curriculum contribution, with no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the proposal, classroom observation, causal uncertainty, and practical tradeoffs, but strengthens uncertainty about what repetition reveals into a definite claim that it reveals very little. This changes the evidential strength of the teacher's argument.",
+          "quotes": {
+            "source": [
+              "I am less sure that it tells us whether pupils know why the sequence applies."
+            ],
+            "A": [
+              "it tells us very little about whether pupils grasp *why* that sequence applies."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the instructional sequence, both correct methods and their comparison, unknown baseline and causation, replacement question, spare practice sheet, and bounded trial before a retention decision.",
+          "quotes": {
+            "source": [
+              "Without a comparison planned in advance, it would not establish that the new sheet improves attainment."
+            ],
+            "A": [],
+            "B": [
+              "Without a comparison planned in advance, it would not establish that the new sheet improves attainment"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B retains the source's tentative assessment of procedural practice. A asserts a stronger limitation. Both retain the main practical proposal and avoid claiming that the example caused the error.",
+          "quotes": {
+            "source": [
+              "I am less sure that it tells us whether pupils know why the sequence applies."
+            ],
+            "A": [
+              "it tells us very little about whether pupils grasp *why* that sequence applies."
+            ],
+            "B": [
+              "I am less sure it tells us whether pupils know why the sequence applies."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B sounds like a teacher contributing directly to a discussion. A is readable but adds formal framing and emphatic packaging that make the contribution sound more prepared and promotional.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This concern stems directly from an observation in my classroom last week.",
+              "For a low-risk, bounded change, I believe that insight is reason enough to try it."
+            ],
+            "B": [
+              "During last week's lesson, several pupils added the numerators and denominators separately after copying an example that used equal denominators.",
+              "I think that is still enough reason to try a bounded change."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both develop a usable argument: limits of copying, classroom evidence and its limits, the alternative task, practical costs, then a trial. Both connect the space constraint directly to replacing an existing question.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Making room for this will take both layout space and lesson time. To keep things manageable, I propose dropping one of the existing repetition exercises rather than adding another page."
+            ],
+            "B": [
+              "This addition will take space and lesson time. Rather than adding an extra page, I would remove one of the existing repetition questions."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the reflective teacher's calibrated confidence and practical reasoning. A adds persuasive labels and a more emphatic concluding promise. Its reference to showing understanding can reasonably be read as shorthand, but the phrasing is less restrained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it will show us what pupils actually understand",
+              "For a low-risk, bounded change"
+            ],
+            "B": [
+              "This trial would tell us what those responses reveal and what teachers find workable."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material fidelity error; A mildly strengthens the claim about repetition's diagnostic limitations. B also better meets the decisive priority of making a modest argument from classroom experience: its conclusion distinguishes what a trial can reveal from evidence of improved attainment without enlarging the claim.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it tells us very little about whether pupils grasp *why* that sequence applies.",
+              "it will show us what pupils actually understand"
+            ],
+            "B": [
+              "This trial would tell us what those responses reveal and what teachers find workable.",
+              "Without a comparison planned in advance, it would not establish that the new sheet improves attainment"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1ea1a2c8db99db113a8b398f89b8239344934eda5694e78460587715076a1329",
+    "prompt_sha256": "b5369678320acb14838f85411ad58388b24bd51edb7f3ef7f2a795bbbf590e0c",
+    "raw_sha256": "b4e521d3e0c47c9ab52bfc5df8df6e60e2be547fa30a2ee69fcc2fbf1123abba",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an argument about a classroom proposal, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposal and both solution methods, uncertainty about the baseline and causation, practical replacement and spare sheet, and the distinction between an informative trial and an attainment claim.",
+          "quotes": {
+            "source": [
+              "I also cannot tell whether the worked example caused the error. It may have exposed a misunderstanding that was already present."
+            ],
+            "A": [
+              "I cannot tell whether the worked example caused the error or exposed a misunderstanding that was already present."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the same substantive commitments and limitations. Its explicit chronology reasonably combines the source's copying observation with its statement about the first and next practice questions; it adds no causal finding.",
+          "quotes": {
+            "source": [
+              "What I can say is that correct copying on the first practice question did not prevent the misunderstanding from appearing on the next one."
+            ],
+            "A": [],
+            "B": [
+              "What I can say is that copying the steps correctly on the first practice question did not prevent the misunderstanding from appearing on the next."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact instructional comparison and its purpose, the limits on interpreting the classroom experience, and the bounded trial. B makes the diagnostic purpose explicit without claiming improved attainment.",
+          "quotes": {
+            "source": [
+              "It would ask pupils to explain where the same quantity appears in both."
+            ],
+            "A": [
+              "ask pupils to explain where the same quantity appears in both."
+            ],
+            "B": [
+              "ask pupils to explain where the same quantity appears in both."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic, connected prose suitable for a curriculum discussion. A is slightly more economical; B's additional transitions remain conversational and useful. Neither difference independently establishes a substantial advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because this addition will take space and lesson time, I would remove one of the existing repetition questions rather than add an extra page."
+            ],
+            "B": [
+              "Because this addition will take space on the page and time in the lesson, I would replace one of the existing repetition questions rather than add an extra page."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow the source's coherent order, but B explicitly connects the classroom experience to the diagnostic gap and introduces the explanation problem through its purpose. A leaves the reader to supply that second connection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposed explanation problem would show two correct solutions to the same addition"
+            ],
+            "B": [
+              "Last week's lesson highlighted this gap.",
+              "To give us a clearer view of what pupils understand, the proposed explanation problem would show two correct solutions"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both retain the reflective teacher's restraint and practical tradeoffs. B has a small advantage under the author's explicit preference for introducing a construction with why it is needed: the explanation task is immediately tied to understanding pupils' thinking.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposed explanation problem would show two correct solutions to the same addition"
+            ],
+            "B": [
+              "To give us a clearer view of what pupils understand"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error, and both are usable. B has a modest substantive edge because the user's priority is explanatory progression: its purpose clause directly answers why the proposed explanation task follows from the limits of correct copying, while preserving the trial's modest scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposed explanation problem would show two correct solutions to the same addition"
+            ],
+            "B": [
+              "To give us a clearer view of what pupils understand, the proposed explanation problem would show two correct solutions",
+              "this trial would not establish that the new sheet improves attainment"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "54715f22389e60186190a18103faa42bff78790c3a02e0735140787aa81673cd",
+    "prompt_sha256": "b5369678320acb14838f85411ad58388b24bd51edb7f3ef7f2a795bbbf590e0c",
+    "raw_sha256": "b4e521d3e0c47c9ab52bfc5df8df6e60e2be547fa30a2ee69fcc2fbf1123abba",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a teacher's curriculum contribution; it contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A strengthens the teacher's uncertainty about what repetition reveals into an affirmative claim that it reveals very little. This changes the evidential strength of the argument, although the proposal and its main limitations remain intact.",
+          "quotes": {
+            "source": [
+              "I am less sure that it tells us whether pupils know why the sequence applies."
+            ],
+            "A": [
+              "but it tells us very little about whether pupils grasp *why* that sequence applies."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the proposed replacement, both correct methods, the shared-quantity question, spare practice, and the one-lesson decision process. It also keeps the unknown baseline and uncertain causation separate from the observation.",
+          "quotes": {
+            "source": [
+              "I also cannot tell whether the worked example caused the error.",
+              "I would remove one of the existing repetition questions, not add an extra page."
+            ],
+            "A": [],
+            "B": [
+              "nor whether the worked example caused it or simply exposed an existing misunderstanding.",
+              "Rather than adding an extra page, I would remove one of the existing repetition questions."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B retains the teacher's qualified assessment of procedural practice. A makes that assessment firmer than the source supports; otherwise, both preserve the central proposal and practical tradeoffs.",
+          "quotes": {
+            "source": [
+              "I am less sure that it tells us whether pupils know why the sequence applies."
+            ],
+            "A": [
+              "but it tells us very little about whether pupils grasp *why* that sequence applies."
+            ],
+            "B": [
+              "but I am less sure it tells us whether pupils know why the sequence applies."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B sounds like a teacher explaining a classroom concern directly. A's more formal connective language adds editorial ceremony to an otherwise straightforward contribution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This concern stems directly from an observation in my classroom last week."
+            ],
+            "B": [
+              "During last week's lesson, several pupils added the numerators and denominators separately after copying an example that used equal denominators."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the limitation of copying through the classroom observation to the explanation task, its practical cost, and a bounded trial. Both explain why an existing question must be removed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Making room for this will take both layout space and lesson time. To keep things manageable, I propose dropping one of the existing repetition exercises rather than adding another page."
+            ],
+            "B": [
+              "This addition will take space and lesson time. Rather than adding an extra page, I would remove one of the existing repetition questions."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better maintains the reflective teacher's register and the distinction between useful responses and established attainment gains. A's claim to reveal actual understanding and its added reassurance about risk make the conclusion sound more promotional.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "but it will show us what pupils actually understand",
+              "For a low-risk, bounded change, I believe that insight is reason enough to try it."
+            ],
+            "B": [
+              "This trial would tell us what those responses reveal and what teachers find workable."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B preserves the source's qualifications without A's minor strengthening of the claim about procedural practice. Both organize the argument effectively, but B better serves the decisive priority: a modest proposal whose informative trial remains distinct from evidence of improved attainment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "but it tells us very little about whether pupils grasp *why* that sequence applies."
+            ],
+            "B": [
+              "Without a comparison planned in advance, it would not establish that the new sheet improves attainment, but I think that is still enough reason to try a bounded change."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1ea1a2c8db99db113a8b398f89b8239344934eda5694e78460587715076a1329",
+    "prompt_sha256": "b5369678320acb14838f85411ad58388b24bd51edb7f3ef7f2a795bbbf590e0c",
+    "raw_sha256": "43a669fd4c7c02af72c2f0f2637de3b06e1a22b51394ec5a5e8c9913fc107a64",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the exposition of a classroom-based proposal, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the sequence and replacement proposal, both solutions and the shared-quantity question, the uncertainty about baseline and causation, spare practice, and the limited purpose of the one-lesson trial.",
+          "quotes": {
+            "source": [
+              "I also cannot tell whether the worked example caused the error. It may have exposed a misunderstanding that was already present.",
+              "Without a comparison planned in advance, it would not establish that the new sheet improves attainment."
+            ],
+            "A": [
+              "I cannot tell whether the worked example caused the error or exposed a misunderstanding that was already present.",
+              "Without a comparison planned in advance, the trial would not establish that the new sheet improves attainment"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all substantive elements and qualifications. Its explicit chronology is supported by the source's account of correct copying on the first question and misunderstanding on the next.",
+          "quotes": {
+            "source": [
+              "What I can say is that correct copying on the first practice question did not prevent the misunderstanding from appearing on the next one."
+            ],
+            "A": [],
+            "B": [
+              "several pupils answered the first practice question correctly, only to add the numerators and denominators separately on the next one."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the complete modest proposal, practical accommodations, and evidential limits. Neither treats the observation as establishing causation or the trial as demonstrating improved attainment.",
+          "quotes": {
+            "source": [
+              "Without a comparison planned in advance, it would not establish that the new sheet improves attainment."
+            ],
+            "A": [
+              "Without a comparison planned in advance, the trial would not establish that the new sheet improves attainment"
+            ],
+            "B": [
+              "Without a comparison planned in advance, this trial would not establish that the new sheet improves attainment"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic, accessible prose suited to a curriculum discussion. A's compact phrasing and B's slightly more conversational phrasing are both natural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because this addition will take space and lesson time, I would remove one of the existing repetition questions rather than add an extra page."
+            ],
+            "B": [
+              "Because this addition will take space on the page and time in the lesson, I would replace one of the existing repetition questions rather than add an extra page."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B more explicitly connects the classroom observation to the need for the explanation problem. Its purpose-led introduction tells readers why the two solutions belong in the proposal, while A leaves that connection implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The proposed explanation problem would show two correct solutions to the same addition"
+            ],
+            "B": [
+              "To give us a clearer view of what pupils understand, the proposed explanation problem would show two correct solutions to the same addition"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both retain the reflective register, but B better meets the author's preference for readable reasoning in order. It separates the objection to ranking methods from the explanation of why that ranking would be unhelpful; A compresses these into a longer chain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It should not ask which method is always better, because a diagram may be illuminating for these numbers and cumbersome for others, and the worksheet should not turn a useful representation into a new compulsory routine."
+            ],
+            "B": [
+              "It should not ask which method is always better. A diagram may be illuminating for the numbers in that question and cumbersome for others"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a modest substantive advantage because it makes the observation-to-proposal connection explicit and introduces the explanation task with its purpose, directly serving the user's priority of making the argument easier to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Still, correct copying on the first practice question did not prevent the misunderstanding from appearing on the next one.",
+              "The proposed explanation problem would show two correct solutions"
+            ],
+            "B": [
+              "Last week's lesson highlighted this gap.",
+              "To give us a clearer view of what pupils understand, the proposed explanation problem would show two correct solutions"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "54715f22389e60186190a18103faa42bff78790c3a02e0735140787aa81673cd",
+    "prompt_sha256": "b5369678320acb14838f85411ad58388b24bd51edb7f3ef7f2a795bbbf590e0c",
+    "raw_sha256": "43a669fd4c7c02af72c2f0f2637de3b06e1a22b51394ec5a5e8c9913fc107a64",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
