@@ -3591,6 +3591,327 @@
   },
   {
     "case": "large-dev-a-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a research summary of an exploratory study, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the within-participant design, counterbalancing, timed interval, statistical summaries, overlapping interview reports, and limitations. Its additional cautions explain the evidence boundaries without materially changing them.",
+          "quotes": {
+            "source": [
+              "Twelve experienced screen-reader users each completed four tasks with each version.",
+              "Four of those nine also described occasions when the cue interrupted speech they were still listening to.",
+              "We did not implement or test that behavior in this study"
+            ],
+            "A": [
+              "Twelve experienced screen-reader users completed four tasks with the spoken cue and four tasks with the existing version.",
+              "four of them described moments when the row announcement interrupted speech they were still listening to.",
+              "We did not build or evaluate interruptible behavior in this study"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the design and table reversal, participant-level timing statistics and breakdown, interview overlap, unasked default preference, possible carryover, and sample and table limitations. Interruptibility remains an untested possibility.",
+          "quotes": {
+            "source": [
+              "The median of the twelve participant-level mean completion times was 38 seconds with the cue and 41 seconds without it.",
+              "Participants were not asked to choose a default.",
+              "A next version could make the cue interruptible."
+            ],
+            "A": [],
+            "B": [
+              "The median of the twelve participant-level mean completion times was 38 seconds with the cue and 41 seconds without it.",
+              "we did not ask participants to choose a default.",
+              "A next version could make the cue interruptible."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the numerical results and their descriptive status, distinguish reported orientation from default preference, and retain the limits on generalization and interruptibility. A makes some cautions more explicit, but B already communicates the same substantive boundaries.",
+          "quotes": {
+            "source": [
+              "This is a difference between two medians, not the median of twelve within-person differences.",
+              "Not asking for removal is not the same response as wanting the feature enabled by default."
+            ],
+            "A": [
+              "It is the difference between two group medians, not the median of twelve within-person differences.",
+              "Not asking to remove a prototype feature is not the same as wanting it enabled by default"
+            ],
+            "B": [
+              "This is a difference between two medians, not the median of twelve within-person differences.",
+              "Not asking for removal is not the same response as wanting the feature enabled by default"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B maintains conversational technical prose without repeatedly interrupting the account with a question and answer. A's questions are individually intelligible, but their accumulation makes the summary feel rehearsed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Did the counterbalancing eliminate practice effects? No.",
+              "but should we read silence as support for turning it on by default? No."
+            ],
+            "B": [
+              "The ordering scheme prevented complete alignment between version and practice, but it did not remove every possible learning effect.",
+              "Not asking for removal is not the same response as wanting the feature enabled by default"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the research question and design through timing and interviews to limitations and the next design possibility. A usefully explains the focus-versus-attention problem, but its extended limitations discussion before the results and recurring cautionary detours make the overall argument less continuous.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Does returning focus return the user's attention to the right place?",
+              "Our scope had two other boundaries",
+              "### What the Timings Show—and What They Do Not"
+            ],
+            "B": [
+              "Does a spoken location cue help users return to a table after opening a note?",
+              "We logged time from closing the note to activating the requested table entry",
+              "These observations make an orientation benefit plausible for some users under these tasks"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B fits the requested direct, questioning voice through an opening question followed by connected explanation. A supplies useful explanation, but repeatedly stages questions and restates evidentiary cautions, contrary to the author's preference against rhetorical repetition and repeated defensive commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "What does that three-second gap actually represent?",
+              "Saying a cue feels orienting in an interview is self-reported perception, not measured navigation performance",
+              "Would an interruptible cue preserve the orientation cue without stepping on active audio?"
+            ],
+            "B": [
+              "Does a spoken location cue help users return to a table after opening a note?",
+              "That competition is a design question even if a time difference eventually proves reliable.",
+              "A next version could make the cue interruptible."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the requested artifact nor the source contains a proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B better satisfies the decisive preference for a coherent research summary with connected explanation and restrained qualification. Its final paragraph connects the reported benefit, competing speech, and untested next version directly; A covers those points accurately but adds repeated rhetorical scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Would an interruptible cue preserve the orientation cue without stepping on active audio? That requires its own test."
+            ],
+            "B": [
+              "That competition is a design question even if a time difference eventually proves reliable. A next version could make the cue interruptible."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7d87e1a349a7ff91431aa54a3414682cad5f43dd1eafd1d5791fe63ac494bda3",
+    "prompt_sha256": "bf8f455332bc5010da1d587bb1fa3df7f4352dd1c01ed509e55616f088068f62",
+    "raw_sha256": "c7293feaeca3a005ef6ce72f5ded76ec0e6ef4af69dfec1117fd2553fe4a5829",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested work is an exploratory accessibility research summary, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the timing statistics, participant breakdown, ordering and table reversal, interview overlap, default-setting caveat, and study limitations. 'Four tasks with both versions' is less explicit than 'with each version,' but reasonably conveys the same repeated design in context and does not establish a changed task count.",
+          "quotes": {
+            "source": [
+              "Twelve experienced screen-reader users each completed four tasks with each version.",
+              "Seven participants had a lower personal mean time with the cue, three had a higher mean, and two had equal means at the recorded precision."
+            ],
+            "A": [
+              "Twelve experienced screen-reader users each completed four tasks with both versions.",
+              "Individually, seven participants had lower mean times with the cue, three had higher means, and two were tied at our recorded precision."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the study design, descriptive timing results, interview counts, unasked defaults, carryover possibility, and scope limits. 'For most, yes' is immediately grounded in reported feelings, not measured performance; the later learning caveat also prevents the stated purpose of counterbalancing from becoming a guarantee.",
+          "quotes": {
+            "source": [
+              "Nine participants said in the closing interview that the cue helped them feel oriented.",
+              "it did not remove every possible learning effect.",
+              "We did not implement or test that behavior in this study"
+            ],
+            "A": [],
+            "B": [
+              "Did it help users orient? For most, yes; for some, it created friction. Nine participants reported in closing interviews that the cue helped them feel oriented.",
+              "it could not eliminate learning effects",
+              "we did not implement or test interruptible speech in this study"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive evidence and qualifications, including the distinction between group medians and within-person differences. A is less explicit about tasks per version; B briefly sounds more affirmative about orientation, but the surrounding sentences resolve both concerns sufficiently to avoid a substantive fidelity preference.",
+          "quotes": {
+            "source": [
+              "This is a difference between two medians, not the median of twelve within-person differences.",
+              "These observations make an orientation benefit plausible for some users under these tasks"
+            ],
+            "A": [
+              "This compares two medians rather than calculating the median of within-person differences",
+              "These results make an orientation benefit plausible for some users under these tasks"
+            ],
+            "B": [
+              "That is a difference between two medians, not the median of twelve within-person differences.",
+              "An orientation benefit is plausible for some users under these conditions"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses readable, conversational transitions tied to the findings. B is readable too, but phrases such as 'posted,' 'broke even,' and the closing appeal to the user's ear make the research account sound more performed than the task requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "But extra audio can get in the way: four of those nine described moments when the cue spoke over speech they were still listening to.",
+              "Individually, seven participants had lower mean times with the cue"
+            ],
+            "B": [
+              "seven participants posted a lower personal mean time with the cue",
+              "two broke even at our recorded precision.",
+              "The next test needs to follow the user's ear."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the cue's purpose, describe the comparison, separate timing from interview evidence, and connect limitations to a possible next version. A's final paragraph is dense, while B's questions provide navigation but segment the argument; neither difference produces a decisive advantage in reasoning order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Does that help them return to the table? To find out, we tested two designs.",
+              "These results make an orientation benefit plausible for some users under these tasks, but competing speech remains an open design problem"
+            ],
+            "B": [
+              "We tested whether speaking the current row label helps screen-reader users reorient and resume navigation.",
+              "Where does this leave the product? An orientation benefit is plausible for some users under these conditions"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A uses a purposeful opening question and then develops the evidence in connected prose. B turns nearly every transition into a rhetorical question and echoes the sample's closing cadence with an ornamental slogan. That misses the explicit request to adopt the voice without making every transition a question.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Does that help them return to the table? To find out, we tested two designs.",
+              "A future version could make the cue interruptible, but because we did not build or test that behavior here, the current timings cannot serve as evidence for it."
+            ],
+            "B": [
+              "Did the cue save time?",
+              "What limits these results?",
+              "Where does this leave the product?",
+              "The next test needs to follow the user's ear."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains empirical summaries and qualifications, not a mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both preserve the evidence without a material error. A better meets the user's priority of direct, connected explanation: its closing sentence explains why interruptibility needs separate evidence. B conveys the same limitation but surrounds the account with recurring rhetorical prompts and ends with a sample-like slogan that adds no useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A future version could make the cue interruptible, but because we did not build or test that behavior here, the current timings cannot serve as evidence for it."
+            ],
+            "B": [
+              "But we did not implement or test interruptible speech in this study, so these timings cannot be used as evidence for it. The next test needs to follow the user's ear."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f70d1ddd984ff575406ec9ade4b19faf6cde37bf940da973eacd34c4edc4d185",
+    "prompt_sha256": "bf8f455332bc5010da1d587bb1fa3df7f4352dd1c01ed509e55616f088068f62",
+    "raw_sha256": "c7293feaeca3a005ef6ce72f5ded76ec0e6ef4af69dfec1117fd2553fe4a5829",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-07",
     "config": "flash-high",
     "candidate": "scholarly-20261103",
     "reference": "none",
@@ -3904,6 +4225,1197 @@
     "source_sha256": "bd8979fafae7a767274473ff635b13e99d3a752380ae9a8975e20dc28fd36e0b",
     "prompt_sha256": "43a3a7f223095773ed983493cf1f0069efba9a545f99f77c803be6b74619e4d9",
     "raw_sha256": "85dce0d0b74fa69345f8e7245e369855cee0cf5657c8da1a69c44c31caed8546",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing an evaluation report, not presenting a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the counts, scoring criteria, assignment, and assessment limitations, but broadens the absence of a scored baseline task into an assertion that prior knowledge was never assessed. The source establishes unknown starting knowledge, not the absence of every form of assessment.",
+          "quotes": {
+            "source": [
+              "We did not score an earlier baseline task, so the two groups' starting knowledge is unknown."
+            ],
+            "A": [
+              "Prior pupil knowledge was not assessed before the lesson, leaving the two groups' starting points unknown."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the layout comparison, four classes, teacher selection, unrecorded assistance, returned and absent counts, all scores and criteria, blinded assessment, second-scoring check, and interpretive limits.",
+          "quotes": {
+            "source": [
+              "We did not score an earlier baseline task, so the two groups' starting knowledge is unknown.",
+              "The scorers agreed on nine, and discussion resolved the tenth before the final totals above were compiled."
+            ],
+            "A": [],
+            "B": [
+              "Because the evaluation did not score an earlier baseline task, the two groups' starting knowledge is unknown.",
+              "The two scorers agreed on nine and resolved the tenth through discussion before compiling the final totals."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical evidence and describe an association rather than a causal effect. A's derived percentages are accurate, but its claim that prior knowledge was not assessed exceeds the source; B preserves the narrower baseline qualification.",
+          "quotes": {
+            "source": [
+              "We did not score an earlier baseline task, so the two groups' starting knowledge is unknown."
+            ],
+            "A": [
+              "Prior pupil knowledge was not assessed before the lesson, leaving the two groups' starting points unknown."
+            ],
+            "B": [
+              "Because the evaluation did not score an earlier baseline task, the two groups' starting knowledge is unknown."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable and its table helps comparison, but its administrative phrasing is less direct for teachers. B explains the same distinctions in conversational report prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Class teachers selected which version to administer before viewing any pupil responses.",
+              "Consequently, neither pupil allocation nor the level of classroom support was experimentally controlled."
+            ],
+            "B": [
+              "Teachers chose the version for their classes before seeing pupil responses.",
+              "As a result, the comparison did not control for teacher assistance or how pupils were assigned to each version."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the comparison, explain participation and scoring, and bound the findings. A's procedure-to-table organization supports scanning; B's connected paragraphs keep the single-question qualification immediately beside the scores. Both sequences are workable for a bulletin.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Scoring Procedure",
+              "### Findings",
+              "### Key Limitations for Interpretation"
+            ],
+            "B": [
+              "These response scores reflect a single question rather than pupils' general understanding of volume.",
+              "The side-by-side layout was associated with a somewhat larger share of fully credited answers in these classes."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's connected explanation and restrained completed-report stance. A's conclusion repeats the limitations and adds specific future controls, making the ending more prescriptive than this task needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The trial provides a concrete comparison of these completed responses and highlights the controls—such as baseline assessments and standardized interaction logs—needed in future evaluations."
+            ],
+            "B": [
+              "The completed work provides a concrete comparison of these returned answers and identifies what a more controlled evaluation would need to record."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B avoids A's minor overstatement about prior assessment. Beyond fidelity, it gives teachers the comparison and its limits in connected prose, placing the narrow outcome qualification beside the results. A's useful table does not outweigh that closer fit to the user's scope and explanatory preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Prior pupil knowledge was not assessed before the lesson, leaving the two groups' starting points unknown.",
+              "### Key Limitations for Interpretation"
+            ],
+            "B": [
+              "These response scores reflect a single question rather than pupils' general understanding of volume.",
+              "However, the evaluation cannot separate the layout from class differences or classroom assistance."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0cac81422cd6fa622dffb81fc69dd62d41f85bc28b62a086a1c6bede874e6bed",
+    "prompt_sha256": "abfc4fec1dac1483fed6dcedbee95778515ce55994004e28e51bc73aa40763fd",
+    "raw_sha256": "521ac44e2c84e0bc430da8d7819117b07107ff63ccfa621425d2200b0eda8c68",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a classroom evaluation report; its descriptive score counts do not constitute a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the intended layout-only difference, class assignment, assistance limitation, participation counts, complete score distribution and criteria, blinded scoring, second-scoring resolution, and limits on interpretation.",
+          "quotes": {
+            "source": [
+              "The analysis included only returned worksheets.",
+              "The scorers agreed on nine, and discussion resolved the tenth before the final totals above were compiled."
+            ],
+            "A": [
+              "the analysis included only these returned worksheets.",
+              "The scorers agreed on nine, and discussion resolved the tenth before the final totals above were compiled."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the evidence and substantive qualifications. Its description of independent marking can reasonably mean the second scorer supplied their own judgments; it does not clearly establish an additional blinding protocol, so that ambiguity does not warrant a material-error finding.",
+          "quotes": {
+            "source": [
+              "Ten transcribed answers were scored again by a second scorer.",
+              "The evaluation cannot separate layout from class differences or classroom assistance."
+            ],
+            "A": [],
+            "B": [
+              "a second scorer independently marked 10 transcribed answers.",
+              "The evaluation cannot separate the effect of worksheet layout from existing class differences or in-lesson support."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all counts, scoring criteria, returned-only analysis, assignment and assistance limitations, scoring checks, and unknown baseline knowledge. Neither infers causation, pupil preference, or general understanding from the response scores.",
+          "quotes": {
+            "source": [
+              "These are response scores from a single question, rather than a measure of pupils' general understanding of volume."
+            ],
+            "A": [
+              "These are response scores from a single question, rather than a measure of pupils' general understanding of volume."
+            ],
+            "B": [
+              "The scores reflect written responses to one explanation question rather than a comprehensive measure of pupils' general understanding of volume."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A has natural connected prose, though its sentence collecting all six score counts is dense. B makes those counts easier to scan in a table, while some introductory phrasing is more bureaucratic. Both remain readable for teachers.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both points were awarded on 31 of 52 A worksheets and 27 of 49 B worksheets, one point was awarded on 15 A worksheets and 16 B worksheets, and the remaining six worksheets in each group received zero."
+            ],
+            "B": [
+              "| **2 points** (Both criteria met) | 31 worksheets | 27 worksheets |",
+              "When interpreting these results for classroom practice, several constraints of the completed evaluation apply:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A explains immediately why unrecorded exchanges limit the comparison and places the single-question qualification directly after the scores. B has a sensible bulletin structure, but delays the unrecorded-assistance fact and its consequence until after the findings, separating evidence from the explanation needed to interpret it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we did not record those exchanges. Neither pupil assignment nor teacher assistance can therefore be treated as controlled by the worksheet comparison.",
+              "These are response scores from a single question, rather than a measure of pupils' general understanding of volume."
+            ],
+            "B": [
+              "All teachers worked from the same written instructions, though they were free to answer pupil questions during the lesson.",
+              "Because teachers chose which version their classes used and unrecorded teacher–pupil Q&A took place during the lesson, neither pupil assignment nor teacher assistance was controlled."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the author's preference for connected explanations with qualifications beside their claims. B's headings and table suit a bulletin, but its separate inventory of constraints makes the reasoning feel more packaged and less continuous.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In these classes, the side-by-side layout was associated with a somewhat larger share of fully credited answers, but the evaluation cannot separate layout from class differences or classroom assistance."
+            ],
+            "B": [
+              "In these four classes, the side-by-side layout (Version A) was associated with a somewhat higher proportion of fully credited (2-point) answers than the reference-page layout (Version B), while equal numbers of worksheets in both groups received zero points.",
+              "### Scope and Limitations of the Evaluation"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a clear material error. A better meets the decisive preference for explaining the comparison's limits where they become relevant: unrecorded exchanges immediately lead to the control limitation, and the association immediately carries its causal qualification. B's table is useful, but its separated limitations section weakens that connection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Neither pupil assignment nor teacher assistance can therefore be treated as controlled by the worksheet comparison.",
+              "the side-by-side layout was associated with a somewhat larger share of fully credited answers, but the evaluation cannot separate layout from class differences or classroom assistance."
+            ],
+            "B": [
+              "### Scope and Limitations of the Evaluation",
+              "When interpreting these results for classroom practice, several constraints of the completed evaluation apply:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "38fc82241b041059166457cda40ed6e583bd732dc8e54a79e37ec486be6f8506",
+    "prompt_sha256": "abfc4fec1dac1483fed6dcedbee95778515ce55994004e28e51bc73aa40763fd",
+    "raw_sha256": "521ac44e2c84e0bc430da8d7819117b07107ff63ccfa621425d2200b0eda8c68",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a classroom evaluation report, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A adds an unsupported absence of evidence: the source says no preference question was asked, whereas A also asserts that pupils were not surveyed about layout ease. Readers could consequently infer that usability was never surveyed.",
+          "quotes": {
+            "source": [
+              "because no preference question was asked."
+            ],
+            "A": [
+              "Pupils were not surveyed about layout ease or format preference."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the assignment, participation, scoring, second-scoring check, and interpretive limitations without materially extending the evidence.",
+          "quotes": {
+            "source": [
+              "The analysis included only returned worksheets."
+            ],
+            "A": [],
+            "B": [
+              "the analysis included only returned worksheets."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical evidence and causal limitations. B preserves the stated boundary on preference evidence; A extends it to an unreported absence of a layout-ease survey.",
+          "quotes": {
+            "source": [
+              "It also does not show which layout pupils preferred, because no preference question was asked."
+            ],
+            "A": [
+              "Pupils were not surveyed about layout ease or format preference."
+            ],
+            "B": [
+              "It also does not show which layout pupils preferred, because no preference question was asked."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the methodological limits in direct, teacher-readable language. A remains readable, but its labels and more abstract methodological phrasing make the bulletin sound more formal than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Consequently, neither pupil allocation nor the level of classroom support was experimentally controlled."
+            ],
+            "B": [
+              "As a result, the comparison did not control for teacher assistance or how pupils were assigned to each version."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects participation to uncontrolled assistance and places the single-question qualification immediately after the scores. A offers a useful results table, but repeats the central limitation across implementation, limitations, and conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Consequently, neither pupil allocation nor the level of classroom support was experimentally controlled.",
+              "the evaluation cannot separate layout design from teacher assistance or classroom differences."
+            ],
+            "B": [
+              "These response scores reflect a single question rather than pupils' general understanding of volume."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the requested connected, restrained report of completed work. A's closing prescription of particular future controls shifts toward recommendations beyond the source's general statement about needed records.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "highlights the controls—such as baseline assessments and standardized interaction logs—needed in future evaluations."
+            ],
+            "B": [
+              "The completed work provides a concrete comparison of these returned answers and identifies what a more controlled evaluation would need to record."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material evidence changes, whereas A modestly broadens the reported absence of survey data. B also better serves this user's preference for connected explanation: it puts the scope qualification beside the scores and keeps the ending focused on the completed evaluation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Pupils were not surveyed about layout ease or format preference."
+            ],
+            "B": [
+              "These response scores reflect a single question rather than pupils' general understanding of volume."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0cac81422cd6fa622dffb81fc69dd62d41f85bc28b62a086a1c6bede874e6bed",
+    "prompt_sha256": "abfc4fec1dac1483fed6dcedbee95778515ce55994004e28e51bc73aa40763fd",
+    "raw_sha256": "8086b139b9ff36c232b2eb443ec1c6abe8216cfee635f31bf51e609f213c8eb6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a classroom evaluation report, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the layout comparison, teacher selection and unrecorded assistance, all counts and scoring criteria, blinded scoring, second-scoring resolution, and limitations.",
+          "quotes": {
+            "source": [
+              "The analysis included only returned worksheets."
+            ],
+            "A": [
+              "the analysis included only these returned worksheets."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the same evidence and qualifications. Its table accurately reorganizes the scores, and its methodological explanations do not materially change what the evaluation establishes.",
+          "quotes": {
+            "source": [
+              "The analysis included only returned worksheets."
+            ],
+            "A": [],
+            "B": [
+              "Only returned worksheets were included in the analysis:"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the evidence, avoid causal attribution and baseline comparability, and distinguish performance on one question from general understanding.",
+          "quotes": {
+            "source": [
+              "These are response scores from a single question, rather than a measure of pupils' general understanding of volume."
+            ],
+            "A": [
+              "These are response scores from a single question, rather than a measure of pupils' general understanding of volume."
+            ],
+            "B": [
+              "The scores reflect written responses to one explanation question rather than a comprehensive measure of pupils' general understanding of volume."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses accessible continuous prose, though its combined score sentence is dense. B's surrounding prose is somewhat more formal, but the table makes the numerical comparison easy to read. Both suit teachers.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both points were awarded on 31 of 52 A worksheets and 27 of 49 B worksheets, one point was awarded on 15 A worksheets and 16 B worksheets, and the remaining six worksheets in each group received zero."
+            ],
+            "B": [
+              "| **2 points** (Both criteria met) | 31 worksheets | 27 worksheets |"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B completes the scoring procedure before presenting the results, then gathers the interpretive limits. A presents results before returning to the second-scoring procedure, which slightly interrupts the account.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Ten transcribed answers were scored again by a second scorer.",
+              "before the final totals above were compiled."
+            ],
+            "B": [
+              "To check the scoring procedure, a second scorer independently marked 10 transcribed answers.",
+              "### Findings on the Final Explanation Question"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the author's preference for connected conversational explanation, attaching qualifications directly to the claims they constrain. B's labeled sections and limitation bullets remain appropriate for a bulletin but give the report a more generic institutional rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We also did not score an earlier baseline task, so the two groups' starting knowledge is unknown."
+            ],
+            "B": [
+              "* **No baseline measure:** No prior task was scored, so the two groups' starting knowledge before the lesson is unknown."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both make the central comparison and its limits understandable without promoting layout causally. A better preserves the author's connected prose and adjacent qualifications; B's table and procedure-before-results organization provide practical advantages for a school bulletin. These serve the stated goal comparably.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In these classes, the side-by-side layout was associated with a somewhat larger share of fully credited answers, but the evaluation cannot separate layout from class differences or classroom assistance."
+            ],
+            "B": [
+              "| **2 points** (Both criteria met) | 31 worksheets | 27 worksheets |",
+              "The evaluation cannot separate the effect of worksheet layout from existing class differences or in-lesson support."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "38fc82241b041059166457cda40ed6e583bd732dc8e54a79e37ec486be6f8506",
+    "prompt_sha256": "abfc4fec1dac1483fed6dcedbee95778515ce55994004e28e51bc73aa40763fd",
+    "raw_sha256": "8086b139b9ff36c232b2eb443ec1c6abe8216cfee635f31bf51e609f213c8eb6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a community garden position statement, not a proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the allocation proposal but turns a qualified warning about substituting standard beds for raised beds into a categorical claim of functional incompatibility.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "A": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the inventory, conditional shortfall, one-season transition, raised-bed reservation and assessment, access safeguards, current queue order, and unresolved permanent bed size.",
+          "quotes": {
+            "source": [
+              "Eight offers would leave two households on the current waiting list without a bed, assuming every offer is accepted."
+            ],
+            "A": [],
+            "B": [
+              "Assuming every offer is accepted, eight offers would still leave two households on the current waiting list without a bed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the central proposal and substantive objections. B also preserves the qualification that standard beds are not automatically substitutes; A unnecessarily makes that claim categorical.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "A": [
+              "a standard ground-level half bed is not a functional substitute for a raised bed"
+            ],
+            "B": [
+              "a standard half bed is not automatically a substitute for a raised bed"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B sounds like a readable statement for a community meeting. A is generally fluent, but its extended analogy between the timeline and bed count makes a straightforward transition feel staged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Just as our timeline should distinguish between an abrupt change and a planned transition, our bed count must distinguish between standard plots and accessible ones."
+            ],
+            "B": [
+              "We should also keep the raised beds separate from the general bed count."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both develop the same coherent argument: demand and cultivation, the limited numerical benefit, a transition without entitlement, predictability for newcomers, physical access, and queue fairness. Both explain why notice matters to incoming members rather than merely listing another condition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Establishing the next rule before renewals open is just as important for incoming gardeners as it is for returning ones."
+            ],
+            "B": [
+              "That timing matters for new members as well."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's conversational concessions and measured claims. A adds rhetorical emphasis to reasoning that already works, whereas B connects the numerical limitation directly to the proposal's benefit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That shortfall is real, and we should not speak of eight offers as though they clear the queue."
+            ],
+            "B": [
+              "My proposal would not clear the waiting list, and we should not describe eight offers as though they do, but it would let us make a substantial number of offers without requiring every returning gardener to remove established planting at once."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material fidelity error; A strengthens the raised-bed claim beyond the source. B also better serves the decisive priority of connected reasoning without rhetorical inflation: its queue paragraph acknowledges unequal access to information while explaining the separate case for notice before changing order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Reordering the list in the middle of an allocation, however, would introduce another contested rule change without prior notice—the very problem a transition is meant to avoid."
+            ],
+            "B": [
+              "I know that preserving this order also preserves whatever disadvantages people faced in learning about the list, but changing the order during this allocation would introduce another contested decision without giving households notice."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "656571c70fe66ef5b1e689f5b9aaec998f8755f63633233726ad0be4f1f513d6",
+    "prompt_sha256": "e2c3084715edb0dfc40acd9a99d5144dd87f03ea0282db530ffbb9a93a513ede",
+    "raw_sha256": "88c1f23b410cd8c5eb3cca2e353c104d0e98fa33f46ecf8c6d76c275fe46534c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and prose of a community garden position statement, not mathematical exposition.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the operational proposal and its qualifications, but weakens an explicit concession: the source admits that protecting planting sometimes protects established advantage; A says only that it can look that way.",
+          "quotes": {
+            "source": [
+              "Some people have suggested that established planting is simply another word for an established advantage. Sometimes it may be."
+            ],
+            "A": [
+              "Protecting established planting can look like protecting an established advantage"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B retains the main allocation rule but makes bed incompatibility categorical, replaces the author's lack of a preferred permanent size with permission to defer a decision, and introduces an unsupported likelihood about households receiving no plot. Calling a queue change arbitrary also prejudges an objection the source treats as contested.",
+          "quotes": {
+            "source": [
+              "A standard half bed is not automatically a substitute for a raised bed",
+              "I do not yet have a preferred permanent bed size.",
+              "two waiting households may receive no offer this season.",
+              "Changing the order during this allocation would introduce another contested decision without giving households notice."
+            ],
+            "A": [],
+            "B": [
+              "standard ground is not a functional substitute for an accessible bed",
+              "We do not need to settle on a permanent bed size tonight",
+              "two households will likely receive no plot this season.",
+              "altering the selection criteria mid-allocation would introduce an arbitrary, contested process"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A's weakened concession matters, but its practical claims and stated author position remain closer to the source. B introduces broader changes, including categorical bed incompatibility and an unsupported probability, while omitting the author's explicit lack of a permanent-size preference.",
+          "quotes": {
+            "source": [
+              "I do not yet have a preferred permanent bed size.",
+              "two waiting households may receive no offer this season."
+            ],
+            "A": [
+              "I do not yet have a preferred permanent bed size",
+              "two waiting households may receive no offer this season."
+            ],
+            "B": [
+              "We do not need to settle on a permanent bed size tonight",
+              "two households will likely receive no plot this season."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, idiomatic meeting prose. B's phrases about immediate entry and accommodating a percentage sound more promotional and bureaucratic than the surrounding discussion requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does, however, provide a substantial number of offers without requiring every returning gardener to remove established plantings at once."
+            ],
+            "B": [
+              "What it does achieve is substantial immediate entry—accommodating eighty percent of the current waitlist—without requiring every returning gardener to uproot established planting overnight."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both sustain a recognizable argument rather than a catalogue. Each moves from the transition's benefit to its limits and explains why predictable rules matter for new members before addressing access and queue order. Their differences are chiefly fidelity and register, not organization.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If a household accepts a half bed now only to learn later that half beds will be merged or moved next year, we will simply repeat the same uncertainty on a smaller plot."
+            ],
+            "B": [
+              "If a household accepts a half bed now only to discover next spring that half beds will be relocated or reconfigured, we will have inflicted that same uncertainty on a smaller parcel of ground."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the requested restraint and willingness to leave competing considerations visible. B adds evaluative language that makes the argument sound more certain and adversarial, particularly when discussing changes to queue order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "However, changing the order during this allocation would introduce another contested decision without giving households notice."
+            ],
+            "B": [
+              "However, altering the selection criteria mid-allocation would introduce an arbitrary, contested process without giving waiting households fair notice."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both have minor material errors. A softens one substantive concession into an appearance concern; B changes several claims and qualifications, including practical accessibility and the author's permanent-size position. A is therefore the more faithful completed artifact overall, and its measured explanation better meets the user's priority of strengthening the argument without making the proposal stronger than the source supports.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Protecting established planting can look like protecting an established advantage",
+              "My proposal keeps that reservation in place and leaves the existing access assessment unchanged. A standard half bed is not automatically a substitute for a raised bed"
+            ],
+            "B": [
+              "In some cases, it can.",
+              "standard ground is not a functional substitute for an accessible bed",
+              "two households will likely receive no plot this season."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f0a2cd77c326d73e58cecc59c2205fe1254cd4d367747aab3a93e602dddf57a5",
+    "prompt_sha256": "e2c3084715edb0dfc40acd9a99d5144dd87f03ea0282db530ffbb9a93a513ede",
+    "raw_sha256": "88c1f23b410cd8c5eb3cca2e353c104d0e98fa33f46ecf8c6d76c275fe46534c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a community position statement; its allocation arithmetic does not constitute a proof.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposed allocation, conditional shortfall, annual renewal limitation, access safeguards, and waiting-list concessions. No material change in the position is evident.",
+          "quotes": {
+            "source": [
+              "Eight offers would leave two households on the current waiting list without a bed, assuming every offer is accepted.",
+              "Returning gardeners would keep their present bed for one more season"
+            ],
+            "A": [
+              "Assuming every offer is accepted, eight offers would still leave two households on the current waiting list without a bed.",
+              "returning gardeners would keep their present bed for one more season"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B turns a possible increase in places into a definite increase available today. That strengthens the alternative's stated outcome beyond the source, although the author's own allocation proposal remains intact.",
+          "quotes": {
+            "source": [
+              "An immediate division of every occupied bed might create more places"
+            ],
+            "A": [],
+            "B": [
+              "Immediately halving every occupied bed would create more places today"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain twenty beds, ten waiting households, the four-to-eight split, conditional two-household shortfall, one-season transition, reserved beds, unchanged assessment, and current queue order. A also preserves the source's uncertainty about the alternative; B makes that outcome definite and immediate.",
+          "quotes": {
+            "source": [
+              "An immediate division of every occupied bed might create more places",
+              "leaves the existing access assessment unchanged"
+            ],
+            "A": [
+              "An immediate division of every occupied bed might create more places",
+              "leaves the existing access assessment unchanged"
+            ],
+            "B": [
+              "Immediately halving every occupied bed would create more places today",
+              "leaving both the reservation and the existing access assessment unchanged"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sounds like a speaker explaining a practical proposal to fellow gardeners. B remains readable, but its elaborate transitional comparisons make the meeting statement sound more composed and less conversational.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We should also keep the raised beds separate from the general bed count.",
+              "Starting with the current vacancies also raises a practical objection on the site"
+            ],
+            "B": [
+              "Just as our timeline should distinguish between an abrupt change and a planned transition, our bed count must distinguish between standard plots and accessible ones.",
+              "Treating beds as real physical spaces rather than interchangeable squares on a map also requires confronting a practical drawback of starting with vacancies."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build an intelligible argument from demand and crop continuity through capacity, temporary protection, predictable rules, physical access, and queue fairness. B explicitly connects queue notice to the transition rationale; A supplies the same reasoning more directly. Neither leaves a consequential step unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That timing matters for new members as well.",
+              "changing the order during this allocation would introduce another contested decision without giving households notice"
+            ],
+            "B": [
+              "Establishing the next rule before renewals open is just as important for incoming gardeners as it is for returning ones.",
+              "the very problem a transition is meant to avoid"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's measured first-person advocacy and develops reasons without adding much rhetorical machinery. B's seasonal-obligation argument and staged analogy between timing and accessibility make the position more ceremonious than this author's requested connected, conversational explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I am asking for a transition, not a new entitlement",
+              "I do not yet have a preferred permanent bed size"
+            ],
+            "B": [
+              "Because obligations in this garden are seasonal, however, major rule changes should align with the seasonal cycle rather than interrupt it without warning.",
+              "we can commit to an orderly transition now"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation requiring mathematical exposition.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B slightly overstates the alternative's capacity and timing. Beyond that difference, A better meets the decisive priority of making the case while preserving its concessions: its transition paragraph connects annual renewal to temporary protection without enlarging the argument. B's extra rhetorical bridges do not provide enough additional explanation to improve the completed statement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the current membership agreement promises a bed for a single season, with renewal decided annually",
+              "I am asking for a transition, not a new entitlement"
+            ],
+            "B": [
+              "Because obligations in this garden are seasonal, however, major rule changes should align with the seasonal cycle rather than interrupt it without warning.",
+              "would create more places today"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "fc099d2048285e8627a42b36c69aac0a9aafe224bd30d3c667d3886068c236d1",
+    "prompt_sha256": "438d08a039be20c90dd1eafdaf10a6b4b41a184db0027945eb07120462e09feb",
+    "raw_sha256": "1652f5883716235042dbf463d12c333f208a65f81608fc01ed6631189b387c0a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and prose of a community position statement, not a mathematical proof.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A makes the alternative's possible capacity increase definite, labels reordering arbitrary rather than merely contested and unannounced, and drops the author's explicit lack of a preferred permanent bed size. The proposed transition survives, but these changes modestly alter the position and its treatment of objections.",
+          "quotes": {
+            "source": [
+              "An immediate division of every occupied bed might create more places",
+              "another contested decision without giving households notice",
+              "I do not yet have a preferred permanent bed size."
+            ],
+            "A": [
+              "Dividing every occupied bed immediately would create more plots",
+              "an arbitrary, contested process",
+              "We do not need to settle on a permanent bed size tonight"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B changes the alternative's possible increase in places into a definite increase. The rest of the allocation proposal and its substantive qualifications are preserved.",
+          "quotes": {
+            "source": [
+              "An immediate division of every occupied bed might create more places"
+            ],
+            "A": [],
+            "B": [
+              "Dividing every occupied bed immediately would create more places"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the numerical allocation, conditional shortfall, temporary retention, reserved beds, access review, and current waiting-list order. Both strengthen 'might' to 'would' about the alternative. B additionally preserves the author's undecided permanent-size preference and notice-based objection to reordering, whereas A omits the former and adds an unsupported charge of arbitrariness.",
+          "quotes": {
+            "source": [
+              "I do not yet have a preferred permanent bed size.",
+              "Changing the order during this allocation would introduce another contested decision without giving households notice."
+            ],
+            "A": [
+              "We do not need to settle on a permanent bed size tonight",
+              "altering the selection criteria mid-allocation would introduce an arbitrary, contested process"
+            ],
+            "B": [
+              "I do not yet have a preferred permanent bed size",
+              "changing the order during this allocation would introduce another contested decision without giving households notice"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic language suited to discussion at a garden meeting. A's administrative phrasing and emphatic descriptions make ordinary points heavier without clarifying them.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "What it does achieve is substantial immediate entry",
+              "formally report any access constraints it cannot resolve"
+            ],
+            "B": [
+              "It does, however, provide a substantial number of offers",
+              "report any access problem it cannot resolve"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each gives the proposal a clear purpose, calculates its limited reach, explains why protection is temporary, and then addresses implementation and fairness. Both connect advance publication to incoming members' uncertainty and explain why voluntary exchanges cannot settle route access. Their substantive ordering is comparably effective.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Predictable timing is just as essential for incoming members.",
+              "There is a legitimate spatial objection to dividing only vacant plots"
+            ],
+            "B": [
+              "That timing matters for new members as well.",
+              "A practical objection to starting with vacancies is that the four beds are at the far end of the site"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B keeps the author's personal, measured explanation and gives concessions room to remain concessions. A's 'arbitrary' characterization and heightened language about inflicting uncertainty make the advocacy more prosecutorial, contrary to the request to preserve real objections without strengthening the story.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we will have inflicted that same uncertainty on a smaller parcel of ground",
+              "an arbitrary, contested process"
+            ],
+            "B": [
+              "we will simply repeat the same uncertainty on a smaller plot",
+              "another contested decision without giving households notice"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both have a minor certainty change about the alternative, but A also changes the grounds for resisting reordering and omits the author's declared lack of a permanent-size preference. B is therefore more faithful at equal worst severity. It better serves the decisive priority of a reasoned, concession-preserving statement: its queue paragraph acknowledges unequal access to the list while keeping the separate argument for advance notice intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Preserving this sequence admittedly preserves whatever initial disadvantages people faced in learning about the garden.",
+              "an arbitrary, contested process"
+            ],
+            "B": [
+              "Preserving this order admittedly preserves whatever disadvantages people faced in learning about the list.",
+              "changing the order during this allocation would introduce another contested decision without giving households notice"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5a82472831a53efbaba9bf57430756bea58484a0d31008af1178dfb69a84fe7c",
+    "prompt_sha256": "438d08a039be20c90dd1eafdaf10a6b4b41a184db0027945eb07120462e09feb",
+    "raw_sha256": "1652f5883716235042dbf463d12c333f208a65f81608fc01ed6631189b387c0a",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
