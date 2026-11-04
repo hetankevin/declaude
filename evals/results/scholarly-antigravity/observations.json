@@ -34804,5 +34804,1279 @@
     "prompt_sha256": "536876f9bf9d667d98879f249594fac4344c7b75c476d40a124cbe43b2f7bdd1",
     "raw_sha256": "7fd4314119b36a1d448cbc6e598102e17a4d0bf0a5cb8143027c666f17745aef",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a readable proof of the return period, reachable slots, and cycle count, including the coprime divisibility argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the parameter domains, fixed-label return condition, exact period, reachable class, cycle count, and edge cases. The relabeling discussion reasonably describes transporting the same cycle structure under renamed labels; it need not mean that the numerical reachable set stays unchanged.",
+          "quotes": {
+            "source": [
+              "We claim that the least positive return time is n/g, and that the visited slots are exactly those congruent to a modulo g.",
+              "There are g disjoint cycles across all starting slots."
+            ],
+            "A": [
+              "the least positive return period is exactly $n/g$",
+              "Rotating or cyclically relabeling slot identifiers shifts the congruence class representatives by a constant offset, preserving cycle lengths, reachability sets, and the partition structure."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the assumptions and all three conclusions, supplies both directions of the return argument, and establishes distinctness and exhaustion. Its edge-case discussion retains zero stride, one slot, and unrestricted nonnegative strides within an idealized model.",
+          "quotes": {
+            "source": [
+              "When s=0, the return time is one and every cycle is a single slot.",
+              "When n=1, there is only slot zero regardless of s."
+            ],
+            "A": [],
+            "B": [
+              "If $s = 0$, then $g = \\gcd(n, 0) = n$, the return time is $n/n = 1$, and each slot forms its own single-element cycle.",
+              "If $n = 1$, the only slot is $0$ regardless of $s$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact mathematical claims and their qualifications, including the idealized scope. A adds explanatory framing and invariance commentary, but neither demonstrably changes the result or its domain.",
+          "quotes": {
+            "source": [
+              "The schedule is an idealized model, not a measured hardware property.",
+              "There are g disjoint cycles across all starting slots."
+            ],
+            "A": [
+              "It is not an empirical representation or measured property of physical recorder hardware.",
+              "each of length $n/g$."
+            ],
+            "B": [
+              "In this idealized schedule",
+              "these $g$ congruence classes partition the $n$ slots into $g$ disjoint cycles of length $n/g$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the same operations in direct technical prose. A repeatedly adds emphatic or formal modifiers that make an elementary appendix sound ceremonious without helping the reader follow the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "which is inherently a multiple of $n$.",
+              "strictly pairwise distinct.",
+              "exhausts $[a]_g$ entirely"
+            ],
+            "B": [
+              "Any positive return time is therefore a multiple of $n'$, which implies $k \\ge n'$.",
+              "Because the sequence generates $n'$ distinct residues in this class, the visited slots exhaust them."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B states the target conclusions, introduces the factorization to determine the return time, and then uses minimality to identify the visited set. A has a sound logical order, but subdivides this short chain into repeated headings, lists, and summaries that interrupt its continuity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Derivation of the Minimum Return Period",
+              "#### 3.3 Exhaustion and Cycle Partition"
+            ],
+            "B": [
+              "To determine the return time, write $n = g n'$ and $s = g s'$, so that $\\gcd(n', s') = 1$.",
+              "The first $n'$ visited residues $x_0, x_1, \\dots, x_{n'-1}$ are pairwise distinct."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the requested connected, conversational proof while retaining useful explanation and displayed calculations. A's formal scope notice and elaborate labeling add rhetorical packaging rather than explaining why the construction is needed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The scheduling formulation developed herein",
+              "### 4. Boundary Cases and Structural Properties"
+            ],
+            "B": [
+              "When $n'$ divides $k s'$, it divides both terms on the right-hand side, so $n'$ must divide $k$.",
+              "Furthermore, because $g$ divides both $s$ and $n$, every visited slot satisfies"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly connect return to divisibility, explain cancellation using the integer identity, prove attainment and minimality, and justify distinctness and exhaustion. Both display the key identity and calculations; A displays more of the preliminary equivalence, but B does not omit a substantive step.",
+          "quotes": {
+            "source": [
+              "To justify that implication, choose integers u,v with un'+vs'=1 and multiply by k.",
+              "Exactly n/g slots have that congruence, so the distinct visited residues exhaust them."
+            ],
+            "A": [
+              "Because $n'$ divides both summands, it must divide their sum:",
+              "However, $0 < \\Delta < n'$, which directly contradicts the fact that $n'$ is the least positive return time."
+            ],
+            "B": [
+              "When $n'$ divides $k s'$, it divides both terms on the right-hand side, so $n'$ must divide $k$.",
+              "Exactly $n/g = n'$ slots in $\\{0, \\dots, n-1\\}$ have this residue modulo $g$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a demonstrated material error, and both complete the required proof. B better serves this user's decisive preference for connected explanation: its identity-to-divisibility passage makes the formerly compressed step readable without surrounding it with A's repeated formal labels and emphatic commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "2. **Divisibility via Bézout's Identity:**",
+              "Observe the two terms on the right-hand side:"
+            ],
+            "B": [
+              "Multiplying this identity by $k$ yields",
+              "When $n'$ divides $k s'$, it divides both terms on the right-hand side, so $n'$ must divide $k$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "138ab4e70008644110d78453bbad71f3a8806a7301a558324e21b2d7dff2ed66",
+    "prompt_sha256": "95363311e9b2562e93d8236a467735cde226c997d48037d3257c2dbfa78532ce",
+    "raw_sha256": "0f098f272d365aa73de46ec08ebd4a53af7d2ffdb9624573ded19a2ad472d72c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested edit contains a divisibility proof and must explain minimal return, distinct visits, exhaustion, and the resulting cycle partition.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the domains, conclusions, and edge cases with a valid expanded proof. Its rotation sentence shifts from not treating rotations as new schedules to not identifying rotated schedules. This is ambiguous wording, but can reasonably describe a proof on fixed labels without quotienting; it does not establish an altered schedule or cycle count.",
+          "quotes": {
+            "source": [
+              "No step in the argument divides by s, assumes that s<n, or treats rotations of the labeled slots as a new schedule."
+            ],
+            "A": [
+              "No step in this derivation divides by $s$ or assumes $s < n$, nor does it identify schedules that differ by a rotation of the slot labels.",
+              "the $g$ residue classes modulo $g$ partition the $n$ labeled slots into $g$ disjoint cycles, each of length $n/g$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all parameter restrictions and mathematical conclusions, gives the required divisibility justification, and handles the edge cases correctly. Its references to physical labels do not assert measured hardware behavior; the scope statement explicitly confines the result to index arithmetic.",
+          "quotes": {
+            "source": [
+              "The schedule is an idealized model, not a measured hardware property.",
+              "There are g disjoint cycles across all starting slots."
+            ],
+            "A": [],
+            "B": [
+              "it describes index arithmetic rather than a measured hardware timing or physical wear property.",
+              "the schedule partitions the $n$ memory slots into **$g$ disjoint cycles**, each containing $n/g$ slots."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact period, reachable congruence class, cycle count, and unrestricted nonnegative stride. A's rotation wording deserves clarification because it changes the emphasis of the source's final qualification, but its fixed-label interpretation is reasonable and neither proof changes the claimed partition.",
+          "quotes": {
+            "source": [
+              "No step in the argument divides by s, assumes that s<n, or treats rotations of the labeled slots as a new schedule."
+            ],
+            "A": [
+              "nor does it identify schedules that differ by a rotation of the slot labels."
+            ],
+            "B": [
+              "starting at a different slot $a$ or rotating the slot labels is not treated as defining a new stepping rule",
+              "schedules in distinct congruence classes modulo $g$ remain disjoint cycles on the fixed label set."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses ordinary explanatory sentences to guide the calculations. B remains readable, but repeatedly labels and restates the role of each elementary step, making the prose more formal and cumbersome than the task requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To identify which slots are visited, write $x_k$ for any $k \\ge 0$ as",
+              "There are $n' = n/g$ such slots."
+            ],
+            "B": [
+              "#### 4. Boundary Cases and Modeling Invariants",
+              "The **least positive return time** (the fundamental return period)"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces each construction at the point where its purpose becomes clear: factorization for divisibility, the identity for cancellation, and the remainder representative for counting reachable slots. B follows the same valid sequence, but its nested outline repeatedly breaks the connected argument into separately announced properties.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We now show that $n' \\mid k s'$ is equivalent to $n' \\mid k$.",
+              "Next, we verify that the first $n'$ visited slots $x_0, x_1, \\dots, x_{n'-1}$ are distinct."
+            ],
+            "B": [
+              "##### Why $n' \\mid k s'$ forces $n' \\mid k$",
+              "To characterize the set of slots visited from $a$, we establish three properties:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the user's preference for connected proof exposition with intermediate calculations visibly laid out. Its length supplies explanation rather than decorative framing. B's headings, bold labels, and repeated modeling commentary give it a more generic instructional-template voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Substituting this into the expression for $k$ gives",
+              "Since the $n'$ distinct slots $x_0, x_1, \\dots, x_{n'-1}$ all belong to this congruence class, they exhaust it:"
+            ],
+            "B": [
+              "#### 1. Scheduling Model and Definitions",
+              "**Generality and Fixed Slot Labeling:**",
+              "Examine the two terms on the left-hand side:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are mathematically correct and explain all required implications. A better meets the specific exposition requirement by displaying the substitution that makes k a multiple of n', the collision calculation, and the enumeration of the congruence class. B explains those points, but leaves more of the latter argument embedded in long inline-mathematics paragraphs.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps.",
+              "Exactly n/g slots have that congruence, so the distinct visited residues exhaust them."
+            ],
+            "A": [
+              "\\begin{aligned}\nk &= u k n' + v(k s') \\\\\n  &= u k n' + v m n' \\\\\n  &= (u k + v m) n',\n\\end{aligned}",
+              "r + t g, \\qquad t = 0, 1, \\dots, n' - 1."
+            ],
+            "B": [
+              "Since $n'$ divides both terms in the sum, $n'$ must divide their sum $k$.",
+              "The integers in $\\{0, 1, \\dots, n - 1\\}$ congruent to $a$ modulo $g$ are precisely those of the form $r + m g$ for $m = 0, 1, \\dots, n' - 1$ (since $n = g n'$)."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a demonstrated material error; A's ambiguous rotation wording is a localized qualification to clarify. A otherwise delivers the artifact this user prioritizes: a connected proof whose formerly compressed cancellation and counting steps are explicitly developed in displays. B is complete, but its segmented presentation and inline counting paragraph fit that preference less well.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If $n'$ divides $k s'$, we can write $k s' = m n'$ for some integer $m$.",
+              "Substituting this into the expression for $k$ gives"
+            ],
+            "B": [
+              "##### Sufficiency of $k = n'$",
+              "3. **The visited slots exhaust the congruence class of $a$ modulo $g$:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "23646d9cb60bd688c54279b607f31a5545a6ddab759d86bc99dcc313e2fcbc01",
+    "prompt_sha256": "95363311e9b2562e93d8236a467735cde226c997d48037d3257c2dbfa78532ce",
+    "raw_sha256": "0f098f272d365aa73de46ec08ebd4a53af7d2ffdb9624573ded19a2ad472d72c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a readable proof of the return period, reachable slots, and cycle partition, including edge cases.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the parameter assumptions, labeled-state return condition, exact period, reachable class, cycle count, and edge cases. The hardware disclaimer respects the model's scope.",
+          "quotes": {
+            "source": [
+              "the least positive return time is n/g",
+              "When s=0, the return time is one and every cycle is a single slot."
+            ],
+            "A": [
+              "T = \\frac{n}{g}.",
+              "Every starting slot forms a stationary single-slot cycle"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all mathematical claims and assumptions, explicitly proves exhaustion, and handles zero stride, one slot, and unrestricted stride without introducing hardware claims.",
+          "quotes": {
+            "source": [
+              "the visited slots are exactly those congruent to a modulo g.",
+              "No step in the argument divides by s, assumes that s<n, or treats rotations of the labeled slots as a new schedule."
+            ],
+            "A": [],
+            "B": [
+              "they exhaust it:",
+              "No step in this derivation divides by $s$ or assumes $s < n$, nor does it identify schedules that differ by a rotation of the slot labels."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact theorem, hypotheses, model qualification, and boundary cases. Their differences concern presentation rather than mathematical scope.",
+          "quotes": {
+            "source": [
+              "There are g disjoint cycles across all starting slots."
+            ],
+            "A": [
+              "each containing $n/g$ slots."
+            ],
+            "B": [
+              "the $g$ residue classes modulo $g$ partition the $n$ labeled slots into $g$ disjoint cycles, each of length $n/g$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the same operations in direct, idiomatic prose. A's emphatic labels and expanded warnings make an elementary argument sound more cumbersome than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A *return* to the starting slot occurs at step $k$ if $k > 0$ is a positive integer",
+              "Examine the two terms on the left-hand side:"
+            ],
+            "B": [
+              "Because the slots carry fixed labels, a return to the initial state means $x_k = a$ for a positive step count $k \\ge 1$.",
+              "If $n'$ divides $k s'$, we can write $k s' = m n'$ for some integer $m$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B carries the reader continuously from the return condition through coprime cancellation, minimality, distinctness, and exhaustion. Its transitions explain what the next calculation establishes; A repeatedly restarts that progression through headings and inventories.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To characterize the set of slots visited from $a$, we establish three properties:",
+              "#### 4. Boundary Cases and Modeling Invariants"
+            ],
+            "B": [
+              "We now show that $n' \\mid k s'$ is equivalent to $n' \\mid k$.",
+              "To identify which slots are visited"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected technical explanation: it introduces each calculation with its purpose and retains useful detail. A's repeated terminology, emphasis, and structural labels add packaging around an already understandable proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The **least positive return time** (the fundamental return period)",
+              "#### 4. Boundary Cases and Modeling Invariants"
+            ],
+            "B": [
+              "Next, we verify that the first $n'$ visited slots",
+              "There are $n' = n/g$ such slots."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both proofs are correct and complete. B more fully meets the requested displayed exposition: it shows the substitution and factorization proving divisibility, displays the distinctness calculation, and explicitly states subsequent periodicity. A embeds more of the distinctness and class-counting work in prose.",
+          "quotes": {
+            "source": [
+              "To justify that implication, choose integers u,v with un'+vs'=1 and multiply by k.",
+              "The first n' visited residues are distinct"
+            ],
+            "A": [
+              "Since $n'$ divides both terms in the sum, $n'$ must divide their sum $k$.",
+              "Setting $d = j - i$, this means $x_d = a$"
+            ],
+            "B": [
+              "If $n'$ divides $k s'$, we can write $k s' = m n'$ for some integer $m$.",
+              "Because $x_{k+n'} = x_k$ for all $k \\ge 0$, subsequent writes repeat the same cycle of length $n/g$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better satisfies the decisive priority of a connected proof with visible intermediate mathematics: its divisibility substitution and transition from distinctness to exhaustion supply explanation without A's repeated framing and inventories.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To characterize the set of slots visited from $a$, we establish three properties:"
+            ],
+            "B": [
+              "If $n'$ divides $k s'$, we can write $k s' = m n'$ for some integer $m$.",
+              "Since the $n'$ distinct slots $x_0, x_1, \\dots, x_{n'-1}$ all belong to this congruence class, they exhaust it:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "42c592d026850e61d0ddec1fe2dad66c79e22439ba472c5a640245d746aa9692",
+    "prompt_sha256": "8bf884df0e98f911458d093389dd24ad844820fdce08e4006131c96a2efe1e67",
+    "raw_sha256": "4341aaea8c419127fb143f5b5ba9929e285672e0a1fedf520ec12e7437f481b8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested rewrite includes a divisibility proof, minimality argument, and proof of the reachable-slot and cycle descriptions.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the integer assumptions, labeled slots, return definition, exact period, reachable class, cycle count, and all edge cases while retaining the idealized-model qualification.",
+          "quotes": {
+            "source": [
+              "the least positive return time is n/g",
+              "No step in the argument divides by s, assumes that s<n, or treats rotations of the labeled slots as a new schedule."
+            ],
+            "A": [
+              "Thus, the least positive return time is $k = n' = n/g$.",
+              "including $s \\ge n$, without requiring division by $s$ or treating rotations of the labeled slots as distinct schedules."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The mathematics and edge cases are preserved, but B attributes an unsupported intended use to the model. Readers are told that theoretical bounding is an intended purpose, whereas the source establishes the modular schedule and the request specifies only its idealized status.",
+          "quotes": {
+            "source": [
+              "The schedule is an idealized model, not a measured hardware property."
+            ],
+            "A": [],
+            "B": [
+              "intended for algorithmic planning and theoretical bounding."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the theorem and boundary cases. A stays within the supplied scope, while B adds an unsupported statement about the model's intended purposes. B's labeling discussion can reasonably be read as preserving reachability under the relabeling map, rather than asserting unchanged numerical slot sets.",
+          "quotes": {
+            "source": [
+              "The schedule is an idealized model, not a measured hardware property."
+            ],
+            "A": [
+              "In this idealized schedule"
+            ],
+            "B": [
+              "intended for algorithmic planning and theoretical bounding."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses straightforward explanatory language appropriate to the appendix. B's formalizing phrases and inflated descriptions add verbal weight without clarifying the elementary operations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To determine the return time",
+              "the visited slots exhaust them."
+            ],
+            "B": [
+              "The scheduling formulation developed herein",
+              "which is inherently a multiple of $n$",
+              "strictly pairwise distinct."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A states the result early, introduces the factorization to determine the return time, and connects distinctness directly to exhaustion. B postpones the main result behind a formalization inventory and divides the reachable-set argument into several separate subsections.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To determine the return time",
+              "Because the sequence generates $n'$ distinct residues in this class, the visited slots exhaust them."
+            ],
+            "B": [
+              "### 1. System Formalization",
+              "#### 3.1 Invariance Modulo $g$",
+              "#### 3.3 Exhaustion and Cycle Partition"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better realizes the author's preference for connected explanation without compressing away the key proof. B repeatedly names and labels components that A explains through their role in the argument, producing a more generic formal presentation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Any positive return time is therefore a multiple of $n'$, which implies $k \\ge n'$.",
+              "Furthermore, because $g$ divides both $s$ and $n$"
+            ],
+            "B": [
+              "**Slot Space:**",
+              "**Divisibility via Bézout's Identity:**",
+              "**Stride Independence from Buffer Size:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly explain Bézout cancellation, exhibit a return at n', exclude earlier returns, prove distinctness, and use class cardinality to establish exhaustion. B displays the initial reduction more explicitly; A displays the sufficiency calculation more clearly. Neither omits a substantive proof step.",
+          "quotes": {
+            "source": [
+              "Both terms on the left are divisible by n' when n' divides ks'.",
+              "Exactly n/g slots have that congruence, so the distinct visited residues exhaust them."
+            ],
+            "A": [
+              "When $n'$ divides $k s'$, it divides both terms on the right-hand side, so $n'$ must divide $k$.",
+              "k s = n'(g s') = s'(g n') = s' n \\equiv 0 \\pmod n,"
+            ],
+            "B": [
+              "Because $n'$ divides both summands, it must divide their sum:",
+              "The recorder visits $n'$ distinct slots, all residing within $[a]_g$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds an unsupported intended purpose, although its mathematical conclusions remain correct. A also better meets the central writing priority: it explains the reduction, minimality, and exhaustion in connected prose with the essential calculations displayed, without B's repeated formalization and subsection packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To determine the return time",
+              "Because the sequence generates $n'$ distinct residues in this class, the visited slots exhaust them."
+            ],
+            "B": [
+              "intended for algorithmic planning and theoretical bounding.",
+              "#### 3.3 Exhaustion and Cycle Partition"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1dc94a03c9b9f8f4d771238e434ff135690b24ab6f5e0fa2428f738616c78a94",
+    "prompt_sha256": "8bf884df0e98f911458d093389dd24ad844820fdce08e4006131c96a2efe1e67",
+    "raw_sha256": "4341aaea8c419127fb143f5b5ba9929e285672e0a1fedf520ec12e7437f481b8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a constructive finite-probability proof, including optimality, marginal checks, and boundary cases.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the fixed marginals, possible zeros, both formulas, and the complete construction. Its independence clarification correctly distinguishes a construction from an independence implication.",
+          "quotes": {
+            "source": [
+              "The residual product is a device for constructing one joint distribution; it does not say every coupling, or even this entire mixture, has independent coordinates."
+            ],
+            "A": [
+              "it neither assumes that general couplings have independent coordinates nor implies that the resulting mixture $J$ makes $U$ and $V$ independent."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B changes the absence of an independence implication into a claim that the full construction is not independent whenever overlap is positive. For p=(1,0) and q=(1/2,1/2), r=1/2 and the constructed J=pq is independent despite positive overlap. This false ancillary claim does not invalidate the maximum-agreement proof.",
+          "quotes": {
+            "source": [
+              "it does not say every coupling, or even this entire mixture, has independent coordinates."
+            ],
+            "A": [],
+            "B": [
+              "nor does it make $U$ and $V$ independent under the full mixture $J$ when $\\sum_{i=1}^m c_i > 0$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the probability space, optimization scope, formulas, zeros, and boundary cases. A also preserves the source's limited independence statement; B adds an incorrect restriction on when its constructed coupling can be independent.",
+          "quotes": {
+            "source": [
+              "The comparison optimizes how the two labels are paired while keeping each marginal distribution fixed; it does not change either probability vector.",
+              "it does not say every coupling, or even this entire mixture, has independent coordinates."
+            ],
+            "A": [
+              "it neither assumes that general couplings have independent coordinates nor implies that the resulting mixture $J$ makes $U$ and $V$ independent."
+            ],
+            "B": [
+              "nor does it make $U$ and $V$ independent under the full mixture $J$ when $\\sum_{i=1}^m c_i > 0$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B more naturally carries the reader from the pairing problem into the proof through connected prose. A remains readable, but its nested headings and labeled cases give a relatively short argument a more segmented rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "##### 2. Explicit Construction Attaining the Bound",
+              "We construct an optimal coupling $J$ in two cases based on $r$:"
+            ],
+            "B": [
+              "When $r > 0$, we distribute the remaining mass across off-diagonal pairs in proportion to the row and column residuals by setting"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B states the maximization goal before defining the coupling and explains the residual allocation before presenting its formula. It incorporates boundary cases beside the construction. A has a sound logical order but postpones the explicit goal and repeats the zero-residual case in a separate boundary section.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To compare two synthetic labels $U$ and $V$ placed on a common probability space while keeping their marginal distributions fixed at $p$ and $q$, respectively, we represent their joint distribution by a coupling array",
+              "##### 4. Boundary Cases and Zero-Probability Outcomes"
+            ],
+            "B": [
+              "We want to pair two synthetic labels $U$ and $V$ on a common probability space so that $U$ has marginal distribution $p$, $V$ has marginal distribution $q$, and their agreement probability $\\mathbb{P}(U = V)$ is as large as possible.",
+              "At the opposite extreme, when $p$ and $q$ have disjoint supports"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected technical exposition: it introduces the diagonal target with its purpose and explains how remaining mass will be assigned. Its aligned calculations also suit the author's preference for visible steps. A supplies the necessary explanation but packages it more like a hierarchical checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To show that this upper bound is always achievable, define for each label $i \\in \\{1, \\dots, m\\}$:"
+            ],
+            "B": [
+              "To show that this bound is attained, we construct a coupling whose diagonal entries equal $c_i = \\min(p_i, q_i)$ for each $i \\in \\{1, \\dots, m\\}$.",
+              "summing over $j$ and substituting $\\sum_{j=1}^m \\beta_j = r$ gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both explicitly derive the diagonal bound, equal residual totals, both marginals, attainment, and the absolute-difference identity, and handle r=0 without division. B lays out calculations particularly well, but A's proof avoids B's false ancillary independence claim.",
+          "quotes": {
+            "source": [
+              "Both residual vectors have sum r, and α_iβ_i=0 for every label i.",
+              "Thus the construction attains the upper bound."
+            ],
+            "A": [
+              "J_{ii} = c_i + \\frac{\\alpha_i \\beta_i}{r} = c_i.",
+              "Because $\\alpha_i, \\beta_i \\ge 0$, it follows that $\\alpha_i = \\beta_i = 0$ for every $i$"
+            ],
+            "B": [
+              "Thus $J$ is a valid coupling of $p$ and $q$.",
+              "nor does it make $U$ and $V$ independent under the full mixture $J$ when $\\sum_{i=1}^m c_i > 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B has a minor but concrete false claim about independence. B better develops the purpose and flow of the construction, but the user's explicit requirement to preserve the independence distinction makes A the more reliable completed appendix.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "nor implies that the resulting mixture $J$ makes $U$ and $V$ independent."
+            ],
+            "B": [
+              "nor does it make $U$ and $V$ independent under the full mixture $J$ when $\\sum_{i=1}^m c_i > 0$."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b0be0413c77b801876db98319a467a6e0f3837cead0eeb8eafecfeb7e0386f0",
+    "prompt_sha256": "d465703fe239746954d2b67edc9bff66fe15b8b884690c404fba6e23b1abdd95",
+    "raw_sha256": "6fa15eea4c7d2b51e3ca01bc7a9059df3f890f447a3e49028797f2db76793f31",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a finite-sum proof of maximum agreement through an explicit optimal coupling.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains all assumptions, both formulas, fixed-marginal optimization, the residual construction, and required boundary cases. Its r=0 implication is compressed but follows from the nonnegative residuals and their previously established zero totals.",
+          "quotes": {
+            "source": [
+              "Zero entries and a one-label space require no change to the statement.",
+              "If r=0, use only J_ii=p_i=q_i and set the other entries to zero."
+            ],
+            "A": [
+              "The derivation holds unchanged when some entries $p_i$ or $q_i$ are zero, as well as for a single outcome ($m = 1$).",
+              "Setting\n\\[\nJ_{ii} = p_i = q_i, \\qquad J_{ij} = 0 \\quad (i \\ne j)"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B's zero-category discussion applies the p_k=0 residual formulas to the stated alternative q_k=0. If p_k>0 and q_k=0, the correct residuals are alpha_k=p_k and beta_k=0, not alpha_k=0. It also adds an unsupported numerical-stability guarantee to an exact-arithmetic proof. The general construction and main theorem remain correct.",
+          "quotes": {
+            "source": [
+              "α_i=p_i−c_i, β_i=q_i−c_i",
+              "Zero entries and a one-label space require no change to the statement."
+            ],
+            "A": [],
+            "B": [
+              "If a category $k$ has $p_k = 0$ (or $q_k = 0$)",
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$.",
+              "without numerical instability or special branching."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the theorem, arbitrary couplings, finite-sum strategy, and boundary cases. A accurately covers zeros. B's later zero-category formulas are wrong for one expressly included case, and its numerical-stability assurance exceeds the source.",
+          "quotes": {
+            "source": [
+              "Entries may be zero.",
+              "α_i=p_i−c_i, β_i=q_i−c_i"
+            ],
+            "A": [
+              "The derivation holds unchanged when some entries $p_i$ or $q_i$ are zero"
+            ],
+            "B": [
+              "If a category $k$ has $p_k = 0$ (or $q_k = 0$)",
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's prose directly explains the mathematical operations and uses a manageable section structure. B repeatedly announces its organization and surrounds elementary steps with emphatic labels, producing a more ceremonial and fragmented appendix.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The product $\\alpha_i \\beta_j / r$ serves only to distribute the unmatched residual mass across differing labels without placing probability on the diagonal."
+            ],
+            "B": [
+              "We formalize this via the space of couplings, prove the universal upper bound, construct an explicit optimal joint distribution using only elementary finite sums, and analyze the boundary cases.",
+              "##### Structural Properties of the Residuals"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves directly from the upper bound to the construction that must attain it, then derives the alternative formula. B's order is valid, but its intervening formula conversion and repeated roadmaps delay the central attainment argument without improving its motivation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Construction and Attainment\n\nTo show this bound is attained, define"
+            ],
+            "B": [
+              "The proof proceeds in three parts: establishing the universal upper bound, demonstrating the algebraic equivalence of the two finite-sum formulas, and constructing a valid coupling that attains the upper bound."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves useful displayed calculations while limiting rhetorical packaging. B's extensive nested labels, repeated summaries, and assurances about avoiding external theorems are less consistent with the author's preference for connected explanation over defensive commentary. A could motivate the residual definitions more fully, but it better fits the requested artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On the diagonal, the residual product vanishes because $\\alpha_i \\beta_i = 0$:",
+              "The optimization does not require $U$ and $V$ to be independent."
+            ],
+            "B": [
+              "This establishes the alternative representation directly from finite summation without invoking external theorems.",
+              "#### Clarification on Independence"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both establish the bound and verify the construction with displayed finite sums, including the alternative formula and division-free r=0 case. A's slightly compressed r=0 explanation is supported by preceding steps. B is more expansive but introduces incorrect residual values in its zero-category discussion, an expressly requested part of the proof.",
+          "quotes": {
+            "source": [
+              "Both residual vectors have sum r, and α_iβ_i=0 for every label i.",
+              "Zero entries and a one-label space require no change to the statement."
+            ],
+            "A": [
+              "On the diagonal, the residual product vanishes because $\\alpha_i \\beta_i = 0$:",
+              "which matches the upper bound."
+            ],
+            "B": [
+              "If a category $k$ has $p_k = 0$ (or $q_k = 0$)",
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B has minor errors in the zero-label explanation and an unsupported stability assurance. A also better serves the user's exposition goal by connecting the bound directly to attainment and retaining the displayed derivation without B's repeated organizational packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To show this bound is attained, define",
+              "The derivation holds unchanged when some entries $p_i$ or $q_i$ are zero"
+            ],
+            "B": [
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$.",
+              "without numerical instability or special branching."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1ba86a31110e6506f228ca66df520d1de6f681409cc6dee3cd55bddb48ab3dde",
+    "prompt_sha256": "d465703fe239746954d2b67edc9bff66fe15b8b884690c404fba6e23b1abdd95",
+    "raw_sha256": "6fa15eea4c7d2b51e3ca01bc7a9059df3f890f447a3e49028797f2db76793f31",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an elementary proof of the optimal agreement formula, including construction and boundary cases.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the optimization over fixed marginals, both formulas, the complete residual construction, and all boundary cases without imposing independence.",
+          "quotes": {
+            "source": [
+              "Both residual vectors have sum r, and α_iβ_i=0 for every label i."
+            ],
+            "A": [
+              "at least one of $\\alpha_i$ or $\\beta_i$ is zero."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the theorem, construction, and boundary cases. The independence sentence is ambiguous: it can suggest nonindependence whenever overlap is positive, which need not hold, but also reasonably communicates that the product construction does not guarantee independence. That ambiguity does not establish a material error.",
+          "quotes": {
+            "source": [
+              "it does not say every coupling, or even this entire mixture, has independent coordinates."
+            ],
+            "A": [],
+            "B": [
+              "nor does it make $U$ and $V$ independent under the full mixture $J$ when $\\sum_{i=1}^m c_i > 0$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the mathematical result and required cases. A more precisely retains the source's distinction between not implying independence and asserting nonindependence; B's positive-overlap qualification leaves that distinction ambiguous.",
+          "quotes": {
+            "source": [
+              "it does not say every coupling, or even this entire mixture, has independent coordinates."
+            ],
+            "A": [
+              "nor implies that the resulting mixture $J$ makes $U$ and $V$ independent."
+            ],
+            "B": [
+              "nor does it make $U$ and $V$ independent under the full mixture $J$ when $\\sum_{i=1}^m c_i > 0$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads more continuously, using ordinary transitions between the bound, construction, and exceptional case. A is readable but its nested headings and labeled cases repeatedly interrupt the prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We construct an optimal coupling $J$ in two cases based on $r$:"
+            ],
+            "B": [
+              "When $r > 0$, we distribute the remaining mass across off-diagonal pairs in proportion to the row and column residuals by setting"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the objective, establish the bound, introduce residuals to attain it, verify the construction, and handle the boundary cases. Their different placement of the final algebra and boundary discussion is coherent.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To show that this upper bound is always achievable, define for each label"
+            ],
+            "B": [
+              "To show that this bound is attained, we construct a coupling whose diagonal entries equal"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B states the purpose before defining the coupling and sustains connected explanatory prose. A supplies the necessary reasons too, but packages them in a more segmented hierarchy and repeats the zero-residual case in its final list.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Problem Setup and Coupling Definition"
+            ],
+            "B": [
+              "We want to pair two synthetic labels $U$ and $V$ on a common probability space"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explicitly derive the diagonal bound, equal residual totals, complementarity, nonnegativity, both marginals, attainment, and the absolute-difference identity. Both avoid division when the residual mass is zero and cover disjoint supports and one label. Neither skips a substantive proof step.",
+          "quotes": {
+            "source": [
+              "Summing over j gives c_i+α_i=p_i, and summing over i gives c_j+β_j=q_j."
+            ],
+            "A": [
+              "c_i + \\alpha_i = p_i."
+            ],
+            "B": [
+              "Thus $J$ is a valid coupling of $p$ and $q$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has an established material error, and both deliver the complete, explained finite-sum proof this user requested. B better integrates the objective and calculations into continuous prose; A states the independence qualification more precisely. Those tradeoffs do not establish a decisive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it neither assumes that general couplings have independent coordinates nor implies"
+            ],
+            "B": [
+              "For each row $i \\in \\{1, \\dots, m\\}$, summing over $j$ and substituting"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b0be0413c77b801876db98319a467a6e0f3837cead0eeb8eafecfeb7e0386f0",
+    "prompt_sha256": "d465703fe239746954d2b67edc9bff66fe15b8b884690c404fba6e23b1abdd95",
+    "raw_sha256": "1c8d6d6f623e5a69e71fb980ac9bcd96828f1b6070638db25a0ec27254ab2d36",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an elementary proof of maximal agreement, including verification of an explicit coupling.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves both formulas, arbitrary nonnegative couplings with fixed marginals, the residual construction, and the required boundary cases. Its displayed calculations supply the requested elementary argument.",
+          "quotes": {
+            "source": [
+              "The comparison optimizes how the two labels are paired while keeping each marginal distribution fixed; it does not change either probability vector."
+            ],
+            "A": [
+              "We optimize the pairing of $U$ and $V$ across all couplings while keeping the marginal distributions $p$ and $q$ fixed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The zero-category discussion gives the residual values for p_k=0 while explicitly including q_k=0 as an alternative. If q_k=0 and p_k>0, the definitions instead give alpha_k=p_k and beta_k=0. This misdescribes an expressly permitted case, although the earlier general construction and main theorem remain correct.",
+          "quotes": {
+            "source": [
+              "Entries may be zero.",
+              "α_i=p_i−c_i, β_i=q_i−c_i"
+            ],
+            "A": [],
+            "B": [
+              "If a category $k$ has $p_k = 0$ (or $q_k = 0$)",
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A handles zero entries without changing the residual definitions. B's asymmetric residual values are incorrectly extended to the case where only q_k is zero. Its main formulas and optimization scope otherwise agree with the source.",
+          "quotes": {
+            "source": [
+              "α_i=p_i−c_i, β_i=q_i−c_i"
+            ],
+            "A": [
+              "The derivation holds unchanged when some entries $p_i$ or $q_i$ are zero"
+            ],
+            "B": [
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct technical prose with enough explanation to connect the calculations. B repeatedly announces its structure and adds emphatic labels and commentary that make the appendix more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To show this bound is attained, define"
+            ],
+            "B": [
+              "The proof proceeds in three parts:",
+              "Crucially, the optimization is conducted over **arbitrary** joint distributions"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves directly from the upper bound to the construction needed to attain it. B's intervening formula conversion is valid, but its repeated roadmaps, residual-property lists, and separate clarification section weaken the connection between the obstacle and its resolution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Construction and Attainment",
+              "To show this bound is attained"
+            ],
+            "B": [
+              "#### Part 2: Equivalence of the Finite Sums",
+              "##### Structural Properties of the Residuals"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A provides the requested displayed derivation without surrounding it with an elaborate presentation framework. B adds application framing and repeated defensive commentary, whereas this author prefers explanation tied directly to the actual construction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The product $\\alpha_i \\beta_j / r$ serves only to distribute the unmatched residual mass"
+            ],
+            "B": [
+              "In synthetic data validation and label alignment tasks, we often wish",
+              "This establishes the alternative representation directly from finite summation without invoking external theorems."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both establish optimality through displayed finite sums and explicitly verify the construction. A is mathematically consistent throughout. B's general proof is sound, but its later residual calculation for a q-only zero contradicts its own definitions and the required treatment of zero labels.",
+          "quotes": {
+            "source": [
+              "Zero entries and a one-label space require no change to the statement.",
+              "α_i=p_i−c_i, β_i=q_i−c_i"
+            ],
+            "A": [
+              "On the diagonal, the residual product vanishes because $\\alpha_i \\beta_i = 0$:"
+            ],
+            "B": [
+              "If a category $k$ has $p_k = 0$ (or $q_k = 0$)",
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B has a localized but concrete error in a required zero-probability case. A also better serves the author's central priority: it connects the bound to the construction and shows the calculations without repeated roadmaps or elaborate subdivision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "which matches the upper bound.",
+              "The optimization does not require $U$ and $V$ to be independent."
+            ],
+            "B": [
+              "The residuals satisfy $\\alpha_k = 0$ and $\\beta_k = q_k$.",
+              "#### Clarification on Independence"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1ba86a31110e6506f228ca66df520d1de6f681409cc6dee3cd55bddb48ab3dde",
+    "prompt_sha256": "d465703fe239746954d2b67edc9bff66fe15b8b884690c404fba6e23b1abdd95",
+    "raw_sha256": "1c8d6d6f623e5a69e71fb980ac9bcd96828f1b6070638db25a0ec27254ab2d36",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
