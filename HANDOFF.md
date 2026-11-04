@@ -1,3 +1,9 @@
+## Pinned CLI recovery
+
+Antigravity self-updated the private evaluation binary from1.4.12 to1.5.0 during the run. Frozen-version validation stopped the extension and publisher, and a coupled startup check stopped one original task before any model request. Restored the retained backup after verifying its SHA256 matches the frozen plan, and pinned only that private binary with the user-immutable flag. Updated binary retained separately. No global install changes.
+
+Use tools/resume_pinned_eval.py in the parent private repository for original, extension, or publish --watch. It includes the earlier continuation and native-keychain adapters. All completed outputs remain saved. One pre-request guard failure gets a separate replacement directory; its conservative60k reservation is retained. Total planned2,277attempts under unchanged2,400/75M/557caps. Do not launch duplicates. Original matrix had357candidate drafts,659primary grades and90audits; extension had114declaude drafts,120primary grades, and4ungraded neurotypical smoke outputs at recovery. Neurotypical's main block is ordered after declaude. Fresh holdouts remain sealed.
+
 ## Antigravity native keychain fix
 
 The temporary HOME hid the default login keychain and caused native credential-storage dialogs during token refresh. Reproduced with metadata-only security commands: empty HOME fails; linking only Library/Keychains to the existing user directory succeeds. tools/antigravity_keychain.py supplies this link only to Antigravity temporary profiles. Personal rules, skills, hooks and memory remain excluded. No keychain was created/unlocked/exported, and access controls are unchanged.
@@ -13,7 +19,7 @@ Both runners restarted under caffeinate -i to prevent idle sleep while they exec
 <!-- active-eval-status:start -->
 ## Automated evaluation checkpoint
 
-State: running, 2026-11-04T05:16:55Z. Original matrix 330/800 candidate drafts and 601/1600 primary grades. Antigravity declaude 104/320 drafts and 100/320 primary grades. Fresh reserved holdouts remain sealed. See run-status.json and usage.json; missing grades are not ties. This publisher makes no model calls and cannot restart either runner.
+State: running, 2026-11-04T06:30:11Z. Original matrix 357/800 candidate drafts and 659/1600 primary grades. Antigravity declaude 114/320 drafts and 112/320 primary grades. Fresh reserved holdouts remain sealed. See run-status.json and usage.json; missing grades are not ties. This publisher makes no model calls and cannot restart either runner.
 <!-- active-eval-status:end -->
 
 # Handoff

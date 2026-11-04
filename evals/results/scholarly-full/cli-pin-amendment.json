@@ -1,0 +1,16 @@
+{
+  "parent_continuation_sha256": "24f963d471577d9f9902d707d10dd2047de44936c56fee6c50508c65cd27f955",
+  "keychain_amendment_sha256": "e29900b1295144b25c4f5433c2a0783008ca2c2dca64c739116a11a274ad879d",
+  "frozen_cli_sha256": "34423fc9b0af3841e7646aa72a2d40ffeab8218b22d1cb99eac7355f9eba31e3",
+  "script_sha256": "1388d08bc4e4bb7c55d992a61cd901fe83adb7cb52567dd018fc15a307d82410",
+  "guard_failure": "large-test-a-04--astra-high--scholarly-20261103",
+  "guard_failure_evidence": {
+    "result.json": "dcf67ddc7caf20a6fe2e768cbed7bcc3b8e6674f199b8fe226641c8c4e99971f",
+    "failure.json": "9062f96cc07e05b930d4ea0aa0b442b6af2c8bbbbf8f92dc2c76378cd63c51f9"
+  },
+  "fix": "Restore the byte-identical retained 1.4.12 backup and set the user-immutable flag only on the private evaluation binary. Preserve the auto-updated 1.5.0 binary separately. No global installation or benchmark instruction changes.",
+  "accounting": "The guard failed before a request or model process was created. Its scheduling attempt and conservative 60,000-token reservation remain counted. Exactly one replacement attempt is allowed, in a separate directory. Prior failures and successful outputs stay intact.",
+  "authorization": "Continuation of the already-authorized full suites within unchanged combined limits. Repair only the local version guard failure; no quality retry or fresh-holdout access.",
+  "planned_total_attempts": 2277,
+  "sha256": "1d3f73a5830934b8a7a62738e173d43682f745d01a8d7e110a1511361fbbc0bb"
+}

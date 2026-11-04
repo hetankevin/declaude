@@ -15760,5 +15760,2386 @@
     "prompt_sha256": "ca1a5ccc37af5c6584b6af53f9b6fc440e122a675fe925dc0ac37d6c370efbaf",
     "raw_sha256": "1418461abc1992211488cbd68f6095f2b65c02fa51fcbdcd7620250612790189",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The counts, denominators, stopping rule, selection limitations, and absence of statistical correction are preserved. The emphatic claim about overstating use reasonably refers to the expanded observed pool; the subsequent population and mode qualifications prevent treating it as an established population or causal finding.",
+          "quotes": {
+            "source": [
+              "The change from 70 to 65.3 percent is a change in the observed respondent pool.",
+              "Nor does it isolate a telephone-mode effect from a difference in the people reached."
+            ],
+            "A": [
+              "overstated library use among those observed.",
+              "Because phone and paper formats were not assigned experimentally, we cannot determine whether the lower percentage (46.7 percent) reflects genuine differences in the people reached"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The response preserves the study counts and rates, quota stopping, nonrandom realized follow-up group, consistent measurement, unassigned mode, and lack of weights or imputations. Its conclusions remain descriptive and retain uncertainty about the missing households.",
+          "quotes": {
+            "source": [
+              "It cannot by itself tell us the prevalence among all 600 invitees, since 150 households still supplied no response.",
+              "No weights or imputed responses were used."
+            ],
+            "A": [],
+            "B": [
+              "the combined figure does not establish the rate for all 600 invited households, because 150 households never responded",
+              "no survey weights or imputations were used."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive findings and limitations. B more precisely retains the distinction between the accurate preliminary note and its later interpretation, and describes the change as a difference in reports. A omits the note's role and uses stronger language about what the change proves, although its later qualifications keep this from being a material error.",
+          "quotes": {
+            "source": [
+              "The note described respondents, although in subsequent discussion the figure was sometimes treated as a description of invited households.",
+              "It is evidence that the initial respondents and the reached follow-up respondents differed in their reports."
+            ],
+            "A": [
+              "it was sometimes mistakenly treated in discussions as if it represented all 600 invited households.",
+              "proves that findings based solely on early returns were sensitive to nonresponse"
+            ],
+            "B": [
+              "A preliminary note circulated this figure as a description of respondents",
+              "reflects differences between what the initial respondents and the reached follow-up respondents reported."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic language appropriate to readers familiar with percentages. A's headings and lists and B's continuous paragraphs are both intelligible; their more consequential differences concern development and repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To learn more about the 240 households that did not return the questionnaire, we conducted a telephone follow-up."
+            ],
+            "B": [
+              "We then approached the 240 initial nonrespondents by telephone, stopping once interviewers reached 90 completed interviews, the limit of the follow-up budget."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the initial interpretive problem through follow-up selection to the combined result and its limits, then explains reporting. A introduces the combined result and repeats its movement in another section before supplying the selection and mode qualifications, making the reader revisit the same conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "lowering the overall observed rate from 70.0 percent to approximately 65.3 percent.",
+              "The drop in the observed rate from 70.0 percent to 65.3 percent proves"
+            ],
+            "B": [
+              "This follow-up group was not a simple random sample of the 240 nonrespondents",
+              "However, the combined figure does not establish the rate for all 600 invited households"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected explanation with qualifications beside claims. A repeatedly announces the follow-up's contributions and turns the closing implication into another checklist, adding rhetorical packaging rather than useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**It Expands the Observed Group:**",
+              "**It Demonstrates Response Differences:**",
+              "**Highlight the Value of Follow-Up:**"
+            ],
+            "B": [
+              "Although the follow-up expanded the observed pool of households, it did not statistically correct for the remaining nonresponse.",
+              "Making such a correction would require assumptions that were not evaluated here"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B better satisfies the decisive priority: a coherent account that explains what the additional answers enable and why population prevalence remains unresolved. Its reporting conclusion follows directly from that distinction, whereas A repeats the contribution across lists and separates some important qualifications from its strongest claims.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**It Shows Result Sensitivity:**",
+              "**Highlight the Value of Follow-Up:**"
+            ],
+            "B": [
+              "Reporting both figures documents how the observed rate changed when additional households answered, while clearly stating the uncertainty that remains about the 150 unobserved households."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8736638c0fa0d61490196ead5ae5297cb5e1c6720e9150003db87081cf3e96f0",
+    "prompt_sha256": "e747c97308fcbdfbd555eefedaa693f77e76b56f7678b25dc274e2d7bc60ed85",
+    "raw_sha256": "eeb459f570978808aeb401ab7a8cafd8bfd109c9df5e6486f4edf08865d00e6a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The response preserves all counts and correctly scoped percentages, the stopping rule and selection mechanism, consistent measurement, lack of experimental mode assignment, and absence of weights or imputations. It retains the distinction between expanding observations and correcting nonresponse.",
+          "quotes": {
+            "source": [
+              "In the descriptive sense it broadens the observed group.",
+              "a claim that the remaining nonresponse has been corrected would require assumptions not evaluated here."
+            ],
+            "A": [
+              "the follow-up broadens the observed respondent pool",
+              "claiming that the remaining nonresponse has been corrected would require assumptions not evaluated here."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the numerical results and principal limitations but invents a ranking of response difficulty: completing interviews before the quota does not establish that these households were the easiest to reach and persuade. Contact order and attempts are not specified sufficiently to support that inference. This changes the reader's understanding of selection, although the conclusion that the group cannot automatically represent remaining households is still supported.",
+          "quotes": {
+            "source": [
+              "Interviewers worked through contact attempts and stopped once 90 interviews were complete.",
+              "reaching a household and obtaining agreement both determined who entered it."
+            ],
+            "A": [],
+            "B": [
+              "Because those 90 households were the easiest to reach and persuade among the initial nonrespondents"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the study stages, rates, missing households, and uncertainty about mode versus composition. A accurately describes the conditions determining participation. B goes beyond those conditions by asserting that respondents were the easiest households to reach and persuade, a selection property the source does not establish.",
+          "quotes": {
+            "source": [
+              "The resulting group was not a simple random sample of the 240: reaching a household and obtaining agreement both determined who entered it."
+            ],
+            "A": [
+              "Because both reaching a household and obtaining agreement determined who entered this group"
+            ],
+            "B": [
+              "those 90 households were the easiest to reach and persuade among the initial nonrespondents"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable for the stated audience. A explains the descriptive change in plain prose; B helpfully translates weighting and imputation into everyday language. A's dense final paragraph and B's longer, repetitive presentation do not establish a clear difference in sentence-level idiomatic readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "By including 90 households that were absent from the first calculation, the follow-up broadens the observed respondent pool and shows how much the descriptive result moves when another group answers."
+            ],
+            "B": [
+              "without weighting the responses or filling in estimates for missing households"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A places the realized group's selection limitation alongside its construction, then explains the combined result before distinguishing descriptive expansion from correction. B establishes the opening problem well, but postpones selection qualifications until after repeated announcements of what the follow-up demonstrates.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the 90 interviewed households were not a simple random sample of the 240 initial nonrespondents.",
+              "Although the follow-up broadens the observed group descriptively, it is not a statistical adjustment for nonresponse"
+            ],
+            "B": [
+              "This follow-up changes our understanding of the survey in two concrete ways:",
+              "**The 90 telephone respondents were not selected at random.**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the author's preference for connected technical prose that explains what the construction enables and keeps its scope precise. B's repeated contribution announcements and separate reporting recap make the passage more like a generic explanatory checklist. A does retain some repetition around broadening the group, but less of it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "By including 90 households that were absent from the first calculation",
+              "The report should therefore retain both stages rather than replacing the initial percentage with a supposedly final population estimate"
+            ],
+            "B": [
+              "**It broadens the group of observed households.**",
+              "**It shows that early respondents differed from later respondents.**",
+              "#### How the Results Should Be Reported"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds a minor unsupported claim about which households were easiest to recruit. A is therefore preferable on fidelity and also better meets the user's central writing priority: it connects the expanded observations to their descriptive value, then explains why correction and population inference remain unsupported without repeatedly announcing the same contribution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "shows how much the descriptive result moves when another group answers.",
+              "the combined 65.3 percent figure cannot by itself tell us the prevalence of library use among all 600 invitees"
+            ],
+            "B": [
+              "Because those 90 households were the easiest to reach and persuade among the initial nonrespondents",
+              "This follow-up changes our understanding of the survey in two concrete ways:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bff08249ffe58d00c82b3d7c2f4bf72a024ce0c6126025f674aa8abfa3306571",
+    "prompt_sha256": "e747c97308fcbdfbd555eefedaa693f77e76b56f7678b25dc274e2d7bc60ed85",
+    "raw_sha256": "eeb459f570978808aeb401ab7a8cafd8bfd109c9df5e6486f4edf08865d00e6a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the counts, percentages, and principal limitations, but invents a ranking of telephone respondents by ease of contact and persuasion. Completing interviews before the stopping point does not establish that these households were the easiest to reach and persuade.",
+          "quotes": {
+            "source": [
+              "reaching a household and obtaining agreement both determined who entered it."
+            ],
+            "A": [
+              "those 90 households were the easiest to reach and persuade among the initial nonrespondents"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all counts and denominators, the stopping rule, selection mechanism, unchanged question and month, absence of weighting or imputation, and both inferential limitations.",
+          "quotes": {
+            "source": [
+              "The change from 70 to 65.3 percent is a change in the observed respondent pool.",
+              "No weights or imputed responses were used."
+            ],
+            "A": [],
+            "B": [
+              "294 reports of library use among 450 responding households, or approximately 65.3 percent",
+              "no weights or imputed responses were used"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical results and distinguish reported differences from an isolated mode effect. B accurately describes selection through contact and agreement; A adds an unsupported claim that the completed interviews identify the easiest households to reach and persuade.",
+          "quotes": {
+            "source": [
+              "The resulting group was not a simple random sample of the 240: reaching a household and obtaining agreement both determined who entered it."
+            ],
+            "A": [
+              "those 90 households were the easiest to reach and persuade among the initial nonrespondents"
+            ],
+            "B": [
+              "Because both reaching a household and obtaining agreement determined who entered this group, the 90 interviewed households were not a simple random sample of the 240 initial nonrespondents."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the arithmetic and its interpretation in readable, connected prose. A repeatedly announces lessons and reporting instructions, making a relatively compact account feel more like a presentation outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This follow-up changes our understanding of the survey in two concrete ways:",
+              "#### How the Results Should Be Reported"
+            ],
+            "B": [
+              "By including 90 households that were absent from the first calculation, the follow-up broadens the observed respondent pool and shows how much the descriptive result moves when another group answers."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the original misunderstanding through follow-up selection and the combined result to the meaning of adjustment. A has an intelligible order, but revisits the same numerical shift and limitations across its explanatory list, limitations list, and reporting section.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The drop from 70 percent in the initial group to 46.7 percent in the follow-up group—pulling the combined rate down to 65.3 percent",
+              "the report should present both stages side by side"
+            ],
+            "B": [
+              "The shift from 70 percent to 65.3 percent, driven by the 46.7 percent rate in the follow-up group, is evidence that the initial respondents and the reached follow-up respondents differed in their reported library use.",
+              "it is not a statistical adjustment for nonresponse"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the preference for connected technical explanation with qualifications beside their claims. A supplies useful explanations, but surrounds them with repeated lesson announcements and warning structures.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It confirms that the preliminary 70 percent figure should not be mistaken for the rate across all 600 invitees.",
+              "It cannot be treated as a complete correction for nonresponse or as the true rate for all 600 invited households, for three reasons:"
+            ],
+            "B": [
+              "Although the follow-up broadens the observed group descriptively, it is not a statistical adjustment for nonresponse: no weights or imputed responses were used, and claiming that the remaining nonresponse has been corrected would require assumptions not evaluated here."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or requested derivation to assess; numerical fidelity is covered under meaning.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error, whereas A adds an unsupported claim about which households were easiest to contact and persuade. B also better meets the decisive writing priority: it connects the added information to the limits of statistical adjustment without repeatedly repackaging the same lesson.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "those 90 households were the easiest to reach and persuade among the initial nonrespondents"
+            ],
+            "B": [
+              "The report should therefore retain both stages rather than replacing the initial percentage with a supposedly final population estimate"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8cb7ff7a10d772266cfc376f47508fc37372b78b5abd780306139bce2464e5d1",
+    "prompt_sha256": "56f4b945a2a017693449834d37ab35826d423796f1d8bb23b369d475c5eca94f",
+    "raw_sha256": "382eaea60afe0a98818e4f2df7655ccc370f25606223256faf827d320515a8b2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an explanatory survey-methods rewrite, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the numerical details and substantive qualifications, including selection, stopping, comparable questions, unassigned mode, and the distinction between expanded observations and statistical correction.",
+          "quotes": {
+            "source": [
+              "Combining the completed questionnaires and interviews gives 294 reports of library use among 450 responding households, or approximately 65.3 percent.",
+              "No weights or imputed responses were used."
+            ],
+            "A": [
+              "Combining the initial questionnaires and telephone interviews yields 294 reports of library use among 450 responding households, or approximately 65.3 percent.",
+              "no survey weights or imputations were used"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the study details and limitations. Its statement about overstatement is ambiguous, but can reasonably mean that 70 percent exceeds the later combined observed rate; the surrounding discussion limits generalization and acknowledges mode confounding. This does not establish a material error.",
+          "quotes": {
+            "source": [
+              "It is evidence that the initial respondents and the reached follow-up respondents differed in their reports.",
+              "It cannot by itself tell us the prevalence among all 600 invitees"
+            ],
+            "A": [],
+            "B": [
+              "overstated library use among those observed",
+              "The reached nonrespondents reported library use at a markedly lower rate",
+              "the combined 65.3 percent cannot tell us the true rate across all 600 households"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the counts, percentages, stopping rule, missing households, and methodological limitations. A states the supported inference precisely. B's language about proof and overstatement is less carefully scoped, although its surrounding qualifications support a faithful reading.",
+          "quotes": {
+            "source": [
+              "It is evidence that the initial respondents and the reached follow-up respondents differed in their reports."
+            ],
+            "A": [
+              "The drop from 70 to 65.3 percent reflects differences between what the initial respondents and the reached follow-up respondents reported."
+            ],
+            "B": [
+              "proves that findings based solely on early returns were sensitive to nonresponse and overstated library use among those observed"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses accessible prose to explain both the results and their limits. B's repeated headings, capitalized bullet labels, and successive lists interrupt the account and repeatedly announce information already explained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Although the follow-up expanded the observed pool of households, it did not statistically correct for the remaining nonresponse."
+            ],
+            "B": [
+              "### What the Follow-Up Added",
+              "### What the Follow-Up Changes",
+              "**It Shows Result Sensitivity:**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A carries the reader from the initial result through selection and the combined result to the reporting decision. B explains the follow-up's value, but then restates its expansion and numerical shift in another section before repeating them in recommendations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The final report should therefore present both stages rather than replacing the initial 70 percent with the combined 65.3 percent as a final population estimate."
+            ],
+            "B": [
+              "**A Shifted Overall Picture:**",
+              "**It Expands the Observed Group:**",
+              "**Highlight the Value of Follow-Up:**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for connected explanation that preserves qualifications without repeated defensive commentary. Its repeated statement about unassigned mode is unnecessary, but B more extensively fragments and amplifies the same argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Making such a correction would require assumptions that were not evaluated here, and no survey weights or imputations were used."
+            ],
+            "B": [
+              "Several critical questions remain unresolved:",
+              "**Be Transparent About Ongoing Uncertainty:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or requested derivation to assess; numerical fidelity is covered under meaning.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither artifact has an established material error. A better meets the user's central goal by connecting the expanded respondent pool, unresolved nonresponse, and reporting decision in one coherent account. B repeats that argument across several lists and uses unnecessarily strong language about what the change proves.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Reporting both figures documents how the observed rate changed when additional households answered, while clearly stating the uncertainty that remains about the 150 unobserved households."
+            ],
+            "B": [
+              "proves that findings based solely on early returns were sensitive to nonresponse",
+              "**Highlight the Value of Follow-Up:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "fd6b839f26f55b78f1da2b2179502350119e8029848d764b2d88cfb221470dd4",
+    "prompt_sha256": "56f4b945a2a017693449834d37ab35826d423796f1d8bb23b369d475c5eca94f",
+    "raw_sha256": "382eaea60afe0a98818e4f2df7655ccc370f25606223256faf827d320515a8b2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an empirical evaluation rewrite, with no mathematical proof or derivation to assess.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the fixed tuning, evaluation units, counts, conditional delay comparison, and deployment limits. Its specificity terminology is less careful, but the explicit definition of no-fault prevents a clear claim of verified defect absence.",
+          "quotes": {
+            "source": [
+              "Here 'no-fault' means that no fault was induced; we did not dismantle the machine after every cycle to exclude every possible defect."
+            ],
+            "A": [
+              "Here, \"no-fault\" signifies strictly that no fault was induced; the machine was not dismantled following each cycle to rule out unmodeled mechanical defects."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves separate setup tuning, the one-machine 30/90 split, one-alarm limit, both rules' counts, delay means on eighteen shared detections, and the unmeasured costs and production limits.",
+          "quotes": {
+            "source": [
+              "The delay result is conditional on that shared subset.",
+              "Those costs were not measured."
+            ],
+            "A": [],
+            "B": [
+              "The delay result is therefore conditional on that shared subset.",
+              "neither of which was measured."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the exact experiment and observed tradeoff without claiming better false-alarm control. Both explicitly condition the delay evidence on shared detections and preserve the limits on choosing or deploying a rule.",
+          "quotes": {
+            "source": [
+              "The persistence rule alarms in 24 of the 30 fault cycles and eight of the 90 no-fault cycles.",
+              "The comparison rule alarms in 21 fault cycles and three no-fault cycles."
+            ],
+            "A": [
+              "Triggered an alarm in 24 of the 30 fault cycles and 8 of the 90 no-fault cycles.",
+              "Triggered an alarm in 21 of the 30 fault cycles and 3 of the 90 no-fault cycles."
+            ],
+            "B": [
+              "The persistence rule alarmed in 24 of the 30 fault cycles and eight of the 90 no-fault cycles, while the comparison rule alarmed in 21 fault cycles and three no-fault cycles."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly substitutes abstract, formal phrasing for ordinary technical explanation. B states the same relationships directly and maintains a more conversational scientific rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "While restricting latency analysis to intersecting detections eliminates confounding differences between disparate cycle sets"
+            ],
+            "B": [
+              "Restricting this delay comparison to shared detections avoids comparing delays on different sets of cycles"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both introduce motivation before mechanics and then present counts, delays, and limits. B connects the counts immediately to their interpretation; A spreads that interpretation across an early conceptual warning, a results section, and a later synthesis that repeats the tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Although multi-crossing persistence is conceptually regarded as a false-alarm mitigation strategy",
+              "These findings highlight a central discrepancy between design intent and observed performance."
+            ],
+            "B": [
+              "Thus the persistence rule detected more of the induced faults in this set, but it also alarmed more often in cycles designated no-fault."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's direct explanation of why the rule exists and integrates qualifications into connected prose. A's numbered architecture and phrases about conceptual strategies and underlying tradeoffs add rhetorical packaging to a passage that already has a straightforward argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The persistence rule was formulated under the premise that an isolated pressure transient does not reliably signify a valve fault.",
+              "it recalibrates the underlying detection tradeoff."
+            ],
+            "B": [
+              "We introduced the persistence rule because a single pressure spike need not indicate a valve fault.",
+              "In this experiment, its observed benefit was higher detection of induced faults at the cost of more alarms in no-fault cycles."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage reports experimental observations and their limitations rather than a proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material fidelity error. B better meets the decisive preference for a connected scientific account: it explains the motivation, interprets the observed tradeoff beside the counts, and preserves the conditional delay evidence without A's additional synthesis rhetoric.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These findings highlight a central discrepancy between design intent and observed performance."
+            ],
+            "B": [
+              "Although the persistence rule was motivated by transient spikes, combining a lower threshold with a persistence requirement does not inherently improve false-alarm control."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4a4a6b5d0ad466791886a36f2d61de93443f63479387f199e1869a0624d2a340",
+    "prompt_sha256": "774c01f5356ff4708fdc9b8e20c9fe7001f2383198fa68c76ba83d4b9b43277d",
+    "raw_sha256": "5bfdaa3e04d8d61f4178005072d6b965b6752cbf77427d2fb758815c651734fd",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a technical evaluation rewrite, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the tuning separation, exact cycle groups and counts, alarm limit, shared-subset delay means, and decision limits. It correctly distinguishes construction from evidence of false-alarm improvement.",
+          "quotes": {
+            "source": [
+              "A low threshold plus a persistence condition is not, by its construction alone, evidence of better false-alarm control."
+            ],
+            "A": [
+              "combining a low threshold with a persistence condition is not, by its construction alone, evidence of better false-alarm control."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The numerical results and qualifications are intact, but B attributes the observed sensitivity tradeoff to the threshold parameter shift. The source says the lower threshold changes alarm eligibility and reports a comparison of two fixed rules; it does not isolate the threshold's causal contribution from the persistence requirement.",
+          "quotes": {
+            "source": [
+              "its lower threshold also changes which cycles can produce an alarm.",
+              "These recordings test two fixed rules under one bench arrangement."
+            ],
+            "A": [],
+            "B": [
+              "In this bench evaluation, that parameter shift caused the persistence rule to operate not as a false-alarm reduction measure, but as a more sensitive detector"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the exact setup, counts, conditional delays, and external-validity limits. A confines its conclusion to the observed difference between rules; B adds an unsupported causal attribution to the threshold shift.",
+          "quotes": {
+            "source": [
+              "its lower threshold also changes which cycles can produce an alarm.",
+              "its observed benefit in this experiment was higher detection of induced faults at the cost of more alarms in no-fault cycles."
+            ],
+            "A": [
+              "its observed benefit in this experiment is higher detection of induced faults at the cost of more alarms in the cycles designated no-fault."
+            ],
+            "B": [
+              "that parameter shift caused the persistence rule to operate not as a false-alarm reduction measure, but as a more sensitive detector"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct scientific prose with readable sentence lengths. B remains intelligible but adds abstract transitions and elaborate qualification language where the underlying relationship is simple.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Eighteen fault cycles trigger both rules. On those eighteen cycles"
+            ],
+            "B": [
+              "A secondary advantage in response speed was observed for the persistence rule, but only within strict comparative limits."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A establishes the reason for the rule, explains its construction, and then develops the evidence and limits. B announces the warning and empirical outcome before supplying the setup and counts, then repeats that interpretation after the counts.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We introduced the persistence rule because a single pressure spike need not indicate a valve fault.",
+              "Thus, although the persistence rule was motivated by transient spikes, its observed benefit in this experiment is higher detection of induced faults"
+            ],
+            "B": [
+              "Although the two-crossing persistence rule was designed to prevent transient pressure spikes from triggering valve-fault alarms",
+              "This divergence between design motivation and empirical outcome is evident in the cycle-level detection counts."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A fits the author's preference for purpose before mechanics and preserves useful explanation without repeatedly staging the motivation-versus-outcome contrast. B foregrounds defensive framing and returns to the same contrast several times.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the persistence rule's lower threshold also changes which cycles can produce an alarm"
+            ],
+            "B": [
+              "While it is tempting to characterize the persistence requirement simply as a false-alarm filter",
+              "Even within that definitional boundary"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation in the requested editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B's minor causal overstatement could lead readers to attribute the measured tradeoff specifically to the threshold change. A also better serves the user's central writing priority by building from motivation through evidence to limits without repeatedly announcing the contrast.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "its observed benefit in this experiment is higher detection of induced faults at the cost of more alarms in the cycles designated no-fault."
+            ],
+            "B": [
+              "that parameter shift caused the persistence rule to operate not as a false-alarm reduction measure, but as a more sensitive detector"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b950baf3922f3925242ab9cadd01f6218a12eba7ee006674ac0de6f338e46d4d",
+    "prompt_sha256": "774c01f5356ff4708fdc9b8e20c9fe7001f2383198fa68c76ba83d4b9b43277d",
+    "raw_sha256": "5bfdaa3e04d8d61f4178005072d6b965b6752cbf77427d2fb758815c651734fd",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an empirical technical evaluation; it contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A attributes the observed tradeoff specifically to the threshold shift. The source establishes that the lower threshold changes alarm eligibility, but reports results for the combined rules without isolating the threshold's causal contribution.",
+          "quotes": {
+            "source": [
+              "its lower threshold also changes which cycles can produce an alarm."
+            ],
+            "A": [
+              "that parameter shift caused the persistence rule to operate not as a false-alarm reduction measure, but as a more sensitive detector"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the separate tuning, evaluation units, all counts, conditional delay means, uncertain defect status, and limits on deployment and rule selection.",
+          "quotes": {
+            "source": [
+              "The delay result is conditional on that shared subset.",
+              "Here 'no-fault' means that no fault was induced"
+            ],
+            "A": [],
+            "B": [
+              "the delay result is conditional on that shared subset.",
+              "Here, 'no-fault' means only that no fault was induced"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical results and substantive qualifications. B also preserves the distinction between an observed comparison and a causal explanation; A assigns the tradeoff to the threshold shift without supporting analysis.",
+          "quotes": {
+            "source": [
+              "Thus the persistence rule detects more of the induced faults in this set while also alarming more often in the cycles designated no-fault."
+            ],
+            "A": [
+              "that parameter shift caused the persistence rule to operate"
+            ],
+            "B": [
+              "its observed benefit in this experiment is higher detection of induced faults at the cost of more alarms in the cycles designated no-fault."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct scientific prose. A repeatedly wraps straightforward observations in abstract announcements and emphatic qualifications, making the account more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A secondary advantage in response speed was observed for the persistence rule, but only within strict comparative limits."
+            ],
+            "B": [
+              "Eighteen fault cycles trigger both rules."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B establishes the motivation, explains the construction and its obstacle, and then presents evidence and decision limits. A announces the outcome before introducing the dataset and subsequently announces that same contrast again.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This divergence between design motivation and empirical outcome is evident in the cycle-level detection counts."
+            ],
+            "B": [
+              "Because the persistence rule's lower threshold also changes which cycles can produce an alarm",
+              "The held-out bench set contains 120 machine cycles from one machine"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B matches the author's preference for purpose-led explanation with qualifications where they matter. A repeatedly restates the motivation-versus-outcome distinction and adds defensive framing after that distinction is already clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Even within that definitional boundary, the persistence rule's observed benefit in this test set was higher detection of induced faults rather than fewer alarms in designated no-fault cycles."
+            ],
+            "B": [
+              "We introduced the persistence rule because a single pressure spike need not indicate a valve fault.",
+              "Restricting this delay comparison to shared detections avoids comparing delays on different sets of cycles"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A introduces a minor unsupported causal attribution. B also better fulfills the decisive writing priority: it develops the motivation, measured tradeoff, conditional delay evidence, and decision limits without repeatedly announcing the same contrast.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "that parameter shift caused the persistence rule to operate",
+              "This divergence between design motivation and empirical outcome"
+            ],
+            "B": [
+              "combining a low threshold with a persistence condition is not, by its construction alone, evidence of better false-alarm control.",
+              "We have not selected a preferred rule, because the acceptable tradeoff depends on the cost of a missed fault and of interrupting a cycle"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "658df6173a1a1f47d4809539e94629add6ea165562277fe32f9e4a8d432daef8",
+    "prompt_sha256": "c6bbaad6d630473c723fd1bbaec8f01cb0da5a1e921c1612e23bd55d708344a0",
+    "raw_sha256": "2a5b8f6720601a838c87bb6d95354cc410144e13e41d380a5257ca95f560e81e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns exposition of an empirical comparison, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the fixed separate tuning, single-machine cycle counts, alarm limit, all results, shared-detection conditioning, and evaluation and decision limits.",
+          "quotes": {
+            "source": [
+              "On those eighteen cycles, the mean time from the logged fault onset to the first alarm is 2.1 seconds for the persistence rule and 2.8 seconds for the comparison."
+            ],
+            "A": [
+              "On those eighteen cycles, the mean time from logged fault onset to the first alarm was 2.1 seconds for the persistence rule and 2.8 seconds for the comparison rule."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the experimental design, counts, delay means, and comparison limits. Its specificity terminology and later delay summary are less carefully phrased, but the explicit designated-no-fault and shared-subset qualifications prevent a clear material change in meaning.",
+          "quotes": {
+            "source": [
+              "Here 'no-fault' means that no fault was induced",
+              "The delay result is conditional on that shared subset."
+            ],
+            "A": [],
+            "B": [
+              "Here, \"no-fault\" signifies strictly that no fault was induced",
+              "this estimate remains strictly conditional: it excludes cycles identified by only one rule as well as fault cycles missed by both."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact observations and their substantive limits. B's synthesis is less precise about the delay subset, but its preceding explicit conditioning remains applicable; neither establishes improved false-alarm control or production performance.",
+          "quotes": {
+            "source": [
+              "A low threshold plus a persistence condition is not, by its construction alone, evidence of better false-alarm control.",
+              "The delay result is conditional on that shared subset."
+            ],
+            "A": [
+              "combining a lower threshold with a persistence requirement does not inherently improve false-alarm control.",
+              "The delay result is therefore conditional on that shared subset."
+            ],
+            "B": [
+              "does not, by virtue of its architecture alone, guarantee false-alarm control",
+              "this estimate remains strictly conditional"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the comparison in familiar, readable report prose. B unnecessarily elevates ordinary descriptions into formal terminology, increasing the effort needed to follow the same explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Restricting this delay comparison to shared detections avoids comparing delays on different sets of cycles"
+            ],
+            "B": [
+              "restricting latency analysis to intersecting detections eliminates confounding differences between disparate cycle sets"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow a coherent sequence from motivation and rule construction through observed tradeoffs and conditional delays to decision limits. A repeats the tradeoff within its results paragraph; B revisits it in a separate synthesis. Neither repetition materially disrupts the reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We introduced the persistence rule because a single pressure spike need not indicate a valve fault.",
+              "These recordings test two fixed rules under one bench arrangement"
+            ],
+            "B": [
+              "The persistence rule was formulated under the premise that an isolated pressure transient does not reliably signify a valve fault.",
+              "Finally, these results reflect two static configurations evaluated under a single bench setup"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the requested connected, conversational technical account, despite some repeated interpretation. B's numbered architecture, metric lists, and abstract synthesis turn a compact research passage into a more generic formal evaluation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have not selected a preferred rule, because the acceptable tradeoff depends on the cost of a missed fault and of interrupting a cycle, neither of which was measured."
+            ],
+            "B": [
+              "#### 1. Rule Architecture and Rationale",
+              "the optimal operational point depends on the economic balance between cycle interruption costs and the operational risk of an undetected fault"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested edit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A better serves this author's central preference for connected explanation: its delay paragraph explains the restriction and consequence directly, and its conclusion connects the unmeasured costs to the decision. B preserves the substance but adds formal scaffolding and inflated phrasing without developing the argument further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Restricting this delay comparison to shared detections avoids comparing delays on different sets of cycles, but it leaves out faults detected by only one rule and faults missed by both."
+            ],
+            "B": [
+              "#### 4. Synthesis and Limits of Comparison",
+              "it recalibrates the underlying detection tradeoff."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5ff923e66ccb07b06229566b1bd39c795eef19ed331f798d339bf27abcc52b1d",
+    "prompt_sha256": "c6bbaad6d630473c723fd1bbaec8f01cb0da5a1e921c1612e23bd55d708344a0",
+    "raw_sha256": "2a5b8f6720601a838c87bb6d95354cc410144e13e41d380a5257ca95f560e81e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an archive methods report, with no mathematical proof or derivation to assess.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the eighty-card convenience sample, independent transcription, permitted responses, prohibition on inference, all counts, and the distinction between transcriber agreement and untabulated agreement with reconciliation. It retains the internal-reference limitation and makes no collection-wide or retrieval-benefit claim.",
+          "quotes": {
+            "source": [
+              "The trial instructions did not allow an inferred year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "the trial instructions did not allow anyone to infer a year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the sampling and transcription procedures, all numerical findings, and the separate agreement measures. Its joint inspection remains an internal reference; convenience sampling and untested retrieval benefits remain explicit.",
+          "quotes": {
+            "source": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "These counts describe the trial and do not estimate error across the collection."
+            ],
+            "A": [],
+            "B": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the distinction between field occupancy and supported transcription, the 50/18/12 reconciliation, the 47-and-49 correct-year results and remaining unreadable responses, no years on the other thirty cards, and 26-of-30 mutual agreement. Neither substitutes mutual agreement for agreement with the reference or strengthens the conclusions.",
+          "quotes": {
+            "source": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six."
+            ],
+            "A": [
+              "On those thirty cards, their decisions on whether a date was absent or unreadable agreed with each other on twenty-six."
+            ],
+            "B": [
+              "On those thirty cards, the two transcribers agreed with each other on twenty-six about whether the date was absent or unreadable."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic report prose with modest differences in rhythm. A's compact wording and B's somewhat more conversational phrasing provide no substantial readability advantage over one another.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A date field in an index is easy to count once it is filled."
+            ],
+            "B": [
+              "The index has a field for a date, and whether that field is filled is easy to count."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish why completeness is an inadequate measure before describing the trial, then interpret the results through the different reasons for missing years and finish with scope limitations. The reader receives the same explanatory sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because an empty field can come from an unreadable date, an absent date, or an oversight, counting filled fields alone mixes several kinds of work together."
+            ],
+            "B": [
+              "Because an empty field can result from an illegible date, an absent date, or an oversight, looking only at whether the field is filled mixes several kinds of work."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the reflective opening, connected explanation, and practical reason the absent/unreadable distinction matters. Neither imports the sample's facts, adds decorative framing, or compresses away useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These distinctions matter for later work: a reader looking for a document’s date faces a different problem from a conservator deciding whether another imaging method could help."
+            ],
+            "B": [
+              "Those distinctions matter for later work: a reader looking for a document's date faces a different problem from a conservator deciding whether another imaging method could help."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage reports and interprets hypothetical trial findings rather than presenting a proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: explaining why counting filled fields misses meaningful distinctions before presenting the method and its limited implications. Their small wording changes do not justify a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That description would ignore the cards for which the procedure expressly required something other than a year. It would also hide the four disagreements about why no year was entered."
+            ],
+            "B": [
+              "That description would ignore the cards where the procedure expressly required something other than a year. It would also hide the four disagreements about why no year was entered."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "74f65261a17a99d4116d1536f77f220f005717bd6eaf4457c54661bb39c56d67",
+    "prompt_sha256": "03ec5df7e82aa256ed3f45f24925d8f263a4e00b2f6f24902ffb5905a9893a54",
+    "raw_sha256": "02d18cb026f55f720ee306f3b34ce2d908b05dd4e87228053cfdd37b18f8eb14",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an edited archive methods report, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A closely preserves the source, including all sampling details, response rules, numerical findings, agreement qualifications, and limits on interpretation. Its small change to the final sentence does not alter the untested status of retrieval benefits.",
+          "quotes": {
+            "source": [
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ],
+            "A": [
+              "Whether that change improves later retrieval is a further question, and we have not tested it."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the eighty-card single-drawer convenience sample, independent transcription, response options and no-inference rule, all counts, and the agreement distinction. Its explicit purpose transition follows the source's problem and method without adding a new finding. Internal reconciliation, collection limits, and untested retrieval benefits remain qualified.",
+          "quotes": {
+            "source": [
+              "The trial instructions did not allow an inferred year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [],
+            "B": [
+              "did not allow them to infer a year.",
+              "We have not tabulated how often each transcriber's individual choice on that distinction matched the reconciled decision."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete findings: 50/18/12 reconciled categories, 47 and 49 reference years with three and one unreadable responses, no entered years on the other thirty cards, and mutual agreement on twenty-six. Both retain the practical distinction between absent and unreadable dates and the limits of the evidence.",
+          "quotes": {
+            "source": [
+              "Neither entered a year for any of the thirty cards classified as absent or unreadable in the reconciled record."
+            ],
+            "A": [
+              "Neither entered a year for any of the thirty cards classified as absent or unreadable in the reconciled record."
+            ],
+            "B": [
+              "Neither transcriber entered a year on any of the thirty cards that the reconciled record classified as absent or unreadable."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable, but B more naturally expresses the central interpretive difficulty and the agreement qualification in ordinary clauses. This improves accessibility without removing technical distinctions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six."
+            ],
+            "B": [
+              "Across those thirty cards, the two transcribers agreed with each other on twenty-six when choosing between absent and unreadable."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A already has a sound problem–method–results sequence. B strengthens the reason for the method with 'To separate those cases' and explicitly connects convenience selection to the limits of inference. These transitions address the author's request to explain why each step belongs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "The drawer was chosen for convenience. These counts describe the trial and do not estimate error across the collection."
+            ],
+            "B": [
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "A preserves an already effective passage but changes little of its presentation. B better realizes the requested plain, reflective voice by stating the starting question directly and walking the reader through why an empty field also needs interpretation. Its advantage is explanatory connection, not the amount of rewriting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Our transcription trial began with a question about completeness that turned out to be a question about what we meant by completeness."
+            ],
+            "B": [
+              "We began the transcription trial by asking how complete our date entries were, which soon became a question about what we meant by completeness.",
+              "An empty field is no simpler to interpret: it can mean that a card has no date, that the date is illegible, or that the transcriber missed it."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation requiring mathematical or expository assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error, and A remains a usable, faithful report. B offers a modest but substantive improvement for this user: it explicitly introduces the trial as a way to separate the cases that make completeness misleading, then connects the sampling choice to the conclusion's scope. That better meets the priority of making the reasoning readable in order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "field completion alone mixes several kinds of work.",
+              "We selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index."
+            ],
+            "B": [
+              "Counting field completion alone mixes several different kinds of work.",
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer that had not yet been entered into the digital index."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "13eb13eb39d1770482d2e538138f7f88070d257101b0d87d6700c7614c8de437",
+    "prompt_sha256": "03ec5df7e82aa256ed3f45f24925d8f263a4e00b2f6f24902ffb5905a9893a54",
+    "raw_sha256": "02d18cb026f55f720ee306f3b34ce2d908b05dd4e87228053cfdd37b18f8eb14",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an archive methods report revision, with descriptive counts but no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the eighty-card convenience sample, independent transcription, permitted responses, prohibition on inference, all counts, and limits on validation and generalization. It keeps transcriber agreement distinct from agreement with reconciliation.",
+          "quotes": {
+            "source": [
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the sample and protocol, the 50/18/12 classifications, the 47/49 correct-year counts and unreadable remainders, and no entered years on the other thirty cards. Its agreement and retrieval qualifications also remain intact.",
+          "quotes": {
+            "source": [
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ],
+            "A": [],
+            "B": [
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the distinction between field occupancy and supported transcription, explain why absent versus unreadable matters, and preserve the internal-reference and collection-wide limitations.",
+          "quotes": {
+            "source": [
+              "This was an internal reconciliation, not an independent external validation of the dates."
+            ],
+            "A": [
+              "This was an internal reconciliation, not an independent external validation of the dates."
+            ],
+            "B": [
+              "This was an internal reconciliation, not an independent external validation of the dates."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read as plain report prose. A's explanation of counting is slightly more direct, while B's opening is more conversational; these small differences do not establish a substantive advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The index has a field for a date, and whether that field is filled is easy to count."
+            ],
+            "B": [
+              "We started our transcription trial with a question about completeness that turned out to be a question about what completeness meant."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from the limits of completeness measures through the protocol and findings to their practical interpretation. Both explain what the occupancy measure conceals before discussing later work.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It would also hide the four disagreements about why no year was entered. Those distinctions matter for later work:"
+            ],
+            "B": [
+              "It would also hide the four disagreements about why no year was entered. These distinctions matter for later work:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the reflective practical framing, useful explanation, and restrained scope. Neither imports sample facts or substitutes decorative language for the report's reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We chose the drawer for convenience. These counts describe the trial and do not estimate error across the collection."
+            ],
+            "B": [
+              "We chose the drawer for convenience. These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is requested.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: explaining why counting completed fields obscures different transcription tasks and why those differences matter. Their minor wording changes leave the completed reports comparably useful to this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a reader looking for a document's date faces a different problem from a conservator deciding whether another imaging method could help."
+            ],
+            "B": [
+              "a reader looking for a document’s date faces a different problem from a conservator deciding whether another imaging method could help."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2151e134b74011f2ad39acd604af79eed2b19ae621724327db8cb595b85a42e1",
+    "prompt_sha256": "0ef36fd68874b1cfb2b288d54d5342cbe50a564c3a52fbe7a2e5ec69bc9f6ffd",
+    "raw_sha256": "6cec5ec48d33521004adff513aff945a84819a2473a73cc79fecd37d2d7796d3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a prose revision of a descriptive archive trial, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the convenience sample, independence, response options, prohibition on inferred years, all numerical findings, and reconciliation limitations. Its explicit transitions explain the supplied rationale without adding findings or claiming a retrieval benefit.",
+          "quotes": {
+            "source": [
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "We have not tabulated how often each transcriber's individual choice on that distinction matched the reconciled decision."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B closely preserves the source, including all counts and unreadable remainders, the distinction between transcriber agreement and reference agreement, and the limits on population inference and retrieval claims.",
+          "quotes": {
+            "source": [
+              "These counts describe the trial and do not estimate error across the collection."
+            ],
+            "A": [],
+            "B": [
+              "These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the findings and their qualifications. A unpacks the agreement statement without changing its denominator or turning agreement between transcribers into accuracy against the reference.",
+          "quotes": {
+            "source": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six."
+            ],
+            "A": [
+              "Across those thirty cards, the two transcribers agreed with each other on twenty-six when choosing between absent and unreadable."
+            ],
+            "B": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A makes several abstract formulations easier to read as connected prose, especially the explanation of empty fields. B is readable but retains more compressed phrasing from the source.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "An empty field is no simpler to interpret: it can mean that a card has no date, that the date is illegible, or that the transcriber missed it."
+            ],
+            "B": [
+              "Because an empty field can result from an illegible date, an absent date, or an oversight, field completion alone mixes several kinds of work."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both have a sound overall order, but A explicitly connects the classification problem to the trial's purpose and the sampling choice to its inferential limit. These links answer why the method and qualification belong where they do.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ],
+            "B": [
+              "We selected eighty catalogue cards from a single drawer",
+              "The drawer was chosen for convenience. These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better implements the author's preference for explaining purpose before mechanics and retaining useful explanation. Its conversational unpacking of what was not tabulated is more accessible without weakening the qualification; B remains faithful but more compressed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have not tabulated how often each transcriber's individual choice on that distinction matched the reconciled decision."
+            ],
+            "B": [
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A has a modest but concrete advantage on the user's decisive priority: it explains why the trial follows from the ambiguity of completeness before presenting its mechanics. B preserves an effective source structure, but A develops its connections more explicitly without adding unsupported results.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Counting field completion alone mixes several different kinds of work.",
+              "To separate those cases, we pulled eighty catalogue cards"
+            ],
+            "B": [
+              "field completion alone mixes several kinds of work.",
+              "We selected eighty catalogue cards"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1eb674502204d647a7ad3e022acd2a47eea33af5c0d4afc9b706e354de845416",
+    "prompt_sha256": "0ef36fd68874b1cfb2b288d54d5342cbe50a564c3a52fbe7a2e5ec69bc9f6ffd",
+    "raw_sha256": "6cec5ec48d33521004adff513aff945a84819a2473a73cc79fecd37d2d7796d3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a prose revision of an archive methods report, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the sampling method, transcription rules, all counts, and limitations. Mutual agreement remains distinct from unreported individual agreement with reconciliation.",
+          "quotes": {
+            "source": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "On those thirty cards, their decisions on whether a date was absent or unreadable agreed with each other on twenty-six.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the sample, permitted responses, numerical findings, and agreement distinction. It retains internal reconciliation, limited generalizability, and the untested retrieval benefit.",
+          "quotes": {
+            "source": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ],
+            "A": [],
+            "B": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "Whether that change improves later retrieval is a further question that we have not tested."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every reported count and qualification, distinguish occupied fields from supported dates, and retain the practical importance of classifying absent versus unreadable dates.",
+          "quotes": {
+            "source": [
+              "The reconciled record contains fifty cards with a readable year, eighteen with no date, and twelve with an unreadable date."
+            ],
+            "A": [
+              "The reconciled record contains fifty cards with a readable year, eighteen with no date, and twelve with an unreadable date."
+            ],
+            "B": [
+              "The reconciled record contains fifty cards with a readable year, eighteen with no date, and twelve with an unreadable date."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic report prose. Their small differences in phrasing do not create a meaningful advantage in readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because an empty field can come from an unreadable date, an absent date, or an oversight, counting filled fields alone mixes several kinds of work together."
+            ],
+            "B": [
+              "Because an empty field can result from an illegible date, an absent date, or an oversight, looking only at whether the field is filled mixes several kinds of work."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each establishes the problem with counting filled fields, explains the trial and results, then connects the distinctions to subsequent work and limits the conclusions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That description would ignore the cards for which the procedure expressly required something other than a year. It would also hide the four disagreements about why no year was entered."
+            ],
+            "B": [
+              "That description would ignore the cards where the procedure expressly required something other than a year. It would also hide the four disagreements about why no year was entered."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain the plain, reflective opening and explain why the distinctions matter without importing the sample's facts or adding decorative claims.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We started our transcription trial with a question about completeness that turned out to be a question about what completeness meant."
+            ],
+            "B": [
+              "Our transcription trial began with a question about completeness that turned out to be a question about what completeness meant."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested; the numerical findings are supplied report content.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the user's central priority by explaining the measurement problem before the method and preserving the reasons for separate reporting. The wording differences do not support a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They do suggest that our reporting should separate readable-year transcription from the classification of missing or unreadable dates."
+            ],
+            "B": [
+              "They suggest that our reporting should separate transcribing readable years from classifying missing or unreadable dates."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "74f65261a17a99d4116d1536f77f220f005717bd6eaf4457c54661bb39c56d67",
+    "prompt_sha256": "03ec5df7e82aa256ed3f45f24925d8f263a4e00b2f6f24902ffb5905a9893a54",
+    "raw_sha256": "7b0ccdb5ac25fbdf1b00cee899465f244abf0b8b4a020a9be2315ad898d2109e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an archive methods prose revision, with supplied findings rather than a mathematical argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Closely preserves the source, including all counts, independent transcription, prohibited inference, the agreement distinction, and the limitations on validation and generalization.",
+          "quotes": {
+            "source": [
+              "The trial instructions did not allow an inferred year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "The trial instructions did not allow an inferred year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all findings and qualifications. Its added transitions explain relationships already supported by the source, without adding empirical findings or claiming a retrieval benefit.",
+          "quotes": {
+            "source": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six.",
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ],
+            "A": [],
+            "B": [
+              "Across those thirty cards, the two transcribers agreed with each other on twenty-six when choosing between absent and unreadable.",
+              "Whether reporting those figures separately improves later retrieval is a further question that we have not yet tested."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the eighty-card convenience sample, permitted responses, reconciled counts, correct-year results, and remaining unreadable responses. Neither conflates transcriber agreement with reference agreement or overstates the conclusions.",
+          "quotes": {
+            "source": [
+              "The first transcriber entered the reference year on forty-seven of the fifty readable cards and marked three as unreadable.",
+              "The second entered the reference year on forty-nine and marked one as unreadable."
+            ],
+            "A": [
+              "The first transcriber entered the reference year on forty-seven of the fifty readable cards and marked three as unreadable.",
+              "The second entered the reference year on forty-nine and marked one as unreadable."
+            ],
+            "B": [
+              "On the fifty cards with a readable year, the first transcriber entered the reference year on forty-seven and marked three as unreadable; the second entered the reference year on forty-nine and marked one as unreadable."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A is already idiomatic and readable. B uses more conversational phrasing in places, but both work naturally as methods-report prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": [
+              "We have not tabulated how often each transcriber's individual choice on that distinction matched the reconciled decision."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A has a coherent problem-to-method sequence. B makes the method's purpose explicit at its introduction and directly connects convenience sampling to the scope of the findings, strengthening the reasoning between paragraphs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "The drawer was chosen for convenience. These counts describe the trial and do not estimate error across the collection."
+            ],
+            "B": [
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both preserve the reflective voice. B more fully serves the author's preference for explaining the obstacle and introducing a method through its purpose, while retaining useful detail and qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because an empty field can result from an illegible date, an absent date, or an oversight, field completion alone mixes several kinds of work.",
+              "We selected eighty catalogue cards from a single drawer"
+            ],
+            "B": [
+              "An empty field is no simpler to interpret: it can mean that a card has no date, that the date is illegible, or that the transcriber missed it.",
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact contains reported counts and methodological interpretation, not a proof requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither introduces a material error, and A remains an effective report. B offers a modest substantive improvement for this user: it explicitly explains why the trial follows from the ambiguity of empty fields and why the sampling choice limits the conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "The drawer was chosen for convenience."
+            ],
+            "B": [
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "13eb13eb39d1770482d2e538138f7f88070d257101b0d87d6700c7614c8de437",
+    "prompt_sha256": "03ec5df7e82aa256ed3f45f24925d8f263a4e00b2f6f24902ffb5905a9893a54",
+    "raw_sha256": "7b0ccdb5ac25fbdf1b00cee899465f244abf0b8b4a020a9be2315ad898d2109e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an archive methods report revision, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the eighty-card convenience sample, independent transcription, permitted responses, and prohibition on inference. All reconciled counts, transcription results, and agreement qualifications match the source. Internal-reference and untested-retrieval limits remain explicit.",
+          "quotes": {
+            "source": [
+              "The trial instructions did not allow an inferred year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "The trial instructions did not allow an inferred year.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the sample and procedure, counts 50/18/12, correct-year results 47 and 49 with three and one unreadable responses, and no entered years on the other thirty cards. It keeps mutual agreement separate from unmeasured individual agreement with reconciliation and retains the limits on generalization and retrieval benefits.",
+          "quotes": {
+            "source": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "These counts describe the trial and do not estimate error across the collection."
+            ],
+            "A": [],
+            "B": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the findings and their qualifications, including the distinction between agreement with another transcriber and agreement with the internal reference. Both explain why field occupancy obscures different kinds of subsequent work.",
+          "quotes": {
+            "source": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "On those thirty cards, the two transcribers agreed with each other on twenty-six about whether the date was absent or unreadable.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "B": [
+              "On those thirty cards, their decisions on whether a date was absent or unreadable agreed with each other on twenty-six.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A states field occupancy more precisely; B has an easy conversational opening. Both remain readable technical prose, and these local differences do not establish a substantial overall advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The index has a field for a date, and whether that field is filled is easy to count."
+            ],
+            "B": [
+              "We started our transcription trial with a question about completeness that turned out to be a question about what completeness meant.",
+              "A date field in an index is easy to count once it is filled."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each develops the practical ambiguity before introducing the procedure, then uses the results to explain the reporting problem and its limits. Neither leaves a consequential transition less explained than the other.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because an empty field can result from an illegible date, an absent date, or an oversight, looking only at whether the field is filled mixes several kinds of work.",
+              "It would also hide the four disagreements about why no year was entered."
+            ],
+            "B": [
+              "Because an empty field can come from an unreadable date, an absent date, or an oversight, counting filled fields alone mixes several kinds of work together.",
+              "It would also hide the four disagreements about why no year was entered."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain the reflective explanation and concrete reader/conservator distinction that serve this author's preferences. Neither imports sample facts, adds novelty claims, or compresses away useful reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those distinctions matter for later work: a reader looking for a document's date faces a different problem from a conservator deciding whether another imaging method could help."
+            ],
+            "B": [
+              "These distinctions matter for later work: a reader looking for a document’s date faces a different problem from a conservator deciding whether another imaging method could help."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested edit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both satisfy the decisive priority: explain why completeness requires distinguishing supported years from absent or unreadable dates, while keeping the trial's limits visible. Their differences are local phrasing choices rather than a substantive difference in usefulness.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They suggest that our reporting should separate transcribing readable years from classifying missing or unreadable dates.",
+              "Whether that change improves later retrieval is a further question that we have not tested."
+            ],
+            "B": [
+              "They do suggest that our reporting should separate readable-year transcription from the classification of missing or unreadable dates.",
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2151e134b74011f2ad39acd604af79eed2b19ae621724327db8cb595b85a42e1",
+    "prompt_sha256": "0ef36fd68874b1cfb2b288d54d5342cbe50a564c3a52fbe7a2e5ec69bc9f6ffd",
+    "raw_sha256": "47300960c1611d15b405cf3eea9433c98d80cec6bba919ecf7ab4646d49683a6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-08",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an archive methods report revision, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the eighty-card single-drawer convenience sample, independent procedure, response options, and ban on inferred years. Counts 50/18/12, results 47 plus three and 49 plus one, no years on the other thirty cards, and the 26-of-30 agreement qualification all match. Added transitions explain relationships supported by the source.",
+          "quotes": {
+            "source": [
+              "Neither entered a year for any of the thirty cards classified as absent or unreadable in the reconciled record.",
+              "We have not tabulated their individual agreement with the reconciled decision for that distinction."
+            ],
+            "A": [
+              "Neither transcriber entered a year on any of the thirty cards that the reconciled record classified as absent or unreadable.",
+              "We have not tabulated how often each transcriber's individual choice on that distinction matched the reconciled decision."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's sample, procedure, all numerical findings, and distinction between mutual agreement and unmeasured agreement with reconciliation. It also preserves the internal-reference qualification, convenience-sample limitation, and absence of tested retrieval benefits.",
+          "quotes": {
+            "source": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "Whether that change improves later retrieval is a further question; we have not tested it."
+            ],
+            "A": [],
+            "B": [
+              "This was an internal reconciliation, not an independent external validation of the dates.",
+              "Whether that change improves later retrieval is a further question, and we have not tested it."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the evidence and scope. A makes some relationships more explicit without introducing new findings; B closely retains the source's distinctions and qualifications.",
+          "quotes": {
+            "source": [
+              "The reconciled record contains fifty cards with a readable year, eighteen with no date, and twelve with an unreadable date.",
+              "These counts describe the trial and do not estimate error across the collection."
+            ],
+            "A": [
+              "In the reconciled record, fifty cards had a readable year, eighteen had no date, and twelve had an unreadable date.",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ],
+            "B": [
+              "The reconciled record contains fifty cards with a readable year, eighteen with no date, and twelve with an unreadable date.",
+              "These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A more consistently expresses the technical distinctions through ordinary actions and explicit referents. B is readable, but its compressed compound phrasing is less conversational.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Across those thirty cards, the two transcribers agreed with each other on twenty-six when choosing between absent and unreadable.",
+              "the transcription of readable years"
+            ],
+            "B": [
+              "On those thirty cards, their absent-versus-unreadable decisions agreed with each other on twenty-six.",
+              "readable-year transcription"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A explicitly connects the ambiguity in completion counts to the purpose of the trial, then connects convenience sampling to the limit on inference. B has the same sound ordering, but leaves those connections more implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ],
+            "B": [
+              "We selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "The drawer was chosen for convenience. These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fulfills the author's specific preference for explaining why a construction is needed before presenting its mechanics. Its expanded account of empty fields supplies useful explanation while keeping the report's plain, reflective voice. B remains appropriate but makes fewer improvements toward that goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "An empty field is no simpler to interpret: it can mean that a card has no date, that the date is illegible, or that the transcriber missed it.",
+              "To separate those cases"
+            ],
+            "B": [
+              "Because an empty field can result from an illegible date, an absent date, or an oversight, field completion alone mixes several kinds of work.",
+              "We selected eighty catalogue cards"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested edit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both are usable reports. A has a modest substantive advantage for this user: its purpose-led transition makes the sampling procedure answer the opening problem, and its final paragraph explains the inferential limit directly. These changes improve argument development without sacrificing qualifications or useful detail.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To separate those cases, we pulled eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "Because we chose the drawer for convenience, these counts describe only the trial batch and do not estimate error across the collection."
+            ],
+            "B": [
+              "We selected eighty catalogue cards from a single drawer that had not yet been entered into the digital index.",
+              "The drawer was chosen for convenience. These counts describe the trial and do not estimate error across the collection."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1eb674502204d647a7ad3e022acd2a47eea33af5c0d4afc9b706e354de845416",
+    "prompt_sha256": "0ef36fd68874b1cfb2b288d54d5342cbe50a564c3a52fbe7a2e5ec69bc9f6ffd",
+    "raw_sha256": "47300960c1611d15b405cf3eea9433c98d80cec6bba919ecf7ab4646d49683a6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
