@@ -33315,5 +33315,1494 @@
     "prompt_sha256": "0e3489660132d8d104adcac568a0a6b00a1d07d8bbae911cdc60f1a0e3975c0b",
     "raw_sha256": "1cb09f43868843dbee3e1a3bdf59376b0ee673e4ffa426f88f1e437fb4ec76a5",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an edited position statement, not a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A turns the trial's reasonable justification into an unsupported necessity claim: the source does not establish that a small trial is the only practical way to measure labour.",
+          "quotes": {
+            "source": [
+              "That is a reason to keep the trial small and record that time."
+            ],
+            "A": [
+              "the only practical way to measure that labour is to keep the trial small and record the time spent."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the proposal, approved insurance, uncosted labour, eligibility and assistance rules, conditional scarcity, suitability limits, running-cost objection, and unknown results. Its reference to addressing the delay is qualified immediately by the supplier-time limitation.",
+          "quotes": {
+            "source": [
+              "It would not shorten the supplier's delivery time, and it should not be advertised as doing so."
+            ],
+            "A": [],
+            "B": [
+              "though it would not shorten the supplier's delivery time and should not be advertised as doing so."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive proposal and limitations, but A adds unsupported exclusivity to the justification for conducting the trial. B keeps the source's more limited inference.",
+          "quotes": {
+            "source": [
+              "That is a reason to keep the trial small and record that time."
+            ],
+            "A": [
+              "the only practical way to measure that labour"
+            ],
+            "B": [
+              "that uncosted work is a reason to keep the trial small and record that time."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B retains conversational seriousness without repeatedly explaining caveats already made clear. A's repeated commentary about honesty and promises makes the opening more laboured.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Offering practical relief during a delay only helps if we are honest about what the workshop can and cannot control."
+            ],
+            "B": [
+              "I want us to test whether we can make the wait more manageable without making promises the workshop cannot keep."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more explicitly connects physical suitability to access rules and then connects open eligibility to scarce capacity. These transitions explain why the fairness decisions arise from the practical constraints.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Where a machine could safely fit, we still need fair rules for who can ask for one and how delivery is paid for."
+            ],
+            "B": [
+              "Even when a household is eligible, an available machine will not always be suitable."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A better develops the distinction between needing a machine and needing fee assistance, but adds defensive repetition and staged alternatives. B better preserves the short statement's conversational scale while retaining the core fairness explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether a household needs a stopgap machine during a repair delay and whether it needs help covering the delivery cost are two different questions."
+            ],
+            "B": [
+              "Opening the pool to every repair customer avoids asking people to establish hardship before they can even ask about a loan."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material fidelity error; A's minor error presents the trial as the only practical measurement method. Although A supplies stronger transitions between practical and fairness concerns, B better preserves the author's qualified advocacy and keeps the explanations proportionate to a short cooperative statement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the only practical way to measure that labour"
+            ],
+            "B": [
+              "access to the pool and help with the fee are two different decisions"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2fb5fe491cfad4811896b0e288e283c2c4b2d723df377f1208c3cd3134ae1202",
+    "prompt_sha256": "0e3489660132d8d104adcac568a0a6b00a1d07d8bbae911cdc60f1a0e3975c0b",
+    "raw_sha256": "caec9e7cb0b4c9e1f202200d2d8523961b1e73fe86c2ff37d514243a1474d7a6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an edited position statement, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the six-machine, twelve-week proposal, approved insurance, uncosted work, open eligibility, need-based assistance, conditional allocation requirement, suitability and running-cost qualifications, and unknown outcomes. Its added affordability sentence expresses advocacy rather than guaranteeing access.",
+          "quotes": {
+            "source": [
+              "If demand exceeds six machines, we would need an allocation rule agreed before launch"
+            ],
+            "A": [
+              "if demand exceeds six machines, we will need an allocation rule agreed before launch."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B cumulatively changes the proposal's evidential basis: it invents frequent waits of weeks without clean clothes, turns possible excess demand into established insufficient capacity, and replaces qualified running-cost uncertainty with a likely water-and-electricity consumption claim about newer repair machines. These claims materially strengthen the case beyond the source.",
+          "quotes": {
+            "source": [
+              "still leave its owner waiting for a part.",
+              "If demand exceeds six machines",
+              "The older loan machines may cost more to run than some of the machines being repaired."
+            ],
+            "A": [],
+            "B": [
+              "waiting for parts often leaves customers stranded without clean clothes for weeks.",
+              "Because six machines cannot meet peak demand",
+              "likely consume more water and electricity than the newer models under repair"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A keeps the source's conditional capacity problem and qualified operating-cost objection. B asserts unmet peak demand and adds unsupported facts about delays, machine consumption, and the models being repaired.",
+          "quotes": {
+            "source": [
+              "The older loan machines may cost more to run than some of the machines being repaired."
+            ],
+            "A": [
+              "The older loan machines may cost more to run than some of the machines being repaired."
+            ],
+            "B": [
+              "Our refurbished loan units are older and likely consume more water and electricity than the newer models under repair"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sounds like a member explaining a practical proposal to fellow members. B repeatedly uses abstract administrative language that makes the discussion statement sound more like a formal policy justification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Delivery requires staff time that is not free, but those costs should not become a barrier to getting help."
+            ],
+            "B": [
+              "Running costs present another point where practical mechanics affect household fairness."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the repair gap, explain the bounded trial, connect constraints to access decisions, and finish with operating costs and review. A uses a direct labour-to-affordability transition; B makes the practical-equity connection explicit but takes longer to develop it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Delivery requires staff time that is not free, but those costs should not become a barrier to getting help."
+            ],
+            "B": [
+              "However, practical constraints directly determine whether the scheme can operate equitably."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves informal seriousness and lets the substantive tradeoffs support the advocacy. B's language about paternalism and a disciplined, transparent trial adds the rhetorical packaging the author asks to avoid.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That objection is real, especially for people already struggling with bills."
+            ],
+            "B": [
+              "Rather than deciding paternalistically what households can afford",
+              "a disciplined, transparent trial is the right next step."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error, while B's major cumulative additions make uncertain needs and costs sound established. A also meets the central writing goal by connecting delivery labour to fair access without inflating the scheme's evidence or abandoning the conversational register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Delivery requires staff time that is not free, but those costs should not become a barrier to getting help."
+            ],
+            "B": [
+              "Because six machines cannot meet peak demand",
+              "waiting for parts often leaves customers stranded without clean clothes for weeks."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a8d81eb7cd989f5abd8863543325b2eb084755402bc734fc2f2fe7d2b77e6fa7",
+    "prompt_sha256": "0e3489660132d8d104adcac568a0a6b00a1d07d8bbae911cdc60f1a0e3975c0b",
+    "raw_sha256": "caec9e7cb0b4c9e1f202200d2d8523961b1e73fe86c2ff37d514243a1474d7a6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a member-bulletin opinion piece with illustrative arithmetic, not a proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A turns the absence of a traced billing error into an assurance that no account was overcharged. That strengthens the factual basis for choosing equal credits beyond what the source establishes.",
+          "quotes": {
+            "source": [
+              "The surplus has not been traced to an error on any account."
+            ],
+            "A": [
+              "Because no account was specifically overcharged"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the amounts, examples, one-off recommendation, competing fairness principle, and limits on targeting and conservation. It retains the distinction between an unidentified error and an established absence of overcharging.",
+          "quotes": {
+            "source": [
+              "The surplus has not been traced to an error on any account."
+            ],
+            "A": [],
+            "B": [
+              "this surplus has not been traced to an error on any account."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the correct arithmetic and substantive qualifications about equal credits. B also preserves the source's evidential uncertainty about overcharging, whereas A replaces it with an unsupported categorical statement.",
+          "quotes": {
+            "source": [
+              "The surplus has not been traced to an error on any account."
+            ],
+            "A": [
+              "Because no account was specifically overcharged"
+            ],
+            "B": [
+              "this surplus has not been traced to an error on any account."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a conversational bulletin argument. A's table is readable, but its repeated announcements about grounding and clarifying the discussion make the surrounding prose feel more procedural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To keep the discussion grounded, it is worth being clear about what the case for a £12 credit does **not** rest on:"
+            ],
+            "B": [
+              "Equal credits are not the same as targeted help, and I am not claiming that a £12 credit reaches those in greatest need."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves directly from the refund examples to account equality, then explains the competing principles and the recommendation's limits. A makes the arithmetic accessible but repeatedly restarts the discussion through separate sections and repeated statements of the case.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### How the Numbers Work in Practice",
+              "### Two Reasonable Views of Fairness",
+              "### What This Proposal Does—and Does Not—Claim"
+            ],
+            "B": [
+              "Under the equal-credit approach, both would receive £12.",
+              "but it would give each account an equal share of the surplus."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the author's preference for connected reasons and restrained qualifications. A preserves useful explanation but packages the limits as a catalogue and adds self-endorsing language to the conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The case for the £12 credit is modest, practical, and sufficient on its own"
+            ],
+            "B": [
+              "My preference rests on treating this particular surplus as a common benefit earned by a member-owned service rather than as the correction of an identified overcharge."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is requested; the numerical examples are assessed for fidelity and explanatory usefulness.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A makes a bounded but consequential unsupported assurance about overcharging. B also better meets the decisive writing priority: its examples lead into a fair comparison of principles, with limitations integrated into the argument rather than repeatedly announced.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because no account was specifically overcharged",
+              "### What This Proposal Does—and Does Not—Claim"
+            ],
+            "B": [
+              "That is a reasonable principle. However, this surplus has not been traced to an error on any account."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "70d762246256b30c14e2790c359e516616a0575c6995884085f79010a3eef9b7",
+    "prompt_sha256": "d6a8989bae1b361f30ba6692c15387eac08445aeb6cedc1afb9f07c1fe991d44",
+    "raw_sha256": "d4f8046504776f1019897a83326b91fba362b528573c10913f14102d0fe8ef66",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an opinion-piece revision using numerical examples, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves all amounts and refunds, the one-off recommendation, both fairness principles, and the distinction between preserving marginal price and demonstrating conservation. In context, its lack-of-data statement describes the information available for the proposal.",
+          "quotes": {
+            "source": [
+              "Keeping the marginal price unchanged preserves the current price schedule; it does not demonstrate a conservation effect."
+            ],
+            "A": [
+              "Leaving the marginal price unchanged simply preserves the current price schedule. It does not demonstrate a conservation effect."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B invents a cooperative-wide practice of not collecting demographic data. It also extends the unequal-percentage qualification to both methods, although the source establishes it only for equal credits; a volumetric refund could yield equal percentage reductions under some bill structures. Its unqualified exclusion of an overcharge also exceeds the source's statement that no error has been traced. These are material but bounded departures; the amounts and recommendation remain intact.",
+          "quotes": {
+            "source": [
+              "We do not have income or household-size information in this proposal.",
+              "It does not mean every household would see the same percentage reduction in its bill.",
+              "The surplus has not been traced to an error on any account."
+            ],
+            "A": [],
+            "B": [
+              "The cooperative does not collect data on household income or family size.",
+              "neither approach will produce an identical percentage bill reduction for all households.",
+              "This surplus did not arise from an identified billing error or an overcharge on specific accounts."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves the numerical comparison and limits the percentage-bill qualification to equal credits. B retains the arithmetic but introduces unsupported claims about both methods' percentage effects and the cooperative's data collection.",
+          "quotes": {
+            "source": [
+              "It does not mean every household would see the same percentage reduction in its bill."
+            ],
+            "A": [
+              "an equal £12 credit will not represent the same percentage reduction for everyone."
+            ],
+            "B": [
+              "neither approach will produce an identical percentage bill reduction for all households."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the examples and recommendation in ordinary, readable prose. B's headings and lists are legible, but phrases about collective financial success and its concluding rhetorical questions give this modest bulletin argument a more promotional register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Under the credit, each would receive £12. That contrast is why I prefer the credit."
+            ],
+            "B": [
+              "giving every account an equal stake in our cooperative's collective financial success"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A makes the examples immediately explain the recommendation, then presents the competing principle and qualifications. B separates the examples, fairness discussion, scope, and conclusion into repeated restarts; its final questions also reduce the earlier substantive comparison to slogans.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That contrast is why I prefer the credit. It gives each account an equal share of a surplus earned by a member-owned service"
+            ],
+            "B": [
+              "The volumetric rebate asks: *Who bought the most water?* The flat credit asks: *Are we equal co-owners of this cooperative?*"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A respects the author's modest conclusion and treats the disagreement as a choice between coherent principles. B's ownership question stages a contrast that weakens that fairness: supporters of proportional refunds need not dispute equal co-ownership.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both principles are coherent, and we should decide between them directly"
+            ],
+            "B": [
+              "The flat credit asks: *Are we equal co-owners of this cooperative?*",
+              "equal treatment of member accounts is the fairest path forward."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested; arithmetic accuracy and its integration into the argument are assessed elsewhere.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error, while B adds unsupported factual claims about data collection, percentage refunds, and overcharging. A also better serves the author's central goal: the numerical contrast motivates the recommendation while preserving a fair competing principle. B's closing ownership question makes that disagreement sound simpler and more one-sided than the source supports.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The strongest argument for the volumetric option is that households that bought more water paid more in volumetric charges, so returning money in proportion to use functions like a refund. That is a reasonable principle."
+            ],
+            "B": [
+              "The cooperative does not collect data on household income or family size.",
+              "The flat credit asks: *Are we equal co-owners of this cooperative?*"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ddc41db4e19271cf4c4290a1e7121fe98249207037f8d75db52e1048b1840d0b",
+    "prompt_sha256": "d6a8989bae1b361f30ba6692c15387eac08445aeb6cedc1afb9f07c1fe991d44",
+    "raw_sha256": "d4f8046504776f1019897a83326b91fba362b528573c10913f14102d0fe8ef66",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a bulletin opinion piece with illustrative arithmetic, not a proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A turns the absence of a traced billing error into certainty that nobody was overcharged. That strengthens the factual premise supporting equal distribution, although the arithmetic and recommendation remain intact.",
+          "quotes": {
+            "source": [
+              "The surplus has not been traced to an error on any account."
+            ],
+            "A": [
+              "Because no account was specifically overcharged,"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the amounts, annual comparison, one-off recommendation, competing refund principle, and limits on knowledge about billing errors, household circumstances, and conservation.",
+          "quotes": {
+            "source": [
+              "My preference rests on treating this particular surplus as a common benefit rather than as the correction of an identified overcharge.",
+              "Nor have we estimated whether a temporary volume-price reduction would change use."
+            ],
+            "A": [],
+            "B": [
+              "My preference rests on treating this particular surplus as a common benefit earned by a member-owned service rather than as the correction of an identified overcharge.",
+              "we have not estimated whether a temporary volume-price reduction would change water use."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the correct refunds and distinguish equal account credits from equal percentage reductions. A explicitly identifies the figures as hypothetical, but its categorical denial of overcharging exceeds the source. B preserves the narrower evidentiary claim.",
+          "quotes": {
+            "source": [
+              "The surplus has not been traced to an error on any account."
+            ],
+            "A": [
+              "Using hypothetical annual figures to illustrate the choice before our cooperative,",
+              "Because no account was specifically overcharged,"
+            ],
+            "B": [
+              "However, this surplus has not been traced to an error on any account."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic language suitable for members. A's table and direct introduction are accessible; B's connected prose is equally readable. Formatting alone does not establish a naturalness advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "There is a straightforward, reasonable case for the volumetric reduction:"
+            ],
+            "B": [
+              "The strongest case for the volumetric option is that members who bought more water paid more in volume charges,"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the numerical distribution to the competing fairness principles and then the limitations. A's table helps comparison, but it states the equal-share rationale before restarting that argument in a separate fairness section.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This difference in distribution is why I favour the £12 credit:",
+              "My preference for an equal credit rests on a different principle."
+            ],
+            "B": [
+              "but it would give each account an equal share of the surplus.",
+              "The strongest case for the volumetric option"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected argument and modest conclusion. A preserves useful qualifications, but packages them in additional defensive framing after already establishing its recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### What This Proposal Does—and Does Not—Claim",
+              "To keep the discussion grounded, it is worth being clear about what the case for a £12 credit does **not** rest on:"
+            ],
+            "B": [
+              "Equal credits are not the same as targeted help,",
+              "The case for the credit is modest but sufficient:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof to assess; the numerical examples support an opinion-piece comparison.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B preserves the source's factual limits, whereas A strengthens an untraced error into an assurance that no overcharge occurred. B also better serves this author's priority of making the examples advance a connected fairness argument. A's useful table and hypothetical framing do not outweigh that factual change.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because no account was specifically overcharged,"
+            ],
+            "B": [
+              "However, this surplus has not been traced to an error on any account.",
+              "but it would give each account an equal share of the surplus."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "70d762246256b30c14e2790c359e516616a0575c6995884085f79010a3eef9b7",
+    "prompt_sha256": "d6a8989bae1b361f30ba6692c15387eac08445aeb6cedc1afb9f07c1fe991d44",
+    "raw_sha256": "15adda12556d511353ad97386cc9fc6b635091ce95d455b34bda3d1ce266de5e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a bulletin opinion piece containing simple refund calculations, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the numerical comparison, one-off recommendation, reasonable purchase-proportional alternative, and qualifications about percentage reductions, household information, and unestimated conservation effects.",
+          "quotes": {
+            "source": [
+              "We do not have income or household-size information in this proposal.",
+              "Keeping the marginal price unchanged preserves the current price schedule; it does not demonstrate a conservation effect."
+            ],
+            "A": [
+              "We have no data on household income or household size:",
+              "Leaving the marginal price unchanged simply preserves the current price schedule. It does not demonstrate a conservation effect."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B invents a cooperative-wide data-collection policy where the source only describes information absent from this proposal. It also extends the unequal-percentage claim to both options, although the source establishes it only for equal credits. These change ancillary facts without changing the refund amounts or recommendation.",
+          "quotes": {
+            "source": [
+              "We do not have income or household-size information in this proposal.",
+              "It does not mean every household would see the same percentage reduction in its bill."
+            ],
+            "A": [],
+            "B": [
+              "The cooperative does not collect data on household income or family size.",
+              "Because bills and water usage vary, neither approach will produce an identical percentage bill reduction for all households."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the arithmetic and equal-credit recommendation. A retains the source's limited claims; B adds an unsupported institutional practice and rules out equal percentage reductions under the volumetric option without evidence about the bill structure.",
+          "quotes": {
+            "source": [
+              "We do not have income or household-size information in this proposal.",
+              "It does not mean every household would see the same percentage reduction in its bill."
+            ],
+            "A": [
+              "We have no data on household income or household size:",
+              "an equal £12 credit will not represent the same percentage reduction for everyone."
+            ],
+            "B": [
+              "The cooperative does not collect data on household income or family size.",
+              "neither approach will produce an identical percentage bill reduction for all households."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable bulletin prose. A speaks conversationally, while B's headings and examples support scanning. Neither format is inherently more natural for this audience.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The difference between the two approaches shows up clearly when comparing households."
+            ],
+            "B": [
+              "The difference lies in how each option defines fairness."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A makes the examples lead immediately into the reason for preferring equal credits, then addresses the alternative and limitations. B's examples are clear, but the fairness discussion arrives after another section break and the conclusion restages the choice through rhetorical questions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Under the credit, each would receive £12. That contrast is why I prefer the credit."
+            ],
+            "B": [
+              "### Two Principles of Fairness",
+              "The volumetric rebate asks: *Who bought the most water?* The flat credit asks: *Are we equal co-owners of this cooperative?*"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A maintains the author's modest recommendation while explaining both principles. B's concluding questions suggest that equal co-ownership distinguishes the options, although either allocation could be chosen by equal co-owners. That staged contrast weakens the fair treatment of the competing principle.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both principles are coherent, and we should decide between them directly",
+              "The case for the credit is modest:"
+            ],
+            "B": [
+              "The flat credit asks: *Are we equal co-owners of this cooperative?*",
+              "equal treatment of member accounts is the fairest path forward."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains illustrative arithmetic but no proof requiring mathematical exposition.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A preserves the source's qualifications; B adds unsupported claims about data collection and percentage reductions. Beyond fidelity, A better fulfills the decisive preference for examples that develop the argument: it connects the £12 comparison directly to equal sharing, while B ends with a less balanced rhetorical contrast.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Under the credit, each would receive £12. That contrast is why I prefer the credit.",
+              "Both principles are coherent,"
+            ],
+            "B": [
+              "The cooperative does not collect data on household income or family size.",
+              "The flat credit asks: *Are we equal co-owners of this cooperative?*"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ddc41db4e19271cf4c4290a1e7121fe98249207037f8d75db52e1048b1840d0b",
+    "prompt_sha256": "d6a8989bae1b361f30ba6692c15387eac08445aeb6cedc1afb9f07c1fe991d44",
+    "raw_sha256": "15adda12556d511353ad97386cc9fc6b635091ce95d455b34bda3d1ce266de5e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a practical planning-note revision; the scheduling arithmetic does not constitute a proof task.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "A turns a bounded proposal into a guarantee of observation quality and attributes truncated observation periods to the logs, which document only rushed notes. These additions materially strengthen the evidence and expected benefits used to justify the proposal.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops.",
+              "At the end of the month we could review whether the notes were more complete"
+            ],
+            "A": [
+              "As our visit logs document, the final stops frequently suffer from rushed notes and truncated observation periods.",
+              "Standardizing our coverage to six sectors ensures that every observation recorded meets the group’s established standard for data integrity."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the scheduling totals, paired safety constraint, unavailable second pair, detection gaps, and limited review. Its phrase about compromised notes across all sectors is ambiguous, but the preceding attribution to final stops supports reading it as an all-sector schedule with compromised notes, not evidence that every sector has poor notes.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops.",
+              "That review would not recover events missed during gaps"
+            ],
+            "A": [],
+            "B": [
+              "Trying to fit eight into that window has led to rushed notes at the final stops",
+              "compromised notes across all sectors versus thorough notes with planned gaps",
+              "That review will not recover events missed during gaps"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the operational numbers and coverage gaps. B keeps the proposal subject to review, whereas A adds logged observation truncation and guaranteed data integrity, changing what the reader can rely on.",
+          "quotes": {
+            "source": [
+              "At the end of the month we could review whether the notes were more complete"
+            ],
+            "A": [
+              "This approach resolves documented data-quality issues caused by daylight constraints",
+              "ensures that every observation recorded meets the group’s established standard for data integrity."
+            ],
+            "B": [
+              "At the end of the month, we can review whether the notes were more complete and whether additional staffing has become possible."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, conversational language suitable for a team planning note. A repeatedly substitutes institutional abstractions and evaluative adjectives for the source's practical register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To implement the rotation systematically and maintain data integrity, I suggest the following framework:",
+              "planned, structured temporal gaps"
+            ],
+            "B": [
+              "For those four visits, I suggest publishing the rotation in advance and marking unvisited sectors explicitly in the record.",
+              "Rushed visits still provide some information, and it would be a mistake to dismiss them."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B develops the capacity problem, serious objection, staffing obstacle, and feasible rotation in connected paragraphs. A has useful organization, but its summary announces resolution before examining the tradeoff, and repeated methodological verdicts interrupt the practical reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This approach resolves documented data-quality issues",
+              "a structured rotation represents the more rigorous trade-off."
+            ],
+            "B": [
+              "The coordinator raises a serious objection:",
+              "Adding a second trained pair could change the scheduling calculation, but none is available for the coming month.",
+              "Four visits of six sectors provide twenty-four sector visits in total"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B respects the author's preference for a reasoned, bounded proposal and preserves useful explanation. A's executive-summary packaging and repeated claims of rigor make the argument more promotional and categorical than the requested note.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "maintaining an unambiguous, methodologically sound record.",
+              "it will provide an honest, rigorous baseline"
+            ],
+            "B": [
+              "Alternating coverage creates planned gaps, and our logs cannot tell us how many events those gaps would miss.",
+              "That remains a useful future option, not an answer for the next four visits."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is requested; the simple scheduling total supports the practical proposal.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A's unsupported evidence and quality guarantee materially change the central justification; B has no established material error. B also better serves the decisive priority: explaining why the feasible rotation is worth proposing while acknowledging information loss and uncertainty.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Standardizing our coverage to six sectors ensures that every observation recorded meets the group’s established standard for data integrity."
+            ],
+            "B": [
+              "Rushed visits still provide some information, and it would be a mistake to dismiss them.",
+              "Marking planned absences explicitly will distinguish an unvisited sector from one where no nest was observed, even though it remains an absence."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "89c93664b2958918de6fb991be248c9c5913a168aaf4be4f69532c125907b80e",
+    "prompt_sha256": "536876f9bf9d667d98879f249594fac4344c7b75c476d40a124cbe43b2f7bdd1",
+    "raw_sha256": "cd3e9e5e050c7e3e543c84ff0a08efd4996b600b93f3ebe791c9fd0a01c033c8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a practical planning-note revision, with elementary scheduling arithmetic rather than a proof to edit.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the eight sectors, six-sector capacity, four visits, three visits per sector, paired staffing constraint, genuine information tradeoff, absence/non-detection distinction, and limits of review.",
+          "quotes": {
+            "source": [
+              "The rotation should give each sector three visits across the month.",
+              "That review would not recover events missed during gaps"
+            ],
+            "A": [
+              "Four visits with six sectors each provide twenty-four sector visits in total, so the rotation can give each sector three visits across the month.",
+              "That review would not recover events missed during gaps"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the proposal and its practical limits, but strengthens the documented occurrence of rushed notes into a consistent outcome at every visit. That unsupported frequency makes the evidence against full coverage more categorical than the source establishes.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops. That is recorded in the visit logs."
+            ],
+            "A": [],
+            "B": [
+              "trying to fit all eight sectors into that window has consistently resulted in rushed notes at the final stops.",
+              "continuing to collect degraded notes at the end of every visit."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the scheduling arithmetic, safety constraint, information retained by rushed visits, and unrecoverable gaps. A also preserves the source's evidentiary scope; B adds an unsupported claim that degraded notes occur every visit.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops."
+            ],
+            "A": [
+              "Trying to fit eight into it has led to rushed notes at the last stops, as recorded in the visit logs."
+            ],
+            "B": [
+              "continuing to collect degraded notes at the end of every visit."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic, readable planning prose. A is more understated; B's fuller transitions and modest title remain appropriate to the task and are not inherently less natural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The rushed visits are still visits, and it would be wrong to pretend they provide no information."
+            ],
+            "B": [
+              "It would also be wrong to treat rushed visits as worthless; even hurried observations provide real information."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both build the same coherent argument from limited daylight through the objection and staffing obstacle to the feasible rotation and bounded review. Both place the total before its three-visits-per-sector consequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Four visits with six sectors each provide twenty-four sector visits in total, so the rotation can give each sector three visits across the month."
+            ],
+            "B": [
+              "Four visits of six sectors provide twenty-four sector visits in total, allowing us to survey each of the eight sectors three times over the month at our full protocol."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the author's measured proposal and already-effective conversational phrasing. B remains respectful and explanatory, but calling the plan the soundest approach and the final account honest and consistent adds evaluative emphasis the source does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For those four visits, I suggest publishing the rotation in advance",
+              "a clearer account of what we had done."
+            ],
+            "B": [
+              "For the next four visits, the soundest approach is to publish a six-sector rotation in advance",
+              "an honest, consistent account of the work we actually completed."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof to assess; the arithmetic is part of an operational scheduling argument.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B's minor frequency overstatement makes the case against full coverage stronger than the evidence supplied. Both explain the operational argument well, but A better meets the author's decisive preference for preserving the bounded contribution without strengthening it for rhetorical effect.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Trying to fit eight into it has led to rushed notes at the last stops, as recorded in the visit logs.",
+              "A planned absence would then be distinguishable from a visit on which no nest was recorded, though it would still be an absence."
+            ],
+            "B": [
+              "continuing to collect degraded notes at the end of every visit.",
+              "For the next four visits, the soundest approach is to publish a six-sector rotation in advance"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "264400bfdafe83c9e31c5fd84ca341c33e4990dc7b92e39dcd01507d71756476",
+    "prompt_sha256": "536876f9bf9d667d98879f249594fac4344c7b75c476d40a124cbe43b2f7bdd1",
+    "raw_sha256": "cd3e9e5e050c7e3e543c84ff0a08efd4996b600b93f3ebe791c9fd0a01c033c8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a practical planning-note revision, and the input explicitly marks proof assessment as inapplicable.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A expands documented rushed notes into documented shortened observation periods and guarantees that every recorded observation will meet a data-integrity standard. The source supports the protocol and scheduling constraints, but neither additional assurance.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops. That is recorded in the visit logs."
+            ],
+            "A": [
+              "As our visit logs document, the final stops frequently suffer from rushed notes and truncated observation periods.",
+              "Standardizing our coverage to six sectors ensures that every observation recorded meets the group’s established standard for data integrity."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the scheduling totals, staffing constraint, retained information from rushed visits, and limits of review. Its compressed reference to compromised notes across all sectors is reasonably read as describing the full-coverage approach, since it explicitly locates the rushed notes at the final stops.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops.",
+              "That review would not recover events missed during gaps"
+            ],
+            "A": [],
+            "B": [
+              "Trying to fit eight into that window has led to rushed notes at the final stops, as recorded in the visit logs.",
+              "That review will not recover events missed during gaps"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the central proposal and practical constraints. B keeps the evidence bounded, whereas A converts the proposal into a guarantee of observation quality and adds an unsupported claim about what the logs document.",
+          "quotes": {
+            "source": [
+              "using the same observation protocol in every sector we reach.",
+              "Trying to fit eight into it has led to rushed notes at the last stops."
+            ],
+            "A": [
+              "This approach resolves documented data-quality issues",
+              "rushed notes and truncated observation periods."
+            ],
+            "B": [
+              "maintaining the same observation protocol in every sector we reach.",
+              "Rushed visits still provide some information, and it would be a mistake to dismiss them."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, conversational technical prose. A repeatedly substitutes institutional abstractions and emphatic assurances for the source's practical register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "maintaining an unambiguous, methodologically sound record.",
+              "a structured rotation represents the more rigorous trade-off."
+            ],
+            "B": [
+              "Our daylight window allows six sectors at the required pace.",
+              "That remains a useful future option, not an answer for the next four visits."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the daylight limit, genuine objection, unavailable staffing alternative, and feasible rotation in a continuous argument. A contains those elements, but its summary and repeated conclusions about rigor announce success before establishing the bounded scheduling case.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This approach resolves documented data-quality issues",
+              "Given that inconsistent observation compromises the reliability of positive and negative findings alike, a structured rotation represents the more rigorous trade-off."
+            ],
+            "B": [
+              "Adding a second trained pair could change the scheduling calculation, but none is available for the coming month.",
+              "Four visits of six sectors provide twenty-four sector visits in total, allowing each of the eight sectors to be surveyed three times across the month."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested respectful argument with real losses and limited conclusions. A's claims of assured integrity and superior rigor strengthen the story beyond the author's restrained proposal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Standardizing our coverage to six sectors ensures that every observation recorded meets the group’s established standard for data integrity."
+            ],
+            "B": [
+              "The coordinator raises a serious objection",
+              "Alternating coverage creates planned gaps, and our logs cannot tell us how many events those gaps would miss."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof assessment applies to this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no clear material error; A adds unsupported documentation and quality guarantees. B also better serves the decisive priority: a connected argument that explains why the feasible rotation is worth proposing while retaining the objection and the losses it cannot eliminate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This approach resolves documented data-quality issues",
+              "a structured rotation represents the more rigorous trade-off."
+            ],
+            "B": [
+              "Rushed visits still provide some information, and it would be a mistake to dismiss them.",
+              "That review will not recover events missed during gaps"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "89c93664b2958918de6fb991be248c9c5913a168aaf4be4f69532c125907b80e",
+    "prompt_sha256": "536876f9bf9d667d98879f249594fac4344c7b75c476d40a124cbe43b2f7bdd1",
+    "raw_sha256": "7fd4314119b36a1d448cbc6e598102e17a4d0bf0a5cb8143027c666f17745aef",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a practical planning-note revision, and the input explicitly marks proof assessment as inapplicable.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the proposal, quantities, paired safety constraint, unavailable second pair, information trade-off, and distinction between absence and recorded non-detection. It also preserves the limits of the month-end review.",
+          "quotes": {
+            "source": [
+              "The rotation should give each sector three visits across the month.",
+              "A planned absence would then be distinguishable from a visit on which no nest was recorded."
+            ],
+            "A": [
+              "the rotation can give each sector three visits across the month.",
+              "A planned absence would then be distinguishable from a visit on which no nest was recorded, though it would still be an absence."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B makes the occurrence of degraded notes universal by asserting that it happens at the end of every visit. The source reports that attempting eight sectors has led to rushed notes, without establishing that frequency. The proposed schedule remains faithful.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops."
+            ],
+            "A": [],
+            "B": [
+              "has consistently resulted in rushed notes at the final stops.",
+              "continuing to collect degraded notes at the end of every visit."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the operational constraints and bounded rotation. A retains the source's evidentiary scope, while B strengthens the observed problem into degradation on every visit.",
+          "quotes": {
+            "source": [
+              "Trying to fit eight into it has led to rushed notes at the last stops."
+            ],
+            "A": [
+              "Trying to fit eight into it has led to rushed notes at the last stops, as recorded in the visit logs."
+            ],
+            "B": [
+              "continuing to collect degraded notes at the end of every visit."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readable. A is more restrained, while B's fuller phrasing remains understandable and appropriate to a planning proposal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The rushed visits are still visits, and it would be wrong to pretend they provide no information."
+            ],
+            "B": [
+              "It would also be wrong to treat rushed visits as worthless; even hurried observations provide real information."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both develop the same clear argument: establish the daylight problem, acknowledge the objection, explain why two routes are unavailable, and use the scheduling totals to support a rotation with explicit records and review.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Adding a second pair could change the scheduling calculation, but no second trained pair is available for the coming month",
+              "Four visits with six sectors each provide twenty-four sector visits in total, so the rotation can give each sector three visits across the month."
+            ],
+            "B": [
+              "our safety rules and current staffing rule this out for the coming month.",
+              "Four visits of six sectors provide twenty-four sector visits in total, allowing us to survey each of the eight sectors three times over the month at our full protocol."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the author's measured, practical register and tentative proposal. B adds evaluative emphasis about the soundest approach and an honest account where the source asks for a clearer basis for reconsideration.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For those four visits, I suggest publishing the rotation in advance",
+              "At the end of the month, we could review whether the notes were more complete"
+            ],
+            "B": [
+              "For the next four visits, the soundest approach is to publish a six-sector rotation in advance",
+              "an honest, consistent account of the work we actually completed."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof assessment applies to this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A preserves the evidence without a material error; B slightly overstates the documented frequency of degraded notes. Both provide a usable argument, but A better meets the user's priority of explaining the bounded proposal without strengthening its evidence or conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The choice is between different losses, not between a complete record and an empty one.",
+              "That review would not recover events missed during gaps"
+            ],
+            "B": [
+              "continuing to collect degraded notes at the end of every visit.",
+              "the soundest approach is to publish a six-sector rotation in advance"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "264400bfdafe83c9e31c5fd84ca341c33e4990dc7b92e39dcd01507d71756476",
+    "prompt_sha256": "536876f9bf9d667d98879f249594fac4344c7b75c476d40a124cbe43b2f7bdd1",
+    "raw_sha256": "7fd4314119b36a1d448cbc6e598102e17a4d0bf0a5cb8143027c666f17745aef",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]

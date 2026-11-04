@@ -2,7 +2,7 @@
 
 INCOMPLETE: results below are a progress checkpoint, not a full-suite headline.
 
-Valid paired primary judgments: 910/1920. Both judges must be present for a case/model pair to enter the table.
+Valid paired primary judgments: 922/1920. Both judges must be present for a case/model pair to enter the table.
 
 | Split | Model / effort | Cases | Win − loss (pp) | 95% case-bootstrap interval |
 |---|---|---:|---:|---:|
@@ -32,13 +32,13 @@ Valid paired primary judgments: 910/1920. Both judges must be present for a case
 | holdout | astra-high | 17 | +20.6 | [-11.8, +50.0] |
 | holdout | sol-low | 18 | +8.3 | [-19.4, +38.9] |
 | holdout | luna-medium | 17 | -11.8 | [-41.2, +17.6] |
-| holdout | argon-high | 9 | +22.2 | [-33.3, +66.7] |
-| holdout | flash-high | 8 | +87.5 | [+75.0, +100.0] |
+| holdout | argon-high | 12 | +41.7 | [+0.0, +83.3] |
+| holdout | flash-high | 11 | +90.9 | [+77.3, +100.0] |
 | holdout | claude-all | 14 | +32.7 | [+11.9, +51.8] |
 | holdout | codex-all | 14 | -1.8 | [-25.9, +24.1] |
-| holdout | antigravity-all | 8 | +62.5 | [+31.2, +90.6] |
-| holdout | all | 4 | +33.3 | [+12.5, +54.2] |
+| holdout | antigravity-all | 11 | +72.7 | [+45.5, +95.5] |
+| holdout | all | 5 | +31.7 | [+10.8, +48.3] |
 
-Combined spend so far: 957/2400 attempts, 20,171,965 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 972/2400 attempts, 20,447,059 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.
