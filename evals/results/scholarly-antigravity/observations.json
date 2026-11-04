@@ -12152,5 +12152,1227 @@
     "prompt_sha256": "84966ae8bc3643998400e8a6599ace2701fb397bff4a28bea3d2c7b4de48917a",
     "raw_sha256": "8a7b556232fefe6866c887fea7a5059a0a102acb62a47925b939305ee0653f3f",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a local clarity edit of an activity handout, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the wooden supports, tray catcher, sketching and loading sequence, settling interval, rebuilding prohibition, initial sketches, pre-collapse count, and qualification on the twelve-counter result.",
+          "quotes": {
+            "source": [
+              "They should stay in the tray if it collapses.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "A": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the activity and all its qualifications, including counting immediately before collapse and distinguishing survival under twelve counters from an exact capacity of twelve.",
+          "quotes": {
+            "source": [
+              "count the counters that were on the bridge immediately before it collapsed.",
+              "That is different from saying it can hold exactly twelve."
+            ],
+            "A": [],
+            "B": [
+              "count the counters that were on the bridge immediately before it collapsed.",
+              "That is different from saying the bridge can hold exactly twelve."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical. Both clarify which object catches counters and which collapses without changing the support structure, instructions, or conclusions.",
+          "quotes": {
+            "source": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "They should stay in the tray if it collapses."
+            ],
+            "A": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "The counters should stay in the tray if the bridge collapses."
+            ],
+            "B": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "The counters should stay in the tray if the bridge collapses."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable classroom directions and conversational phrasing. The explicit material names resolve ambiguity without making the prose cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The tray is there to catch counters if they fall, so check that it sits under the middle of the bridge."
+            ],
+            "B": [
+              "The tray is there to catch counters if they fall, so check that it sits under the middle of the bridge."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the useful sequence from setup through sketches, incremental loading, recording, and discussion. Neither introduces unnecessary lesson structure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before adding any counters, sketch the bridge from the side.",
+              "Now discuss one change you would like to test next time."
+            ],
+            "B": [
+              "Before adding any counters, sketch the bridge from the side.",
+              "Now discuss one change you would like to test next time."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both make selective local edits while preserving the informal encouragement, explanatory detail, and gently humorous ending that already work.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "even if you have a promising idea about making it stronger.",
+              "when your next bridge behaves differently from the one you imagined."
+            ],
+            "B": [
+              "even if you have a promising idea about making it stronger.",
+              "when your next bridge behaves differently from the one you imagined."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither response has a material error, and the completed artifacts are identical. Both satisfy the decisive priority: clarify ambiguous material references while preserving the activity, voice, and meaningful twelve-counter contrast.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "That is different from saying the bridge can hold exactly twelve."
+            ],
+            "B": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "That is different from saying the bridge can hold exactly twelve."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b2569a81ef07b196789fb772b2d6a1ee13adf458602248a906c36e56ab49f362",
+    "prompt_sha256": "e807c02a2b270eda39b161a5dd2accf27a74e4ca32bf2cce665b068dff97300d",
+    "raw_sha256": "2e95cfce79894d18de4747123e2e565332c551491650c808df48c64607ea8c18",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a local clarity edit of an activity handout, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the supports and catcher, both sketches, incremental loading and waiting, rebuilding prohibition, sketch retention, pre-collapse count, and qualified twelve-counter observation.",
+          "quotes": {
+            "source": [
+              "They should stay in the tray if it collapses.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "A": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B also preserves every substantive instruction and qualification. Its added object names clarify contextual referents without changing the activity or implying that twelve is the bridge's exact capacity.",
+          "quotes": {
+            "source": [
+              "count the counters that were on the bridge immediately before it collapsed.",
+              "That is different from saying it can hold exactly twelve."
+            ],
+            "A": [],
+            "B": [
+              "count the counters that were on the bridge immediately before the bridge collapsed.",
+              "That is different from saying the bridge can hold exactly twelve counters."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's facts, sequence, prohibitions, and observational limits. B makes more referents explicit, but A's remaining pronouns are clear in context; neither changes what students can infer from the test.",
+          "quotes": {
+            "source": [
+              "If you stop because you have used all twelve counters and the bridge is still standing, record “held twelve; collapse not observed.”",
+              "That is different from saying it can hold exactly twelve."
+            ],
+            "A": [
+              "record “held twelve; collapse not observed.”",
+              "That is different from saying the bridge can hold exactly twelve."
+            ],
+            "B": [
+              "record “held twelve; collapse not observed.”",
+              "That is different from saying the bridge can hold exactly twelve counters."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses ordinary anaphora where the referent is already clear. B remains readable, but repeated nouns within individual sentences make several directions unnecessarily mechanical.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "count the counters that were on the bridge immediately before it collapsed.",
+              "even if you have a promising idea about making it stronger."
+            ],
+            "B": [
+              "count the counters that were on the bridge immediately before the bridge collapsed.",
+              "even if you have a promising idea about making the bridge stronger."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each independently presents a usable sequence from setup to observation, loading, recording, and planning a change. Both retain the explanation of why the original sketches matter.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They record what this bridge did before the change, which will be useful when your next bridge behaves differently from the one you imagined."
+            ],
+            "B": [
+              "These sketches record what this first bridge did before the change, which will be useful when your next bridge behaves differently from the bridge you imagined."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better follows the instruction to preserve already-effective wording. B's extra clarification of the second sketch is useful, but replacing clear references throughout, especially in the closing sentence, weakens the original conversational rhythm without a corresponding clarity benefit.",
+          "quotes": {
+            "source": [
+              "Changing good writing merely to demonstrate effort is not a benefit."
+            ],
+            "A": [
+              "Keep your first sketches. They record what this bridge did before the change,",
+              "from the one you imagined."
+            ],
+            "B": [
+              "Keep your first sketches. These sketches record what this first bridge did before the change,",
+              "from the bridge you imagined."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better meets this user's bounded editing goal: it identifies the tray as catcher and bridge as the object that collapses while preserving effective informal wording. B supplies some helpful explicitness, but its repeated replacement of already-clear pronouns adds friction beyond what the requested clarification needs.",
+          "quotes": {
+            "source": [
+              "Make local clarity edits only.",
+              "Keep the activity, sequence, intended contrast, and informal voice."
+            ],
+            "A": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "count the counters that were on the bridge immediately before it collapsed."
+            ],
+            "B": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "count the counters that were on the bridge immediately before the bridge collapsed."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2987a43f57515fd9ce70bd347de53bdd079f162483ee50256fa3e49e3d7d743a",
+    "prompt_sha256": "e807c02a2b270eda39b161a5dd2accf27a74e4ca32bf2cce665b068dff97300d",
+    "raw_sha256": "2e95cfce79894d18de4747123e2e565332c551491650c808df48c64607ea8c18",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests local reference edits to a classroom handout, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the support structure, sketching and loading sequence, rebuilding prohibition, original sketches, and distinction between observed survival and exact capacity.",
+          "quotes": {
+            "source": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "A": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the support structure, sketching and loading sequence, rebuilding prohibition, original sketches, and distinction between observed survival and exact capacity.",
+          "quotes": {
+            "source": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "A": [],
+            "B": [
+              "The bridge should rest on the two wooden blocks, not on the tray's rim.",
+              "record “held twelve; collapse not observed.”"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The artifacts are identical. Both resolve the central material references without changing the activity or its qualifications.",
+          "quotes": {
+            "source": [
+              "They should stay in the tray if it collapses."
+            ],
+            "A": [
+              "The counters should stay in the tray if the bridge collapses."
+            ],
+            "B": [
+              "The counters should stay in the tray if the bridge collapses."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable, informal instructions and conversational phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you cannot see a bend, say so beside the sketch."
+            ],
+            "B": [
+              "If you cannot see a bend, say so beside the sketch."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the practical sequence from setup through observation, loading, recording, and discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "After each addition, wait until the bridge stops moving before deciding whether to add another."
+            ],
+            "B": [
+              "After each addition, wait until the bridge stops moving before deciding whether to add another."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both make restrained reference edits while retaining the original explanation and lightly humorous ending.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "which will be useful when your next bridge behaves differently from the one you imagined."
+            ],
+            "B": [
+              "which will be useful when your next bridge behaves differently from the one you imagined."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the decisive priority: clarify the catcher and collapsing object through local edits while preserving the handout.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The tray is there to catch counters if they fall",
+              "The counters should stay in the tray if the bridge collapses."
+            ],
+            "B": [
+              "The tray is there to catch counters if they fall",
+              "The counters should stay in the tray if the bridge collapses."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b2569a81ef07b196789fb772b2d6a1ee13adf458602248a906c36e56ab49f362",
+    "prompt_sha256": "e807c02a2b270eda39b161a5dd2accf27a74e4ca32bf2cce665b068dff97300d",
+    "raw_sha256": "cb5044c9f155dc2cc78305426ef53ec69f9b28b5590427a3270bc02234eb1674",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests local reference edits to a classroom handout, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the wooden supports, tray catcher, observation and loading steps, rebuilding prohibition, sketch retention, and qualified twelve-counter result.",
+          "quotes": {
+            "source": [
+              "Do not rebuild the bridge during this first test",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "A": [
+              "Do not rebuild the bridge during this first test",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The additional explicit noun references preserve the activity and all material qualifications. Their repetition is a stylistic issue, not a changed inference.",
+          "quotes": {
+            "source": [
+              "Do not rebuild the bridge during this first test",
+              "record “held twelve; collapse not observed.”"
+            ],
+            "A": [],
+            "B": [
+              "Do not rebuild the bridge during this first test",
+              "record “held twelve; collapse not observed.”"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both identify the tray as catcher and bridge as the object that collapses, while preserving the distinction between surviving twelve counters and having an exact capacity of twelve.",
+          "quotes": {
+            "source": [
+              "That is different from saying it can hold exactly twelve."
+            ],
+            "A": [
+              "That is different from saying the bridge can hold exactly twelve."
+            ],
+            "B": [
+              "That is different from saying the bridge can hold exactly twelve counters."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses ordinary pronouns where their referents are already clear. B's repeated nouns occasionally make otherwise conversational instructions mechanical.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "count the counters that were on the bridge immediately before it collapsed."
+            ],
+            "B": [
+              "count the counters that were on the bridge immediately before the bridge collapsed."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both keep the same coherent activity sequence and retain the explanations for waiting, recording an unobserved collapse, and keeping the sketches.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "After each addition, wait until the bridge stops moving before deciding whether to add another."
+            ],
+            "B": [
+              "After each addition, wait until the bridge stops moving before deciding whether to add another counter."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "The user explicitly values preserving already-effective writing. A fixes the consequential ambiguities while retaining the original ending's rhythm; B unnecessarily expands several clear references.",
+          "quotes": {
+            "source": [
+              "Changing good writing merely to demonstrate effort is not a benefit."
+            ],
+            "A": [
+              "They record what this bridge did before the change",
+              "from the one you imagined."
+            ],
+            "B": [
+              "These sketches record what this first bridge did before the change",
+              "from the bridge you imagined."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better meets the user's priority of local clarification with preserved voice: it resolves the catcher and collapse ambiguities while leaving clear, effective references alone. B's extra explicitness is valid but adds avoidable repetition.",
+          "quotes": {
+            "source": [
+              "Make local clarity edits only."
+            ],
+            "A": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "immediately before it collapsed."
+            ],
+            "B": [
+              "The counters should stay in the tray if the bridge collapses.",
+              "immediately before the bridge collapsed."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2987a43f57515fd9ce70bd347de53bdd079f162483ee50256fa3e49e3d7d743a",
+    "prompt_sha256": "e807c02a2b270eda39b161a5dd2accf27a74e4ca32bf2cce665b068dff97300d",
+    "raw_sha256": "cb5044c9f155dc2cc78305426ef53ec69f9b28b5590427a3270bc02234eb1674",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the trial duration, hours, request and retrieval times, identification delays, late-arrival options, conservation exceptions, and undecided review outcome.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "they will join the next retrieval following identification, which may not be on the day the request was first received."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all operational conditions. Its next-opening-day statement is reasonably read with the subsequent identification and conservation exceptions. Describing the scheduled batch as a single daily retrieval does not establish a material discrepancy in this context.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day.",
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [],
+            "B": [
+              "Requests received after noon will be retrieved on the next opening day.",
+              "If a request lacks a shelfmark, staff will hold it while helping to identify the item; once identified, it will join the next scheduled retrieval, which may not be on the day the request was received."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive rules, including the distinction between request time and arrival, the shelfmark prerequisite, and conservation appointments outside the ordinary schedule.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "It is the request that must arrive before noon, provided that it contains a shelfmark.",
+              "Readers do not need to arrive before noon."
+            ],
+            "B": [
+              "Requests that include a shelfmark and arrive before noon will be retrieved at 2:00 pm.",
+              "Readers do not need to be present before noon; anyone who requests a map in advance can arrive later."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic staff prose. A's extended explanation of what access means and formal bullet labels make a straightforward notice feel more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The change concerns retrieval rather than access—a distinction worth making, as access has sometimes been understood to mean that every item can be brought upstairs immediately.",
+              "**Submission Deadline and Retrieval Time:**"
+            ],
+            "B": [
+              "Reading room opening hours remain unchanged.",
+              "Readers do not need to be present before noon; anyone who requests a map in advance can arrive later."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A's headings make the ordinary process, conservation exceptions, and review easy to locate. B supplies an equally coherent paragraph sequence and puts the shelfmark condition directly into the ordinary request rule, although its operational paragraph is denser.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Requesting Standard Maps",
+              "### Fragile Maps and Conservation Appointments"
+            ],
+            "B": [
+              "Requests that include a shelfmark and arrive before noon will be retrieved at 2:00 pm.",
+              "Maps identified in the catalogue as fragile require support prepared by the conservation team and are not included in the 2:00 pm retrieval."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better meets the preference for removing circular reassurance while retaining useful explanation and a calm staff voice. A repeats the access-versus-retrieval defense instead of letting the practical rules explain the distinction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the trial is intended to reduce interruptions in the store and is not a reduction in opening hours.",
+              "The change concerns retrieval rather than access—a distinction worth making"
+            ],
+            "B": [
+              "For the next six weeks, the map archive is trialling a single daily retrieval to reduce interruptions in the store. Reading room opening hours remain unchanged.",
+              "staff will hold it while helping to identify the item"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves the user's practical editing goal by replacing the defensive opening with the trial's purpose and unchanged hours, then retaining the full request process and exceptions. A is usable and scannable, but leaves precisely the rhetorical repetition the user wanted reduced.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The change concerns retrieval rather than access—a distinction worth making, as access has sometimes been understood to mean that every item can be brought upstairs immediately."
+            ],
+            "B": [
+              "For the next six weeks, the map archive is trialling a single daily retrieval to reduce interruptions in the store. Reading room opening hours remain unchanged."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "714bebc3126d76398bd3807401c5e1daac0ab14f75cd47a3502c266844ad9ea2",
+    "prompt_sha256": "aba268ac09e1f1eeb66c45ff7e00dbed266e0d2bf776c521e635e06e7820d3ff",
+    "raw_sha256": "3427994b87891f07855ef61506fbe4a3b88873c7a437aac031ae0a9fbb6224f2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a practical staff notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves every operational condition, including identification before retrieval, appointments for fragile maps, support needs discovered during retrieval, and review before any continuation decision.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments.",
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [
+              "The two o'clock retrieval does not apply to these appointments.",
+              "An item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the duration, hours, cutoff, retrieval time, shelfmark requirement, arrival options, conservation arrangements, and review inputs. Its single-batch description and general fragile-map heading reasonably summarize the ordinary process and its stated exception.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two.",
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [],
+            "B": [
+              "To have a map brought up at 2:00 p.m., you must submit a request **before noon** that includes the item's **shelfmark**.",
+              "Once the shelfmark has been established, the request will join the next scheduled retrieval. Please note that this may not be on the day the request was first received."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the ordinary retrieval conditions and exceptions, and neither turns continuation into a settled decision. Differences in presentation do not materially change what readers may do.",
+          "quotes": {
+            "source": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "B": [
+              "Before deciding whether to continue with this arrangement, we will count the number of delayed requests and review feedback from readers."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's connected paragraphs sound like a practical staff notice and explain the conditions without frequent changes of format. B remains readable, but repeats its introductory explanation and adds formal reminders such as 'Please note' where a direct statement suffices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests without a shelfmark will be held while staff help identify the item. They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "B": [
+              "Once the shelfmark has been established, the request will join the next scheduled retrieval. Please note that this may not be on the day the request was first received."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A develops purpose, ordinary requests, identification delays, conservation exceptions, and review in a clear sequence. B's headings offer useful navigation among the same reader situations. Both make the process understandable without imposing research-style architecture.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Instead, requests that contain a shelfmark and are received before noon will be collected together for retrieval at two o'clock.",
+              "It is the request that needs to arrive before noon, rather than the person.",
+              "Maps already identified in the catalogue as fragile require a support prepared by the conservation team"
+            ],
+            "B": [
+              "**Same-day requests (with a shelfmark)**",
+              "**Requests without a shelfmark**",
+              "**Fragile maps**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the source's conversational explanatory rhythm while reducing defensive packaging. B's headings are permissible and useful, but its opening retains the staged retrieval-versus-access distinction after already explaining the trial and unchanged hours.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is the request that needs to arrive before noon, rather than the person.",
+              "An item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "B": [
+              "The trial is intended to reduce interruptions in the store rather than to reduce opening hours",
+              "The change concerns retrieval rather than access—items from the archive will be fetched in a single daily batch rather than brought upstairs immediately on demand."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no mathematical argument requiring proof assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A is the better fit for this user's preference for connected, practical explanation: it proceeds from the trial's purpose to the actual request rule and keeps the necessary exceptions intact. B provides useful navigation, but repeats the rationale and retrieval-versus-access framing before presenting those rules.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Instead, requests that contain a shelfmark and are received before noon will be collected together for retrieval at two o'clock.",
+              "It is the request that needs to arrive before noon, rather than the person."
+            ],
+            "B": [
+              "The change concerns retrieval rather than access—items from the archive will be fetched in a single daily batch rather than brought upstairs immediately on demand.",
+              "During the trial, there will be one retrieval from the map archive each day at 2:00 p.m., and no second retrieval later in the afternoon."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "86011752d29913c66f9351bf180faa9b0fa181c9b1b919d3feb69e8aaba501a2",
+    "prompt_sha256": "aba268ac09e1f1eeb66c45ff7e00dbed266e0d2bf776c521e635e06e7820d3ff",
+    "raw_sha256": "3427994b87891f07855ef61506fbe4a3b88873c7a437aac031ae0a9fbb6224f2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial duration, hours, retrieval schedule, request and arrival distinction, shelfmark prerequisite, conservation exceptions, and undecided review. No material operational change is established.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two.",
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "you must submit a request **before noon** that includes the item's **shelfmark**.",
+              "Once the shelfmark has been established, the request will join the next scheduled retrieval."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all operational conditions, including identification delays, fragile-map appointments, support needs discovered during retrieval, and both review inputs before a continuation decision.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments.",
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [],
+            "B": [
+              "The two o'clock retrieval does not apply to these appointments.",
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete procedure and its exceptions. A makes the shelfmark condition more prominent; B communicates the same condition accurately in connected prose.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "provided your request and shelfmark arrive before noon, you may arrive later in the day to consult the material."
+            ],
+            "B": [
+              "requests that contain a shelfmark and are received before noon will be collected together for retrieval at two o'clock."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and appropriate for a staff notice. A uses direct instructions and useful labels; B maintains readable paragraph prose. Neither format is inherently more natural for this task.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you do not have a shelfmark, your request will be held while staff help identify the item."
+            ],
+            "B": [
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A gives readers distinct routes for an ordinary request, a late arrival, a missing shelfmark, and a fragile map. B preserves the logic but combines arrival rules and identification delays in one paragraph, making the relevant exception less immediately findable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Same-day requests (with a shelfmark)**",
+              "**Requests without a shelfmark**",
+              "**Fragile maps**"
+            ],
+            "B": [
+              "A reader who has requested a map in advance can arrive later, and a reader who arrives later without having requested one can still use the catalogues and open shelves and submit a request for the next opening day.",
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain a calm, helpful staff voice and explain the practical reason for the trial. A's reader-facing instructions and B's continuous prose are both compatible with the author's preferences for this ordinary notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Readers who arrive after noon without having submitted a request in advance are welcome to use the catalogues and open shelves as usual"
+            ],
+            "B": [
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves and submit a request for the next opening day."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material fidelity error. A better serves the immediate goal of helping readers work out their request: its explicit same-day instruction and separate identification-delay section make eligibility and exceptions easy to locate. That practical advantage outweighs its somewhat repetitive opening.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To have a map brought up at 2:00 p.m., you must submit a request **before noon** that includes the item's **shelfmark**.",
+              "**Requests without a shelfmark**"
+            ],
+            "B": [
+              "Instead, requests that contain a shelfmark and are received before noon will be collected together for retrieval at two o'clock.",
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8276ed4f77b7075e24066f3d4ede8199bcfbb6724af7155ed6b2aa4be8c43f11",
+    "prompt_sha256": "a6310be72c29409e1ac4a173c01819514e6df3e0bd8897ceac0ac7fae2e11843",
+    "raw_sha256": "695195d035a0f8cf1844d73268a889362fb4c579b392d5e8edb4af80493eadd3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a practical staff notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the operational conditions and review process. Its categorical next-day sentence is reasonably read with the identification and conservation exceptions that follow; the passage does not establish an unconditional retrieval guarantee.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day.",
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "Requests received after noon will be retrieved on the next opening day.",
+              "once identified, it will join the next scheduled retrieval, which may not be on the day the request was received."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the six-week duration, unchanged hours, noon cutoff, single afternoon retrieval, shelfmark requirement, arrival alternatives, conservation arrangements, and undecided review using delays and comments.",
+          "quotes": {
+            "source": [
+              "There will not be a second afternoon retrieval during the trial.",
+              "The catalogue will identify affected maps, but an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [],
+            "B": [
+              "There will not be a second afternoon retrieval during the trial.",
+              "If an item is found to need conservation support during retrieval, staff will contact the reader."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source's substantive conditions. A's next-day statement is more categorical in isolation, but its surrounding exceptions preserve the qualified procedure. B likewise supplies the shelfmark qualification immediately after its deadline statement.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item.",
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [
+              "If a request lacks a shelfmark, staff will hold it while helping to identify the item",
+              "Maps identified in the catalogue as fragile require support prepared by the conservation team and are not included in the 2:00 pm retrieval."
+            ],
+            "B": [
+              "Requests submitted without a shelfmark will be held while staff help identify the item",
+              "The 2:00 pm retrieval does not apply to these appointments."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A states the purpose and practical change directly in ordinary staff language. B retains a cumbersome opening about what readers will encounter and adds formal labels that make a simple notice sound more administrative.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, the map archive is trialling a single daily retrieval to reduce interruptions in the store."
+            ],
+            "B": [
+              "For the next six weeks, readers requesting material from the map archive will encounter a revised retrieval arrangement.",
+              "**Submission Deadline and Retrieval Time:**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B's sections make the ordinary procedure, conservation exception, and review easy to find independently. A follows a sensible order but packs the deadline, arrival alternatives, late requests, and identification delays into one substantial paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Readers who arrive after noon without an advance request may still use the catalogues and open shelves, and can submit requests for the following opening day. If a request lacks a shelfmark, staff will hold it while helping to identify the item"
+            ],
+            "B": [
+              "### Requesting Standard Maps",
+              "### Fragile Maps and Conservation Appointments",
+              "### Trial Review and Reader Feedback"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A removes the source's commentary about past misunderstandings while keeping the trial's purpose and useful explanations. B retains that defensive explanation and repeats the opening-hours reassurance, missing the author's preference to remove rhetorical repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Reading room opening hours remain unchanged.",
+              "Readers do not need to be present before noon; anyone who requests a map in advance can arrive later."
+            ],
+            "B": [
+              "the trial is intended to reduce interruptions in the store and is not a reduction in opening hours.",
+              "The change concerns retrieval rather than access—a distinction worth making, as access has sometimes been understood to mean that every item can be brought upstairs immediately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no mathematical argument requiring assessment.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has an established material error. B offers better navigation, but A better fulfills the requested revision by replacing circular reassurance with an immediate explanation of the trial and its procedure. Its fuller operational paragraph remains usable and preserves the necessary exceptions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, the map archive is trialling a single daily retrieval to reduce interruptions in the store.",
+              "Requests that include a shelfmark and arrive before noon will be retrieved at 2:00 pm."
+            ],
+            "B": [
+              "The change concerns retrieval rather than access—a distinction worth making, as access has sometimes been understood to mean that every item can be brought upstairs immediately.",
+              "### Requesting Standard Maps"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b7b81c4bb7fedc9f788162f89aa2cc6e0a57c54a8c40861c0498bd4cda42efd",
+    "prompt_sha256": "a6310be72c29409e1ac4a173c01819514e6df3e0bd8897ceac0ac7fae2e11843",
+    "raw_sha256": "695195d035a0f8cf1844d73268a889362fb4c579b392d5e8edb4af80493eadd3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
