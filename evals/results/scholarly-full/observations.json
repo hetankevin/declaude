@@ -124472,5 +124472,2892 @@
     "prompt_sha256": "907f9929796f1cb764dcef8c7e77dcb4478eec6553ba3327760296d82239aaf7",
     "raw_sha256": "24dda4d2f0929542b3ec1885bb53619e4059859623f5df943608ede9cd4fcdf1",
     "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "haiku",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial, retrieval schedule, identification delays, conservation exception, and review. Its next-opening-day deadline is ambiguous about which noon applies, but does not unambiguously prohibit afternoon submission for the following day.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day."
+            ],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions, including late-arrival options, identification before retrieval, fragile-map appointments, and the undecided continuation.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [],
+            "B": [
+              "These requests join the next retrieval after identification, which may not be on the day the request was first received."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive arrangements. B more clearly retains the permission for late arrivals to submit next-opening-day requests; A's placement of a noon instruction leaves the applicable day unclear.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day."
+            ],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": [
+              "If you arrive without a request, you can still use the catalogues and open shelves, and you may submit a request for the next opening day."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, practical language. A's bullets and B's connected paragraphs are both idiomatic forms for a staff notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you have requested a map in advance, you can arrive later in the day."
+            ],
+            "B": [
+              "If you have requested a map in advance, you can arrive later."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both distinguish ordinary retrieval, identification delays, and conservation appointments. B keeps the late-arrival permission intact before explaining the deadline and shelfmark requirement; A introduces uncertainty within the arrival instructions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon. It is the request that must arrive before noon, not you."
+            ],
+            "B": [
+              "**The request must arrive before noon, not the reader.** A request must include a shelfmark."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better sustains connected, helpful explanation while using emphasis to distinguish processes. A remains calm, but splitting nearly every explanatory step into a bullet makes the notice more fragmented.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "- Maps already identified as fragile require a support prepared by the conservation team. The conservation team will contact you to arrange an appointment.\n- The 2 p.m. retrieval does not apply to these appointments."
+            ],
+            "B": [
+              "**Fragile maps follow a separate process.** Maps already identified as fragile need support prepared by the conservation team."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a definite material error. B better serves the decisive practical priority: a late-arriving reader can immediately see that they may submit a request for the next opening day. A's corresponding instruction leaves an avoidable deadline ambiguity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": [
+              "If you arrive without a request, you can still use the catalogues and open shelves, and you may submit a request for the next opening day."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "564d025c7db80a863a1f896ea15402e1e91be562b75225b7fefcc9ad5d928684",
+    "prompt_sha256": "6976c1751bda58ea643591a4039d2078f3b662b4052f83b2f7e60b5cadd6721a",
+    "raw_sha256": "f2a2e530a555c7fd21cc4c9f4b588c8ffbcea74cfa19165b1f6eac142c90a5d7",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "opus-xhigh",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a staff notice, with no mathematical argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the six-week duration, unchanged hours, noon cutoff, two o'clock retrieval, absence of a second retrieval, late-arrival options, identification delays, conservation arrangements, and review inputs.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two."
+            ],
+            "A": [
+              "Requests received before noon that include a shelfmark will be collected together and retrieved at two o'clock."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all operational conditions and exceptions. 'Occasionally' adds an unnecessary frequency suggestion to the possibility of discovering support needs, but supplies no consequential guarantee or changed procedure.",
+          "quotes": {
+            "source": [
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [],
+            "B": [
+              "Occasionally, staff find during retrieval that a map needs support. If this happens, they will contact you."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the operational substance, including the shelfmark prerequisite and the possibility that identification postpones retrieval. B's incidental frequency wording does not materially alter what readers can rely on.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [
+              "If a request does not include a shelfmark, it will be held while staff help identify the item."
+            ],
+            "B": [
+              "We will hold your request while staff help you identify the item."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses fluent institutional prose; B uses equally natural direct address. Both explain the process without sounding punitive.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A reader who has requested a map in advance can arrive later in the day."
+            ],
+            "B": [
+              "If you have requested a map in advance, you are welcome to come in later in the day."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A introduces the purpose immediately and then follows the reader's process in related paragraphs. B makes the conditions and exceptions easy to locate with headings, though it repeats the cutoff. Both provide a usable sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks we are trialling a new arrangement for retrieving material from the map archive, intended to reduce interruptions in the store."
+            ],
+            "B": [
+              "For your map to be included in that day's two o'clock retrieval, your request must:\n\n- reach us before noon, and\n- include a shelfmark."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A fits the preference for connected explanation; B's practical headings and direct address fit this notice's audience. Neither organization imposes an inappropriate research-style argument or sacrifices useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Maps already identified as fragile are handled separately. They need a support prepared by the conservation team, who will contact the reader with an appointment."
+            ],
+            "B": [
+              "For these maps, the conservation team will contact you to arrange an appointment. The two o'clock retrieval does not apply to these appointments."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. A's compact paragraph sequence and B's explicit request checklist both satisfy the user's main goal: readers can determine the ordinary requirements and recognize the exceptions. Their organizational tradeoffs do not establish a substantive overall winner.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests received before noon that include a shelfmark will be collected together and retrieved at two o'clock."
+            ],
+            "B": [
+              "For your map to be included in that day's two o'clock retrieval, your request must:\n\n- reach us before noon, and\n- include a shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8bc452c29d2de71b6c22eeca1bdd75ff693c9c29d79df97ae4b7b1342e090363",
+    "prompt_sha256": "6976c1751bda58ea643591a4039d2078f3b662b4052f83b2f7e60b5cadd6721a",
+    "raw_sha256": "f2a2e530a555c7fd21cc4c9f4b588c8ffbcea74cfa19165b1f6eac142c90a5d7",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "sonnet-low",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an operational notice revision, not a proof-editing task.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves every operational condition, including later arrival, requests for the next opening day, identification delays, fragile-map appointments, and review before continuation.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the schedule and all exceptions. The shelfmark prerequisite is read with the preceding noon cutoff, not as permission to bypass it.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [],
+            "B": [
+              "A request must contain a shelfmark to join the next retrieval."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the same operational rules and qualifications. Neither promises immediate access to all items, same-day identification, or continuation of the trial.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "The request will join the next retrieval after identification, which may not be on the day it was first received."
+            ],
+            "B": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic, calm notices. A's direct address and B's third-person phrasing are equally appropriate to the supplied register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You can request a map in advance and arrive later in the day."
+            ],
+            "B": [
+              "A reader who has requested a map in advance can arrive later."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A separates the deadline explanation from the request checklist; B keeps the schedule and arrival explanation together. Both then distinguish identification delays from conservation appointments and end with purpose and review.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**What the noon deadline means**"
+            ],
+            "B": [
+              "**How requests are collected**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both use purposeful headings and preserve useful explanations without becoming elaborate or punitive. Their modest differences in address and paragraph grouping do not establish a stronger fit to the documented preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Staff will hold these while they help identify the item."
+            ],
+            "B": [
+              "Requests without one will be held while staff help identify the item."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation appears in the task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both meet the practical priority of separating ordinary retrieval from identification delays and conservation appointments. Each is a publishable notice with a clear explanation of the request-versus-arrival distinction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is the request that must arrive before noon, not the reader."
+            ],
+            "B": [
+              "It is the request that must arrive before noon, not the reader."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "248d5e834988554e5d679b0e748e45e4defe13753a18c8a40e101892d8ddf9df",
+    "prompt_sha256": "6976c1751bda58ea643591a4039d2078f3b662b4052f83b2f7e60b5cadd6721a",
+    "raw_sha256": "f2a2e530a555c7fd21cc4c9f4b588c8ffbcea74cfa19165b1f6eac142c90a5d7",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "sol-low",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns practical instructions and contains no proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the six-week trial, hours, both same-day request conditions, retrieval schedule, late-arrival options, identification delays, conservation exception, and review. The initial schedule is qualified by the later explicit appointment exception.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [
+              "The team will contact you to arrange an appointment, to which the 2 p.m. retrieval schedule does not apply."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions. Its general fragile-map statement is followed by the distinction between already known support needs and needs discovered during retrieval, retaining the source's scope in context.",
+          "quotes": {
+            "source": [
+              "The catalogue will identify affected maps, but an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [],
+            "B": [
+              "The catalogue will identify maps already known to require support. If an item is found to need support during retrieval, staff will contact you."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete procedure and its qualifications, including the conjunction of noon receipt and shelfmark identification for ordinary same-day retrieval.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Requests must be received before noon and include a shelfmark to join that day’s retrieval."
+            ],
+            "B": [
+              "To request material for the same day’s retrieval, submit your request before noon and include the shelfmark."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use fluent, practical prose. A's appointment sentence is slightly more formal and B's arrival sentence slightly repetitive, but neither materially impedes reading.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrive before noon. If you have requested a map in advance, you can arrive later."
+            ],
+            "B": [
+              "Your request needs to arrive before noon; you do not need to arrive before noon yourself."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A opens with the actionable schedule; B first supplies the trial's purpose. Both then move through arrival, identification delays, conservation, and review in a coherent order appropriate to a notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, requests for material from the map archive will be retrieved at 2 p.m."
+            ],
+            "B": [
+              "For the next six weeks, the map archive will trial a different retrieval arrangement to reduce interruptions in the store."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both remove repeated reassurance while retaining staff assistance and explanatory paragraph groups. Neither compresses away the reason a shelfmark-free request may be delayed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ],
+            "B": [
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both give readers a complete, usable notice with the same-day requirements together and exceptions explained separately. Leading with the schedule or the purpose is a valid organizational choice here, without a decisive difference in usefulness.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests must be received before noon and include a shelfmark to join that day’s retrieval."
+            ],
+            "B": [
+              "To request material for the same day’s retrieval, submit your request before noon and include the shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c0b205e5fe072b2faf1bae74c4ff8168e5c528e42550f68f9978d041c006e5c4",
+    "prompt_sha256": "6976c1751bda58ea643591a4039d2078f3b662b4052f83b2f7e60b5cadd6721a",
+    "raw_sha256": "f2a2e530a555c7fd21cc4c9f4b588c8ffbcea74cfa19165b1f6eac142c90a5d7",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "luna-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested revision is a staff notice with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the duration, opening hours, retrieval conditions, late-arrival options, identification delays, conservation process, and review. Its access summary reasonably restates the source's unchanged-access distinction.",
+          "quotes": {
+            "source": [
+              "The arrangement concerns retrieval rather than access"
+            ],
+            "A": [
+              "The trial changes how material is retrieved, not who can use the archive or when they can arrive."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves every operational condition. Although it omits the word 'held', staff identification followed by entry into the next retrieval communicates the same pending-request process.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [],
+            "B": [
+              "Staff will help identify items requested without a shelfmark. Once identified, those requests will join the next retrieval, which may be on a later day."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the ordinary schedule and its identification and conservation qualifications. Their initial general retrieval statements are qualified by the subsequent shelfmark and appointment passages.",
+          "quotes": {
+            "source": [
+              "There will not be a second afternoon retrieval during the trial."
+            ],
+            "A": [
+              "There will be no second retrieval in the afternoon."
+            ],
+            "B": [
+              "There will be no second retrieval in the afternoon during the trial."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use natural direct address and calm explanatory language. Neither's wording creates a significant reading burden.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In that case, staff will contact you."
+            ],
+            "B": [
+              "If so, staff will contact you."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A gives the shelfmark requirement and identification delay their own paragraph and restates both same-day prerequisites together. B joins identification rules to arrival options, requiring readers to assemble the noon and shelfmark conditions across paragraphs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "If you arrive later without a request, you may still use the catalogues and open shelves, and submit a request for the next opening day. Requests must include a shelfmark to be included in the 2 p.m. retrieval."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Both are helpful and restrained. A better fits the preference for related explanatory groups: it introduces the combined eligibility conditions and immediately explains what staff do when identification is missing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval. Requests without a shelfmark will be held while staff help identify the item."
+            ],
+            "B": [
+              "Requests must include a shelfmark to be included in the 2 p.m. retrieval. Staff will help identify items requested without a shelfmark."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is present.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A has a modest practical advantage because its dedicated identification paragraph puts both same-day requirements together and explains the delay immediately afterward. That organization better supports the user's goal of letting readers work out how to request material.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "Requests received before noon will be included in that retrieval.",
+              "Requests must include a shelfmark to be included in the 2 p.m. retrieval."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "08e73edab8f8f5795e9ad260e0f08668ae908237cbb471bf524ede3d7ed4f9dd",
+    "prompt_sha256": "6976c1751bda58ea643591a4039d2078f3b662b4052f83b2f7e60b5cadd6721a",
+    "raw_sha256": "f2a2e530a555c7fd21cc4c9f4b588c8ffbcea74cfa19165b1f6eac142c90a5d7",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "fable",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial duration, hours, retrieval schedule, request and arrival distinction, identification prerequisite, fragile-map exceptions, and review process.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "Once identified, it will join the next retrieval, which may not be on the day the request was first received."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions. The next-opening-day retrieval statement is reasonably read with the explicit shelfmark requirement and subsequent identification and conservation exceptions, rather than as an unconditional guarantee.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day.",
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [],
+            "B": [
+              "You may also submit a request for the next opening day, and it will join that day's two o'clock retrieval.",
+              "Requests that do not include a shelfmark will be held while staff help you identify the item."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive rules and the undecided continuation. A states the joint deadline and shelfmark requirement particularly directly; B retains the same conditions across its request and exception sections.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "A request must reach us before noon and must include a shelfmark to join that day's two o'clock retrieval."
+            ],
+            "B": [
+              "Submit your request before noon and include the shelfmark."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the access distinction in direct language addressed to readers. A's account of how access has been understood sounds more like retained editorial justification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Access has sometimes been taken to mean that every item can be brought upstairs immediately."
+            ],
+            "B": [
+              "it affects when items are brought upstairs, not whether you may use the reading room."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the scope of the change to the ordinary request procedure, then late arrivals and exceptions. A gives the schedule before its request section and then repeats the deadline and retrieval time there.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests received before noon will be collected and brought up at two o'clock.",
+              "A request must reach us before noon and must include a shelfmark to join that day's two o'clock retrieval."
+            ],
+            "B": [
+              "**How to request a map**\n\nSubmit your request before noon and include the shelfmark."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both remain calm and helpful, but B more consistently turns explanation into reader-facing guidance. Its ordinary procedure and separately labeled exceptions fit this practical notice without imposing an elaborate argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**What a request needs**"
+            ],
+            "B": [
+              "**How to request a map**",
+              "It is the request that needs to arrive before noon, not you."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves the central task of helping readers work out what to do: its request section begins with the required action, and its opening explains access without retaining the history of misunderstanding. A is usable but repeats the schedule across its opening and request section.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Access has sometimes been taken to mean that every item can be brought upstairs immediately."
+            ],
+            "B": [
+              "Submit your request before noon and include the shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "73f9727266d54d7d1bd52a27ddb8aaf924b4f8ce5b3d74cef1a421f815861d3f",
+    "prompt_sha256": "69096ed2101d708d7a851c5f88a1c0d0936b42d0e927f480c278980ec153a2e3",
+    "raw_sha256": "19509b3eff2568d263ff62af1eeb4d30219ea5e0fa3163ac598f50fdbad0dbdb",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "sonnet-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is a staff-notice revision with operational instructions, not a mathematical argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains every operational condition, including the distinction between submitting a request and arriving, identification delays, conservation appointments, and the trial review.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item.",
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [
+              "Requests without a shelfmark will be held while staff help you identify the item.",
+              "the two o'clock retrieval does not apply to these appointments."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the six-week trial, unchanged hours, ordinary retrieval conditions, late-arrival options, both exception routes, and the undecided continuation.",
+          "quotes": {
+            "source": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [],
+            "B": [
+              "Before deciding whether to continue, we will count delayed requests and review reader comments."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both accurately preserve the deadline, shelfmark prerequisite, and possible identification delay. Differences in headings and address do not change the operational meaning.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "**Include a shelfmark.** A request needs a shelfmark to join the retrieval.",
+              "It is the request that must arrive by then, not you."
+            ],
+            "B": [
+              "It is the request that must arrive before noon, not the reader.",
+              "A request must contain a shelfmark to be included in the two o'clock retrieval."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's direct address is welcoming, although its opening explanation is cumbersome. B's opening is more economical, but repeated references to a reader make its guidance more impersonal. Both are idiomatic notices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrive before noon.",
+              "Access has sometimes been taken to mean that every item can be brought upstairs immediately"
+            ],
+            "B": [
+              "Access is not affected, but readers should not expect every item to be brought upstairs immediately.",
+              "A reader who has requested a map in advance can arrive later in the day."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A makes the shelfmark prerequisite visible early and gives missing shelfmarks their own section. B connects the ordinary procedure and identification exception in prose. Both separate conservation appointments and finish with the review process.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "## Requests without a shelfmark\n\nRequests without a shelfmark will be held while staff help you identify the item."
+            ],
+            "B": [
+              "A request must contain a shelfmark to be included in the two o'clock retrieval. Requests without a shelfmark will be held while staff help identify the item"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A offers more direct, helpful address and useful scanning cues; B offers more connected prose and less opening explanation about past misunderstanding. Neither advantage decisively outweighs the other for this practical notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Once it is identified, the request will join the next retrieval. That may not be on the day the request was first received."
+            ],
+            "B": [
+              "Requests without a shelfmark will be held while staff help identify the item, and will join the next retrieval after identification."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither contains a material error, and both provide a usable notice with the required exceptions. A makes the prerequisite easier to scan and addresses readers warmly; B reduces the opening's rhetorical explanation and connects the rules in prose. These are comparable ways to meet the user's goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Include a shelfmark.** A request needs a shelfmark to join the retrieval."
+            ],
+            "B": [
+              "A request must contain a shelfmark to be included in the two o'clock retrieval."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "741c5288be04ad1fd0e6e777397fd3d9c029c91b47271b9d2b1c9e647385b0f5",
+    "prompt_sha256": "69096ed2101d708d7a851c5f88a1c0d0936b42d0e927f480c278980ec153a2e3",
+    "raw_sha256": "19509b3eff2568d263ff62af1eeb4d30219ea5e0fa3163ac598f50fdbad0dbdb",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an operational notice without a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial, hours, timing, shelfmark prerequisite, late-arrival options, conservation support and appointments, discovery during retrieval, and review inputs.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments.",
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [
+              "The team will contact you to arrange an appointment, separate from the 2 p.m. retrieval.",
+              "If staff find during retrieval that another item needs support, they will contact you."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all operational conditions. Giving the trial's intended purpose in the opening does not claim that the reduction in interruptions is guaranteed.",
+          "quotes": {
+            "source": [
+              "The trial is intended to reduce interruptions in the store.",
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [],
+            "B": [
+              "the map archive will trial a different retrieval arrangement to reduce interruptions in the store.",
+              "We will count delayed requests and review reader comments before deciding whether to continue the arrangement."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the same permissions, prerequisites, exceptions, and review conditions. B relocates the purpose without strengthening the conclusion about continuation.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "Once identified, the item will be included in the next retrieval, which may not be on the day the request was received."
+            ],
+            "B": [
+              "Once identified, the item will join the next retrieval, which may not be on the day the request was first received."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use plain, conversational technical prose and explain identification and conservation requirements without punitive language. Neither has a substantial idiomatic advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrive before noon yourself. If you have requested a map in advance, you can arrive later."
+            ],
+            "B": [
+              "Your request must arrive before noon; you do not need to arrive before noon yourself."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B establishes the trial's purpose, then presents the deadline and shelfmark together before describing retrieval. A opens with the schedule and repeats the deadline and retrieval time in the next paragraph. B gives the instructions a more connected order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, requests for material from the map archive received before noon will be grouped for retrieval at 2 p.m.",
+              "To request a map for the 2 p.m. retrieval, submit your request before noon and include its shelfmark."
+            ],
+            "B": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark. These requests will be collected together for retrieval at 2 p.m."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B modestly better matches the preference for explaining purpose and connecting instructions: the opening says why the trial exists, and the procedure explains what the required submission enables. It achieves this without turning the notice into a research introduction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The trial is intended to reduce interruptions in the store."
+            ],
+            "B": [
+              "For the next six weeks, the map archive will trial a different retrieval arrangement to reduce interruptions in the store."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation in the task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both are faithful and publishable. B has a modest substantive advantage in instruction order: it introduces the purpose, then connects a complete request to that day's retrieval. A makes readers encounter the schedule twice before all prerequisites have been assembled.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request a map for the 2 p.m. retrieval, submit your request before noon and include its shelfmark."
+            ],
+            "B": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark. These requests will be collected together for retrieval at 2 p.m."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d90cf01e0a0875102510cc57640c7efb7d6d30b6fdb889e270d304c9d95b2d6d",
+    "prompt_sha256": "69096ed2101d708d7a851c5f88a1c0d0936b42d0e927f480c278980ec153a2e3",
+    "raw_sha256": "19509b3eff2568d263ff62af1eeb4d30219ea5e0fa3163ac598f50fdbad0dbdb",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "opus-low",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns practical retrieval instructions, not a proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The section for arrival without a request drops the source's late-arrival qualification and says the request will be retrieved on the next opening day. A reader arriving before noon with a shelfmark could therefore infer that an on-site request must wait until the next opening day, contradicting the ordinary same-day rule. The later exception sections mitigate any broader guarantee, but do not repair this changed arrival condition.",
+          "quotes": {
+            "source": [
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves. Those readers may submit a request for the next opening day."
+            ],
+            "A": [
+              "**If you arrive without having made a request**",
+              "You can also submit a request, which will be retrieved on the next opening day."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the operational rules and their exceptions. The opening's claim about when readers may use items is imprecise: it can mean unchanged permission and hours, or suggest unchanged availability. The immediately following retrieval schedule supports the former reading, so the ambiguity does not establish a material error.",
+          "quotes": {
+            "source": [
+              "The arrangement concerns retrieval rather than access",
+              "Requests received before noon will be collected together for retrieval at two."
+            ],
+            "A": [],
+            "B": [
+              "The trial changes when items are brought up from the store, not who may use them or when.",
+              "Requests received before noon will be collected together and retrieved at two o'clock."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B retains the late-arrival qualification for next-opening-day requests. A's unqualified arrival section changes what readers arriving before noon could reasonably conclude about their eligibility for same-day retrieval.",
+          "quotes": {
+            "source": [
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves. Those readers may submit a request for the next opening day."
+            ],
+            "A": [
+              "**If you arrive without having made a request**",
+              "You can also submit a request, which will be retrieved on the next opening day."
+            ],
+            "B": [
+              "If you arrive later without having made a request, you can still use the catalogues and open shelves, and you may submit a request for the next opening day."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's phrasing is generally more restrained and natural for a staff notice. A's claim about what access has never meant sounds corrective, and its invitation to come whenever convenient is looser than the surrounding operational register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "access has never meant that every item can be brought upstairs immediately.",
+              "**Come in when it suits you.**"
+            ],
+            "B": [
+              "If you have requested a map in advance, you can arrive later in the day."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A's numbered ordinary procedure and separate exception headings are easy to scan; B's related paragraphs also clearly separate ordinary retrieval, identification delays, and conservation appointments. Both provide workable organization, apart from A's substantive late-arrival error.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**How to request a map during the trial**",
+              "**If your request has no shelfmark**",
+              "**Fragile maps**"
+            ],
+            "B": [
+              "**Requesting a map**",
+              "A request without a shelfmark will be held while staff help identify the item.",
+              "**Fragile maps**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better maintains a calm practical register and removes the historical correction about access. A offers helpful steps, but its categorical reassurance and broad invitation add rhetoric that does not help readers apply the rules.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Access to the archive is not changing, although access has never meant that every item can be brought upstairs immediately.",
+              "**Come in when it suits you.**"
+            ],
+            "B": [
+              "The reading room will keep its usual opening times.",
+              "If you have requested a map in advance, you can arrive later in the day."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation applies to this notice.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no established material error; A has a localized operational error that could unnecessarily defer a before-noon request. Preserving who can use same-day retrieval is decisive for this task. B's opening has an ambiguity about access timing, but its explicit schedule and late-arrival rule make the usable instructions more reliable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**If you arrive without having made a request**",
+              "You can also submit a request, which will be retrieved on the next opening day."
+            ],
+            "B": [
+              "If you arrive later without having made a request, you can still use the catalogues and open shelves, and you may submit a request for the next opening day."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "86e5d853ada1f53239b7164021fb69128b078f0d41a0d2632e68bfcdb34b93e5",
+    "prompt_sha256": "69096ed2101d708d7a851c5f88a1c0d0936b42d0e927f480c278980ec153a2e3",
+    "raw_sha256": "19509b3eff2568d263ff62af1eeb4d30219ea5e0fa3163ac598f50fdbad0dbdb",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "astra-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested revision is a practical notice and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves every operational condition. Omitting the source's explanation of misunderstandings about access does not remove a rule: unchanged hours, scheduled retrieval, and late-arrival access remain explicit.",
+          "quotes": {
+            "source": [
+              "The arrangement concerns retrieval rather than access",
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves."
+            ],
+            "A": [
+              "The reading room will remain open at its usual times.",
+              "If you arrive later without having made a request, you can still use the catalogues and open shelves and submit a request for the next opening day."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the duration, hours, timing, shelfmark prerequisite, arrival distinction, identification delay, conservation exceptions, and review conditions without adding a guarantee.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments.",
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [],
+            "B": [
+              "the 2 p.m. retrieval arrangement does not apply to these appointments.",
+              "If an item is found to need support during retrieval, staff will contact you."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all operative rules. B spells out that late arrival means after noon and explicitly contrasts the request deadline with arrival; A conveys the same conditions in context.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "To request material for the same day, submit your request before noon and include a shelfmark.",
+              "You do not need to arrive before noon."
+            ],
+            "B": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark.",
+              "You do not need to arrive before noon: the deadline applies to your request, not your arrival."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic, calm, and directly addressed to readers. A's simpler appointment sentence and B's explicit deadline explanation are equally natural choices for this notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The team will contact you to arrange an appointment, separate from the 2 p.m. retrieval."
+            ],
+            "B": [
+              "You do not need to arrive before noon: the deadline applies to your request, not your arrival."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow the same useful sequence: purpose and hours, complete requests and retrieval, reader arrival, identification delays, fragile maps, and review. Each introduces exceptions after establishing the ordinary procedure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests without a shelfmark will be held while staff help identify the item.",
+              "Maps identified as fragile require a support prepared by the conservation team."
+            ],
+            "B": [
+              "Requests without a shelfmark will be held while staff help identify the item.",
+              "Maps already identified as fragile require a support prepared by the conservation team."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain useful explanation while removing repeated reassurance. They give the trial's purpose immediately and maintain connected, practical prose. B's extra clarification is useful, but A is already sufficiently explicit for the audience.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, the map archive will trial a different retrieval schedule to reduce interruptions in the store."
+            ],
+            "B": [
+              "For the next six weeks, the map archive will trial a different retrieval arrangement to reduce interruptions in the store."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both satisfy the user's practical goal with the same effective organization. B makes the deadline distinction more explicit; A conveys it adequately and gives an equally clear account of conservation appointments. The differences do not establish a substantive overall preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrive before noon. If you have requested a map in advance, you can arrive later."
+            ],
+            "B": [
+              "You do not need to arrive before noon: the deadline applies to your request, not your arrival. If you have requested a map in advance, you may arrive later."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "14ffa33fdac2702fb7480eaf6110eab4929c7063e02b70e7e7f7976118fe2a37",
+    "prompt_sha256": "69096ed2101d708d7a851c5f88a1c0d0936b42d0e927f480c278980ec153a2e3",
+    "raw_sha256": "19509b3eff2568d263ff62af1eeb4d30219ea5e0fa3163ac598f50fdbad0dbdb",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "fable",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial duration, opening hours, retrieval rules, arrival options, shelfmark requirement, conservation exceptions and review process. The next-day retrieval statement remains subject to the stated identification and fragile-map exceptions.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "Once identified, the request joins the next retrieval. This may not be on the day the request was first received"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions and the undecided continuation. In context, the daily retrieval statement describes the ordinary schedule; the fragile-map exception is explicitly retained.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [],
+            "B": [
+              "The team will contact you with an appointment, and the two o'clock retrieval does not apply to these."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the complete operational arrangement, including late-arrival options, identification delays, conservation appointments and both review inputs.",
+          "quotes": {
+            "source": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "B": [
+              "Before deciding whether to continue, we will count delayed requests and review reader comments."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the access distinction in ordinary reader-facing language. B's account of how access has been interpreted makes its opening more institutional and cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it affects when items are brought upstairs, not whether you may use the reading room."
+            ],
+            "B": [
+              "Access has sometimes been taken to mean that every item can be brought upstairs immediately."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A puts the reader's action and both ordinary prerequisites together, then explains arrival, identification and conservation separately. B introduces the timetable, interrupts it with the access discussion, and supplies the shelfmark prerequisite afterward.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Submit your request before noon and include the shelfmark."
+            ],
+            "B": [
+              "A request must reach us before noon and must include a shelfmark to join that day's two o'clock retrieval."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better combines practical directions with a helpful staff voice, replacing the historical explanation with what readers can actually do. Its invitation to comment also fits the notice's register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A comment card will be available at the desk throughout the trial, and we would welcome your views."
+            ],
+            "B": [
+              "The reading room will open at its usual times, and opening hours are not reduced. Access has sometimes been taken to mean that every item can be brought upstairs immediately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the practical priority: it gives the complete initial action immediately and explains access through its consequence for readers, while B retains an unnecessary interpretive detour.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Submit your request before noon and include the shelfmark."
+            ],
+            "B": [
+              "Access has sometimes been taken to mean that every item can be brought upstairs immediately."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ce9a4b4082b90e81d3f6ad7495f527548c4c6ebe77144869b769e433c2f6e330",
+    "prompt_sha256": "1b6276b654492b185d3fbda98cc796ffefeb4853a760ee32bd8c32398c896e02",
+    "raw_sha256": "f2ed99fa6884ac67f876e4cf7528b4b740b37f84ea4c169ffb187b6bf3cd08de",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "sonnet-low",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a staff notice, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all operational conditions, including identification before retrieval, conservation support and appointments, and continuation subject to review.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the timetable, arrival options, shelfmark handling, conservation exceptions and review. The shelfmark instruction is qualified by the subsequent explanation that incomplete requests are held for identification.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [],
+            "B": [
+              "The request will join the next retrieval after identification, which may not be on the day it was first received."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete procedure and its exceptions. Neither treats a missing shelfmark as rejection or promises same-day retrieval after identification.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "B": [
+              "Staff will hold these while they help identify the item."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic notice prose. A's third-person formulation and B's direct address are both appropriate; neither has a substantial readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A reader who has requested a map in advance can arrive later."
+            ],
+            "B": [
+              "You can request a map in advance and arrive later in the day."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B puts the cutoff, retrieval time and shelfmark requirement together in the initial request instructions, then explains arrival and the exceptions. A postpones the shelfmark prerequisite until after the arrival discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Shelfmarks**",
+              "A request must contain a shelfmark to join the next retrieval."
+            ],
+            "B": [
+              "**How to request a map**",
+              "- Each request must include a shelfmark."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both maintain a calm staff voice and explain the consequences of the rules. B's functional bullets suit a notice, while A's connected paragraphs also fit the requested register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is the request that must arrive before noon, not the reader."
+            ],
+            "B": [
+              "It is the request that must arrive before noon, not the reader."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no mathematical argument.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both are faithful and publishable. B has a modest practical advantage because readers encounter both prerequisites together before the notice explains arrival and exceptional handling, directly serving the request to make the procedure easy to work out.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**How requests are collected**",
+              "**Shelfmarks**"
+            ],
+            "B": [
+              "- Requests received before noon are collected together and retrieved at two o'clock.",
+              "- Each request must include a shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "9da4c3878599c19638fdcec621513624a1dcd79b65a4c548b7cd62795561ff85",
+    "prompt_sha256": "1b6276b654492b185d3fbda98cc796ffefeb4853a760ee32bd8c32398c896e02",
+    "raw_sha256": "f2ed99fa6884ac67f876e4cf7528b4b740b37f84ea4c169ffb187b6bf3cd08de",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "opus-xhigh",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is an operational notice revision with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves every operational condition and review input. Its general statement about access is qualified by the subsequent identification and conservation arrangements, so it does not promise immediate availability.",
+          "quotes": {
+            "source": [
+              "The arrangement concerns retrieval rather than access"
+            ],
+            "A": [
+              "The change concerns retrieval rather than access: it affects when items are brought upstairs from the store, not whether you can use them."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the trial period, hours, ordinary retrieval conditions, late-arrival options, identification delays, fragile-map appointments and contingent continuation.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [],
+            "B": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the noon deadline and shelfmark condition, distinguish request time from arrival, and retain the same exceptions and review process.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "For your map to be included in that day's two o'clock retrieval, your request must:",
+              "- include a shelfmark."
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected together and retrieved at two o'clock."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readable. A's direct address and B's more impersonal explanations are natural choices for this notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is your request, not you, that needs to arrive before noon."
+            ],
+            "B": [
+              "Readers do not need to arrive before noon. Only the request does."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B introduces the purpose, states the complete ordinary retrieval rule once, and moves through arrival, identification and conservation. A explains the schedule and then restarts it as a prerequisite list before reaching the other cases.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests received before noon will be collected together and retrieved at two o'clock.",
+              "For your map to be included in that day's two o'clock retrieval, your request must:"
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected together and retrieved at two o'clock."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the preference for connected explanation without circular reassurance. Its paragraphs each advance the procedure; A repeats both the unchanged hours and the ordinary cutoff rather than using that space to develop a new point.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The reading room will keep its usual opening times; this is not a reduction in opening hours.",
+              "- reach us before noon, and"
+            ],
+            "B": [
+              "Maps already identified as fragile are handled separately. They need a support prepared by the conservation team"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is part of the requested artifact.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither changes the operational meaning. B better meets the user's preference for explanation that moves forward: it combines the ordinary prerequisites and then gives each exceptional case a clear paragraph. A's useful headings do not offset its repeated presentation of the same rule.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For your map to be included in that day's two o'clock retrieval, your request must:"
+            ],
+            "B": [
+              "Requests received before noon that include a shelfmark will be collected together and retrieved at two o'clock.",
+              "Maps already identified as fragile are handled separately."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b12710409b7ffeb2a2bebd0149569f5731a14859cec2cfa1b0e6f62c3d4c952a",
+    "prompt_sha256": "1b6276b654492b185d3fbda98cc796ffefeb4853a760ee32bd8c32398c896e02",
+    "raw_sha256": "f2ed99fa6884ac67f876e4cf7528b4b740b37f84ea4c169ffb187b6bf3cd08de",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "sonnet-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is a practical notice, without a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions, including next-opening-day requests, identification delays, conservation appointments and review before deciding whether to continue.",
+          "quotes": {
+            "source": [
+              "The catalogue will identify affected maps, but an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [
+              "The catalogue will identify the affected maps. If an item is found during retrieval to need support, staff will contact the reader."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the schedule, access arrangements, shelfmark handling, fragile-map exceptions and review. Its description of support discovered during retrieval retains the source's possibility and staff-contact requirement.",
+          "quotes": {
+            "source": [
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [],
+            "B": [
+              "Occasionally an item is found to need support only when staff retrieve it. In that case, staff will contact you."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the operational rules and qualifications. A removes the history of the access misunderstanding, but retains its practical consequence; that removal does not omit an operational condition.",
+          "quotes": {
+            "source": [
+              "access has sometimes been understood to mean that every item can be brought upstairs immediately."
+            ],
+            "A": [
+              "Access is not affected, but readers should not expect every item to be brought upstairs immediately."
+            ],
+            "B": [
+              "Access has sometimes been taken to mean that every item can be brought upstairs immediately"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as staff notices. A is more formal and B addresses readers directly, but neither register creates a substantial difficulty.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests without a shelfmark will be held while staff help identify the item"
+            ],
+            "B": [
+              "Requests without a shelfmark will be held while staff help you identify the item."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B groups the ordinary prerequisites at the start of the request section and gives missing shelfmarks a separate, easy-to-find route. A places the shelfmark condition after the arrival alternatives.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A request must contain a shelfmark to be included in the two o'clock retrieval."
+            ],
+            "B": [
+              "- **Include a shelfmark.** A request needs a shelfmark to join the retrieval.",
+              "## Requests without a shelfmark"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more successfully removes rhetorical repetition while keeping a calm explanation. B retains the historical access discussion and repeats the request-versus-arrival distinction in adjacent sentences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is the request that must arrive before noon, not the reader."
+            ],
+            "B": [
+              "You do not need to arrive before noon. It is the request that must arrive by then, not you."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both are usable notices. B makes the prerequisites and missing-shelfmark route easier to locate; A removes more explanatory repetition and keeps the request process in connected paragraphs. These advantages are comparable for this task.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Access is not affected, but readers should not expect every item to be brought upstairs immediately."
+            ],
+            "B": [
+              "- **Include a shelfmark.** A request needs a shelfmark to join the retrieval.",
+              "## Requests without a shelfmark"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e0c7b042b0f17759d544193225aa3f0f73a1435e6c69c4a8dfe7c7207224ced9",
+    "prompt_sha256": "1b6276b654492b185d3fbda98cc796ffefeb4853a760ee32bd8c32398c896e02",
+    "raw_sha256": "f2ed99fa6884ac67f876e4cf7528b4b740b37f84ea4c169ffb187b6bf3cd08de",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "astra-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a publishable staff notice and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial duration, ordinary schedule, arrival options, shelfmark identification, fragile-map appointments and review. Describing the trial as undertaken to reduce interruptions expresses its purpose, not guaranteed success.",
+          "quotes": {
+            "source": [
+              "The trial is intended to reduce interruptions in the store."
+            ],
+            "A": [
+              "the map archive will trial a different retrieval arrangement to reduce interruptions in the store."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves every operational condition. The separate conservation appointment arrangement retains the exception to ordinary retrieval without prescribing a new appointment time.",
+          "quotes": {
+            "source": [
+              "The two o'clock retrieval does not apply to these appointments."
+            ],
+            "A": [],
+            "B": [
+              "The team will contact you to arrange an appointment, separate from the 2 p.m. retrieval."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the deadline, shelfmark condition, unchanged hours, late-arrival options, identification delays, conservation arrangements and undecided continuation based on both review inputs.",
+          "quotes": {
+            "source": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [
+              "We will count delayed requests and review reader comments before deciding whether to continue the arrangement."
+            ],
+            "B": [
+              "We will count delayed requests and review reader comments before deciding whether to continue the arrangement."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's description of immediate availability is more idiomatic than A's construction about material being available to bring upstairs. The remainder of both notices reads naturally.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "material will not always be available to bring upstairs immediately."
+            ],
+            "B": [
+              "material cannot always be brought upstairs immediately."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A introduces the change and its purpose, then gives both request prerequisites before explaining the retrieval time. B states the schedule first and restates it in the following paragraph to add the shelfmark condition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark. These requests will be collected together for retrieval at 2 p.m."
+            ],
+            "B": [
+              "requests for material from the map archive received before noon will be grouped for retrieval at 2 p.m.",
+              "To request a map for the 2 p.m. retrieval, submit your request before noon and include its shelfmark."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better sustains connected practical explanation: its brief purpose statement leads into the reader's action, followed by arrival and exceptional handling. B remains appropriately calm but repeats the ordinary schedule across its opening paragraphs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, the map archive will trial a different retrieval arrangement to reduce interruptions in the store."
+            ],
+            "B": [
+              "For the next six weeks, requests for material from the map archive received before noon will be grouped for retrieval at 2 p.m.",
+              "To request a map for the 2 p.m. retrieval"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation appears in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both preserve the full procedure without material errors. A has the stronger practical sequence: a brief explanation of the change, complete same-day request instructions, then arrival and exceptions. This outweighs B's slightly more idiomatic opening sentence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark."
+            ],
+            "B": [
+              "requests for material from the map archive received before noon will be grouped for retrieval at 2 p.m.",
+              "To request a map for the 2 p.m. retrieval, submit your request before noon and include its shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5d11c39353c10ae331d5f43916a9aa6f623abac18b95c5a4f5432458e05cb5f1",
+    "prompt_sha256": "1b6276b654492b185d3fbda98cc796ffefeb4853a760ee32bd8c32398c896e02",
+    "raw_sha256": "f2ed99fa6884ac67f876e4cf7528b4b740b37f84ea4c169ffb187b6bf3cd08de",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "opus-low",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the trial duration, retrieval schedule, arrival distinction, identification delays, conservation appointments, and undecided continuation with both review inputs.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item."
+            ],
+            "A": [
+              "A request without a shelfmark will be held while staff help identify the item."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the operational conditions. Its categorical next-day wording remains qualified by the following identification and conservation exceptions; it does not clearly promise retrieval regardless of those conditions.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day.",
+              "They will join the next retrieval after identification"
+            ],
+            "A": [],
+            "B": [
+              "You can also submit a request, which will be retrieved on the next opening day.",
+              "Once it has been identified, it will join the next retrieval."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the practical distinction between submitting a sufficiently identified request before noon and arriving later, alongside the separate conservation process and trial review.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "The request, not the reader, needs to arrive before noon, provided it includes a shelfmark."
+            ],
+            "B": [
+              "Requests with a shelfmark that arrive before noon are collected together and retrieved at 2 pm the same day.",
+              "The request has to arrive before noon, but you do not."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, idiomatic staff language. A's paragraphs and B's direct steps are both appropriate forms for a notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you have requested a map in advance, you can arrive later in the day."
+            ],
+            "B": [
+              "Include it in your request. You can find it in the catalogues, and staff can help."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A keeps submission, arrival, and identification delays together before introducing conservation appointments. B's steps are useful, but the subsequent return to retrieval timing and separate arrival and identification sections interrupt that sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Requesting a map**",
+              "Once the item is identified, the request will join the next retrieval"
+            ],
+            "B": [
+              "**Come in when it suits you.**",
+              "There is one retrieval a day, at 2 pm.",
+              "**If your request has no shelfmark**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A explains the practical change without B's corrective historical claim about what access has never meant. This better serves the requested calm voice and removal of defensive packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The trial changes when items are brought up from the store, not who may use them or when."
+            ],
+            "B": [
+              "Access to the archive is not changing, although access has never meant that every item can be brought upstairs immediately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a clear material error. A better meets the user's priority of calm operational clarity: it groups the ordinary request process and identification delay together and removes the defensive commentary that B retains.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A request without a shelfmark will be held while staff help identify the item."
+            ],
+            "B": [
+              "Access to the archive is not changing, although access has never meant that every item can be brought upstairs immediately."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0f2864849473618aef15d90945b49d2f0960ca3d5b0f55b9dabfde3e9a5e1554",
+    "prompt_sha256": "6c1f3c55de008f597d0c6ef052055ad8f21ce10e50b02681032f0d65b18613f5",
+    "raw_sha256": "b573a2406b088fd9487d0d98ab1a7ec9a4f2233267aaad7912f716c116e9be13",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "haiku",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a practical staff notice, with no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "Adds a before-noon deadline for requests intended for the next opening day. The source expressly permits late arrivals to submit those requests. A therefore makes a central option appear unavailable to its intended users.",
+          "quotes": {
+            "source": [
+              "a reader who arrives later without having requested one can still use the catalogues and open shelves.",
+              "Those readers may submit a request for the next opening day."
+            ],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves late arrivals' next-opening-day option, the ordinary retrieval conditions, identification delays, conservation exceptions, and the trial's duration and review.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day."
+            ],
+            "A": [],
+            "B": [
+              "you may submit a request for the next opening day."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B preserves the next-opening-day option without imposing A's unsupported noon deadline on it.",
+          "quotes": {
+            "source": [
+              "Those readers may submit a request for the next opening day."
+            ],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": [
+              "If you arrive without a request, you can still use the catalogues and open shelves, and you may submit a request for the next opening day."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's direct opening and connected paragraphs read more naturally than A's awkward opening formulation and succession of bullet statements.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the map archive will run a trial change to how requested material is retrieved."
+            ],
+            "B": [
+              "For the next six weeks, the map archive will change how it retrieves material."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves coherently from retrieval timing to arrival, identification delays, and conservation appointments. A places a noon submission instruction inside the next-opening-day discussion, confusing the relationship between those processes.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": [
+              "**The request must arrive before noon, not the reader.**",
+              "**Fragile maps follow a separate process.**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B provides calm, connected explanation of what happens when identification is incomplete. A's more categorical checklist presentation is less suited to explaining the exceptions and includes a misleading instruction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Requests must include a shelfmark**",
+              "A request that includes a shelfmark will join the 2 p.m. retrieval."
+            ],
+            "B": [
+              "Requests without one will be held while staff help identify the item. These requests join the next retrieval after identification"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A's major operational error could prevent late arrivals from requesting material for the next opening day. B preserves that option and presents the ordinary process and exceptions in usable, connected prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request an item for the next opening day, submit the request before noon."
+            ],
+            "B": [
+              "you may submit a request for the next opening day."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "564d025c7db80a863a1f896ea15402e1e91be562b75225b7fefcc9ad5d928684",
+    "prompt_sha256": "6c1f3c55de008f597d0c6ef052055ad8f21ce10e50b02681032f0d65b18613f5",
+    "raw_sha256": "b573a2406b088fd9487d0d98ab1a7ec9a4f2233267aaad7912f716c116e9be13",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "astra-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an operational notice, not a mathematical argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions, including the shelfmark prerequisite, possible identification delay, fragile-map appointments and discoveries during retrieval, and the undecided continuation.",
+          "quotes": {
+            "source": [
+              "They will join the next retrieval after identification, which may not be on the day the request was first received."
+            ],
+            "A": [
+              "Once identified, the item will be included in the next retrieval, which may not be on the day the request was received."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the six-week schedule and access conditions, both exception processes, and delayed-request counts and reader comments as inputs to the continuation decision.",
+          "quotes": {
+            "source": [
+              "We will count delayed requests and review reader comments before deciding whether to continue."
+            ],
+            "A": [],
+            "B": [
+              "We will count delayed requests and review reader comments before deciding whether to continue the arrangement."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully connect same-day retrieval to a before-noon request with a shelfmark, while retaining the identification and conservation exceptions. B's additional access reminder does not change the policy.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two.",
+              "provided that it contains a shelfmark."
+            ],
+            "A": [
+              "To request material for the same day, submit your request before noon and include a shelfmark."
+            ],
+            "B": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic, direct prose with a similar conversational rhythm. B makes the deadline distinction more explicit, while A expresses it adequately in two short sentences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to arrive before noon. If you have requested a map in advance, you can arrive later."
+            ],
+            "B": [
+              "You do not need to arrive before noon: the deadline applies to your request, not your arrival."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the purpose and unchanged hours, give the ordinary request process, explain arrival and identification, then introduce conservation appointments and review.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the map archive will trial a different retrieval schedule to reduce interruptions in the store.",
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ],
+            "B": [
+              "the map archive will trial a different retrieval arrangement to reduce interruptions in the store.",
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve a calm, helpful staff voice and give useful explanations without imposing research-paper architecture. Their small differences in reminders and phrasing do not establish a substantial voice advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The team will contact you to arrange an appointment, separate from the 2 p.m. retrieval."
+            ],
+            "B": [
+              "The team will contact you to arrange an appointment; the 2 p.m. retrieval arrangement does not apply to these appointments."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither changes an operational condition. Both give readers a complete, well-ordered route through ordinary requests, identification delays, and fragile-map appointments; their wording differences do not justify a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To request material for the same day, submit your request before noon and include a shelfmark."
+            ],
+            "B": [
+              "To request material for that day’s retrieval, submit your request before noon and include the item’s shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "14ffa33fdac2702fb7480eaf6110eab4929c7063e02b70e7e7f7976118fe2a37",
+    "prompt_sha256": "6c1f3c55de008f597d0c6ef052055ad8f21ce10e50b02681032f0d65b18613f5",
+    "raw_sha256": "b573a2406b088fd9487d0d98ab1a7ec9a4f2233267aaad7912f716c116e9be13",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "luna-medium",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "This is a notice-editing task with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the timing and shelfmark conditions, late-arrival options, identification delays, conservation appointments, unchanged hours, and trial review.",
+          "quotes": {
+            "source": [
+              "It is the request that needs to arrive before noon, rather than the person, provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the operational conditions. Although it does not explicitly say unidentified requests are held, joining retrieval only after identification communicates the same delay.",
+          "quotes": {
+            "source": [
+              "Requests without one will be held while staff help identify the item. They will join the next retrieval after identification"
+            ],
+            "A": [],
+            "B": [
+              "Staff will help identify items requested without a shelfmark. Once identified, those requests will join the next retrieval, which may be on a later day."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the noon cutoff and shelfmark prerequisite, subsequent identification delays, and the separate conservation process. A consolidates the same-day conditions, but B retains them across its paragraphs.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two.",
+              "provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "Requests received before noon will be included in that retrieval.",
+              "Requests must include a shelfmark to be included in the 2 p.m. retrieval."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both sound like readable staff notices. Neither has a significant idiomatic or sentence-level readability problem.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In that case, staff will contact you."
+            ],
+            "B": [
+              "If so, staff will contact you."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A gives the shelfmark prerequisite and identification delay their own paragraph, explicitly joining both same-day requirements. B distributes those requirements across its opening and a longer paragraph about arrival, making the reader assemble them.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "Requests received before noon will be included in that retrieval.",
+              "Requests must include a shelfmark to be included in the 2 p.m. retrieval."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both retain the practical, helpful register and explain the exceptions without punitive language. A's additional paragraph division improves navigation rather than changing the voice substantially.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests without a shelfmark will be held while staff help identify the item."
+            ],
+            "B": [
+              "Staff will help identify items requested without a shelfmark."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the specific goal of letting readers work out how to request material: its dedicated paragraph states both same-day prerequisites together and immediately explains what happens without a shelfmark.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your request must arrive before noon and include a shelfmark to be included in that day’s retrieval."
+            ],
+            "B": [
+              "Requests received before noon will be included in that retrieval.",
+              "Requests must include a shelfmark to be included in the 2 p.m. retrieval."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "08e73edab8f8f5795e9ad260e0f08668ae908237cbb471bf524ede3d7ed4f9dd",
+    "prompt_sha256": "6c1f3c55de008f597d0c6ef052055ad8f21ce10e50b02681032f0d65b18613f5",
+    "raw_sha256": "b573a2406b088fd9487d0d98ab1a7ec9a4f2233267aaad7912f716c116e9be13",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
+  },
+  {
+    "case": "large-dev-b-01",
+    "config": "sol-low",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to produce a publishable practical notice; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the six-week trial, retrieval and arrival conditions, shelfmark delay, conservation exception including discoveries during retrieval, and the undecided continuation with both review inputs.",
+          "quotes": {
+            "source": [
+              "an item may also be found to need support during retrieval, in which case staff will contact the reader."
+            ],
+            "A": [
+              "If staff find during retrieval that another item needs support, they will contact you."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all operational conditions. Its general fragile-map wording is clarified by the following distinction between maps already known to need support and items discovered during retrieval.",
+          "quotes": {
+            "source": [
+              "There is another arrangement for maps that have already been identified as fragile.",
+              "an item may also be found to need support during retrieval"
+            ],
+            "A": [],
+            "B": [
+              "The catalogue will identify maps already known to require support. If an item is found to need support during retrieval, staff will contact you."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the same-day prerequisites and all exceptions and review conditions. Moving the trial's purpose from the end to the opening does not change its scope.",
+          "quotes": {
+            "source": [
+              "Requests received before noon will be collected together for retrieval at two.",
+              "provided that it contains a shelfmark."
+            ],
+            "A": [
+              "Requests must be received before noon and include a shelfmark to join that day’s retrieval."
+            ],
+            "B": [
+              "To request material for the same day’s retrieval, submit your request before noon and include the shelfmark."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both provide idiomatic, readable instructions. A states eligibility directly, while B addresses the reader with an equally natural instruction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests must be received before noon and include a shelfmark to join that day’s retrieval."
+            ],
+            "B": [
+              "To request material for the same day’s retrieval, submit your request before noon and include the shelfmark."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A sensibly leads with the schedule and its prerequisites; B sensibly supplies the trial's purpose before the instructions. Both then follow arrival, identification, conservation, and review in a usable order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the next six weeks, requests for material from the map archive will be retrieved at 2 p.m."
+            ],
+            "B": [
+              "For the next six weeks, the map archive will trial a different retrieval arrangement to reduce interruptions in the store."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A presents the immediate-retrieval limitation as a practical fact. B's statement about what access does not mean sounds slightly more corrective, giving A a modest advantage in calm staff voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The reading room will remain open at its usual times, but items cannot always be brought upstairs immediately."
+            ],
+            "B": [
+              "Reading room access does not mean that every item can be brought upstairs immediately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and both make the complete request process usable. A's gentler access reminder is a small voice advantage; B's purpose-led opening and direct instruction are also effective. The completed notices meet the user's priorities comparably.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Requests must be received before noon and include a shelfmark to join that day’s retrieval."
+            ],
+            "B": [
+              "To request material for the same day’s retrieval, submit your request before noon and include the shelfmark."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c0b205e5fe072b2faf1bae74c4ff8168e5c528e42550f68f9978d041c006e5c4",
+    "prompt_sha256": "6c1f3c55de008f597d0c6ef052055ad8f21ce10e50b02681032f0d65b18613f5",
+    "raw_sha256": "b573a2406b088fd9487d0d98ab1a7ec9a4f2233267aaad7912f716c116e9be13",
+    "plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611"
   }
 ]

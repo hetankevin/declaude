@@ -21029,5 +21029,2522 @@
     "prompt_sha256": "b671436f7d859eb3ea888577d36bf9d131c1581e6d6745191934f0a25972f1f1",
     "raw_sha256": "a7931d15cdc36928173c1c43d2a4a70969b06daef684c2dd0bbc69e7117a9c70",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for an expanded finite-population proof using conditional expectation and an exact variance calculation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the fixed responses, variance normalization, two-stage uniform sampling, unbiasedness, exact variance factor, and boundary cases. Its cross-term calculation uses conditioning, without assuming independence.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [
+              "\\frac{N - 2}{2(N - 1)}\\,\\sigma^2.",
+              "the proof holds without restriction even when $\\sigma^2 = 0$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all sampling assumptions, the population variance normalized by N, both claimed moments, and both degenerate cases. The conditional and combinatorial calculations are valid.",
+          "quotes": {
+            "source": [
+              "Choose an unordered pair P uniformly from the C(N,2) pairs, and then choose J uniformly from the two indices in P.",
+              "Var(Z) = ((N-2)/(2(N-1)))σ²."
+            ],
+            "A": [],
+            "B": [
+              "Draw an unordered pair $P$ uniformly from the $\\binom{N}{2}$ pairs of indices",
+              "\\operatorname{Var}(Z) = \\frac{N-2}{2(N-1)}\\sigma^2."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully expand the source strategy and preserve its qualifications and conclusions. Neither introduces a material omission or a stronger estimator claim.",
+          "quotes": {
+            "source": [
+              "This concerns repeated sampling from the fixed population, not uncertainty in the responses themselves."
+            ],
+            "A": [
+              "All expectations and variances below are design-based"
+            ],
+            "B": [
+              "under repeated sampling of $(P, J)$ from this fixed population, with the responses $y_1, \\dots, y_N$ held fixed"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the same operations in direct technical prose. A's repeated announcements and emphatic commentary make an otherwise readable proof more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Crucially, $Z = \\frac{1}{2}\\sum_{i \\in P} y_i$ is completely determined by the chosen pair $P$, and $\\mu$ is a fixed constant."
+            ],
+            "B": [
+              "For the cross term, condition on $P$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both establish the required dependencies, but B connects the variance decomposition directly to the remaining calculation. A repeatedly interrupts that chain with step announcements and subsidiary numbered explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We simplify the sum of pairwise squared differences across the finite population in three algebraic steps:"
+            ],
+            "B": [
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$ by averaging the conditional variance over the $\\binom{N}{2}$ equally likely pairs:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected exposition: it states why conditioning works and carries that explanation into the calculation. A adds more framing and defensive emphasis than this appendix needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "##### Step 3: Variance Decomposition via Orthogonality (Without Independence)",
+              "requires **no** assumption of statistical independence"
+            ],
+            "B": [
+              "Because $Z - \\mu$ is a function of $P$, it factors out of the conditional expectation given $P$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both correctly justify marginal uniformity, conditional centering, the zero cross term, pair averaging, and boundary cases. B's aligned calculations make the intermediate steps easier to follow; A often packs more algebra into a single long display despite its greater verbal detail.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "\\frac{1}{2}\\left(N\\sum_{i=1}^N y_i^2 - 2\\left(\\sum_{i=1}^N y_i\\right)\\left(\\sum_{j=1}^N y_j\\right) + N\\sum_{j=1}^N y_j^2\\right)"
+            ],
+            "B": [
+              "By symmetry, the sum of squared differences over unordered pairs is half the sum over all ordered pairs $(i, j)$:",
+              "&= N\\sum_{i=1}^N (y_i - \\mu)^2 \\\\\n&= N^2\\sigma^2."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better fulfills the decisive priority of explaining the proof as one readable argument: its conditioning explanation and transition to pair averaging supply the reasons for the operations, while aligned displays preserve the derivation. A is thorough but burdens that argument with repeated framing and long equation chains.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We establish the result in four steps:"
+            ],
+            "B": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y)$, decompose $Y - \\mu$ around $Z$ as",
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "03e764cfc22e35b3111a18b5b7aa4289117d920a9bca3918615aa18f41be271b",
+    "prompt_sha256": "29456b3492d7892bc444e0fcec5b9784cd0d7fa7079c6f14641ae4fc96cf0ff5",
+    "raw_sha256": "dfd178ff7f695fb633c67cfb44d8443bcfb1f3ee99fad9563d8aad7b9e4b927e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a survey-methods appendix proving unbiasedness and the exact variance through conditional expectation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the fixed population, normalization by N, uniform pair and member selection, both moment formulas, and the conditioning argument. Its boundary discussion remains within the stated N ≥ 2 domain and never divides by the variance.",
+          "quotes": {
+            "source": [
+              "Write μ = N^{-1}Σ_i y_i and σ² = N^{-1}Σ_i(y_i-μ)².",
+              "At N = 2 the pair is the full population and Z is constant."
+            ],
+            "A": [
+              "\\sigma^2 = \\frac{1}{N}\\sum_{i=1}^N (y_i - \\mu)^2.",
+              "The sample mean $Z = (y_1 + y_2)/2 = \\mu$ is constant"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the sampling design, fixed responses, normalization, unbiasedness, exact variance, and degenerate cases. Its centered expansion is a valid alternative derivation of the source's pairwise identity.",
+          "quotes": {
+            "source": [
+              "Σ_{i<j}(y_i-y_j)²",
+              "= N²σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [],
+            "B": [
+              "\\frac{1}{2} \\big(N^2 \\sigma^2 - 0 + N^2 \\sigma^2\\big) = N^2 \\sigma^2.",
+              "Because no division by $\\sigma^2$ is ever performed"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all substantive claims and use conditional orthogonality rather than independence. B's additional terminology and framing do not materially change the result's scope.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "This orthogonality follows from conditioning on $P$ alone; $Y$ and $Z$ need not be independent."
+            ],
+            "B": [
+              "it does **not** assume or require that $Y$ and $Z$ (or $Y - Z$ and $Z$) are statistically independent."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct prose appropriate to an appendix. B is readable but repeatedly announces its own completeness and labels routine conclusions, making the exposition more ceremonial.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Expectations and variances here describe repeated sampling from the fixed population rather than uncertainty in the responses themselves."
+            ],
+            "B": [
+              "This appendix provides a self-contained, step-by-step derivation",
+              "matching the exact theoretical behavior."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A carries the reader from marginal moments through conditional centering to the residual calculation with explicit purpose statements. B has a sound order, including computing the conditional variance when needed, but its many subsections and separate independence remark fragment the argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y) = \\sigma^2$, decompose the deviation of $Y$ around $Z$:",
+              "For the residual term $\\mathbb{E}[(Y - Z)^2]$, expand the sum of squared differences over all pairs:"
+            ],
+            "B": [
+              "#### 4.1 Conditional Variance",
+              "#### 4.2 Sum of Pairwise Squared Differences",
+              "#### 4.3 Unconditional Residual Expectation"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the author's preference for connected technical explanation without repeated defensive packaging. It retains the independence qualification and boundary checks in proportion to their role; B turns these into emphatic, separately labeled assurances.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The derivation requires no division by $\\sigma^2$."
+            ],
+            "B": [
+              "> **Remark on Independence:**",
+              "#### Verification and Robustness",
+              "- **General Validity:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both proofs are mathematically correct and clearly explain the essential conditional-expectation step. B has an exposition advantage in the pairwise identity: it explicitly expands centered differences and shows why their cross sum is zero. A's displayed chain leaves the conversion from raw to centered sums implicit.",
+          "quotes": {
+            "source": [
+              "The source argument is valid but compresses several distinct steps.",
+              "Explain why the operations follow"
+            ],
+            "A": [
+              "&= N \\sum_{i=1}^N y_i^2 - \\left(\\sum_{i=1}^N y_i\\right)^2 \\\\\n&= N \\sum_{i=1}^N (y_i - \\mu)^2"
+            ],
+            "B": [
+              "\\left(\\sum_{i=1}^N (y_i - \\mu)\\right)\\left(\\sum_{j=1}^N (y_j - \\mu)\\right) = 0 \\cdot 0 = 0."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. B explains the centered-sum algebra more fully, but A sufficiently develops the requested conditional-expectation reasoning and displays the complete calculation chain. A better serves the author's overall goal of a connected appendix: it explains why the cross term vanishes and why the residual is averaged without B's repeated framing, remark boxes, and robustness assurances.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $Z$ is determined by $P$, the deviation $Z - \\mu$ is measurable with respect to $P$.",
+              "Averaging the conditional variance over the $\\binom{N}{2}$ equiprobable pairs gives"
+            ],
+            "B": [
+              "This appendix provides a self-contained, step-by-step derivation",
+              "> **Remark on Independence:**",
+              "#### Verification and Robustness"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ea448c0f613c34501f200bb568dc34e29d1b71f87e0bd7d7be7c8e29e202831e",
+    "prompt_sha256": "29456b3492d7892bc444e0fcec5b9784cd0d7fa7079c6f14641ae4fc96cf0ff5",
+    "raw_sha256": "dfd178ff7f695fb633c67cfb44d8443bcfb1f3ee99fad9563d8aad7b9e4b927e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded finite-population proof using conditional expectation and an exact variance calculation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the fixed responses, two-stage uniform sampling, variance normalization, unbiasedness, exact variance factor, and boundary cases. The conditional-expectation and pairwise-sum calculations are valid.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z) = \\frac{N-2}{2(N-1)}\\sigma^2.",
+              "it holds without modification when $\\sigma^2 = 0$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the sampling design, fixed-population interpretation, estimands, constants, and degenerate cases. Its additional discussion of dependence is unnecessary, but the proof correctly establishes orthogonality without assuming independence.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent.",
+              "Var(Z) = ((N-2)/(2(N-1)))σ²."
+            ],
+            "A": [],
+            "B": [
+              "requires **no** assumption of statistical independence between $Y$ and $Z$",
+              "\\operatorname{Var}(Z) = \\frac{N - 2}{2(N - 1)}\\,\\sigma^2."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the estimator, exact result, conditional proof strategy, and applicability when N = 2 or the population variance vanishes.",
+          "quotes": {
+            "source": [
+              "Choose an unordered pair P uniformly from the C(N,2) pairs, and then choose J uniformly from the two indices in P."
+            ],
+            "A": [
+              "Draw an unordered pair $P$ uniformly from the $\\binom{N}{2}$ pairs of indices",
+              "draw an index $J$ uniformly from the two elements of $P$."
+            ],
+            "B": [
+              "Given the chosen pair $P$, select a single index $J \\in P$ uniformly at random from the two indices in $P$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the same conditioning operation in direct technical prose. B repeatedly names and restates operations, making an otherwise readable appendix more ceremonious.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the cross term, condition on $P$."
+            ],
+            "B": [
+              "Crucially, $Z = \\frac{1}{2}\\sum_{i \\in P} y_i$ is completely determined by the chosen pair $P$, and $\\mu$ is a fixed constant."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both connect conditional moments to marginal uniformity and unbiasedness, then explain the variance decomposition and compute its remaining term. B's roadmap and A's local transitions both make the dependencies understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y)$, decompose $Y - \\mu$ around $Z$ as"
+            ],
+            "B": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y) = \\sigma^2$, add and subtract $Z$ inside the total deviation $Y - \\mu$:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A retains useful explanation while integrating the independence qualification into the argument. B repeats the organizational scaffolding and expands that qualification into a lengthy aside, contrary to the author's preference against repetitive packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This step uses only the orthogonality of $Y - Z$ and $Z - \\mu$ obtained from $\\mathbb{E}[Y - Z \\mid P] = 0$, even though $Y$ and $Z$ need not be independent."
+            ],
+            "B": [
+              "We establish the result in four steps:",
+              "This zero-covariance result is an *orthogonality* property between the within-pair residual $Y - Z$ and the pair-level deviation $Z - \\mu$."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both justify uniformity by counting pairs, remove the cross term by conditioning, expand the squared-difference identity, and average with the correct pair count. A supplies the centering identity in prose and uses aligned calculations; B expands more elementary algebra but uses longer display chains. Neither leaves a consequential proof gap.",
+          "quotes": {
+            "source": [
+              "make the conditional-expectation reasoning understandable without adding an independence assumption."
+            ],
+            "A": [
+              "Because $Z - \\mu$ is a function of $P$, it factors out of the conditional expectation given $P$",
+              "\\sum_{i=1}^N (y_i - \\mu)^2 = \\sum_{i=1}^N y_i^2 - N\\mu^2"
+            ],
+            "B": [
+              "once $P$ is fixed, the factor $(Z - \\mu)$ is nonrandom and can be factored out of the conditional expectation given $P$:",
+              "Multiplying both sides by $N$ gives"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both provide a complete proof. A better meets this user's preference for connected explanation: its transition to averaging the residual identifies exactly what remains to prove, while its aligned calculations preserve the steps without B's repeated roadmap, step labels, and extended independence commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$ by averaging the conditional variance over the $\\binom{N}{2}$ equally likely pairs:"
+            ],
+            "B": [
+              "We establish the result in four steps:",
+              "##### Step 4: Evaluating $\\operatorname{E}[(Y - Z)^2]$ and Solving for $\\operatorname{Var}(Z)$"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "495cbe9812bfe386bc5ae23f2de8ef5c9fe12e4694c129eeecc06c9cb704bd1a",
+    "prompt_sha256": "c161fb9a367b9d11a9301ab32231d26d1f824a339c4654112ed23a4349d467bd",
+    "raw_sha256": "429147842b4406285ace09fc78600342df5f97c05986d025a78900778a49f17a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a survey-methods appendix proof explaining conditional expectation and deriving the exact pair-mean variance.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the fixed-population model, both uniform sampling stages, variance normalized by N, unbiasedness, and exact variance factor. Its centered-sum derivation and treatment of zero variance are correct.",
+          "quotes": {
+            "source": [
+              "Write μ = N^{-1}Σ_i y_i and σ² = N^{-1}Σ_i(y_i-μ)².",
+              "Var(Z) = ((N-2)/(2(N-1)))σ²."
+            ],
+            "A": [
+              "\\sigma^2 = \\frac{1}{N}\\sum_{i=1}^N (y_i - \\mu)^2.",
+              "\\operatorname{Var}(Z) = \\left(\\frac{N-2}{2(N-1)}\\right)\\sigma^2."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all assumptions, sampling probabilities, conclusions, and boundary cases. The algebra is correct; its less explicit explanation of the centering identity is an exposition limitation, not a changed mathematical claim.",
+          "quotes": {
+            "source": [
+              "This concerns repeated sampling from the fixed population, not uncertainty in the responses themselves.",
+              "Var(Z) = ((N-2)/(2(N-1)))σ²."
+            ],
+            "A": [],
+            "B": [
+              "Expectations and variances here describe repeated sampling from the fixed population rather than uncertainty in the responses themselves.",
+              "\\operatorname{Var}(Z) = \\frac{N-2}{2(N-1)}\\sigma^2."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the two-stage design and exact conclusions, and both correctly distinguish conditional orthogonality from independence. A's alternative centered expansion is fully equivalent to the source.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "it does **not** assume or require that $Y$ and $Z$ (or $Y - Z$ and $Z$) are statistically independent."
+            ],
+            "B": [
+              "This orthogonality follows from conditioning on $P$ alone; $Y$ and $Z$ need not be independent."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's prose introduces the calculation directly and keeps qualifications conversational. A adds self-description and formal labels that make the appendix sound more templated.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This appendix provides a self-contained, step-by-step derivation of the design-based expectation and exact finite-population variance for the two-stage pair-mean estimator.",
+              "#### Verification and Robustness"
+            ],
+            "B": [
+              "Expectations and variances here describe repeated sampling from the fixed population rather than uncertainty in the responses themselves.",
+              "Subtracting this term from $\\sigma^2$ yields the variance of $Z$:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the marginal moments and conditional mean before using them in the variance decomposition. A computes the conditional residual when it becomes necessary; B establishes it earlier and returns to it. Both sequences have understandable dependencies.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To determine $\\operatorname{Var}(Z) = \\mathbb{E}[(Z - \\mu)^2]$, we center $Y - \\mu$ around the conditional expectation $Z$:"
+            ],
+            "B": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y) = \\sigma^2$, decompose the deviation of $Y$ around $Z$:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "B better matches the preference for connected prose with restrained packaging. A better matches the equally explicit preference for expanding the algebra rather than leaving intermediate identities to the reader. These are substantive, competing strengths.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We express $\\sum_{1 \\le i < j \\le N} (y_i - y_j)^2$ in terms of centered values $(y_i - \\mu)$:",
+              "Expanding the square:"
+            ],
+            "B": [
+              "For the residual term $\\mathbb{E}[(Y - Z)^2]$, expand the sum of squared differences over all pairs:",
+              "Averaging the conditional variance over the $\\binom{N}{2}$ equiprobable pairs gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are mathematically correct and explain conditional orthogonality. A more fully satisfies the requested expansion of compressed steps: it separately evaluates the two squared terms and the vanishing product of centered sums. B displays the raw-to-centered identity but does not explain that conversion.",
+          "quotes": {
+            "source": [
+              "The source argument is valid but compresses several distinct steps.",
+              "use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "\\sum_{i=1}^N \\sum_{j=1}^N (y_i - \\mu)(y_j - \\mu) = \\left(\\sum_{i=1}^N (y_i - \\mu)\\right)\\left(\\sum_{j=1}^N (y_j - \\mu)\\right) = 0 \\cdot 0 = 0."
+            ],
+            "B": [
+              "&= N \\sum_{i=1}^N y_i^2 - \\left(\\sum_{i=1}^N y_i\\right)^2 \\\\\n&= N \\sum_{i=1}^N (y_i - \\mu)^2"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A wins narrowly because the current task specifically prioritizes unpacking the valid but compressed proof. Its centered expansion shows why the mixed sum vanishes and how the squared terms contribute. B reads more naturally, but retains an unexplained raw-to-centered equality from the source; A's extra headings are a smaller cost for this user's requested artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "\\big((y_i - \\mu) - (y_j - \\mu)\\big)^2 = (y_i - \\mu)^2 - 2(y_i - \\mu)(y_j - \\mu) + (y_j - \\mu)^2.",
+              "Summing over all $i, j \\in \\{1, \\dots, N\\}$:"
+            ],
+            "B": [
+              "&= N \\sum_{i=1}^N y_i^2 - \\left(\\sum_{i=1}^N y_i\\right)^2 \\\\\n&= N \\sum_{i=1}^N (y_i - \\mu)^2"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "839c6887844e8dcc12fe2076cd7155ae2a07f10a498401caa67515da72e9b8d0",
+    "prompt_sha256": "c161fb9a367b9d11a9301ab32231d26d1f824a339c4654112ed23a4349d467bd",
+    "raw_sha256": "429147842b4406285ace09fc78600342df5f97c05986d025a78900778a49f17a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a revised mathematical proof, including an explained conditional-expectation argument and exact variance calculation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the fixed population, both uniform sampling stages, variance normalization, unbiasedness, and exact variance factor. Conditioning correctly eliminates the cross term, and both boundary cases remain valid.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z) = \\frac{N - 2}{2(N - 1)}\\,\\sigma^2.",
+              "Because every step of the derivation is additive and avoids dividing by $\\sigma^2$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the sampling design, fixed responses, population variance convention, and exact conclusions. The conditional cross-term calculation and pairwise identity are correct without independence or positive-variance assumptions.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [],
+            "B": [
+              "\\operatorname{Var}(Z) = \\frac{N-2}{2(N-1)}\\sigma^2.",
+              "even though $Y$ and $Z$ need not be independent."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain all substantive assumptions, the design-based interpretation, the conditional proof strategy, the exact variance, and the degenerate cases.",
+          "quotes": {
+            "source": [
+              "This concerns repeated sampling from the fixed population, not uncertainty in the responses themselves."
+            ],
+            "A": [
+              "taken with respect to the repeated random selection of $(P, J)$ from the fixed population"
+            ],
+            "B": [
+              "under repeated sampling of $(P, J)$ from this fixed population"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the same operations in direct technical prose. A repeatedly announces its organization and adds emphatic commentary around an already established conditioning argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We establish the result in four steps:",
+              "Crucially, $Z = \\frac{1}{2}\\sum_{i \\in P} y_i$ is completely determined by the chosen pair $P$"
+            ],
+            "B": [
+              "For the cross term, condition on $P$.",
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$ by averaging the conditional variance"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow a sound conditional-moments-to-variance sequence. B makes the remaining computational goal explicit and moves directly into it; A interrupts that sequence with a roadmap, nested step headings, and a longer independence discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "##### Step 3: Variance Decomposition via Orthogonality (Without Independence)",
+              "We simplify the sum of pairwise squared differences across the finite population in three algebraic steps:"
+            ],
+            "B": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y)$",
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better combines connected explanation with displayed mathematics. A's extensive organizational announcements and defensive independence paragraph add rhetorical repetition beyond what this author requests.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "requires **no** assumption of statistical independence",
+              "#### Remarks on Boundary Cases"
+            ],
+            "B": [
+              "Because $Z - \\mu$ is a function of $P$, it factors out of the conditional expectation",
+              "Subtracting $\\mathbb{E}[(Y - Z)^2]$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both correctly justify marginal uniformity, conditional centering, orthogonality, pair averaging, and boundary cases. B presents the intermediate calculations in aligned displays that make successive transformations easier to inspect; A often puts several substantial equalities on one long display line.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "Multiplying both sides by $N$ gives",
+              "Substituting this identity and $C(N,2) = \\frac{N(N-1)}{2}$"
+            ],
+            "B": [
+              "By symmetry, the sum of squared differences over unordered pairs is half the sum over all ordered pairs $(i, j)$:",
+              "Since $\\sum_{i=1}^N y_i = N\\mu$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better satisfies the decisive combination of connected proof exposition and clearly laid-out calculations: it explains why conditioning removes the cross term, then identifies and evaluates the remaining term without A's repeated framing and long equation chains.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We establish the result in four steps:",
+              "This zero-covariance result is an *orthogonality* property"
+            ],
+            "B": [
+              "For the cross term, condition on $P$.",
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "03e764cfc22e35b3111a18b5b7aa4289117d920a9bca3918615aa18f41be271b",
+    "prompt_sha256": "29456b3492d7892bc444e0fcec5b9784cd0d7fa7079c6f14641ae4fc96cf0ff5",
+    "raw_sha256": "cb32d6e017d38bb35374a8b34bfc5726fc5529878f53bd6ab1feb4a0d6d179cc",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a survey-methods proof whose mathematical validity and explanation of intermediate steps must both be assessed.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the fixed responses, uniform two-stage sampling, variance normalized by N, unbiasedness, and exact variance factor. Its conditional argument and pairwise calculation are valid, including zero variance and N = 2.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ².",
+              "No division by σ² is needed."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z) = \\frac{N-2}{2(N-1)}\\sigma^2.",
+              "The derivation requires no division by $\\sigma^2$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the design and conclusions, correctly proves conditional orthogonality, and evaluates the centered pairwise sum. Its universal-validity statement remains bounded by fixed real responses and N ≥ 2.",
+          "quotes": {
+            "source": [
+              "Let N ≥ 2 and let y_1,...,y_N be fixed real responses.",
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [],
+            "B": [
+              "any response vector $(y_1, \\dots, y_N) \\in \\mathbb{R}^N$ and any $N \\ge 2$.",
+              "it does **not** assume or require that $Y$ and $Z$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the estimator, sampling probabilities, population variance convention, exact factor, and boundary qualifications. B's centered-sum route is a valid alternative expansion of the source identity.",
+          "quotes": {
+            "source": [
+              "Σ_{i<j}(y_i-y_j)²",
+              "= N²σ²."
+            ],
+            "A": [
+              "&= N^2 \\sigma^2."
+            ],
+            "B": [
+              "\\frac{1}{2} \\big(N^2 \\sigma^2 - 0 + N^2 \\sigma^2\\big) = N^2 \\sigma^2."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as a continuous technical explanation. B's frequent headings, introductory self-description, and named independence remark make the same argument sound more templated, although its sentences remain understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Averaging over all pairs via the law of total expectation yields",
+              "Subtracting this term from $\\sigma^2$ yields the variance of $Z$:"
+            ],
+            "B": [
+              "This appendix provides a self-contained, step-by-step derivation",
+              "#### Verification and Robustness"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish marginal moments and conditional centering before decomposing variance and computing the residual. A connects these stages through prose; B's sections also give a coherent dependency order, despite adding more organizational interruptions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y) = \\sigma^2$",
+              "For the residual term $\\mathbb{E}[(Y - Z)^2]$, expand the sum"
+            ],
+            "B": [
+              "To determine $\\operatorname{Var}(Z) = \\mathbb{E}[(Z - \\mu)^2]$",
+              "We express $\\sum_{1 \\le i < j \\le N} (y_i - y_j)^2$ in terms of centered values"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the author's preference for connected explanations that state why each operation belongs. B supplies useful mathematics but surrounds it with repeated stage labels, a separate defensive remark, and a closing validity checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $Z$ is determined by $P$, the deviation $Z - \\mu$ is measurable with respect to $P$.",
+              "This orthogonality follows from conditioning on $P$ alone"
+            ],
+            "B": [
+              "> **Remark on Independence:**",
+              "- **General Validity:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both are mathematically correct and fully explain the conditional cross-term cancellation. B has a modest exposition advantage in the combinatorial calculation: it separately evaluates the two centered-square sums and the vanishing centered cross product, whereas A compresses the conversion to centered squares into one equality.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "&= N \\sum_{i=1}^N y_i^2 - \\left(\\sum_{i=1}^N y_i\\right)^2",
+              "&= N \\sum_{i=1}^N (y_i - \\mu)^2"
+            ],
+            "B": [
+              "Summing over all $i, j \\in \\{1, \\dots, N\\}$:",
+              "\\left(\\sum_{i=1}^N (y_i - \\mu)\\right)\\left(\\sum_{j=1}^N (y_j - \\mu)\\right) = 0 \\cdot 0 = 0."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A is the better completed appendix for this user's connected-prose preference: it explicitly explains the crucial conditioning step and links the variance decomposition to its remaining calculation. B's fuller centered-sum expansion is useful, but its repeated framing and separate remark add substantial packaging around an argument A already makes understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Taking the conditional expectation given $P$, the cross term vanishes:",
+              "For the residual term $\\mathbb{E}[(Y - Z)^2]$, expand the sum"
+            ],
+            "B": [
+              "This appendix provides a self-contained, step-by-step derivation",
+              "> **Remark on Independence:**"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ea448c0f613c34501f200bb568dc34e29d1b71f87e0bd7d7be7c8e29e202831e",
+    "prompt_sha256": "29456b3492d7892bc444e0fcec5b9784cd0d7fa7079c6f14641ae4fc96cf0ff5",
+    "raw_sha256": "cb32d6e017d38bb35374a8b34bfc5726fc5529878f53bd6ab1feb4a0d6d179cc",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded finite-population proof, including conditional expectations and the exact variance calculation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the sampling design, fixed responses, variance normalization, unbiasedness, exact variance factor, and boundary cases. The conditional-expectation argument is valid.",
+          "quotes": {
+            "source": [
+              "This concerns repeated sampling from the fixed population, not uncertainty in the responses themselves."
+            ],
+            "A": [
+              "under repeated sampling of $(P, J)$ from this fixed population, with the responses $y_1, \\dots, y_N$ held fixed"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the estimator, sampling probabilities, population variance, and exact conclusions. It proves the cross term vanishes by conditioning and handles zero variance without division.",
+          "quotes": {
+            "source": [
+              "No division by σ² is needed."
+            ],
+            "A": [],
+            "B": [
+              "Because every step of the derivation is additive and avoids dividing by $\\sigma^2$, the proof holds without restriction even when $\\sigma^2 = 0$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully retain the two-stage sampling scheme and exact result, with the same qualifications and valid treatment of the boundary cases.",
+          "quotes": {
+            "source": [
+              "Var(Z) = ((N-2)/(2(N-1)))σ²."
+            ],
+            "A": [
+              "\\operatorname{Var}(Z) = \\frac{N-2}{2(N-1)}\\sigma^2."
+            ],
+            "B": [
+              "\\operatorname{Var}(Z) = \\frac{N - 2}{2(N - 1)}\\,\\sigma^2."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the mathematical actions in direct, readable prose. B is understandable but frequently adds formal restatements and instructional packaging around already clear steps.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the cross term, condition on $P$."
+            ],
+            "B": [
+              "Because this equality holds for every realization of $P$, we have the random-variable identity"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A connects each calculation to the quantity still needed, making the proof read as one argument. B's roadmap and repeated step labels provide navigation but interrupt that continuity.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It remains to compute $\\mathbb{E}[(Y - Z)^2]$ by averaging the conditional variance"
+            ],
+            "B": [
+              "We establish the result in four steps:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the preference for connected technical explanation without repeated defensive commentary. B extends the independence caveat after already proving the conditional cancellation and gives it additional headline emphasis.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This step uses only the orthogonality of $Y - Z$ and $Z - \\mu$ obtained from $\\mathbb{E}[Y - Z \\mid P] = 0$, even though $Y$ and $Z$ need not be independent."
+            ],
+            "B": [
+              "##### Step 3: Variance Decomposition via Orthogonality (Without Independence)"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both justify marginal uniformity, the conditional mean, cancellation of the cross term, pairwise summation, and both boundary cases. A uses more manageable aligned calculations; B supplies additional elementary algebra. Neither omits a necessary argument or assumes independence.",
+          "quotes": {
+            "source": [
+              "Since Z is determined by P,"
+            ],
+            "A": [
+              "Because $Z - \\mu$ is a function of $P$, it factors out of the conditional expectation given $P$"
+            ],
+            "B": [
+              "Hence, once $P$ is fixed, the factor $(Z - \\mu)$ is nonrandom and can be factored out of the conditional expectation given $P$:"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both deliver a complete proof. A better satisfies the decisive preference for explaining why each calculation belongs in a connected argument: its transition to the remaining residual calculation preserves the detail without B's repeated roadmap, headings, and commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y)$, decompose $Y - \\mu$ around $Z$ as"
+            ],
+            "B": [
+              "We simplify the sum of pairwise squared differences across the finite population in three algebraic steps:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "495cbe9812bfe386bc5ae23f2de8ef5c9fe12e4694c129eeecc06c9cb704bd1a",
+    "prompt_sha256": "c161fb9a367b9d11a9301ab32231d26d1f824a339c4654112ed23a4349d467bd",
+    "raw_sha256": "b891859fbccad76956be4ca37d7e2705db05c87aa5ddc6382ebe39705906f2a4",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a survey-methods appendix proof whose conditional-expectation and variance calculations must be explained.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the fixed-population sampling design, normalization by N, unbiasedness, and exact variance formula. The conditional cancellation and centered pairwise expansion are correct, including the degenerate cases.",
+          "quotes": {
+            "source": [
+              "Choose an unordered pair P uniformly from the C(N,2) pairs, and then choose J uniformly from the two indices in P."
+            ],
+            "A": [
+              "An index $J \\in P$ is chosen uniformly at random from the two units in $P$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all substantive assumptions and conclusions. It derives the cross-term cancellation through conditioning, averages over unordered pairs correctly, and does not require positive population variance.",
+          "quotes": {
+            "source": [
+              "If all responses coincide, both variances vanish for every N. No division by σ² is needed."
+            ],
+            "A": [],
+            "B": [
+              "If all responses are identical, $\\sigma^2 = 0$ and both variances vanish for every $N$. The derivation requires no division by $\\sigma^2$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the estimator and exact variance, explain design-based randomness, and preserve the source's orthogonality claim without introducing independence.",
+          "quotes": {
+            "source": [
+              "This is orthogonality, although Y and Z need not be independent."
+            ],
+            "A": [
+              "it does **not** assume or require that $Y$ and $Z$ (or $Y - Z$ and $Z$) are statistically independent."
+            ],
+            "B": [
+              "This orthogonality follows from conditioning on $P$ alone; $Y$ and $Z$ need not be independent."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct explanatory sentences appropriate to a technical appendix. A is readable but adds self-description and ceremonial labels that make the exposition sound more like a tutorial outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This appendix provides a self-contained, step-by-step derivation"
+            ],
+            "B": [
+              "Expectations and variances here describe repeated sampling from the fixed population rather than uncertainty in the responses themselves."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the conditional mean, residual calculation, variance decomposition, and pairwise average through explanatory transitions. A has a sound order, but numerous subsections fragment this single chain of reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 4.3 Unconditional Residual Expectation"
+            ],
+            "B": [
+              "Averaging the conditional variance over the $\\binom{N}{2}$ equiprobable pairs gives"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the author's preference for connected prose with reasons for the operations. It retains useful explanation while avoiding A's separately packaged independence remark and repeated verification framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "> **Remark on Independence:**",
+              "#### Verification and Robustness"
+            ],
+            "B": [
+              "Because $Z$ is determined by $P$, the deviation $Z - \\mu$ is measurable with respect to $P$. Taking the conditional expectation given $P$, the cross term vanishes:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly derive uniformity, unbiasedness, conditional cancellation, the pairwise identity, and the exact residual average. A spells out the centered double sums more fully; B provides an adequate displayed expansion with the conditional steps explicitly laid out. Both handle N = 2 and constant responses.",
+          "quotes": {
+            "source": [
+              "The source argument is valid but compresses several distinct steps."
+            ],
+            "A": [
+              "\\mathbb{E}[(Y - Z)(Z - \\mu) \\mid P] = (Z - \\mu)\\,\\mathbb{E}[Y - Z \\mid P]."
+            ],
+            "B": [
+              "\\mathbb{E}\\big[(Y - Z)(Z - \\mu) \\mid P\\big]\n&= (Z - \\mu)\\,\\mathbb{E}[Y - Z \\mid P]"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material error. B better meets the user's central goal of a readable, connected proof: it explains why conditioning removes the cross term and why averaging the residual finishes the calculation, while retaining displayed derivations. A's additional algebra is useful, but its extensive sectional packaging adds less value for this appendix.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 3. Variance Decomposition via Conditional Orthogonality"
+            ],
+            "B": [
+              "To relate $\\operatorname{Var}(Z)$ to $\\operatorname{Var}(Y) = \\sigma^2$, decompose the deviation of $Y$ around $Z$:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "839c6887844e8dcc12fe2076cd7155ae2a07f10a498401caa67515da72e9b8d0",
+    "prompt_sha256": "c161fb9a367b9d11a9301ab32231d26d1f824a339c4654112ed23a4349d467bd",
+    "raw_sha256": "b891859fbccad76956be4ca37d7e2705db05c87aa5ddc6382ebe39705906f2a4",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded counting proof that explains the indicator, finite-sum interchange, completion count, and boundary cases.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The mathematical event, formulas, conventions, and edge cases are preserved. However, the invented author credit presents an unsupported institutional attribution as fact.",
+          "quotes": {
+            "source": [
+              "Turn this compressed counting proof into a readable proof for a museum scheduling note."
+            ],
+            "A": [
+              "**Author:** Operations & Scheduling Analytics"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the labeled bijections, avoidance of every matching label, both equivalent formulas, empty-schedule convention, and small cases. The proof correctly allows additional fixed labels and explains the counting operations.",
+          "quotes": {
+            "source": [
+              "A schedule counted in #{π: S⊆F(π)} may fix additional labels outside S.",
+              "Use 0! = 1, and at n = 0 include the unique empty schedule."
+            ],
+            "A": [],
+            "B": [
+              "may fix additional stations outside $S$; this is permitted",
+              "At $n = 0$, we include the unique empty schedule, which vacuously has no forbidden visits, so $D_0 = 1$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the source mathematics and qualifications. B stays within the supplied context, whereas A adds an unsupported author attribution. A's illustrative possible reasons for forbidden pairings do not themselves change the event.",
+          "quotes": {
+            "source": [
+              "The common labels designate pairings to avoid; they do not describe physical positions."
+            ],
+            "A": [
+              "**Author:** Operations & Scheduling Analytics",
+              "The common indices $1, \\dots, n$ identify prohibited pairings between groups and stations."
+            ],
+            "B": [
+              "The common labels designate pairings to avoid rather than physical locations;"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a mathematical note addressed to its reader. A repeatedly substitutes administrative wording and redundant emphasis for ordinary explanations, although its sentences remain understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A schedule $\\pi$ is designated as **clear** if it produces no conflicting assignments whatsoever:",
+              "They can be assigned in any arbitrary one-to-one manner"
+            ],
+            "B": [
+              "We call a schedule *clear* if $\\pi(i) \\neq i$ for every $i \\in \\{1, \\dots, n\\}$.",
+              "The remaining $n - k$ groups may be assigned among the remaining $n - k$ stations in any order"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow the necessary route from forbidden visits to an indicator and then an enumerable sum. B connects these purposes directly; A repeatedly interrupts that route with formal subdivisions, notices, and introductory packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### Step 3.1: Defining the Conflict Set and the Indicator Identity",
+              "Rather than invoking an abstract inclusion–exclusion formula as a black box"
+            ],
+            "B": [
+              "To identify this event, consider the alternating sum over all subsets $S \\subseteq F(\\pi)$:",
+              "The sum is therefore an indicator that evaluates to $1$ if $\\pi$ is clear and $0$ otherwise."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected technical prose and introduces the subset sum through its purpose. A's corporate front matter and staged commentary are unnecessary for this note. B nevertheless falls short of the author's display preference in its final algebra and small-case calculations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Subject:** Mathematical Derivation of Conflict-Free Tour Allocations",
+              "> **Important Remark on Overlapping Counts:**"
+            ],
+            "B": [
+              "To identify this event, consider the alternating sum over all subsets $S \\subseteq F(\\pi)$:",
+              "Because there are $\\binom{n}{k}$ subsets $S \\subseteq \\{1, \\dots, n\\}$ of size $k$, grouping terms by $k$ yields"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs are correct and explain the empty fixed set, finite interchange, unrestricted completions, and extra fixed labels. A better fulfills the explicit presentation requirement by displaying the factorial cancellation and boundary calculations; B embeds these calculations inline and leaves the n = 1 scheduling explanation implicit.",
+          "quotes": {
+            "source": [
+              "Their recurring directions are to keep the big picture, explain why each construction is needed, and make the reasoning readable in order.",
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "$$\\binom{n}{k} (n - k)! = \\frac{n!}{k! \\, (n - k)!} (n - k)! = \\frac{n!}{k!}.$$",
+              "Group $1$ must be assigned to Station $1$, creating an unavoidable conflict ($\\pi(1) = 1$)."
+            ],
+            "B": [
+              "Expanding the binomial coefficient gives $\\binom{n}{k}(n-k)! = \\frac{n!}{k!(n-k)!}(n-k)! = \\frac{n!}{k!}$.",
+              "- For $n = 1$, $D_1 = 1!\\left(\\frac{1}{0!} - \\frac{1}{1!}\\right) = 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A introduces a minor false attribution; B has no material error. Beyond that difference, B better delivers the reader-facing note this user requested: its transition from the empty fixed set to an indicator explains why the construction belongs without institutional packaging. A's superior display treatment is a real advantage, but B retains the substantive proof explanations and is the better completed artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Author:** Operations & Scheduling Analytics",
+              "the derivation constructs an exact algebraic filter (indicator) for each schedule and aggregates across all possible allocations."
+            ],
+            "B": [
+              "A schedule is clear precisely when $F(\\pi) = \\emptyset$.",
+              "To identify this event, consider the alternating sum over all subsets $S \\subseteq F(\\pi)$:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a6cd59e5e3cc893ba2f839fd99286b78dc3b1fcdf86099d2fe673bd36e053229",
+    "prompt_sha256": "493fef3c6124335d7ff61cd3a562206460a0d9ef2e80fa8712dbedef119e6edf",
+    "raw_sha256": "1022508a7ef7d5292e69a526c52cc4f941b73921142f05ef34ae218de02a6afb",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a readable derivation of the clear-schedule count using the source's alternating-subset argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the exact event, both formulas, factorial and empty-schedule conventions, and all three small cases. The indicator and completion count correctly permit fixed labels outside the prescribed subset.",
+          "quotes": {
+            "source": [
+              "If |S|=k, fixing every member of S leaves (n-k)! choices on the remaining labels.",
+              "A schedule counted in #{π: S⊆F(π)} may fix additional labels outside S."
+            ],
+            "A": [
+              "the remaining $n - k$ groups outside $S$ can be assigned bijectively to the remaining $n - k$ stations in any order.",
+              "is allowed to fix additional labels outside $S$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the labeled bijections, matching-label prohibition, equivalent formulas, conventions, and edge cases. Its unrestricted-completion language explicitly retains one-to-one matching; the hypothetical museum examples add no asserted facts.",
+          "quotes": {
+            "source": [
+              "Every group visits exactly one station and every station receives exactly one group.",
+              "A schedule counted in #{π: S⊆F(π)} may fix additional labels outside S."
+            ],
+            "A": [],
+            "B": [
+              "In a single rotation, every tour group visits *exactly one* station, and every station receives *exactly one* group.",
+              "a schedule counted in $\\#\\{\\pi : S \\subseteq F(\\pi)\\}$ may happen to fix additional labels outside $S$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the same count, hypotheses, formulas, boundary conventions, and distinction between fixing at least S and fixing exactly S. Their added explanations remain consistent with the source.",
+          "quotes": {
+            "source": [
+              "The formula gives D_0 = 1 and D_1 = 0; for n = 2 the swapped schedule is the sole clear schedule."
+            ],
+            "A": [
+              "At $n = 0$, the unique empty schedule is clear.",
+              "At $n = 1$, the only schedule assigns group $1$ to station $1$, leaving no clear schedule.",
+              "is the sole clear schedule."
+            ],
+            "B": [
+              "there is a unique empty schedule $\\pi: \\emptyset \\to \\emptyset$.",
+              "which violates the clear-schedule requirement.",
+              "The swapped schedule is the sole clear schedule, matching the formula:"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses idiomatic mathematical prose with a steady explanatory rhythm. B is readable but repeatedly announces explanations through headings and emphatic restatements, making the note sound more scripted.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Now fix a subset $S \\subseteq \\{1, \\dots, n\\}$ of size $|S| = k$.",
+              "Permitting those extra fixed points is what makes the count for a fixed $S$ equal to $(n - k)!$"
+            ],
+            "B": [
+              "### Step 3: Counting Schedules that Fix $S$ (and Why Over-Fixing is Allowed)",
+              "This is both permitted and essential to the proof:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both make the construction and its purpose understandable. A connects detection, summation, and reindexing in continuous prose and a staged display. B follows the same sound order but repeatedly restarts the explanation, particularly when returning to cancellation after the completion count.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To detect whether $F(\\pi)$ is empty, consider the alternating sum over all subsets $S \\subseteq F(\\pi)$.",
+              "A pair $(\\pi, S)$ appears in the resulting double sum whenever $S$ is a subset of $\\{1, \\dots, n\\}$ and $\\pi$ fixes every label in $S$."
+            ],
+            "B": [
+              "To turn this condition into an algebraic count, consider summing $(-1)^{|S|}$ over all subsets $S \\subseteq F(\\pi)$.",
+              "**Why schedules in $\\#\\{\\pi : S \\subseteq F(\\pi)\\}$ are allowed to fix extra labels outside $S$:**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A satisfies the user's preference for explaining why each operation follows while preserving substantive displays. Its economy removes repeated announcements rather than mathematical explanation. B's multiple notices and coined 'Over-Fixing' label add packaging that this author explicitly disfavors.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because this inner sum equals $1$ for each clear schedule and $0$ for every other schedule, summing it over all $\\pi \\in \\Pi_n$ counts $D_n$.",
+              "Interchanging the two finite sums therefore gives"
+            ],
+            "B": [
+              "> **Note on Labels and Museum Layout:**",
+              "### Step 3: Counting Schedules that Fix $S$ (and Why Over-Fixing is Allowed)"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both provide correct, sufficiently expanded proofs with substantive displays. Each explains subset multiplicities, the empty-set term, the finite reindexing, unrestricted bijective completions, cancellation of schedules with fixed labels, factorial simplification, and the scheduling meaning of the small cases. A's intermediate double-sum display and B's additional product interpretation are valid alternative explanatory choices.",
+          "quotes": {
+            "source": [
+              "The source is mathematically correct; explain why its counting steps apply rather than replacing them with a general theorem citation.",
+              "Summing over schedules and interchanging finite sums gives"
+            ],
+            "A": [
+              "A pair $(\\pi, S)$ appears in the resulting double sum whenever $S$ is a subset of $\\{1, \\dots, n\\}$ and $\\pi$ fixes every label in $S$.",
+              "When $F(\\pi) = \\emptyset$, the only subset is $S = \\emptyset$, and the sum consists of the single term $(-1)^0 = 1$."
+            ],
+            "B": [
+              "Both the set of all schedules $\\pi$ and the collection of subsets $S \\subseteq \\{1, \\dots, n\\}$ are finite, so we can interchange the order of summation.",
+              "The sum therefore consists of the single term $(-1)^0 = 1$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error, and both fully explain the required proof. A better meets the decisive preference for connected reasoning: its explanation of which pairs occur leads directly into the finite-sum interchange, and its displayed derivation preserves every substantive step. B offers comparable mathematical support but repeats the cancellation rationale through headings, bullets, and restatements that the user would likely still want edited.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A pair $(\\pi, S)$ appears in the resulting double sum whenever $S$ is a subset of $\\{1, \\dots, n\\}$ and $\\pi$ fixes every label in $S$.",
+              "Interchanging the two finite sums therefore gives"
+            ],
+            "B": [
+              "**Why schedules in $\\#\\{\\pi : S \\subseteq F(\\pi)\\}$ are allowed to fix extra labels outside $S$:**",
+              "It is also the exact reason the alternating signs $(-1)^{|S|}$ are required."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2340c7776673fed28cb080bd621ab5489a6b8171480cacda0715b0701625c1d1",
+    "prompt_sha256": "493fef3c6124335d7ff61cd3a562206460a0d9ef2e80fa8712dbedef119e6edf",
+    "raw_sha256": "1022508a7ef7d5292e69a526c52cc4f941b73921142f05ef34ae218de02a6afb",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded counting proof using the source's alternating-subset argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the forbidden matching labels, bijective schedules, both formulas, unrestricted completions outside S, and all three boundary cases. The museum examples are explicitly hypothetical.",
+          "quotes": {
+            "source": [
+              "Call a schedule clear if π(i) ≠ i for every i.",
+              "Use 0! = 1, and at n = 0 include the unique empty schedule."
+            ],
+            "A": [
+              "\\pi(i) \\neq i \\quad \\text{for every } i \\in \\{1, \\dots, n\\}.",
+              "we use the convention $0! = 1$, and at $n = 0$ we include the unique empty schedule."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the same counting event, equivalent formulas, empty-schedule convention, and small cases. Its completion count correctly allows further fixed labels.",
+          "quotes": {
+            "source": [
+              "A schedule counted in #{π: S⊆F(π)} may fix additional labels outside S.",
+              "Use 0! = 1, and at n = 0 include the unique empty schedule."
+            ],
+            "A": [],
+            "B": [
+              "is allowed to fix additional labels outside $S$.",
+              "where we take $0! = 1$ and, at $n = 0$, include the unique empty schedule."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the labeled matching restriction, rather than introducing spatial avoidance, and preserve the formulas and edge cases without changing their scope.",
+          "quotes": {
+            "source": [
+              "The common labels designate pairings to avoid; they do not describe physical positions."
+            ],
+            "A": [
+              "The indices $1, \\dots, n$ are purely administrative labels; they do not describe physical coordinates"
+            ],
+            "B": [
+              "The shared indices $1, \\dots, n$ record which group-station pairings are forbidden rather than a physical layout"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly restates the indicator and overlap explanation through headings, bullets, and commentary. B delivers those explanations in more continuous technical prose without losing their substance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is both permitted and essential to the proof:",
+              "Step 3: Counting Schedules that Fix $S$ (and Why Over-Fixing is Allowed)"
+            ],
+            "B": [
+              "Now fix a subset $S \\subseteq \\{1, \\dots, n\\}$ of size $|S| = k$.",
+              "Permitting those extra fixed points is what makes the count for a fixed $S$ equal to $(n - k)!$"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both develop the indicator before counting completions. B more directly connects detecting emptiness, summing the indicator, and regrouping by S; A interrupts that progression with an equivalent second explanation and repeated cancellation discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "(Equivalently, when forming a subset",
+              "those multiple appearances reassemble into"
+            ],
+            "B": [
+              "To detect whether $F(\\pi)$ is empty, consider the alternating sum",
+              "Because this inner sum equals $1$ for each clear schedule and $0$ for every other schedule"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected exposition: it introduces the indicator with its purpose and retains displayed intermediate calculations. A also explains thoroughly, but its layered headings and repeated explanations add packaging the author explicitly disfavors.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Step 1: Detecting Clear Schedules via Fixed-Point Subsets",
+              "Evaluating this expression in the two possible cases shows why it acts as an exact filter for clear schedules:"
+            ],
+            "B": [
+              "To detect whether $F(\\pi)$ is empty",
+              "Interchanging the two finite sums therefore gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both supply correct, sufficiently developed proofs: they explain the subset-size expansion and empty case, justify finite regrouping, count unrestricted bijective completions, distinguish at least S from exactly S, and display the factorial simplification.",
+          "quotes": {
+            "source": [
+              "If |S|=k, fixing every member of S leaves (n-k)! choices on the remaining labels."
+            ],
+            "A": [
+              "there remain $n - k$ tour groups outside $S$ and $n - k$ unoccupied stations outside $S$.",
+              "Both the set of all schedules $\\pi$ and the collection of subsets"
+            ],
+            "B": [
+              "the remaining $n - k$ groups outside $S$ can be assigned bijectively to the remaining $n - k$ stations in any order.",
+              "A pair $(\\pi, S)$ appears in the resulting double sum"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both complete the proof. B better meets the decisive preference for reasoning that unfolds in connected prose: its indicator-to-double-sum transition explains why the next operation belongs, while retaining the substantive calculations and avoiding A's repeated cancellation explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is both permitted and essential to the proof:",
+              "It is also the exact reason the alternating signs"
+            ],
+            "B": [
+              "Because this inner sum equals $1$ for each clear schedule and $0$ for every other schedule, summing it over all $\\pi \\in \\Pi_n$ counts $D_n$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f785dd312d95dd815b3be4a79f4ee27230b5657228ff83906c0eb133719025ff",
+    "prompt_sha256": "fbfbaa5ab4984747c7aa1ef1af64b10aef7b4aba2964ed6729d16c8f8d52cf89",
+    "raw_sha256": "6b108f5f5a83edb1df59c4c966257fbcfa12aa0648f153f3edeecf4dd0fa0055",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for a readable derivation of the clear-schedule count, with its counting steps and edge cases explained.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the exact matching-label event, both formulas, finite-sum argument, permitted extra fixed labels, and values at n = 0, 1, and 2. Some explanations are compressed, but no mathematical claim changes.",
+          "quotes": {
+            "source": [
+              "A schedule counted in #{π: S⊆F(π)} may fix additional labels outside S.",
+              "Use 0! = 1, and at n = 0 include the unique empty schedule."
+            ],
+            "A": [
+              "may fix additional stations outside $S$; this is permitted",
+              "At $n = 0$, we include the unique empty schedule"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The mathematics and edge cases remain faithful, but the added author line asserts an institutional authorship absent from the source. A recipient could reasonably treat that as actual provenance for the note.",
+          "quotes": {
+            "source": [
+              "Turn this compressed counting proof into a readable proof for a museum scheduling note."
+            ],
+            "A": [],
+            "B": [
+              "**Author:** Operations & Scheduling Analytics"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the mathematical event and result. A stays within the supplied content, whereas B adds unsupported institutional authorship. B's illustrative incompatibilities are presented as examples and do not themselves change the counting restriction.",
+          "quotes": {
+            "source": [
+              "The common labels designate pairings to avoid; they do not describe physical positions.",
+              "Turn this compressed counting proof into a readable proof for a museum scheduling note."
+            ],
+            "A": [
+              "The common labels designate pairings to avoid rather than physical locations"
+            ],
+            "B": [
+              "**Author:** Operations & Scheduling Analytics",
+              "The common indices $1, \\dots, n$ identify prohibited pairings between groups and stations."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as a mathematical note with ordinary explanatory transitions. B's administrative metadata and inflated formulations make the same argument sound like a corporate report, although its individual proof explanations remain understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To identify this event, consider the alternating sum",
+              "To evaluate $\\#\\{\\pi : S \\subseteq F(\\pi)\\}$, let $|S| = k$:"
+            ],
+            "B": [
+              "**Subject:** Mathematical Derivation of Conflict-Free Tour Allocations",
+              "any arbitrary one-to-one manner"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves directly from the scheduling problem to the indicator and completion count. B has a sound mathematical sequence, but its allocation-rule taxonomy, repeated definitions, and announcement about avoiding a black box delay that sequence without resolving an additional obstacle.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A schedule is clear precisely when $F(\\pi) = \\emptyset$.",
+              "To identify this event"
+            ],
+            "B": [
+              "#### Allocation Rules",
+              "Rather than invoking an abstract inclusion–exclusion formula as a black box"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely fits the author's connected, reader-facing technical voice and requested artifact. B provides useful detail but surrounds it with staged contrast, numbered subheadings, and prominent remarks. A does fall short of the display preference in its inline factorial calculation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The sum is therefore an indicator that evaluates to $1$ if $\\pi$ is clear and $0$ otherwise."
+            ],
+            "B": [
+              "#### Step 3.1: Defining the Conflict Set and the Indicator Identity",
+              "**Important Remark on Overlapping Counts:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both arguments are correct and handle empty fixed sets and unrestricted completions. B better satisfies the requested proof exposition by explaining why the binomial coefficient counts subsets of each size and displaying factorial cancellation; A leaves the subset-size equality unexplained and puts that cancellation inline.",
+          "quotes": {
+            "source": [
+              "explain why its counting steps apply rather than replacing them with a general theorem citation.",
+              "C(n,k)(n-k)! = n!/k! proves the second."
+            ],
+            "A": [
+              "Expanding the binomial coefficient gives $\\binom{n}{k}(n-k)! = \\frac{n!}{k!(n-k)!}(n-k)! = \\frac{n!}{k!}$."
+            ],
+            "B": [
+              "can be selected in $\\binom{m}{j}$ ways, with each contributing $(-1)^j$.",
+              "$$\\binom{n}{k} (n - k)! = \\frac{n!}{k! \\, (n - k)!} (n - k)! = \\frac{n!}{k!}.$$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B introduces a minor unsupported authorship claim, though neither changes the mathematics. B offers fuller explanation at two proof steps, but A is the more usable museum note and better fits the author's preference for connected reasoning without administrative packaging or staged contrasts.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The sum is therefore an indicator that evaluates to $1$ if $\\pi$ is clear and $0$ otherwise."
+            ],
+            "B": [
+              "**Author:** Operations & Scheduling Analytics",
+              "Rather than invoking an abstract inclusion–exclusion formula as a black box"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a72003df045f4894d4529160b32efb6a11c5c9d0190b817e70b319ef02a81c49",
+    "prompt_sha256": "fbfbaa5ab4984747c7aa1ef1af64b10aef7b4aba2964ed6729d16c8f8d52cf89",
+    "raw_sha256": "6b108f5f5a83edb1df59c4c966257fbcfa12aa0648f153f3edeecf4dd0fa0055",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-16",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a completed least-squares proof with an explicit repair of the projected-error argument.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the rectangular model, noise bound, restricted lower bound, arbitrary minimizer, and projected conclusion. The kernel decomposition and both boundary cases are correct.",
+          "quotes": {
+            "source": [
+              "||Av||_2 ≥ γ||v||_2 for every v in K^⊥.",
+              "The case K^⊥={0} is also allowed."
+            ],
+            "A": [
+              "Since $Ph \\in K^\\perp$, the hypothesis on the observable subspace applies directly to $v = Ph$:",
+              "the bound $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon / \\gamma$ holds vacuously for any $\\gamma > 0$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all hypotheses and the projected bound, uses the lower bound only on Ph, and handles zero noise and the zero observable subspace without claiming full recovery or uniqueness.",
+          "quotes": {
+            "source": [
+              "This only bounds the observable component of the estimation error.",
+              "The case ε=0 should be included: it implies that the observable component is recovered exactly, without implying uniqueness of x̂."
+            ],
+            "A": [],
+            "B": [
+              "Since $Ph \\in K^\\perp$, the lower bound on $K^\\perp$ applies to $v = Ph$:",
+              "the observable component is recovered exactly, even though $\\hat{x}$ itself need not be unique when $K \\neq \\{0\\}$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the assumptions, constant, quantifiers, and observable-only conclusion. A's additional discussion of the kernel remains consistent with the source.",
+          "quotes": {
+            "source": [
+              "Let x̂ be any least-squares minimizer of ||Az-y||_2 over z in R^d.",
+              "||P(x̂-x)||_2 ≤ ε/γ."
+            ],
+            "A": [
+              "If $\\hat{x} \\in \\mathbb{R}^d$ is any least-squares minimizer",
+              "\\|P(\\hat{x} - x)\\|_2 \\le \\frac{\\varepsilon}{\\gamma}."
+            ],
+            "B": [
+              "Let $\\hat{x} \\in \\mathbb{R}^d$ be any least-squares minimizer",
+              "\\|P(\\hat{x} - x)\\|_2 \\le \\frac{\\varepsilon}{\\gamma}."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable technical prose, but B connects operations through complete sentences more naturally. A repeatedly introduces displays with fragmentary procedural labels, making the reading more mechanical.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Multiplying on the left by $h^\\top$:",
+              "Combining the upper and lower bounds:"
+            ],
+            "B": [
+              "Multiplying on the left by $h^T$ yields",
+              "Combining this lower bound with $APh = Ah$ and the residual bound $\\|Ah\\|_2 \\le \\varepsilon$, we obtain"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the measurement-space bound, introduce the decomposition for its purpose, remove the kernel component, and then apply the restricted lower bound. Neither leaves the repaired step unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To relate this bound on the residual fit to the state error, decompose $h$ into its orthogonal components relative to $K$ and $K^\\perp$:"
+            ],
+            "B": [
+              "To bound the projected error $Ph$, decompose $h$ into its orthogonal components in $K^\\perp$ and $K$:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits a short appendix proof: it retains the displayed derivation and useful explanations while integrating the boundary cases into connected prose. A's separate remarks section and repeated final bound add packaging without developing the argument further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Remarks on Degenerate and Boundary Cases",
+              "which completes the proof:"
+            ],
+            "B": [
+              "When $\\varepsilon = 0$, the bound gives $P(\\hat{x} - x) = 0$",
+              "If $K^\\perp = \\{0\\}$, the projection $P$ is the zero operator and the claim holds trivially."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both give a valid, substantive proof: normal equations yield the inner-product identity, division handles the zero case, and the displayed kernel decomposition justifies applying the lower bound to Ph. Both cover the required boundary cases.",
+          "quotes": {
+            "source": [
+              "h has not been shown to belong to K^⊥, and its component in K can be arbitrary."
+            ],
+            "A": [
+              "where $Ph \\in K^\\perp$ and $(I - P)h \\in K = \\ker(A)$.",
+              "If $\\|Ah\\|_2 = 0$, the inequality $\\|Ah\\|_2 \\le \\varepsilon$ holds trivially since $\\varepsilon \\ge 0$."
+            ],
+            "B": [
+              "Because $(I - P)h \\in K = \\ker(A)$, we have $A(I - P)h = 0$",
+              "If $\\|Ah\\|_2 = 0$, the inequality $\\|Ah\\|_2 \\le \\varepsilon$ holds because $\\varepsilon \\ge 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both fully repair the proof. B better serves the user's preference for connected technical exposition: its purpose-led decomposition and integrated boundary paragraph preserve the explanation without A's repeated conclusion and expanded remarks apparatus.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Remarks on Degenerate and Boundary Cases",
+              "Since $h = \\hat{x} - x$ and $P$ is linear, $Ph = P(\\hat{x} - x)$, which completes the proof:"
+            ],
+            "B": [
+              "To bound the projected error $Ph$, decompose $h$ into its orthogonal components in $K^\\perp$ and $K$:",
+              "If $K^\\perp = \\{0\\}$, the projection $P$ is the zero operator and the claim holds trivially."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f3bcd9fe722e178fbfadfecae3b61e441903e3eb1c4b344100603dbceabe9370",
+    "prompt_sha256": "a93768d1fc65020848f631d194e20393ce5e8cb64a2ce9259c0dcc1aadb1f6df",
+    "raw_sha256": "23fe5c52db204d77c9652f0522c99437e07d7442191b9e9c04d0a5013ad812ae",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-16",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a completed mathematical proof preserving the normal-equations strategy and repairing its unjustified final step.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The main proof and assumptions are correct, but the final paragraph incorrectly says both sides vanish when K^⊥={0}. Only the projected error must vanish; ε/γ can remain positive. This misstates the allowed boundary case without invalidating the proved inequality.",
+          "quotes": {
+            "source": [
+              "where ε ≥ 0.",
+              "||P(x̂-x)||_2 ≤ ε/γ.",
+              "The case K^⊥={0} is also allowed."
+            ],
+            "A": [
+              "The derivation includes the case $K^\\perp = \\{0\\}$, where $P = 0$ and both sides vanish"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the rectangular model, arbitrary minimizer, restricted lower bound, and projected conclusion. The proof and remarks correctly handle zero noise, nonuniqueness, and the zero observable subspace.",
+          "quotes": {
+            "source": [
+              "The case K^⊥={0} is also allowed.",
+              "The case ε=0 should be included: it implies that the observable component is recovered exactly, without implying uniqueness of x̂."
+            ],
+            "A": [],
+            "B": [
+              "the conclusion $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon/\\gamma$ holds trivially.",
+              "$\\hat{x}$ itself is non-unique whenever $K \\ne \\{0\\}$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the substantive claim and hypotheses, but B accurately retains a possibly positive upper bound in the degenerate case. A's statement that both sides vanish adds a false consequence.",
+          "quotes": {
+            "source": [
+              "where ε ≥ 0.",
+              "||P(x̂-x)||_2 ≤ ε/γ."
+            ],
+            "A": [
+              "where $P = 0$ and both sides vanish"
+            ],
+            "B": [
+              "the conclusion $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon/\\gamma$ holds trivially."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic technical prose and readable explanations around displays. A is more continuous and B more formally segmented, but neither format by itself makes the sentences substantially more natural.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To isolate the observable component, decompose $h$ orthogonally as"
+            ],
+            "B": [
+              "Because $K = \\{v \\in \\mathbb{R}^d : Av = 0\\}$, the nullspace component satisfies $A(I - P)h = 0$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more explicitly establishes the obstacle before introducing the repair: kernel shifts preserve the fit, so h need not lie in the subspace where the lower bound applies. B supplies the correct construction but gives this explanatory kernel-shift observation only later in its remarks.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The error $h$ need not belong to $K^\\perp$, since adding any vector in $K$ to $\\hat{x}$ leaves $A\\hat{x}$ unchanged."
+            ],
+            "B": [
+              "To bound the projected error $Ph$ without assuming $h \\in K^\\perp$, decompose $h$ orthogonally",
+              "as adding any vector in $K$ to $\\hat{x}$ leaves $A\\hat{x}$ unchanged"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Apart from its mathematical slip, A more closely follows the requested voice: it explains why the construction is necessary, lays out the calculation, and reads as finished appendix prose. B's revision label and separate remarks packaging are less well matched to that goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The error $h$ need not belong to $K^\\perp$, since adding any vector in $K$ to $\\hat{x}$ leaves $A\\hat{x}$ unchanged.",
+              "To isolate the observable component"
+            ],
+            "B": [
+              "### Revised Proposition and Proof",
+              "**Remarks on Boundary and Degenerate Cases.**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both correctly derive the measurement-space bound, handle Ah=0, and justify APh=Ah through the kernel decomposition. A offers especially clear intermediate algebra, but B alone describes the required degenerate case without the false claim that ε/γ vanishes.",
+          "quotes": {
+            "source": [
+              "The case K^⊥={0} is also allowed.",
+              "Repair this step to finish the stated projected-error claim."
+            ],
+            "A": [
+              "Ah = A(Ph) + A(I - P)h = A(Ph).",
+              "where $P = 0$ and both sides vanish"
+            ],
+            "B": [
+              "Ah = A(Ph) + A(I - P)h = A(Ph).",
+              "the conclusion $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon/\\gamma$ holds trivially."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A has a minor but explicit false assertion about a required boundary case. Although A better motivates the projection and fits the author's connected prose, B is the more reliable completed proof because it correctly allows ε/γ to remain positive when the observable subspace is zero.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "where $P = 0$ and both sides vanish"
+            ],
+            "B": [
+              "the conclusion $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon/\\gamma$ holds trivially."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "tie",
+      "progression": "win",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bc5b9a555e0b4df1435b41f1e490c4a345ab2fdaa35dd8a38d70d725aefbccb3",
+    "prompt_sha256": "a93768d1fc65020848f631d194e20393ce5e8cb64a2ce9259c0dcc1aadb1f6df",
+    "raw_sha256": "23fe5c52db204d77c9652f0522c99437e07d7442191b9e9c04d0a5013ad812ae",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-16",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a completed least-squares proof with an explicit repair of the projection step.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the assumptions and projected bound, applies the lower bound only to Ph, and handles both boundary cases correctly.",
+          "quotes": {
+            "source": [
+              "The case K^⊥={0} is also allowed."
+            ],
+            "A": [
+              "the conclusion $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon/\\gamma$ holds trivially."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The final boundary-case explanation incorrectly says both sides vanish when the observable subspace is trivial. Only the projected error must vanish; ε/γ can remain positive. This localized error does not invalidate the preceding proof.",
+          "quotes": {
+            "source": [
+              "where ε ≥ 0.",
+              "The case K^⊥={0} is also allowed."
+            ],
+            "A": [],
+            "B": [
+              "where $P = 0$ and both sides vanish"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the rectangular model, arbitrary minimizer, restricted lower bound, and projected conclusion. A also states the trivial-subspace case accurately; B incorrectly makes its positive permitted upper bound vanish.",
+          "quotes": {
+            "source": [
+              "We claim\n||P(x̂-x)||_2 ≤ ε/γ."
+            ],
+            "A": [
+              "0 \\le \\varepsilon/\\gamma"
+            ],
+            "B": [
+              "where $P = 0$ and both sides vanish"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads more like continuous appendix prose. A's revision heading, separators, and labeled remarks add editorial packaging to an otherwise readable proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Revised Proposition and Proof",
+              "**Remarks on Boundary and Degenerate Cases.**"
+            ],
+            "B": [
+              "To isolate the observable component, decompose $h$ orthogonally as"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both develop the normal-equation estimate before the projection repair. B more directly explains why the kernel obstructs bounding h and why the decomposition is needed.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To bound the projected error $Ph$ without assuming $h \\in K^\\perp$, decompose $h$ orthogonally"
+            ],
+            "B": [
+              "The error $h$ need not belong to $K^\\perp$, since adding any vector in $K$ to $\\hat{x}$ leaves $A\\hat{x}$ unchanged."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the preference for connected technical explanation: it motivates the construction inside the proof. A explains the same mathematics substantively but surrounds it with more headings and separate commentary than this short appendix needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Remarks on Boundary and Degenerate Cases.**"
+            ],
+            "B": [
+              "To isolate the observable component, decompose $h$ orthogonally as"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both display the normal-equation calculation, handle zero before division, and justify APh = Ah using the kernel decomposition. A's boundary discussion remains correct, whereas B adds a false assertion about the upper bound vanishing.",
+          "quotes": {
+            "source": [
+              "Repair this step to finish the stated projected-error claim.",
+              "The case K^⊥={0} is also allowed."
+            ],
+            "A": [
+              "Since $Ph \\in K^\\perp$, we may apply the coercivity assumption",
+              "0 \\le \\varepsilon/\\gamma"
+            ],
+            "B": [
+              "Since $Ph \\in K^\\perp$, the assumed lower bound on $K^\\perp$ applies",
+              "where $P = 0$ and both sides vanish"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A is the more reliable completed artifact: its proof and boundary cases are correct. B better integrates the motivation into flowing prose, but its claim that both sides vanish introduces a mathematical error absent from A. Preserving the allowed boundary cases is decisive here.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the conclusion $\\|P(\\hat{x} - x)\\|_2 = 0 \\le \\varepsilon/\\gamma$ holds trivially."
+            ],
+            "B": [
+              "where $P = 0$ and both sides vanish"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "loss",
+      "overall": "loss"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a7ab7fff62e0a97eef32483a99d175dcac36c625ded65b34eade70a4140d4416",
+    "prompt_sha256": "a728cba2b217664ef326564646e3931c75a93020925ca02ad56907f6f2cd9cc9",
+    "raw_sha256": "1ad68405c2371ca38b046e9b55a01fbf34c6922f604874dfdb76e24da6cabfb4",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-16",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a substantive mathematical proof that repairs an invalid application of a restricted lower bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains the observation model and projected bound, explicitly derives APh = Ah, and handles zero noise and the trivial observable subspace without asserting uniqueness.",
+          "quotes": {
+            "source": [
+              "h has not been shown to belong to K^⊥, and its component in K can be arbitrary."
+            ],
+            "A": [
+              "Because $(I - P)h \\in K = \\ker(A)$, we have $A(I - P)h = 0$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the hypotheses and bound, supplies the kernel-based repair, and correctly distinguishes exact observable recovery from full-estimator uniqueness. Its added remarks are consistent consequences of the source.",
+          "quotes": {
+            "source": [
+              "it implies that the observable component is recovered exactly, without implying uniqueness of x̂."
+            ],
+            "A": [],
+            "B": [
+              "The observable component of the state is recovered exactly. This does not imply that the full estimator $\\hat{x}$ is unique"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the restricted hypothesis, arbitrary least-squares minimizer, unchanged projected bound, and both boundary cases. Neither infers full-vector recovery or invertibility.",
+          "quotes": {
+            "source": [
+              "Assume γ > 0 and\n||Av||_2 ≥ γ||v||_2 for every v in K^⊥."
+            ],
+            "A": [
+              "Since $Ph \\in K^\\perp$, the lower bound on $K^\\perp$ applies to $v = Ph$:"
+            ],
+            "B": [
+              "Since $Ph \\in K^\\perp$, the hypothesis on the observable subspace applies directly to $v = Ph$:"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A connects the calculations through complete explanatory sentences. B remains readable, but its repeated colon-led fragments make the proof sound more like an annotated sequence of operations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Combining this lower bound with $APh = Ah$ and the residual bound $\\|Ah\\|_2 \\le \\varepsilon$, we obtain"
+            ],
+            "B": [
+              "Multiplying on the left by $h^\\top$:",
+              "Combining the upper and lower bounds:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the observation-space estimate, introduce the orthogonal decomposition for the projected error, eliminate the kernel component, and then apply the restricted lower bound. Each makes the repair's purpose understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To bound the projected error $Ph$, decompose $h$ into its orthogonal components in $K^\\perp$ and $K$:"
+            ],
+            "B": [
+              "To relate this bound on the residual fit to the state error, decompose $h$ into its orthogonal components relative to $K$ and $K^\\perp$:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves useful explanation and displayed steps while keeping the boundary cases connected to the proof. B adds a long title, separate remarks, and a redundant explanation of Ph's notation, giving this short repair more scaffolding than the author's preferences favor.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When $\\varepsilon = 0$, the bound gives $P(\\hat{x} - x) = 0$, so the observable component is recovered exactly"
+            ],
+            "B": [
+              "### Remarks on Degenerate and Boundary Cases",
+              "Since $h = \\hat{x} - x$ and $P$ is linear, $Ph = P(\\hat{x} - x)$"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both give a correct, substantive derivation with displayed intermediate steps. Each handles Ah = 0 before division, proves APh = Ah from the kernel decomposition, and applies the lower bound only to Ph.",
+          "quotes": {
+            "source": [
+              "replace that step with a bounded repair using the supplied assumptions",
+              "Keep a substantive proof rather than only announcing the correction."
+            ],
+            "A": [
+              "If $\\|Ah\\|_2 = 0$, the inequality $\\|Ah\\|_2 \\le \\varepsilon$ holds because $\\varepsilon \\ge 0$.",
+              "Because $(I - P)h \\in K = \\ker(A)$, we have $A(I - P)h = 0$"
+            ],
+            "B": [
+              "If $\\|Ah\\|_2 = 0$, the inequality $\\|Ah\\|_2 \\le \\varepsilon$ holds trivially since $\\varepsilon \\ge 0$.",
+              "By definition of the kernel, $A(I - P)h = 0$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material mathematical error, and both complete the required proof. A better meets the author's goal of connected explanation without compressing useful steps: it motivates the decomposition, explains how the bounds combine, and handles the boundary cases directly. B's additional scaffolding and repeated conclusion offer little corresponding explanatory benefit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Combining this lower bound with $APh = Ah$ and the residual bound $\\|Ah\\|_2 \\le \\varepsilon$, we obtain"
+            ],
+            "B": [
+              "Since $h = \\hat{x} - x$ and $P$ is linear, $Ph = P(\\hat{x} - x)$, which completes the proof:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0efc3a45e1556bbcb71f38b3a880884b6f189986b0059e54ca5c9d8fe24a36da",
+    "prompt_sha256": "a728cba2b217664ef326564646e3931c75a93020925ca02ad56907f6f2cd9cc9",
+    "raw_sha256": "1ad68405c2371ca38b046e9b55a01fbf34c6922f604874dfdb76e24da6cabfb4",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]

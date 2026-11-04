@@ -2,26 +2,26 @@
 
 INCOMPLETE: results below are a progress checkpoint, not a full-suite headline.
 
-Valid paired primary judgments: 828/1920. Both judges must be present for a case/model pair to enter the table.
+Valid paired primary judgments: 856/1920. Both judges must be present for a case/model pair to enter the table.
 
 | Split | Model / effort | Cases | Win − loss (pp) | 95% case-bootstrap interval |
 |---|---|---:|---:|---:|
-| development | haiku | 18 | +41.7 | [+8.3, +72.2] |
-| development | sonnet-low | 17 | +67.6 | [+44.1, +88.2] |
-| development | sonnet-high | 18 | +52.8 | [+25.0, +77.8] |
-| development | opus-low | 16 | +56.2 | [+31.2, +81.2] |
-| development | opus-xhigh | 18 | +66.7 | [+38.9, +88.9] |
-| development | fable | 18 | +69.4 | [+50.0, +86.1] |
-| development | astra-medium | 18 | +13.9 | [-13.9, +41.7] |
-| development | astra-high | 16 | +6.2 | [+0.0, +18.8] |
-| development | sol-low | 15 | +33.3 | [+6.7, +60.0] |
-| development | luna-medium | 17 | +2.9 | [-38.2, +41.2] |
-| development | argon-high | 32 | +40.6 | [+14.1, +65.6] |
-| development | flash-high | 33 | +66.7 | [+45.5, +84.8] |
-| development | claude-all | 13 | +51.9 | [+30.8, +72.4] |
-| development | codex-all | 13 | +10.6 | [-9.6, +32.7] |
-| development | antigravity-all | 32 | +53.1 | [+35.9, +70.3] |
-| development | all | 12 | +33.0 | [+16.3, +49.7] |
+| development | haiku | 19 | +44.7 | [+13.2, +73.7] |
+| development | sonnet-low | 18 | +61.1 | [+36.1, +83.3] |
+| development | sonnet-high | 19 | +50.0 | [+23.7, +73.7] |
+| development | opus-low | 17 | +58.8 | [+35.3, +82.4] |
+| development | opus-xhigh | 19 | +65.8 | [+39.5, +86.8] |
+| development | fable | 19 | +60.5 | [+34.2, +84.2] |
+| development | astra-medium | 19 | +13.2 | [-13.2, +39.5] |
+| development | astra-high | 17 | +0.0 | [-17.6, +17.6] |
+| development | sol-low | 16 | +31.2 | [+6.2, +56.2] |
+| development | luna-medium | 18 | -2.8 | [-44.4, +36.1] |
+| development | argon-high | 34 | +44.1 | [+19.1, +67.6] |
+| development | flash-high | 35 | +68.6 | [+48.6, +85.7] |
+| development | claude-all | 14 | +49.4 | [+29.2, +69.0] |
+| development | codex-all | 14 | +6.2 | [-14.3, +28.6] |
+| development | antigravity-all | 34 | +55.9 | [+39.0, +71.3] |
+| development | all | 13 | +30.4 | [+14.4, +46.5] |
 | holdout | haiku | 17 | +26.5 | [-14.7, +64.7] |
 | holdout | sonnet-low | 16 | +18.8 | [-18.8, +59.4] |
 | holdout | sonnet-high | 16 | +50.0 | [+18.8, +75.0] |
@@ -35,6 +35,6 @@ Valid paired primary judgments: 828/1920. Both judges must be present for a case
 | holdout | claude-all | 14 | +32.7 | [+11.9, +51.8] |
 | holdout | codex-all | 14 | -1.8 | [-25.9, +24.1] |
 
-Combined spend so far: 846/2400 attempts, 17,790,552 known reported tokens, 246/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 867/2400 attempts, 18,287,916 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.
