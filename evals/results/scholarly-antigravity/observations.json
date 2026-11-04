@@ -23546,5 +23546,1801 @@
     "prompt_sha256": "a728cba2b217664ef326564646e3931c75a93020925ca02ad56907f6f2cd9cc9",
     "raw_sha256": "1ad68405c2371ca38b046e9b55a01fbf34c6922f604874dfdb76e24da6cabfb4",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a newsletter copyedit with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving eleven envelopes, their relationship to the correspondence, uncertain impressions and pairings, the unmade photograph, modest catalogue addition, and sleeve and string storage.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving eleven envelopes, their relationship to the correspondence, uncertain impressions and pairings, the unmade photograph, modest catalogue addition, and sleeve and string storage.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ],
+            "A": [],
+            "B": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every source claim and qualification. Neither converts possible seal contact into an identified cause, supplies a letter-envelope pairing, or implies that the photograph already exists.",
+          "quotes": {
+            "source": [
+              "We can see marks; their cause is less certain.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "A": [
+              "We can see marks; their cause is less certain.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "B": [
+              "We can see marks; their cause is less certain.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable newsletter prose, with concrete observations, conversational phrasing, and varied sentence lengths. Neither has an independent readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside."
+            ],
+            "B": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from discovery to the evidence for retaining and describing the envelopes, then to the catalogue note and practical storage details. The explanation of why the envelopes merit description remains intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved joke and personal, observant ending. Leaving effective prose unchanged respects the specifically limited editing scope and avoids turning the piece into an institutional announcement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this newsletter copyedit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both meet the decisive priority: preserve already-effective prose, including its gentle humor and useful explanation, while maintaining the modest scope of the catalogue addition.",
+          "quotes": {
+            "source": [
+              "Return the piece, unchanged if appropriate; do not recast it as an institutional announcement."
+            ],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "07256a3c009cbdbe46fa99541a0e59d9831ce6b402c9f5426300ce30ea257d38",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a newsletter copyedit with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving eleven envelopes, their relationship to the correspondence, uncertain impressions and pairings, the unmade photograph, modest catalogue addition, and sleeve and string storage.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving eleven envelopes, their relationship to the correspondence, uncertain impressions and pairings, the unmade photograph, modest catalogue addition, and sleeve and string storage.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ],
+            "A": [],
+            "B": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "The string is there too, stored beside them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every source claim and qualification. Neither converts possible seal contact into an identified cause, supplies a letter-envelope pairing, or implies that the photograph already exists.",
+          "quotes": {
+            "source": [
+              "We can see marks; their cause is less certain.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "A": [
+              "We can see marks; their cause is less certain.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "B": [
+              "We can see marks; their cause is less certain.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable newsletter prose, with concrete observations, conversational phrasing, and varied sentence lengths. Neither has an independent readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside."
+            ],
+            "B": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from discovery to the evidence for retaining and describing the envelopes, then to the catalogue note and practical storage details. The explanation of why the envelopes merit description remains intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved joke and personal, observant ending. Leaving effective prose unchanged respects the specifically limited editing scope and avoids turning the piece into an institutional announcement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this newsletter copyedit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both meet the decisive priority: preserve already-effective prose, including its gentle humor and useful explanation, while maintaining the modest scope of the catalogue addition.",
+          "quotes": {
+            "source": [
+              "Return the piece, unchanged if appropriate; do not recast it as an institutional announcement."
+            ],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "07256a3c009cbdbe46fa99541a0e59d9831ce6b402c9f5426300ce30ea257d38",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting an archive newsletter; no mathematical proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the eleven envelopes, correspondence relationship, flat sleeve in the same box, adjacent string, uncertain impressions, unidentified pairings, pending photograph, and modest catalogue contribution.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "We can see marks; their cause is less certain."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "We can see marks; their cause is less certain."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged. It preserves every factual qualification, including the uncertain seal explanation and pending photograph, and retains the exact storage arrangements without inventing a pairing or discovery.",
+          "quotes": {
+            "source": [
+              "kept flat in a separate sleeve within the same box.",
+              "The string is there too, stored beside them."
+            ],
+            "A": [],
+            "B": [
+              "kept flat in a separate sleeve within the same box.",
+              "The string is there too, stored beside them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source verbatim, including the distinction between observed marks and their uncertain cause, the photograph's unfinished status, and the absence of identified letter-envelope pairings.",
+          "quotes": {
+            "source": [
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "A": [
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "B": [
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Each reads as the same conversational newsletter: concrete observations, varied sentence lengths, and a natural personal closing. Neither introduces awkward copyediting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from discovery to evidence, explain why the envelopes merit description, then describe the catalogue note and practical storage. The reason for the addition remains explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved personification and personal, observant voice. Leaving effective prose intact directly respects the bounded copyediting request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this newsletter copyedit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive priority of preserving effective writing under a minimal-edit request: the approved joke, useful explanation, and modest account of the catalogue addition all remain intact.",
+          "quotes": {
+            "source": [
+              "Return the piece, unchanged if appropriate; do not recast it as an institutional announcement."
+            ],
+            "A": [
+              "This is a small addition to the catalogue. Nobody has uncovered a lost correspondence or solved a mystery."
+            ],
+            "B": [
+              "This is a small addition to the catalogue. Nobody has uncovered a lost correspondence or solved a mystery."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "238e2cab913128fa9d58c64e8139b277457448c497378ea1713cac44f0f8092d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting an archive newsletter; no mathematical proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the eleven envelopes, correspondence relationship, flat sleeve in the same box, adjacent string, uncertain impressions, unidentified pairings, pending photograph, and modest catalogue contribution.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "We can see marks; their cause is less certain."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "We can see marks; their cause is less certain."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged. It preserves every factual qualification, including the uncertain seal explanation and pending photograph, and retains the exact storage arrangements without inventing a pairing or discovery.",
+          "quotes": {
+            "source": [
+              "kept flat in a separate sleeve within the same box.",
+              "The string is there too, stored beside them."
+            ],
+            "A": [],
+            "B": [
+              "kept flat in a separate sleeve within the same box.",
+              "The string is there too, stored beside them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the source verbatim, including the distinction between observed marks and their uncertain cause, the photograph's unfinished status, and the absence of identified letter-envelope pairings.",
+          "quotes": {
+            "source": [
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "A": [
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "B": [
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Each reads as the same conversational newsletter: concrete observations, varied sentence lengths, and a natural personal closing. Neither introduces awkward copyediting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from discovery to evidence, explain why the envelopes merit description, then describe the catalogue note and practical storage. The reason for the addition remains explicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved personification and personal, observant voice. Leaving effective prose intact directly respects the bounded copyediting request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess in this newsletter copyedit.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive priority of preserving effective writing under a minimal-edit request: the approved joke, useful explanation, and modest account of the catalogue addition all remain intact.",
+          "quotes": {
+            "source": [
+              "Return the piece, unchanged if appropriate; do not recast it as an institutional announcement."
+            ],
+            "A": [
+              "This is a small addition to the catalogue. Nobody has uncovered a lost correspondence or solved a mystery."
+            ],
+            "B": [
+              "This is a small addition to the catalogue. Nobody has uncovered a lost correspondence or solved a mystery."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "238e2cab913128fa9d58c64e8139b277457448c497378ea1713cac44f0f8092d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting an archive newsletter; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving eleven envelopes, their relationship to the correspondence, uncertain impressions and pairings, the unmade photograph, and storage with the string beside them.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "kept flat in a separate sleeve within the same box. The string is there too, stored beside them."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "kept flat in a separate sleeve within the same box. The string is there too, stored beside them."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B independently matches the source unchanged. It preserves the facts, uncertainty about seals and letter pairings, prospective photograph, modest catalogue contribution, and storage arrangements.",
+          "quotes": {
+            "source": [
+              "It also records the impressions without identifying them as seals.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "A": [],
+            "B": [
+              "It also records the impressions without identifying them as seals.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete source, including the distinction between observed impressions and their possible cause, without claiming a particular letter-envelope pairing or a discovery.",
+          "quotes": {
+            "source": [
+              "two carry faint impressions where a seal may once have pressed against them.",
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "A": [
+              "two carry faint impressions where a seal may once have pressed against them.",
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "B": [
+              "two carry faint impressions where a seal may once have pressed against them.",
+              "That does not tell us which letter belonged in which envelope."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable, conversational prose. The direct observation and gentle personification work naturally for a personal newsletter.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside.",
+              "The box had apparently decided that context deserved its own stationery."
+            ],
+            "B": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside.",
+              "The box had apparently decided that context deserved its own stationery."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from finding the envelopes to explaining their descriptive value, documenting them, and telling readers what to expect. Both retain the explanation connecting observation to the catalogue decision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved joke, personal observation, and modest scale. Leaving effective prose unchanged respects this user's explicit editing scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The newsletter copyediting task contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive priority: preserve effective newsletter prose and deliberate humor while retaining the useful explanation and qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "c26e11bc47062c469c03ba2d3fb07bd45dfa8174e703f20acd192a01310772e2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting an archive newsletter; no proof or derivation is involved.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving eleven envelopes, their relationship to the correspondence, uncertain impressions and pairings, the unmade photograph, and storage with the string beside them.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "kept flat in a separate sleeve within the same box. The string is there too, stored beside them."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes.",
+              "kept flat in a separate sleeve within the same box. The string is there too, stored beside them."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B independently matches the source unchanged. It preserves the facts, uncertainty about seals and letter pairings, prospective photograph, modest catalogue contribution, and storage arrangements.",
+          "quotes": {
+            "source": [
+              "It also records the impressions without identifying them as seals.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ],
+            "A": [],
+            "B": [
+              "It also records the impressions without identifying them as seals.",
+              "A photograph would help someone decide whether to request the bundle, but the note is useful even before that photograph is made."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete source, including the distinction between observed impressions and their possible cause, without claiming a particular letter-envelope pairing or a discovery.",
+          "quotes": {
+            "source": [
+              "two carry faint impressions where a seal may once have pressed against them.",
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "A": [
+              "two carry faint impressions where a seal may once have pressed against them.",
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "B": [
+              "two carry faint impressions where a seal may once have pressed against them.",
+              "That does not tell us which letter belonged in which envelope."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable, conversational prose. The direct observation and gentle personification work naturally for a personal newsletter.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside.",
+              "The box had apparently decided that context deserved its own stationery."
+            ],
+            "B": [
+              "A box can be perfectly labeled and still have a small surprise waiting inside.",
+              "The box had apparently decided that context deserved its own stationery."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each moves coherently from finding the envelopes to explaining their descriptive value, documenting them, and telling readers what to expect. Both retain the explanation connecting observation to the catalogue decision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved joke, personal observation, and modest scale. Leaving effective prose unchanged respects this user's explicit editing scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The newsletter copyediting task contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive priority: preserve effective newsletter prose and deliberate humor while retaining the useful explanation and qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery.",
+              "This is a small addition to the catalogue."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "c26e11bc47062c469c03ba2d3fb07bd45dfa8174e703f20acd192a01310772e2",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting an archive newsletter and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the eleven envelopes, correspondence relationship, uncertain impressions, unmade photograph, storage details, and modest catalogue contribution.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving the eleven envelopes, correspondence relationship, uncertain impressions, unmade photograph, storage details, and modest catalogue contribution.",
+          "quotes": {
+            "source": [
+              "It also records the impressions without identifying them as seals."
+            ],
+            "A": [],
+            "B": [
+              "It also records the impressions without identifying them as seals."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every source qualification and fact, including uncertainty about envelope pairings and seal impressions. Neither introduces claims or omits content.",
+          "quotes": {
+            "source": [
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "A": [
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "B": [
+              "That does not tell us which letter belonged in which envelope."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical texts retain readable, conversational newsletter prose, with concrete observations and an unforced personal closing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from discovery to why the envelopes merit description, then to the catalogue note and practical storage information. The reason for including the envelopes is explained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the bounded copyedit by preserving the approved joke, observant first-person voice, and already-effective passages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive instruction to change only genuine problems: they retain the working voice, humor, useful explanations, and modest scope.",
+          "quotes": {
+            "source": [
+              "Return the piece, unchanged if appropriate; do not recast it as an institutional announcement."
+            ],
+            "A": [
+              "We have simply made the contents a little easier to anticipate."
+            ],
+            "B": [
+              "We have simply made the contents a little easier to anticipate."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "f907e2208dff1d630e58f3fb316c2deabefac77185576e794b0f595e072a9234",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is copyediting an archive newsletter and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the eleven envelopes, correspondence relationship, uncertain impressions, unmade photograph, storage details, and modest catalogue contribution.",
+          "quotes": {
+            "source": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes."
+            ],
+            "A": [
+              "The catalogue note now says that the bundle includes eleven blank envelopes."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving the eleven envelopes, correspondence relationship, uncertain impressions, unmade photograph, storage details, and modest catalogue contribution.",
+          "quotes": {
+            "source": [
+              "It also records the impressions without identifying them as seals."
+            ],
+            "A": [],
+            "B": [
+              "It also records the impressions without identifying them as seals."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every source qualification and fact, including uncertainty about envelope pairings and seal impressions. Neither introduces claims or omits content.",
+          "quotes": {
+            "source": [
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "A": [
+              "That does not tell us which letter belonged in which envelope."
+            ],
+            "B": [
+              "That does not tell us which letter belonged in which envelope."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical texts retain readable, conversational newsletter prose, with concrete observations and an unforced personal closing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Some mornings, describing what we kept is most of the story."
+            ],
+            "B": [
+              "Some mornings, describing what we kept is most of the story."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from discovery to why the envelopes merit description, then to the catalogue note and practical storage information. The reason for including the envelopes is explained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ],
+            "B": [
+              "It does give a future reader something to inspect, and it gives us a reason to describe the envelopes alongside the letters rather than treating them as packing material."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the bounded copyedit by preserving the approved joke, observant first-person voice, and already-effective passages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The box had apparently decided that context deserved its own stationery."
+            ],
+            "B": [
+              "The box had apparently decided that context deserved its own stationery."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive instruction to change only genuine problems: they retain the working voice, humor, useful explanations, and modest scope.",
+          "quotes": {
+            "source": [
+              "Return the piece, unchanged if appropriate; do not recast it as an institutional announcement."
+            ],
+            "A": [
+              "We have simply made the contents a little easier to anticipate."
+            ],
+            "B": [
+              "We have simply made the contents a little easier to anticipate."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26260ede4cf3c250422f662a82326106e47ae2cd43eff07a6d7cc3ef9d64092b",
+    "prompt_sha256": "31997775e82d43292974c8a80bb39950f6e4badccc8129f532cbb5dfb3986fad",
+    "raw_sha256": "f907e2208dff1d630e58f3fb316c2deabefac77185576e794b0f595e072a9234",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a publication timing update to a museum note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the first three paragraphs verbatim, the two-week duration, and both recorded observations. It places the trial in the past while leaving discussion and the label decision pending, without inventing findings.",
+          "quotes": {
+            "source": [
+              "A two-week trial of the display is under way.",
+              "The observations will be discussed after the trial ends."
+            ],
+            "A": [
+              "A two-week trial of the display took place.",
+              "The observations will be discussed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the first three paragraphs verbatim, the two-week duration, and both recorded observations. It places the trial in the past while retaining future discussion, a later decision, and the museum's lack of commitment to label changes.",
+          "quotes": {
+            "source": [
+              "A two-week trial of the display is under way.",
+              "the trial itself does not commit the museum to changing them."
+            ],
+            "A": [],
+            "B": [
+              "A two-week trial of the display took place.",
+              "the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical. Both make the authorized timing update, preserve the observation categories and technical distinctions, and leave all subsequent actions prospective.",
+          "quotes": {
+            "source": [
+              "hosts are recording which labels visitors ask about and whether visitors notice that the ledger is a copy."
+            ],
+            "A": [
+              "hosts recorded which labels visitors asked about and whether visitors noticed that the ledger is a copy."
+            ],
+            "B": [
+              "hosts recorded which labels visitors asked about and whether visitors noticed that the ledger is a copy."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use the same plain, idiomatic museum prose. The short discussion sentence reads adequately in the surrounding paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The observations will be discussed. They will inform a later decision about the labels;"
+            ],
+            "B": [
+              "The observations will be discussed. They will inform a later decision about the labels;"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow the same clear sequence: completed trial, observations collected, future discussion, then a later decision qualified by the absence of commitment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display took place. During the trial, hosts recorded"
+            ],
+            "B": [
+              "A two-week trial of the display took place. During the trial, hosts recorded"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the narrowly bounded edit and preserve effective existing prose, including the purposeful contrast about modern paper.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop."
+            ],
+            "B": [
+              "We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the decisive priority: update only the trial's timing while preserving the later decision and its qualification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "B": [
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bd23671e055c7fc8b8fbbbe9d9aa79127e1b1ca72e178c042a6a56c4d9e1e58c",
+    "prompt_sha256": "238ca7b7be4e31f4240ede79fe3df9ddba4a5339d28023866ca62732957e279d",
+    "raw_sha256": "1cffd478a05d6c38874febacae82156a57f309153cf5d461b2ce97a73991a7fc",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a publication timing update to a museum note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A leaves the first three paragraphs unchanged, explicitly marks the two-week trial as finished, and preserves both observation categories. Combining the discussion and decision sentences neither invents results nor implies that either action has occurred.",
+          "quotes": {
+            "source": [
+              "The observations will be discussed after the trial ends.",
+              "They will inform a later decision about the labels;"
+            ],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed and will inform a later decision about the labels;"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B leaves the first three paragraphs unchanged and preserves duration, observations, future discussion, and the qualified later decision. The revised timing clause states the supplied completion fact without claiming immediate discussion or available results.",
+          "quotes": {
+            "source": [
+              "the trial described in the final paragraph has now finished",
+              "The observations will be discussed after the trial ends."
+            ],
+            "A": [],
+            "B": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed now that the trial has ended."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's facts, technical language, observation categories, and qualifications. A leaves the post-trial timing implicit in the completed-trial context; B states it explicitly. Neither changes what the museum has decided or committed to.",
+          "quotes": {
+            "source": [
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "A": [
+              "The observations will be discussed and will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "B": [
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's coordinated sentence and B's separate sentences are both idiomatic. B repeats the completion fact, but the explicit temporal connection remains natural and does not meaningfully impair readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The observations will be discussed and will inform a later decision about the labels;"
+            ],
+            "B": [
+              "The observations will be discussed now that the trial has ended. They will inform a later decision about the labels;"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both clearly move from completion through recorded observations to future discussion and decision. A connects the future actions within one sentence; B retains an explicit temporal transition. Neither leaves a consequential step unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The observations will be discussed and will inform a later decision about the labels;"
+            ],
+            "B": [
+              "The observations will be discussed now that the trial has ended. They will inform a later decision about the labels;"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the established voice and all text outside the authorized paragraph. A removes a now-redundant timing clause, while B adapts it and retains the original sentence rhythm; both are reasonable within this limited update.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed and will inform a later decision about the labels;"
+            ],
+            "B": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed now that the trial has ended."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both meet the user's decisive priority of a bounded publication update: the trial has finished, but discussion and the qualified label decision remain ahead. A's tighter coordination and B's explicit timing do not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "the trial itself does not commit the museum to changing them."
+            ],
+            "B": [
+              "A two-week trial of the display has finished.",
+              "the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "26b172e8ad943bce88faf1e40ed7dab05cc4e0c12e364a57733325cd2a91f1ca",
+    "prompt_sha256": "238ca7b7be4e31f4240ede79fe3df9ddba4a5339d28023866ca62732957e279d",
+    "raw_sha256": "1cffd478a05d6c38874febacae82156a57f309153cf5d461b2ce97a73991a7fc",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a narrowly scoped publication update to a museum note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A leaves the first three paragraphs unchanged, makes the two-week trial and recording past, and preserves the future discussion, later decision, and absence of commitment to label changes. It invents no findings.",
+          "quotes": {
+            "source": [
+              "the trial described in the final paragraph has now finished",
+              "The observations will be discussed after the trial ends."
+            ],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed now that the trial has ended."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the first three paragraphs, trial duration, and recorded observations. Combining the future discussion and decision clauses changes no qualification or commitment and supplies no results.",
+          "quotes": {
+            "source": [
+              "During the trial, hosts are recording which labels visitors ask about and whether visitors notice that the ledger is a copy.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "A": [],
+            "B": [
+              "During the trial, hosts recorded which labels visitors asked about and whether visitors noticed that the ledger is a copy.",
+              "The observations will be discussed and will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both accurately express completion and past observation while keeping discussion and decision pending. Both preserve the technical distinctions, transcription conventions, and substantive contrasts verbatim.",
+          "quotes": {
+            "source": [
+              "Leave the first three paragraphs unchanged, and preserve the note's technical language and substantive contrasts.",
+              "No trial results are available."
+            ],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "B": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed and will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both read naturally as museum prose. B has a small advantage because A repeats the trial's completion immediately after announcing it; B removes that repetition without losing useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed now that the trial has ended."
+            ],
+            "B": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed and will inform a later decision about the labels"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Each follows the appropriate sequence for this practical note: completed trial, observations collected, future discussion, and a later decision with no commitment to changes. Neither leaves a substantive transition unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The observations will be discussed now that the trial has ended. They will inform a later decision about the labels"
+            ],
+            "B": [
+              "The observations will be discussed and will inform a later decision about the labels"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the bounded editing request and preserve the established explanatory voice. A retains the original sentence structure more closely; B makes a modest consolidation. Neither changes effective technical prose merely to demonstrate editing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop.",
+              "These conventions separate a proposed reading from a clear one, but they cannot convey every hesitation made during transcription."
+            ],
+            "B": [
+              "We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop.",
+              "These conventions separate a proposed reading from a clear one, but they cannot convey every hesitation made during transcription."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is a faithful, limited temporal update that preserves the pending decision and its qualifications; both deliver it. B's small reduction in repetition does not create a substantive difference in usefulness for this request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display has finished.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "B": [
+              "A two-week trial of the display has finished.",
+              "The observations will be discussed and will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2e9976b450d05d3d073db500c0243e2262a0380e6aac66771a586fcd92f12c47",
+    "prompt_sha256": "44628ec99e215f33c4d2609bd0eeb2d3067b9952ad953160272f7383e9c00e15",
+    "raw_sha256": "fa56abf04930a667dce80fb7cbf1887bd28e15f19becfbf6d2b6f7335e49b820",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a publication update to a museum note and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the first three paragraphs verbatim. Its past-tense account reasonably communicates a completed two-week trial, preserves what hosts recorded, and leaves discussion and the label decision in the future without inventing results.",
+          "quotes": {
+            "source": [
+              "the trial described in the final paragraph has now finished",
+              "The observations will be discussed after the trial ends."
+            ],
+            "A": [
+              "A two-week trial of the display took place.",
+              "The observations will be discussed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the first three paragraphs verbatim. It places the two-week trial and observations in the past while retaining the future discussion, later decision, and qualification that the trial commits the museum to no label changes.",
+          "quotes": {
+            "source": [
+              "During the trial, hosts are recording which labels visitors ask about and whether visitors notice that the ledger is a copy.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "A": [],
+            "B": [
+              "During the trial, hosts recorded which labels visitors asked about and whether visitors noticed that the ledger is a copy.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical. Both fulfill the temporal update, preserve the duration and observations collected, retain all technical distinctions, and add no findings or completed decisions.",
+          "quotes": {
+            "source": [
+              "Leave the first three paragraphs unchanged, and preserve the note's technical language and substantive contrasts.",
+              "No trial results are available."
+            ],
+            "A": [
+              "A two-week trial of the display took place.",
+              "The observations will be discussed."
+            ],
+            "B": [
+              "A two-week trial of the display took place.",
+              "The observations will be discussed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical wording is idiomatic and appropriate to a museum note. The short discussion sentence connects naturally to the following explanation of how the observations will be used.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The observations will be discussed. They will inform a later decision about the labels"
+            ],
+            "B": [
+              "The observations will be discussed. They will inform a later decision about the labels"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move clearly from the past trial to the information collected and then its future use. Their identical structure preserves the note's practical purpose without adding unnecessary argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display took place. During the trial, hosts recorded which labels visitors asked about and whether visitors noticed that the ledger is a copy."
+            ],
+            "B": [
+              "A two-week trial of the display took place. During the trial, hosts recorded which labels visitors asked about and whether visitors noticed that the ledger is a copy."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the author's existing explanations, technical vocabulary, and purposeful contrast about modern paper, while limiting changes to the requested paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A facsimile reproduces a particular object; a reconstruction attempts to supply something missing.",
+              "We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop."
+            ],
+            "B": [
+              "A facsimile reproduces a particular object; a reconstruction attempts to supply something missing.",
+              "We chose it for contrast and durability, not to make a visitor believe it had survived a century in the workshop."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "The artifacts are identical and neither contains a material error. Both meet the user's central priority: update the completed trial while preserving the note and keeping the later label decision open.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A two-week trial of the display took place.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ],
+            "B": [
+              "A two-week trial of the display took place.",
+              "They will inform a later decision about the labels; the trial itself does not commit the museum to changing them."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bd23671e055c7fc8b8fbbbe9d9aa79127e1b1ca72e178c042a6a56c4d9e1e58c",
+    "prompt_sha256": "44628ec99e215f33c4d2609bd0eeb2d3067b9952ad953160272f7383e9c00e15",
+    "raw_sha256": "fa56abf04930a667dce80fb7cbf1887bd28e15f19becfbf6d2b6f7335e49b820",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]

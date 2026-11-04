@@ -2,7 +2,7 @@
 
 INCOMPLETE: results below are a progress checkpoint, not a full-suite headline.
 
-Valid paired primary judgments: 856/1920. Both judges must be present for a case/model pair to enter the table.
+Valid paired primary judgments: 868/1920. Both judges must be present for a case/model pair to enter the table.
 
 | Split | Model / effort | Cases | Win − loss (pp) | 95% case-bootstrap interval |
 |---|---|---:|---:|---:|
@@ -16,11 +16,11 @@ Valid paired primary judgments: 856/1920. Both judges must be present for a case
 | development | astra-high | 17 | +0.0 | [-17.6, +17.6] |
 | development | sol-low | 16 | +31.2 | [+6.2, +56.2] |
 | development | luna-medium | 18 | -2.8 | [-44.4, +36.1] |
-| development | argon-high | 34 | +44.1 | [+19.1, +67.6] |
-| development | flash-high | 35 | +68.6 | [+48.6, +85.7] |
+| development | argon-high | 37 | +37.8 | [+13.5, +60.8] |
+| development | flash-high | 38 | +65.8 | [+47.4, +81.6] |
 | development | claude-all | 14 | +49.4 | [+29.2, +69.0] |
 | development | codex-all | 14 | +6.2 | [-14.3, +28.6] |
-| development | antigravity-all | 34 | +55.9 | [+39.0, +71.3] |
+| development | antigravity-all | 37 | +51.4 | [+35.1, +66.9] |
 | development | all | 13 | +30.4 | [+14.4, +46.5] |
 | holdout | haiku | 17 | +26.5 | [-14.7, +64.7] |
 | holdout | sonnet-low | 16 | +18.8 | [-18.8, +59.4] |
@@ -35,6 +35,6 @@ Valid paired primary judgments: 856/1920. Both judges must be present for a case
 | holdout | claude-all | 14 | +32.7 | [+11.9, +51.8] |
 | holdout | codex-all | 14 | -1.8 | [-25.9, +24.1] |
 
-Combined spend so far: 867/2400 attempts, 18,287,916 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 884/2400 attempts, 18,627,807 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.
