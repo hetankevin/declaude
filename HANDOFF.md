@@ -1,3 +1,9 @@
+## Antigravity native keychain fix
+
+The temporary HOME hid the default login keychain and caused native credential-storage dialogs during token refresh. Reproduced with metadata-only security commands: empty HOME fails; linking only Library/Keychains to the existing user directory succeeds. tools/antigravity_keychain.py supplies this link only to Antigravity temporary profiles. Personal rules, skills, hooks and memory remain excluded. No keychain was created/unlocked/exported, and access controls are unchanged.
+
+The extension coordinator was drained with SIGINT after pausing dispatch; all active calls finished and were retained. Resume the extension via antigravity_keychain.py run. Original Claude/Codex runner and continuation-aware publisher are unchanged. No extra model probes or newly authorized retries. Same caps and sealed holdouts.
+
 ## User-authorized continuation after transport outage
 
 The user said continue after the network stop. Resume adapter tools/resume_antigravity_eval.py is in the parent private repository. Frozen continuation-20261103.json preserves all completed output hashes and the four failed attempts. Two original judges, one extension judge, and one interrupted Flash draft get separate replacement directories. Prior unknown usage keeps300,000tokens reserved; Flash's63,214reported tokens also remain charged. Planned total2,276attempts, within unchanged2,400calls/75Mtokens/557Claude-writingcalls, with original1,450/45M and extension950/30M allocations. No successful outputs are regenerated. New failures still stop scheduling.

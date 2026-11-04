@@ -1,0 +1,9 @@
+{
+  "parent_continuation_sha256": "24f963d471577d9f9902d707d10dd2047de44936c56fee6c50508c65cd27f955",
+  "script_sha256": "a73b65eb72f4b6db2b78fc8b1ace26a1ee43e8c2f86e1a9430c23d6aa74006dc",
+  "change": "Link only the native login-keychain directory into each temporary HOME. All personal instruction, skill, hook, plugin and memory paths remain absent.",
+  "evidence": "With an empty HOME, security default-keychain fails: A default keychain could not be found. With only Library/Keychains linked, both default-keychain and show-keychain-info succeed.",
+  "budgets": "Unchanged; no extra model probes, output regeneration, or new retry authorization.",
+  "credential_policy": "Use the existing OS keychain. Do not create, unlock, export or delete keychains, inspect secret values, or change access-control policy.",
+  "sha256": "e29900b1295144b25c4f5433c2a0783008ca2c2dca64c739116a11a274ad879d"
+}
