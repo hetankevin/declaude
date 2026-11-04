@@ -10385,5 +10385,1772 @@
     "prompt_sha256": "a7a5f07119a4d6f17eb615c7cd601bf88c4041a22da5d055f612d6fa995a2954",
     "raw_sha256": "31f995dc3641e9ad8412f902c7db9986e883a1c23148c0ee02089a602969ba78",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a limited copyedit of a practical newsletter note, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves both measurement positions, probe depth, settling and recording instructions, month-long observation, steward inspection, bay instructions, and evidential caveat. Naming the probe and thermometer clarifies the intended actions without changing them.",
+          "quotes": {
+            "source": [
+              "wipe it before returning it to the hook."
+            ],
+            "A": [
+              "wipe the probe before returning the thermometer to the hook."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source, retaining all practical instructions, qualifications, and humor. The original pronouns remain reasonably understandable in context and do not create a material error.",
+          "quotes": {
+            "source": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "A": [],
+            "B": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete practical message and the limitation of a single pair of readings. A's explicit nouns do not change what the instructions reasonably mean.",
+          "quotes": {
+            "source": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A modestly improves immediate readability by naming what to wipe and what to return after a clause mentioning the display. B is idiomatic, but its repeated pronoun requires slightly more contextual resolution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "wait until the display settles, and wipe the probe before returning the thermometer to the hook."
+            ],
+            "B": [
+              "wait until the display settles, and wipe it before returning it to the hook."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the effective sequence from equipment use to measurement purpose and procedure, then interpretation and useful comments. Neither leaves a different explanatory gap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This month we are comparing the middle of the active heap with its outer edge."
+            ],
+            "B": [
+              "This month we are comparing the middle of the active heap with its outer edge."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the approved dry humor, paragraph pacing, and conversational instructions. A's localized clarification respects the narrow editing scope; B's restraint is also expressly permitted.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ],
+            "B": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A has a narrow advantage for this copyediting request: it makes the cleaning and return instructions explicit while preserving every other sentence, the humor, and the pacing. This is a concrete clarity improvement within the authorized scope.",
+          "quotes": {
+            "source": [
+              "Copyedit this already polished garden newsletter note only for genuine grammar or clarity problems."
+            ],
+            "A": [
+              "wipe the probe before returning the thermometer to the hook."
+            ],
+            "B": [
+              "wipe it before returning it to the hook."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "cecb1c5d159a4173735fe4e0bb68f8ba3feb383955c60aaa306ea29a0be7137e",
+    "prompt_sha256": "9ea5d4a0eb72fcc596975cf25c30572993d423d591d314160ce5b2010a7988ce",
+    "raw_sha256": "0aa6147ea1f067aec0d160ec9f2d224397550f3da20366c21655d16bba80b916",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a limited copyedit of a practical newsletter note, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source, preserving both marked positions, probe depth, waiting, wiping, return, unsettled-display reporting, month-long observation, steward inspection, bay instructions, and the single-pair caveat.",
+          "quotes": {
+            "source": [
+              "On your rota day, take one reading at each marked position and record both on the sheet."
+            ],
+            "A": [
+              "On your rota day, take one reading at each marked position and record both on the sheet."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source, preserving all measurement and handling instructions, the treatment of unsettled displays, the observation period, inspection and bay instructions, and the evidential qualification.",
+          "quotes": {
+            "source": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "A": [],
+            "B": [
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical and retain the source's facts, instructions, uncertainty, and limits on interpreting the readings.",
+          "quotes": {
+            "source": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "A warmer middle is interesting, but a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both offer the same readable, conversational prose, with practical instructions and humor integrated naturally.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "B": [
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the comparison before giving the procedure, then qualify its evidential value and explain why comments help. Their ordering and transitions are identical and appropriate to a notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The recording sheet has room for comments because weather, recently added material, and an uncooperative display may help explain a reading."
+            ],
+            "B": [
+              "The recording sheet has room for comments because weather, recently added material, and an uncooperative display may help explain a reading."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the author's deliberate humor and existing rhythm, honoring the explicit permission to leave effective writing unchanged.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ],
+            "B": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the user's priority of preserving an already polished note's practical content, humor, and pacing without gratuitous edits or editorial commentary.",
+          "quotes": {
+            "source": [
+              "If a sentence is already doing its job, it may remain unchanged."
+            ],
+            "A": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ],
+            "B": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2fdf9934af44ce080ebb10f7ae413ff746535ff5a01455471136d638711f2af5",
+    "prompt_sha256": "9ea5d4a0eb72fcc596975cf25c30572993d423d591d314160ce5b2010a7988ce",
+    "raw_sha256": "0aa6147ea1f067aec0d160ec9f2d224397550f3da20366c21655d16bba80b916",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-17",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a bounded copyedit of a garden newsletter notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source, preserving all measurement instructions, the unsettled-display procedure, the evidential caveat, and the bay-management instructions.",
+          "quotes": {
+            "source": [
+              "If the display never settles, write that down instead of choosing the number you like best.",
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best.",
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B likewise reproduces the source without changing or omitting any practical instruction or qualification.",
+          "quotes": {
+            "source": [
+              "On your rota day, take one reading at each marked position and record both on the sheet.",
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ],
+            "A": [],
+            "B": [
+              "On your rota day, take one reading at each marked position and record both on the sheet.",
+              "Until the notice changes, please keep adding suitable material to the active bay and leave the resting bay alone."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical and preserve the source's facts, instructions, and limitations, including the insufficiency of a single pair of readings.",
+          "quotes": {
+            "source": [
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same conversational, idiomatic instructions and unforced humor.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ],
+            "B": [
+              "You do not need to write a small novel. “Heavy rain this morning” is useful."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the returned tool to measurement instructions, interpretation and collection decisions, then useful comments.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This month we are comparing the middle of the active heap with its outer edge.",
+              "We are collecting observations over the month."
+            ],
+            "B": [
+              "This month we are comparing the middle of the active heap with its outer edge.",
+              "We are collecting observations over the month."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the explicit permission to leave effective sentences unchanged and preserve the approved pacing and humor tied to practical advice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ],
+            "B": [
+              "Please use the wooden dibbers for planting. They have fewer opinions about heat."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the decisive priority of preserving an already-effective notice without unnecessary rewriting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ],
+            "B": [
+              "“The heap has entered a troubled period” is less useful, though we appreciate the concern."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2fdf9934af44ce080ebb10f7ae413ff746535ff5a01455471136d638711f2af5",
+    "prompt_sha256": "ba278fb7f86047a0676b48943340fb61632e00c19597f132cf9d8ef8376b0b7b",
+    "raw_sha256": "058f80e4ad330d9de54aa2910def09fa104edeef30661a3bba12d973dfc59cf8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-17",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a bounded copyedit of a garden newsletter notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source, retaining both measurement positions, depth, settling and cleaning instructions, month-long observation, steward inspection, and the evidential and bay-management qualifications.",
+          "quotes": {
+            "source": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook.",
+              "We are collecting observations over the month."
+            ],
+            "A": [
+              "Push the probe to the mark on its shaft, wait until the display settles, and wipe it before returning it to the hook.",
+              "We are collecting observations over the month."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves every substantive instruction and qualification. Naming the probe as the part to wipe and the thermometer as the object to return clarifies the source's intended actions without changing them.",
+          "quotes": {
+            "source": [
+              "wipe it before returning it to the hook.",
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ],
+            "A": [],
+            "B": [
+              "wipe the probe before returning the thermometer to the hook.",
+              "If the display never settles, write that down instead of choosing the number you like best."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete practical meaning and evidential limits. B's explicit nouns clarify referents without adding a requirement or correcting a substantive error in A.",
+          "quotes": {
+            "source": [
+              "wipe it before returning it to the hook.",
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "A": [
+              "wipe it before returning it to the hook.",
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ],
+            "B": [
+              "wipe the probe before returning the thermometer to the hook.",
+              "a single pair of readings will not tell us whether the whole heap is ready to use."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both read naturally. B has a small advantage in the procedural sentence because explicit nouns make the transition from cleaning the probe to returning the instrument easier to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "wait until the display settles, and wipe it before returning it to the hook."
+            ],
+            "B": [
+              "wait until the display settles, and wipe the probe before returning the thermometer to the hook."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "The shared organization explains the comparison before giving instructions, then places the limits of those observations beside the collection decision. The local edit does not change that progression.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This month we are comparing the middle of the active heap with its outer edge.",
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ],
+            "B": [
+              "This month we are comparing the middle of the active heap with its outer edge.",
+              "The stewards will also inspect the material before deciding whether to open the bay for collection."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A preserves the original verbatim; B makes one restrained clarity edit while retaining the same sentence structure, paragraph pacing, and dry humor. Both fit the bounded request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the display never settles, write that down instead of choosing the number you like best.",
+              "They have fewer opinions about heat."
+            ],
+            "B": [
+              "If the display never settles, write that down instead of choosing the number you like best.",
+              "They have fewer opinions about heat."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B earns a narrow preference for a concrete clarification within the authorized scope: it identifies what gets wiped and what gets returned, while preserving every other word and the author's pacing. A remains fully usable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "wipe it before returning it to the hook."
+            ],
+            "B": [
+              "wipe the probe before returning the thermometer to the hook."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "loss",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4591fc8714963c57701a718f339946e08501055b843ad827f9d1dd40e06e6763",
+    "prompt_sha256": "ba278fb7f86047a0676b48943340fb61632e00c19597f132cf9d8ef8376b0b7b",
+    "raw_sha256": "058f80e4ad330d9de54aa2910def09fa104edeef30661a3bba12d973dfc59cf8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a terminology substitution in accessibility documentation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A updates all feature references, including the shortened reference, preserves physical uses of latch, and retains every behavioral claim and qualification.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "whose spring contacts latch when pressed."
+            ],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "whose spring contacts latch when pressed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B updates all feature references, including the shortened reference, preserves physical uses of latch, and retains every behavioral claim and qualification.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "whose spring contacts latch when pressed."
+            ],
+            "A": [],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "whose spring contacts latch when pressed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve pointer movement, closure, sentinel behavior, deliberate programmatic movement, return focus, fallback ownership, and the independent accessibility checks. Neither adds or omits a substantive claim.",
+          "quotes": {
+            "source": [
+              "The fallback is part of the application's behavior and is not chosen by focus latch itself."
+            ],
+            "A": [
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ],
+            "B": [
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical responses retain the source's idiomatic technical prose; the renamed feature fits naturally in each sentence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Focus lock keeps keyboard focus inside the current dialog until the dialog closes."
+            ],
+            "B": [
+              "Focus lock keeps keyboard focus inside the current dialog until the dialog closes."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the useful sequence from purpose and limits through implementation and testing to the hardware distinction and independent checks. No restructuring is needed for this bounded edit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ],
+            "B": [
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the task-specific preference for preserving effective prose: they retain the technical register, explanatory rhythm, and qualifications without unsolicited polishing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is a focus-management mechanism, not a security boundary."
+            ],
+            "B": [
+              "This is a focus-management mechanism, not a security boundary."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the decisive priority of making only the requested terminology update, including changing the shortened feature reference to 'the lock' while preserving physical latch terminology.",
+          "quotes": {
+            "source": [
+              "Otherwise return the text unchanged."
+            ],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "00cc839199bbe88ba986119d067e8787050537e8bc8d87383cc771d3531f04e2",
+    "prompt_sha256": "1bfc9cdf350009d07510624a532717144d72f10f7323e9459f19bd725bde6743",
+    "raw_sha256": "c45667940c8f39db92a012d8836219fc169d9022fd8c413b3d989819166ddd18",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a terminology substitution in accessibility documentation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A updates all feature references, including the shortened reference, preserves physical uses of latch, and retains every behavioral claim and qualification.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "whose spring contacts latch when pressed."
+            ],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "whose spring contacts latch when pressed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B updates all feature references, including the shortened reference, preserves physical uses of latch, and retains every behavioral claim and qualification.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "whose spring contacts latch when pressed."
+            ],
+            "A": [],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "whose spring contacts latch when pressed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve pointer movement, closure, sentinel behavior, deliberate programmatic movement, return focus, fallback ownership, and the independent accessibility checks. Neither adds or omits a substantive claim.",
+          "quotes": {
+            "source": [
+              "The fallback is part of the application's behavior and is not chosen by focus latch itself."
+            ],
+            "A": [
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ],
+            "B": [
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical responses retain the source's idiomatic technical prose; the renamed feature fits naturally in each sentence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Focus lock keeps keyboard focus inside the current dialog until the dialog closes."
+            ],
+            "B": [
+              "Focus lock keeps keyboard focus inside the current dialog until the dialog closes."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the useful sequence from purpose and limits through implementation and testing to the hardware distinction and independent checks. No restructuring is needed for this bounded edit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ],
+            "B": [
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the task-specific preference for preserving effective prose: they retain the technical register, explanatory rhythm, and qualifications without unsolicited polishing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is a focus-management mechanism, not a security boundary."
+            ],
+            "B": [
+              "This is a focus-management mechanism, not a security boundary."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the completed artifacts are identical. Both satisfy the decisive priority of making only the requested terminology update, including changing the shortened feature reference to 'the lock' while preserving physical latch terminology.",
+          "quotes": {
+            "source": [
+              "Otherwise return the text unchanged."
+            ],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "00cc839199bbe88ba986119d067e8787050537e8bc8d87383cc771d3531f04e2",
+    "prompt_sha256": "1bfc9cdf350009d07510624a532717144d72f10f7323e9459f19bd725bde6743",
+    "raw_sha256": "c45667940c8f39db92a012d8836219fc169d9022fd8c413b3d989819166ddd18",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-18",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a terminology substitution in documentation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A consistently renames the feature, including its shortened reference, while preserving physical uses of latch and all behavioral qualifications.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B consistently renames the feature, including its shortened reference, while preserving physical uses of latch and all behavioral qualifications.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ],
+            "A": [],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every behavioral claim and qualification, changing only the requested feature terminology. Neither alters the distinction between keyboard sequence and separately required accessibility checks.",
+          "quotes": {
+            "source": [
+              "Otherwise return the text unchanged.",
+              "It does not establish that labels, reading order, or announcements are correct; those require their own checks."
+            ],
+            "A": [
+              "Focus lock can help maintain a predictable keyboard sequence. It does not establish that labels, reading order, or announcements are correct; those require their own checks."
+            ],
+            "B": [
+              "Focus lock can help maintain a predictable keyboard sequence. It does not establish that labels, reading order, or announcements are correct; those require their own checks."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical responses retain the source's readable technical prose and established terminology without unnecessary polishing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When focus reaches a sentinel, the handler moves it to the appropriate control at the opposite end."
+            ],
+            "B": [
+              "When focus reaches a sentinel, the handler moves it to the appropriate control at the opposite end."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the effective sequence from feature purpose through implementation, testing, the hardware distinction, and accessibility limitations. The narrow task requires no reorganization.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is useful when controls behind the dialog remain visible but should not receive keyboard input.",
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ],
+            "B": [
+              "It is useful when controls behind the dialog remain visible but should not receive keyboard input.",
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the author's bounded editing request, preserving explanatory rhythm, technical register, and useful qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is a focus-management mechanism, not a security boundary.",
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ],
+            "B": [
+              "This is a focus-management mechanism, not a security boundary.",
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither response has a material error. The artifacts are identical and both satisfy the decisive priority: make the terminology update consistently while otherwise preserving the documentation, including ordinary physical uses of latch.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "00cc839199bbe88ba986119d067e8787050537e8bc8d87383cc771d3531f04e2",
+    "prompt_sha256": "1bfc9cdf350009d07510624a532717144d72f10f7323e9459f19bd725bde6743",
+    "raw_sha256": "ac727468eed1f57a1037423e8707fc7e927fed0cd942f4b2e9707e80e1f0ad71",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-18",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a terminology substitution in documentation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A consistently renames the feature, including its shortened reference, while preserving physical uses of latch and all behavioral qualifications.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B consistently renames the feature, including its shortened reference, while preserving physical uses of latch and all behavioral qualifications.",
+          "quotes": {
+            "source": [
+              "rather than assume the latch prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ],
+            "A": [],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "a switch whose spring contacts latch when pressed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every behavioral claim and qualification, changing only the requested feature terminology. Neither alters the distinction between keyboard sequence and separately required accessibility checks.",
+          "quotes": {
+            "source": [
+              "Otherwise return the text unchanged.",
+              "It does not establish that labels, reading order, or announcements are correct; those require their own checks."
+            ],
+            "A": [
+              "Focus lock can help maintain a predictable keyboard sequence. It does not establish that labels, reading order, or announcements are correct; those require their own checks."
+            ],
+            "B": [
+              "Focus lock can help maintain a predictable keyboard sequence. It does not establish that labels, reading order, or announcements are correct; those require their own checks."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical responses retain the source's readable technical prose and established terminology without unnecessary polishing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When focus reaches a sentinel, the handler moves it to the appropriate control at the opposite end."
+            ],
+            "B": [
+              "When focus reaches a sentinel, the handler moves it to the appropriate control at the opposite end."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the effective sequence from feature purpose through implementation, testing, the hardware distinction, and accessibility limitations. The narrow task requires no reorganization.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "It is useful when controls behind the dialog remain visible but should not receive keyboard input.",
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ],
+            "B": [
+              "It is useful when controls behind the dialog remain visible but should not receive keyboard input.",
+              "To test focus lock, open the dialog, traverse its controls in both directions, and close it while focus is on the last control."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the author's bounded editing request, preserving explanatory rhythm, technical register, and useful qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This is a focus-management mechanism, not a security boundary.",
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ],
+            "B": [
+              "This is a focus-management mechanism, not a security boundary.",
+              "The fallback is part of the application's behavior and is not chosen by focus lock itself."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither response has a material error. The artifacts are identical and both satisfy the decisive priority: make the terminology update consistently while otherwise preserving the documentation, including ordinary physical uses of latch.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ],
+            "B": [
+              "rather than assume the lock prevents them.",
+              "That use of latch refers to the physical mechanism."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "00cc839199bbe88ba986119d067e8787050537e8bc8d87383cc771d3531f04e2",
+    "prompt_sha256": "1bfc9cdf350009d07510624a532717144d72f10f7323e9459f19bd725bde6743",
+    "raw_sha256": "ac727468eed1f57a1037423e8707fc7e927fed0cd942f4b2e9707e80e1f0ad71",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits a laboratory report; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the duration, tolerance relative to the initial display, accuracy limitation, single placement, temperature uncertainties, moisture limitation, and separate calibration requirement. The removed sentences repeat retained points.",
+          "quotes": {
+            "source": [
+              "A stable reading from one placement and repeatability across placements are different properties."
+            ],
+            "A": [
+              "the check says nothing about repeatability after unloading and reloading."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the numerical conditions and methodological limitations. Removing the explicit mechanism contrast makes that boundary less explicit, but the retained descriptive purpose and moisture limitation do not reasonably assert a mechanism or support a material-error finding.",
+          "quotes": {
+            "source": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ],
+            "A": [],
+            "B": [
+              "That observation does not measure moisture exchange, because the check included neither a humidity measurement nor an independent mass reference.",
+              "We report it to describe what the operator saw."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the measured results and experimental limits. A more fully respects the requested scope by retaining the explicit distinction between describing condensation and explaining display stability; B leaves that distinction implicit.",
+          "quotes": {
+            "source": [
+              "Retain all distinct limitations, the author's restrained tone, and legitimate technical contrasts."
+            ],
+            "A": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ],
+            "B": [
+              "We report it to describe what the operator saw."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain readable, restrained technical prose. The different endings of the condensation paragraph are each idiomatic; brevity alone does not favor B.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ],
+            "B": [
+              "We report it to describe what the operator saw."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from observed stability through the limits of the check to the permissible maintenance-log conclusion. Their shared removal of the repeated placement distinction leaves its explanation intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This avoids variability from replacing the container, but it also means that the check says nothing about repeatability after unloading and reloading."
+            ],
+            "B": [
+              "This avoids variability from replacing the container, but it also means that the check says nothing about repeatability after unloading and reloading."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better follows the author's preference for preserving useful technical contrasts while removing repetition. B's additional shortening removes an explicit explanatory boundary from an otherwise effective sentence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "not to establish a mechanism for the stable display."
+            ],
+            "B": [
+              "We report it to describe what the operator saw."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is present in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error. A is the better fit for this narrowly bounded edit: it removes repeated points while retaining the explicit observation-versus-mechanism contrast. B remains scientifically restrained, but its extra deletion is less clearly justified as removing repetition.",
+          "quotes": {
+            "source": [
+              "making changes only where a qualification repeats the same scientific point."
+            ],
+            "A": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ],
+            "B": [
+              "We report it to describe what the operator saw."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "251fb330c1de4f5d260a6819cb2f0eb3b1ac1b85ed072242581c01d64ccb1888",
+    "prompt_sha256": "6ad4aebcf8024cf5ff897161c7f6f7d85912d62d0c6a54384986dbcbc4218b68",
+    "raw_sha256": "ee2c5b70032475c3a249064d4ac3aa1e1f9c220bf42a24f5957f169cd182e3fd",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing experimental observations and qualifications, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves all numerical conditions and distinct limits on accuracy, repeatability, temperature interpretation, moisture exchange, mechanism, and calibration. Consolidating the placement distinction and deleting the final repeated disclaimer changes no scientific conclusion.",
+          "quotes": {
+            "source": [
+              "A stable reading from one placement and repeatability across placements are different properties. The maintenance record should preserve that distinction."
+            ],
+            "A": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The revised passage preserves the source's conditions and limitations, removing only the repeated final calibration disclaimer. The added editorial summary does not materially change the report's claims.",
+          "quotes": {
+            "source": [
+              "A calibration decision would require the separate reference-mass procedure. Nothing in this check replaces that procedure."
+            ],
+            "A": [],
+            "B": [
+              "A calibration decision would require the separate reference-mass procedure."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete scientific scope. A consolidates the repeated placement distinction; B retains its original formulation. Both retain the separate calibration requirement after deleting its repetition.",
+          "quotes": {
+            "source": [
+              "A stable reading from one placement and repeatability across placements are different properties."
+            ],
+            "A": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ],
+            "B": [
+              "A stable reading from one placement and repeatability across placements are different properties. The maintenance record should preserve that distinction."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both passages use clear, measured technical prose. A's consolidation and B's separate explanatory sentence are both natural; neither sentence structure is inherently preferable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ],
+            "B": [
+              "A stable reading from one placement and repeatability across placements are different properties. The maintenance record should preserve that distinction."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the effective sequence from observations to methodological limits and the narrow maintenance conclusion. B's separate summary adds commentary after the passage but does not impair its internal reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These results support a narrow entry in the maintenance log: no displayed drift beyond the stated tolerance during this placement and observation period."
+            ],
+            "B": [
+              "These results support a narrow entry in the maintenance log: no displayed drift beyond the stated tolerance during this placement and observation period."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A delivers the requested passage directly and consolidates a repeated distinction without losing explanation. B's report retains the restrained voice, but its added headings and change summary make the completed artifact less closely fitted to the requested passage.",
+          "quotes": {
+            "source": [
+              "They want fidelity to the requested contribution and artifact form."
+            ],
+            "A": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ],
+            "B": [
+              "### Revised Passage",
+              "### Summary of Changes"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both preserve the useful cautions. A has a modest advantage for this user's bounded request: it consolidates the repeated placement distinction while retaining its content and returns a directly usable passage. B also succeeds scientifically, but retains that repetition and adds an unrequested editing summary.",
+          "quotes": {
+            "source": [
+              "Return a revised passage even if you judge that little or nothing should change."
+            ],
+            "A": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ],
+            "B": [
+              "A stable reading from one placement and repeatability across placements are different properties. The maintenance record should preserve that distinction.",
+              "### Summary of Changes"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "42b299a0e429353ed53ab2043b28064600c10d074dd4ec0fe9f6fd1e2a0a4e68",
+    "prompt_sha256": "6ad4aebcf8024cf5ff897161c7f6f7d85912d62d0c6a54384986dbcbc4218b68",
+    "raw_sha256": "ee2c5b70032475c3a249064d4ac3aa1e1f9c220bf42a24f5957f169cd182e3fd",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing a laboratory report, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the numerical tolerance, observation period, placement conditions, environmental uncertainties, and calibration requirement. Removing the final repeated disclaimer changes no scientific conclusion.",
+          "quotes": {
+            "source": [
+              "A calibration decision would require the separate reference-mass procedure. Nothing in this check replaces that procedure."
+            ],
+            "A": [
+              "A calibration decision would require the separate reference-mass procedure."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves every distinct scientific limitation. Its consolidation explicitly retains the difference between stability during one placement and repeatability across placements.",
+          "quotes": {
+            "source": [
+              "A stable reading from one placement and repeatability across placements are different properties."
+            ],
+            "A": [],
+            "B": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's facts, qualifications, and narrow conclusion. B's consolidated placement discussion communicates the same distinction as A's separate sentences.",
+          "quotes": {
+            "source": [
+              "A stable reading from one placement and repeatability across placements are different properties."
+            ],
+            "A": [
+              "A stable reading from one placement and repeatability across placements are different properties."
+            ],
+            "B": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both passages use idiomatic, measured technical prose. The separate explanation in A and the consolidated sentence in B are both readily understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A stable reading from one placement and repeatability across placements are different properties. The maintenance record should preserve that distinction."
+            ],
+            "B": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both proceed coherently from the meaning of stability through placement and environmental limits to the permitted maintenance-log conclusion. Neither loses an explanatory transition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These results support a narrow entry in the maintenance log: no displayed drift beyond the stated tolerance during this placement and observation period."
+            ],
+            "B": [
+              "These results support a narrow entry in the maintenance log: no displayed drift beyond the stated tolerance during this placement and observation period."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the restrained report voice while consolidating a genuinely repeated distinction. A's passage also fits, but its extended editorial summary adds commentary beyond the requested revised passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Summary of Changes",
+              "Each qualification either draws a legitimate technical contrast"
+            ],
+            "B": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B has a modest advantage for the user's bounded editing goal: it consolidates the repeated placement distinction without losing explanation and delivers the passage directly. A's substantive edit is sound, but its lengthy change commentary adds little to the requested artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Summary of Changes",
+              "A stable reading from one placement and repeatability across placements are different properties."
+            ],
+            "B": [
+              "The maintenance record should preserve the distinction between a stable reading from one placement and repeatability across placements."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c0ec77138fdb3f2a0cfb7d09d8b864e7c906cc1ec1d1a7bb429f78aafa7c7bdb",
+    "prompt_sha256": "84966ae8bc3643998400e8a6599ace2701fb397bff4a28bea3d2c7b4de48917a",
+    "raw_sha256": "8a7b556232fefe6866c887fea7a5059a0a102acb62a47925b939305ee0653f3f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-a-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing a laboratory report, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the numerical, procedural, and environmental limitations. Although it removes the explicit mechanism contrast, its remaining moisture-evidence limitation and descriptive framing do not assert a mechanism or materially broaden the conclusion.",
+          "quotes": {
+            "source": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ],
+            "A": [
+              "That observation does not measure moisture exchange, because the check included neither a humidity measurement nor an independent mass reference.",
+              "We report it to describe what the operator saw."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all distinct scientific limitations and the required calibration procedure. The removed placement explanation and final disclaimer are already expressed by adjacent sentences.",
+          "quotes": {
+            "source": [
+              "This avoids variability from replacing the container, but it also means that the check says nothing about repeatability after unloading and reloading.",
+              "A calibration decision would require the separate reference-mass procedure."
+            ],
+            "A": [],
+            "B": [
+              "This avoids variability from replacing the container, but it also means that the check says nothing about repeatability after unloading and reloading.",
+              "A calibration decision would require the separate reference-mass procedure."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the scientific claims and limits. B more fully respects the requested scope by retaining the explicit observation-versus-mechanism contrast; A leaves that boundary implicit in its descriptive framing.",
+          "quotes": {
+            "source": [
+              "Retain all distinct limitations, the author's restrained tone, and legitimate technical contrasts.",
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ],
+            "A": [
+              "We report it to describe what the operator saw."
+            ],
+            "B": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read naturally as restrained laboratory reporting. A's shorter sentence and B's explicit contrast are equally idiomatic; brevity alone does not favor A.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We report it to describe what the operator saw."
+            ],
+            "B": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the same coherent progression from observed stability through methodological limits to the maintenance-log conclusion. A's deletion reduces explicit explanation locally without disrupting the overall sequence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These results support a narrow entry in the maintenance log: no displayed drift beyond the stated tolerance during this placement and observation period."
+            ],
+            "B": [
+              "These results support a narrow entry in the maintenance log: no displayed drift beyond the stated tolerance during this placement and observation period."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "The user distinguishes removing repetition from compressing useful explanation. B preserves the author's purposeful contrast between reporting an observation and explaining the stable display; A trims that explanation despite its distinct role.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That observation does not measure moisture exchange, because the check included neither a humidity measurement nor an independent mass reference.",
+              "We report it to describe what the operator saw."
+            ],
+            "B": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material scientific error. B better meets the decisive instruction to retain useful technical contrasts: the mechanism clause explains why the condensation observation belongs in the report while limiting its explanatory role. A remains scientifically restrained, but removes more explanation than the narrowly authorized edit warrants.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We report it to describe what the operator saw."
+            ],
+            "B": [
+              "We report it to describe what the operator saw, not to establish a mechanism for the stable display."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "loss",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b5fbc678a4a895ca98c45025c7e521b6a889bf62b910195dc2b20725b77fb7f",
+    "prompt_sha256": "84966ae8bc3643998400e8a6599ace2701fb397bff4a28bea3d2c7b4de48917a",
+    "raw_sha256": "8a7b556232fefe6866c887fea7a5059a0a102acb62a47925b939305ee0653f3f",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
