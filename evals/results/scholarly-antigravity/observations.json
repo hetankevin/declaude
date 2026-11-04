@@ -51238,5 +51238,1198 @@
     "prompt_sha256": "eb1f5e749258270aadc486c136eb41656bd496cebd87b9ab524792dd2e42afbc",
     "raw_sha256": "9cdc1288e5d1ee7b9424a6091d62bbb514ae0fcdd717ee8cd0f35a4e5ad7f005",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a limited time update to a volunteer notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A changes both opening times to 10:00 and preserves all other wording, schedules, instructions, qualifications, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B changes both opening times to 10:00 and preserves all other wording, schedules, instructions, qualifications, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both exactly implement the requested changes. Neither shifts other activities nor turns assessment into a repair guarantee; all practical arrangements remain intact.",
+          "quotes": {
+            "source": [
+              "Update both references to public opening and keep every other arrangement, wording choice, and joke as written.",
+              "That is not a promise that every item will be repaired on the day."
+            ],
+            "A": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ],
+            "B": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable, conversational notice, including direct instructions with useful explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ],
+            "B": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the effective practical grouping: arrival, assessment limits, tea arrangements, and opening through closing duties. Neither introduces unnecessary restructuring.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Packing away is part of the shift, which ends at 12:20. If you need to leave earlier, tell the coordinator before Friday evening so we can assign the final checks to someone else."
+            ],
+            "B": [
+              "Packing away is part of the shift, which ends at 12:20. If you need to leave earlier, tell the coordinator before Friday evening so we can assign the final checks to someone else."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the tightly bounded editing scope and preserve the author's deliberate humor verbatim.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ],
+            "B": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The artifacts are identical and fully satisfy the decisive priority: update both opening times while preserving the complete notice's other wording and arrangements.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ce5919463726e1b0e578c5c1912dd433bf965937536b329579449c8ce6c52144",
+    "prompt_sha256": "429304b83bccf5c71e27a61c649588df2c25b987d256eb975a9e3dacd01fa5b1",
+    "raw_sha256": "fb3ddc99b5a8a47f66718833ffa141c864e4ecc93e46801ddc563511be023ac8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a limited time update to a volunteer notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A changes both opening times to 10:00 and preserves all other wording, schedules, instructions, qualifications, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B changes both opening times to 10:00 and preserves all other wording, schedules, instructions, qualifications, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both exactly implement the requested changes. Neither shifts other activities nor turns assessment into a repair guarantee; all practical arrangements remain intact.",
+          "quotes": {
+            "source": [
+              "Update both references to public opening and keep every other arrangement, wording choice, and joke as written.",
+              "That is not a promise that every item will be repaired on the day."
+            ],
+            "A": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ],
+            "B": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both retain the same readable, conversational notice, including direct instructions with useful explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ],
+            "B": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the effective practical grouping: arrival, assessment limits, tea arrangements, and opening through closing duties. Neither introduces unnecessary restructuring.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Packing away is part of the shift, which ends at 12:20. If you need to leave earlier, tell the coordinator before Friday evening so we can assign the final checks to someone else."
+            ],
+            "B": [
+              "Packing away is part of the shift, which ends at 12:20. If you need to leave earlier, tell the coordinator before Friday evening so we can assign the final checks to someone else."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the tightly bounded editing scope and preserve the author's deliberate humor verbatim.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ],
+            "B": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The artifacts are identical and fully satisfy the decisive priority: update both opening times while preserving the complete notice's other wording and arrangements.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ce5919463726e1b0e578c5c1912dd433bf965937536b329579449c8ce6c52144",
+    "prompt_sha256": "429304b83bccf5c71e27a61c649588df2c25b987d256eb975a9e3dacd01fa5b1",
+    "raw_sha256": "fb3ddc99b5a8a47f66718833ffa141c864e4ecc93e46801ddc563511be023ac8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a limited schedule update to a volunteer notice and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A changes both public-opening times to 10:00 and otherwise preserves the source, including all remaining times, entrance and assessment rules, repair limitations, tea arrangements, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B changes both public-opening times to 10:00 and otherwise preserves the source, including all remaining times, entrance and assessment rules, repair limitations, tea arrangements, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both make exactly the two required time substitutions. Neither shifts other activities nor introduces a guarantee of repair; all source qualifications remain intact.",
+          "quotes": {
+            "source": [
+              "Update both references to public opening and keep every other arrangement, wording choice, and joke as written.",
+              "That is not a promise that every item will be repaired on the day."
+            ],
+            "A": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ],
+            "B": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical notices retain the source's readable, conversational instructions and understated humor.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ],
+            "B": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the practical sequence from arrival and access through assessments and refreshments to opening and closing duties. Reasons remain beside the instructions they explain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the side entrance before public opening so the queue at the front stays out of the trolley route."
+            ],
+            "B": [
+              "Please use the side entrance before public opening so the queue at the front stays out of the trolley route."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the bounded edit and preserve the established voice, including both deliberate jokes, without unnecessary polishing or restructuring.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ],
+            "B": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is making only the requested opening-time changes while returning the full notice; both identical artifacts satisfy it completely.",
+          "quotes": {
+            "source": [
+              "Make one limited update to this volunteer notice: public opening has moved from 09:30 to 10:00."
+            ],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ce5919463726e1b0e578c5c1912dd433bf965937536b329579449c8ce6c52144",
+    "prompt_sha256": "429304b83bccf5c71e27a61c649588df2c25b987d256eb975a9e3dacd01fa5b1",
+    "raw_sha256": "dc5dd36f71402171415d3e96e2decc23c9b04c8c282ae58ecbbc300fd57e362b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a limited schedule update to a volunteer notice and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A changes both public-opening times to 10:00 and otherwise preserves the source, including all remaining times, entrance and assessment rules, repair limitations, tea arrangements, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B changes both public-opening times to 10:00 and otherwise preserves the source, including all remaining times, entrance and assessment rules, repair limitations, tea arrangements, and jokes.",
+          "quotes": {
+            "source": [
+              "The repair room opens to the public at 09:30 this Saturday.",
+              "At 09:30, the welcome team should open the front doors and begin taking names."
+            ],
+            "A": [],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both make exactly the two required time substitutions. Neither shifts other activities nor introduces a guarantee of repair; all source qualifications remain intact.",
+          "quotes": {
+            "source": [
+              "Update both references to public opening and keep every other arrangement, wording choice, and joke as written.",
+              "That is not a promise that every item will be repaired on the day."
+            ],
+            "A": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ],
+            "B": [
+              "That is not a promise that every item will be repaired on the day.",
+              "We stop accepting new items at 11:30 and finish repairs at noon."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical notices retain the source's readable, conversational instructions and understated humor.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ],
+            "B": [
+              "Keep it there, even if a clear corner of a repair table looks inviting."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the practical sequence from arrival and access through assessments and refreshments to opening and closing duties. Reasons remain beside the instructions they explain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please use the side entrance before public opening so the queue at the front stays out of the trolley route."
+            ],
+            "B": [
+              "Please use the side entrance before public opening so the queue at the front stays out of the trolley route."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both honor the bounded edit and preserve the established voice, including both deliberate jokes, without unnecessary polishing or restructuring.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ],
+            "B": [
+              "The welcome team can explain this without apologizing for the entire history of broken household objects.",
+              "Drinks and open equipment have different ambitions, and we would like them to pursue those ambitions separately."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is making only the requested opening-time changes while returning the full notice; both identical artifacts satisfy it completely.",
+          "quotes": {
+            "source": [
+              "Make one limited update to this volunteer notice: public opening has moved from 09:30 to 10:00."
+            ],
+            "A": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ],
+            "B": [
+              "The repair room opens to the public at 10:00 this Saturday.",
+              "At 10:00, the welcome team should open the front doors and begin taking names."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ce5919463726e1b0e578c5c1912dd433bf965937536b329579449c8ce6c52144",
+    "prompt_sha256": "429304b83bccf5c71e27a61c649588df2c25b987d256eb975a9e3dacd01fa5b1",
+    "raw_sha256": "dc5dd36f71402171415d3e96e2decc23c9b04c8c282ae58ecbbc300fd57e362b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task reviews explanatory prose about a pilot study and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the eight-pupil design, six/two split, separate limitations, completed relocation, untested revision, and planned comprehension check. Its introductory assessment adds no conflicting claim.",
+          "quotes": {
+            "source": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ],
+            "A": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the design, counts, rereading prompt, distinct limitations, completed relocation, untested status, and planned comprehension check. Removing the closing paragraph weakens the explicit positive synthesis but does not materially change the supported inferences: the remaining text still identifies a reason to revise without establishing prevalence or improvement.",
+          "quotes": {
+            "source": [
+              "This is a revision prompted by the pilot, not a tested improvement.",
+              "It exposed a plausible misunderstanding while there was still time to change the task."
+            ],
+            "A": [],
+            "B": [
+              "This is a revision prompted by the pilot, not a tested improvement.",
+              "That finding gives us a reason to revise the placement of the second step."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive findings and qualifications, including the distinction between understanding instructions and answer quality. A retains the explicit concluding interpretation; B leaves that interpretation implicit without making a stronger claim.",
+          "quotes": {
+            "source": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ],
+            "A": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ],
+            "B": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both passages are idiomatic and readable. A's short statements followed by an explanation and B's integrated causal clauses are equally natural ways to present the limitations. A's prefatory review adds some overhead but is appropriate to the requested review.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both limits matter: the group is small, and the situation changes how pupils attend to the text."
+            ],
+            "B": [
+              "Because the group is small, it does not tell us how often the problem would occur in a full class."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the observations through their limits and the revision plan to what the pilot usefully accomplished. B retains a coherent sequence but ends on the boundary concerning scores, losing the closing explanation of how the limited evidence still serves the project's purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For now, the pilot has done a useful, modest job. It exposed a plausible misunderstanding while there was still time to change the task."
+            ],
+            "B": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the approved passage's conversational, modestly positive ending and its purposeful reinforcement of the conclusion. B remains professional and conversational, but deleting that ending compresses useful explanation without a clear readability benefit under this narrowly bounded editing request.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ],
+            "B": [
+              "This is a revision prompted by the pilot, not a tested improvement."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error. A better satisfies the decisive priority of preserving already-effective prose and useful explanation: its closing paragraph explains the pilot's modest value while bringing the two central caveats together. B preserves those caveats elsewhere, but its deletion sacrifices that purposeful synthesis. A's added review commentary is a small cost relative to retaining the complete explanation.",
+          "quotes": {
+            "source": [
+              "Edit only if a change would improve meaning or readability.",
+              "Preserve real caveats and the conversational professional voice; an unchanged passage is acceptable."
+            ],
+            "A": [
+              "For now, the pilot has done a useful, modest job.",
+              "It exposed a plausible misunderstanding while there was still time to change the task."
+            ],
+            "B": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4bb3022610d772d128d58b8da37285b3256fefbbefc49144a7f3365a1f67e991",
+    "prompt_sha256": "0ef58891f3ca3316666994161ea82e7407a568ab0aba915098e23cb561cb43e5",
+    "raw_sha256": "e1fb42025ff32b03b34eda4fc2d1df2141aca63f71ca4e7e9b2e4b347bb38303",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task reviews explanatory prose about a pilot study and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the source unchanged, including the eight-pupil read-aloud design, six/two split, rereading prompt, distinct limitations, completed relocation, untested status, and planned comprehension check.",
+          "quotes": {
+            "source": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ],
+            "A": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the source unchanged, including the design and findings, separate sample and setting limitations, revision status, and distinction between comprehension and answer quality. It adds no unsupported inference.",
+          "quotes": {
+            "source": [
+              "This is a revision prompted by the pilot, not a tested improvement.",
+              "We will check the new version with another small group before using it in the planned comparison."
+            ],
+            "A": [],
+            "B": [
+              "This is a revision prompted by the pilot, not a tested improvement.",
+              "We will check the new version with another small group before using it in the planned comparison."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical and faithfully retain all findings, qualifications, and conclusions, including the distinction between a plausible misunderstanding and a prevalence estimate.",
+          "quotes": {
+            "source": [
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ],
+            "A": [
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ],
+            "B": [
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use the same readable, conversational technical prose, with concrete descriptions of what changed and appropriately restrained claims.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have moved the second step into its own sentence beside the response box."
+            ],
+            "B": [
+              "We have moved the second step into its own sentence beside the response box."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the pilot's purpose before the observations, explain the distinct limitations, describe the revision and next check, and close by articulating the limited but useful contribution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We asked whether pupils would interpret the new instructions as intended before using the task to compare their answers.",
+              "It exposed a plausible misunderstanding while there was still time to change the task."
+            ],
+            "B": [
+              "We asked whether pupils would interpret the new instructions as intended before using the task to compare their answers.",
+              "It exposed a plausible misunderstanding while there was still time to change the task."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the established conversational professional voice and modest positive conclusion. Neither mistakes useful reinforcement for accidental repetition or changes effective prose merely to demonstrate editing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For now, the pilot has done a useful, modest job."
+            ],
+            "B": [
+              "For now, the pilot has done a useful, modest job."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither response has a material error, and the completed artifacts are identical. Both meet the user's bounded review request by preserving an already-effective explanation, including the distinct caveats and the closing account of the pilot's modest value.",
+          "quotes": {
+            "source": [
+              "Preserve real caveats and the conversational professional voice; an unchanged passage is acceptable."
+            ],
+            "A": [
+              "Both limits matter: the group is small, and the situation changes how pupils attend to the text.",
+              "For now, the pilot has done a useful, modest job."
+            ],
+            "B": [
+              "Both limits matter: the group is small, and the situation changes how pupils attend to the text.",
+              "For now, the pilot has done a useful, modest job."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f0bb2795266e7d3ea9ec4740b4b896fe3ea1b94290222be856cd45ad45906e36",
+    "prompt_sha256": "0ef58891f3ca3316666994161ea82e7407a568ab0aba915098e23cb561cb43e5",
+    "raw_sha256": "e1fb42025ff32b03b34eda4fc2d1df2141aca63f71ca4e7e9b2e4b347bb38303",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task reviews prose about a pilot study; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source unchanged, preserving the eight-pupil design, six/two findings, separate limitations, completed relocation, untested revision, planned check, and limited conclusion.",
+          "quotes": {
+            "source": [
+              "This is a revision prompted by the pilot, not a tested improvement."
+            ],
+            "A": [
+              "This is a revision prompted by the pilot, not a tested improvement."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source unchanged, preserving the observations, qualifications, revision status, future check, and distinction between comprehension and answer quality.",
+          "quotes": {
+            "source": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ],
+            "A": [],
+            "B": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every source claim and qualification verbatim.",
+          "quotes": {
+            "source": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ],
+            "A": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ],
+            "B": [
+              "Six described both required steps. Two described the first step and noticed the second only when asked to read the final sentence again."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "The identical passages use clear, conversational professional prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For now, the pilot has done a useful, modest job."
+            ],
+            "B": [
+              "For now, the pilot has done a useful, modest job."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the pilot's purpose and findings through limitations and revision to a bounded account of its usefulness.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That finding gives us a reason to revise the placement of the second step."
+            ],
+            "B": [
+              "That finding gives us a reason to revise the placement of the second step."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the approved voice and retain purposeful reinforcement of the limitations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both limits matter: the group is small, and the situation changes how pupils attend to the text."
+            ],
+            "B": [
+              "Both limits matter: the group is small, and the situation changes how pupils attend to the text."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error, and the artifacts are identical. Both satisfy the user's priority of preserving already-effective writing and meaningful caveats.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ],
+            "B": [
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f0bb2795266e7d3ea9ec4740b4b896fe3ea1b94290222be856cd45ad45906e36",
+    "prompt_sha256": "69243b58375625a5a3653a3ba918547ad698e8a07397e90159f91fe679501366",
+    "raw_sha256": "a6a15aaec789659f23f8044ba61fb1e1d191fad60a751b45d010d4770da8c139",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task reviews an explanation of pilot findings and limitations, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the eight-pupil read-aloud design, six/two findings, separate sample and setting limitations, completed relocation, untested status, and planned comprehension check. Removing the closing synthesis weakens emphasis but does not materially change the supported inferences.",
+          "quotes": {
+            "source": [
+              "Both limits matter: the group is small, and the situation changes how pupils attend to the text."
+            ],
+            "A": [
+              "Because the group is small, it does not tell us how often the problem would occur in a full class.",
+              "Reading aloud and discussing the instructions with an adult are also different from encountering them during an ordinary lesson, because the situation changes how pupils attend to the text."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the entire source. Its review preface accurately describes the separate limitations and the closing qualifications without adding substantive claims about the pilot.",
+          "quotes": {
+            "source": [
+              "This is a revision prompted by the pilot, not a tested improvement."
+            ],
+            "A": [],
+            "B": [
+              "This is a revision prompted by the pilot, not a tested improvement."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive findings, limitations, and next steps. B keeps the explicit closing interpretation; A leaves that interpretation supported by the preceding account without introducing an unsupported claim.",
+          "quotes": {
+            "source": [
+              "We will check the new version with another small group before using it in the planned comparison."
+            ],
+            "A": [
+              "We will check the new version with another small group before using it in the planned comparison."
+            ],
+            "B": [
+              "We will check the new version with another small group before using it in the planned comparison."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A's integrated explanations read naturally. B's review preface is more analytical, but its retained passage remains equally idiomatic and readable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the group is small, it does not tell us how often the problem would occur in a full class."
+            ],
+            "B": [
+              "It does not tell us how often the problem would occur in a full class."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A follows a coherent sequence but ends with the distinction about scoring. B retains the useful final step: explaining what the pilot accomplished after establishing what it cannot establish.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ],
+            "B": [
+              "For now, the pilot has done a useful, modest job. It exposed a plausible misunderstanding while there was still time to change the task."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better honors the narrow editing scope and the author's modestly positive voice by preserving the effective closing paragraph. A's cuts remove purposeful reinforcement and the passage's concluding acknowledgment of value.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ],
+            "B": [
+              "For now, the pilot has done a useful, modest job.",
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither contains a material error. B better serves the decisive priority of preserving effective explanation: its closing paragraph states the pilot's useful contribution while reinforcing the two distinct limits. A's shorter ending offers no clear readability gain that compensates for losing that synthesis.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The check will concern pupils' understanding of the instructions, not whether their answers deserve higher scores."
+            ],
+            "B": [
+              "It exposed a plausible misunderstanding while there was still time to change the task.",
+              "We can value that result without treating eight conversations as a prevalence estimate, and we can describe the revision without claiming to know that it has solved the problem."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "bb4c31d61e00d279855f45b7871c186d41f6879554ed41201d71747860c4e398",
+    "prompt_sha256": "69243b58375625a5a3653a3ba918547ad698e8a07397e90159f91fe679501366",
+    "raw_sha256": "a6a15aaec789659f23f8044ba61fb1e1d191fad60a751b45d010d4770da8c139",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]

@@ -2,7 +2,7 @@
 
 INCOMPLETE: results below are a progress checkpoint, not a full-suite headline.
 
-Valid paired primary judgments: 1022/1920. Both judges must be present for a case/model pair to enter the table.
+Valid paired primary judgments: 1030/1920. Both judges must be present for a case/model pair to enter the table.
 
 | Split | Model / effort | Cases | Win − loss (pp) | 95% case-bootstrap interval |
 |---|---|---:|---:|---:|
@@ -32,13 +32,13 @@ Valid paired primary judgments: 1022/1920. Both judges must be present for a cas
 | holdout | astra-high | 17 | +20.6 | [-11.8, +50.0] |
 | holdout | sol-low | 18 | +8.3 | [-19.4, +38.9] |
 | holdout | luna-medium | 17 | -11.8 | [-41.2, +17.6] |
-| holdout | argon-high | 37 | +25.7 | [+1.4, +50.0] |
-| holdout | flash-high | 36 | +80.6 | [+68.1, +91.7] |
+| holdout | argon-high | 39 | +21.8 | [-2.6, +44.9] |
+| holdout | flash-high | 38 | +76.3 | [+63.2, +89.5] |
 | holdout | claude-all | 14 | +32.7 | [+11.9, +51.8] |
 | holdout | codex-all | 14 | -1.8 | [-25.9, +24.1] |
-| holdout | antigravity-all | 36 | +54.9 | [+40.3, +68.8] |
+| holdout | antigravity-all | 38 | +50.7 | [+36.2, +65.8] |
 | holdout | all | 11 | +33.3 | [+16.7, +50.0] |
 
-Combined spend so far: 1307/2400 attempts, 26,873,653 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
+Combined spend so far: 1389/2400 attempts, 28,874,116 known reported tokens, 249/557 Claude writes. Includes the private companion suite; cached tokens count. Not a subscription percentage or measured bill.
 
 Forty development and forty retrospective test cases. The candidate was frozen before this run. The two new Antigravity models use fresh paired baselines; other configurations reuse validated historical baselines, leaving a timing/backend confound. Astra-high and Sol-high judges use the same author-specific rubric. Judge agreement and reversed-order sensitivity are in summary-current.json. Neither missing nor invalid judgments count as ties. Reserved fresh holdouts remain sealed.
