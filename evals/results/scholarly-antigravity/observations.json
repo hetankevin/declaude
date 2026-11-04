@@ -28307,5 +28307,1670 @@
     "prompt_sha256": "978567627fed0103f1bb54ba5550c712a423afc266c407380fedb03d7ce9632d",
     "raw_sha256": "b792ccbb932c0362d168d507046147c8383bc2bc81cd799b02d0e2d3812db358",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a practical handover note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the storage rationale, cleaning status, alignment uncertainty, battery uncertainty, charger location, dust-cap explanation, and separate paperwork conditions.",
+          "quotes": {
+            "source": [
+              "Tightening the bracket stopped the movement we could feel; it did not establish that the finder was pointing at the same object."
+            ],
+            "A": [
+              "That stopped the movement we could feel, but it did not confirm that the finder is pointing at the same object as the main telescope"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's practical facts and qualifications, including the fresh alignment check, unknown battery runtime, and attendance sheet's handling threshold.",
+          "quotes": {
+            "source": [
+              "Please leave it there until the paper is dry enough to handle."
+            ],
+            "A": [],
+            "B": [
+              "Please leave it there until the paper is dry enough to handle."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the actionable information and its qualifications without adding equipment specifications or troubleshooting methods.",
+          "quotes": {
+            "source": [
+              "The battery display showed two bars when we closed the shed. I do not know how much observing time that represents."
+            ],
+            "A": [
+              "The battery display showed two bars when we closed up, though I do not know how much observing time that represents."
+            ],
+            "B": [
+              "The battery display showed two bars when we closed the shed, though I do not know how much observing time that represents."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, informal prose with practical reasons attached to requests. A's headings do not make the sentences sound like a manual.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please put the charger back beside the case when you finish so the next group does not have to search for it in the dark."
+            ],
+            "B": [
+              "Please return the charger there when you finish so that the next group does not have to search for it in the dark."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A makes storage, power, alignment, and paperwork easy to locate through descriptive headings while retaining connected explanations. B groups topics coherently, but gives the dust-cap anecdote opening prominence and provides fewer navigation cues.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Battery and charger**",
+              "**Finder alignment**",
+              "**Sign-in book and attendance sheet**"
+            ],
+            "B": [
+              "The telescope is back in the shed after the open evening, and we put the dust cap back properly before leaving, as usual.",
+              "Finally, the sign-in book is dry, but the loose attendance sheet is still on the indoor drying rack."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the personal handover voice and explain why potentially distracting details belong. A's modest headings and B's continuous paragraphs are both appropriate forms for this notice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I am only mentioning this in case someone remembers the suggestion and wonders whether we followed it."
+            ],
+            "B": [
+              "which I mention only because somebody may remember the suggestion and wonder whether we followed it."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error. A better fulfills the requested organizational improvement: the alignment check and equipment locations are readily findable under useful headings, while the prose retains the explanations and informal register this user values.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Finder alignment**",
+              "so the alignment still needs checking at the start of your session."
+            ],
+            "B": [
+              "The finder bracket was tightened before we packed up.",
+              "so its alignment still needs checking against the main telescope at the start of the next session."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ba2dc25748aac08794ae08d4c242e5f135df0db1888a4000830411ca0eb142a4",
+    "prompt_sha256": "168b8015ca48a1deb9d6e7eb199dc61786f38595e3c50fb011154a3d6722c313",
+    "raw_sha256": "658c5ffcf49e2b5d00c81c3793888661bb9fb5e25559fab6588debbdc5ce90d9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a community telescope handover note, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the practical facts, uncertainties, and instructions. It omits the explicit reason for mentioning the dust-cap suggestion, weakening the explanation without materially changing the equipment information or required actions.",
+          "quotes": {
+            "source": [
+              "The note about that is here only because somebody may remember the suggestion and wonder whether we followed it."
+            ],
+            "A": [
+              "we did not leave it loose despite a visitor suggesting that to make it easier to remove."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Changes failure to establish alignment into an assertion that tightening did not align the optics; the retained check limits the practical consequence. Also invents that the sign-in book was put away and strengthens the sheet's drying requirement from safe handling to complete dryness.",
+          "quotes": {
+            "source": [
+              "it did not establish that the finder was pointing at the same object.",
+              "the sign-in book is dry",
+              "Please leave it there until the paper is dry enough to handle."
+            ],
+            "A": [],
+            "B": [
+              "tightening it didn't align the optics",
+              "The main sign-in book is dry and put away.",
+              "please leave it there until the paper is completely dry to handle."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the distinction between bracket stability and unverified alignment, and preserves the handling-based drying instruction. B changes both claims and adds unsupported storage status for the book. A's missing dust-cap rationale is a smaller loss of useful explanation.",
+          "quotes": {
+            "source": [
+              "it did not establish that the finder was pointing at the same object.",
+              "Please leave it there until the paper is dry enough to handle."
+            ],
+            "A": [
+              "it did not establish that the finder was pointing at the same object",
+              "Please leave it there until the paper is dry enough to handle."
+            ],
+            "B": [
+              "tightening it didn't align the optics",
+              "please leave it there until the paper is completely dry to handle."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A mostly maintains idiomatic, connected handover prose, although its opening is crowded. B's label-and-fragment style is more mechanical, and its closing drying instruction is awkwardly phrased.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The sign-in book is dry, but the loose attendance sheet is still on the indoor drying rack. Please leave it there until the paper is dry enough to handle."
+            ],
+            "B": [
+              "**Eyepiece case:** Placed on the lower shelf.",
+              "please leave it there until the paper is completely dry to handle."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B's topic groups make storage, alignment, power, and paperwork easier to locate. A combines the telescope's return, dust-cap discussion, shelf rationale, and eyepiece inventory in one crowded opening paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we did not leave it loose despite a visitor suggesting that to make it easier to remove. I left the small eyepiece case on the lower shelf"
+            ],
+            "B": [
+              "### Storage & Eyepieces",
+              "### Finder Alignment",
+              "### Battery & Charging",
+              "### Paperwork"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the writer's conversational paragraph rhythm and personal explanations. B retains the dust-cap rationale more successfully, but its extensive bullet treatment and directive phrasing move the note toward the manual-like form the request discourages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We tightened the finder bracket before packing up. That stopped the movement we could feel"
+            ],
+            "B": [
+              "* Please note that tightening it didn't align the optics: you will still need to check alignment",
+              "just mentioning this in case anyone overheard the suggestion and wondered."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B introduces unsupported alignment and storage claims and a stricter drying instruction. B is easier to scan, but A better serves the decisive priority of a faithful, informal handover. A still needs a less crowded opening and restoration of the dust-cap rationale.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it did not establish that the finder was pointing at the same object",
+              "Please leave it there until the paper is dry enough to handle."
+            ],
+            "B": [
+              "tightening it didn't align the optics",
+              "The main sign-in book is dry and put away.",
+              "please leave it there until the paper is completely dry to handle."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d022ca18c02d17612ea4356c831866fac97e467186abdfeded14ba6fcffd07dc",
+    "prompt_sha256": "168b8015ca48a1deb9d6e7eb199dc61786f38595e3c50fb011154a3d6722c313",
+    "raw_sha256": "658c5ffcf49e2b5d00c81c3793888661bb9fb5e25559fab6588debbdc5ce90d9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing a practical handover note, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the practical facts and qualifications, including the reason for the dust-cap remark, the unknown battery duration, and the need to check alignment despite tightening the bracket. It adds no specifications or troubleshooting procedure.",
+          "quotes": {
+            "source": [
+              "it did not establish that the finder was pointing at the same object.",
+              "The note about that is here only because somebody may remember the suggestion and wonder whether we followed it."
+            ],
+            "A": [
+              "it did not establish that the finder was pointing at the same object",
+              "which I mention only because somebody may remember the suggestion and wonder whether we followed it."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the cleaning status, leak history and dry night, alignment uncertainty, battery uncertainty, charger return location, and distinct paperwork instructions. 'Expect it to feel a bit stiff' is slightly stronger than 'can feel stiff,' but reasonably prepares the next user for possible resistance without asserting a guarantee.",
+          "quotes": {
+            "source": [
+              "It can feel stiff at first.",
+              "I do not know how much observing time that represents.",
+              "Please leave it there until the paper is dry enough to handle."
+            ],
+            "A": [],
+            "B": [
+              "expect it to feel a bit stiff at first.",
+              "I do not know how much observing time that represents.",
+              "Please leave it there until the paper is dry enough to handle."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the actionable facts, explanations, and qualifications without introducing a new alignment method or runtime estimate. B's slightly stronger phrasing about cap stiffness does not materially change the handover.",
+          "quotes": {
+            "source": [
+              "There was no water in the shed last night, but that seam has dripped before.",
+              "Its alignment still needs checking against the main telescope at the start of the next session."
+            ],
+            "A": [
+              "There was no water in the shed last night, but that seam has dripped before.",
+              "its alignment still needs checking against the main telescope at the start of the next session."
+            ],
+            "B": [
+              "There was no water in the shed last night, but that seam has dripped before.",
+              "it did not confirm that the finder is pointing at the same object as the main telescope, so the alignment still needs checking at the start of your session."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use idiomatic, accessible prose and preserve the writer's practical explanations. A's continuous paragraphs and B's short labeled sections each read naturally for a community handover.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The cap can feel stiff at first.",
+              "Please return the charger there when you finish so that the next group does not have to search for it in the dark."
+            ],
+            "B": [
+              "Here is how we left everything for the next session:",
+              "Please put the charger back beside the case when you finish so the next group does not have to search for it in the dark."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both connect the bracket adjustment to the remaining alignment check and explain the shelf choice. B additionally makes storage, power, alignment, cap handling, and paperwork directly findable through useful labels, fulfilling the requested organizational improvement more fully.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The finder bracket was tightened before we packed up.",
+              "I left the small eyepiece case on the lower shelf",
+              "The battery display showed two bars when we closed the shed"
+            ],
+            "B": [
+              "**Eyepiece case (lower shelf)**",
+              "**Battery and charger**",
+              "**Finder alignment**",
+              "**Sign-in book and attendance sheet**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve the informal explanation for mentioning the visitor's suggestion and give reasons for practical instructions. B's headings serve this notice's audience without turning the prose into a product manual; A's paragraph format also fits the writer's connected style.",
+          "quotes": {
+            "source": [
+              "Useful headings and related paragraph groups are allowed only as the request permits."
+            ],
+            "A": [
+              "which I mention only because somebody may remember the suggestion and wonder whether we followed it.",
+              "not because anyone has lost it."
+            ],
+            "B": [
+              "I am only mentioning this in case someone remembers the suggestion and wonders whether we followed it.",
+              "not because it has been lost."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both preserve useful explanations and an appropriate register. B has a modest substantive advantage for this user's requested artifact: its item headings let the next group quickly locate power, alignment, and paperwork instructions while retaining explanatory prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The battery display showed two bars when we closed the shed",
+              "Finally, the sign-in book is dry, but the loose attendance sheet is still on the indoor drying rack."
+            ],
+            "B": [
+              "**Battery and charger**",
+              "**Finder alignment**",
+              "**Sign-in book and attendance sheet**"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "abd9d5693c76360953686d52cf5778de52772fa62845804b3751f6cc6e0d1e59",
+    "prompt_sha256": "bab53960c4933af7a468626712091f687e96756cfd3b76e7835d1819ac32509a",
+    "raw_sha256": "193b6ab872ca4463cec56e8e68e984852fff1990c028cad69dd4c3a6b37047b1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a practical customer reply with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the necessary hose replacement, limited test result, uncertain water origin, conditional repair costs, safety instruction, and household choice.",
+          "quotes": {
+            "source": [
+              "The next visit is intended to narrow that down.",
+              "any further parts or work would be quoted before you decide"
+            ],
+            "A": [
+              "observe a full cycle and narrow down where the water is coming from",
+              "we will quote for them before you decide whether to go ahead"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's observations and qualifications, distinguishes the waived visit charge from further repairs, and preserves both the safety instruction and alternative repairer.",
+          "quotes": {
+            "source": [
+              "It does not show where the water started.",
+              "please leave the machine switched off and do not run another cycle to make a video for us"
+            ],
+            "A": [],
+            "B": [
+              "but not where the water started",
+              "please leave the machine switched off and do not run another cycle to make a video for us"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all substantive limits: the first repair was warranted, the dry short test does not settle full-cycle behavior, the photograph does not locate the origin, and another visit offers investigation rather than a guaranteed repair.",
+          "quotes": {
+            "source": [
+              "The old hose was visibly split and needed replacing.",
+              "We have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine."
+            ],
+            "A": [
+              "it was visibly split and needed replacing",
+              "we have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine"
+            ],
+            "B": [
+              "The old hose was visibly split and needed replacing",
+              "We have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both sound like readable correspondence from a repair cooperative. A uses direct option labels; B integrates the same choices into conversational paragraphs. Neither format materially impairs readability.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you want to proceed, let us know and we will send the available appointments."
+            ],
+            "B": [
+              "If you want to proceed, we can send the available appointments"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the apparent discrepancy before moving from uncertain evidence to a full-cycle investigation. A makes the immediate instruction and alternatives easier to scan; B maintains a connected explanation through the offer and ends with the immediate instruction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Your report of a puddle after a full wash does not conflict with that result",
+              "**Book a second visit with us:** We can return to observe a full cycle and narrow down where the water is coming from."
+            ],
+            "B": [
+              "Those two observations do not conflict",
+              "We can offer a second visit to observe a full cycle and narrow that down."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both preserve accountability and a non-sales tone while explaining why another visit could help. A's practical headings are appropriate to the artifact, and B's continuous prose also fits the author's preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we should have explained that more clearly before leaving",
+              "It is your choice whether we carry out a second visit"
+            ],
+            "B": [
+              "we should have explained that more clearly before leaving",
+              "It is your choice whether we carry out the visit."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both give the household the explanation and informed, unpressured choice requested: a full-cycle investigation, a free call-out, separately quoted repairs, and the option of another repairer. A's explicit options and B's connected paragraphs are comparably usable alternatives.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Pause or use another repairer:**",
+              "This does not mean that any further repair is included in the first bill"
+            ],
+            "B": [
+              "any further repair found necessary is not included in the first bill",
+              "if you prefer to pause, the original invoice and the notes from the first visit are available for another repairer"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "fa6e452405762af402386d6d9f85df16d0911ba52e80c456fa44889186febd6e",
+    "prompt_sha256": "2674a0bf9fef78a358262d54d1cb6a7d2829fe02311b39cbe328205d84558d27",
+    "raw_sha256": "431b3c668e05a6bd36b6aa69396d048ef9a48d6deb2a69081412fb7002026126",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a household repair reply, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the observations, uncertainty, necessary first repair, separate repair charges, safety instruction, and available choice. Describing determination as the visit's intention does not guarantee success.",
+          "quotes": {
+            "source": [
+              "The next visit is intended to narrow that down.",
+              "There will be no additional call-out charge; any further parts or work would be quoted before you decide."
+            ],
+            "A": [
+              "which the next visit is intended to determine",
+              "We will waive the call-out charge, though any further parts or labor are not covered by the first bill and would be quoted before you decide."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Changes a possible explanation for this puddle into an unsupported frequency claim: readers are told that water often travels along the base. The remaining uncertainty about the fault is retained, so this is a limited factual addition rather than a diagnosis.",
+          "quotes": {
+            "source": [
+              "It might have travelled along the base before becoming visible."
+            ],
+            "A": [],
+            "B": [
+              "water often travels along the base before it becomes visible"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves possible water travel without asserting its frequency; B adds an unsupported generalization. Both retain the main repair and payment qualifications. B's statement that the leak is unresolved can reasonably refer to the continuing puddle problem, given its subsequent uncertainty, so it is not treated as a separate established diagnosis.",
+          "quotes": {
+            "source": [
+              "It might have travelled along the base before becoming visible.",
+              "We have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine."
+            ],
+            "A": [
+              "water can travel along the base before becoming visible",
+              "We have not established whether the new puddle comes from the original fault, a second fault, or something outside the machine"
+            ],
+            "B": [
+              "water often travels along the base before it becomes visible",
+              "We have not yet determined whether this water stems from the initial issue, a separate fault, or an external source."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and accessible. A reads as ordinary correspondence but overloads its final paragraph; B's headings make it easy to scan, although its fee explanation is more formal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The choice is yours, and we can send over our available appointments if you wish to proceed."
+            ],
+            "B": [
+              "Please note that this waiver covers only the call-out fee"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B places the unresolved origin and purpose of investigation immediately before the choices, giving the reader the reason for the offer in order. A explains the visit's diagnostic purpose only after presenting costs, another repairer, and the safety instruction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We can offer a second visit to observe a full cycle.",
+              "which the next visit is intended to determine"
+            ],
+            "B": [
+              "The purpose of another visit would be to narrow that down.",
+              "### Your choices"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more consistently maintains the requested candid, restrained reply: it acknowledges the explanatory failure directly and frames the next visit as an intention. B retains accountability but its assertion that a technician will trace the source sounds more assured than its earlier statement about narrowing the possibilities.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A short test does not rule out leaks during a full cycle, and we should have explained that before leaving.",
+              "which the next visit is intended to determine"
+            ],
+            "B": [
+              "We should have explained that distinction more clearly before we left.",
+              "A technician will return to observe a full cycle and trace the source of the leak."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds the minor unsupported claim that water often travels along the base. B better positions the diagnostic rationale, but A better satisfies the decisive request for a candid explanation without added factual claims or assurance. It preserves the household's costs, safety instruction, and choice despite a less orderly final paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A short test does not rule out leaks during a full cycle",
+              "The choice is yours",
+              "do not run another cycle to take a video"
+            ],
+            "B": [
+              "water often travels along the base",
+              "A technician will return to observe a full cycle and trace the source of the leak."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5308142215c0f4e9c46685ea8d83be77c291d91bdcb3dbe35836fe0bced1e72a",
+    "prompt_sha256": "2674a0bf9fef78a358262d54d1cb6a7d2829fe02311b39cbe328205d84558d27",
+    "raw_sha256": "431b3c668e05a6bd36b6aa69396d048ef9a48d6deb2a69081412fb7002026126",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a household repair reply; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the necessary hose replacement, limited test, uncertain water origin, charges, safety instruction, and household choice. The stated purpose of narrowing the cause qualifies the later language about tracing the source; no guaranteed diagnosis is clearly promised.",
+          "quotes": {
+            "source": [
+              "The next visit is intended to narrow that down.",
+              "There will be no additional call-out charge; any further parts or work would be quoted before you decide."
+            ],
+            "A": [
+              "The purpose of another visit would be to narrow that down.",
+              "any further repair work or replacement parts are not included in the first bill and would be quoted for your approval before we proceed."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the distinction between the short test and full wash, the necessary first repair, unresolved possibilities, waived call-out fee, separately quoted work, safety instruction, and access to records.",
+          "quotes": {
+            "source": [
+              "That remains true even though it may not have been the only source of water.",
+              "There will be no additional call-out charge; any further parts or work would be quoted before you decide."
+            ],
+            "A": [],
+            "B": [
+              "The old hose was visibly split and needed replacing, though it may not have been the only source of water.",
+              "We will waive the call-out charge, though any further parts or labor are not covered by the first bill and would be quoted before you decide."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the substantive facts and limits. A's statements about the unresolved leak and tracing its source are somewhat firmer, but its explicit uncertainty keeps them reasonably interpretable as the continuing problem and diagnostic purpose.",
+          "quotes": {
+            "source": [
+              "We have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine."
+            ],
+            "A": [
+              "We have not yet determined whether this water stems from the initial issue, a separate fault, or an external source."
+            ],
+            "B": [
+              "We have not established whether the new puddle comes from the original fault, a second fault, or something outside the machine"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the test limitation and charges in direct, conversational language. A remains readable but introduces more formal administrative phrasing and repeats the test limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please note that this waiver covers only the call-out fee;",
+              "a short test only confirms how the machine behaved during that specific test; it does not simulate a full wash."
+            ],
+            "B": [
+              "A short test does not rule out leaks during a full cycle",
+              "would be quoted before you decide."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A establishes the unresolved diagnostic question immediately before presenting the return visit and alternatives. B explains enough to make the offer understandable, but leaves its explicit account of the unresolved possibilities until the closing paragraph, alongside safety and booking information.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The purpose of another visit would be to narrow that down.",
+              "### Your choices"
+            ],
+            "B": [
+              "We can offer a second visit to observe a full cycle.",
+              "which the next visit is intended to determine."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better sustains the requested candid, conversational register while retaining useful explanation and responsibility. A's expanded fee disclaimer and formal presentation give this ordinary reply a more institutional tone.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We should have explained that distinction more clearly before we left.",
+              "Please note that this waiver covers only the call-out fee;"
+            ],
+            "B": [
+              "we should have explained that before leaving.",
+              "The choice is yours, and we can send over our available appointments if you wish to proceed."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a clear material error. B better meets the decisive request for a candid, non-sales reply: it connects the short test to the continuing uncertainty and states the financial choice plainly without repeated cautionary packaging. A organizes the diagnostic rationale better, but B's explanation remains sufficient and its register fits the household correspondence more closely.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "However, a short test only confirms how the machine behaved during that specific test; it does not simulate a full wash.",
+              "Please note that this waiver covers only the call-out fee;"
+            ],
+            "B": [
+              "A short test does not rule out leaks during a full cycle, and we should have explained that before leaving.",
+              "We will waive the call-out charge, though any further parts or labor are not covered by the first bill and would be quoted before you decide."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "42ee9caef553ec43be75aa09aa6ba5a08e70a04365f81ad4e9d21e1fd7cfe310",
+    "prompt_sha256": "77bf9e64a5590293770c8f0d98873b963656aade037dfe3c0c3c7db9ff41d968",
+    "raw_sha256": "a75184ff7a2574408c5d44ea67847f6a3e35b54a7772800bd39a7e387e69866c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a practical repair reply, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Faithfully retains the observed short-test result, necessary hose replacement, uncertain puddle origin, limited purpose of the return visit, fee distinction, safety instruction, and option to use another repairer.",
+          "quotes": {
+            "source": [
+              "The next visit is intended to narrow that down.",
+              "For now, please leave the machine switched off and do not run another cycle to make a video for us."
+            ],
+            "A": [
+              "We can offer a second visit to observe a full cycle and narrow that down.",
+              "For now, please leave the machine switched off and do not run another cycle to make a video for us."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all substantive qualifications and choices. The full-cycle visit is offered to narrow the source, without promising success, and the waived call-out is explicitly distinguished from further repairs.",
+          "quotes": {
+            "source": [
+              "This does not mean that any repair found necessary is included in the first bill.",
+              "The next visit is intended to narrow that down."
+            ],
+            "A": [],
+            "B": [
+              "We can return to observe a full cycle and narrow down where the water is coming from.",
+              "This does not mean that any further repair is included in the first bill;"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's observations, uncertainty, responsibility, financial limits, safety instruction, and voluntary next step. Neither adds a diagnosis, price, or guaranteed result.",
+          "quotes": {
+            "source": [
+              "The photograph you sent shows water near the front left foot. It does not show where the water started."
+            ],
+            "A": [
+              "The photograph you sent shows water near the front left foot, but not where the water started"
+            ],
+            "B": [
+              "The photograph you sent shows water near the front left foot, but it does not show where the water started"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both sound like intelligible, candid correspondence. A uses connected paragraphs; B uses ordinary headings and explicit options. Each has some repetition around charges, without making the explanation difficult to read.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those two observations do not conflict, although I can see why the first result made you expect the problem to be finished."
+            ],
+            "B": [
+              "Your report of a puddle after a full wash does not conflict with that result, though I can see why a dry test cycle made you expect the problem to be finished."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A directly connects the unresolved possibilities to observing a full cycle, then gives terms and choices. B develops the same rationale before separating the immediate safety instruction and booking options. Both orders serve this practical document.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have not established whether the new puddle comes from the same fault, a second fault, or something outside the machine.",
+              "We can offer a second visit to observe a full cycle and narrow that down."
+            ],
+            "B": [
+              "**For now**",
+              "**Your options**",
+              "We can return to observe a full cycle and narrow down where the water is coming from."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both explain why the first result was limited, accept responsibility, and leave the decision with the household. A's continuous prose and B's practical headings are both consistent with the supplied preferences for this artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "we should have explained that more clearly before leaving.",
+              "It is your choice whether we carry out the visit."
+            ],
+            "B": [
+              "we should have explained that more clearly before leaving.",
+              "It is your choice whether we carry out a second visit:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither contains a material error, and both meet the central goal: explain why a full-cycle visit could help while making its costs and voluntary nature clear. A provides a particularly direct diagnostic transition; B makes the safety instruction and alternatives easier to locate. These are comparably useful completed replies.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We can offer a second visit to observe a full cycle and narrow that down.",
+              "any further parts or work would be quoted before you decide."
+            ],
+            "B": [
+              "**Pause or use another repairer:**",
+              "if additional parts or work are needed, we will quote for them before you decide whether to go ahead."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "da4f108102d623f742338ca54a9e19cc555efb0be238e27fc870bd9db69d6330",
+    "prompt_sha256": "77bf9e64a5590293770c8f0d98873b963656aade037dfe3c0c3c7db9ff41d968",
+    "raw_sha256": "a75184ff7a2574408c5d44ea67847f6a3e35b54a7772800bd39a7e387e69866c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a findings passage with supplied arithmetic summaries, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the cohort counts, unequal follow-up, accumulated waiting, conditional lower bound, deadline counts, and limits on inference. “Strictly bounded” is imprecise, but the surrounding arithmetic reasonably communicates the supplied inclusive limits.",
+          "quotes": {
+            "source": [
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days",
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%"
+            ],
+            "A": [
+              "provided that all 40 jobs eventually finish.",
+              "strictly bounded between $18/40$ (45.0%) and $(18 + 4)/40 = 22/40$ (55.0%)."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves all supplied numerical summaries and their interpretations, including the conditional mean bound, possible noncompletion, unresolved deadline outcomes, and proposed follow-up. It adds no modeled outcomes or causal claims.",
+          "quotes": {
+            "source": [
+              "We did not treat the unfinished jobs as completed at their current ages.",
+              "If some never finish, a finite mean completion time for all forty is not established at all."
+            ],
+            "A": [],
+            "B": [
+              "We did not treat the unfinished jobs as completed at their current ages.",
+              "if any never finish, a finite mean completion time for all 40 jobs is not established at all."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the essential distinctions between completed turnaround, accumulated waiting, and deadline outcomes. Both preserve the conditional lower bound and lack of a finite upper bound without treating the deadline interval as statistical uncertainty.",
+          "quotes": {
+            "source": [
+              "This is a lower bound, not an estimate that their eventual mean will equal 9.4."
+            ],
+            "A": [
+              "This figure is a deterministic mathematical floor, not a predictive point estimate or a confidence interval."
+            ],
+            "B": [
+              "This value is an arithmetic lower bound, not an estimate that the eventual mean will equal 9.4 days."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the findings in idiomatic research prose. A repeatedly adopts administrative phrasing and formal labels that make a straightforward discussion feel more bureaucratic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Future reporting should follow several methodological principles:",
+              "representing a cumulative completed turnaround time of 168 calendar days"
+            ],
+            "B": [
+              "The report should retain the seven-day mean for completed jobs alongside its denominator",
+              "with completed turnaround times totaling 168 days."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow the substantive sequence from the inadequate initial mean to complementary summaries. B carries that reasoning through connected paragraphs; A repeatedly interrupts it with headings, inventories, and a final recommendations list.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 3. Elapsed Waiting and the Arithmetic Lower Bound on Mean Turnaround",
+              "#### 5. Reporting Recommendations and Analytical Scope"
+            ],
+            "B": [
+              "Summing the two totals gives the waiting time already accumulated across the cohort:",
+              "Because finishing the pending jobs cannot undo elapsed time"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's conversational technical voice and explanation-led passage form. A's numbered methodological directives and repeated emphatic labels add packaging without developing the argument further.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Preserve Metric Distinctions:**",
+              "an absolute arithmetic lower bound",
+              "a deterministic mathematical floor"
+            ],
+            "B": [
+              "Excluding them because their final durations were unknown also excluded waiting time that had already occurred.",
+              "The accumulated-wait bound and the deadline interval answer distinct questions and should retain their separate definitions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The task explicitly supplies the arithmetic and requests a findings revision rather than proof exposition.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better satisfies the decisive preference for connected explanation: it makes the customer question and excluded waiting motivate the cohort summaries, then carries their qualifications into reporting. A preserves the substance but turns the requested passage into a heavily partitioned outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 1. Background and Operational Definitions",
+              "Future reporting should follow several methodological principles:"
+            ],
+            "B": [
+              "it answered a narrower question than customers were asking: at the audit date, several jobs were still waiting for parts.",
+              "Continuing the record until the remaining four deadline outcomes are known would narrow the deadline interval"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91b50228ab4bececf251cb9ba70f84e53c1ab9c6c947613a15c916c92a49d4e5",
+    "prompt_sha256": "11e00e341244f718f0c9f7f24445f904194a2b9ce00655d7e37ea4642ecbcf4a",
+    "raw_sha256": "384a8fe3c361cec74ea3e727d5db854ce037f82e69db12435b9104014fd5f28b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a findings passage with supplied numerical reasoning and explicitly identifies it as non-proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all cohort totals, unequal follow-up, deadline counts, and qualifications. The seven-day mean remains conditional on completion, and 9.4 days remains a lower bound conditional on eventual completion of all jobs.",
+          "quotes": {
+            "source": [
+              "Twenty-four jobs had finished, with completed turnaround times totaling 168 days.",
+              "Their ages at the audit date totaled 208 days.",
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days"
+            ],
+            "A": [
+              "completed turnaround times totaling 168 days (seven days per completed job).",
+              "their ages at the audit date totaled 208 days.",
+              "If all forty eventually finish, their mean final turnaround cannot be below 9.4 days"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the supplied quantities and definitions, distinguishes observed waiting from completion, and keeps noncompletion and follow-up qualifications. Its more explicit proposed deadline follow-up does not assert that any unobserved completion occurred.",
+          "quotes": {
+            "source": [
+              "Only four deadline outcomes remained unresolved.",
+              "Continuing the record until the remaining deadline outcomes are known would narrow the deadline interval"
+            ],
+            "A": [],
+            "B": [
+              "leaving only 4 outcomes unresolved.",
+              "Extending follow-up until the 4 pending jobs under 10 days old either finish or pass the 10-day mark would narrow the deadline range"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully preserve the deterministic bounds, their different purposes, and the limits of the audit. B makes the arithmetic status of the deadline range more explicit, but A's count-based derivation also communicates it without implying a confidence interval.",
+          "quotes": {
+            "source": [
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%, regardless of how much longer the already-late jobs take."
+            ],
+            "A": [
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%, regardless of how much longer the already-late jobs take."
+            ],
+            "B": [
+              "an exact arithmetic range that holds regardless of how much additional time the 12 already-late pending jobs require."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, conversational sentences while retaining the explanation. B is readable but introduces heavier abstract phrasing and repeats numerical labels after their meaning is already established.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We did not treat the unfinished jobs as completed at their current ages, but the two totals can be added to summarize waiting already accumulated."
+            ],
+            "B": [
+              "Preserving the distinction between elapsed waiting and completed turnaround clarifies what the audit data can and cannot establish about average duration."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A establishes the inadequate completed-job mean and the excluded waiting before presenting the cohort inventory, giving those mechanics an immediate purpose. B postpones that obstacle until after its detailed first paragraph, although its later transition to deadline outcomes is particularly clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it answered a narrower question than the one customers were asking.",
+              "leaving them out because their final duration was unknown also left out waiting that had already happened."
+            ],
+            "B": [
+              "To evaluate turnaround across an entire intake cohort, we audited all 40 jobs",
+              "By contrast, evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A more closely follows the documented preference for problem-first, connected technical prose without repeated packaging. B's explanatory additions are legitimate, but its final restatement of every metric and denominator adds repetition rather than useful reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The accumulated-wait bound and the deadline interval answer different questions and should retain their definitions."
+            ],
+            "B": [
+              "The 9.4-day accumulated-wait lower bound and the 45%–55% (18/40 to 22/40) 10-day completion range answer different questions and should each be presented with its definition intact."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof-writing task; the numerical reasoning is part of the supplied findings to preserve.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A has a modest advantage for this user's specific priorities: it explains why the initial mean fails before introducing the audit mechanics and preserves useful reasoning without redundant numerical restatement. B's explicit duration-to-deadline transition is helpful, but A better sustains the requested voice and argument order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That number was calculated correctly for the jobs that had finished, but it answered a narrower question than the one customers were asking.",
+              "the two totals can be added to summarize waiting already accumulated."
+            ],
+            "B": [
+              "At the audit date, 24 jobs had been completed, accumulating 168 calendar days of completed turnaround",
+              "An initial summary reported a mean turnaround of 7 calendar days (168 days across the 24 completed jobs)."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a7846be9447e05aa90f2759ef8e7b526bbe53748216bcee70922bd8bd76ffaec",
+    "prompt_sha256": "11e00e341244f718f0c9f7f24445f904194a2b9ce00655d7e37ea4642ecbcf4a",
+    "raw_sha256": "384a8fe3c361cec74ea3e727d5db854ce037f82e69db12435b9104014fd5f28b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a findings passage with supplied arithmetic summaries, not a proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the cohort counts, unequal follow-up, accumulated durations, conditional lower bound, deadline bounds, and limits on inference and follow-up.",
+          "quotes": {
+            "source": [
+              "If all eventually finish, their mean final turnaround cannot be below 9.4 days"
+            ],
+            "A": [
+              "the mean final turnaround cannot fall below 9.4 days if all 40 jobs eventually finish."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the numerical summaries and their qualifications. Following the four unresolved cases to their deadlines reasonably supplies their deadline outcomes without assuming eventual repair completion; its stronger wording does not establish a material factual error.",
+          "quotes": {
+            "source": [
+              "Continuing the record until the remaining deadline outcomes are known would narrow the deadline interval"
+            ],
+            "A": [],
+            "B": [
+              "Tracking the cohort until the four unresolved pending jobs reach 10 days of age will promptly narrow the deadline compliance rate to a single exact percentage."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain all supplied counts and definitions, distinguish accumulated waiting from completed turnaround, condition the mean bound on eventual completion, and preserve the bounded deadline outcome despite unbounded remaining duration.",
+          "quotes": {
+            "source": [
+              "The final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%"
+            ],
+            "A": [
+              "the final deadline fraction for this cohort must lie between 18/40 and 22/40, or 45% and 55%."
+            ],
+            "B": [
+              "This range is an exact arithmetic bound determined by the four open cases, not a statistical confidence interval."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, readable report prose. B remains understandable but repeatedly expands simple qualifications into formal labels and emphatic terminology.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This value is an arithmetic lower bound, not an estimate that the eventual mean will equal 9.4 days."
+            ],
+            "B": [
+              "This figure is a deterministic mathematical floor, not a predictive point estimate or a confidence interval."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both establish the customer question and incomplete follow-up before calculating the bounds. A sustains that argument through connected paragraphs; B fragments the same progression into sections and lists, then restates its qualifications as methodological principles.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Summing the two totals gives the waiting time already accumulated across the cohort"
+            ],
+            "B": [
+              "Future reporting should follow several methodological principles:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the requested connected technical prose and passage format. B's instructional checklist and repeated labeling add packaging without explaining more of the substantive obstacle.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The accumulated-wait bound and the deadline interval answer distinct questions and should retain their separate definitions."
+            ],
+            "B": [
+              "2. **Preserve Metric Distinctions:** The 9.4-day accumulated-wait lower bound and the 45%–55% deadline interval answer distinct operational questions and must preserve their precise definitions."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or derivation is requested; the supplied arithmetic supports an expository findings passage.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material source error. A better serves the user's decisive priority: a connected findings passage that explains why incomplete follow-up requires complementary summaries. B supplies useful explicit arithmetic, but its numbered framework and reporting checklist unnecessarily recast the requested passage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Excluding them because their final durations were unknown also excluded waiting time that had already occurred."
+            ],
+            "B": [
+              "#### 5. Reporting Recommendations and Analytical Scope"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "faea0f4eb00f9ace46b2e19dfe6a99ed9470732d21792d6e2fde0aa6c640f30f",
+    "prompt_sha256": "8a751e1123b2cde53a02496be43894d7c43892c7f3010555516fe5129010da8f",
+    "raw_sha256": "7b281f7e2b5fad8bd980ce91802a8e200a0655a0603fd31844c934a4ef0176fa",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of a findings passage using supplied numerical summaries, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves all counts, durations, definitions, and follow-up qualifications. It neither imputes completion times nor infers repair-type or parts-supply effects.",
+          "quotes": {
+            "source": [
+              "We did not treat the unfinished jobs as completed at their current ages."
+            ],
+            "A": [
+              "treating those pending jobs as if they had finished at their audit-date ages would conflate elapsed waiting time with completed turnaround."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the complete numerical account, common audit date with unequal follow-up, conditional mean bound, deadline interval, and proposed follow-up without inventing outcomes.",
+          "quotes": {
+            "source": [
+              "If some never finish, a finite mean completion time for all forty is not established at all."
+            ],
+            "A": [],
+            "B": [
+              "if some never finish, a finite mean completion time for all forty is not established at all."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully distinguish the seven-day completed-job mean from the 9.4-day accumulated-wait lower bound and explain the four unresolved deadline outcomes. A makes some arithmetic and follow-up details more explicit, without changing the conclusions.",
+          "quotes": {
+            "source": [
+              "Only four deadline outcomes remained unresolved."
+            ],
+            "A": [
+              "18 (6 completed plus 12 still pending past day 10) had already missed it, leaving only 4 outcomes unresolved."
+            ],
+            "B": [
+              "eighteen were known to have missed it, leaving only four deadline outcomes unresolved."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the same reasoning in direct sentences with less abstract framing. A is readable but repeatedly names the distinction and the cohort in ways that make the prose heavier.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Preserving the distinction between elapsed waiting and completed turnaround clarifies what the audit data can and cannot establish about average duration."
+            ],
+            "B": [
+              "We did not treat the unfinished jobs as completed at their current ages, but the two totals can be added to summarize waiting already accumulated."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "B introduces the misleading completed-job summary before presenting the cohort mechanics, making the initial obstacle immediately clear. A postpones that obstacle but supplies a particularly useful transition explaining why the fixed deadline yields tighter information. Both develop the overall argument coherently.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "By contrast, evaluating completion within a fixed 10-calendar-day threshold narrows the uncertainty to a small subset of pending jobs."
+            ],
+            "B": [
+              "That number was calculated correctly for the jobs that had finished, but it answered a narrower question than the one customers were asking."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the source's effective conversational opening and explains the bound through its concrete reason. A retains useful explanation but adds formal restatement and repeated numerical labeling that this user does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The 9.4-day accumulated-wait lower bound and the 45%–55% (18/40 to 22/40) 10-day completion range answer different questions"
+            ],
+            "B": [
+              "If all forty eventually finish, their mean final turnaround cannot be below 9.4 days, because finishing the pending jobs cannot undo elapsed time."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The requested artifact is an explanatory findings passage, with no proof to revise.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Both are faithful and materially sound. B has a modest advantage for this user's goal because it places the customer question and completed-only summary's limitation together before the audit details, then preserves the necessary reasoning without repeated abstract framing. A's explicit deadline transition is valuable, but B more closely preserves the effective voice and rhythm of the source.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate turnaround across an entire intake cohort, we audited all 40 jobs that entered the workshop during a six-week observation window."
+            ],
+            "B": [
+              "At the audit date, several jobs were still waiting for parts, and leaving them out because their final duration was unknown also left out waiting that had already happened."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c134bb594cd38940f8dc070a5089b41a1b6336d6339a473ac0af472414ba7be6",
+    "prompt_sha256": "8a751e1123b2cde53a02496be43894d7c43892c7f3010555516fe5129010da8f",
+    "raw_sha256": "7b281f7e2b5fad8bd980ce91802a8e200a0655a0603fd31844c934a4ef0176fa",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
