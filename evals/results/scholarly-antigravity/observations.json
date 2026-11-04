@@ -32693,5 +32693,627 @@
     "prompt_sha256": "9d273464487787c3d616282d238916c9ed869349e3a40f873c299b9646aff511",
     "raw_sha256": "35a768931dbb432a10ba45fb4c6831c287e4ecf0d0e520445a99e1109ef245b6",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-09",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a committee recommendation, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "A turns possible undiscovered demand into an almost certain explanation, adds flattening to the rehousing scope, and promises exact conservation findings. These additions materially strengthen the evidence and deliverables supporting the allocation. Its later acknowledgment that latent interest remains hypothetical does not resolve these overstatements.",
+          "quotes": {
+            "source": [
+              "Low recorded use may partly reflect difficulty finding material",
+              "The rehousing estimate includes sorting out the wrappers and referring the most fragile sheets to the conservator",
+              "I propose that the committee ask for a revised full-project estimate after the sample and the condition review."
+            ],
+            "A": [
+              "low demand is almost certainly a symptom of poor discoverability",
+              "flattening accessible material",
+              "A completed conservation inventory detailing the exact condition and treatment requirements of the fragile sheets;"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the immediate allocation, distinguishes the estimates' omissions, limits the sample to cleared sheets, and leaves full digitisation open. Omitting the explicit calendar-delay concession weakens its treatment of the tradeoff but does not change the proposed decision.",
+          "quotes": {
+            "source": [
+              "It would not estimate the preparation time for the most fragile sheets, because those would be excluded.",
+              "This leaves the eventual digitisation decision open."
+            ],
+            "A": [],
+            "B": [
+              "Because fragile sheets will be excluded, the sample will not measure the preparation time those items need.",
+              "This leaves the final digitisation decision open."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B maintains the source's uncertainty and limited scope. A makes stronger claims about demand, rehousing work, and the precision of future findings than the source supports.",
+          "quotes": {
+            "source": [
+              "Low recorded use may partly reflect difficulty finding material",
+              "a useful online sample might reveal interest we have not recorded."
+            ],
+            "A": [
+              "low demand is almost certainly a symptom of poor discoverability",
+              "the condition review undertaken during rehousing will provide an exact count and assessment of those fragile sheets."
+            ],
+            "B": [
+              "limited requests may reflect poor discoverability rather than a lack of interest.",
+              "A public online sample could reveal demand we have not yet captured."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a direct committee recommendation. A's repeated emphatic labels and promotional assurances give the prose a more packaged, less conversational rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The Digitisation Estimate’s Hidden Assumption:",
+              "building a sustainable, fully costed foundation for their digital future."
+            ],
+            "B": [
+              "Neither estimate accounts for the full preparation required.",
+              "I propose that the committee request a revised full-project estimate once the sample and condition review are complete."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects physical condition to the estimate gaps, addresses discoverability, and explains the sample's purpose before giving the decision point. A has a recognizable structure, but repeatedly restates its phased solution across the recommendation, dependencies, pilot, and conclusion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This phased approach ensures immediate physical stabilization",
+              "the proposed allocation achieves both objectives in parallel:"
+            ],
+            "B": [
+              "The current digitisation estimate assumes the sheets are already flat and stable enough to place safely on imaging supports",
+              "Scanning a small sample drawn only from sheets already cleared for imaging will let us test descriptive cataloguing and image presentation while rehousing proceeds."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the author's preference for connected reasons and qualifications beside claims. It acknowledges the committee's access priorities, although it loses the explicit calendar-delay concession. A preserves that concession but surrounds it with stronger assurances and staged contrasts.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Rather than choosing between invisible preservation and an unbudgeted digitisation programme",
+              "It replaces speculative assumptions with solid data."
+            ],
+            "B": [
+              "The committee has good reason to prioritize improvements that the public can use",
+              "At the same time, potential demand is not yet a measured queue of users waiting for every sheet"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B is the more reliable completed recommendation: it explains why preparation and a limited sample support a later decision without promising unsupported findings. A's major overstatements could mislead the committee about both the evidence and what this allocation delivers; its explicit calendar acknowledgment does not offset that problem.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "generates the empirical data needed to establish a reliable, fully costed budget",
+              "the condition review undertaken during rehousing will provide an exact count and assessment of those fragile sheets."
+            ],
+            "B": [
+              "Because fragile sheets will be excluded, the sample will not measure the preparation time those items need.",
+              "This leaves the final digitisation decision open."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "5748576d18e40ab8550f21d97822c8bcfebb168a605348c93ccc003165654c3f",
+    "prompt_sha256": "6e64887cbc8d4f01842d62af4ef5c75b38c560b2d6970a4af917f1c2728c4a78",
+    "raw_sha256": "7f32f93a3b644c187a397bb7d9abe614f39d6001d72a93f30046f77181bf5df9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-09",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and wording of a committee recommendation, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the allocation, both estimates' limitations, uncertain demand, the sample's exclusion and measurement limit, and the deferred decision. It also retains the acknowledgment of calendar delay without promising that the review resolves every uncertainty.",
+          "quotes": {
+            "source": [
+              "It would not estimate the preparation time for the most fragile sheets, because those would be excluded.",
+              "Calling that a delay is fair in calendar terms"
+            ],
+            "A": [
+              "Because the most fragile sheets would be excluded from that sample, it would not estimate the time needed to prepare them.",
+              "Although this postpones a decision on full scanning in calendar terms"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B correctly identifies the sample's limitation, but then assures the committee that conservator referrals will supply preparation-time data and yield an accurate, complete estimate. The source establishes referrals and a later revised estimate, not those assured results. This overstates what the intermediate work will establish while retaining the proposed decision.",
+          "quotes": {
+            "source": [
+              "The rehousing estimate includes sorting out the wrappers and referring the most fragile sheets to the conservator; it does not include treatment of every fragile sheet.",
+              "I propose that the committee ask for a revised full-project estimate after the sample and the condition review."
+            ],
+            "A": [],
+            "B": [
+              "that data will come from the conservator referrals made during rehousing.",
+              "produces the accurate, complete estimate the committee needs"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the recommendation and answer the access objection without inventing measured demand. A also preserves uncertainty about the later findings; B adds an unsupported assurance that referrals will provide preparation-time data and a complete estimate.",
+          "quotes": {
+            "source": [
+              "The immediate choice is to fund work needed for safe access and obtain better information about the larger project."
+            ],
+            "A": [
+              "provides better information about the larger project."
+            ],
+            "B": [
+              "that data will come from the conservator referrals made during rehousing.",
+              "produces the accurate, complete estimate the committee needs"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sustains the source's conversational technical register. B is readable, but its recurring emphatic transitions and abstract summaries make a straightforward recommendation sound more ceremonious.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Even so, the sequence of work matters because safe imaging depends on physical preparation that has not yet been done."
+            ],
+            "B": [
+              "That physical reality exposes a critical gap in our project figures:",
+              "Crucially, however, full digitisation cannot proceed on the terms of its estimate"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A develops the sequence in connected paragraphs: legitimate access benefits, preparation gaps, uncertain demand, then the sample and review. B also explains why preparation belongs, but repeats the same justification in its estimate discussion, numbered plan, limitations paragraph, and closing summary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The case for access also deserves a better answer than pointing to the group's low request count.",
+              "A sample made from sheets cleared for imaging would let us test descriptions and image presentation while rehousing proceeds."
+            ],
+            "B": [
+              "Pairing rehousing with a targeted pilot sample uses this quarter’s allocation to advance both preservation and access while closing the gaps in our planning:",
+              "Taken together, however, the sample and the condition review will give the committee what it currently lacks"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A keeps the writer's candid acknowledgment of invisible work and calendar delay while developing the practical reasons without added certainty. B retains those concerns too, but its confident closing promises move away from the requested restraint.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Rehousing is largely invisible to visitors, and the committee has good reason to want an improvement that people can actually use.",
+              "Although this postpones a decision on full scanning in calendar terms"
+            ],
+            "B": [
+              "Rehousing happens behind the scenes, whereas scanning produces a visible improvement that researchers can immediately use.",
+              "produces the accurate, complete estimate the committee needs to decide on full digitisation with confidence."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The recommendation contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A better satisfies the decisive priority: a convincing sequence that respects the stated uncertainties. B's unsupported assurance about preparation data is a minor but consequential strengthening. A also provides a continuous argument that acknowledges both the committee's access priorities and the real delay without repeating the case through multiple summaries.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I propose that the committee ask for a revised full-project estimate after the sample and the condition review are complete, leaving the eventual digitisation decision open.",
+              "provides better information about the larger project."
+            ],
+            "B": [
+              "that data will come from the conservator referrals made during rehousing.",
+              "produces the accurate, complete estimate the committee needs"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3e8c1b7456d5bec0ac7ac229206d331bd7d7ebb52c7a9ec733a0e9ef451cf49d",
+    "prompt_sha256": "6e64887cbc8d4f01842d62af4ef5c75b38c560b2d6970a4af917f1c2728c4a78",
+    "raw_sha256": "7f32f93a3b644c187a397bb7d9abe614f39d6001d72a93f30046f77181bf5df9",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-10",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit a cooperative position statement, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the proposal and its principal qualifications, but turns a reason for a small trial into an unsupported claim that this is the only practical way to measure labour. That excludes alternatives the source does not assess.",
+          "quotes": {
+            "source": [
+              "That is a reason to keep the trial small and record that time."
+            ],
+            "A": [
+              "the only practical way to measure that labour is to keep the trial small and record the time spent"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the six-machine, twelve-week trial, approved insurance, uncosted labour, open eligibility, need-based assistance, conditional scarcity rule, suitability limits, running-cost objection, and unknown results. Its claim to address the delay is immediately qualified by the unchanged supplier timeline.",
+          "quotes": {
+            "source": [
+              "It would not shorten the supplier's delivery time, and it should not be advertised as doing so.",
+              "We do not have those results yet."
+            ],
+            "A": [],
+            "B": [
+              "though it would not shorten the supplier's delivery time and should not be advertised as doing so.",
+              "We do not yet have results on actual use, staff time, or reported difficulties"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the substantive proposal and limitations. B also preserves the source's modest justification for measuring staff time, whereas A unnecessarily makes the proposed method uniquely practical.",
+          "quotes": {
+            "source": [
+              "That is a reason to keep the trial small and record that time."
+            ],
+            "A": [
+              "the only practical way to measure that labour is to keep the trial small and record the time spent"
+            ],
+            "B": [
+              "that uncosted work is a reason to keep the trial small and record that time."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as conversational discussion prose while retaining explanation. A is readable, but repeatedly adds framing around points already made, making this short statement sound more laboured.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In practical terms, a loan machine would not shorten a supplier's delivery time, and in fairness to customers it should not be advertised as doing so.",
+              "Offering practical relief during a delay only helps if we are honest about what the workshop can and cannot control."
+            ],
+            "B": [
+              "A loan pool would address that delay, though it would not shorten the supplier's delivery time and should not be advertised as doing so."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both provide a coherent route from repair delays through trial resources and fair access to household tradeoffs and review. A explicitly bridges physical constraints into access policy; B usefully moves from eligibility to suitability. Neither ordering leaves a material reasoning gap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Where a machine could safely fit, we still need fair rules for who can ask for one and how delivery is paid for.",
+              "Even when a machine is available and fits the space, our older loan machines may cost more to run than some of the machines being repaired."
+            ],
+            "B": [
+              "If demand under an open rule exceeds our six machines, we would need an allocation rule agreed before launch",
+              "Even when a household is eligible, an available machine will not always be suitable."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B supplies the requested reasons without losing the source's informal seriousness. A offers useful explanation too, but its staged rejection of waiting for complete costing introduces an unrequested debate and defensive emphasis.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "it would be easy to pretend they are free to lend—or, equally, to hold back until we can price every hour in advance.",
+              "Neither response is sound"
+            ],
+            "B": [
+              "Delivery-fee assistance would still require a separate conversation, since access to the pool and help with the fee are two different decisions",
+              "A short loan is a possible bridge during a repair, not proof that running costs do not matter"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "A's minor exclusivity claim exceeds the source; B has no material error. B also better serves the decisive priority: a short, connected argument that explains fair access and treats running costs seriously without adding rhetorical disputes. A's additional development does not justify its stronger claim or repeated framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the only practical way to measure that labour",
+              "Instead of glossing over that trade-off or making the choice for the customer"
+            ],
+            "B": [
+              "since access to the pool and help with the fee are two different decisions",
+              "so we should explain the known running information for each available machine and let the household decide."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2fb5fe491cfad4811896b0e288e283c2c4b2d723df377f1208c3cd3134ae1202",
+    "prompt_sha256": "0e3489660132d8d104adcac568a0a6b00a1d07d8bbae911cdc60f1a0e3975c0b",
+    "raw_sha256": "1cb09f43868843dbee3e1a3bdf59376b0ee673e4ffa426f88f1e437fb4ec76a5",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-10",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and prose of a position statement, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the proposal, resource commitments, uncosted work, eligibility and assistance distinction, conditional allocation rule, physical limitations, possible higher running costs, and pending evaluation. Its added statement about avoiding cost barriers expresses a policy aim rather than guaranteeing an outcome.",
+          "quotes": {
+            "source": [
+              "while offering delivery-fee assistance according to need.",
+              "If demand exceeds six machines, we would need an allocation rule agreed before launch; this statement does not settle that rule."
+            ],
+            "A": [
+              "those costs should not become a barrier to getting help.",
+              "if demand exceeds six machines, we will need an allocation rule agreed before launch. This statement does not settle that rule."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B cumulatively changes the factual basis and uncertainty of the proposal. It invents frequent weeks without clean clothes, makes excess demand certain, turns possible higher costs relative to some repaired machines into likely higher water and electricity consumption relative to newer models, and guarantees that separate fee assistance prevents exclusion. These materially strengthen the rationale and promised fairness beyond the source.",
+          "quotes": {
+            "source": [
+              "still leave its owner waiting for a part.",
+              "If demand exceeds six machines",
+              "The older loan machines may cost more to run than some of the machines being repaired.",
+              "while offering delivery-fee assistance according to need."
+            ],
+            "A": [],
+            "B": [
+              "waiting for parts often leaves customers stranded without clean clothes for weeks.",
+              "Because six machines cannot meet peak demand",
+              "likely consume more water and electricity than the newer models under repair",
+              "Handling delivery-fee assistance separately ensures that the cooperative’s logistical expenses do not shut out members on tight budgets."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves the source's conditional claims and unresolved outcomes. B substitutes unsupported frequency, duration, demand, consumption, and access claims; its acknowledgment that trial data are pending does not qualify those earlier assertions.",
+          "quotes": {
+            "source": [
+              "If demand exceeds six machines",
+              "The older loan machines may cost more to run than some of the machines being repaired."
+            ],
+            "A": [
+              "if demand exceeds six machines",
+              "The older loan machines may cost more to run than some of the machines being repaired."
+            ],
+            "B": [
+              "Because six machines cannot meet peak demand",
+              "Our refurbished loan units are older and likely consume more water and electricity than the newer models under repair"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A maintains direct, idiomatic language suitable for cooperative discussion. B is grammatical but repeatedly uses abstract administrative framing that makes simple practical points sound like a formal policy report.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Delivery requires staff time that is not free, but those costs should not become a barrier to getting help.",
+              "That objection is real, especially for people already struggling with bills."
+            ],
+            "B": [
+              "However, practical constraints directly determine whether the scheme can operate equitably.",
+              "Running costs present another point where practical mechanics affect household fairness."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both give the reader a comprehensible progression from the repair problem to a bounded trial, access rules, household limitations, and evaluation. A connects delivery costs directly to assistance; B explicitly connects practical constraints to equity. B's unsupported premises are fidelity failures, rather than evidence that its ordering is incoherent.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Delivery requires staff time that is not free, but those costs should not become a barrier to getting help.",
+              "At the same time, eligibility cannot guarantee suitability"
+            ],
+            "B": [
+              "However, practical constraints directly determine whether the scheme can operate equitably.",
+              "Running costs present another point where practical mechanics affect household fairness."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves measured advocacy and lets concrete reasons carry the argument. B adds moralized language and a closing endorsement that exceed the author's restrained, conversational register and preference against slogans.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A universal opening rule avoids asking people to establish hardship before they can even ask about a loan.",
+              "We do not have those results yet."
+            ],
+            "B": [
+              "A universal opening rule respects member dignity",
+              "Rather than deciding paternalistically what households can afford",
+              "which is precisely why a disciplined, transparent trial is the right next step."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error, while B's accumulated unsupported claims materially strengthen both the problem and the proposal's expected fairness. A better meets the user's central goal of making the practical and fairness reasoning readable without making the story stronger than the source supports. Its delivery-cost transition adds a useful connection while preserving the proposal's modest scope.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Delivery requires staff time that is not free, but those costs should not become a barrier to getting help.",
+              "A short loan is a possible bridge, not proof that running costs do not matter."
+            ],
+            "B": [
+              "waiting for parts often leaves customers stranded without clean clothes for weeks.",
+              "Handling delivery-fee assistance separately ensures that the cooperative’s logistical expenses do not shut out members on tight budgets."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "a8d81eb7cd989f5abd8863543325b2eb084755402bc734fc2f2fe7d2b77e6fa7",
+    "prompt_sha256": "0e3489660132d8d104adcac568a0a6b00a1d07d8bbae911cdc60f1a0e3975c0b",
+    "raw_sha256": "1cb09f43868843dbee3e1a3bdf59376b0ee673e4ffa426f88f1e437fb4ec76a5",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
