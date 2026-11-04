@@ -46601,5 +46601,3478 @@
     "prompt_sha256": "94dc959d4b2d645c712b40c85e1edb41a959a6c531f0a2eef72583e32451e9eb",
     "raw_sha256": "8c2ffdac89ff43ea5597daa876bd7eaee23879a8eea7875340888116c662c96e",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-11",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a position statement, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the quiz composition, specific coverage gap, proposed assessment policy, workload limitation, and review after one unit. The added explanation of comparability is consistent with the source.",
+          "quotes": {
+            "source": [
+              "Neither of the explanation questions requires that comparison.",
+              "That change will not eliminate the work, but it redirects some existing time toward evidence the quiz does not currently provide."
+            ],
+            "A": [
+              "neither explanation question requires that comparison.",
+              "That substitution will not eliminate the review work"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's limited coverage claim and all substantive policy details, including two examples per teacher, shared criteria, no numerical formula, partial time reallocation, and a review after one unit.",
+          "quotes": {
+            "source": [
+              "Teachers would bring two anonymized examples and explain how they applied the shared criteria.",
+              "I am not proposing a numerical formula for combining the task and quiz"
+            ],
+            "A": [],
+            "B": [
+              "teachers would bring two anonymized examples to the meeting and explain how they applied the shared criteria.",
+              "I am not proposing a numerical formula for combining the task and the quiz"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the specific deficiency in the current quiz without generalizing about short questions, and both retain the proposed assessment and workload arrangements.",
+          "quotes": {
+            "source": [
+              "It does not show that short questions are incapable of assessing reasoning, or that every longer assignment would assess it well."
+            ],
+            "A": [
+              "it does not imply that short questions are incapable of assessing reasoning, or that every longer assignment would assess it well."
+            ],
+            "B": [
+              "it does not show that short questions are incapable of assessing reasoning or that every longer assignment would assess it well."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both maintain readable professional prose. A's fuller explanation and B's more compact phrasing each fit the working-group statement.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Even a targeted addition raises a fair objection about workload"
+            ],
+            "B": [
+              "Completing the comparison task during an ordinary lesson does not remove the concern about workload"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A makes the central connection especially explicit: the identified gap warrants a targeted addition. B provides the same sequence, but its general compatibility statement is a less direct bridge into the recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the gap in our current evidence is specific, our response can be equally targeted."
+            ],
+            "B": [
+              "Keeping a common reference point and broadening the evidence can be compatible if we are specific about the work each is meant to do."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better serves the author's preference for explaining why each proposal belongs: it connects the precise assessment gap to the added task and distinguishes meeting-time reallocation from remaining review work.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That substitution will not eliminate the review work, but it shifts existing meeting time away from reciting numbers and toward the comparison evidence that the quiz does not currently provide."
+            ],
+            "B": [
+              "That change will not eliminate the work, but it redirects some existing time toward evidence the quiz does not currently provide."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error. A has a modest substantive advantage on the user's central priority: it explains why a specific coverage gap calls for this particular additional task, while preserving the limited claim and honest workload tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the gap in our current evidence is specific, our response can be equally targeted."
+            ],
+            "B": [
+              "My proposal is therefore to keep the quiz as our shared set of questions and add one classroom comparison task"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "0e0dc6d27d3bc68a8eadc6390dcfc26fed420b93af3a622a187e005bba6221fe",
+    "prompt_sha256": "94dc959d4b2d645c712b40c85e1edb41a959a6c531f0a2eef72583e32451e9eb",
+    "raw_sha256": "7e100c2bae5a35c786c6ed8d1403b9f229cbca7ad88bf9ce3b1e2d30d84acdb3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-11",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns an argumentative position statement, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the quiz composition, specific comparison gap, proposed task and examples, shared criteria, absence of numerical weighting, workload tradeoff, and review after one unit. Its description of the gap reasonably summarizes the source in context.",
+          "quotes": {
+            "source": [
+              "Neither of the explanation questions requires that comparison.",
+              "After one unit, we should check whether the examples helped us make judgments and whether the meeting remained manageable."
+            ],
+            "A": [
+              "neither explanation question requires that comparison.",
+              "After one unit, we should check whether the examples helped us make judgments and whether the meeting remained manageable."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Introduces substantive local overclaims: difficulty interpreting scores becomes an inability to distinguish learning from task differences, and discussing shared criteria becomes a guarantee of consistent standards. The basic assessment proposal remains recognizable.",
+          "quotes": {
+            "source": [
+              "it is harder to know whether a difference in scores reflects the work pupils were asked to do.",
+              "Teachers would bring two anonymized examples and explain how they applied the shared criteria."
+            ],
+            "A": [],
+            "B": [
+              "we cannot tell whether score differences reflect pupil learning or variations in the assignments themselves.",
+              "ensuring consistent standards across classes."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the source's qualified comparability rationale. B strengthens it into impossibility and adds an unsupported assurance that discussing examples ensures consistency.",
+          "quotes": {
+            "source": [
+              "it is harder to know whether a difference in scores reflects the work pupils were asked to do."
+            ],
+            "A": [
+              "it is harder to know whether a difference in scores reflects the work pupils were asked to do."
+            ],
+            "B": [
+              "we cannot tell whether score differences reflect pupil learning or variations in the assignments themselves."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, idiomatic language suited to colleagues discussing a practical proposal. B's repeated framing and emphatic qualifications make the statement more ceremonious.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Reviewing an embedded lesson task and discussing examples at the meeting will take time."
+            ],
+            "B": [
+              "My proposal directly addresses this gap while preserving the comparability we value:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A connects the missing comparison directly to the proposed task. B also identifies the gap, but its claim that evaluating that objective explains why the task belongs in an ordinary lesson supplies no actual connection between those choices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the quiz does not assess that comparison, I propose keeping the quiz and adding one classroom comparison task"
+            ],
+            "B": [
+              "Because this task evaluates the comparison-and-defense objective, it should be completed during an ordinary lesson."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the speaker's restrained stance and explains the recommendation without inflating its benefits. B's necessity and assurance language conflicts with the author's explicit preference for limited claims and real tradeoffs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That change will not eliminate the work, but it redirects existing meeting time toward evidence the quiz does not provide."
+            ],
+            "B": [
+              "A common quiz provides a necessary shared benchmark:",
+              "ensuring consistent standards across classes."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is present.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error, whereas B introduces local but consequential overstatements about comparability and consistent standards. A also fulfills the decisive writing goal by linking the identified gap to a targeted recommendation without strengthening the source's deliberately limited argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the quiz does not assess that comparison, I propose keeping the quiz and adding one classroom comparison task"
+            ],
+            "B": [
+              "we cannot tell whether score differences reflect pupil learning or variations in the assignments themselves.",
+              "ensuring consistent standards across classes."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b01af3ad20690bc71a943f49c1cce99c6839a4c33aa75b2aaa8cbcbcd4a6ecf",
+    "prompt_sha256": "94dc959d4b2d645c712b40c85e1edb41a959a6c531f0a2eef72583e32451e9eb",
+    "raw_sha256": "7e100c2bae5a35c786c6ed8d1403b9f229cbca7ad88bf9ce3b1e2d30d84acdb3",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a transport board submission; it contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the six-night proposal, advance publication, fixed departure, conditional use of the same vehicle and driver, reduced recovery time, uncertain depot impact, walking-time limitation, passenger tradeoff, and proposed review. Its public-timetable language reasonably describes planning benefits rather than guaranteeing punctuality.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later.",
+              "Complaints will identify concerns, not measure the views of every passenger."
+            ],
+            "A": [
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen.",
+              "complaints will identify concerns, not measure the views of every passenger."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the exact trial and operating conditions, the ten-minute interval and its limits, downstream inconvenience, missing passenger counts, uncertain depot impact, and records to review before expansion. Removing the explicit resilience-cost rebuttal does not omit its substance: the recovery-time loss and possible later return remain adjacent.",
+          "quotes": {
+            "source": [
+              "That is an operational possibility, not evidence that the change costs nothing in resilience.",
+              "The layover is currently the only recovery time before the vehicle returns to the depot."
+            ],
+            "A": [],
+            "B": [
+              "While that makes the change operationally possible, the layover is currently the only recovery time before the vehicle returns to the depot.",
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the proposal and its consequential qualifications. Neither invents passenger numbers, additional operating capacity, or a forecast of demand; both retain the affirmative recommendation and willingness to reverse it.",
+          "quotes": {
+            "source": [
+              "The operator has agreed to test the arrangement for those six nights, subject to publishing the changed times in advance."
+            ],
+            "A": [
+              "the operator has agreed to test the arrangement for those six nights, subject to publishing the changed times in advance."
+            ],
+            "B": [
+              "The operator has agreed to test the arrangement for those six nights, subject to publishing the changed times in advance"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads more continuously as a board submission. A is readable, but its separate weighing announcement followed by numbered transitions makes the organization more conspicuous than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Deciding whether to test this schedule requires weighing a usable departure at the venue against two competing priorities:",
+              "First, the main objection comes from passengers"
+            ],
+            "B": [
+              "The main objection is from passengers who board after the riverside stop and do not attend performances.",
+              "I still favor the six-night trial because"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more explicitly organizes the decision around the two costs and then brings both into the recommendation. B also develops a coherent argument, but leaves the reader to carry those costs into its closing emphasis on planning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "earlier service for other riders and recovery time at the end of the shift.",
+              "Moving the departure to 22:20 on six published nights asks downstream passengers to wait fifteen minutes later and trims depot recovery time"
+            ],
+            "B": [
+              "A published 22:20 departure replaces those informal requests with a public arrangement that both audience members and downstream passengers can plan around."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B keeps the candid acknowledgment of disadvantage and explains the affirmative judgment without repeating as much of the preceding case. A's fuller synthesis serves the task, but repeats both the original problem and the costs after already explaining them.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Keeping the 22:05 timetable leaves the bus unusable for the scheduled finish at the venue while informal hold requests make departure times uncertain along the rest of the route."
+            ],
+            "B": [
+              "They are being asked to accept a worse time for them so that others have a more usable time, and this should be acknowledged.",
+              "I still favor the six-night trial because we know the present 22:05 departure cannot serve the advertised 22:10 finish"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material fidelity error. The decisive priority is an affirmative recommendation that follows from acknowledged competing interests. A supplies a more explicit final weighing; B supplies enough connection through the planning benefit while better preserving conversational economy. These are comparably useful ways to meet this user's goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Given these tradeoffs, I favor the six-night trial.",
+              "asks downstream passengers to wait fifteen minutes later and trims depot recovery time"
+            ],
+            "B": [
+              "A published 22:20 departure replaces those informal requests with a public arrangement that both audience members and downstream passengers can plan around.",
+              "we should defend the choice as a limited tradeoff and be willing to reverse it"
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91302b3ba2f575fe6a81a1be28e2e743e343673919dd09be9028bd24a89a6416",
+    "prompt_sha256": "7fcdf26558af35e990344b81e3e8b70d5eebb3498b95e5451a288ae852d7d7a2",
+    "raw_sha256": "ed4b07cc9cacff71c1d18e40320d58ab4b783007e153ce6ff057bc88750449cd",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and wording of a transport board submission, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the exact trial, timetable and operating conditions, downstream disadvantage, limited walking interval, uncertain depot consequences, absence of passenger counts, and qualified use of complaints before expansion. The reordering changes emphasis without changing the proposal or its support.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later. We have not estimated how often that would happen.",
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "A": [
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen.",
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B turns a possible later depot return into a certain consequence of delayed evenings; uncertainty about frequency does not restore that conditional uncertainty. It also invents the claim that a trial is the only transparent way to resolve the priorities, replacing a supported preference with unsupported necessity. These changes materially strengthen both the operational prediction and the recommendation's justification.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later.",
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "A": [],
+            "B": [
+              "On delayed evenings, the depot return will be delayed as well.",
+              "a trial is the only transparent way to resolve the competing priorities"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves possibility and an affirmative but contestable judgment. B asserts a definite depot consequence and an exclusive justification unsupported by the source. Its claim that the trial eliminates informal delays also overstates what publishing a scheduled departure establishes.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later.",
+              "The proposal is a scheduled change on the six performance nights next month, not a standing instruction to wait for the audience."
+            ],
+            "A": [
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen.",
+              "The proposal is a scheduled change, not a standing instruction to wait for the audience"
+            ],
+            "B": [
+              "On delayed evenings, the depot return will be delayed as well.",
+              "It eliminates the current ad-hoc delays in favor of an open, scheduled service."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A uses direct, idiomatic submission prose. B remains understandable but adds abstract labels and bureaucratic phrasing, and its reference to what 'The submission must acknowledge' sounds like editing advice left inside the finished artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They are being asked to accept a worse time so that others have a more usable one"
+            ],
+            "B": [
+              "This change addresses a structural disconnect in the current schedule",
+              "The submission must acknowledge this tradeoff directly",
+              "It captures downstream passenger friction"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves from the schedule problem and proposed remedy to passenger and operational costs, then to the reason for accepting a limited trial. B's headings make topics easy to locate, but its three-part catalogue culminates in an unsupported exclusivity claim rather than explaining why the planning benefit warrants the acknowledged costs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The change involves competing service priorities and an operational risk.",
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "B": [
+              "it requires balancing three distinct service priorities:",
+              "a trial is the only transparent way to resolve the competing priorities"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A retains the source's candid, qualified judgment and connected explanation. B substitutes staged contrasts and managerial abstractions for that register, while its insistence on the 'only transparent way' conflicts with the author's preference for acknowledging a choice without strengthening the story.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That is an operational possibility, not evidence that the change costs nothing in resilience.",
+              "we should defend the choice as a limited tradeoff and be willing to reverse it"
+            ],
+            "B": [
+              "**System Predictability vs. Informal Discretion**",
+              "**Event Usability vs. Downstream Passenger Convenience**",
+              "a trial is the only transparent way to resolve the competing priorities"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B materially strengthens an uncertain operational consequence and invents necessity for the trial. A also better fulfills the decisive writing priority: its recommendation follows an explanation of the passenger disadvantage and recovery-time risk, with planning offered as the reason to accept a reversible tradeoff.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The change involves competing service priorities and an operational risk.",
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "B": [
+              "On delayed evenings, the depot return will be delayed as well.",
+              "a trial is the only transparent way to resolve the competing priorities"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b4a8479fba3f04774ddb372cf40fc7eca6f4d1732b83f409e27dcbefd7dd04e0",
+    "prompt_sha256": "7fcdf26558af35e990344b81e3e8b70d5eebb3498b95e5451a288ae852d7d7a2",
+    "raw_sha256": "ed4b07cc9cacff71c1d18e40320d58ab4b783007e153ce6ff057bc88750449cd",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-12",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise a transport board submission, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the proposed trial and most qualifications, but makes a possible depot delay certain on delayed evenings. It also adds an unsupported claim that the trial is the only transparent way to resolve the priorities, strengthening the recommendation beyond the source's stated rationale.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later.",
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "A": [
+              "On delayed evenings, the depot return will be delayed as well.",
+              "a trial is the only transparent way to resolve the competing priorities"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the six-night proposal, advance publication, fixed departure rule, operating conditions, uncertain depot impact, passenger tradeoff, and records for review. It also retains the limits of the ten-minute interval and complaint evidence.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later.",
+              "Complaints will identify concerns, not measure the views of every passenger."
+            ],
+            "A": [],
+            "B": [
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen.",
+              "Complaints will identify concerns, not measure the views of every passenger."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the central proposal and acknowledge its costs. B preserves the source's uncertainty and affirmative rationale, whereas A strengthens both the depot-delay prediction and the necessity of the trial.",
+          "quotes": {
+            "source": [
+              "On a delayed evening the return may therefore be later."
+            ],
+            "A": [
+              "On delayed evenings, the depot return will be delayed as well."
+            ],
+            "B": [
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a finished submission in connected, candid prose. A repeatedly shifts into instructions about how the submission should argue, interrupting the speaker's presentation to the board.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The submission must acknowledge this tradeoff directly rather than framing the revision as an improvement for all riders."
+            ],
+            "B": [
+              "They are being asked to accept a worse time so that others have a more usable one, and this should be acknowledged instead of calling the change better for everyone."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the timetable problem through passenger and operating costs to a recommendation grounded in advance planning. A's categories organize the facts, but its conclusion switches to an unsupported claim that a trial uniquely resolves the priorities.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a trial is the only transparent way to resolve the competing priorities"
+            ],
+            "B": [
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the author's direct acknowledgment of costs while explaining the choice. A's abstract category labels and instructions about the submission make the argument feel more like an analytical outline than the requested candid submission.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**System Predictability vs. Informal Discretion**",
+              "The submission must acknowledge this tradeoff directly"
+            ],
+            "B": [
+              "The change involves competing service priorities and an operational risk.",
+              "If we proceed, we should defend the choice as a limited tradeoff and be willing to reverse it"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material fidelity error; A introduces minor but consequential increases in certainty and necessity. B also better meets the decisive writing priority: its recommendation follows from a usable public schedule after candid acknowledgment of passenger inconvenience and operating uncertainty.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a trial is the only transparent way to resolve the competing priorities"
+            ],
+            "B": [
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "91ba509906eee5a729266ec810f4ce0831a43e43e3388fb886ca9117e4b8d3af",
+    "prompt_sha256": "03a01c110a4ce68ae19b9f14fd99e9f0c32e2edd2b490cd7f57b53897cb81c9d",
+    "raw_sha256": "5903a70a44bbb8c980201fd72bccb429941aebab19bc55c41c7543788d59c9a4",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-12",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns the reasoning and prose of a transport board submission, not a mathematical proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the exact trial, publication requirement, departure rule, operating conditions, uncertain depot impact, passenger disadvantage, and review records. Removing the explicit resilience disclaimer does not remove its substance: the only recovery time and possible later return remain explained.",
+          "quotes": {
+            "source": [
+              "The layover is currently the only recovery time before the vehicle returns to the depot.",
+              "On a delayed evening the return may therefore be later."
+            ],
+            "A": [
+              "the layover is currently the only recovery time before the vehicle returns to the depot.",
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the proposal, conditions, tradeoffs, uncertainty, and monitoring limits. Its statement about a timetable that can be relied upon reasonably refers to a published planning arrangement in context; it does not establish a punctuality guarantee, particularly given the retained discussion of delays.",
+          "quotes": {
+            "source": [
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement.",
+              "On a delayed evening the return may therefore be later."
+            ],
+            "A": [],
+            "B": [
+              "it gives every stop a timetable that can be relied upon",
+              "On a delayed evening the return may therefore be later, and we have not estimated how often that would happen."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the factual proposal and its material limits, including the adverse change for downstream passengers and the uncertain operating consequences. B's broader wording about timetable reliability is less precise, but context supports the same planning rationale expressed explicitly in A and the source.",
+          "quotes": {
+            "source": [
+              "I favor the six-night trial because it creates a service that can be planned around and replaces informal requests with a public arrangement."
+            ],
+            "A": [
+              "A published 22:20 departure replaces those informal requests with a public arrangement that both audience members and downstream passengers can plan around."
+            ],
+            "B": [
+              "it gives every stop a timetable that can be relied upon and confines the disruption to a short test."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A maintains a direct conversational rhythm with less repetition. B remains readable, but its formal signposting and repeated account of the timetable problem make the submission somewhat more labored.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I still favor the six-night trial because we know the present 22:05 departure cannot serve the advertised 22:10 finish"
+            ],
+            "B": [
+              "Deciding whether to test this schedule requires weighing a usable departure at the venue against two competing priorities: earlier service for other riders and recovery time at the end of the shift."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B first establishes the scheduling problem, introduces the proposal as its response, and then names the two costs the recommendation must weigh. Its conclusion explicitly brings those costs back into the decision. A has a coherent order, but leaves more of that connection implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The operator has agreed to test the arrangement for those six nights",
+              "The main objection is from passengers who board after the riverside stop and do not attend performances."
+            ],
+            "B": [
+              "To replace these informal requests with a public arrangement that people can plan around",
+              "Moving the departure to 22:20 on six published nights asks downstream passengers to wait fifteen minutes later and trims depot recovery time"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both retain the candid register and consequential qualifications. B more fully satisfies the author's stated preference for building the argument: it explicitly relates the recommendation to the costs just acknowledged, rather than relying primarily on restating the scheduling benefit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A published 22:20 departure replaces those informal requests with a public arrangement that both audience members and downstream passengers can plan around."
+            ],
+            "B": [
+              "Given these tradeoffs, I favor the six-night trial.",
+              "Moving the departure to 22:20 on six published nights asks downstream passengers to wait fifteen minutes later and trims depot recovery time"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The submission contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. A is more economical and conversational, but B has a modest substantive advantage on the user's central request: its final recommendation explicitly weighs the later downstream journey and reduced recovery time against a published, usable schedule and a limited trial.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "I still favor the six-night trial because we know the present 22:05 departure cannot serve the advertised 22:10 finish"
+            ],
+            "B": [
+              "Moving the departure to 22:20 on six published nights asks downstream passengers to wait fifteen minutes later and trims depot recovery time, but it gives every stop a timetable that can be relied upon and confines the disruption to a short test."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ca3e8c7d5d8441fc53724fa4848086d8a1802d8367a73ce13b355e3eccb0542e",
+    "prompt_sha256": "03a01c110a4ce68ae19b9f14fd99e9f0c32e2edd2b490cd7f57b53897cb81c9d",
+    "raw_sha256": "5903a70a44bbb8c980201fd72bccb429941aebab19bc55c41c7543788d59c9a4",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded convergence proof preserving its hypotheses, strategy, and quantitative bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the Euclidean setting, nonnegative summable perturbations, recurrence, full parameter range, and error bound. The endpoint cases and limiting argument are valid, and no geometric rate is asserted.",
+          "quotes": {
+            "source": [
+              "Suppose 0 <= rho < 1 and numbers eta_k >= 0 satisfy sum_{k=0}^infinity eta_k < infinity",
+              "This also covers rho = 0."
+            ],
+            "A": [
+              "Suppose there exist a constant $0 \\le \\rho < 1$ and a sequence of nonnegative real numbers $(\\eta_k)_{k=0}^\\infty$",
+              "nothing in this derivation requires $\\rho$ to be strictly positive"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all hypotheses and the stated bound. The finite-sum identities, empty-sum case, vanishing tails, Cauchy argument, completeness, and final limit passage are correct. The supremum limit follows by squeezing between zero and the displayed vanishing bound.",
+          "quotes": {
+            "source": [
+              "||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho).",
+              "No geometric decay of the tail of eta_k was assumed"
+            ],
+            "A": [],
+            "B": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}",
+              "does not establish a geometric convergence rate."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the assumptions, quantifiers, conclusion, and restriction on rate claims. Their different final limit arguments establish the same estimate without adding substantive claims.",
+          "quotes": {
+            "source": [
+              "Completeness supplies x_*, and taking p to infinity gives the claimed estimate."
+            ],
+            "A": [
+              "Passing to the limit as $p \\to \\infty$ preserves the non-strict inequality"
+            ],
+            "B": [
+              "Taking the limit as $p \\to \\infty$ and using $\\lim_{p \\to \\infty} \\|x_* - x_p\\|_2 = 0$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B gives readable technical explanations at the point of use. A is also idiomatic, but its long opening roadmap and repeated descriptions of established facts make the proof more cumbersome to read.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Bounding these finite sums serves two distinct purposes: first, starting the sum at $n = 0$ shows"
+            ],
+            "B": [
+              "We therefore begin by bounding the partial sums",
+              "Both sums of step lengths can be written in terms of $S_{n,N}$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both explain why increment sums matter. B connects distances to those sums immediately, then explains why the numerator's step term must vanish just before proving it. A previews nearly the entire proof before beginning, duplicating explanations that appear again later.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "which simultaneously proves the Cauchy property and yields the quantitative error bound upon letting $p \\to \\infty$."
+            ],
+            "B": [
+              "the triangle inequality bounds $\\|x_p - x_n\\|_2$ by the corresponding finite sum of step lengths $d_k$.",
+              "which will ensure that the $d_n$ term in the upper bound vanishes for large $n$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better combines the requested motivation with connected prose and visibly separated calculations. A supplies useful detail, but repeats its roadmap and places some substantial final calculations inline, making its rhythm less suited to the author's stated preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Crucially, the right-hand side of this inequality depends only on $n$ and not on $p$.",
+              "By the reverse triangle inequality, $\\bigl|\\|x_p - x_n\\|_2 - \\|x_* - x_n\\|_2\\bigr| \\le \\|x_p - x_*\\|_2$"
+            ],
+            "B": [
+              "The right-hand side does not depend on $p$.",
+              "Before bounding $\\|x_p - x_n\\|_2$, we use the $n = 0$ case of this estimate"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain reindexing, the sign permitting removal of the terminal term, bounded monotone partial sums, vanishing terms and tails, and the passage from Cauchy convergence to the bound. Both handle empty sums and rho equal to zero. A's explicit epsilon argument and B's aligned derivations are valid alternative expositions.",
+          "quotes": {
+            "source": [
+              "Explain the compressed steps and the purpose of the estimates in connected mathematical prose."
+            ],
+            "A": [
+              "Dropping $-\\rho d_N$ can only increase the right-hand side",
+              "the partial sums $S_{0,N}$ form a nondecreasing sequence of real numbers bounded above by a fixed constant independent of $N$."
+            ],
+            "B": [
+              "the second inequality uses $\\rho \\ge 0$ and $d_N = \\|x_{N+1} - x_N\\|_2 \\ge 0$ to drop $-\\rho d_N \\le 0$.",
+              "the partial sums $S_{0,N}$ are nondecreasing in $N$ and bounded above by a finite constant independent of $N$."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better meets the decisive preference for explaining each construction's purpose as the argument develops: it motivates increment sums through the distance estimate and explains the need for d_n to vanish immediately before establishing it. It retains the proof's detail while avoiding A's repeated full-proof roadmap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "our central strategy is to control finite blocks of the series $\\sum d_k$.",
+              "Bounding these finite sums serves two distinct purposes:"
+            ],
+            "B": [
+              "To prove that $(x_k)_{k=0}^\\infty$ converges and to bound the distance from $x_n$ to the limit, we need to control $\\|x_p - x_n\\|_2$",
+              "which will ensure that the $d_n$ term in the upper bound vanishes for large $n$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2bd3c60f18e4ef0ef407c02f401ab835f6a2f8360f79ec49a1601ef4e04c142c",
+    "prompt_sha256": "3c78b6f786e67f26975ac7a9c4dbe8314174159ab367e8985ffc41f144e0ce19",
+    "raw_sha256": "5fdc7468c4fffa6dfea2fc6e9c0ee86bbbe304429c848ae18cd18a218d40a431",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for an explanatory revision of a mathematical convergence proof and its error estimate.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the setting, hypotheses, full parameter range, and conclusion. Its intermediate perturbation sum ends at p−1 rather than the sharper p−2; this is a valid weakening because the added term is nonnegative. The proof makes no unsupported rate claim.",
+          "quotes": {
+            "source": [
+              "numbers eta_k >= 0",
+              "No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "\\frac{d_n + \\sum_{k=n}^{p-1} \\eta_k}{1 - \\rho}",
+              "the estimate should not be described as a geometric convergence rate."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The main hypotheses, inequalities, and conclusion are preserved, but two explanations are false: discarding the nonpositive term weakens the bound, and rho equal to zero does not remove the perturbations eta_k. These mislead about logical strength and the endpoint's meaning without invalidating the displayed proof. The final rate characterization is also ambiguous between the bound and actual error; that ambiguity is not treated as a separate material error.",
+          "quotes": {
+            "source": [
+              "(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k\n<= d_n + sum_{k=n}^{N-1} eta_k.",
+              "d_{k+1} <= rho d_k + eta_k"
+            ],
+            "A": [],
+            "B": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "**Inclusion of the Unperturbed Case ($\\rho = 0$):**"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A preserves the source's claims without substantive additions. B retains the theorem but mislabels the perturbed rho-zero case and reverses the description of inequality strength. Its final statement about the actual error 'strictly reflecting' perturbations is less precise than the source's limited claim that geometric convergence is not established.",
+          "quotes": {
+            "source": [
+              "This also covers rho = 0.",
+              "the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "This estimate also covers $\\rho = 0$.",
+              "the estimate should not be described as a geometric convergence rate."
+            ],
+            "B": [
+              "**Inclusion of the Unperturbed Case ($\\rho = 0$):**",
+              "strictly reflecting the decay profile of the external perturbations."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as a continuous mathematical proof with straightforward explanations. B's repeated section announcements and inflated descriptions make the same elementary operations sound more elaborate than they are.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The first sum on the right-hand side omits only the final term $d_N$:",
+              "We now show that $(x_k)_{k=0}^\\infty$ is a Cauchy sequence."
+            ],
+            "B": [
+              "#### 4. Summability of Steps and Asymptotic Vanishing",
+              "Rearranging terms to collect all occurrences of the total sum $S_{n, N}$ on the left-hand side"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "B explains the overall purpose of summing increments earlier and explicitly connects the estimate to telescoping. A offers only a procedural introduction to the sum, but its subsequent development is continuous and avoids B's repeated roadmap and fragmented seven-section structure. These are substantive, offsetting strengths.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To establish this, we first bound the partial sums of the step sizes.",
+              "Specializing this bound to $n = 0$ gives"
+            ],
+            "B": [
+              "The triangle inequality bounds $\\|x_p - x_n\\|_2$ by $S_{n, p-1}$.",
+              "Instead, we proceed in three stages:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the requested connected mathematical prose and clean displayed steps, though its opening motivation could be fuller. B supplies that motivation but packages the proof as an elaborate outline and adds a broad concluding discussion beyond the requested contribution.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Substituting these identities into the summed recurrence yields",
+              "Taking $p \\to \\infty$ in the bound on $\\|x_p - x_n\\|_2$, the continuity of the Euclidean norm yields the claimed estimate:"
+            ],
+            "B": [
+              "#### 2. Strategy and Motivation of the Proof",
+              "#### 7. Structural Remarks on Hypotheses and Convergence Rate"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both correctly establish summability, vanishing tails, the Cauchy property, completeness, and the quantitative bound, including endpoint cases. B provides more explicit strategic and epsilon-level explanation, but teaches the wrong direction of logical strength when dropping a negative term. A's corresponding explanation and displayed inequality are correct; its slightly looser finite perturbation bound is valid.",
+          "quotes": {
+            "source": [
+              "(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k\n<= d_n + sum_{k=n}^{N-1} eta_k."
+            ],
+            "A": [
+              "Because $\\rho \\ge 0$ and $d_N \\ge 0$, the term $-\\rho d_N$ is nonpositive",
+              "the partial sums $(S_{0,N})_{N \\ge 0}$ form a nondecreasing sequence bounded above."
+            ],
+            "B": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "Because the terms $d_k$ are non-negative, the sequence of partial sums $(S_{0, N})_{N=0}^\\infty$ is non-decreasing."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B has minor explanatory errors about inequality strength and the rho-zero case, despite a valid core proof. A also delivers the requested connected proof with displayed intermediate steps. B's stronger initial motivation is useful, but its extensive outline and added rate discussion make it less faithful to the intended artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $\\rho \\ge 0$ and $d_N \\ge 0$, the term $-\\rho d_N$ is nonpositive",
+              "This estimate also covers $\\rho = 0$."
+            ],
+            "B": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "**Inclusion of the Unperturbed Case ($\\rho = 0$):**",
+              "Instead, we proceed in three stages:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7cee0c0b93761e883ab116a754d2ad83557e451be87e1e3625f9f9302c3eb7d9",
+    "prompt_sha256": "3c78b6f786e67f26975ac7a9c4dbe8314174159ab367e8985ffc41f144e0ce19",
+    "raw_sha256": "5fdc7468c4fffa6dfea2fc6e9c0ee86bbbe304429c848ae18cd18a218d40a431",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded convergence proof with a quantitative error estimate.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the Euclidean setting, all hypotheses, both boundary cases, and the stated bound. The convergence argument is valid and makes no geometric-rate claim.",
+          "quotes": {
+            "source": [
+              "This also covers rho = 0.",
+              "No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "which also covers the case $\\rho = 0$, where the recurrence reduces to $d_{k+1} \\le \\eta_k$",
+              "does not establish a geometric convergence rate."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the assumptions and conclusion, correctly explains empty sums and zero rho, and justifies the final passage to the limit. Its observation that summable perturbation tails can decay arbitrarily slowly is valid.",
+          "quotes": {
+            "source": [
+              "Suppose 0 <= rho < 1 and numbers eta_k >= 0 satisfy sum_{k=0}^infinity eta_k < infinity",
+              "No geometric decay of the tail of eta_k was assumed"
+            ],
+            "A": [],
+            "B": [
+              "nothing in this derivation requires $\\rho$ to be strictly positive",
+              "Because this tail can decay arbitrarily slowly"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full recurrence hypotheses, convergence conclusion, and exact tail bound without strengthening the rate. Their different final-limit arguments are equally valid.",
+          "quotes": {
+            "source": [
+              "||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho)."
+            ],
+            "A": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}"
+            ],
+            "B": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the same operations in more conversational sentences. B is readable but repeatedly expands straightforward transitions into formal procedural narration.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Both sums of step lengths can be written in terms of $S_{n,N}$."
+            ],
+            "B": [
+              "Collecting the terms involving $S_{n,N}$ on the left-hand side and adding $d_n$ to both sides, we obtain"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both establish why summing increments matters. A gives that motivation, develops the estimate, and explains the need for vanishing increments when it arises. B's opening roadmap anticipates nearly the entire proof before developing it, creating repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore begin by bounding the partial sums",
+              "which will ensure that the $d_n$ term in the upper bound vanishes for large $n$."
+            ],
+            "B": [
+              "Bounding these finite sums serves two distinct purposes:",
+              "which simultaneously proves the Cauchy property and yields the quantitative error bound upon letting $p \\to \\infty$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better combines purpose-driven prose with staged, aligned calculations. B supplies useful detail but packs its roadmap and some later calculations into long passages, less closely matching the author's requested rhythm and mathematical layout.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To prove that $(x_k)_{k=0}^\\infty$ converges and to bound the distance from $x_n$ to the limit, we need to control",
+              "&= S_{n,p-1} \\\\\n&\\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}."
+            ],
+            "B": [
+              "our central strategy is to control finite blocks of the series $\\sum d_k$.",
+              "then for any $p, q \\ge M$, the triangle inequality gives $\\|x_p - x_q\\|_2 \\le \\|x_p - x_M\\|_2 + \\|x_q - x_M\\|_2 < \\varepsilon$."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly unpack reindexing, discarding the nonpositive term, bounded monotone sums, vanishing tails, the Cauchy argument, completeness, and the final limit. A has clearer aligned displays; B gives a more explicit epsilon argument and norm-continuity justification. Neither leaves a substantive proof gap.",
+          "quotes": {
+            "source": [
+              "Explain the compressed steps and the purpose of the estimates in connected mathematical prose."
+            ],
+            "A": [
+              "the partial sums $S_{0,N}$ are nondecreasing in $N$ and bounded above by a finite constant independent of $N$.",
+              "Taking the limit as $p \\to \\infty$ and using $\\lim_{p \\to \\infty} \\|x_* - x_p\\|_2 = 0$"
+            ],
+            "B": [
+              "Dropping $-\\rho d_N$ can only increase the right-hand side",
+              "By the reverse triangle inequality"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better meets the decisive preference for connected explanation that introduces each construction with its purpose: it motivates the increment sum through distances between iterates, then explains later steps as needed. B is complete but repeats that development in an oversized opening roadmap.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the triangle inequality bounds $\\|x_p - x_n\\|_2$ by the corresponding finite sum of step lengths $d_k$. We therefore begin by bounding the partial sums"
+            ],
+            "B": [
+              "Bounding these finite sums serves two distinct purposes:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "56c0ac0be6949243d6df9080dd2742d46ffacd549f5bcb3839e9094f6e0d0f0f",
+    "prompt_sha256": "b75750a9599434146c59df9850071bcf1751ea87613a1e2456df61f3158e3d5c",
+    "raw_sha256": "8ad8858a97faef43c67f7c25282bb21fe5b9fabc49d855457a04a225c2c845f8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requires explaining a convergence proof while retaining its hypotheses, strategy, and quantitative conclusion.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The main derivation and bound are correct, but A calls rho = 0 unperturbed although eta may remain nonzero, and says discarding a negative term strengthens an inequality when it weakens the bound. Its final claim that the actual rate strictly reflects the perturbations also exceeds an upper estimate; the surrounding qualification makes the sub-geometric wording ambiguous rather than a categorical exclusion of faster convergence.",
+          "quotes": {
+            "source": [
+              "Suppose 0 <= rho < 1 and numbers eta_k >= 0 satisfy sum_{k=0}^infinity eta_k < infinity",
+              "<= d_n + sum_{k=n}^{N-1} eta_k.",
+              "No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "Inclusion of the Unperturbed Case ($\\rho = 0$)",
+              "Dropping this non-positive term strengthens the inequality:",
+              "strictly reflecting the decay profile of the external perturbations."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the setting, hypotheses, boundary cases, and exact conclusion. Using a perturbation sum through p−1 rather than p−2 in the telescoping estimate is a valid relaxation because the terms are nonnegative.",
+          "quotes": {
+            "source": [
+              "An iterative audio reconstruction produces vectors x_0, x_1, ... in R^m",
+              "Suppose 0 <= rho < 1 and numbers eta_k >= 0",
+              "This also covers rho = 0."
+            ],
+            "A": [],
+            "B": [
+              "An iterative audio reconstruction produces vectors $x_0, x_1, \\dots$ in $\\mathbb{R}^m$",
+              "&\\le \\frac{d_n + \\sum_{k=n}^{p-1} \\eta_k}{1 - \\rho}",
+              "This estimate also covers $\\rho = 0$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B preserves the source's application and appropriately limited rate conclusion. A retains the theorem but introduces misleading descriptions of the zero-rho case, inequality strength, and the connection between the bound and actual convergence rate.",
+          "quotes": {
+            "source": [
+              "No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "the quantitative convergence rate of $\\|x_* - x_n\\|_2$ is fundamentally sub-geometric in general, strictly reflecting the decay profile of the external perturbations."
+            ],
+            "B": [
+              "Because no geometric decay was assumed for the tail of $\\eta_k$, the estimate should not be described as a geometric convergence rate."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses readable mathematical prose with direct transitions. A's frequent headings and elevated labels interrupt a relatively short argument and make ordinary steps sound more elaborate than they are.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 4. Summability of Steps and Asymptotic Vanishing",
+              "A fundamental necessary condition for the convergence of a series is that its general term tends to zero."
+            ],
+            "B": [
+              "Thus the infinite series $\\sum_{k=0}^\\infty d_k$ converges, which implies that the terms vanish in the limit:"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A more explicitly connects the unknown limit to the need to bound distances between iterates before introducing the sum estimate. B's order is logically sound, but its opening transition announces partial sums without explaining their purpose until the later telescoping argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Instead, we proceed in three stages:",
+              "The triangle inequality bounds $\\|x_p - x_n\\|_2$ by $S_{n, p-1}$."
+            ],
+            "B": [
+              "To establish this, we first bound the partial sums of the step sizes.",
+              "We now show that $(x_k)_{k=0}^\\infty$ is a Cauchy sequence."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better follows the requested connected prose and clean displayed derivations. Its early motivation could be fuller, but A's seven-section treatment, numbered roadmap, and extended structural commentary depart more substantially from the requested artifact and voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 2. Strategy and Motivation of the Proof",
+              "#### 7. Structural Remarks on Hypotheses and Convergence Rate"
+            ],
+            "B": [
+              "The first sum on the right-hand side omits only the final term $d_N$:",
+              "For any integers $p > n \\ge 0$, we express the difference $x_p - x_n$ as a telescoping sum and apply the triangle inequality:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both lay out the finite-sum algebra and correctly establish convergence through bounded partial sums, telescoping, and completeness. B accurately describes the key relaxation; A's claim that it strengthens the inequality teaches the wrong comparison, despite its valid displayed calculation. A's additional rate commentary also goes beyond the proved estimate.",
+          "quotes": {
+            "source": [
+              "(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k\n<= d_n + sum_{k=n}^{N-1} eta_k."
+            ],
+            "A": [
+              "Dropping this non-positive term strengthens the inequality:"
+            ],
+            "B": [
+              "Because $\\rho \\ge 0$ and $d_N \\ge 0$, the term $-\\rho d_N$ is nonpositive, so"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A adds minor but concrete mathematical misdescriptions to an otherwise correct proof. B also better delivers connected prose and displayed steps without the extensive structural packaging. A's stronger upfront motivation is useful, but does not outweigh B's fidelity and more suitable finished form.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "Inclusion of the Unperturbed Case ($\\rho = 0$)"
+            ],
+            "B": [
+              "Because $\\rho \\ge 0$ and $d_N \\ge 0$, the term $-\\rho d_N$ is nonpositive, so",
+              "Taking $p \\to \\infty$ in the bound on $\\|x_p - x_n\\|_2$, the continuity of the Euclidean norm yields the claimed estimate:"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b4e65fc94cb05896529833b0800a6811ba177e83e06c408042d14fe097eae3e3",
+    "prompt_sha256": "b75750a9599434146c59df9850071bcf1751ea87613a1e2456df61f3158e3d5c",
+    "raw_sha256": "8ad8858a97faef43c67f7c25282bb21fe5b9fabc49d855457a04a225c2c845f8",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded convergence proof preserving its hypotheses, strategy, and quantitative estimate.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the Euclidean setting, nonnegative summable perturbations, full parameter range, recurrence, and error bound. Its expanded argument is valid and makes no geometric-rate claim.",
+          "quotes": {
+            "source": [
+              "This also covers rho = 0.",
+              "No geometric decay of the tail of eta_k was assumed"
+            ],
+            "A": [
+              "nothing in this derivation requires $\\rho$ to be strictly positive",
+              "an a posteriori error estimate rather than a geometric convergence rate"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all assumptions and the stated bound. The finite-sum argument, endpoint cases, Cauchy argument, and passage to the limit preserve the source's conclusions.",
+          "quotes": {
+            "source": [
+              "Suppose 0 <= rho < 1 and numbers eta_k >= 0 satisfy sum_{k=0}^infinity eta_k < infinity",
+              "the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [],
+            "B": [
+              "a constant $\\rho$ with $0 \\le \\rho < 1$",
+              "does not establish a geometric convergence rate."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the hypotheses, exact quantitative conclusion, and limitation on rates. Neither adds an unsupported mathematical conclusion.",
+          "quotes": {
+            "source": [
+              "||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho)."
+            ],
+            "A": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}"
+            ],
+            "B": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses more manageable sentences while retaining explanations. A's opening proof paragraph repeatedly previews consequences that the subsequent proof explains again.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Bounding these finite sums serves two distinct purposes:",
+              "which simultaneously proves the Cauchy property and yields the quantitative error bound upon letting $p \\to \\infty$."
+            ],
+            "B": [
+              "We therefore begin by bounding the partial sums",
+              "Both sums of step lengths can be written in terms of $S_{n,N}$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain why step sums control distances, establish summability before using vanishing increments, and obtain the limit before estimating its distance. Their logical ordering is comparably effective.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before using this bound for general $n$, we must ensure that the term $d_n$ appearing in its numerator converges to zero"
+            ],
+            "B": [
+              "which will ensure that the $d_n$ term in the upper bound vanishes for large $n$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better balances the author's demand for connected motivation with removal of repetition. It introduces the estimate through its purpose and lays out the calculation without A's extensive advance narration.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "our central strategy is to control finite blocks of the series $\\sum d_k$.",
+              "Bounding these finite sums serves two distinct purposes:"
+            ],
+            "B": [
+              "To prove that $(x_k)_{k=0}^\\infty$ converges and to bound the distance from $x_n$ to the limit, we need to control $\\|x_p - x_n\\|_2"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain the reindexing, sign of the discarded term, empty sums, positive denominator including rho = 0, bounded monotone partial sums, vanishing tails, and completeness. Their different final limit arguments are both valid and explained.",
+          "quotes": {
+            "source": [
+              "Explain the compressed steps and the purpose of the estimates in connected mathematical prose."
+            ],
+            "A": [
+              "Dropping $-\\rho d_N$ can only increase the right-hand side",
+              "By the reverse triangle inequality"
+            ],
+            "B": [
+              "the second inequality uses $\\rho \\ge 0$ and $d_N = \\|x_{N+1} - x_N\\|_2 \\ge 0$",
+              "Taking the limit as $p \\to \\infty$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both supply the requested proof details. B better meets the decisive preference for explanation without rhetorical repetition: its opening connects distances to step sums directly, and its displayed calculations carry the argument forward. A's lengthy roadmap repeats much of that development.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Bounding these finite sums serves two distinct purposes:"
+            ],
+            "B": [
+              "the triangle inequality bounds $\\|x_p - x_n\\|_2$ by the corresponding finite sum of step lengths $d_k$.",
+              "We therefore begin by bounding the partial sums"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "2bd3c60f18e4ef0ef407c02f401ab835f6a2f8360f79ec49a1601ef4e04c142c",
+    "prompt_sha256": "3c78b6f786e67f26975ac7a9c4dbe8314174159ab367e8985ffc41f144e0ce19",
+    "raw_sha256": "50dafb14e19e0dca8567d2c84baf4077ccbd75e59a6ba530c15c6d250b8b100d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is an explanatory revision of a convergence proof with a prescribed strategy and quantitative conclusion.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the assumptions and bound and supplies a valid proof throughout the full parameter range. Its perturbation sum ending at p-1 is a harmless enlargement of the sharper sum ending at p-2, since the terms are nonnegative.",
+          "quotes": {
+            "source": [
+              "numbers eta_k >= 0",
+              "This also covers rho = 0."
+            ],
+            "A": [
+              "\\frac{d_n + \\sum_{k=n}^{p-1} \\eta_k}{1 - \\rho}",
+              "This estimate also covers $\\rho = 0$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "The theorem and central proof remain valid, but the closing commentary overstates what the bound determines. Saying that the actual error rate strictly reflects the perturbations goes beyond a one-sided estimate: the recurrence permits constant iterates even with slowly decaying positive perturbations. The phrase 'in general' can describe worst-case behavior, but does not justify that stronger characterization. The heading also incorrectly calls rho = 0 unperturbed, although eta_k may remain nonzero.",
+          "quotes": {
+            "source": [
+              "d_{k+1} <= rho d_k + eta_k",
+              "No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [],
+            "B": [
+              "Inclusion of the Unperturbed Case ($\\rho = 0$)",
+              "the quantitative convergence rate of $\\|x_* - x_n\\|_2$ is fundamentally sub-geometric in general, strictly reflecting the decay profile of the external perturbations."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the mathematical hypotheses and displayed conclusion. A also preserves the source's restrained rate qualification; B shifts from an upper bound to an unsupported characterization of the actual rate and mislabels rho = 0 as unperturbed.",
+          "quotes": {
+            "source": [
+              "the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "Because no geometric decay was assumed for the tail of $\\eta_k$, the estimate should not be described as a geometric convergence rate."
+            ],
+            "B": [
+              "strictly reflecting the decay profile of the external perturbations."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as a continuous mathematical proof. B repeatedly announces and categorizes elementary transitions, producing a more ceremonial exposition than this audience needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The first sum on the right-hand side omits only the final term $d_N$:",
+              "We now show that $(x_k)_{k=0}^\\infty$ is a Cauchy sequence."
+            ],
+            "B": [
+              "#### 4. Summability of Steps and Asymptotic Vanishing",
+              "#### 7. Structural Remarks on Hypotheses and Convergence Rate"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A follows the mathematical dependencies directly, although its initial explanation of why step sums matter is thin. B supplies that motivation explicitly, but its roadmap and many subdivisions repeat and interrupt the same progression. Neither has a decisive organizational advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To establish this, we first bound the partial sums of the step sizes.",
+              "Specializing this bound to $n = 0$ gives"
+            ],
+            "B": [
+              "Because the candidate limit $x_*$ is not known a priori",
+              "The triangle inequality bounds $\\|x_p - x_n\\|_2$ by $S_{n, p-1}$."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better fits the requested connected mathematical prose and preserves explanatory calculations without extensive packaging. B's numbered strategy, nested headings, and extended structural remarks compete with the proof and introduce commentary the source does not support.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Substituting these identities into the summed recurrence yields",
+              "Because each $d_k \\ge 0$, the partial sums $(S_{0,N})_{N \\ge 0}$ form a nondecreasing sequence bounded above."
+            ],
+            "B": [
+              "Instead, we proceed in three stages:",
+              "##### Uniform Upper Bound",
+              "**Preservation of the Quantitative Rate:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both lay out the required central derivation correctly, including endpoint cases and completeness. A's slightly looser finite bound is valid. B adds mathematically misleading explanations: discarding a nonpositive right-hand term weakens the estimate, rather than strengthening it, and the final actual-rate characterization does not follow.",
+          "quotes": {
+            "source": [
+              "(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k",
+              "do not strengthen the convergence rate."
+            ],
+            "A": [
+              "Because $\\rho \\ge 0$ and $d_N \\ge 0$, the term $-\\rho d_N$ is nonpositive",
+              "the continuity of the Euclidean norm yields the claimed estimate"
+            ],
+            "B": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "strictly reflecting the decay profile of the external perturbations."
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B's localized closing claims mischaracterize the perturbation case and overstate what the rate bound determines, despite a correct central proof. A is also the more usable completed artifact for this author: it expands the algebra in connected prose without B's repeated outlines and extensive sectioning. Its initial motivation could still be stronger.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The sum on the left-hand side shifts indices to run from $n+1$ to $N$:",
+              "the estimate should not be described as a geometric convergence rate."
+            ],
+            "B": [
+              "Instead, we proceed in three stages:",
+              "strictly reflecting the decay profile of the external perturbations."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7cee0c0b93761e883ab116a754d2ad83557e451be87e1e3625f9f9302c3eb7d9",
+    "prompt_sha256": "3c78b6f786e67f26975ac7a9c4dbe8314174159ab367e8985ffc41f144e0ce19",
+    "raw_sha256": "50dafb14e19e0dca8567d2c84baf4077ccbd75e59a6ba530c15c6d250b8b100d",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded convergence proof with a quantitative error estimate.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the Euclidean hypotheses, summable nonnegative perturbations, full range of rho, and stated bound. The derivation and limit argument are valid and do not claim geometric convergence.",
+          "quotes": {
+            "source": [
+              "||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho).",
+              "This also covers rho = 0."
+            ],
+            "A": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}.",
+              "which also covers the case $\\rho = 0$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the hypotheses and exact quantitative conclusion. The finite-sum estimate, endpoint cases, Cauchy argument, and passage to the limit are correct; no geometric rate is asserted.",
+          "quotes": {
+            "source": [
+              "||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho).",
+              "This also covers rho = 0."
+            ],
+            "A": [],
+            "B": [
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}.",
+              "nothing in this derivation requires $\\rho$ to be strictly positive"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully preserve the assumptions, proof strategy, error bound, and restriction on interpreting the convergence rate. Their additional explanations are mathematically supported.",
+          "quotes": {
+            "source": [
+              "No geometric decay of the tail of eta_k was assumed, so the estimate should not be described as a geometric convergence rate."
+            ],
+            "A": [
+              "does not establish a geometric convergence rate."
+            ],
+            "B": [
+              "the bound above is an a posteriori error estimate rather than a geometric convergence rate."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains the same operations in more manageable sentences. B is readable, but its opening roadmap packs several later arguments into one long sentence, making the entry into the proof heavier.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore begin by bounding the partial sums",
+              "Both sums of step lengths can be written in terms of $S_{n,N}$."
+            ],
+            "B": [
+              "Bounding these finite sums serves two distinct purposes:",
+              "which simultaneously proves the Cauchy property and yields the quantitative error bound upon letting $p \\to \\infty$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both establish the purpose of the block sums before calculating. A then introduces the need for vanishing step lengths precisely when that issue arises; B previews nearly the entire proof and subsequently repeats those explanations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before bounding $\\|x_p - x_n\\|_2$, we use the $n = 0$ case of this estimate to show that $d_n \\to 0$ as $n \\to \\infty$"
+            ],
+            "B": [
+              "first, starting the sum at $n = 0$ shows that the infinite series $\\sum_{k=0}^\\infty d_k$ converges",
+              "Before using this bound for general $n$, we must ensure that the term $d_n$ appearing in its numerator converges to zero"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better combines the author's requested motivation with connected, incremental explanation. B supplies useful reasoning too, but adds more procedural narration and repetition than this proof needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because $x_p - x_n$ is the sum of the consecutive steps",
+              "which will ensure that the $d_n$ term in the upper bound vanishes for large $n$."
+            ],
+            "B": [
+              "our central strategy is to control finite blocks of the series $\\sum d_k$.",
+              "To carry out the finite-sum estimate"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "A",
+          "reason": "Both proofs correctly explain rearrangement, nonpositive-term removal, empty sums, rho = 0, summability, completeness, and the limit estimate. A better meets the display requirement through aligned intermediate calculations; B places its telescoping chain in one long display and its epsilon and reverse-triangle arguments inline.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "&\\le \\sum_{k=n}^{p-1} \\|x_{k+1} - x_k\\|_2 \\\\\n&= S_{n,p-1}",
+              "where the second inequality uses $\\rho \\ge 0$"
+            ],
+            "B": [
+              "Dropping $-\\rho d_N$ can only increase the right-hand side",
+              "Given any $\\varepsilon > 0$, we may choose an integer $M \\ge 0$"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the decisive priority: explaining why the estimates belong while laying out the calculations readably. Its initial motivation and aligned telescoping derivation accomplish that with less repeated narration than B.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore begin by bounding the partial sums",
+              "&= S_{n,p-1} \\\\\n&\\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}."
+            ],
+            "B": [
+              "Bounding these finite sums serves two distinct purposes:",
+              "We now relate the vectors $x_k$ to the block sums $S_{n,N}$."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "56c0ac0be6949243d6df9080dd2742d46ffacd549f5bcb3839e9094f6e0d0f0f",
+    "prompt_sha256": "b75750a9599434146c59df9850071bcf1751ea87613a1e2456df61f3158e3d5c",
+    "raw_sha256": "92d25dbc0f0ba07e61b28aca536777f66ab5f0559af6dbd1b12f2936e8849a02",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-13",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "reversed",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests an expanded convergence proof preserving its hypotheses, strategy, and quantitative conclusion.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "The main proof and bound remain valid, but calling removal of a nonpositive term a strengthening teaches the wrong inequality direction: it enlarges the upper bound and weakens the estimate. Calling rho = 0 unperturbed also incorrectly suggests that the perturbations disappear, although eta remains in the recurrence. The final rate language is overemphatic, but its 'in general' qualification permits a worst-case reading and does not establish a separate major error.",
+          "quotes": {
+            "source": [
+              "(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k\n<= d_n + sum_{k=n}^{N-1} eta_k.",
+              "d_{k+1} <= rho d_k + eta_k"
+            ],
+            "A": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "**Inclusion of the Unperturbed Case ($\\rho = 0$):**",
+              "fundamentally sub-geometric in general"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the assumptions, quantitative bound, endpoint cases, and absence of a geometric-rate guarantee. Its perturbation sum through p - 1 is a valid, slightly looser bound than the direct substitution through p - 2 because all perturbations are nonnegative.",
+          "quotes": {
+            "source": [
+              "Suppose 0 <= rho < 1 and numbers eta_k >= 0",
+              "||x_* - x_n||_2 <= (d_n + sum_{k=n}^infinity eta_k)/(1-rho)."
+            ],
+            "A": [],
+            "B": [
+              "&\\le \\frac{d_n + \\sum_{k=n}^{p-1} \\eta_k}{1 - \\rho}",
+              "\\|x_* - x_n\\|_2 \\le \\frac{d_n + \\sum_{k=n}^\\infty \\eta_k}{1 - \\rho}."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "B preserves the mathematical content without the misleading descriptions in A. A's core result is correct, but its strengthening claim reverses the comparison between bounds, and its unperturbed label mischaracterizes rho = 0.",
+          "quotes": {
+            "source": [
+              "d_{k+1} <= rho d_k + eta_k",
+              "<= d_n + sum_{k=n}^{N-1} eta_k."
+            ],
+            "A": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "**Inclusion of the Unperturbed Case ($\\rho = 0$):**"
+            ],
+            "B": [
+              "Because $\\rho \\ge 0$ and $d_N \\ge 0$, the term $-\\rho d_N$ is nonpositive",
+              "This estimate also covers $\\rho = 0$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct mathematical prose with readable transitions. A's repeated section labels, formalized descriptions, and emphatic closing remarks make a short argument feel like an inflated instructional outline.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 4. Summability of Steps and Asymptotic Vanishing",
+              "Consequently, the quantitative convergence rate of $\\|x_* - x_n\\|_2$ is fundamentally sub-geometric in general"
+            ],
+            "B": [
+              "Specializing this bound to $n = 0$ gives",
+              "We now show that $(x_k)_{k=0}^\\infty$ is a Cauchy sequence."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A explains the overall purpose before calculating, but fragments the development into a roadmap and numerous sections. B maintains a continuous logical sequence, yet begins the partial-sum calculation without first explaining its connection to distances between iterates. Each misses a different part of the requested progression.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the candidate limit $x_*$ is not known a priori, we cannot estimate the error $\\|x_* - x_n\\|_2$ directly.",
+              "Instead, we proceed in three stages:"
+            ],
+            "B": [
+              "To establish this, we first bound the partial sums of the step sizes.",
+              "We now show that $(x_k)_{k=0}^\\infty$ is a Cauchy sequence."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the requested connected mathematical prose and preserves the scale of the original artifact. A provides useful motivation, but its seven-section architecture, numbered strategy, and added structural commentary overwhelm that benefit. B could still improve by motivating the block sum before defining it.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "#### 2. Strategy and Motivation of the Proof",
+              "#### 7. Structural Remarks on Hypotheses and Convergence Rate"
+            ],
+            "B": [
+              "The first sum on the right-hand side omits only the final term $d_N$:",
+              "Taking $p \\to \\infty$ in the bound on $\\|x_p - x_n\\|_2$, the continuity of the Euclidean norm yields the claimed estimate:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both supply the essential intermediate calculations and correctly reach the bound using completeness. B avoids A's incorrect explanation of strengthening and lays out the telescoping estimate in aligned steps. Its extra perturbation term is harmless; A's more extensive roadmap does not repair its misleading inequality explanation.",
+          "quotes": {
+            "source": [
+              "Explain the compressed steps and the purpose of the estimates in connected mathematical prose.",
+              "(1-rho)S_{n,N} <= d_n - rho d_N + sum_{k=n}^{N-1} eta_k\n<= d_n + sum_{k=n}^{N-1} eta_k."
+            ],
+            "A": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "Being bounded above, the monotone convergence theorem ensures that the infinite series converges:"
+            ],
+            "B": [
+              "Because each $d_k \\ge 0$, the partial sums $(S_{0,N})_{N \\ge 0}$ form a nondecreasing sequence bounded above.",
+              "&\\le \\sum_{k=n}^{p-1} \\|x_{k+1} - x_k\\|_2 \\\\\n&= S_{n, p-1}"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A introduces minor but consequential misconceptions about inequality strength and the meaning of rho = 0. B also more closely delivers the requested continuous proof with displayed calculations. Its insufficient initial motivation is a real limitation, but A's roadmap does not outweigh those errors and its excessive fragmentation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Dropping this non-positive term strengthens the inequality:",
+              "**Inclusion of the Unperturbed Case ($\\rho = 0$):**"
+            ],
+            "B": [
+              "Substituting these identities into the summed recurrence yields",
+              "This estimate also covers $\\rho = 0$."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b4e65fc94cb05896529833b0800a6811ba177e83e06c408042d14fe097eae3e3",
+    "prompt_sha256": "b75750a9599434146c59df9850071bcf1751ea87613a1e2456df61f3158e3d5c",
+    "raw_sha256": "92d25dbc0f0ba07e61b28aca536777f66ab5f0559af6dbd1b12f2936e8849a02",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for a completed conditional-expectation argument and a clearer proof of the exact second-moment identity and bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the adaptive setting, finite probability space, filtration, indicator outcomes, predictable bounded weights, squared-weight identity, and n/4 bound. Its conditional-expectation argument is valid, including the stated boundary cases.",
+          "quotes": {
+            "source": [
+              "Let w_t be F_{t-1}-measurable with |w_t| <= 1.",
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4."
+            ],
+            "A": [
+              "let `w_t` be an `F_{t-1}`-measurable weight satisfying `|w_t| <= 1`.",
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all assumptions and the exact conclusion. Earlier-term measurability and conditional centering correctly remove cross terms without independence; its polynomial calculation covers endpoint probabilities, and it explicitly handles n = 0.",
+          "quotes": {
+            "source": [
+              "Assignments may depend on previous outcomes.",
+              "The weights are chosen using earlier information; their measurability is part of the claim, not an optional convenience."
+            ],
+            "A": [],
+            "B": [
+              "Assignments in round t may depend on previous outcomes through F_{t-1}.",
+              "let w_t be an F_{t-1}-measurable weight chosen from the information available before round t, with |w_t| <= 1."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the exact identity with squared weights and its bound, retain adaptivity and predictability, and cover zero rounds and endpoint probabilities. Neither adds independence, post-outcome weight selection, or a concentration guarantee.",
+          "quotes": {
+            "source": [
+              "When n = 0, define M_0 = 0 and both sums are empty."
+            ],
+            "A": [
+              "When `n = 0`, `M_0 = 0` and both sums are empty, so the identity and bound reduce trivially to `0 = 0 <= 0`."
+            ],
+            "B": [
+              "When n = 0, we have M_0 = 0 and both sums are empty, so the claim holds with both sides equal to zero."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly announces operations and elaborates elementary indexing in list form. B expresses the same reasoning in more connected technical prose, although its raw inline notation remains less polished than its displayed mathematics.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since `s < t` are integers, `s <= t - 1`.",
+              "Substituting `E[D_s D_t] = 0` for all `s < t` and `E[D_t^2] = E[w_t^2 p_t(1-p_t)]` into the expansion of `E[M_n^2]` establishes the exact identity:"
+            ],
+            "B": [
+              "Every cross term with s < t therefore vanishes, and substituting the expression for \\mathbb E[D_t^2] establishes the identity"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow a sound route from individual second moments through the square expansion to cross-term cancellation and the bound. B places the endpoint explanation beside the calculation it qualifies and connects the measurability argument directly to conditioning. A separates these connections into numbered sections and a concluding boundary-case list.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "*4. Boundary cases and role of predictable weights.*",
+              "Consequently, the product `D_s w_t` is `F_{t-1}`-measurable and factors out of the conditional expectation given `F_{t-1}`:"
+            ],
+            "B": [
+              "Because this identity is polynomial in X_t and p_t, probabilities p_t equal to 0 or 1 require no division or limiting argument.",
+              "Applying the tower property with respect to F_{t-1} and pulling out the F_{t-1}-measurable factors D_s and w_t gives"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better fits the requested connected exposition and displaystyle mathematics while retaining the useful derivation. A's code-fenced equations, numbered mini-sections, and concluding explanatory inventory make the artifact feel more like instructional notes than a revised surrounding proof.",
+          "quotes": {
+            "source": [
+              "The author's explicit direction is to use displaystyle mathematics with the steps laid out cleanly, without skipping steps."
+            ],
+            "A": [
+              "*2. Expansion of the square and orthogonality of increments.*",
+              "E[D_s D_t] = E[E[D_s D_t | F_{t-1}]] = E[0] = 0."
+            ],
+            "B": [
+              "\\mathbb E[D_s D_t]\n&= \\mathbb E\\!\\left[\\mathbb E[D_s D_t \\mid F_{t-1}]\\right]",
+              "Expanding the finite square M_n^2 and taking expectations gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both fully justify the indicator variance calculation, extraction of predictable weights, measurability of the earlier increment, conditional centering, and the tower-property step. Both also display the completed-square bound. B improves mathematical presentation, but neither leaves a substantive proof step unexplained.",
+          "quotes": {
+            "source": [
+              "[Justification gap: the cross terms are asserted to vanish, but this has not yet been shown for adaptive assignments.]"
+            ],
+            "A": [
+              "= D_s w_t E[X_t - p_t | F_{t-1}]\n= D_s w_t (E[X_t | F_{t-1}] - p_t)\n= D_s w_t (p_t - p_t)\n= 0."
+            ],
+            "B": [
+              "Because w_s and p_s are F_{s-1}-measurable and X_s is F_s-measurable, the term D_s = w_s(X_s - p_s) is F_s-measurable and therefore F_{t-1}-measurable.",
+              "&= \\mathbb E\\!\\left[D_s w_t \\left(\\mathbb E[X_t \\mid F_{t-1}] - p_t\\right)\\right]"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves this user's priority of a readable, fully developed proof: its measurability explanation leads directly into a displayed conditional-expectation calculation, and qualifications accompany the relevant steps. A supplies equally valid reasoning but adds sectional packaging and code formatting that the user would likely still want revised.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "*4. Boundary cases and role of predictable weights.*",
+              "To show that every cross term vanishes under adaptive assignments, fix integers `1 <= s < t <= n`:"
+            ],
+            "B": [
+              "Applying the tower property with respect to F_{t-1} and pulling out the F_{t-1}-measurable factors D_s and w_t gives",
+              "Every cross term with s < t therefore vanishes, and substituting the expression for \\mathbb E[D_t^2] establishes the identity"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1b192182dd8c6b744cd94cef0b9d5cead74ed116fc939b63d124da393db56f16",
+    "prompt_sha256": "7eabb28e2c75beed63404f4c4a23b7e4a897dad00d64343714f288638f19e302",
+    "raw_sha256": "c15ba25c4fb46d26ab36d0224190dbccdaf661327e9205689bb84afc1c3c8f83",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested edit must fill the adaptive cross-term justification and preserve the proof of the second-moment identity and bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the finite adaptive setting, filtration, indicators, predictable bounded weights, squared-weight identity, bound, and zero-round case. It does not repeat the source's endpoint remark, but its division-free calculation remains valid at probabilities zero and one.",
+          "quotes": {
+            "source": [
+              "Probabilities p_t equal to zero or one need no separate division or limiting argument.",
+              "Let w_t be F_{t-1}-measurable with |w_t| <= 1."
+            ],
+            "A": [
+              "&= p_t - 2p_t^2 + p_t^2 \\\\\n&= p_t(1 - p_t).",
+              "let $w_t$ be an $\\mathcal{F}_{t-1}$-measurable weight with $|w_t| \\le 1$."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains every substantive assumption and conclusion and correctly establishes conditional centering before using it to eliminate cross terms. Its martingale-difference description follows from the stated assumptions, and its boundary remarks introduce no stronger claim.",
+          "quotes": {
+            "source": [
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4.",
+              "Assignments may depend on previous outcomes."
+            ],
+            "A": [],
+            "B": [
+              "$$\\mathbb{E}[M_n^2] = \\sum_{t=1}^n \\mathbb{E}\\big[w_t^2 p_t(1-p_t)\\big] \\le \\frac{n}{4}.$$",
+              "Assignments may adaptively depend on the history $\\mathcal{F}_{t-1}$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the theorem's assumptions, exact squared-weight identity, and n/4 bound without assuming independent rounds. B explicitly restates endpoint validity; A retains it through the same polynomial derivation. That difference does not change the scope of the claim.",
+          "quotes": {
+            "source": [
+              "Probabilities p_t equal to zero or one need no separate division or limiting argument."
+            ],
+            "A": [
+              "&= p_t - 2p_t^2 + p_t^2 \\\\\n&= p_t(1 - p_t)."
+            ],
+            "B": [
+              "If $p_t = 0$ or $p_t = 1$, the conditional variance $p_t(1 - p_t)$ evaluates directly to $0$. No division or limiting arguments are needed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as continuous mathematical exposition with direct explanations of each operation. B's prose is understandable, but the nested headings, introductory inventory, and editorial parenthesis interrupt the rhythm of a relatively short proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate the cross terms, fix indices $s < t$.",
+              "Taking unconditional expectations yields"
+            ],
+            "B": [
+              "#### 2. Vanishing of the Cross Terms (Justification Gap Filled)",
+              "### Remarks on Extremal and Boundary Cases"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A gives each step an immediate purpose: evaluate the summands, expand the square, evaluate the resulting cross terms, then bound the identity. B's early centering calculation is useful and later reused, but its extra sections and detached closing remarks make the completed proof less continuous.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For $n \\ge 1$, we first evaluate the second moment of each summand $D_t$.",
+              "All cross terms vanish, which proves the identity"
+            ],
+            "B": [
+              "#### 1. Conditional Moments of the Increments",
+              "#### 3. Identity and Bound",
+              "### Remarks on Extremal and Boundary Cases"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves useful explanation and displayed derivations without turning the revision into a labeled tutorial. B's 'Justification Gap Filled' announces editing history inside the artifact, directly conflicting with the preference to remove revision commentary. Its standard martingale terminology is valid, but unnecessary to the requested proof.",
+          "quotes": {
+            "source": [
+              "They want fidelity to the requested contribution and artifact form."
+            ],
+            "A": [
+              "Since $w_t$ is $\\mathcal{F}_{t-1}$-measurable, $w_t^2$ factors out of the conditional expectation:",
+              "To evaluate the cross terms, fix indices $s < t$."
+            ],
+            "B": [
+              "#### 2. Vanishing of the Cross Terms (Justification Gap Filled)",
+              "Thus, $(D_t)_{t=1}^n$ forms a martingale difference sequence with respect to $(\\mathcal{F}_t)_{t=0}^n$."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both provide correct, sufficiently explicit proofs. A shows conditional centering inside the cross-term calculation; B establishes it separately and then applies it. Both explain earlier-term measurability, predictable-weight extraction, the tower property, and the bound. B states endpoint validity explicitly, while A's algebra already covers it.",
+          "quotes": {
+            "source": [
+              "Use only the stated assumptions; do not assume independent rounds or replace the proof with a citation."
+            ],
+            "A": [
+              "The summand $D_s = w_s(X_s - p_s)$ is $\\mathcal{F}_s$-measurable, hence $\\mathcal{F}_{t-1}$-measurable.",
+              "&= D_s w_t \\, (\\mathbb{E}[X_t \\mid \\mathcal{F}_{t-1}] - p_t) \\\\\n&= 0,"
+            ],
+            "B": [
+              "$$\\mathbb{E}[D_t \\mid \\mathcal{F}_{t-1}] = w_t \\big(\\mathbb{E}[X_t \\mid \\mathcal{F}_{t-1}] - p_t\\big) = w_t (p_t - p_t) = 0.$$",
+              "&= \\mathbb{E}\\big[D_s \\,\\mathbb{E}[D_t \\mid \\mathcal{F}_{t-1}]\\big]"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither contains a material error, and both complete the mathematical task. A better meets the decisive preference for connected proof exposition with visible steps: its cross-term paragraph explains measurability and leads straight into the calculation. B retains useful detail but adds revision-history labeling and sectional packaging that make it less suitable as the finished proof this user requested.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The weight $w_t$ is also $\\mathcal{F}_{t-1}$-measurable, so the product $D_s w_t$ is $\\mathcal{F}_{t-1}$-measurable. Conditioning on $\\mathcal{F}_{t-1}$ gives"
+            ],
+            "B": [
+              "#### 2. Vanishing of the Cross Terms (Justification Gap Filled)",
+              "### Remarks on Extremal and Boundary Cases"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "76bdb75c91d1dabe9bc9fc0a639988e5905668800c96a28fe6a4fb40b76d80ad",
+    "prompt_sha256": "7eabb28e2c75beed63404f4c4a23b7e4a897dad00d64343714f288638f19e302",
+    "raw_sha256": "c15ba25c4fb46d26ab36d0224190dbccdaf661327e9205689bb84afc1c3c8f83",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-14",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requires completing the adaptive cross-term argument and revising the surrounding second-moment proof.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the finite adaptive setting, filtration, indicators, predictable bounded weights, exact weighted identity, and bound. The conditional-expectation argument is valid, including the empty sum and endpoint probabilities.",
+          "quotes": {
+            "source": [
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4.",
+              "Let w_t be F_{t-1}-measurable with |w_t| <= 1."
+            ],
+            "A": [
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4.",
+              "let `w_t` be an `F_{t-1}`-measurable weight satisfying `|w_t| <= 1`."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all assumptions and the exact identity and bound. It proves conditional centering and cross-term cancellation without independence, handles zero rounds, and uses no division at endpoint probabilities.",
+          "quotes": {
+            "source": [
+              "Assignments may depend on previous outcomes.",
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4."
+            ],
+            "A": [],
+            "B": [
+              "Assignments in round t may depend on previous outcomes through F_{t-1}.",
+              "\\mathbb E[M_n^2] = \\sum_{t=1}^n \\mathbb E\\!\\left[w_t^2 p_t(1 - p_t)\\right] \\leq \\frac{n}{4}."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the mathematical scope and supply the missing justification. A's additional discussion of predictability explains the existing assumption; B also maintains that restriction explicitly.",
+          "quotes": {
+            "source": [
+              "The weights are chosen using earlier information; their measurability is part of the claim, not an optional convenience."
+            ],
+            "A": [
+              "Choosing the weights `w_t` using only earlier information (`F_{t-1}`-measurability) is an essential part of the claim"
+            ],
+            "B": [
+              "let w_t be an F_{t-1}-measurable weight chosen from the information available before round t, with |w_t| <= 1."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as a connected mathematical proof. A's code-formatted notation and extended enumeration of elementary measurability facts make an otherwise sound explanation more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Since `s < t` are integers, `s <= t - 1`.",
+              "*2. Expansion of the square and orthogonality of increments.*"
+            ],
+            "B": [
+              "Expanding the finite square M_n^2 and taking expectations gives",
+              "Every cross term with s < t therefore vanishes"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both follow the source's useful sequence from individual moments to cross terms and the bound. B carries that sequence through connected explanations, while A repeatedly restarts it with numbered sections and a separate boundary-case checklist.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "*3. Exact identity and upper bound.*",
+              "*4. Boundary cases and role of predictable weights.*"
+            ],
+            "B": [
+              "Every cross term with s < t therefore vanishes, and substituting the expression",
+              "Finally, since 0 <= X_t <= 1, we have 0 <= p_t <= 1"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better matches the requested connected technical prose while keeping the derivation visible. A provides useful detail but oversegments the short proof and uses code blocks where the author requested displaystyle mathematics.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Claim and Setup**",
+              "*4. Boundary cases and role of predictable weights.*"
+            ],
+            "B": [
+              "Applying the tower property with respect to F_{t-1} and pulling out the F_{t-1}-measurable factors D_s and w_t gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "B",
+          "reason": "Both proofs correctly show earlier-term measurability, conditional centering, the tower step, the indicator calculation, and the bound. B has a modest advantage in the requested exposition: aligned mathematical displays make the full conditional-expectation calculation easier to follow than A's literal code notation.",
+          "quotes": {
+            "source": [
+              "the cross terms are asserted to vanish, but this has not yet been shown for adaptive assignments."
+            ],
+            "A": [
+              "E[D_s D_t | F_{t-1}]",
+              "= D_s w_t E[X_t - p_t | F_{t-1}]",
+              "E[D_s D_t] = E[E[D_s D_t | F_{t-1}]] = E[0] = 0."
+            ],
+            "B": [
+              "&= \\mathbb E\\!\\left[D_s w_t \\mathbb E[X_t - p_t \\mid F_{t-1}]\\right]",
+              "&= \\mathbb E\\!\\left[D_s w_t \\left(\\mathbb E[X_t \\mid F_{t-1}] - p_t\\right)\\right]"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material mathematical or fidelity error. B better delivers this user's requested artifact: a readable proof with visible intermediate calculations and a connected explanation of why adaptive cross terms vanish. A is complete but its code notation, elementary bullet breakdown, and closing checklist burden that explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Consequently, the product `D_s w_t` is `F_{t-1}`-measurable and factors out of the conditional expectation given `F_{t-1}`:"
+            ],
+            "B": [
+              "Because w_s and p_s are F_{s-1}-measurable and X_s is F_s-measurable, the term D_s = w_s(X_s - p_s) is F_s-measurable and therefore F_{t-1}-measurable."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "win",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "1b192182dd8c6b744cd94cef0b9d5cead74ed116fc939b63d124da393db56f16",
+    "prompt_sha256": "7eabb28e2c75beed63404f4c4a23b7e4a897dad00d64343714f288638f19e302",
+    "raw_sha256": "d81127e4194cd2671c8ebddcb7661412b10e45168efb2c921169271223a84b73",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-14",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested edit completes a mathematical justification and retains the surrounding derivation of the identity and bound.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the finite adaptive setting, filtration, indicator outcomes, predictable bounded weights, squared-weight identity, bound, and zero-round case. Endpoint probabilities remain covered by the displayed polynomial calculation, despite the omitted explicit endpoint remark.",
+          "quotes": {
+            "source": [
+              "Probabilities p_t equal to zero or one need no separate division or limiting argument.",
+              "E[M_n^2] = sum_{t=1}^n E[w_t^2 p_t(1-p_t)] <= n/4."
+            ],
+            "A": [
+              "&= p_t - 2p_t^2 + p_t^2",
+              "\\mathbb{E}[M_n^2] = \\sum_{t=1}^n \\mathbb{E}[w_t^2 p_t(1 - p_t)] \\le \\frac{n}{4}."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the assumptions, exact identity, bound, and boundary cases. Its martingale-difference description follows from the displayed conditional centering and introduces no extra hypothesis or concentration conclusion.",
+          "quotes": {
+            "source": [
+              "Use only the stated assumptions; do not assume independent rounds or replace the proof with a citation.",
+              "Let w_t be F_{t-1}-measurable with |w_t| <= 1."
+            ],
+            "A": [],
+            "B": [
+              "Thus, $(D_t)_{t=1}^n$ forms a martingale difference sequence with respect to $(\\mathcal{F}_t)_{t=0}^n$.",
+              "$w_t$ is an $\\mathcal{F}_{t-1}$-measurable weight satisfying $|w_t| \\le 1$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the claim and adaptive proof strategy. B states endpoint validity and the role of predictability separately; A establishes both through its assumptions and calculations. A's omission of the explicit endpoint reassurance changes no inference.",
+          "quotes": {
+            "source": [
+              "Probabilities p_t equal to zero or one need no separate division or limiting argument.",
+              "The weights are chosen using earlier information; their measurability is part of the claim, not an optional convenience."
+            ],
+            "A": [
+              "Since $w_t$ is $\\mathcal{F}_{t-1}$-measurable, $w_t^2$ factors out of the conditional expectation:",
+              "&= p_t - 2p_t^2 + p_t^2"
+            ],
+            "B": [
+              "No division or limiting arguments are needed.",
+              "The weights $w_t$ are determined prior to round $t$ outcome observation"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's prose explains the calculations directly and idiomatically. B is readable, but its multiple heading levels, setup list, and editorial label interrupt the flow of this short proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To evaluate the cross terms, fix indices $s < t$.",
+              "Taking unconditional expectations yields"
+            ],
+            "B": [
+              "#### 2. Vanishing of the Cross Terms (Justification Gap Filled)",
+              "### Remarks on Extremal and Boundary Cases"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves directly from the zero-round case through individual moments, cross-term cancellation, and the final bound. B's ordering is valid, but the standalone martingale label and appended remarks add stops without advancing the central argument.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For $n \\ge 1$, we first evaluate the second moment of each summand $D_t$.",
+              "All cross terms vanish, which proves the identity"
+            ],
+            "B": [
+              "Thus, $(D_t)_{t=1}^n$ forms a martingale difference sequence",
+              "### Remarks on Extremal and Boundary Cases"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for connected explanation without revision history or excessive packaging. B's explicit 'Justification Gap Filled' heading reports the editing process rather than belonging to the completed proof.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The weight $w_t$ is also $\\mathcal{F}_{t-1}$-measurable, so the product $D_s w_t$ is $\\mathcal{F}_{t-1}$-measurable."
+            ],
+            "B": [
+              "#### 2. Vanishing of the Cross Terms (Justification Gap Filled)",
+              "**Claim:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly lay out the indicator second moment, predictable-weight factorization, earlier-term measurability, conditional centering, and tower argument. A centers within the cross-term calculation; B proves centering first and then uses it. Both routes adequately explain the missing step and cover the bound without division.",
+          "quotes": {
+            "source": [
+              "the cross terms are asserted to vanish, but this has not yet been shown for adaptive assignments."
+            ],
+            "A": [
+              "&= D_s w_t \\, \\mathbb{E}[X_t - p_t \\mid \\mathcal{F}_{t-1}]",
+              "\\mathbb{E}[D_s D_t] = \\mathbb{E}\\big[\\mathbb{E}[D_s D_t \\mid \\mathcal{F}_{t-1}]\\big] = 0."
+            ],
+            "B": [
+              "\\mathbb{E}[D_t \\mid \\mathcal{F}_{t-1}] = w_t \\big(\\mathbb{E}[X_t \\mid \\mathcal{F}_{t-1}] - p_t\\big) = w_t (p_t - p_t) = 0.",
+              "&= \\mathbb{E}\\big[D_s \\,\\mathbb{E}[D_t \\mid \\mathcal{F}_{t-1}]\\big]"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither contains a material error, and both complete the required proof. A better satisfies the decisive preference for a finished, connected mathematical argument: it explains the measurable factors beside the cross-term calculation and reaches the bound without B's revision label and extensive section scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The weight $w_t$ is also $\\mathcal{F}_{t-1}$-measurable, so the product $D_s w_t$ is $\\mathcal{F}_{t-1}$-measurable. Conditioning on $\\mathcal{F}_{t-1}$ gives"
+            ],
+            "B": [
+              "#### 2. Vanishing of the Cross Terms (Justification Gap Filled)",
+              "### Remarks on Extremal and Boundary Cases"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "76bdb75c91d1dabe9bc9fc0a639988e5905668800c96a28fe6a4fb40b76d80ad",
+    "prompt_sha256": "7eabb28e2c75beed63404f4c4a23b7e4a897dad00d64343714f288638f19e302",
+    "raw_sha256": "d81127e4194cd2671c8ebddcb7661412b10e45168efb2c921169271223a84b73",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task asks for a finite-counting proof with explicit double counts, moment identities, cancellation, and small cases.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves labelled disjoint trays, distinct fragments, the unassigned option, empty trays, all assignments, both formulas and their domain, and both small cases. Its expanded counting arguments introduce no empirical claims.",
+          "quotes": {
+            "source": [
+              "All 3^n assignments are included.",
+              "C_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}."
+            ],
+            "A": [
+              "We define two sums over all $3^n$ valid disjoint assignments:",
+              "$$C_n = n(n-1)3^{n-2}$$",
+              "$$Q_n = 2n3^{n-1}$$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the full assignment space, hypotheses, formulas, and small cases. Calling displayed three- and four-component tuples 'pairs' and 'triples' is a terminology slip; the explicit tuples and counts leave the intended objects unambiguous.",
+          "quotes": {
+            "source": [
+              "These counts give\nsum |A| = n3^{n-1},\nsum |A|(|A|-1) = n(n-1)3^{n-2}."
+            ],
+            "A": [],
+            "B": [
+              "count pairs $(A, B, a)$ with $a \\in A$.",
+              "count triples $(A, B, a_1, a_2)$ with distinct $a_1, a_2 \\in A$."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the finite-set interpretation and complete mathematical claim, including direct treatment of zero and one element. Neither identifies assignments under tray exchange or adds an unsupported probabilistic assumption.",
+          "quotes": {
+            "source": [
+              "For n = 0 the only assignment has two empty trays, so C_0 = Q_0 = 0.",
+              "For n = 1 the three assignments have squared differences 1, 1, and 0, giving C_1 = 0 and Q_1 = 2."
+            ],
+            "A": [
+              "$$C_0 = 0, \\quad Q_0 = 0$$",
+              "$$Q_1 = 1 + 1 + 0 = 2$$"
+            ],
+            "B": [
+              "C_0 = 0 \\cdot 0 = 0 \\qquad \\text{and} \\qquad Q_0 = (0 - 0)^2 = 0.",
+              "C_1 = 0 \\qquad \\text{and} \\qquad Q_1 = 1 + 1 + 0 = 2."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly breaks ordinary explanatory sentences into headings and nested bullets. B's central double count reads as connected technical prose, while retaining the reasons for distinctness, ordering, and the remaining choices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Summing over element pairs $(a, b)$:**",
+              "- The tray labels distinguish roles: $a$ must be assigned to tray $A$, and $b$ must be assigned to tray $B$."
+            ],
+            "B": [
+              "Second, choose the pair of elements first.",
+              "Since the trays $A$ and $B$ are distinguished by their labels, the ordered pair $(a, b)$ indicates that $a$ is placed in $A$ and $b$ in $B$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the assignment space, explain the two counts for C_n, and expand Q_n before introducing the auxiliary counts. Thus the reader knows why the first and second factorial moments are needed. Both finish by explaining the separate small-case treatment.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To compute $\\sum_{A \\cap B = \\emptyset} |A|^2$, we decompose $|A|^2 = |A| + |A|(|A| - 1)$ and evaluate each part by counting configurations:"
+            ],
+            "B": [
+              "To evaluate $\\sum |A|^2$, we write $|A|^2 = |A|(|A| - 1) + |A|$ and count assignments for one element and two distinct elements:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better balances the author's preference for connected explanation with explicit displayed work. A supplies useful detail but surrounds it with more instructional scaffolding and repeats conclusions already established; B preserves the explanation with less interruption.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Derivation of $C_n$ by Double Counting",
+              "Equating the two counts proves the first formula:"
+            ],
+            "B": [
+              "We count in two ways the set of quadruples $(A, B, a, b)$ where $A$ and $B$ are disjoint subsets of $U$, $a \\in A$, and $b \\in B$.",
+              "Equating the two counts gives"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both correctly explain the ordered distinct choices, the three placements for each remaining element, both auxiliary double counts, symmetry, and cancellation. A names tuple sizes more precisely; B displays the cancelling terms on a separate algebraic line. Neither leaves a substantive proof gap.",
+          "quotes": {
+            "source": [
+              "Fixing the ordered pair of distinct elements a,b gives 3^{n-2} assignments of the other elements.",
+              "Q_n = 2[n3^{n-1} + n(n-1)3^{n-2}] - 2C_n\n= 2n3^{n-1}."
+            ],
+            "A": [
+              "Count triples $((A, B), x_1, x_2)$ where $x_1, x_2 \\in A$ are distinct.",
+              "$$Q_n = 2\\left[ n3^{n-1} + n(n-1)3^{n-2} \\right] - 2\\left[ n(n-1)3^{n-2} \\right] = 2n3^{n-1}$$"
+            ],
+            "B": [
+              "For each of the remaining $n-2$ fragments in $U \\setminus \\{a, b\\}$, there are $3$ independent choices (assign to $A$, assign to $B$, or leave unassigned).",
+              "&= 2n3^{n-1} + 2n(n-1)3^{n-2} - 2n(n-1)3^{n-2}"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B is the modestly better fit because its central double count develops through connected sentences, and its displayed cancellation makes the final step easy to inspect. A is complete and correct, but its repeated headings and nested explanations add packaging beyond what this concise finite-counting proof needs.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "2. **Summing over element pairs $(a, b)$:**",
+              "### 4. Direct Evaluation for Small Sets ($n = 0$ and $n = 1$)"
+            ],
+            "B": [
+              "Second, choose the pair of elements first.",
+              "&= 2n3^{n-1} + 2n(n-1)3^{n-2} - 2n(n-1)3^{n-2}"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c2c9c77a500f38acaf49df821d262a0eb0ee0902d4a67dae23dca02a6fa6df2b",
+    "prompt_sha256": "2de9eb1d1dc7c5f54568c1bac5038ca8ea67c0a538395ca964709e1c566247a9",
+    "raw_sha256": "ec4cb12ac48eb85cc904cd9ed44c12fb51ebcfc36361fecf8a07a63e7739439e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a combinatorial proof, including double-counting explanations and an explicit derivation of the second formula.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains the labelled, disjoint assignment space, distinct fragments, empty trays, unassigned fragments, both exact formulas for n >= 2, and the direct small-case values. Its added explanations faithfully unpack the source counts.",
+          "quotes": {
+            "source": [
+              "All 3^n assignments are included.",
+              "C_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}."
+            ],
+            "A": [
+              "Each of the $n$ fragments has $3$ possible placements, and all $3^n$ assignments $(A, B)$ are included.",
+              "C_n = n(n-1)3^{n-2}, \\qquad Q_n = 2n 3^{n-1}."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the assignment space, formulas, hypotheses, and boundary values without empirical additions. Its sentence attaching '3^{n - 2} ways' to 'each' remaining fragment is awkward, but the surrounding product count clearly communicates the total number of assignments, not a changed per-fragment choice count.",
+          "quotes": {
+            "source": [
+              "Fixing the ordered pair of distinct elements a,b gives 3^{n-2} assignments of the other elements."
+            ],
+            "A": [],
+            "B": [
+              "each of the remaining $n - 2$ fragments in $U \\setminus \\{a, b\\}$ can be assigned independently to tray $A$, to tray $B$, or to neither tray in $3^{n - 2}$ ways.",
+              "$$|\\mathcal{R}_{A,B}| = n(n - 1)3^{n - 2}.$$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve all substantive claims and the required proof strategy. Both explain why fixing two distinct elements requires separate handling of the small sets, and neither treats exchanging tray labels as identifying assignments.",
+          "quotes": {
+            "source": [
+              "These cases are handled directly rather than by applying the argument that fixes two distinct elements."
+            ],
+            "A": [
+              "The arguments that fix an ordered pair of distinct fragments require $n \\ge 2$, so the cases $n = 0$ and $n = 1$ are handled directly."
+            ],
+            "B": [
+              "The counting arguments for $C_n$ and $\\sum_{A \\cap B = \\emptyset} |A|(|A| - 1)$ fix two distinct elements of $U$ and assign the remaining $n - 2$ elements, so they require $n \\ge 2$."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A explains each count in ordinary mathematical sentences with limited enumeration. B remains understandable, but its named record classes, nested labels, and less precise sentence about remaining-fragment choices make reading more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Count triples $(A, B, a)$ with $a \\in A$. Fixing the assignment $(A, B)$ gives $|A|$ choices for $a$."
+            ],
+            "B": [
+              "**Single-element records $\\mathcal{R}_A^{(1)}$: tuples $(A, B, a)$ with $A \\cap B = \\emptyset$ and $a \\in A$.**",
+              "*Assignment first:*"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both motivate the auxiliary counts by first expanding Q_n and identifying the squared-cardinality sum that remains to be evaluated. Both then combine the counts, invoke tray symmetry, substitute, and handle small sets. B's extra sectional structure does not materially change this sound reasoning order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To compute $Q_n$ for $n \\ge 2$, we first expand the square in each summand:",
+              "We evaluate $\\sum_{A \\cap B = \\emptyset} |A|^2$ by writing $|A|^2 = |A| + |A|(|A|-1)$ and counting two sets of records over the same $3^n$ assignments $(A, B)$:"
+            ],
+            "B": [
+              "To evaluate $\\sum_{A \\cap B = \\emptyset} |A|^2$, we write $|A|^2 = |A| + |A|(|A| - 1)$ and double-count two auxiliary sets of records over the same $3^n$ assignments $(A, B)$:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the author's preference for concrete explanation without unnecessary terminology: it introduces the records directly through their purpose and retains the derivation. B's named record classes and repeated typographic labels add a formal apparatus that this argument does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To compute $C_n$ for $n \\ge 2$, we count in two ways the records $(A, B, a, b)$ consisting of a valid assignment $(A, B)$ together with a fragment $a \\in A$ and a fragment $b \\in B$:"
+            ],
+            "B": [
+              "To evaluate $C_n$, we count the set $\\mathcal{R}_{A,B}$ of **two-tray records**:",
+              "**Ordered-pair records $\\mathcal{R}_A^{(2)}$:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both give valid double counts with the necessary ordered distinct elements and remaining placements, explain how the two factorial moments form the square, and supply symmetry and explicit substitution. B expands the cancellation one line further; A's displayed bracketed terms already make it clear. Both meet the requested explanatory scope.",
+          "quotes": {
+            "source": [
+              "Therefore\nsum |A|^2 = n3^{n-1} + n(n-1)3^{n-2}.\nThe same expression holds for B."
+            ],
+            "A": [
+              "&= \\sum_{A \\cap B = \\emptyset} |A| + \\sum_{A \\cap B = \\emptyset} |A|(|A|-1)",
+              "&= 2\\left[n 3^{n-1} + n(n-1)3^{n-2}\\right] - 2n(n-1)3^{n-2}"
+            ],
+            "B": [
+              "Interchanging the roles of the labelled trays $A$ and $B$ gives the identical sum for $B$:",
+              "&= 2n3^{n - 1} + 2n(n - 1)3^{n - 2} - 2n(n - 1)3^{n - 2}"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both fully explain the proof. A better serves the decisive preference for purposeful, connected technical prose: its direct introduction of the marked-fragment records and displayed moment calculation provide the explanation without B's additional record-class terminology and nested scaffolding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Count quadruples $(A, B, a_1, a_2)$ where $(a_1, a_2)$ is an ordered pair of distinct fragments in $A$.",
+              "Adding these two sums gives"
+            ],
+            "B": [
+              "**Ordered-pair records $\\mathcal{R}_A^{(2)}$:",
+              "*Marked pair first:*"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d6218ddacf334eca1a3b007a1d1030706c389a1af8b6eb1e2316f59c9f28c32d",
+    "prompt_sha256": "2de9eb1d1dc7c5f54568c1bac5038ca8ea67c0a538395ca964709e1c566247a9",
+    "raw_sha256": "ec4cb12ac48eb85cc904cd9ed44c12fb51ebcfc36361fecf8a07a63e7739439e",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-15",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The task requests a rewrite of a finite double-counting proof, including the moment calculations and small cases.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the labelled, disjoint, possibly empty trays, all assignments, both formulas with their domain, and the small cases. Both counting arguments are valid.",
+          "quotes": {
+            "source": [
+              "All 3^n assignments are included.",
+              "C_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}."
+            ],
+            "A": [
+              "Trays $A$ and $B$ are distinguished by their labels, and either or both may be empty.",
+              "$$C_n = n(n-1)3^{n-2}$$",
+              "$$Q_n = 2n3^{n-1}$$"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the setup, formulas, domain, and small cases with correct counts. Calling the moment-count tuples 'pairs' and 'triples' is imprecise terminology, but their explicit entries and counting rules leave the mathematical objects unambiguous.",
+          "quotes": {
+            "source": [
+              "For n >= 2 we claim",
+              "C_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}."
+            ],
+            "A": [],
+            "B": [
+              "For $n \\ge 2$,",
+              "C_n = n(n-1)3^{n-2} \\qquad \\text{and} \\qquad Q_n = 2n3^{n-1}.",
+              "count triples $(A, B, a_1, a_2)$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full assignment space, labelled roles, exact formulas, and direct treatment of small sets. Neither adds empirical claims or assumes independence between tray sizes.",
+          "quotes": {
+            "source": [
+              "For n = 0 the only assignment has two empty trays, so C_0 = Q_0 = 0.",
+              "For n = 1 the three assignments have squared differences 1, 1, and 0, giving C_1 = 0 and Q_1 = 2."
+            ],
+            "A": [
+              "$$C_0 = 0, \\quad Q_0 = 0$$",
+              "$$Q_1 = 1 + 1 + 0 = 2$$"
+            ],
+            "B": [
+              "C_0 = 0 \\cdot 0 = 0 \\qquad \\text{and} \\qquad Q_0 = (0 - 0)^2 = 0.",
+              "C_1 = 0 \\qquad \\text{and} \\qquad Q_1 = 1 + 1 + 0 = 2."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B explains the counting choices in connected prose. A remains readable, but its repeated item labels and announcement sentences make the same argument feel more procedural. B's tuple-naming slips are a small local blemish.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "2. **Summing over element pairs $(a, b)$:**",
+              "Summing over all ordered pairs $(a, b)$ yields:"
+            ],
+            "B": [
+              "Second, choose the pair of elements first.",
+              "This gives $3^{n-2}$ assignments for each pair $(a, b)$."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the assignment space, double-count the marked records, and use the square expansion to motivate the two auxiliary counts before substituting and checking small sets. Each construction has a clear computational purpose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To compute $\\sum_{A \\cap B = \\emptyset} |A|^2$, we decompose $|A|^2 = |A| + |A|(|A| - 1)$ and evaluate each part by counting configurations:"
+            ],
+            "B": [
+              "To evaluate $\\sum |A|^2$, we write $|A|^2 = |A|(|A| - 1) + |A|$ and count assignments for one element and two distinct elements:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better combines the author's conversational explanation with displayed calculation. A adds substantial instructional scaffolding and stretches the one-element check into long inline implication chains, even though both preserve useful proof detail.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "$A = \\{u\\}, B = \\emptyset \\implies |A| = 1, |B| = 0 \\implies |A||B| = 0, \\quad (|A| - |B|)^2 = (1 - 0)^2 = 1$"
+            ],
+            "B": [
+              "$A = \\{u\\}, B = \\emptyset$: $|A||B| = 0$ and $(|A| - |B|)^2 = 1$;"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both justify ordered distinct choices and the three placements for each remaining element, explain both moment counts, use tray symmetry correctly, and display the cancellation. B's aligned cancellation is easier to scan, but neither omits a substantive mathematical step.",
+          "quotes": {
+            "source": [
+              "Fixing the ordered pair of distinct elements a,b gives 3^{n-2} assignments of the other elements."
+            ],
+            "A": [
+              "Each of the remaining $n - 2$ elements of $U$ can independently be placed in tray $A$, placed in tray $B$, or left unassigned (3 choices per element)",
+              "$$Q_n = 2\\left[ n3^{n-1} + n(n-1)3^{n-2} \\right] - 2\\left[ n(n-1)3^{n-2} \\right] = 2n3^{n-1}$$"
+            ],
+            "B": [
+              "For each of the remaining $n-2$ fragments in $U \\setminus \\{a, b\\}$, there are $3$ independent choices",
+              "&= 2n3^{n-1} + 2n(n-1)3^{n-2} - 2n(n-1)3^{n-2}"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material mathematical or fidelity error. B better meets the user's goal of a readable, fully explained proof: its connected account of the ordered pair and aligned cancellation preserve the reasoning without A's repeated scaffolding and extended inline base-case calculations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### 2. Derivation of $C_n$ by Double Counting",
+              "We count the size of $\\mathcal{R}$ in two ways:"
+            ],
+            "B": [
+              "Since the trays $A$ and $B$ are distinguished by their labels, the ordered pair $(a, b)$ indicates that $a$ is placed in $A$ and $b$ in $B$.",
+              "&= 2n3^{n-1} + 2n(n-1)3^{n-2} - 2n(n-1)3^{n-2}"
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "c2c9c77a500f38acaf49df821d262a0eb0ee0902d4a67dae23dca02a6fa6df2b",
+    "prompt_sha256": "2de9eb1d1dc7c5f54568c1bac5038ca8ea67c0a538395ca964709e1c566247a9",
+    "raw_sha256": "b497119054897d815c089012fd1209e0de88fb484abbb315bb642f3fdc0265f1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-15",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": true,
+      "proof_reason": "The requested artifact is a finite-counting proof whose double counts, algebra, and boundary cases must remain explicit.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Retains all placement options, labelled disjoint trays, empty trays, the complete assignment space, both formulas for n at least two, and the direct small-case values. The double counts and cancellation are correct.",
+          "quotes": {
+            "source": [
+              "All 3^n assignments are included.",
+              "C_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}."
+            ],
+            "A": [
+              "all $3^n$ assignments $(A, B)$ are included.",
+              "C_n = n(n-1)3^{n-2}, \\qquad Q_n = 2n 3^{n-1}."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the source assumptions, formulas, and small cases, and supplies valid finite counts. The three-way placement choices concern individual fragments; no unjustified independence of tray sizes is asserted.",
+          "quotes": {
+            "source": [
+              "A tentative sorting assigns each fragment to a labelled tray A, to a labelled tray B, or to neither.",
+              "C_n = n(n-1)3^{n-2},     Q_n = 2n3^{n-1}."
+            ],
+            "A": [],
+            "B": [
+              "Since each of the $n$ fragments has $3$ independent choices of destination, there are $3^n$ possible assignments $(A, B)$.",
+              "$$C_n = n(n - 1)3^{n - 2}, \\qquad Q_n = 2n3^{n - 1}.$$"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both faithfully preserve the mathematical scope and required proof strategy. Each distinguishes labelled assignments and directly evaluates the small cases without introducing archaeological claims.",
+          "quotes": {
+            "source": [
+              "The tray labels matter here.",
+              "For n = 1 the three assignments have squared differences 1, 1, and 0, giving C_1 = 0 and Q_1 = 2."
+            ],
+            "A": [
+              "The tray labels matter here: assigning $a$ to $A$ and $b$ to $B$ is distinct from assigning $b$ to $A$ and $a$ to $B$.",
+              "C_1 = 0, \\qquad Q_1 = 1 + 1 + 0 = 2."
+            ],
+            "B": [
+              "Since the trays $A$ and $B$ carry distinct labels, $(a, b)$ is an ordered pair of distinct fragments",
+              "$$C_1 = 0 + 0 + 0 = 0, \\qquad Q_1 = 1 + 1 + 0 = 2.$$"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A describes the records and their purpose directly. B's extra names, set notation, and nested labels interrupt otherwise clear explanations and create more terminology for the reader to track.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Count triples $(A, B, a)$ with $a \\in A$.",
+              "Fixing the assignment $(A, B)$ gives $|A|$ choices for $a$."
+            ],
+            "B": [
+              "**Single-element records $\\mathcal{R}_A^{(1)}$: tuples $(A, B, a)$ with $A \\cap B = \\emptyset$ and $a \\in A$.**",
+              "*Assignment first:*"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both make the square expansion establish the need for the auxiliary counts, then combine them, invoke symmetry, and substitute. B adds more subdivisions, but the underlying explanatory order is comparably coherent.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We evaluate $\\sum_{A \\cap B = \\emptyset} |A|^2$ by writing $|A|^2 = |A| + |A|(|A|-1)$ and counting two sets of records"
+            ],
+            "B": [
+              "To evaluate $\\sum_{A \\cap B = \\emptyset} |A|^2$, we write $|A|^2 = |A| + |A|(|A| - 1)$ and double-count two auxiliary sets of records"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the concise, concrete finite-set voice while explaining the purpose of each count. B introduces unnecessary named record types and notation, contrary to the preference for avoiding invented jargon and rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To compute $C_n$ for $n \\ge 2$, we count in two ways the records $(A, B, a, b)$ consisting of a valid assignment $(A, B)$ together with a fragment $a \\in A$ and a fragment $b \\in B$:"
+            ],
+            "B": [
+              "the set $\\mathcal{R}_{A,B}$ of **two-tray records**",
+              "**Ordered-pair records $\\mathcal{R}_A^{(2)}$:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "tie",
+          "reason": "Both explain the two grouping orders, distinct ordered choices, remaining assignments, moment decomposition, symmetry, and small cases. B expands the cancelling terms more explicitly; A still displays the matching terms and all substantive transitions.",
+          "quotes": {
+            "source": [
+              "The sums run over the same assignments as before.",
+              "The same expression holds for B."
+            ],
+            "A": [
+              "By symmetry between the labelled trays $A$ and $B$, the same expression holds",
+              "&= 2\\left[n 3^{n-1} + n(n-1)3^{n-2}\\right] - 2n(n-1)3^{n-2}"
+            ],
+            "B": [
+              "Interchanging the roles of the labelled trays $A$ and $B$ gives the identical sum for $B$:",
+              "&= 2n3^{n - 1} + 2n(n - 1)3^{n - 2} - 2n(n - 1)3^{n - 2}"
+            ]
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither contains a material error, and both deliver the required proof. A better serves this user's preference for purpose-led explanation: it introduces the counted records directly and retains the displayed derivation without B's unnecessary record taxonomy and nested presentation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Adding these two sums gives",
+              "The arguments that fix an ordered pair of distinct fragments require $n \\ge 2$, so the cases $n = 0$ and $n = 1$ are handled directly."
+            ],
+            "B": [
+              "the set $\\mathcal{R}_{A,B}$ of **two-tray records**",
+              "**Single-element records $\\mathcal{R}_A^{(1)}$:"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "tie",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "d6218ddacf334eca1a3b007a1d1030706c389a1af8b6eb1e2316f59c9f28c32d",
+    "prompt_sha256": "2de9eb1d1dc7c5f54568c1bac5038ca8ea67c0a538395ca964709e1c566247a9",
+    "raw_sha256": "b497119054897d815c089012fd1209e0de88fb484abbb315bb642f3fdc0265f1",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
