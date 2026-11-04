@@ -1,0 +1,25 @@
+{
+  "authorization": "User said continue after being told both runs stopped on transport failures. Retry these four interrupted calls once and finish unstarted jobs within the existing approved caps.",
+  "original_plan_sha256": "f5901c02f9641ab64713f47cdbe51de58a171ce357fde63c83ad7799bf2a7611",
+  "extension_plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581",
+  "budget_sha256": "2a0cf878667fc8b6abb2043131ab44838609a160a7ad6a81937a3279d4196bb6",
+  "unknown_usage": "Retain 100,000 tokens for each of three unknown judge attempts. Retain the reported 63,214 tokens for the interrupted Flash attempt. Retry usage is additional.",
+  "retry_suffix": "--resume-20261103",
+  "script_sha256": "a4cdb39c3abd4fcbc0b0385bf77374452065a09ff47932755d3ac2c7ac51e498",
+  "planned_total_attempts": 2276,
+  "combined_limits": {
+    "calls": 2400,
+    "reported_tokens": 75000000,
+    "claude_writing_calls": 557
+  },
+  "policy": "No completed output regeneration, quality retry, model substitution, prompt/rubric/skill change or fresh-holdout access. A new failure stops scheduling.",
+  "original_failure_ids": [
+    "large-dev-a-06--astra-high--primary--1",
+    "large-dev-a-06--sol-high--primary--1"
+  ],
+  "extension_failure_ids": [
+    "declaude--large-dev-a-07--astra-high--primary",
+    "declaude--large-dev-a-08--flash-high--scholarly-20261103"
+  ],
+  "continuation_sha256": "24f963d471577d9f9902d707d10dd2047de44936c56fee6c50508c65cd27f955"
+}
