@@ -39434,5 +39434,1497 @@
     "prompt_sha256": "9b4dbf95f875b04f0eadd5db72cb3030f189de997605d5f60d57bede1665aa79",
     "raw_sha256": "3c7525ecf6b75c7741f85ec88e716e485c9cedf5d9bcd55ff1fd0020fbd258ca",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an appliance-service note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the surrounding paragraphs verbatim, correctly identifies the damaged cover, intact replacement lamp, and socket contacts, and retains the repair sequence and qualifications without adding findings.",
+          "quotes": {
+            "source": [
+              "The cracked item was the old cover; the intact item was the replacement lamp."
+            ],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the surrounding paragraphs verbatim and all component identities, actions, findings, and qualifications. Its remaining opening pronoun clearly refers to the lamp cover.",
+          "quotes": {
+            "source": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ],
+            "A": [],
+            "B": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both accurately integrate the source's explicit clarifications, preserve inspection and cleaning before fitting, and retain successful lighting and the cover order.",
+          "quotes": {
+            "source": [
+              "Here the item being fitted was the replacement lamp, and the contacts belonged to the socket."
+            ],
+            "A": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B's opening pronoun has a clear antecedent and reads naturally. A unnecessarily repeats the full component name within the same sentence.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The technician removed the lamp cover and placed the lamp cover beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both present the same coherent service sequence: removal, condition findings, preparation for fitting, successful operation, and the cover order.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The replacement lamp then lit when the door switch was released. The cracked cover was kept off the appliance, and a new cover was ordered."
+            ],
+            "B": [
+              "The replacement lamp then lit when the door switch was released. The cracked cover was kept off the appliance, and a new cover was ordered."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both respect the bounded edit and integrate the explanatory information into the service account. B better preserves an already-effective opening sentence, consistent with the user's preference against unnecessary changes and repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "removed the lamp cover and placed the lamp cover beside the replacement lamp."
+            ],
+            "B": [
+              "removed the lamp cover and placed it beside the replacement lamp."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both fulfill the substantive task. B has a modest but concrete advantage for this user's limited editing goal: it resolves the actual ambiguities while preserving the clear opening pronoun, avoiding A's unnecessary repetition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The technician removed the lamp cover and placed the lamp cover beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7e6646358080d336bb610dfa7bfa0547cd869a19f124450a6a727d802b7321d2",
+    "prompt_sha256": "7a7d9fabb7039be725f246938360c0d693071f1fd84535a4b25c694485b525c9",
+    "raw_sha256": "a14aaa0300aa4845ae9e48c13e40ec5c9d231f69e364db6db226f02fa6f6b33a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-a-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task edits an appliance-service note and contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A keeps the first, third, and fourth paragraphs verbatim, correctly assigns the damage, intact condition, fitting, and contacts, and preserves the sequence and qualifications without adding findings.",
+          "quotes": {
+            "source": [
+              "The cracked item was the old cover; the intact item was the replacement lamp."
+            ],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B keeps the required surrounding paragraphs verbatim and preserves all findings, component identities, actions, and qualifications. No additional fault or guarantee is introduced.",
+          "quotes": {
+            "source": [
+              "Here the item being fitted was the replacement lamp, and the contacts belonged to the socket."
+            ],
+            "A": [],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The responses are identical and faithfully resolve the component references while preserving the source's findings, sequence, and editing scope.",
+          "quotes": {
+            "source": [
+              "The cracked item was the old cover; the intact item was the replacement lamp."
+            ],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ],
+            "B": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use the same readable service prose, retaining a clear opening pronoun and replacing ambiguous references with component names.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ],
+            "B": [
+              "The technician removed the lamp cover and placed it beside the replacement lamp."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the same logical order and clearly connect preparation for fitting with the subsequent successful lighting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts. The replacement lamp then lit when the door switch was released."
+            ],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts. The replacement lamp then lit when the door switch was released."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both meet the user's preference for a restrained, practical edit: they integrate the clarifications into the account, remove repetitive editorial explanations, and preserve the surrounding prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ],
+            "B": [
+              "The old cover was cracked along one edge, but the replacement lamp was intact."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "The completed artifacts are identical. Both accurately clarify the second paragraph, retain the required paragraphs verbatim, and satisfy the user's narrow editing goal without material errors.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ],
+            "B": [
+              "Before fitting the replacement lamp, the technician checked the socket and cleaned the socket's contacts."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "19cb99b2d437e940870ab57e54751662e67a1873a77ff1f9b9ae69fd1c1cd126",
+    "prompt_sha256": "7a7d9fabb7039be725f246938360c0d693071f1fd84535a4b25c694485b525c9",
+    "raw_sha256": "a14aaa0300aa4845ae9e48c13e40ec5c9d231f69e364db6db226f02fa6f6b33a",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice, not a mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A makes boarding assistance the exclusive permissible reason for a dispatch-authorized hold, although the source establishes this exception without exhausting all possible authorizations. It also invents responsibility for the review and changes recording which service was late into determining what caused the delay.",
+          "quotes": {
+            "source": [
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance; that existing rule is unchanged.",
+              "including whether the shuttle or the connecting service was late.",
+              "They will be reviewed on Friday after the second week."
+            ],
+            "A": [
+              "Dispatch may authorize a departure hold **only** for a passenger who is already present at the stop and requires boarding assistance.",
+              "specifically noting whether the delay was caused by the shuttle or the connecting service.",
+              "Dispatch and operations will review connection records"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the timetable, exception, limits of the trial evidence, monitoring period, review timing, and distinct signage instructions. Its review sentence makes missed connections the understandable object of review.",
+          "quotes": {
+            "source": [
+              "Those estimates came from vehicle logs rather than two shuttles running alongside one another.",
+              "This does not establish that the later departure has no effect on arrival"
+            ],
+            "A": [],
+            "B": [
+              "according to paired journey estimates from vehicle logs rather than two shuttles running alongside one another.",
+              "Because this does not establish that the later departure has no effect on arrival"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the principal times and dates. B also retains the comparison between estimated old and trial journeys and the actual logging commitment. A compresses away that comparison and introduces unsupported restrictions and assignments.",
+          "quotes": {
+            "source": [
+              "On the other two, roadworks delayed both the old departure and the trial departure, according to the paired journey estimates.",
+              "including whether the shuttle or the connecting service was late."
+            ],
+            "A": [
+              "two delays attributable to roadworks (based on vehicle log paired journey estimates).",
+              "specifically noting whether the delay was caused by the shuttle or the connecting service."
+            ],
+            "B": [
+              "roadworks delayed both the old departure and the trial departure",
+              "including whether the shuttle or the connecting service was late"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B reads as direct, ordinary workplace prose. A's labels can help scanning, but its repeated mandatory formulations and phrases such as 'zero arrival impact' make this simple notice sound more bureaucratic.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because this does not definitively prove the later departure has zero arrival impact, active monitoring is required.",
+              "Drivers must leave at 18:10 even if facility staff states the class is nearly finished."
+            ],
+            "B": [
+              "If the class is still inside at 18:10, the driver should leave, even if a member of staff says the class is nearly finished."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B moves from the change and its reason to the departure decision and exception, then explains the evidence and monitoring. A has useful sections, but scatters the no-waiting rule across a reason, repeated departure bullets, and an exception note; its compressed trial account provides less explanation for monitoring.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This adjustment does not guarantee that shuttles will hold for late-running classes.",
+              "Drivers must leave at 18:10 even if class attendees are still inside the building.",
+              "This exception does **not** permit waiting for passengers who are still inside the building."
+            ],
+            "B": [
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance; that existing rule is unchanged, but it does not include waiting for someone still in the building.",
+              "Because this does not establish that the later departure has no effect on arrival, the change remains a trial and times will be checked."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's connected, matter-of-fact explanation without compressing useful evidence. A's problem is not headings themselves, but the combination of repetitive warnings and a skeletal account of why the trial remains provisional.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Standard Departure Rule:** The shuttle departs promptly at **18:10**.",
+              "**Trial Context:** Prior testing over six evenings showed four arrivals at or before 18:32 and two delays attributable to roadworks"
+            ],
+            "B": [
+              "On four of them, moving the departure allowed class passengers to board without delaying arrival at the station beyond 18:32.",
+              "On the other two, roadworks delayed both the old departure and the trial departure"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The notice contains operational instructions and an evidential qualification, but no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A makes minor but consequential changes to authorization, logging, and review responsibilities. B also better meets the decisive priority: dispatchers receive the departure rule and its exception together, with enough trial context to understand why checking continues.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Dispatch may authorize a departure hold **only**",
+              "Dispatch and operations will review connection records"
+            ],
+            "B": [
+              "If the class is still inside at 18:10, the driver should leave",
+              "that existing rule is unchanged, but it does not include waiting for someone still in the building."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "38f8127b5df91b39b0d310192ce281a6e01f639a06df0cf0b7f69ff81ceb3b02",
+    "prompt_sha256": "e56b0f82fccc2ad591aff061251a3a154e1bbd29c4f21af361249a0e6116b8e6",
+    "raw_sha256": "b4f16a4e7864317743a280013c1cab0eeb0cd171161c339225b721c214425d24",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns an internal transport notice, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the operational commitments and qualifications, including the unchanged schedules, authorized hold, log-based estimates, two-week recording period, Friday review, and different signage actions.",
+          "quotes": {
+            "source": [
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance; that existing rule is unchanged.",
+              "We will record missed connections for the first two weeks, including whether the shuttle or the connecting service was late."
+            ],
+            "A": [
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance.",
+              "For the first two weeks, we will record missed connections, including whether the shuttle or the connecting service was late"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the same operational decisions and evidential limits. Its imperative formulations reasonably communicate the existing departure and signage instructions in this notice; they do not establish a materially different procedure in context.",
+          "quotes": {
+            "source": [
+              "If the class is still inside at 18:10, the driver should leave.",
+              "Those estimates came from vehicle logs rather than two shuttles running alongside one another.",
+              "This does not establish that the later departure has no effect on arrival"
+            ],
+            "A": [],
+            "B": [
+              "If the class is still inside the building at 18:10, the driver must leave on time.",
+              "those paired journey estimates were calculated from vehicle logs rather than two shuttles running side by side",
+              "they do not prove that the later departure has no effect on station arrival times."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the facts, operational scope, assistance exception, and provisional status of the change. Both retain the distinction between observed favorable evenings and paired estimates, and clarify what will be reviewed.",
+          "quotes": {
+            "source": [
+              "This does not establish that the later departure has no effect on arrival, which is why it is a trial and why the time will be checked.",
+              "They will be reviewed on Friday after the second week."
+            ],
+            "A": [
+              "This does not establish that the later departure has no effect on arrival, which is why it is a trial and why the time will be checked.",
+              "we will record missed connections, including whether the shuttle or the connecting service was late, and review them on Friday after the second week."
+            ],
+            "B": [
+              "This schedule remains under trial and arrival times will continue to be checked because previous testing was not conclusive:",
+              "The two-week connection records will be reviewed on the Friday following the second week."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A has more conversational sentence flow and fewer administrative labels. B remains readable and appropriate, but labels such as 'Missed-connection logging' make its delivery more formal than the source requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A driver who reaches the library early should wait for 18:10.",
+              "For the first two weeks, we will record missed connections"
+            ],
+            "B": [
+              "**Early arrival:** Drivers who reach the library before 18:10 must wait until 18:10 to depart.",
+              "**Missed-connection logging (First two weeks):**"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B gives dispatchers an effective sequence of change and reason, unchanged times, adjacent driver rules and exception, then monitoring and background. A's paragraphs are coherent, but signage instructions intervene before the reason and departure rules.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please replace the weekday library notice before the first affected departure. The station notice can stay because its advertised arrival is still 18:32.",
+              "The departure is moving because the evening class now finishes at 18:00"
+            ],
+            "B": [
+              "**Dispatch and Driver Rules at the Library Stop**",
+              "**Exception — Boarding assistance at the stop:**",
+              "**Monitoring, Review, and Signage**",
+              "**Trial Background**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better matches the preference for connected prose that preserves useful explanation. Its trial paragraph links the results directly to the need for continued checking. B's headings are legitimate for this artifact, but its heavily labeled presentation is less close to the author's established rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That existing rule is unchanged and should not be understood to include waiting for someone still in the building.",
+              "which is why it is a trial and why the time will be checked."
+            ],
+            "B": [
+              "**No holds for passengers still inside:**",
+              "This schedule remains under trial and arrival times will continue to be checked because previous testing was not conclusive:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the requested edit nor the source contains a mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. A better preserves the author's connected, practical prose; B makes the departure decision and exception easier to locate and gives the review an explicit object. Both satisfy the central first-reading operational goal, and the context allows useful headings, so neither advantage establishes a decisive overall preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the class is still inside at 18:10, the driver should leave, even when a member of staff says the class is nearly finished.",
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance."
+            ],
+            "B": [
+              "**No holds for passengers still inside:**",
+              "**Exception — Boarding assistance at the stop:**",
+              "The two-week connection records will be reviewed on the Friday following the second week."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "dcf2f0728a50991db18687771ee6a10cbfbf08009464625408bdecad61aba9ef",
+    "prompt_sha256": "e56b0f82fccc2ad591aff061251a3a154e1bbd29c4f21af361249a0e6116b8e6",
+    "raw_sha256": "b4f16a4e7864317743a280013c1cab0eeb0cd171161c339225b721c214425d24",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-01",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to revise an operational notice, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the timetable, departure rule and assistance exception, qualified trial evidence, monitoring commitments, and distinct signage instructions.",
+          "quotes": {
+            "source": [
+              "Those estimates came from vehicle logs rather than two shuttles running alongside one another.",
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance"
+            ],
+            "A": [
+              "those paired journey estimates were calculated from vehicle logs rather than two shuttles running side by side",
+              "dispatch may still authorize a hold for a passenger who has already reached the stop and needs boarding assistance."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all operational commitments and the limits of the trial evidence, including the distinction between passengers inside and those needing assistance at the stop.",
+          "quotes": {
+            "source": [
+              "If the class is still inside at 18:10, the driver should leave.",
+              "We will record missed connections for the first two weeks, including whether the shuttle or the connecting service was late."
+            ],
+            "A": [],
+            "B": [
+              "If the class is still inside at 18:10, the driver should leave",
+              "For the first two weeks, we will record missed connections, including whether the shuttle or the connecting service was late"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive facts, qualifications, and instructions. A names the records being reviewed explicitly; B's active review sentence also has a reasonably clear object.",
+          "quotes": {
+            "source": [
+              "They will be reviewed on Friday after the second week."
+            ],
+            "A": [
+              "The two-week connection records will be reviewed on the Friday following the second week."
+            ],
+            "B": [
+              "review them on Friday after the second week."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses more consistently idiomatic, matter-of-fact prose. A remains readable but introduces more administrative labels and a slightly cumbersome explanation of the trial.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This schedule remains under trial and arrival times will continue to be checked because previous testing was not conclusive:"
+            ],
+            "B": [
+              "This does not establish that the later departure has no effect on arrival, which is why it is a trial and why the time will be checked."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A groups the departure decision and exception together, then separates monitoring and signage from supporting trial history. B groups the rules well but appends the connection and recording duties to a long evidence paragraph.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Dispatch and Driver Rules at the Library Stop**",
+              "**Monitoring, Review, and Signage**"
+            ],
+            "B": [
+              "The dispatch trial covered six evenings.",
+              "The station connection leaves at 18:40. For the first two weeks, we will record missed connections"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "B better matches the preference for connected prose; A's functional labels suit this particular operational artifact and make the rules easier to retrieve. Both retain an appropriately practical register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Exception — Boarding assistance at the stop:** Under the existing rule, dispatch may still authorize a hold"
+            ],
+            "B": [
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance. That existing rule is unchanged"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error. A better serves the decisive task priority: dispatchers can find the departure rule, its exception, and subsequent duties on a first reading. Its separate monitoring section and explicitly identified review records outweigh B's more natural prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**No holds for passengers still inside:**",
+              "**Exception — Boarding assistance at the stop:**",
+              "**Review date:** The two-week connection records will be reviewed"
+            ],
+            "B": [
+              "The station connection leaves at 18:40. For the first two weeks, we will record missed connections, including whether the shuttle or the connecting service was late, and review them on Friday after the second week."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8d7f1866b9ad56958c94aa2568e372848f2a4ee2e5250024578a22c63b6e4766",
+    "prompt_sha256": "b0a1e3d753be9382d673695149ef6a3fe05956efa1f8de276b2f04833bfb4f7d",
+    "raw_sha256": "0b2e825bbbcdf225e52a2fe069c6b39021d314e1f6026d764f52a6e829dc5267",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-01",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The requested artifact is an internal transport notice with operational instructions, not a proof.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the operational commitments and explains both the favorable trial results and the limitations of the paired log estimates.",
+          "quotes": {
+            "source": [
+              "On the other two, roadworks delayed both the old departure and the trial departure, according to the paired journey estimates.",
+              "Those estimates came from vehicle logs rather than two shuttles running alongside one another."
+            ],
+            "A": [
+              "roadworks delayed both the old departure and the trial departure, according to paired journey estimates from vehicle logs rather than two shuttles running alongside one another."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Adds an unsupported assignment of review responsibility to dispatch and operations. It also makes boarding assistance the exclusive basis for dispatch-authorized holds, whereas the source states that permission and excludes waiting for people inside without defining every permissible hold. The trial summary loses the comparison showing both departure times delayed.",
+          "quotes": {
+            "source": [
+              "They will be reviewed on Friday after the second week.",
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance; that existing rule is unchanged.",
+              "roadworks delayed both the old departure and the trial departure"
+            ],
+            "A": [],
+            "B": [
+              "Dispatch and operations will review connection records",
+              "Dispatch may authorize a departure hold **only** for a passenger who is already present at the stop and requires boarding assistance.",
+              "four arrivals at or before 18:32 and two delays attributable to roadworks"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the evidence that the later departure enabled class boarding and the paired comparison underlying the inconclusive results. B compresses away these useful facts and adds operational restrictions and review responsibilities absent from the source.",
+          "quotes": {
+            "source": [
+              "moving the departure allowed the class passengers to board without delaying arrival at the station beyond 18:32.",
+              "roadworks delayed both the old departure and the trial departure"
+            ],
+            "A": [
+              "moving the departure allowed class passengers to board without delaying arrival at the station beyond 18:32.",
+              "roadworks delayed both the old departure and the trial departure"
+            ],
+            "B": [
+              "Prior testing over six evenings showed four arrivals at or before 18:32 and two delays attributable to roadworks"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as direct internal communication. B's dense labels and phrases such as 'zero arrival impact' make an ordinary notice sound more bureaucratic than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The change is being made because the evening class now finishes at 18:00",
+              "the change remains a trial and times will be checked."
+            ],
+            "B": [
+              "**Route Segment:** Westbound Museum Shuttle, departing the Library stop",
+              "zero arrival impact, active monitoring is required."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A moves coherently from the change and its purpose to the rule, exception, evidence, monitoring, and signage. B offers useful operational sections, but its compressed trial summary does not explain the comparison needed to understand the evidentiary limitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "according to paired journey estimates from vehicle logs rather than two shuttles running alongside one another.",
+              "Because this does not establish that the later departure has no effect on arrival"
+            ],
+            "B": [
+              "two delays attributable to roadworks (based on vehicle log paired journey estimates). Because this does not definitively prove the later departure has zero arrival impact"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves connected, practical prose and useful explanation. B repeats the same departure command across nested bullets while reducing substantive trial explanation, contrary to the author's distinction between removing repetition and compressing useful reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the class is still inside at 18:10, the driver should leave, even if a member of staff says the class is nearly finished."
+            ],
+            "B": [
+              "Drivers must leave at 18:10 even if class attendees are still inside the building.",
+              "Drivers must leave at 18:10 even if facility staff states the class is nearly finished."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is requested.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A preserves the source without material error; B adds operational commitments and narrows the hold authorization. A also meets the user's practical goal through a single connected rule-and-exception paragraph and a sufficiently explained trial rationale. B's scan-friendly headings do not compensate for those changes.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Dispatch may authorize a hold for a passenger who has already reached the stop and needs boarding assistance; that existing rule is unchanged, but it does not include waiting for someone still in the building."
+            ],
+            "B": [
+              "Dispatch may authorize a departure hold **only** for a passenger who is already present at the stop and requires boarding assistance.",
+              "Dispatch and operations will review connection records"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "b372818e21163941bfdf967158c3db1fa0e63ce2a3e0d1b9c4f461c83ac0f6fd",
+    "prompt_sha256": "b0a1e3d753be9382d673695149ef6a3fe05956efa1f8de276b2f04833bfb4f7d",
+    "raw_sha256": "0b2e825bbbcdf225e52a2fe069c6b39021d314e1f6026d764f52a6e829dc5267",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a family-facing explanation of reading results, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the scoring distinctions, cross-year comparison warning, interruption marker, unchanged scores, classroom evidence, meeting arrangements, and home-reading guidance.",
+          "quotes": {
+            "source": [
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "A": [
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains all substantive qualifications and practical instructions, including both ways raw scores and bands can move differently.",
+          "quotes": {
+            "source": [
+              "It is possible for a child's raw score to improve while the band stays the same. A change of band is also possible after a small change near a boundary."
+            ],
+            "A": [],
+            "B": [
+              "A child's raw score can improve while the band stays the same, and a small change near a boundary can change the band."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both distinguish the raw score, reporting band, and term grade without treating band movement as definitive evidence of ability. Both retain the source's operational details and qualifications.",
+          "quotes": {
+            "source": [
+              "The raw score is the number of questions answered correctly out of 20.",
+              "Neither situation tells the whole story by itself."
+            ],
+            "A": [
+              "The raw score is the number of questions answered correctly out of 20",
+              "Neither situation tells the whole story on its own."
+            ],
+            "B": [
+              "The raw score is the number of questions answered correctly out of 20.",
+              "Neither situation tells the whole story by itself."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A uses longer connected sentences comfortably; B uses shorter sentences that remain idiomatic and accessible. Neither rhythm creates a meaningful reading obstacle for families.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Their sheets carry a small circle beside the date to record this interruption—not to flag a concern about the child."
+            ],
+            "B": [
+              "Their sheets carry a small circle beside the date. The circle records the interruption, not a concern about the child."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from what the check measures to score interpretation, the interruption, and family actions. A explicitly connects band ranges to possible outcomes; B makes the same relationship readily understandable through adjacent sentences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because each band covers a range, a child’s raw score can improve while their band stays the same"
+            ],
+            "B": [
+              "The band groups nearby scores so that we can discuss support without making too much of a one-question difference."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both maintain candid reassurance and useful explanation in an appropriate notice format. A's additional connections and B's retention of already-effective wording are equally compatible with the author's preferences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Teachers will discuss these results during next month’s scheduled meetings, and you do not need to arrange a separate meeting simply because a band has stayed the same."
+            ],
+            "B": [
+              "Teachers will discuss these results during the scheduled meetings next month. You do not need to arrange another meeting simply because a band has stayed the same."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical proof or derivation is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is helping families interpret the results and respond appropriately while preserving measured reassurance; both achieve that comparably. Their differences in sentence length and linkage do not establish a substantive winner.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the sheet does not match what you see when your child reads at home, please send the class teacher a short note"
+            ],
+            "B": [
+              "If the sheet does not match what you see when your child reads at home, please send the class teacher a short note."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "6ec047ff1f061ed1e06aa885633b4a12403a68f94fa21207bbb6d457aea74a16",
+    "prompt_sha256": "eb7bf19ce8784232bb04d19b4618d5694ef627c67d610a2771c800c031ffce4a",
+    "raw_sha256": "a997e48cffa59e5996166c838b2d19fa583497838813c71b085f7fddf3bb3c9b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an accessible explanation for families, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves all scoring qualifications and practical instructions. In context, 'shift a band' communicates a change in the child's reported band, not a change to the boundaries.",
+          "quotes": {
+            "source": [
+              "A change of band is also possible after a small change near a boundary."
+            ],
+            "A": [
+              "a small change near a boundary can shift a band."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the score distinctions, interruption policy, meetings, and home observations. 'Neither number' is a less precise reference than 'Neither situation,' but the preceding examples still communicate the limits of interpreting band movement; it does not establish a materially different inference.",
+          "quotes": {
+            "source": [
+              "Neither situation tells the whole story by itself.",
+              "We have not adjusted these scores"
+            ],
+            "A": [],
+            "B": [
+              "Neither number tells the whole story on its own.",
+              "We have not adjusted these scores"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the consequential distinctions and instructions. B's less exact reference to 'Neither number' and its stronger emphasis do not materially change the qualified interpretation supplied by the full paragraph.",
+          "quotes": {
+            "source": [
+              "Neither situation tells the whole story by itself.",
+              "A score of 14 in one year group therefore should not be compared directly with a score of 14 in another."
+            ],
+            "A": [
+              "Neither situation tells the whole story by itself.",
+              "a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ],
+            "B": [
+              "Neither number tells the whole story on its own.",
+              "a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A states the two band outcomes directly and conversationally. B remains readable, but its expanded phrasing adds emphasis and verbal weight without making the explanation easier to understand.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A child's raw score can improve while the band stays the same"
+            ],
+            "B": [
+              "It is entirely possible for a child’s raw score to improve while their band remains the same"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both give families the same useful sequence: purpose and comparability, score interpretation, interruption handling, and next steps. Each supplies an explicit reason for the cross-year comparison warning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "because the passages differ by year group, a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ],
+            "B": [
+              "Because the texts are different, a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the source's measured reassurance and already-effective wording. B repeatedly heightens the register with 'helpful snapshot,' 'entirely possible,' and 'far more useful,' giving the notice more editorial packaging than this user requested.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "one piece of information about how your child reads short passages independently",
+              "Examples of what feels easier or harder are more useful than extra practice-test scores."
+            ],
+            "B": [
+              "one helpful snapshot of how your child reads short passages independently",
+              "Specific examples of what feels easier or harder for your child are far more useful than extra practice-test scores."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response has a material error, and both are usable. A better meets the decisive preference for measured, connected prose that retains effective explanations: it states the band outcomes plainly and keeps the caution attached to those situations. B adds unnecessary emphasis and a less precise concluding reference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A child's raw score can improve while the band stays the same, and a small change near a boundary can shift a band. Neither situation tells the whole story by itself."
+            ],
+            "B": [
+              "It is entirely possible for a child’s raw score to improve while their band remains the same, just as a small change near a boundary can shift a child into a different band. Neither number tells the whole story on its own."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ddd40dfe90882e84f02fe79456b0871b035f823bacd9fea5f855544acd7e3014",
+    "prompt_sha256": "eb7bf19ce8784232bb04d19b4618d5694ef627c67d610a2771c800c031ffce4a",
+    "raw_sha256": "a997e48cffa59e5996166c838b2d19fa583497838813c71b085f7fddf3bb3c9b",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is editing an explanation for families, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the scoring distinctions, cross-year warning, interruption record, unchanged scores, conditional further check, and arrangements for meetings and home observations.",
+          "quotes": {
+            "source": [
+              "The raw score is the number of questions answered correctly out of 20.",
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "A": [
+              "The raw score is the number of questions answered correctly out of 20",
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the source's substantive information and qualifications, including both band-change scenarios and the invitation to provide home-reading examples without rehearsing questions.",
+          "quotes": {
+            "source": [
+              "Neither situation tells the whole story by itself.",
+              "Children can continue their usual reading at home; we are not asking families to rehearse the questions."
+            ],
+            "A": [],
+            "B": [
+              "Neither situation tells the whole story by itself.",
+              "Children can continue their usual reading at home; we are not asking families to rehearse the questions."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the distinctions between raw score, band, and term grade, along with the limits on interpreting scores and the practical guidance.",
+          "quotes": {
+            "source": [
+              "A score of 14 in one year group therefore should not be compared directly with a score of 14 in another."
+            ],
+            "A": [
+              "a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ],
+            "B": [
+              "A score of 14 in one year group therefore should not be compared directly with a score of 14 in another."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and accessible to families. A uses longer connected sentences successfully; B's shorter sentences also read naturally.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Their sheets carry a small circle beside the date to record this interruption—not to flag a concern about the child."
+            ],
+            "B": [
+              "Their sheets carry a small circle beside the date. The circle records the interruption, not a concern about the child."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both follow a useful order, but A explicitly connects the range covered by a band to the two possible score outcomes, helping families understand why those outcomes occur.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because each band covers a range, a child’s raw score can improve while their band stays the same"
+            ],
+            "B": [
+              "A child's raw score can improve while the band stays the same, and a small change near a boundary can change the band."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A modestly better serves the preference for connected explanation: it supplies a useful causal bridge without changing the notice's measured, reassuring register. B remains a good fit but leaves that connection implicit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because each band covers a range",
+              "Neither situation tells the whole story on its own."
+            ],
+            "B": [
+              "The band groups nearby scores so that we can discuss support without making too much of a one-question difference.",
+              "Neither situation tells the whole story by itself."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither introduces a material error, and both are usable notices. A has a modest substantive advantage for this user: its explicit explanation that bands cover ranges makes the scoring behavior easier to understand while retaining the appropriate reassurance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because each band covers a range, a child’s raw score can improve while their band stays the same"
+            ],
+            "B": [
+              "A child's raw score can improve while the band stays the same"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "6ec047ff1f061ed1e06aa885633b4a12403a68f94fa21207bbb6d457aea74a16",
+    "prompt_sha256": "eb7bf19ce8784232bb04d19b4618d5694ef627c67d610a2771c800c031ffce4a",
+    "raw_sha256": "f1932e09f5c8a7f74e6f683899ce06ec5119ed8c371ce3d838c8ae0b52df5c74",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is revising a practical explanation for families, not presenting a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the score definitions and qualifications, both band-change scenarios, the interruption procedure, and all practical guidance.",
+          "quotes": {
+            "source": [
+              "It is possible for a child's raw score to improve while the band stays the same.",
+              "The circle records the interruption, not a concern about the child."
+            ],
+            "A": [
+              "A child's raw score can improve while the band stays the same",
+              "Their sheets carry a small circle beside the date to record the interruption, not a concern about the child."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the substantive scoring distinctions, cautions, interruption handling, and family guidance. Its added emphasis and broader closing caution about the numbers do not materially change what families can infer.",
+          "quotes": {
+            "source": [
+              "Neither situation tells the whole story by itself.",
+              "We have not adjusted these scores, and we will consider the interruption alongside classroom reading before deciding whether a further check is useful."
+            ],
+            "A": [],
+            "B": [
+              "Neither number tells the whole story on its own.",
+              "We have not adjusted these scores; instead, teachers will consider the interruption alongside everyday classroom reading before deciding whether a follow-up check would be useful."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the facts and practical limits on interpreting the results. A's reference to the two situations is more exact than B's reference to the numbers, but B still communicates the caution in context.",
+          "quotes": {
+            "source": [
+              "Neither situation tells the whole story by itself."
+            ],
+            "A": [
+              "Neither situation tells the whole story by itself."
+            ],
+            "B": [
+              "Neither number tells the whole story on its own."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are readable and suitable for families. A's phrase about shifting a band is slightly less natural than B's wording, while B adds some unnecessary verbal emphasis; neither issue substantially impedes reading.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a small change near a boundary can shift a band."
+            ],
+            "B": [
+              "It is entirely possible for a child’s raw score to improve while their band remains the same",
+              "a small change near a boundary can shift a child into a different band."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the check's purpose to score interpretation, the interruption, and next steps. A integrates some reasons into sentences, while B states them separately; both make the necessary connections clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "because the passages differ by year group, a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ],
+            "B": [
+              "Because the texts are different, a score of 14 in one year group should not be compared directly with a score of 14 in another."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the author's measured reassurance and already-effective language. B's added promotional and emphatic phrasing supplies little explanation and moves toward the generic polish the user cautions against.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "is one piece of information",
+              "Examples of what feels easier or harder are more useful than extra practice-test scores."
+            ],
+            "B": [
+              "provides one helpful snapshot",
+              "Specific examples of what feels easier or harder for your child are far more useful than extra practice-test scores."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both explain the results adequately. A better meets the decisive request to retain the candid, reassuring voice: it preserves useful explanation without B's added evaluative language and intensifiers.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The reading check that came home this week is one piece of information",
+              "A child's raw score can improve while the band stays the same"
+            ],
+            "B": [
+              "The reading check that came home this week provides one helpful snapshot",
+              "It is entirely possible for a child’s raw score to improve while their band remains the same"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "ddd40dfe90882e84f02fe79456b0871b035f823bacd9fea5f855544acd7e3014",
+    "prompt_sha256": "eb7bf19ce8784232bb04d19b4618d5694ef627c67d610a2771c800c031ffce4a",
+    "raw_sha256": "f1932e09f5c8a7f74e6f683899ce06ec5119ed8c371ce3d838c8ae0b52df5c74",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
