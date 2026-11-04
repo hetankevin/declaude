@@ -13374,5 +13374,2391 @@
     "prompt_sha256": "a6310be72c29409e1ac4a173c01819514e6df3e0bd8897ceac0ac7fae2e11843",
     "raw_sha256": "695195d035a0f8cf1844d73268a889362fb4c579b392d5e8edb4af80493eadd3",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit a printed survey invitation; it contains no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the participation and reporting rules, but calling deletion permanent strengthens the privacy assurance: readers can rely on irreversible deletion, which the source does not explicitly promise.",
+          "quotes": {
+            "source": [
+              "Preserve the invitation's promises and limits; do not add assurances the source does not make.",
+              "The address list linking codes to homes will be deleted after reminders finish"
+            ],
+            "A": [
+              "The master address list linking codes to physical homes will be permanently deleted"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the assigned date, unusual and zero-trip days, distinction between estimating time and inventing a trip, household reporting instructions, voluntary participation, reminder cessation, and privacy limits.",
+          "quotes": {
+            "source": [
+              "Until then, the responses are not anonymous.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ],
+            "A": [],
+            "B": [
+              "Until then, the responses are not anonymous.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the practical survey instructions and withdrawal limit. B preserves the deletion promise without A's added assurance that deletion will be permanent.",
+          "quotes": {
+            "source": [
+              "The address list linking codes to homes will be deleted after reminders finish"
+            ],
+            "A": [
+              "The master address list linking codes to physical homes will be permanently deleted"
+            ],
+            "B": [
+              "The address list linking codes to homes will be deleted after reminders finish"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, conversational language. A's explanation of an ordinary day introduces an awkward phrase, and its administrative transitions make the invitation more formal than necessary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "an actual day lived in real time",
+              "Please find details on how to participate below."
+            ],
+            "B": [
+              "a day from everyday life rather than a day you choose to represent it",
+              "If your household mostly stayed home, you are among the households we mean to include."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "A provides useful navigation, but divides the privacy explanation into separate labeled items and describes non-anonymity using the less precise survey-activity period. B connects code access, the address linkage, deletion, and non-anonymity in one paragraph, making the protection's limit easier to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "responses are **not anonymous** while the survey is actively underway.",
+              "* **Address List Deletion:**"
+            ],
+            "B": [
+              "The team receiving completed forms can see that code. The address list linking codes to homes will be deleted after reminders finish, which is scheduled for the end of the following month. Until then, the responses are not anonymous."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both welcome households that stay home. B better preserves the team's connected, plainspoken invitation, while A adds formal framing and procedural labels that dilute that register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Please find details on how to participate below.",
+              "* **Who Fills It Out:**"
+            ],
+            "B": [
+              "One adult may complete the form for the household, after checking with other members where possible.",
+              "We hope you will help, even if nobody in your household went anywhere that day."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B better meets the request for clarity and trust. A's permanent-deletion assurance is a minor fidelity error; B preserves the stated promise. B also explains the code/address linkage and its anonymity limit in connected prose while retaining a welcoming invitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "will be permanently deleted",
+              "responses are **not anonymous** while the survey is actively underway."
+            ],
+            "B": [
+              "The address list linking codes to homes will be deleted after reminders finish, which is scheduled for the end of the following month. Until then, the responses are not anonymous.",
+              "If your household mostly stayed home, you are among the households we mean to include."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4c99e840d23956bc7b5bf119be02f24cd9f87ae96d4bfc1c07fa13873c8f0d7e",
+    "prompt_sha256": "e6b219a30428c074e8bc1e1b7c5e1dcdbbd42956d40a56525f60d6024025dc02",
+    "raw_sha256": "19281e7b1e7f8ea94edf937d7cfdf94d3b5cb6a6bd465dc974ce267faa721091",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns clarity and trust in a printed survey invitation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source and preserves its instructions, participation choices, reporting promises, and privacy limits.",
+          "quotes": {
+            "source": [
+              "Please describe that date even if it was unusual for you",
+              "Until then, the responses are not anonymous."
+            ],
+            "A": [
+              "Please describe that date even if it was unusual for you",
+              "Until then, the responses are not anonymous."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the substantive instructions and limits. Its reminder-period anonymity statement is qualified by the adjoining explanation that the address linkage persists until deletion. Attaching the schedule directly to deletion is a reasonable reading of the source's ambiguous scheduling clause.",
+          "quotes": {
+            "source": [
+              "The address list linking codes to homes will be deleted after reminders finish, which is scheduled for the end of the following month. Until then, the responses are not anonymous."
+            ],
+            "A": [],
+            "B": [
+              "responses are not anonymous while reminders are underway.",
+              "The address list linking codes to homes is scheduled to be deleted at the end of the following month, after reminders finish.",
+              "Once that list is deleted, we will no longer be able to link a household’s request to its form"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "A preserves the source verbatim. B reorganizes it without materially changing the assigned-day requirement, uncertainty instructions, participation choices, reminder policy, or privacy limits.",
+          "quotes": {
+            "source": [
+              "If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ],
+            "A": [
+              "If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ],
+            "B": [
+              "If you cannot remember whether a trip took place, please leave that part blank instead of filling in a likely trip.",
+              "Returning an incomplete form will stop reminders just as a complete form will."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, conversational prose appropriate to residents. B's wording changes are modest; its main advantage is organization rather than sentence-level fluency.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "One adult may complete the form for the household, after checking with other members where possible.",
+              "We hope you will help, including if the day's whole travel story is that you stayed put."
+            ],
+            "B": [
+              "One adult may complete the form for the household, after checking with other members where possible.",
+              "We hope you will help—including if your household’s whole travel story for the day is that you stayed put."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B groups the privacy mechanism with its consequence: deletion immediately explains why removal becomes impossible. A places the participation rules between those two steps. B also makes date selection and form completion easier to locate in a printed invitation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Until then, the responses are not anonymous.",
+              "Returning a form is voluntary. Skipping a question is also allowed",
+              "We cannot remove a response after the address list has been deleted"
+            ],
+            "B": [
+              "**Which day to describe**",
+              "Once that list is deleted, we will no longer be able to link a household’s request to its form, so we cannot remove a response after that point."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B retains the team's welcoming register and the purposeful stayed-put closing while making the explanation readable in order. Its headings serve residents' practical questions, and its opening avoids introducing the confusing ordinary-day label before establishing the assigned date.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "tell us about one ordinary day's travel",
+              "The invitation has a code so that we can stop reminders when a form arrives."
+            ],
+            "B": [
+              "tell us about one day’s travel—including days when nobody went anywhere.",
+              "**How your response is handled**",
+              "We hope you will help—including if your household’s whole travel story for the day is that you stayed put."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No mathematical argument or derivation appears in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error. B better fulfills the requested edit by joining deletion to the inability to remove a response and making the resident's main instructions easy to find. These changes improve understanding and use of the printed invitation while preserving its warmth; A leaves the source's organizational obstacles intact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Returning a form is voluntary. Skipping a question is also allowed, and returning an incomplete form will stop reminders just as a complete form will. We cannot remove a response after the address list has been deleted"
+            ],
+            "B": [
+              "Once that list is deleted, we will no longer be able to link a household’s request to its form, so we cannot remove a response after that point.",
+              "**Taking part is voluntary**",
+              "They are very much among the households we mean."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3338701b621d6e6f30421f3e1da05f402f20613fbb5e3b291d895e5269b386b8",
+    "prompt_sha256": "e6b219a30428c074e8bc1e1b7c5e1dcdbbd42956d40a56525f60d6024025dc02",
+    "raw_sha256": "19281e7b1e7f8ea94edf937d7cfdf94d3b5cb6a6bd465dc974ce267faa721091",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-02",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit a printed survey invitation; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the assigned date, unusual and zero-trip days, estimation distinction, voluntary participation, and reminder policy. It also retains the code/address linkage, scheduled deletion, and resulting inability to remove responses.",
+          "quotes": {
+            "source": [
+              "Please describe that date even if it was unusual for you",
+              "We cannot remove a response after the address list has been deleted"
+            ],
+            "A": [
+              "Please describe that date even if it was unusual for you",
+              "Once that list is deleted, we will no longer be able to link a household’s request to its form, so we cannot remove a response after that point."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source faithfully, including the distinction between estimating a known trip's time and guessing whether a trip occurred. All participation and privacy limits remain.",
+          "quotes": {
+            "source": [
+              "If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.",
+              "Until then, the responses are not anonymous."
+            ],
+            "A": [],
+            "B": [
+              "If you cannot remember whether the trip happened, please leave that part blank instead of supplying a likely trip.",
+              "Until then, the responses are not anonymous."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the substantive instructions, promises, and limits. B states the anonymity endpoint more explicitly; A's discussion of the retained address linkage supplies the relevant context without asserting anonymity immediately after reminders.",
+          "quotes": {
+            "source": [
+              "The address list linking codes to homes will be deleted after reminders finish, which is scheduled for the end of the following month.",
+              "Until then, the responses are not anonymous."
+            ],
+            "A": [
+              "The address list linking codes to homes is scheduled to be deleted at the end of the following month, after reminders finish.",
+              "responses are not anonymous while reminders are underway."
+            ],
+            "B": [
+              "The address list linking codes to homes will be deleted after reminders finish, which is scheduled for the end of the following month.",
+              "Until then, the responses are not anonymous."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, conversational language and preserve the welcoming invitation to households that stayed home. A's modest emphasis and B's plainer phrasing are both appropriate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "They are very much among the households we mean.",
+              "We hope you will help—including if your household’s whole travel story for the day is that you stayed put."
+            ],
+            "B": [
+              "They are among the households we mean.",
+              "We hope you will help, including if the day's whole travel story is that you stayed put."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A groups the privacy explanation with its practical consequence: deleting the linkage prevents later removal. B interrupts that explanation with participation instructions before returning to removal and reporting.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**How your response is handled**",
+              "Once that list is deleted, we will no longer be able to link a household’s request to its form, so we cannot remove a response after that point."
+            ],
+            "B": [
+              "Returning a form is voluntary.",
+              "We cannot remove a response after the address list has been deleted because we will no longer be able to link a household's request to its form."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A's restrained headings support the printed invitation and its connected explanations. It also removes the initially confusing 'ordinary day' label while preserving the explanation of why respondents must use their assigned date.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "tell us about one day’s travel—including days when nobody went anywhere.",
+              "**Which day to describe**"
+            ],
+            "B": [
+              "tell us about one ordinary day's travel, including days on which nobody went anywhere.",
+              "because ordinary here means a day from everyday life rather than a day you choose to represent it."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material fidelity error. A better serves the requested clarity and trust by keeping the privacy protection and withdrawal limit together, while providing useful navigation for a printed invitation and retaining its welcoming tone.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**How your response is handled**",
+              "Once that list is deleted, we will no longer be able to link a household’s request to its form, so we cannot remove a response after that point."
+            ],
+            "B": [
+              "Until then, the responses are not anonymous.\n\nReturning a form is voluntary.",
+              "We cannot remove a response after the address list has been deleted"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "loss",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "loss",
+      "proof": "NA",
+      "overall": "loss"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "fc9a2b4f15bb8b6818f5c853198fa5b71051095b88331bb3f20b0f821d3996ba",
+    "prompt_sha256": "3755a14d9d168920c9133f6ba2092b62ed676eaf9e32e9ed5ed9b4e04a165983",
+    "raw_sha256": "773cfd3424fcade25e3d597a5a29c880487ba4085826d6291db3596592466ff0",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-02",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns a survey invitation, with no proof or derivation to evaluate.",
+      "material_error_A": true,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A strengthens the source's statement that zero-trip days are also useful into a claim of equal usefulness. That unsupported comparison changes the stated research value, though it does not alter respondents' obligations or privacy rights. The substantive procedural limits are preserved.",
+          "quotes": {
+            "source": [
+              "a day with no trips is useful to us as well."
+            ],
+            "A": [
+              "a day with no trips is just as useful to us."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B likewise introduces an unsupported claim that zero-trip days have equal research value. Its procedural instructions and privacy limits otherwise remain substantially faithful; the comparative claim is the material change.",
+          "quotes": {
+            "source": [
+              "a day with no trips is useful to us as well."
+            ],
+            "A": [],
+            "B": [
+              "a day with no trips at all is just as valuable to our research."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both make the same minor strengthening of the value of zero-trip days. Both retain the assigned date, unusual days, distinction between estimating and inventing trips, voluntary participation, reminder cessation, and the consequences of deleting the address linkage.",
+          "quotes": {
+            "source": [
+              "a day with no trips is useful to us as well.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ],
+            "A": [
+              "a day with no trips is just as useful to us.",
+              "returning an incomplete form will stop reminders just as a complete form will."
+            ],
+            "B": [
+              "a day with no trips at all is just as valuable to our research.",
+              "Returning an incomplete form will stop future reminder notices just as a completed form does."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A retains direct, conversational prose. B introduces cumbersome explanations and administrative wording that make a simple invitation sound more manufactured.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "a day from everyday life rather than a day you choose to represent it.",
+              "The address list linking codes to homes"
+            ],
+            "B": [
+              "an actual day lived in real time",
+              "The master address list linking codes to physical homes"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B clearly groups the assigned-day instructions, form details, and privacy information. In particular, deletion and inability to remove responses appear together; A separates them with the participation discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Until then, the responses are not anonymous.\n\nReturning a form is voluntary.",
+              "We cannot remove a response after the address list has been deleted"
+            ],
+            "B": [
+              "### Your Survey Day",
+              "* **Address List Deletion:**",
+              "* **Removing Responses:**"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better preserves the team's conversational invitation. B's navigation is useful, but its introductory signposting, repeated formal labels, and heightened appeal add generic packaging and pressure that the author's preferences discourage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If your household mostly stayed home, you are among the households we mean to include.",
+              "We hope you will help, even if nobody in your household went anywhere that day."
+            ],
+            "B": [
+              "you are very much among the households we need to hear from.",
+              "Please find details on how to participate below.",
+              "**Tracking Codes and Anonymity:**"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The invitation contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both have the same minor unsupported equal-value claim, with comparable consequences. B improves navigation and privacy grouping, but A better satisfies the decisive preference for a welcoming, conversational invitation without unnecessary formal packaging. Its instructions remain understandable and usable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If your household mostly stayed home, you are among the households we mean to include.",
+              "Returning a form is voluntary. Skipping a question is also allowed"
+            ],
+            "B": [
+              "Please find details on how to participate below.",
+              "* **Voluntary Participation:** Taking part is entirely voluntary.",
+              "you are very much among the households we need to hear from."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": true,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "90c8a8c0865182df808c7e8f662b6e8c9b3f63fd80cb42dcbb855e7f4f1525eb",
+    "prompt_sha256": "3755a14d9d168920c9133f6ba2092b62ed676eaf9e32e9ed5ed9b4e04a165983",
+    "raw_sha256": "773cfd3424fcade25e3d597a5a29c880487ba4085826d6291db3596592466ff0",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is an operational handover revision with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the observations, diagnostic limits, and escalation authority, but changes a requested inspection into a scheduled inspection. Technicians could reasonably infer that maintenance arrangements are confirmed.",
+          "quotes": {
+            "source": [
+              "We have asked maintenance to inspect the seal at the next planned stop."
+            ],
+            "A": [
+              "maintenance has been scheduled to inspect the seal during the next planned stop"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the warning counts, clearance times, wiping observations, humidity-versus-temperature distinction, logging requirements, housing prohibition, escalation threshold, restart authority, and requested inspection without a material change.",
+          "quotes": {
+            "source": [
+              "A handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "A": [],
+            "B": [
+              "A handheld reading is not standing permission to restart, since the lead must make that decision."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both preserve the central operational facts and distinguish observation from causation. B also preserves the inspection's status as a request, whereas A upgrades it to a scheduled action.",
+          "quotes": {
+            "source": [
+              "We have asked maintenance to inspect the seal at the next planned stop."
+            ],
+            "A": [
+              "maintenance has been scheduled to inspect the seal during the next planned stop"
+            ],
+            "B": [
+              "Maintenance has been asked to inspect the seal at the next planned stop"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, familiar language suited to technicians. A remains readable but introduces administrative phrasing that makes an ordinary handover sound more formal and cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Technicians must adhere to standard logging and escalation procedures rather than initiating unauthorized troubleshooting."
+            ],
+            "B": [
+              "For now, record the time the indicator appears, the time it clears, and whether washdown has finished."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A usefully groups observations, explanations, and actions, including all logging together. B explains the indicator's limits immediately and then moves through the evidence to interim actions. Both provide a usable sequence, although B leaves no-warning logging until after the inspection.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "**Working Explanations**",
+              "**Required Actions**"
+            ],
+            "B": [
+              "These observations are consistent with moisture around the housing, but they do not show that wiping cleared the warning",
+              "For now, record the time the indicator appears"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the source's conversational technical register and explains why each distinction matters. A's headings are not inherently unsuitable, but its added procedural admonition and formal phrasing move away from the requested ordinary connected prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Operator wiping is therefore recorded strictly as an observed event, not recommended as a remedy.",
+              "Technicians must adhere to standard logging and escalation procedures rather than initiating unauthorized troubleshooting."
+            ],
+            "B": [
+              "Wiping is recorded as an observation, not recommended as a remedy.",
+              "a list containing only warnings will not show how often the pattern occurs."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or mathematical derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no identified material error; A mildly overstates the inspection's confirmed status. B also better serves the decisive goal of a faithful, usable handover: its direct instructions preserve the lead's authority while its explanations keep observations separate from remedies.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "maintenance has been scheduled to inspect the seal during the next planned stop"
+            ],
+            "B": [
+              "Maintenance has been asked to inspect the seal at the next planned stop",
+              "If the indicator is still amber after fifteen minutes, call the shift lead before starting the next batch."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f9c1b9239d66d2c06d6a1fc2204d9e8c9b67dd01ed945ef69c0628601e373e74",
+    "prompt_sha256": "3173ff00f7daf8e96b12e58b1259431c4651a5cf26aca866fde77763887159de",
+    "raw_sha256": "ec14ff219a9ede438ec745b026abde562979255ebb1814e300fc8e6c3c5b875c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for practical handover prose, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains all specified observations, qualifications, logging instructions, escalation timing, inspection status, and shift-lead authority. Its sentence combinations do not change the operational meaning.",
+          "quotes": {
+            "source": [
+              "On two mornings the operator wiped moisture from the outside of the probe housing.",
+              "A handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "A": [
+              "On two mornings the operator wiped moisture from the outside of the probe housing, and on the other morning nobody touched it.",
+              "a handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the central facts and authority but adds a blanket required action to leave the equipment undisturbed. The source prohibits opening the housing and declines to recommend wiping; it does not establish this broader restriction. Calling the inspection only a precaution also supplies an unsupported characterization.",
+          "quotes": {
+            "source": [
+              "Do not open the housing.",
+              "That is why this note records the wiping without recommending it as the remedy.",
+              "That request does not establish that the seal has failed."
+            ],
+            "A": [],
+            "B": [
+              "the required action is to keep a complete log and leave the equipment undisturbed.",
+              "that request is only a precaution"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A faithfully preserves the source's operational scope. B retains the numerical observations, measurement distinction, and restart authority, but its broader equipment restriction changes what technicians are instructed to do. The temperature shorthand does not independently create a material error in context.",
+          "quotes": {
+            "source": [
+              "Do not open the housing.",
+              "Do not turn the text into a new troubleshooting procedure or change the authority given to the shift lead."
+            ],
+            "A": [
+              "Do not open the housing."
+            ],
+            "B": [
+              "the required action is to keep a complete log and leave the equipment undisturbed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A reads as a straightforward handover with manageable sentences. B is intelligible, but its layered causal clauses and repeated twelve-minute observation make the explanation heavier without adding necessary understanding.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those observations are consistent with moisture around the housing, but they do not tell us that wiping cleared the warning, and the housing is not the sensing element."
+            ],
+            "B": [
+              "Because the light cleared with or without intervention—and because the external housing is not the sensing element—these observations do not show that wiping clears the fault, so wiping is recorded here only as background and is not recommended as a remedy."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B gives the observations first, groups the moisture and seal qualifications together, and then gathers the required actions, including no-warning logging. A remains easy to follow but separates the two logging instructions with escalation and maintenance discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have asked maintenance to inspect the seal at the next planned stop.",
+              "Please continue recording mornings on which no warning appears as well"
+            ],
+            "B": [
+              "Likewise, maintenance has been asked to inspect the seal at the next planned stop",
+              "on mornings when the light does not come on, check the \"no warning\" box beside the time fields"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the established register and useful explanations without forcing a more elaborate treatment. B's organization is helpful, but its repeated causal qualification and expanded directive exceed the restraint and scope requested for this ordinary document.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "That is why this note records the wiping without recommending it as the remedy.",
+              "since a list containing only warnings will not tell us how often the pattern occurs."
+            ],
+            "B": [
+              "that remains a working explanation rather than a confirmed cause.",
+              "Because the light cleared with or without intervention—and because the external housing is not the sensing element—"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The observational explanation contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no identified material error; B introduces a minor but actionable expansion of the equipment restriction. Although B groups related information more effectively, the decisive priority is usable prose that preserves the existing instructions. A achieves that with clear explanations and intact shift-lead authority.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Do not open the housing.",
+              "a handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "B": [
+              "the required action is to keep a complete log and leave the equipment undisturbed."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "17553d4c0aafba20142a28c213633c22201fe5794c564daf90f664b8f4992757",
+    "prompt_sha256": "3173ff00f7daf8e96b12e58b1259431c4651a5cf26aca866fde77763887159de",
+    "raw_sha256": "ec14ff219a9ede438ec745b026abde562979255ebb1814e300fc8e6c3c5b875c",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-03",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task revises an operational handover explanation and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the counts, timings, measurement distinction, causal uncertainty, logging, inspection request, and restart authority. The broader phrase about leaving equipment undisturbed is ambiguous in context, since the authorized handheld check remains explicit; it does not establish a definite additional prohibition.",
+          "quotes": {
+            "source": [
+              "On each of the three mornings, the amber light cleared within twelve minutes.",
+              "Do not open the housing."
+            ],
+            "A": [
+              "cleared within twelve minutes each time",
+              "keep a complete log and leave the equipment undisturbed",
+              "The shift lead may ask for a check using the handheld humidity unit"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the observations and their limitations, all logging requirements, the housing prohibition, escalation timing, planned inspection request, and the lead's restart decision.",
+          "quotes": {
+            "source": [
+              "If the indicator is still amber after fifteen minutes, call the shift lead before starting the next batch.",
+              "That request does not establish that the seal has failed."
+            ],
+            "A": [],
+            "B": [
+              "If the indicator is still amber after fifteen minutes, call the shift lead before starting the next batch.",
+              "That request does not establish that the seal has failed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the operational facts and distinguish observation from explanation and required action. Neither makes wiping effective, confirms a failed seal, or delegates restart authority to the handheld reading.",
+          "quotes": {
+            "source": [
+              "Those observations are consistent with moisture around the housing, but they do not tell us that wiping cleared the warning"
+            ],
+            "A": [
+              "these observations do not show that wiping clears the fault"
+            ],
+            "B": [
+              "Those observations are consistent with moisture around the housing, but they do not tell us that wiping cleared the warning"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses more direct, conversational sentences. A occasionally burdens the same practical explanation with longer framing and repeated qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Although the timing is consistent with moisture around the probe housing after washdown, that remains a working explanation rather than a confirmed cause."
+            ],
+            "B": [
+              "Those observations are consistent with moisture around the housing, but they do not tell us that wiping cleared the warning"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A groups the seal caveat with the uncertain explanations and places no-warning recording beside the other logging instructions. B returns to logging after the maintenance paragraph, making the required actions slightly more scattered.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Likewise, maintenance has been asked to inspect the seal at the next planned stop",
+              "on mornings when the light does not come on, check the \"no warning\" box beside the time fields"
+            ],
+            "B": [
+              "We have asked maintenance to inspect the seal at the next planned stop.",
+              "Please continue recording mornings on which no warning appears as well"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A better consolidates related reasoning and instructions; B better preserves the ordinary notice's conversational economy. Both explain why the observations and logging matter without imposing a research-style introduction.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "so we can tell how often this pattern actually occurs rather than logging only fault days"
+            ],
+            "B": [
+              "since a list containing only warnings will not tell us how often the pattern occurs"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has an established material error. For the user's goal of usable connected prose, A offers better grouping of explanations and actions, while B offers more direct phrasing with sufficient explanation. These advantages are comparable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whenever the amber indicator appears, record the time it comes on, the time it clears, and whether washdown has finished"
+            ],
+            "B": [
+              "For now, record the time the indicator appears, the time it clears, and whether washdown has finished."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "170534f4a3f07613d83952241f74f6daf0a5bc748afc20225540d68365536812",
+    "prompt_sha256": "837b8a8f80ca1fc23ca987fbdf2457024784769192f469d3a505cc927dbcdd28",
+    "raw_sha256": "7ea5f967fa4c50f31a94b79fa4fca5a08115fef6b07699930198e6d690dc7d09",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-03",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task revises an operational handover explanation and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the three-of-five observation, twelve-minute clearance, two wiping mornings, measurement limitations, uncertain cause, logging requirements, escalation, inspection request, and lead authority.",
+          "quotes": {
+            "source": [
+              "We have asked maintenance to inspect the seal at the next planned stop.",
+              "A handheld reading is not a standing permission to restart, since the lead must make that decision."
+            ],
+            "A": [
+              "Maintenance has been asked to inspect the seal at the next planned stop",
+              "A handheld reading is not standing permission to restart, since the lead must make that decision."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "Changes an inspection request into a scheduled commitment, allowing readers to assume maintenance has confirmed the work. It also expands the logging requirement from mornings to every shift. These are concrete scope changes, although the central safety instructions and restart authority remain intact.",
+          "quotes": {
+            "source": [
+              "We have asked maintenance to inspect the seal at the next planned stop.",
+              "Please continue recording mornings on which no warning appears as well"
+            ],
+            "A": [],
+            "B": [
+              "maintenance has been scheduled to inspect the seal during the next planned stop",
+              "For every shift, record the time the indicator appears, the time it clears, and whether washdown has finished."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the inspection's requested status and the morning logging scope. B preserves most technical qualifications but introduces a confirmed schedule and a broader logging obligation.",
+          "quotes": {
+            "source": [
+              "We have asked maintenance to inspect the seal at the next planned stop.",
+              "Please continue recording mornings on which no warning appears as well"
+            ],
+            "A": [
+              "Maintenance has been asked to inspect the seal at the next planned stop",
+              "Continue recording mornings when no warning appears as well"
+            ],
+            "B": [
+              "maintenance has been scheduled to inspect the seal during the next planned stop",
+              "For every shift"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sounds like a technician-facing explanation. B repeatedly substitutes bureaucratic phrasing for straightforward language, making an ordinary handover feel more formal than the task requires.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A handheld reading is not standing permission to restart, since the lead must make that decision."
+            ],
+            "B": [
+              "A handheld reading does not constitute standing permission to restart the line; the authority to approve resuming production remains solely with the shift lead."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A explains what the indicator means before discussing the temperature display and the possible moisture explanation. B's categories are scannable, but they delay the indicator's meaning until after the observations and secondary-display discussion.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The indicator shows that the humidity probe's reading is outside the range accepted by the controller",
+              "The other display, often called the backup, measures temperature only"
+            ],
+            "B": [
+              "Technicians have also referenced the secondary display",
+              "The amber light indicates only that the humidity probe’s reading has drifted outside the controller’s acceptable parameters"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A maintains connected, conversational technical prose with reasons beside the relevant claims. B's headings are not inherently disqualifying, but its added compliance framing and emphatic wording push the artifact toward a formal procedure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Wiping is recorded as an observation, not recommended as a remedy."
+            ],
+            "B": [
+              "Technicians must adhere to standard logging and escalation procedures rather than initiating unauthorized troubleshooting.",
+              "Under no circumstances should technicians open the probe housing."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B introduces a minor but consequential change from requested to scheduled maintenance and broadens logging to every shift. A also better meets the user's request for connected prose technicians can use, preserving the explanation without adding procedural framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Maintenance has been asked to inspect the seal at the next planned stop",
+              "For now, record the time the indicator appears, the time it clears, and whether washdown has finished."
+            ],
+            "B": [
+              "maintenance has been scheduled to inspect the seal during the next planned stop",
+              "Technicians must adhere to standard logging and escalation procedures rather than initiating unauthorized troubleshooting."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "25c8a853a8522da699dcb08aef72a17beb720a41308afc0efe5a256ed157c686",
+    "prompt_sha256": "837b8a8f80ca1fc23ca987fbdf2457024784769192f469d3a505cc927dbcdd28",
+    "raw_sha256": "7ea5f967fa4c50f31a94b79fa4fca5a08115fef6b07699930198e6d690dc7d09",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to polish a visitor access notice; it contains no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves both listening options, free unbooked receivers, the six-device limit and possible wait, transcript details and advance requests, sequence timing and warning, both exits, recording resumption, Wednesday's precise exception, and host limitations. Its combinations of sentences change no practical entitlement or qualification.",
+          "quotes": {
+            "source": [
+              "We have six receivers, so one may not be available immediately.",
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off."
+            ],
+            "A": [
+              "No booking is needed for a receiver, though because we have six, one may not be available immediately.",
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off while the case recordings and induction loop remain available."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B reproduces the source notice, preserving all listening and reading choices, availability qualifications, timing, exits, Wednesday arrangements, and staff limitations. No factual addition or omission is present.",
+          "quotes": {
+            "source": [
+              "These mornings are quieter, but we cannot promise silence: people still talk, doors open, and school groups sometimes visit."
+            ],
+            "A": [],
+            "B": [
+              "These mornings are quieter, but we cannot promise silence: people still talk, doors open, and school groups sometimes visit."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the full practical meaning. A condenses the selective sound-description qualification without expanding what transcripts promise; B retains the original explanation.",
+          "quotes": {
+            "source": [
+              "They do not describe every background sound."
+            ],
+            "A": [
+              "The transcripts describe sounds that matter to the account—such as a bell or a pause interrupted by machinery—though not every background sound."
+            ],
+            "B": [
+              "They do not describe every background sound."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable, considerate language suited to visitors. A makes the final request more direct, while B's original phrasing remains idiomatic and clear.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you prefer to read the transcripts before coming, you can request them from the visitor team."
+            ],
+            "B": [
+              "If you prefer to read before coming, the same transcripts can be requested from the visitor team."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both follow the useful sequence of listening, transcripts, scheduled sound, quieter mornings, and assistance. A gives a small improvement by explicitly linking the warning light to the visitor's opportunity to leave.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A light above the entrance comes on one minute before it begins, so visitors who would rather avoid the sequence can leave through either doorway and return afterward."
+            ],
+            "B": [
+              "A light above the entrance comes on one minute before it begins. Visitors who would rather avoid the sequence can leave through either doorway and return afterward."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A makes restrained connections while retaining useful explanations; B preserves already-effective prose. Both respect the notice's conversational register and frame access arrangements as visitor choices.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You are welcome to ask a gallery host for a seat or for help with the equipment."
+            ],
+            "B": [
+              "You are welcome to ask a gallery host for help with the equipment or for a seat."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is a usable, considerate notice that preserves every choice with restrained editing. A connects related information slightly more explicitly, but B's existing organization already communicates it effectively. That small advantage does not establish a substantive difference in usefulness for this user.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off while the case recordings and induction loop remain available."
+            ],
+            "B": [
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off. The case recordings and induction loop remain available."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "loss",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4393d64427eb725e2ccedb190b9ef755b248c2e56f12e35721066ae0d83b5f1f",
+    "prompt_sha256": "ad3071fafc1800adc867106594dd01052c5ed6f9a04c3641d4005b75461dbee9",
+    "raw_sha256": "ad65bdd7ca12f9ba587473e348f68bf7fac981087f5fe963c09db140914ecfff",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns publication prose for museum visitors, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves listening options, free receivers without booking, the six-device limit and possible wait, transcript locations and formats, selective sound descriptions, returns and advance requests, sequence timing, warning and exits, resumption, Wednesday's exception, and host limitations.",
+          "quotes": {
+            "source": [
+              "The receiver is free, and no booking is needed. We have six receivers, so one may not be available immediately.",
+              "then resume from the point at which they stopped."
+            ],
+            "A": [
+              "Receivers are free and no booking is needed. We have six, so one may not be available immediately.",
+              "then resume from where they stopped."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves all operational details and qualifications, including both exits and the precise Wednesday exception. The editorial preface and added heading affect presentation, not what visitors can reasonably rely on.",
+          "quotes": {
+            "source": [
+              "Visitors who would rather avoid the sequence can leave through either doorway and return afterward.",
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off."
+            ],
+            "A": [],
+            "B": [
+              "Visitors who would rather avoid the sequence can step out through either doorway and return afterward.",
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off, while the case recordings and induction loop remain available."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's visitor choices and limitations. In particular, neither turns quieter mornings into a promise of silence or removes access to case recordings during the Wednesday exception.",
+          "quotes": {
+            "source": [
+              "The case recordings and induction loop remain available.",
+              "These mornings are quieter, but we cannot promise silence"
+            ],
+            "A": [
+              "The case recordings and induction loop remain available.",
+              "These mornings are quieter, but we cannot promise silence"
+            ],
+            "B": [
+              "while the case recordings and induction loop remain available.",
+              "These mornings are quieter, but we cannot promise silence"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's receiver explanation presents cost, booking, and possible delay in direct conversational language. B's nested qualification, particularly 'though as we have six in total,' makes the same information less easy to read.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Receivers are free and no booking is needed. We have six, so one may not be available immediately."
+            ],
+            "B": [
+              "Receivers are free and do not require booking, though as we have six in total, one may not always be available immediately."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the source's practical paragraph sequence and keep the warning, exit choice, and resumption behavior together. B's heading does not materially improve or disrupt that organization.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Visitors who would rather avoid the sequence can leave through either doorway and return afterward. The recordings at the cases pause during the sequence, then resume from where they stopped."
+            ],
+            "B": [
+              "Visitors who would rather avoid the sequence can step out through either doorway and return afterward. Case recordings pause during the sequence and resume from where they stopped."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A supplies the notice directly and makes modest, useful edits within its existing register. B retains a considerate notice but adds an editorial announcement that does not belong in the publication artifact; the heading itself is a permissible organizational choice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The listening gallery offers two ways to hear the recorded accounts.",
+              "If you prefer to read before coming, you can request the same transcripts from the visitor team."
+            ],
+            "B": [
+              "Here is the polished access note:",
+              "### Gallery Access and Listening Options"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, so fidelity does not separate them. A better meets the request for a modest publication edit: it provides immediately usable notice prose and explains receiver availability directly. B requires removal of its editorial preface and makes that availability explanation more cumbersome without adding useful information.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Receivers are free and no booking is needed. We have six, so one may not be available immediately."
+            ],
+            "B": [
+              "Here is the polished access note:",
+              "though as we have six in total, one may not always be available immediately."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "97c8371c187e46db5cd18b7d4ebc67ff15bf61f56b22842991ca7f442877f3e9",
+    "prompt_sha256": "ad3071fafc1800adc867106594dd01052c5ed6f9a04c3641d4005b75461dbee9",
+    "raw_sha256": "ad65bdd7ca12f9ba587473e348f68bf7fac981087f5fe963c09db140914ecfff",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-04",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is to edit a visitor access notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves both listening options, free unbooked receivers, the six-device limit and possible wait, transcript arrangements and selective sound descriptions, sequence timing and exits, recording resumption, Wednesday's precise exception, and host limitations.",
+          "quotes": {
+            "source": [
+              "We have six receivers, so one may not be available immediately.",
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off."
+            ],
+            "A": [
+              "No booking is needed for a receiver, though because we have six, one may not be available immediately.",
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off while the case recordings and induction loop remain available."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains all practical choices, timing, availability qualifications, transcript details, and limits on assistance. Its small wording changes do not alter what visitors can expect or do.",
+          "quotes": {
+            "source": [
+              "They do not describe every background sound.",
+              "These mornings are quieter, but we cannot promise silence: people still talk, doors open, and school groups sometimes visit."
+            ],
+            "A": [],
+            "B": [
+              "They do not describe every background sound.",
+              "These mornings are quieter, but we cannot promise silence: people still talk, doors open, and school groups sometimes visit."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the source's operational details and qualifications, including advance transcripts and the exact behavior of recordings during the speaker sequence.",
+          "quotes": {
+            "source": [
+              "The recordings at the cases pause during the sequence, then resume from the point at which they stopped."
+            ],
+            "A": [
+              "The case recordings pause during the sequence and resume from where they stopped."
+            ],
+            "B": [
+              "The recordings at the cases pause during the sequence, then resume from the point at which they stopped."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both read as considerate, idiomatic public information. A integrates some related sentences; B retains an equally readable, more segmented rhythm.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Large-print copies are available at the welcome desk to take into the gallery; please return them before leaving."
+            ],
+            "B": [
+              "Large-print copies are available at the welcome desk and may be taken into the gallery, but please return them before leaving."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both follow the same useful order from listening and reading options to scheduled sound, quieter mornings, and assistance. A explicitly connects the warning light to leaving; B makes that connection readily apparent through adjacent sentences.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A light above the entrance comes on one minute before it begins, so visitors who would rather avoid the sequence can leave through either doorway and return afterward."
+            ],
+            "B": [
+              "A light above the entrance comes on one minute before it begins. Visitors who would rather avoid the sequence can leave through either doorway and return afterward."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the modest editing scope and preserve direct, welcoming choices without adding rhetorical packaging or treating preferences as problems.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If you prefer to read the transcripts before coming, you can request them from the visitor team."
+            ],
+            "B": [
+              "If you prefer to read before coming, the same transcripts can be requested from the visitor team."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither introduces a material error. The decisive priority is a usable, considerate notice with all choices intact; both deliver that directly. A's sentence integration and B's restraint offer comparable benefits without a substantive difference in usefulness.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "You are welcome to ask a gallery host for a seat or for help with the equipment."
+            ],
+            "B": [
+              "You are welcome to ask a gallery host for help with the equipment or for a seat."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "4393d64427eb725e2ccedb190b9ef755b248c2e56f12e35721066ae0d83b5f1f",
+    "prompt_sha256": "ad3071fafc1800adc867106594dd01052c5ed6f9a04c3641d4005b75461dbee9",
+    "raw_sha256": "543744bb722125a83a90d237b066e134c74f0e2bde214b3c63911fc008b8b0ec",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-04",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns publication prose for a museum access notice, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the listening choices, free unbooked receivers and possible wait, transcript formats and arrangements, selective sound descriptions, sequence timing and exits, recording resumption, Wednesday exception, and limits on quiet and assistance.",
+          "quotes": {
+            "source": [
+              "The receiver is free, and no booking is needed. We have six receivers, so one may not be available immediately.",
+              "If you prefer to read before coming, the same transcripts can be requested from the visitor team."
+            ],
+            "A": [
+              "Receivers are free and no booking is needed. We have six, so one may not be available immediately.",
+              "If you prefer to read before coming, you can request the same transcripts from the visitor team."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "All substantive visitor information and qualifications remain intact. The added preface and heading affect presentation, without changing access arrangements or promising additional services.",
+          "quotes": {
+            "source": [
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off. The case recordings and induction loop remain available.",
+              "Hosts can explain the available options, though they cannot reserve a receiver or keep the room quiet for an individual visit."
+            ],
+            "A": [],
+            "B": [
+              "On Wednesday mornings, from opening until noon, the speaker sequence is switched off, while the case recordings and induction loop remain available.",
+              "Hosts can explain the available options, though they cannot reserve a receiver or keep the room quiet for an individual visit."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the same visitor choices and limitations. B's permission to step out through either doorway is equivalent to the source's permission to leave and return.",
+          "quotes": {
+            "source": [
+              "Visitors who would rather avoid the sequence can leave through either doorway and return afterward."
+            ],
+            "A": [
+              "Visitors who would rather avoid the sequence can leave through either doorway and return afterward."
+            ],
+            "B": [
+              "Visitors who would rather avoid the sequence can step out through either doorway and return afterward."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A states receiver availability in direct, easy-to-process sentences. B's opening accumulates the options and then uses the more cumbersome qualification 'though as we have six in total'.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Receivers are free and no booking is needed. We have six, so one may not be available immediately."
+            ],
+            "B": [
+              "Receivers are free and do not require booking, though as we have six in total, one may not always be available immediately."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the effective paragraph sequence and keep explanations beside the relevant choices. Their sentence-level regrouping leaves the notice equally easy to navigate.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The transcripts include descriptions of sounds that matter to the account, such as a bell or a pause interrupted by machinery, but do not describe every background sound."
+            ],
+            "B": [
+              "Transcripts include descriptions of sounds that matter to the account—such as a bell or a pause interrupted by machinery—though they do not describe every background sound."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A supplies the publication text directly and makes restrained, useful edits. B's generic announcement adds editorial packaging outside the notice; its heading is permissible but does not make that announcement useful to exhibit visitors.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The listening gallery offers two ways to hear the recorded accounts."
+            ],
+            "B": [
+              "Here is the polished access note:",
+              "### Gallery Access and Listening Options"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are materially faithful. A better meets the request for a modest, publication-ready edit: it opens directly with visitor information and keeps the availability explanation straightforward. B adds an unnecessary editorial preface and makes that explanation more cumbersome.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Receivers are free and no booking is needed. We have six, so one may not be available immediately."
+            ],
+            "B": [
+              "Here is the polished access note:",
+              "Receivers are free and do not require booking, though as we have six in total, one may not always be available immediately."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "97c8371c187e46db5cd18b7d4ebc67ff15bf61f56b22842991ca7f442877f3e9",
+    "prompt_sha256": "ad3071fafc1800adc867106594dd01052c5ed6f9a04c3641d4005b75461dbee9",
+    "raw_sha256": "543744bb722125a83a90d237b066e134c74f0e2bde214b3c63911fc008b8b0ec",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns an empirical results-and-discussion passage, with no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "major",
+          "reason": "A turns a descriptive pattern consistent with an effect into an established weather–housing interaction and measurement bias. That strengthens the central conclusion beyond the source's unresolved measurement question. It also introduces an unsupported mechanism involving rain striking the shield.",
+          "quotes": {
+            "source": [
+              "is consistent with shielding changing detector output under rain.",
+              "The pilot identifies a measurement question to examine before using these recordings for an ecological trend."
+            ],
+            "A": [
+              "the paired design effectively isolates a critical measurement issue: detector output is sensitive to the interaction between weather and physical housing.",
+              "this measurement bias must be resolved.",
+              "false positives induced by rain striking the shield"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the sampling design, observational weather classification, all paired counts, pooled agreement interpretation, and dependence qualification. It keeps detector discordance separate from verified calls, abundance, and behavioral conclusions.",
+          "quotes": {
+            "source": [
+              "Weather was not assigned.",
+              "It does not establish that the shield recovered genuine calls, because no independent labeling of calls was performed."
+            ],
+            "A": [],
+            "B": [
+              "Weather was not assigned.",
+              "Because calls were not independently labeled, however, this pattern does not establish that the shield recovered genuine calls, nor does it show that rain reduced calling."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical results and major design details. B also preserves the source's inferential limits throughout; A's concluding claim of an isolated interaction and established bias overrides its earlier caution. B omits the explicit condition about when calling is the ecological quantity of interest, but its surrounding distinctions do not assert a conflicting interpretation.",
+          "quotes": {
+            "source": [
+              "The excess of shield-only over exposed-only positives in wet conditions is consistent with shielding changing detector output under rain."
+            ],
+            "A": [
+              "detector output is sensitive to the interaction between weather and physical housing."
+            ],
+            "B": [
+              "The excess of shield-only over exposed-only positives in wet conditions is consistent with shielding changing detector output under rain."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, readable technical prose. A is readable too, but phrases such as 'inherent measurement challenge' and 'critical measurement issue' add rhetorical weight without explaining more.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Acoustic monitoring across varying weather conditions faces an inherent measurement challenge:",
+              "Despite these limitations, the paired design effectively isolates a critical measurement issue:"
+            ],
+            "B": [
+              "Rain may affect a recording before it affects the animals whose calls we hope to count.",
+              "The pilot identifies a measurement question to address before using these recordings to evaluate ecological trends."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "B connects the measurement motivation to the paired design, explains the counts before interpreting them, and ends with what remains useful despite the limitations. A follows a similar sequence, but its final escalation to an established interaction does not follow from its preceding qualifications.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "this asymmetry does not prove that the shield recovered true calls missed by the exposed recorder",
+              "Despite these limitations, the paired design effectively isolates a critical measurement issue:"
+            ],
+            "B": [
+              "These limitations matter, but they do not make the paired comparison uninformative about disagreement between the devices.",
+              "The pilot identifies a measurement question to address before using these recordings to evaluate ecological trends."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B fits the requested connected, conversational explanation and modest contribution. It explains why the measurement question matters without A's emphatic claims about isolation and a bias that must be resolved.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To isolate this instrumentation effect, our pilot study tested",
+              "Before automated acoustic data can be reliably used to infer ecological trends across weather regimes, this measurement bias must be resolved."
+            ],
+            "B": [
+              "Our pilot therefore examined whether a rain shield changes the output of one fixed call detector, without attempting to estimate the number of animals.",
+              "For the present data, we can report the direction of discordance and its dependence on the observed weather categories, while keeping the biological interpretation open."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to evaluate.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A materially strengthens the pilot's central inference into an established interaction and bias. The decisive priority is readable scientific reasoning within the design: B's ending explains what the descriptive comparison permits while leaving biological interpretation open.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "the paired design effectively isolates a critical measurement issue: detector output is sensitive to the interaction between weather and physical housing."
+            ],
+            "B": [
+              "For the present data, we can report the direction of discordance and its dependence on the observed weather categories, while keeping the biological interpretation open."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8aa837a83054d35f8a1fd4e06a1fbfd983780d8ebecc170fdaa6b91658feecb5",
+    "prompt_sha256": "ca1a5ccc37af5c6584b6af53f9b6fc440e122a675fe925dc0ac37d6c370efbaf",
+    "raw_sha256": "81ec0f28580f4e994cf5c0a6c14a7201163367f8d02a1f50643de04425215b89",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for revision of an empirical methods discussion, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A retains twelve patches, simultaneous randomized recorder pairs, 144 windows, observational weather categories, every outcome count, and the pooled-agreement qualification. It preserves the limits on true-call recovery, behavior, abundance, and independent replication.",
+          "quotes": {
+            "source": [
+              "During wet windows, the devices agreed in 29 of 48 pairs.",
+              "The repeated windows within patches are another reason not to treat 144 as the number of independent ecological replicates."
+            ],
+            "A": [
+              "During wet windows, the devices agreed in 29 of 48 pairs",
+              "because the windows were repeated within patches, 144 should not be treated as the number of independent ecological replicates."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B accurately preserves the design, counts, positivity definition, agreement interpretation, and observational status of weather. Its conclusions remain descriptive, with the source's biological and replication qualifications intact.",
+          "quotes": {
+            "source": [
+              "Weather was not assigned.",
+              "It does not establish that the shield recovered genuine calls, because no independent labeling of calls was performed."
+            ],
+            "A": [],
+            "B": [
+              "weather was observed rather than experimentally assigned.",
+              "because no independent call labeling was performed, this result does not establish that the shield recovered genuine calls, nor does it establish that rain reduced calling."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the evidence and scope, including the condition on interpreting calling as an ecological quantity. Both explicitly prevent pooled agreement from being read as true-call counts and retain the distinction between descriptive disagreement and biological inference.",
+          "quotes": {
+            "source": [
+              "It would therefore be inappropriate to read the agreement counts as the number of windows with calls."
+            ],
+            "A": [
+              "the agreement counts should not be read as the number of windows with calls."
+            ],
+            "B": [
+              "the agreement counts cannot be interpreted as the number of windows containing calls."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A is more conversational, while B uses somewhat more formal transitions and makes some referents more explicit. Both are idiomatic and readable; neither has a substantial advantage, and both retain a fairly dense opening qualification.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Rain may affect a recording before it affects the animals whose calls we hope to count, which matters when comparing wet and dry surveys."
+            ],
+            "B": [
+              "When comparing acoustic surveys across wet and dry conditions, rainfall can affect a recording directly, independent of any effect on the animals whose calls are being counted."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the measurement problem before introducing the paired design, explain agreement immediately after the results, and connect limitations to the remaining descriptive contribution. B states the ecological-inference transition more explicitly, but A supplies the same necessary reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Even with these limitations, the paired comparison remains informative about disagreement.",
+              "The pilot identifies a measurement question to examine before using these recordings for an ecological trend."
+            ],
+            "B": [
+              "While these limitations constrain ecological inference, the simultaneous paired comparison remains informative about between-device disagreement.",
+              "Overall, this pilot identifies a measurement issue that should be addressed before using these recordings to evaluate an ecological trend."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A more closely retains the source's conversational rhythm; B more explicitly explains the distinction between vocal activity and abundance. Both satisfy the author's substantive preference for purpose before mechanics, connected explanation, and qualifications attached to claims. The difference in formality does not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A change in the count might also reflect a change in calling, which is the ecological quantity of interest only if the question concerns calling itself."
+            ],
+            "B": [
+              "calling itself is the ecological quantity of interest only when the research question concerns vocal activity rather than animal abundance."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation in the editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither contains a material error. Both meet the decisive priority: making the measurement argument readable while preserving the pilot's limited contribution. A's conversational phrasing and B's more explicit distinctions are reasonable alternatives, and both end with the same appropriately bounded interpretation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the present data, we can report the direction of discordance and its dependence on the observed weather categories while keeping the biological interpretation open."
+            ],
+            "B": [
+              "From the present data, we can report the direction of discordance between paired devices and its dependence on the observed weather categories, while leaving the biological interpretation open."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "65760e9fbb7863f91a2b6e58809ff925f95544c0e7d3e2fa85a81a763f95472a",
+    "prompt_sha256": "ca1a5ccc37af5c6584b6af53f9b6fc440e122a675fe925dc0ac37d6c370efbaf",
+    "raw_sha256": "81ec0f28580f4e994cf5c0a6c14a7201163367f8d02a1f50643de04425215b89",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-05",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of an empirical results-and-discussion passage, with no proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the design, counts, and explicit inferential limitations, but its conclusion upgrades an unresolved measurement question about these recordings into an established measurement bias requiring resolution before automated acoustic data can support ecological trends generally.",
+          "quotes": {
+            "source": [
+              "The pilot identifies a measurement question to examine before using these recordings for an ecological trend."
+            ],
+            "A": [
+              "Before automated acoustic data can be reliably used to infer ecological trends across weather regimes, this measurement bias must be resolved."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the randomized within-patch pairing, simultaneous recordings, observational weather classification, both sets of counts, pooled agreement, absent independent labels, and within-patch dependence. Its conclusions remain descriptive.",
+          "quotes": {
+            "source": [
+              "It does not establish that the shield recovered genuine calls, because no independent labeling of calls was performed."
+            ],
+            "A": [],
+            "B": [
+              "Because calls were not independently labeled, however, this pattern does not establish that the shield recovered genuine calls, nor does it show that rain reduced calling."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain the numerical evidence and most qualifications. B preserves the unresolved measurement question; A's final claim broadens the scope and treats bias as established. B does omit the source's explicit qualification about when calling itself is the ecological target, but it maintains the distinctions among detector output, calling, and animal numbers.",
+          "quotes": {
+            "source": [
+              "The pilot identifies a measurement question to examine before using these recordings for an ecological trend."
+            ],
+            "A": [
+              "this measurement bias must be resolved."
+            ],
+            "B": [
+              "The pilot identifies a measurement question to address before using these recordings to evaluate ecological trends."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B introduces the practical problem in direct, conversational technical language. A is readable, but its abstract opening and emphatic concluding language give this small pilot a more inflated register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Acoustic monitoring across varying weather conditions faces an inherent measurement challenge"
+            ],
+            "B": [
+              "Rain may affect a recording before it affects the animals whose calls we hope to count."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the measurement problem before introducing the paired design, then present counts, explain pooled agreement, and discuss inferential limits. Both make the construction's purpose understandable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "When evaluating call rates between wet and dry periods, a shift in detector output may reflect acoustic interference rather than a genuine biological response."
+            ],
+            "B": [
+              "In comparisons between wet and dry surveys, differences in call counts can reflect altered recording conditions as well as changes in calling behavior."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B retains the author's conversational opening and proportionate account of what the pilot enables. A adds emphatic significance language and a broad prerequisite, contrary to the preference for precise scope without rhetorical packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Despite these limitations, the paired design effectively isolates a critical measurement issue"
+            ],
+            "B": [
+              "These limitations matter, but they do not make the paired comparison uninformative about disagreement between the devices."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no material error; A's minor concluding overreach turns a pilot-specific measurement question into a broader established bias. The decisive priority is a readable scientific argument whose conclusions remain within the design. B explains why shielding is being examined and ends with the descriptive contribution the source actually supports.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Before automated acoustic data can be reliably used to infer ecological trends across weather regimes, this measurement bias must be resolved."
+            ],
+            "B": [
+              "For the present data, we can report the direction of discordance and its dependence on the observed weather categories, while keeping the biological interpretation open."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "8aa837a83054d35f8a1fd4e06a1fbfd983780d8ebecc170fdaa6b91658feecb5",
+    "prompt_sha256": "ca1a5ccc37af5c6584b6af53f9b6fc440e122a675fe925dc0ac37d6c370efbaf",
+    "raw_sha256": "1418461abc1992211488cbd68f6095f2b65c02fa51fcbdcd7620250612790189",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-05",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests revision of an empirical results-and-discussion passage, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, weather classification, all counts, the two components of agreement, and the limits on biological inference and ecological replication. It retains the question-dependent relevance of calling itself.",
+          "quotes": {
+            "source": [
+              "which is the ecological quantity of interest only if calling is what the question concerns."
+            ],
+            "A": [
+              "which is the ecological quantity of interest only if the question concerns calling itself."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the paired randomized placement, observational weather, counts, detector settings, pooled agreement, and inferential qualifications. Its distinction between vocal activity and abundance clarifies the source without adding a result.",
+          "quotes": {
+            "source": [
+              "The repeated windows within patches are another reason not to treat 144 as the number of independent ecological replicates."
+            ],
+            "A": [],
+            "B": [
+              "because the 144 paired windows come from repeated sampling within 12 habitat patches, 144 should not be treated as the number of independent ecological replicates."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete numerical comparison and its interpretation: pooled agreement cannot count call-containing windows, discordance does not establish genuine-call recovery or reduced calling, and repeated windows are not independent ecological replicates.",
+          "quotes": {
+            "source": [
+              "It would therefore be inappropriate to read the agreement counts as the number of windows with calls."
+            ],
+            "A": [
+              "the agreement counts should not be read as the number of windows with calls."
+            ],
+            "B": [
+              "the agreement counts cannot be interpreted as the number of windows containing calls."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "A is more conversational and B somewhat more formal, but both are idiomatic and appropriate for a small methods report. Neither register creates a substantive readability problem.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Our pilot therefore examined whether a rain shield changes the output of one fixed call detector"
+            ],
+            "B": [
+              "Accordingly, this pilot study examined whether a rain shield alters the output of a single fixed call detector"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the measurement ambiguity before introducing shielding, then move through design, results, interpretation, and follow-up. Each connects the limitations to what the paired comparison still contributes.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Even with these limitations, the paired comparison remains informative about disagreement."
+            ],
+            "B": [
+              "While these limitations constrain ecological inference, the simultaneous paired comparison remains informative about between-device disagreement."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "A stays closer to the source's conversational rhythm; B makes the distinction between vocal activity and abundance more explicit. Both build the motivation before the mechanics and keep substantive qualifications beside their claims, meeting the author's central preferences comparably.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A change in the count might also reflect a change in calling, which is the ecological quantity of interest only if the question concerns calling itself."
+            ],
+            "B": [
+              "calling itself is the ecological quantity of interest only when the research question concerns vocal activity rather than animal abundance."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. Both deliver the requested argument: weather complicates interpretation, paired recordings expose detector discordance, and biological conclusions remain unresolved. Their differences in formality and phrasing do not create a substantive advantage for this user's goal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "For the present data, we can report the direction of discordance and its dependence on the observed weather categories while keeping the biological interpretation open."
+            ],
+            "B": [
+              "From the present data, we can report the direction of discordance between paired devices and its dependence on the observed weather categories, while leaving the biological interpretation open."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "65760e9fbb7863f91a2b6e58809ff925f95544c0e7d3e2fa85a81a763f95472a",
+    "prompt_sha256": "ca1a5ccc37af5c6584b6af53f9b6fc440e122a675fe925dc0ac37d6c370efbaf",
+    "raw_sha256": "1418461abc1992211488cbd68f6095f2b65c02fa51fcbdcd7620250612790189",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
