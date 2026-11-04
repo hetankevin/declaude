@@ -25342,5 +25342,884 @@
     "prompt_sha256": "44628ec99e215f33c4d2609bd0eeb2d3067b9952ad953160272f7383e9c00e15",
     "raw_sha256": "fa56abf04930a667dce80fb7cbf1887bd28e15f19becfbf6d2b6f7335e49b820",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing an ecological field note, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source note unchanged, preserving the counts, reason for counting stems, visibility uncertainty, limited photographic evidence, and planned observations. Its editorial praise adds packaging but changes no scientific inference.",
+          "quotes": {
+            "source": [
+              "The count fell from 34 to 19 within the marked strip.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "A": [
+              "The count fell from 34 to 19 within the marked strip.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B returns the source verbatim. It retains the cut versus taller grass, distinguishes location control from detection, limits the three photographed transitions to those stems, and preserves the two photograph positions and five grass-height points without claiming recovery of missed stems.",
+          "quotes": {
+            "source": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there.",
+              "For the next visit, we will photograph the strip from the same two marked positions and record grass height at five fixed points."
+            ],
+            "A": [],
+            "B": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there.",
+              "For the next visit, we will photograph the strip from the same two marked positions and record grass height at five fixed points."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every source sentence and its qualifications. Neither converts fewer observed stems into a demonstrated population decline or generalizes the photographed transitions to all missing stems.",
+          "quotes": {
+            "source": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ],
+            "A": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ],
+            "B": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "The field prose is equally readable in both. B presents it directly; A's inventory of sentence structure, pronouns, tenses, and methodological virtues adds a more formal editorial register that the requested artifact does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Its sentence structure is clean, its pronoun references and tenses are consistent"
+            ],
+            "B": [
+              "We found fewer flowering stems on the north slope during the second visit."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both notes follow the same effective sequence: observed difference, visibility obstacle, bounded photographic evidence, and future documentation. A's clearly separated assessment delays the note but does not disrupt its reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The strip was the same on both visits, but the conditions were not.",
+              "These additions will make the conditions easier to describe."
+            ],
+            "B": [
+              "The strip was the same on both visits, but the conditions were not.",
+              "These additions will make the conditions easier to describe."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both respect the instruction to preserve effective writing. B better maintains the restrained presentation throughout; A surrounds the unchanged note with categorical praise and repeats caveats to commend them, adding rhetorical packaging without useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The note has no grammar, clarity, or tonal problems and is already publication-ready as written."
+            ],
+            "B": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither response has a material error, and both supply the same faithful note. B better serves the request for a finished artifact in the established restrained voice: it preserves effective prose without A's lengthy endorsement and repeated methodological commentary.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "does substantive methodological work without inflation. No edits are needed."
+            ],
+            "B": [
+              "The counts will remain useful as records of what we saw, provided that the change in visibility stays with them when they are summarized."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3e1cb1fc9f277962f21ecc0e5bcaf78023b13dcc41c09a54b1514d6103ceb63e",
+    "prompt_sha256": "eff491138e8ab141bbe2a4d7b2d38986abca3b30a213b5b0783638bc888cb2d8",
+    "raw_sha256": "9d7bd86dbf46400ca76b4f14782ede274d88fc0223f00e9acfdbf02e3aa01184",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns prose editing of an ecological field note and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source exactly, retaining 34 versus 19 stems, the counting rationale, grass conditions, uncertainty about visibility, and the limited photographic evidence. The planned two photograph positions and five grass-height points retain their descriptive purpose and limitations.",
+          "quotes": {
+            "source": [
+              "We counted stems rather than plants because several plants had more than one stem and we could not reliably trace them through the ground cover.",
+              "These additions will make the conditions easier to describe."
+            ],
+            "A": [
+              "We counted stems rather than plants because several plants had more than one stem and we could not reliably trace them through the ground cover.",
+              "These additions will make the conditions easier to describe."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the entire source note, including the distinction between observation location and detection and the limits of the seed-head evidence. Its sweeping editorial endorsement is unnecessary and overconfident, but does not alter the ecological claims or establish a material factual error.",
+          "quotes": {
+            "source": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "A": [],
+            "B": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there.",
+              "They will not turn an unobserved stem into an observed one."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "The scientific text is identical in both responses and fully preserves the source's observations, qualifications, and future plans. B's assessment that all stylistic revision would be novelty is broader than needed, but is an editorial judgment rather than a changed scientific inference.",
+          "quotes": {
+            "source": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ],
+            "A": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ],
+            "B": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A sustains the note's plain, idiomatic prose from the opening. B's preliminary claims about rigorous, epistemologically precise caveats introduce an inflated editorial register before the same readable note.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The strip was the same on both visits, but the conditions were not."
+            ],
+            "B": [
+              "Its voice is appropriately restrained, its scientific caveats are rigorous and epistemologically precise, and the phrasing is economical."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both preserve the useful development from counts through detection uncertainty to bounded evidence and planned documentation. B's separate editorial introduction does not change the order or explanatory connections within the note.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those observations establish that at least some stems had changed stage.",
+              "These additions will make the conditions easier to describe."
+            ],
+            "B": [
+              "Those observations establish that at least some stems had changed stage.",
+              "These additions will make the conditions easier to describe."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves already-effective writing without embellishment, matching the bounded editing request. B also preserves the note but adds absolute assurances and a claim that every stylistic revision would be mere novelty, which goes beyond the author's conditional permission to leave suitable prose alone.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We found fewer flowering stems on the north slope during the second visit."
+            ],
+            "B": [
+              "Because any stylistic revisions would be changes made solely for novelty, the text is publication-ready as written:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The editing task contains no mathematical proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Both are scientifically faithful and have no material errors. A better meets the user's priority of preserving effective prose and returning the requested artifact: it delivers the intact field note directly, while B adds categorical self-assessment and elevated praise that do not help the reader understand the observations.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The count fell from 34 to 19 within the marked strip."
+            ],
+            "B": [
+              "The note has been reviewed and contains no prose defects, syntactic ambiguities, or grammatical errors."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "6e9d87e2b28bcb99591df2d2e5f241078bfef42ed7d7dad2c6343e73640c4392",
+    "prompt_sha256": "eff491138e8ab141bbe2a4d7b2d38986abca3b30a213b5b0783638bc888cb2d8",
+    "raw_sha256": "9d7bd86dbf46400ca76b4f14782ede274d88fc0223f00e9acfdbf02e3aa01184",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-19",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests prose editing of a field note, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The note is reproduced unchanged. It preserves the counts, stem-counting rationale, visibility uncertainty, limited photographic evidence, location-versus-detection distinction, and planned measurements without claiming they recover missed stems. The added editorial appraisal introduces no material scientific error.",
+          "quotes": {
+            "source": [
+              "The count fell from 34 to 19 within the marked strip.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "A": [
+              "The count fell from 34 to 19 within the marked strip.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The response reproduces the source unchanged, retaining all observations, explanations, qualifications, and planned additions. It neither infers population decline nor generalizes the three photographed transitions to all missing stems.",
+          "quotes": {
+            "source": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ],
+            "A": [],
+            "B": [
+              "They do not account for the whole difference in the counts, and we have not assumed that every stem missing from the second count had set seed."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete scientific content verbatim, including the distinction between fixing the observation location and maintaining detection probability. A's prefatory assessment does not change the note's claims.",
+          "quotes": {
+            "source": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ],
+            "A": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ],
+            "B": [
+              "Keeping the strip fixed controls where we looked; it does not ensure that we saw the same fraction of what was there."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both notes read naturally. B maintains that plain register throughout, while A adds a lengthy editorial certification whose abstract phrasing is heavier than the field prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "each caveat",
+              "does substantive methodological work without inflation."
+            ],
+            "B": [
+              "The strip was the same on both visits, but the conditions were not."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the effective sequence from observed counts through visibility uncertainty and limited photographic evidence to the purpose and limits of the next measurements. A's separate appraisal adds a preliminary step but does not disrupt that reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These additions will make the conditions easier to describe."
+            ],
+            "B": [
+              "These additions will make the conditions easier to describe."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "Both correctly preserve already-effective wording. B better sustains the requested restrained field voice across the completed response; A surrounds it with emphatic praise and an inventory of editorial virtues that the artifact does not need.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The note has no grammar, clarity, or tonal problems and is already publication-ready as written."
+            ],
+            "B": [
+              "We found fewer flowering stems on the north slope during the second visit."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both make the appropriate decision to preserve the note. B better delivers the requested publication-ready artifact directly. A's extended certification is permissible commentary, but its categorical praise adds packaging without improving the already-complete explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Its sentence structure is clean, its pronoun references and tenses are consistent",
+              "No edits are needed."
+            ],
+            "B": [
+              "The counts will remain useful as records of what we saw, provided that the change in visibility stays with them when they are summarized."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "3e1cb1fc9f277962f21ecc0e5bcaf78023b13dcc41c09a54b1514d6103ceb63e",
+    "prompt_sha256": "eff491138e8ab141bbe2a4d7b2d38986abca3b30a213b5b0783638bc888cb2d8",
+    "raw_sha256": "c1a21d541327894ea3094fb0402ff34ebf44554a18a0dc86da7e86b1338dc458",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-19",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests prose editing of a field note, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "The response reproduces the source unchanged. It preserves the count change and rationale, grass-height difference and visibility uncertainty, limited photographic evidence, and the purpose and limitations of the planned additions.",
+          "quotes": {
+            "source": [
+              "The count fell from 34 to 19 within the marked strip.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "A": [
+              "The count fell from 34 to 19 within the marked strip.",
+              "They will not turn an unobserved stem into an observed one."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "The scientific note is unchanged, including the distinction between location and detection, the restriction of photographic evidence to observed stems, and the two photograph positions and five grass-height points. The prefatory stylistic appraisal is overly categorical but creates no material error in the field account.",
+          "quotes": {
+            "source": [
+              "For the next visit, we will photograph the strip from the same two marked positions and record grass height at five fixed points."
+            ],
+            "A": [],
+            "B": [
+              "For the next visit, we will photograph the strip from the same two marked positions and record grass height at five fixed points."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve every substantive statement and qualification verbatim. Neither converts the observed count change into a population decline or assigns an unsupported cause to missing stems.",
+          "quotes": {
+            "source": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ],
+            "A": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ],
+            "B": [
+              "We therefore cannot tell how much of the difference reflects flowering and how much reflects visibility."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A consistently uses the source's direct, readable register. B's note is equally readable, but its introductory assessment adds ponderous abstractions and categorical claims about stylistic revision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Those observations establish that at least some stems had changed stage."
+            ],
+            "B": [
+              "its scientific caveats are rigorous and epistemologically precise"
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both retain the same coherent development: observation, obstacle to interpretation, bounded evidence, and planned documentation with explicit limitations. B's separate review paragraph does not materially alter that structure.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "These additions will make the conditions easier to describe. They will not turn an unobserved stem into an observed one."
+            ],
+            "B": [
+              "These additions will make the conditions easier to describe. They will not turn an unobserved stem into an observed one."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "Both honor the instruction to leave effective prose alone. A also preserves the restrained tone of the complete deliverable. B adds inflated editorial praise and the unnecessary assertion that any stylistic revision would serve novelty alone.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We counted stems rather than plants because several plants had more than one stem and we could not reliably trace them through the ground cover."
+            ],
+            "B": [
+              "Because any stylistic revisions would be changes made solely for novelty, the text is publication-ready as written:"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither response contains a material error, and their field notes are identical. A better meets the user's priority of preserving effective prose and delivering the finished artifact. B's extended, emphatic appraisal adds rhetorical packaging without helping the reader understand the observations or their limits.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We found fewer flowering stems on the north slope during the second visit."
+            ],
+            "B": [
+              "The note has been reviewed and contains no prose defects, syntactic ambiguities, or grammatical errors."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "6e9d87e2b28bcb99591df2d2e5f241078bfef42ed7d7dad2c6343e73640c4392",
+    "prompt_sha256": "eff491138e8ab141bbe2a4d7b2d38986abca3b30a213b5b0783638bc888cb2d8",
+    "raw_sha256": "c1a21d541327894ea3094fb0402ff34ebf44554a18a0dc86da7e86b1338dc458",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task is a bounded revision of an operational notice, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the approved paragraphs, required repeat and timing, conditional escalation, logging, and offset prohibition. It preserves the distinction between chart and escalation readings. Omitting the former lead-discretion sentence does not prohibit the lead from requesting further checks.",
+          "quotes": {
+            "source": [
+              "The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [
+              "This rest period applies only before the repeat reading; the start-of-shift check and the acceptance band remain unchanged.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the approved paragraphs and all operational requirements of the update, including the limited no-call exemption. Offset, recalibration, restart, and chart restrictions remain intact. Nothing withdraws the lead's authority to request further checks.",
+          "quotes": {
+            "source": [
+              "If the repeat is within the band, no call is required by this rule.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [],
+            "B": [
+              "If the repeat reading is within the band, no call is required by this rule.",
+              "Do not change the probe's offset in response to this check."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both implement the same updated procedure, change only paragraph two, and retain the first reading as the chart input regardless of the repeat result. Neither introduces recalibration or restart authority.",
+          "quotes": {
+            "source": [
+              "Preserve the distinction between the first reading used for trend comparison and any repeat reading used to decide an escalation."
+            ],
+            "A": [
+              "Use the repeat reading to determine whether to escalate:",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead.",
+              "Keep any repeat readings in the log, but do not substitute them into the chart."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both use readable operational prose. A connects the two outcomes in one longer sentence; B gives each outcome its own sentence. Neither choice creates a substantive readability advantage.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "if the repeat reading is also outside the band, call the shift lead, but if the repeat reading is within the band, no call is required by this rule."
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead. If the repeat reading is within the band, no call is required by this rule."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "A clarifies the rest period immediately after introducing it; B keeps the repeat, logging, and escalation actions together before clarifying timing. Both orders make the procedure easy to follow.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "This rest period applies only before the repeat reading; the start-of-shift check and the acceptance band remain unchanged. Record both the first reading and the repeat reading in the shift log."
+            ],
+            "B": [
+              "Record both readings in the shift log. If the repeat reading is also outside the band, call the shift lead."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "tie",
+          "reason": "Both respect the bounded edit and the notice's direct instructional voice. A's explicit explanation of the repeat's purpose and B's direct conditional instructions are comparably suitable for this practical artifact.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Use the repeat reading to determine whether to escalate:"
+            ],
+            "B": [
+              "If the repeat reading is also outside the band, call the shift lead."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "tie",
+          "reason": "Neither has a material error. The decisive priority is a faithful, narrowly scoped operational update that preserves the two readings' different purposes. Both satisfy it; their differences in sentence grouping and qualifier placement do not establish a substantive preference.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Record both the first reading and the repeat reading in the shift log.",
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ],
+            "B": [
+              "Record both readings in the shift log.",
+              "The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ]
+          }
+        }
+      },
+      "overall": "tie"
+    },
+    "outcome": "tie",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "tie",
+      "proof": "NA",
+      "overall": "tie"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7b137defa071ffa862cbbdc1167d4c7d00a3267534610540251fcde47ae0c710",
+    "prompt_sha256": "c575e585f79009c738c294a4b5445b6391f0d0989791fff35eb9125c44fd8b93",
+    "raw_sha256": "dc4d8c9cafcb83ceefe8f1209af72d3f8d11fae2e9e6a7da648021bd760e4303",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-dev-b-20",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a revised sensor-maintenance notice, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the approved paragraphs, repeat procedure, logging, timing, and offset prohibition. Its omission of 'by this rule' makes the exemption less precise, but the surrounding trial procedure reasonably limits its scope; a broader exemption is not established. The unchanged first paragraph preserves the routine check, band, and restart qualification.",
+          "quotes": {
+            "source": [
+              "If the repeat is within the band, no call is required by this rule.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "A": [
+              "If the repeat reading is also outside the band, call the shift lead; if it is within the band, no call is required.",
+              "Do not change the probe's offset in response to this check."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "major",
+          "reason": "B accurately incorporates the update and preserves the other paragraphs, but deletes the explicit prohibition on changing the probe's offset and the accompanying recalibration restriction. The completed operating note therefore no longer tells operators that this response is forbidden. This is a consequential omission of an existing operational constraint, although B does not expressly authorize recalibration.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check. The trial concerns the escalation process, not permission for operators to recalibrate the instrument."
+            ],
+            "A": [],
+            "B": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both preserve the approved paragraphs and distinguish chart inputs from escalation readings. A retains the substantive offset prohibition; B loses it entirely. B more exactly preserves the limited no-call wording, but A's contextual ambiguity is less consequential than B's definite omission.",
+          "quotes": {
+            "source": [
+              "Do not change the probe's offset in response to this check.",
+              "If the repeat is within the band, no call is required by this rule."
+            ],
+            "A": [
+              "Do not change the probe's offset in response to this check.",
+              "if it is within the band, no call is required."
+            ],
+            "B": [
+              "If the repeat is within the band, no call is required by this rule.",
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "tie",
+          "reason": "Both are idiomatic and readily understandable. A uses direct imperatives, while B uses conventional procedural statements with 'must'; neither construction is inherently less readable.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "repeat the check once after the probe has rested in the fixture for ten minutes."
+            ],
+            "B": [
+              "a first reference-block reading outside the acceptance band must be repeated once after the probe has rested in the fixture for ten minutes."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both move coherently from the initial trigger to the repeat, escalation outcomes, logging, and timing clarification. The task needs an actionable sequence, and both supply one.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "If the repeat reading is also outside the band, call the shift lead; if it is within the band, no call is required. Log both readings."
+            ],
+            "B": [
+              "If the repeat is also outside the band, the operator calls the shift lead. If the repeat is within the band, no call is required by this rule. Both readings must be logged."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A better maintains the surrounding notice's direct address and imperative rhythm. B's passive requirements and third-person operator instruction are acceptable, but fit the established voice less closely.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Log both readings.",
+              "call the shift lead"
+            ],
+            "B": [
+              "Both readings must be logged.",
+              "the operator calls the shift lead."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "No proof or mathematical derivation appears in this editing task.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no established material error; B has a major omission of the offset prohibition. Preserving existing operational constraints is decisive for this bounded update. A could retain the qualification 'by this rule' more explicitly, but its procedure remains contextually clear and preserves the instruction operators must be able to rely on.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The rest period applies only before the repeat reading. Do not change the probe's offset in response to this check."
+            ],
+            "B": [
+              "Both readings must be logged. The rest period applies only before the repeat; the start-of-shift check and acceptance band are unchanged."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "tie",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "e527eae9b1297aec7f5c98dc60fa699df4ed629dc1baf1ea8f71c772493b03ac",
+    "prompt_sha256": "c575e585f79009c738c294a4b5445b6391f0d0989791fff35eb9125c44fd8b93",
+    "raw_sha256": "dc4d8c9cafcb83ceefe8f1209af72d3f8d11fae2e9e6a7da648021bd760e4303",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
