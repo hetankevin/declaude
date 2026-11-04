@@ -1,0 +1,28 @@
+{
+  "authorization": "User requested both suites in parallel with unchanged caps and reuse, then paused all Claude calls.",
+  "policy": "One shared two-worker extension scheduler, one slot per suite while both have ready work. Original Codex jobs continue with existing four-worker cap. No new Claude calls, including retries. All judges are Codex.",
+  "accounting": "Same disjoint allocations and all prior reservations. Two orphaned requests have no result or live process and are left incomplete, not retried, with unknown usage reserved. Existing Claude server failure remains failed and charged but does not block Codex. New failures still stop dispatch.",
+  "caps": {
+    "calls": 2400,
+    "tokens": 75000000,
+    "claude_writing_calls": 557
+  },
+  "orphan_evidence": {
+    "declaude--large-test-b-16--argon-high--scholarly-20261103": {
+      "request.json": "d87a257b512d662f7cd4cdc7d2615560fe1675165519d52c7f0be8d650a3c1ac",
+      "harness.log": "c3a2a81757fc8731b9ee72b606d46341cb5f97bfe364878dffba86e8c4375c42"
+    },
+    "declaude--large-test-b-16--flash-high--none": {
+      "request.json": "142903cc7097b80e44ec0ba3391c4346c71bdbfef671e58303b33a94a2ee2f1a",
+      "harness.log": "1d3cf11daa0b5d6cacc94c87603dfc6e60c91ed5b11bd577616638a029f08e47"
+    }
+  },
+  "claude_failure_evidence": {
+    "request.json": "0b52a929e1b486c27253ae9dc30b6decda0720e2680cbc677cd2c30d79729c3c",
+    "result.json": "946948f442d6b5921ebfc282722626a9c8b9103ad6524d05720417f9636a8060",
+    "cli.json": "25fc85c0da72e05620eaead638c177bc49556f2ad2ba1e3c4db2a1ec5bc5ffe2",
+    "failure.json": "06ca5739e085545861b1fcb5047e29f9dd262774cf94ad2d29e83f49b68ce459"
+  },
+  "script_sha256": "f49c25ca01be2a24b78971947a342193e00d839b7dbfb795e3938a9519d8a42d",
+  "sha256": "9426de20e4303478840f5fc215e5fcdf5ee158ff44f474091414436a1c1c5071"
+}

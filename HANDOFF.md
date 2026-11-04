@@ -1,3 +1,9 @@
+## Current scheduling: parallel suites, Claude paused
+
+User requested both suites in parallel, then paused Claude to conserve credits. Use parent tools/parallel_eval.py (original, extension, publish --watch). It preserves the pinned runtime and all frozen inputs. Original dispatch blocks every new Claude call and continues Codex, including judges. Extension keeps two total workers, giving each suite one slot while both have ready work. Existing caps remain 2,400 attempts / 75M reported tokens / 557 Claude-writing calls, with unchanged disjoint allocations. Do not resume Claude without a new user instruction.
+
+All completed outputs are reused. The existing Haiku server error is retained without retry. Two orphaned Antigravity requests had no live process or result at recovery; their evidence and conservative usage reservations remain intact, with no replay. Their dependent grades stay missing. The scheduling amendment isolates these incidents so other jobs can proceed; new failures still stop dispatch. Fresh holdouts remain sealed. This section supersedes the older sequential scheduling and runner instructions below.
+
 ## Pinned CLI recovery
 
 Antigravity self-updated the private evaluation binary from1.4.12 to1.5.0 during the run. Frozen-version validation stopped the extension and publisher, and a coupled startup check stopped one original task before any model request. Restored the retained backup after verifying its SHA256 matches the frozen plan, and pinned only that private binary with the user-immutable flag. Updated binary retained separately. No global install changes.
