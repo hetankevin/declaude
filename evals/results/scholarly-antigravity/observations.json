@@ -42747,5 +42747,1194 @@
     "prompt_sha256": "b71fda340f56d38c67e942d77f60265e39604ca3a7d79dc033a584591a985c29",
     "raw_sha256": "94ee8dc88b934f0af0e5ba113c065fdb5e78c255267d507ce8a209646da1ba4f",
     "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for a manuscript discussion of study findings and limitations, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, numerical results, bundled intervention, memory limitation, and distinction between agreement and validity. Its expanded explanations introduce no material change.",
+          "quotes": {
+            "source": [
+              "Every response received ratings from the same two teachers in both rounds, and each teacher scored 12 responses per round.",
+              "validity has not been established by making the ratings more alike."
+            ],
+            "A": [
+              "Each teacher scored 12 responses per round, and every response was rated by the same pair of teachers in both rounds.",
+              "validity has not been established simply because the ratings became more alike."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B retains the study design and all reported values, distinguishes scoring changes from pupil improvement, and preserves the limits concerning attribution, unfamiliar work, and validity.",
+          "quotes": {
+            "source": [
+              "The mean of all 96 ratings was 12.4 in the first round and 12.8 in the second, reported to one decimal place.",
+              "Because the workshop and guide changed together, their contributions cannot be separated."
+            ],
+            "A": [],
+            "B": [
+              "The mean of all 96 ratings was 12.4 in the first round and 12.8 in the second, reported to one decimal place.",
+              "Because the workshop and guide changed together, their contributions cannot be separated"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the complete evidence base and its qualifications. Each explains that preserving the intended construct remains unestablished and that higher scores reflect rescoring rather than improved pupil performance.",
+          "quotes": {
+            "source": [
+              "Whether it succeeded in preserving that construct is a question about the revision, not something settled by our intention."
+            ],
+            "A": [
+              "Whether the revision actually preserved that construct, however, remains an empirical question about the instrument rather than a matter settled by our intent."
+            ],
+            "B": [
+              "Whether it succeeded in preserving that construct is a question about the revision, not something settled by our intention."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable manuscript prose, but B uses more direct, idiomatic language. A repeatedly expands already clear statements into formal abstractions without adding useful explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "In the absence of an external criterion, there is no basis for determining which round's mean is closer to an appropriate value."
+            ],
+            "B": [
+              "We have no external criterion against which to decide whether either round's mean is closer to an appropriate value."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the scoring boundary as the reason for revision, describe the design, report the findings, and then explain their limits. Neither leaves a substantive step unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To clarify this boundary, the revision introduced paired examples illustrating both cases",
+              "Because pupils did not produce new responses between rounds, this increase reflects a shift in scoring behavior rather than an improvement in student performance."
+            ],
+            "B": [
+              "The revision supplied paired examples at that boundary",
+              "Because the pupils did not produce new responses between rounds, that increase reflects a change in scoring rather than better performance."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the source's conversational technical voice and connects the two design limitations directly to their implications. A retains the explanation but adds more formal transitions and framing than this author requests.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "However, because the guide revision and the workshop were introduced simultaneously, their separate effects cannot be disentangled.",
+              "Furthermore, because teachers evaluated the same set of responses twice, the findings do not establish how raters would perform on unfamiliar work."
+            ],
+            "B": [
+              "Because the workshop and guide changed together, their contributions cannot be separated, and repeating the same responses limits what the results show about unfamiliar work."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both supply the necessary argument. B has a modest but defensible advantage for this user's requested voice: it preserves useful explanation while integrating attribution and generalization limits into connected prose. A's additional formal framing does not improve the interpretation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Addressing these questions will require a further study incorporating fresh responses and an independent measure of response quality."
+            ],
+            "B": [
+              "Because the workshop and guide changed together, their contributions cannot be separated, and repeating the same responses limits what the results show about unfamiliar work.",
+              "A further study would need fresh responses and an independent account of response quality."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "85bb63d1f33307f64eaa1755550b4f3cd074552270f259ac31df74b4e4e72fb7",
+    "prompt_sha256": "89938438f2742b1acffcd0837ddd39157fffb9e9d871cfffeca4f0f7ad7a29af",
+    "raw_sha256": "532226beb2dd71b986a67820e77aa7183bdd1e57cfe66728e42c4bff9c8cefda",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns editing an empirical manuscript discussion, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A preserves the design, counts, means, score ceiling, and limitations. Its proposed further study remains a requirement for investigation, not a guarantee that validity would follow.",
+          "quotes": {
+            "source": [
+              "A further study would need fresh responses and an independent account of response quality.",
+              "consistency on new work is an open question"
+            ],
+            "A": [
+              "Determining whether consistency holds on new work and whether the revision achieves validity will require a further study with fresh responses and an independent account of response quality."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B adds that the teachers evaluated responses independently. The source establishes two ratings per response and concealment of earlier scores, but does not establish independence between teachers. This adds an unsupported procedural assurance relevant to interpreting agreement; the reported results and principal limitations otherwise remain intact.",
+          "quotes": {
+            "source": [
+              "Every response received ratings from the same two teachers in both rounds",
+              "they could not view their first-round scores."
+            ],
+            "A": [],
+            "B": [
+              "In each round, every response was independently evaluated by the same two teachers"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A faithfully reports paired ratings without adding a condition on their production. B's unsupported independence claim strengthens what readers can assume about the procedure. Both otherwise retain the numerical findings and distinguish agreement from validity.",
+          "quotes": {
+            "source": [
+              "Every response received ratings from the same two teachers in both rounds"
+            ],
+            "A": [
+              "every response rated by the same two teachers in both rounds."
+            ],
+            "B": [
+              "every response was independently evaluated by the same two teachers"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A is generally direct and readable. B repeatedly substitutes heavier academic phrasing for clear statements, particularly in its account of intent and construct preservation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Whether it succeeded in preserving that construct is a question about the revision itself, not something settled by our intention."
+            ],
+            "B": [
+              "Nevertheless, whether the revision succeeded in preserving that construct is an empirical question concerning the revision itself, rather than an outcome settled by authorial intent."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the boundary problem before introducing examples and follow a coherent design–results–interpretation sequence. A connects the limitations more economically, but B also explains why each limitation matters rather than merely listing caveats.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the workshop and guide changed together, however, their separate contributions cannot be disentangled, and evaluating repeated responses leaves open how teachers would score unfamiliar work."
+            ],
+            "B": [
+              "However, because the workshop and the revised guide were introduced concurrently, their individual contributions cannot be disentangled.",
+              "Moreover, the reliance on repeated responses limits inferences regarding how teachers would evaluate unfamiliar work."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's plain explanation of what the score increase means. B adds an observer-focused rhetorical setup and more impersonal terminology, despite the preference for retaining effective passages and removing unnecessary packaging.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because pupils did not produce new responses between rounds, this increase reflects a change in scoring rather than better performance."
+            ],
+            "B": [
+              "While such an increase can tempt observers to infer improved student performance, pupils produced no new work between rounds; the shift reflects an alteration in scoring behavior rather than learning."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage contains empirical interpretation, not a proof or derivation.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no material error; B adds an unsupported assurance of independent evaluation, a minor but consequential change to the study description. A also better meets the user's preference for connected, conversational explanation: it states why the mean increase cannot indicate improved pupil performance without B's added rhetorical framing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because pupils did not produce new responses between rounds, this increase reflects a change in scoring rather than better performance."
+            ],
+            "B": [
+              "In each round, every response was independently evaluated by the same two teachers",
+              "While such an increase can tempt observers to infer improved student performance"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "6eb52a54505002e04ed2552373b63e80b38065b27c1aa667313141b6edcd8bc0",
+    "prompt_sha256": "89938438f2742b1acffcd0837ddd39157fffb9e9d871cfffeca4f0f7ad7a29af",
+    "raw_sha256": "532226beb2dd71b986a67820e77aa7183bdd1e57cfe66728e42c4bff9c8cefda",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-06",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests a manuscript discussion of study findings and limitations, with no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the design, numerical results, intended construct, bundled intervention, and limits concerning recall, unfamiliar work, accuracy, and validity.",
+          "quotes": {
+            "source": [
+              "The number of responses whose two ratings differed by more than two points fell from 16 of 48 to 7 of 48.",
+              "Because the workshop and guide changed together, their contributions cannot be separated."
+            ],
+            "A": [
+              "the number of responses for which the two assigned ratings differed by more than two points fell from 16 of 48 to 7 of 48.",
+              "their individual contributions cannot be disentangled."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the study details and qualifications, including the distinction between intended construct preservation and demonstrated validity. Adds no results.",
+          "quotes": {
+            "source": [
+              "Every response received ratings from the same two teachers in both rounds, and each teacher scored 12 responses per round.",
+              "Whether it succeeded in preserving that construct is a question about the revision, not something settled by our intention."
+            ],
+            "A": [],
+            "B": [
+              "with each teacher scoring 12 responses per round and every response rated by the same two teachers in both rounds.",
+              "Whether it succeeded in preserving that construct is a question about the revision itself, not something settled by our intention."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both retain the design, counts, means, score maximum, and intervention qualifications. Both correctly separate scoring changes from pupil improvement and agreement from validity.",
+          "quotes": {
+            "source": [
+              "It is a change in scoring.",
+              "validity has not been established by making the ratings more alike."
+            ],
+            "A": [
+              "the shift reflects an alteration in scoring behavior rather than learning.",
+              "construct validity has not been established simply by making ratings more alike."
+            ],
+            "B": [
+              "this increase reflects a change in scoring rather than better performance.",
+              "making ratings more alike does not establish that they are valid."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "A is readable but repeatedly adopts an impersonal academic register. B expresses the same distinctions in direct, idiomatic technical prose.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "an empirical question concerning the revision itself, rather than an outcome settled by authorial intent."
+            ],
+            "B": [
+              "a question about the revision itself, not something settled by our intention."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both establish the agreement problem, explain why boundary examples were introduced, describe the study, and interpret its results through the design limitations. Neither leaves the construction's purpose unexplained.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "To clarify this distinction, we revised the scoring guide by introducing paired benchmark examples at that boundary."
+            ],
+            "B": [
+              "We revised the guide because disagreements in an initial review often concerned whether an explanation counted as reasoning or merely repeated the question."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B better preserves the author's conversational reasoning while keeping useful explanation. A introduces rhetorical staging around the mean increase and more abstract phrasing where the source gives a direct causal explanation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "While such an increase can tempt observers to infer improved student performance, pupils produced no new work between rounds;"
+            ],
+            "B": [
+              "Because pupils did not produce new responses between rounds, this increase reflects a change in scoring rather than better performance."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "Neither the task nor the supplied passage contains a proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error, and both develop the argument coherently. B better meets the decisive preference for connected, conversational technical explanation: its interpretation of the mean increase supplies the reason directly, while A adds rhetorical staging and a more impersonal voice.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "While such an increase can tempt observers to infer improved student performance, pupils produced no new work between rounds; the shift reflects an alteration in scoring behavior rather than learning."
+            ],
+            "B": [
+              "Because pupils did not produce new responses between rounds, this increase reflects a change in scoring rather than better performance."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "9a9d8126c952ae9983c0dcdd13e96d365fc5f4bb2ad6d24e2d11c74feca75fd7",
+    "prompt_sha256": "100da7458f495d269258c5a68bcdc01751ae86d2638f0e206a083e6dcdbc6984",
+    "raw_sha256": "946778dab8b583c64ac315671e2eeee1e84a8a6204fe6638f9602a685e1f4938",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-06",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task requests an educational-measurement discussion, not a mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the complete design, numerical findings, unchanged maximum, intervention bundle, and uncertainty about recall, unfamiliar responses, accuracy, and validity.",
+          "quotes": {
+            "source": [
+              "The mean of all 96 ratings was 12.4 in the first round and 12.8 in the second, reported to one decimal place.",
+              "Because the workshop and guide changed together, their contributions cannot be separated."
+            ],
+            "A": [
+              "The mean of all 96 ratings was 12.4 in the first round and 12.8 in the second, reported to one decimal place.",
+              "Because the workshop and guide changed together, their contributions cannot be separated,"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Retains the study's facts and qualified interpretation. Describing a future independent measure of response quality reasonably expresses the proposed independent account without adding evidence or guaranteeing validity.",
+          "quotes": {
+            "source": [
+              "Every response received ratings from the same two teachers in both rounds, and each teacher scored 12 responses per round.",
+              "A further study would need fresh responses and an independent account of response quality."
+            ],
+            "A": [],
+            "B": [
+              "Each teacher scored 12 responses per round, and every response was rated by the same pair of teachers in both rounds.",
+              "a further study incorporating fresh responses and an independent measure of response quality."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the evidence and its scope, including intended versus demonstrated construct preservation, the scoring interpretation of the higher mean, and the unresolved validity question.",
+          "quotes": {
+            "source": [
+              "Whether it succeeded in preserving that construct is a question about the revision, not something settled by our intention."
+            ],
+            "A": [
+              "Whether it succeeded in preserving that construct is a question about the revision, not something settled by our intention."
+            ],
+            "B": [
+              "Whether the revision actually preserved that construct, however, remains an empirical question about the instrument rather than a matter settled by our intent."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "Both read competently, but A uses direct prose throughout. B's symbolic shorthand and more elaborate academic constructions introduce avoidable shifts in register.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The reduction in disagreements suggests that the revised guide and workshop may help teachers apply a shared boundary."
+            ],
+            "B": [
+              "The reduction in >2-point discrepancies suggests that the revised guide and workshop together may help teachers apply a shared scoring boundary."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the boundary problem before introducing the examples and organize the design, results, and limitations in a readable sequence. Their qualifications are connected to the claims they constrain.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We revised the scoring guide because disagreements in an initial review often concerned whether an explanation counted as reasoning or merely repeated the question."
+            ],
+            "B": [
+              "To clarify this boundary, the revision introduced paired examples illustrating both cases"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the author's direct, conversational technical voice without compressing away explanations. B communicates the same reasoning through more impersonal and ceremonious phrasing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We have no external criterion against which to decide whether either round's mean is closer to an appropriate value."
+            ],
+            "B": [
+              "In the absence of an external criterion, there is no basis for determining which round's mean is closer to an appropriate value."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The numerical results are reported observations; no proof or derivation is requested or supplied.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has a material error, and both supply the necessary argumentative development. A better satisfies the explicit request for the author's established voice: it connects the bundled intervention and repeated-response limitations in plain prose, while B adds formal transitions without adding explanatory substance.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because the workshop and guide changed together, their contributions cannot be separated, and repeating the same responses limits what the results show about unfamiliar work."
+            ],
+            "B": [
+              "However, because the guide revision and the workshop were introduced simultaneously, their separate effects cannot be disentangled. Furthermore, because teachers evaluated the same set of responses twice, the findings do not establish how raters would perform on unfamiliar work."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "aab0b22e51c0416a14c64ca037cdba169dcbd8ea6047312de967733da78f4cfc",
+    "prompt_sha256": "100da7458f495d269258c5a68bcdc01751ae86d2638f0e206a083e6dcdbc6984",
+    "raw_sha256": "946778dab8b583c64ac315671e2eeee1e84a8a6204fe6638f9602a685e1f4938",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns exposition of an empirical report and contains no mathematical proof or derivation.",
+      "material_error_A": true,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "minor",
+          "reason": "A preserves the numerical results, audit uncertainty, timing limitations, and bounded recommendation, but changes counterbalancing of version order into counterbalancing of clip presentation order. These are different experimental controls.",
+          "quotes": {
+            "source": [
+              "Version order was counterbalanced within the listening protocol."
+            ],
+            "A": [
+              "Clip presentation order was counterbalanced."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "B preserves the study design, every overall and subset preference count, the unresolved differences in three noisy clips, both timing medians and measurement conditions, and the qualified recommendation. Its opening reference to counterbalanced order reasonably retains version counterbalancing.",
+          "quotes": {
+            "source": [
+              "Twelve listeners each heard both versions of 30 clips",
+              "Version order was counterbalanced within the listening protocol."
+            ],
+            "A": [],
+            "B": [
+              "Twelve listeners each heard both versions of 30 clips in counterbalanced order"
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "B",
+          "reason": "Both retain all preference counts, the distinction between repeated choices and independent observations, the audit's unresolved accuracy question, and the timing conditions. B is more faithful because A substitutes a different counterbalancing procedure.",
+          "quotes": {
+            "source": [
+              "Version order was counterbalanced within the listening protocol."
+            ],
+            "A": [
+              "Clip presentation order was counterbalanced."
+            ],
+            "B": [
+              "Twelve listeners each heard both versions of 30 clips in counterbalanced order"
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "B uses direct, idiomatic technical prose. A is readable, but expressions such as 'Correspondingly' and 'can be utilized' make ordinary qualifications unnecessarily formal.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Correspondingly, a listener preference for a denoised clip cannot be taken as verification that speech content was accurately preserved."
+            ],
+            "B": [
+              "We therefore cannot label every difference an error introduced by denoising, nor can we treat a preference for the denoised clips as proof that their words were preserved."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "B",
+          "reason": "Both explain the evaluation's purpose and separate its components. B more effectively connects the overall preference count to the reason for examining subsets, then integrates each limitation with the finding it qualifies. A's repeated results-and-limitations compartments interrupt that reasoning.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Results differed based on the initial noise level of the recordings:",
+              "*Limitations:* The aggregate preference counts obscure a distinct divergence between subsets"
+            ],
+            "B": [
+              "The overall count, however, conceals a different balance for the quieter subset:"
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B fits the requested connected technical prose and preserves the useful explanation of why preference, transcript changes, and timing need separate treatment. A turns the passage into a heavily labeled report outline, with repeated limitation labels and more administrative phrasing than this author's preferences support.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "### Evaluation Overview",
+              "Processing latency was measured separately to determine suitability for interactive auditioning by archive staff."
+            ],
+            "B": [
+              "We also timed the processing step because the archive team wants to audition settings interactively, though this run does not represent a full editing session."
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "B has no identified material error, whereas A makes a minor but concrete change to the experimental protocol. Beyond that difference, B better serves the decisive preference for connected explanation: it makes the subset contrast and unresolved audit readable in sequence while retaining the bounded operational recommendation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Clip presentation order was counterbalanced.",
+              "### Operational Implications"
+            ],
+            "B": [
+              "The evidence favors offering the new setting to audition noisy material while retaining access to the original.",
+              "It does not justify automatically replacing every clip, and the transcript differences must be resolved before the setting is used for a final archive render."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "7bb83a72b8e41014c794af65af55566255f44168fd296fcf6cad174501433ea3",
+    "prompt_sha256": "447e72c71d7892536b385934507e6e575f4ec923299848c024165b0b2ad432b9",
+    "raw_sha256": "38a427d5fc78d853d3aa5f930157dbcfa7701af72798a3cf2e2ee959744587ef",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "astra-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns exposition of an empirical report and contains no mathematical proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": true,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "A reproduces the source faithfully, retaining all counts, experimental conditions, audit qualifications, timing exclusions, and limits on deployment. Leaving already effective prose unchanged introduces no fidelity error.",
+          "quotes": {
+            "source": [
+              "A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording."
+            ],
+            "A": [
+              "A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "minor",
+          "reason": "B preserves the numerical findings and practical limitations, but asserts that neither auditor adjudicated transcript accuracy. The source specifies this only for the second auditor. The unresolved audit supports uncertainty about correctness, but does not establish what the first auditor did.",
+          "quotes": {
+            "source": [
+              "A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording."
+            ],
+            "A": [],
+            "B": [
+              "neither auditor adjudicated which transcript better matched the underlying recording."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "A retains the source exactly. B accurately preserves all preference counts, the three affected noisy clips, the processing medians and conditions, and the bounded recommendation, but adds an unsupported claim about the first auditor's actions.",
+          "quotes": {
+            "source": [
+              "A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording."
+            ],
+            "A": [
+              "A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording."
+            ],
+            "B": [
+              "neither auditor adjudicated which transcript better matched the underlying recording."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's sentences read as direct technical narration. B remains understandable, but its stacked labels and phrases such as 'adjudicated' and 'underlying recording' give the passage a more bureaucratic rhythm without improving precision.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "The audit counted clips with a difference, not the total number of changed words."
+            ],
+            "B": [
+              "* **Protocol and Results:**",
+              "The audit recorded only whether a clip contained at least one discrepancy, not the total number of altered words within each clip."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "A develops purpose, preference results, audit uncertainty, and timing limits in a connected sequence. B's explicit subset reversal is helpful, but its repeated protocol/results/limitations structure duplicates the word-preservation caveat across sections and breaks up an argument that already follows naturally.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A cleaner background was useful only if the setting preserved the words, so the evaluation considered listener preference and transcript changes separately.",
+              "Thus the overall preference count conceals a different balance for the quieter subset."
+            ],
+            "B": [
+              "The aggregate count is driven by the noisy subset and masks a reversal in the quieter subset",
+              "Furthermore, preference ratings do not verify that spoken words were preserved."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A preserves the already effective purpose-first explanation and conversational technical register. B announces an evaluation taxonomy before developing its rationale and adds an elaborate outline; this is less aligned with the author's preference for connected reasoning and restraint in revising effective passages.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We also timed the processing step because the archive team wants to audition settings interactively"
+            ],
+            "B": [
+              "across three separate dimensions: listener preference, transcript consistency, and frame-processing time.",
+              "#### 1. Listener Preference Study"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "A has no identified material error; B adds a minor unsupported assertion about the first auditor, though its practical conclusion remains appropriately bounded. A also better meets the decisive preference for preserving effective connected exposition: its rationale explains why the measurements belong together without replacing the passage with a repetitive labeled outline. Its lack of substantive rewriting is not itself a defect.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "A cleaner background was useful only if the setting preserved the words, so the evaluation considered listener preference and transcript changes separately.",
+              "The evidence favors offering the new setting for audition on noisy material while retaining access to the original."
+            ],
+            "B": [
+              "neither auditor adjudicated which transcript better matched the underlying recording.",
+              "#### Operational Implications"
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": true,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "647c540958946729be037440f84147f134faf9f1cc8cd31bfa88c277aa6d85b2",
+    "prompt_sha256": "447e72c71d7892536b385934507e6e575f4ec923299848c024165b0b2ad432b9",
+    "raw_sha256": "38a427d5fc78d853d3aa5f930157dbcfa7701af72798a3cf2e2ee959744587ef",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-07",
+    "config": "argon-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "B",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task concerns technical exposition of an empirical evaluation, with no proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves the design, all preference counts, transcript uncertainty, timing conditions, and bounded recommendation. The added subset choice totals are correct arithmetic.",
+          "quotes": {
+            "source": [
+              "The audit counted clips with a difference, not the total number of changed words.",
+              "with input loading excluded."
+            ],
+            "A": [
+              "The audit recorded only whether a clip contained at least one discrepancy, not the total number of altered words within each clip.",
+              "exclude input-loading overhead."
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Reproduces the source faithfully, including all numerical results, the unresolved transcript audit, and the distinction between frame processing and interface delay.",
+          "quotes": {
+            "source": [
+              "We did not measure the interface delay experienced by editors.",
+              "all three were in the noisy subset."
+            ],
+            "A": [],
+            "B": [
+              "We did not measure the interface delay experienced by editors.",
+              "all three were in the noisy subset."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "tie",
+          "reason": "Both preserve the precise results and their limitations. A makes the quieter subset's reversal explicit; B communicates the same distinction through the counts and accompanying qualification.",
+          "quotes": {
+            "source": [
+              "The 12 quieter clips contributed 62, 68, and 14.",
+              "Thus the overall preference count conceals a different balance for the quieter subset."
+            ],
+            "A": [
+              "Quieter subset (12 clips; 144 choices):",
+              "listeners chose the original version slightly more often than the denoised version."
+            ],
+            "B": [
+              "The 12 quieter clips contributed 62, 68, and 14.",
+              "Thus the overall preference count conceals a different balance for the quieter subset."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "B",
+          "reason": "Both are readable, but B uses direct technical prose where A repeatedly adopts administrative labels and heavier transitions.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Protocol and Structure:",
+              "In addition, neither auditor adjudicated which transcript better matched the underlying recording."
+            ],
+            "B": [
+              "Twelve listeners each heard both versions of 30 clips",
+              "A second auditor confirmed that the transcript pairs differed but did not determine which version better represented the recording."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "tie",
+          "reason": "Both explain the evaluation's purpose before presenting preference, transcript, and timing evidence in a coherent sequence. A uses explicit sections and a closing synthesis; B gives each measurement a distinct paragraph with its interpretation.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "listener preference and transcript changes were assessed independently",
+              "Taken together, the findings support offering the new setting"
+            ],
+            "B": [
+              "the evaluation considered listener preference and transcript changes separately.",
+              "A separate audit compared transcripts prepared from each version."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "B",
+          "reason": "B preserves the already effective conversational technical register and purpose-led explanation. A's extensive protocol/results/limitations scaffolding adds repetition, including another word-preservation warning before the audit develops that point.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Furthermore, preference ratings do not verify that spoken words were preserved.",
+              "nor can strong listener preference for the denoised noisy clips be taken as evidence of word preservation."
+            ],
+            "B": [
+              "A cleaner background was useful only if the setting preserved the words",
+              "We therefore cannot label every difference an error introduced by denoising"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "There is no mathematical proof or derivation to assess.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "B",
+          "reason": "Neither has a material error. B better serves this user's preference for connected technical exposition: it retains the purpose, evidence boundaries, and actionable conclusion without adding a repeated protocol/limitations apparatus. A's explicit subset explanation is useful, but does not outweigh that fit.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Protocol and Results:",
+              "Operational Implications"
+            ],
+            "B": [
+              "We also timed the processing step because the archive team wants to audition settings interactively",
+              "The evidence favors offering the new setting for audition on noisy material while retaining access to the original."
+            ]
+          }
+        }
+      },
+      "overall": "B"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "tie",
+      "naturalness": "win",
+      "progression": "tie",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "95dad6c08a5a7f5ff8dd831bc63b35d9e5de290ed626c9b38f02652d48b93979",
+    "prompt_sha256": "afd8ef019dc97c93eac769b36c24c15d5ec9202ea9c54361e69ef9b272aed3d6",
+    "raw_sha256": "3b9befbe45678832ff6acdf36e4a8cdbe600ee437b02925966b6db154f4deee6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
+  },
+  {
+    "case": "large-test-b-07",
+    "config": "flash-high",
+    "candidate": "scholarly-20261103",
+    "reference": "none",
+    "judge": "sol-high",
+    "order": "primary",
+    "stage": "judge",
+    "turn": null,
+    "candidate_position": "A",
+    "raw_judgment": {
+      "is_proof": false,
+      "proof_reason": "The task asks for an exposition of study results and limitations, not a proof or derivation.",
+      "material_error_A": false,
+      "material_error_B": false,
+      "material_errors": {
+        "A": {
+          "severity": "none",
+          "reason": "Preserves every preference count, the repeated-choice design, the three unresolved noisy-subset discrepancies, and all benchmark conditions. Removing the separate success-definition sentence does not remove its substance.",
+          "quotes": {
+            "source": [
+              "Preference alone was not our definition of success.",
+              "These are processing times for the tested frames, with input loading excluded."
+            ],
+            "A": [
+              "Because background noise reduction is useful only if words are preserved, we evaluated listener preference and transcript changes separately.",
+              "These processing times exclude input loading"
+            ],
+            "B": []
+          }
+        },
+        "B": {
+          "severity": "none",
+          "reason": "Preserves the results and substantive limitations. 'Clip presentation order' is less precise than the source's version-order statement: in context it could describe presentation of the paired versions or ordering the 30 clips. This ambiguity does not establish a changed protocol.",
+          "quotes": {
+            "source": [
+              "Version order was counterbalanced within the listening protocol.",
+              "We did not measure the interface delay experienced by editors."
+            ],
+            "A": [],
+            "B": [
+              "Clip presentation order was counterbalanced.",
+              "Latency within the archive editors' interactive interface and complete editing workflow was not evaluated."
+            ]
+          }
+        }
+      },
+      "dimensions": {
+        "meaning": {
+          "preference": "A",
+          "reason": "Both retain the numerical evidence and bounded conclusion. A more precisely preserves counterbalancing of the versions; B's wording introduces avoidable ambiguity about which presentation order was controlled, without establishing a material error.",
+          "quotes": {
+            "source": [
+              "Version order was counterbalanced within the listening protocol."
+            ],
+            "A": [
+              "Twelve listeners each heard both versions of 30 clips in counterbalanced order"
+            ],
+            "B": [
+              "Clip presentation order was counterbalanced."
+            ]
+          }
+        },
+        "naturalness": {
+          "preference": "A",
+          "reason": "A's direct sentences suit the existing technical register. B is understandable, but adds cumbersome transitions and bureaucratic wording that do not clarify the findings.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We therefore cannot label every difference an error introduced by denoising",
+              "before the setting is used for a final archive render."
+            ],
+            "B": [
+              "Correspondingly, a listener preference for a denoised clip cannot be taken as verification",
+              "before this setting can be utilized for final archive rendering."
+            ]
+          }
+        },
+        "progression": {
+          "preference": "A",
+          "reason": "Both maintain distinct evidence streams. A places the timing limitation beside the initial reason for timing, immediately bounding what that measurement can establish. B postpones that qualification until its measurement section after introducing suitability for interactive use.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "We also timed the processing step because the archive team wants to audition settings interactively, though this run does not represent a full editing session."
+            ],
+            "B": [
+              "Processing latency was measured separately to determine suitability for interactive auditioning by archive staff.",
+              "Latency within the archive editors' interactive interface and complete editing workflow was not evaluated."
+            ]
+          }
+        },
+        "voice": {
+          "preference": "A",
+          "reason": "A keeps the purpose-first reasoning and connected prose while removing a redundant success-definition sentence. B's many labeled subsections and formal restatements make the passage feel like a generic evaluation template rather than this author's established exposition.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "Because background noise reduction is useful only if words are preserved, we evaluated listener preference and transcript changes separately.",
+              "The overall count, however, conceals a different balance for the quieter subset:"
+            ],
+            "B": [
+              "Evaluation Overview",
+              "Subset distribution:",
+              "The collected data support making the new setting available to editors"
+            ]
+          }
+        },
+        "proof": {
+          "preference": "NA",
+          "reason": "The passage reports measurements and their interpretation without a mathematical proof.",
+          "quotes": {
+            "source": [],
+            "A": [],
+            "B": []
+          }
+        },
+        "overall": {
+          "preference": "A",
+          "reason": "Neither has an established material error. A better meets the decisive preference for connected, purpose-led technical prose, keeping the timing caveat beside its motivation and preserving a clear bounded recommendation. B retains the evidence but adds template-like scaffolding and an ambiguous description of counterbalancing.",
+          "quotes": {
+            "source": [],
+            "A": [
+              "though this run does not represent a full editing session.",
+              "The evidence favors offering the new setting to audition noisy material while retaining access to the original."
+            ],
+            "B": [
+              "Processing latency was measured separately to determine suitability for interactive auditioning by archive staff.",
+              "Clip presentation order was counterbalanced."
+            ]
+          }
+        }
+      },
+      "overall": "A"
+    },
+    "outcome": "win",
+    "dimensions": {
+      "meaning": "win",
+      "naturalness": "win",
+      "progression": "win",
+      "voice": "win",
+      "proof": "NA",
+      "overall": "win"
+    },
+    "candidate_material_error": false,
+    "reference_material_error": false,
+    "evidence_format_repairs": [],
+    "json_syntax_repairs": [],
+    "source_sha256": "f96bc42ec72e4db4f343ca9a2fe4c939df487f04b136a66556239e1814b9dc7c",
+    "prompt_sha256": "afd8ef019dc97c93eac769b36c24c15d5ec9202ea9c54361e69ef9b272aed3d6",
+    "raw_sha256": "3b9befbe45678832ff6acdf36e4a8cdbe600ee437b02925966b6db154f4deee6",
+    "plan_sha256": "180a56cda7d621a1e6709add8f238a6ba93ff4c448d0cf91b861e2cbc00ec581"
   }
 ]
